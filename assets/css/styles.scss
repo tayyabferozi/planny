@@ -13,7 +13,7 @@
 
 @media screen and (max-width: 575px) {
   :root {
-    --section-padding: 1rem;
+    --section-padding: 0.5rem;
   }
 }
 
@@ -46,16 +46,15 @@ a {
 }
 
 .table-container {
-  overflow: auto;
-  width: 100%;
+  overflow: scroll;
+  //   width: 100vw;
 }
 
 table {
-  // width: 100%;
-  min-width: 720px;
   border-collapse: collapse;
   font-size: 20px;
   border-radius: 7px;
+  // min-width: 720px;
 
   @media screen and(max-width: 991px) {
     font-size: 18px;
@@ -86,7 +85,7 @@ table {
       padding: 0.75rem 2rem;
       border: 1px solid #b2b2b269;
 
-      @media screen and (max-width: 1120px) {
+      @media screen and (max-width: 1140px) {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
       }
@@ -159,7 +158,6 @@ p {
 
   aside {
     flex-grow: 1;
-    padding-left: 1.5rem;
     max-width: 266px;
 
     @media screen and (max-width: 1435px) {
@@ -191,6 +189,12 @@ p {
 }
 
 #financial-planning {
+  .main {
+    @media screen and (min-width: 992px) {
+      padding-right: 1.5rem;
+    }
+  }
+
   .account-info {
     margin: 2.5rem 0 1.5rem;
   }

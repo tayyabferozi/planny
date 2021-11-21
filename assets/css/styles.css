@@ -11,7 +11,7 @@
 
 @media screen and (max-width: 575px) {
   :root {
-    --section-padding: 1rem;
+    --section-padding: 0.5rem;
   }
 }
 
@@ -51,12 +51,10 @@ a {
 }
 
 .table-container {
-  overflow: auto;
-  width: 100%;
+  overflow: scroll;
 }
 
 table {
-  min-width: 720px;
   border-collapse: collapse;
   font-size: 20px;
   border-radius: 7px;
@@ -91,7 +89,7 @@ table tr td {
   border: 1px solid #b2b2b269;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1140px) {
   table tr th,
   table tr td {
     padding-left: 0.5rem;
@@ -185,7 +183,6 @@ p {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding-left: 1.5rem;
   max-width: 266px;
 }
 
@@ -226,6 +223,12 @@ p {
   #navbar {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #financial-planning .main {
+    padding-right: 1.5rem;
   }
 }
 
