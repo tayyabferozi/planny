@@ -236,6 +236,16 @@ p {
   margin: 2.5rem 0 1.5rem;
 }
 
+.chart-container {
+  padding: 3rem;
+}
+
+@media screen and (max-width: 575px) {
+  .chart-container {
+    padding: 1rem;
+  }
+}
+
 @media screen and (max-width: 575px) {
   #stockbroker-shutdown .row > * {
     padding: 0;

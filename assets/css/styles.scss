@@ -200,6 +200,14 @@ p {
   }
 }
 
+.chart-container {
+  padding: 3rem;
+
+  @media screen and (max-width: 575px) {
+    padding: 1rem;
+  }
+}
+
 #stockbroker-shutdown {
   .row {
     @media screen and (max-width: 575px) {
