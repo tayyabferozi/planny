@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+$color1: #ffc32c;
+$color2: #31353f;
+$color3: #b2b2b2;
+$color4: #e6e6e6;
+$color5: #bcbcbc;
+$color6: #10182f;
+$color7: #d8d8d8;
+$color8: #707070;
+$color9: #f7f7f7;
+$color10: #242e4c40;
+$color11: #0eb280;
+$color12: #484848;
+$color13: #8f9198;
+$color14: #d5e3d6;
+$color15: #fff8e4;
+$color16: #fff0ca;
+$color17: #f2f2f2;
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: $color2;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 160px;
+}
+
+button,
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 20px;
+  border-radius: 7px;
+  overflow: hidden;
+
+  tr {
+    &:nth-child(odd) {
+      background-color: $color9;
+    }
+
+    &:last-child {
+      td {
+        border-bottom: 1px solid #b2b2b269 !important;
+      }
+    }
+
+    &:first-child {
+      background-color: transparent;
+    }
+
+    td {
+      border-top: none !important;
+      border-bottom: none !important;
+    }
+
+    th,
+    td {
+      padding: 0.75rem 2rem;
+      border: 1px solid #b2b2b269;
+    }
+  }
+}
+
+h1 {
+  font-size: 44px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.page-container {
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 6rem;
+}
+
+#financial-planning {
+  .account-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .general {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img.avatar {
+        margin-right: 1rem;
+      }
+
+      .name {
+        font-size: 16px;
+      }
+
+      small {
+        margin-left: 0.5rem;
+        font-size: 14px;
+        color: $color5;
+        font-weight: 500;
+      }
+
+      img.bookmark {
+        margin-left: 2rem;
+      }
+    }
+
+    .social a {
+      margin-right: 0.75rem;
+    }
+  }
+}
+
+#stockbroker-shutdown {
+  .card {
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: $color1;
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    &.light {
+      background-color: $color17;
+
+      h2 {
+        font-weight: 500;
+        color: $color3;
+      }
+    }
+  }
+
+  ul {
+    list-style-image: url("../vector/tick.svg");
+    padding: 0 2.5rem;
+
+    li {
+      padding: 0.75rem 0;
+      padding-left: 1rem;
+      font-size: 24px;
+    }
+  }
+}

@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #31353f;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding-top: 160px;
+}
+
+button,
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 20px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+table tr:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+table tr:last-child td {
+  border-bottom: 1px solid #b2b2b269 !important;
+}
+
+table tr:first-child {
+  background-color: transparent;
+}
+
+table tr td {
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+table tr th,
+table tr td {
+  padding: 0.75rem 2rem;
+  border: 1px solid #b2b2b269;
+}
+
+h1 {
+  font-size: 44px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.page-container {
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem 6rem;
+}
+
+#financial-planning .account-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#financial-planning .account-info .general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#financial-planning .account-info .general img.avatar {
+  margin-right: 1rem;
+}
+
+#financial-planning .account-info .general .name {
+  font-size: 16px;
+}
+
+#financial-planning .account-info .general small {
+  margin-left: 0.5rem;
+  font-size: 14px;
+  color: #bcbcbc;
+  font-weight: 500;
+}
+
+#financial-planning .account-info .general img.bookmark {
+  margin-left: 2rem;
+}
+
+#financial-planning .account-info .social a {
+  margin-right: 0.75rem;
+}
+
+#stockbroker-shutdown .card {
+  border-radius: 10px;
+  padding: 2rem;
+  background-color: #ffc32c;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#stockbroker-shutdown .card h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#stockbroker-shutdown .card img {
+  width: 100%;
+}
+
+#stockbroker-shutdown .card.light {
+  background-color: #f2f2f2;
+}
+
+#stockbroker-shutdown .card.light h2 {
+  font-weight: 500;
+  color: #b2b2b2;
+}
+
+#stockbroker-shutdown ul {
+  list-style-image: url("../vector/tick.svg");
+  padding: 0 2.5rem;
+}
+
+#stockbroker-shutdown ul li {
+  padding: 0.75rem 0;
+  padding-left: 1rem;
+  font-size: 24px;
+}
+/*# sourceMappingURL=styles.css.map */
