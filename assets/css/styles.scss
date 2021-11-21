@@ -1,22 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
-
-$color1: #ffc32c;
-$color2: #31353f;
-$color3: #b2b2b2;
-$color4: #e6e6e6;
-$color5: #bcbcbc;
-$color6: #10182f;
-$color7: #d8d8d8;
-$color8: #707070;
-$color9: #f7f7f7;
-$color10: #242e4c40;
-$color11: #0eb280;
-$color12: #484848;
-$color13: #8f9198;
-$color14: #d5e3d6;
-$color15: #fff8e4;
-$color16: #fff0ca;
-$color17: #f2f2f2;
+@import "./_constants.scss";
 
 * {
   font-family: "Source Sans Pro", sans-serif;
@@ -34,6 +17,8 @@ button,
 a {
   text-decoration: none;
   cursor: pointer;
+  background-color: transparent;
+  border: 0;
 }
 
 table {
@@ -82,10 +67,11 @@ h2 {
 p {
   font-size: 20px;
   line-height: 40px;
+  word-spacing: -1.06px;
 }
 
 .page-container {
-  max-width: 1110px;
+  max-width: 1106px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -102,42 +88,8 @@ p {
   padding: 4rem 6rem;
 }
 
-#financial-planning {
-  .account-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .general {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      img.avatar {
-        margin-right: 1rem;
-      }
-
-      .name {
-        font-size: 16px;
-      }
-
-      small {
-        margin-left: 0.5rem;
-        font-size: 14px;
-        color: $color5;
-        font-weight: 500;
-      }
-
-      img.bookmark {
-        margin-left: 2rem;
-      }
-    }
-
-    .social a {
-      margin-right: 0.75rem;
-    }
-  }
-}
+// #financial-planning {
+// }
 
 #stockbroker-shutdown {
   .card {
@@ -177,6 +129,69 @@ p {
       padding: 0.75rem 0;
       padding-left: 1rem;
       font-size: 24px;
+    }
+  }
+}
+
+#reviews {
+  .review-btns {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 2rem;
+
+      .count {
+        font-size: 14px;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+
+  .comments {
+    textarea.comment {
+      width: 100%;
+      padding: 0.75rem 1.5rem;
+      border-radius: 10px;
+      border-color: $color5;
+
+      &::placeholder {
+        color: $color5;
+      }
+    }
+
+    .comments-main {
+      .comment {
+        margin-bottom: 2rem;
+
+        .comment-text {
+          p {
+            padding-left: 56px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#navigate {
+  border-top: 1px solid $color5;
+  margin-top: 8rem;
+
+  .nav-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > * {
+      border-radius: 7px;
+      border: 1px solid $color2;
+      padding: 0.5rem 1rem;
     }
   }
 }

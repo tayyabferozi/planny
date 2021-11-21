@@ -13,18 +13,27 @@
     <!-- STYLESHEET -->
 
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/utilities.css" />
 
     <title>What is Financial Planning?</title>
   </head>
   <body>
     <nav id="navbar">
-      <div class="logo">
+      <a href="#" class="logo">
         <img src="./assets/vector/logo.svg" alt="logo" />
-      </div>
+      </a>
 
       <div class="nav">
-        <img class="me-4" src="./assets/vector/hamburger.svg" alt="hamburger" />
-        <img src="./assets/vector/user.svg" alt="user" />
+        <button>
+          <img
+            class="me-4"
+            src="./assets/vector/hamburger.svg"
+            alt="hamburger"
+          />
+        </button>
+        <button>
+          <img src="./assets/vector/user.svg" alt="user" />
+        </button>
       </div>
     </nav>
 
@@ -39,11 +48,13 @@
             <h6 class="name">Jerome Walton</h6>
             <h6><small>5 min read</small></h6>
 
-            <img
-              class="bookmark"
-              src="./assets/img/bookmark.png"
-              alt="bookmark"
-            />
+            <a href="#">
+              <img
+                class="bookmark"
+                src="./assets/img/bookmark.png"
+                alt="bookmark"
+              />
+            </a>
           </div>
           <div class="social">
             <a href="#">
@@ -64,7 +75,7 @@
           </div>
         </div>
 
-        <p class="">
+        <p>
           One of the key objectives of a financial plan is to educate
           individuals towards their financial capacity and risk appetite.
           Assessment of household income, expenses and age is the first step
@@ -171,12 +182,12 @@
         </ul>
       </section>
 
-      <section id="financial-planning" class="page-container my-5 pt-4">
-        <h2>
+      <section id="financial-planning" class="page-container mt-5 pt-4">
+        <h2 class="mb-4">
           Financial Planning Explained Via <span class="badge">Example</span>
         </h2>
 
-        <p>
+        <p class="mb-2">
           Max and Sam graduated together and were placed in a same company with
           same packages. Both wanted to retire at the age of 40 and live rest of
           their lives in countryside. Max without assessing his assets, goals
@@ -200,34 +211,46 @@
         </p>
       </section>
 
-      <section id="reviews">
-        Did you like this article?
+      <section id="reviews" class="page-container mt-2">
+        <h2>Did you like this article?</h2>
 
-        <button>
-          <img src="./assets/img/like.png" alt="like" /><span class="count"
-            >23</span
-          ></button
-        ><button>
-          <img src="./assets/img/dislike" alt="dislike" /><span class="count"
-            >01</span
-          >
-        </button>
+        <div class="review-btns mt-3">
+          <button>
+            <img src="./assets/vector/like.svg" alt="like" /><span class="count"
+              >23</span
+            ></button
+          ><button>
+            <img src="./assets/vector/dislike.svg" alt="dislike" /><span
+              class="count"
+              >01</span
+            >
+          </button>
+        </div>
 
-        <div class="comments">
-          <h5>RESPONSES</h5>
+        <div class="comments mt-5 pt-3">
+          <h5 class="mb-3">RESPONSES</h5>
 
           <textarea
             name=""
+            class="comment"
             id=""
             rows="3"
             placeholder="Write your comment"
           ></textarea>
 
-          <div class="comments-main">
+          <div class="comments-main mt-5">
             <div class="comment">
-              <div class="user-info">
-                <img src="./assets/img/user-2.png" alt="user" />
-                <h4>Jullie Anderson <small>2 days ago</small></h4>
+              <div class="account-info">
+                <div class="general">
+                  <img
+                    class="avatar"
+                    src="./assets/img/user-2.png"
+                    alt="user"
+                  />
+
+                  <h6 class="name">Jullie Anderson</h6>
+                  <h6><small>2 days ago</small></h6>
+                </div>
               </div>
               <div class="comment-text">
                 <p>
@@ -239,9 +262,17 @@
               </div>
             </div>
             <div class="comment">
-              <div class="user-info">
-                <img src="./assets/img/user-2.png" alt="user" />
-                <h4>Robert Paul <small>3 days ago</small></h4>
+              <div class="account-info">
+                <div class="general">
+                  <img
+                    class="avatar"
+                    src="./assets/img/user-3.png"
+                    alt="user"
+                  />
+
+                  <h6 class="name">Robert Paul</h6>
+                  <h6><small>3 days ago</small></h6>
+                </div>
               </div>
               <div class="comment-text">
                 <p>
@@ -258,13 +289,13 @@
             </div>
           </div>
         </div>
-
-        <hr />
       </section>
 
-      <section id="navigate">
-        <button>Previous Article</button><button>All Articles</button
-        ><button>Next Article</button>
+      <section id="navigate" class="page-container pt-5 mb-5">
+        <div class="nav-btns">
+          <button>Previous Article</button><button>All Articles</button
+          ><button>Next Article</button>
+        </div>
       </section>
     </main>
   </body>

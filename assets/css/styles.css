@@ -16,6 +16,8 @@ button,
 a {
   text-decoration: none;
   cursor: pointer;
+  background-color: transparent;
+  border: 0;
 }
 
 table {
@@ -60,10 +62,11 @@ h2 {
 p {
   font-size: 20px;
   line-height: 40px;
+  word-spacing: -1.06px;
 }
 
 .page-container {
-  max-width: 1110px;
+  max-width: 1106px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -84,53 +87,6 @@ p {
       -ms-flex-align: center;
           align-items: center;
   padding: 4rem 6rem;
-}
-
-#financial-planning .account-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#financial-planning .account-info .general {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#financial-planning .account-info .general img.avatar {
-  margin-right: 1rem;
-}
-
-#financial-planning .account-info .general .name {
-  font-size: 16px;
-}
-
-#financial-planning .account-info .general small {
-  margin-left: 0.5rem;
-  font-size: 14px;
-  color: #bcbcbc;
-  font-weight: 500;
-}
-
-#financial-planning .account-info .general img.bookmark {
-  margin-left: 2rem;
-}
-
-#financial-planning .account-info .social a {
-  margin-right: 0.75rem;
 }
 
 #stockbroker-shutdown .card {
@@ -176,5 +132,90 @@ p {
   padding: 0.75rem 0;
   padding-left: 1rem;
   font-size: 24px;
+}
+
+#reviews .review-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#reviews .review-btns button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 2rem;
+}
+
+#reviews .review-btns button .count {
+  font-size: 14px;
+  margin-left: 0.5rem;
+}
+
+#reviews .comments textarea.comment {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  border-color: #bcbcbc;
+}
+
+#reviews .comments textarea.comment::-webkit-input-placeholder {
+  color: #bcbcbc;
+}
+
+#reviews .comments textarea.comment:-ms-input-placeholder {
+  color: #bcbcbc;
+}
+
+#reviews .comments textarea.comment::-ms-input-placeholder {
+  color: #bcbcbc;
+}
+
+#reviews .comments textarea.comment::placeholder {
+  color: #bcbcbc;
+}
+
+#reviews .comments .comments-main .comment {
+  margin-bottom: 2rem;
+}
+
+#reviews .comments .comments-main .comment .comment-text p {
+  padding-left: 56px;
+  font-size: 16px;
+}
+
+#navigate {
+  border-top: 1px solid #bcbcbc;
+  margin-top: 8rem;
+}
+
+#navigate .nav-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navigate .nav-btns > * {
+  border-radius: 7px;
+  border: 1px solid #31353f;
+  padding: 0.5rem 1rem;
 }
 /*# sourceMappingURL=styles.css.map */

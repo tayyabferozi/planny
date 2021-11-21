@@ -1,0 +1,47 @@
+.account-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account-info .general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account-info .general img.avatar {
+  margin-right: 1rem;
+}
+
+.account-info .general .name {
+  font-size: 16px;
+}
+
+.account-info .general small {
+  margin-left: 0.5rem;
+  font-size: 14px;
+  color: #bcbcbc;
+  font-weight: 500;
+}
+
+.account-info .general img.bookmark {
+  margin-left: 2rem;
+}
+
+.account-info .social a {
+  margin-right: 0.75rem;
+}
+/*# sourceMappingURL=utilities.css.map */

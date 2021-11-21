@@ -1,0 +1,36 @@
+@import "./_constants.scss";
+
+.account-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img.avatar {
+      margin-right: 1rem;
+    }
+
+    .name {
+      font-size: 16px;
+    }
+
+    small {
+      margin-left: 0.5rem;
+      font-size: 14px;
+      color: $color5;
+      font-weight: 500;
+    }
+
+    img.bookmark {
+      margin-left: 2rem;
+    }
+  }
+
+  .social a {
+    margin-right: 0.75rem;
+  }
+}
