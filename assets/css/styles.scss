@@ -30,7 +30,11 @@
 }
 
 body {
-  padding-top: 110px;
+  padding-top: 160px;
+
+  @media screen and (max-width: 1495px) {
+    padding-top: 110px;
+  }
 }
 
 button,
@@ -41,8 +45,14 @@ a {
   border: 0;
 }
 
-table {
+.table-container {
+  overflow: auto;
   width: 100%;
+}
+
+table {
+  // width: 100%;
+  min-width: 720px;
   border-collapse: collapse;
   font-size: 20px;
   border-radius: 7px;
@@ -114,16 +124,17 @@ h3 {
   font-size: 24px;
 }
 
+h4 {
+  font-size: 16px;
+}
+
 p {
   font-size: 20px;
   line-height: 40px;
-  word-spacing: -1.06px;
+  word-spacing: 3.5px;
 
   @media screen and(max-width: 991px) {
     font-size: 18px;
-  }
-
-  @media screen and (max-width: 767px) {
     line-height: 32px;
   }
 }
@@ -180,57 +191,8 @@ p {
 }
 
 #financial-planning {
-  aside {
-    .tags {
-      .tags-group {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 0.875rem;
-
-        & > * {
-          flex-grow: 1;
-
-          &:first-child {
-            margin-right: 0.25rem;
-          }
-
-          &:last-child {
-            margin-left: 0.25rem;
-          }
-        }
-      }
-    }
-
-    .posts {
-      .post {
-        border: 0px solid $color5;
-        border-top-width: 1px;
-        padding: 0.75rem 0;
-
-        &:last-child {
-          border-bottom-width: 1px;
-        }
-
-        // .text {
-        // }
-
-        .info {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-
-          .date {
-            font-size: 12px;
-          }
-
-          .time {
-            font-size: 14px;
-            color: $color5;
-          }
-        }
-      }
-    }
+  .account-info {
+    margin: 2.5rem 0 1.5rem;
   }
 }
 
@@ -302,16 +264,25 @@ p {
       }
     }
 
-    img {
+    img,
+    svg {
       width: 100%;
     }
 
     &.light {
-      background-color: $color17;
+      @media screen and (min-width: 576px) {
+        background-color: $color17;
 
-      h2 {
-        font-weight: 500;
-        color: $color3;
+        h2 {
+          font-weight: 500;
+          color: $color3;
+        }
+      }
+
+      @media screen and (max-width: 575px) {
+        svg path {
+          fill: $color2 !important;
+        }
       }
     }
   }
@@ -371,6 +342,7 @@ p {
           p {
             padding-left: 56px;
             font-size: 16px;
+            line-height: 30px;
           }
         }
       }
@@ -399,5 +371,14 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 575px) {
+      flex-direction: column;
+
+      button {
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
+    }
   }
 }

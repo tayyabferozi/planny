@@ -1,5 +1,9 @@
 @import "./_constants.scss";
 
+hr {
+  border-top: 1px solid $color5;
+}
+
 .btn-outlined {
   border-radius: 7px;
   border: 1px solid $color2;
@@ -8,6 +12,106 @@
 
 .text-light {
   color: $color5;
+}
+
+.badge {
+  background-color: $color1;
+  padding: 0.125rem 0.75rem;
+  border-radius: 7px;
+}
+
+.explore {
+  .tags {
+    .tags-group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      button {
+        border-color: $color5;
+        color: $color5;
+        transition: 0.4s ease;
+
+        &:hover {
+          border-color: $color2;
+          color: $color2;
+        }
+
+        @media screen and (max-width: 742px) {
+          font-size: 10px;
+        }
+
+        @media screen and (max-width: 639px) {
+          font-size: 8px;
+        }
+
+        @media screen and (max-width: 575px) {
+          font-size: 14px;
+        }
+      }
+
+      & > * {
+        flex-grow: 1;
+
+        &:first-child {
+          margin-right: 0.25rem;
+        }
+
+        &:last-child {
+          margin-left: 0.25rem;
+        }
+      }
+    }
+  }
+
+  .posts {
+    .post {
+      border: 0px solid $color5;
+      border-top-width: 1px;
+      padding: 0.575rem 0;
+
+      &:last-child {
+        border-bottom-width: 1px;
+      }
+
+      // .text {
+      // }
+
+      .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .date {
+          font-size: 12px;
+        }
+
+        .time {
+          font-size: 14px;
+          color: $color5;
+        }
+      }
+    }
+  }
+
+  &.bottom {
+    button {
+      @media screen and (max-width: 680px) {
+        font-size: 10px;
+      }
+
+      @media screen and (max-width: 680px) {
+        font-size: 14px;
+      }
+    }
+
+    .posts {
+      .post {
+        padding: 1.25rem 0;
+      }
+    }
+  }
 }
 
 .account-info {

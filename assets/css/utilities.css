@@ -1,3 +1,7 @@
+hr {
+  border-top: 1px solid #bcbcbc;
+}
+
 .btn-outlined {
   border-radius: 7px;
   border: 1px solid #31353f;
@@ -6,6 +10,116 @@
 
 .text-light {
   color: #bcbcbc;
+}
+
+.badge {
+  background-color: #ffc32c;
+  padding: 0.125rem 0.75rem;
+  border-radius: 7px;
+}
+
+.explore .tags .tags-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.explore .tags .tags-group button {
+  border-color: #bcbcbc;
+  color: #bcbcbc;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.explore .tags .tags-group button:hover {
+  border-color: #31353f;
+  color: #31353f;
+}
+
+@media screen and (max-width: 742px) {
+  .explore .tags .tags-group button {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .explore .tags .tags-group button {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .explore .tags .tags-group button {
+    font-size: 14px;
+  }
+}
+
+.explore .tags .tags-group > * {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.explore .tags .tags-group > *:first-child {
+  margin-right: 0.25rem;
+}
+
+.explore .tags .tags-group > *:last-child {
+  margin-left: 0.25rem;
+}
+
+.explore .posts .post {
+  border: 0px solid #bcbcbc;
+  border-top-width: 1px;
+  padding: 0.575rem 0;
+}
+
+.explore .posts .post:last-child {
+  border-bottom-width: 1px;
+}
+
+.explore .posts .post .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.explore .posts .post .info .date {
+  font-size: 12px;
+}
+
+.explore .posts .post .info .time {
+  font-size: 14px;
+  color: #bcbcbc;
+}
+
+@media screen and (max-width: 680px) {
+  .explore.bottom button {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .explore.bottom button {
+    font-size: 14px;
+  }
+}
+
+.explore.bottom .posts .post {
+  padding: 1.25rem 0;
 }
 
 .account-info {

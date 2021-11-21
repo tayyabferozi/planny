@@ -33,7 +33,13 @@
 }
 
 body {
-  padding-top: 110px;
+  padding-top: 160px;
+}
+
+@media screen and (max-width: 1495px) {
+  body {
+    padding-top: 110px;
+  }
 }
 
 button,
@@ -44,8 +50,13 @@ a {
   border: 0;
 }
 
-table {
+.table-container {
+  overflow: auto;
   width: 100%;
+}
+
+table {
+  min-width: 720px;
   border-collapse: collapse;
   font-size: 20px;
   border-radius: 7px;
@@ -128,20 +139,19 @@ h3 {
   font-size: 24px;
 }
 
+h4 {
+  font-size: 16px;
+}
+
 p {
   font-size: 20px;
   line-height: 40px;
-  word-spacing: -1.06px;
+  word-spacing: 3.5px;
 }
 
 @media screen and (max-width: 991px) {
   p {
     font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  p {
     line-height: 32px;
   }
 }
@@ -219,62 +229,8 @@ p {
   }
 }
 
-#financial-planning aside .tags .tags-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 0.875rem;
-}
-
-#financial-planning aside .tags .tags-group > * {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-#financial-planning aside .tags .tags-group > *:first-child {
-  margin-right: 0.25rem;
-}
-
-#financial-planning aside .tags .tags-group > *:last-child {
-  margin-left: 0.25rem;
-}
-
-#financial-planning aside .posts .post {
-  border: 0px solid #bcbcbc;
-  border-top-width: 1px;
-  padding: 0.75rem 0;
-}
-
-#financial-planning aside .posts .post:last-child {
-  border-bottom-width: 1px;
-}
-
-#financial-planning aside .posts .post .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#financial-planning aside .posts .post .info .date {
-  font-size: 12px;
-}
-
-#financial-planning aside .posts .post .info .time {
-  font-size: 14px;
-  color: #bcbcbc;
+#financial-planning .account-info {
+  margin: 2.5rem 0 1.5rem;
 }
 
 @media screen and (max-width: 575px) {
@@ -371,17 +327,25 @@ p {
   }
 }
 
-#stockbroker-shutdown .card img {
+#stockbroker-shutdown .card img,
+#stockbroker-shutdown .card svg {
   width: 100%;
 }
 
-#stockbroker-shutdown .card.light {
-  background-color: #f2f2f2;
+@media screen and (min-width: 576px) {
+  #stockbroker-shutdown .card.light {
+    background-color: #f2f2f2;
+  }
+  #stockbroker-shutdown .card.light h2 {
+    font-weight: 500;
+    color: #b2b2b2;
+  }
 }
 
-#stockbroker-shutdown .card.light h2 {
-  font-weight: 500;
-  color: #b2b2b2;
+@media screen and (max-width: 575px) {
+  #stockbroker-shutdown .card.light svg path {
+    fill: #31353f !important;
+  }
 }
 
 #stockbroker-shutdown ul {
@@ -461,6 +425,7 @@ p {
 #reviews .comments .comments-main .comment .comment-text p {
   padding-left: 56px;
   font-size: 16px;
+  line-height: 30px;
 }
 
 #navigate {
@@ -497,5 +462,18 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 575px) {
+  #navigate .nav-btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #navigate .nav-btns button {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
