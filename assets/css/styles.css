@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+:root {
+  --section-padding: 4rem;
+}
+
+@media screen and (max-width: 1495px) {
+  :root {
+    --section-padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  :root {
+    --section-padding: 1rem;
+  }
+}
+
 * {
   font-family: "Source Sans Pro", sans-serif;
   margin: 0;
@@ -17,7 +33,7 @@
 }
 
 body {
-  padding-top: 160px;
+  padding-top: 110px;
 }
 
 button,
@@ -33,7 +49,12 @@ table {
   border-collapse: collapse;
   font-size: 20px;
   border-radius: 7px;
-  overflow: hidden;
+}
+
+@media screen and (max-width: 991px) {
+  table {
+    font-size: 18px;
+  }
 }
 
 table tr:nth-child(odd) {
@@ -59,12 +80,52 @@ table tr td {
   border: 1px solid #b2b2b269;
 }
 
+@media screen and (max-width: 1120px) {
+  table tr th,
+  table tr td {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  table tr th,
+  table tr td {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  table tr th,
+  table tr td {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 h1 {
   font-size: 44px;
 }
 
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
 h2 {
   font-size: 32px;
+}
+
+@media screen and (max-width: 991px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+
+h3 {
+  font-size: 24px;
 }
 
 p {
@@ -73,10 +134,63 @@ p {
   word-spacing: -1.06px;
 }
 
+@media screen and (max-width: 991px) {
+  p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  p {
+    line-height: 32px;
+  }
+}
+
 .page-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  max-width: 1500px;
+  padding-left: var(--section-padding) !important;
+  padding-right: var(--section-padding) !important;
+}
+
+@media screen and (max-width: 1435px) {
+  .page-container {
+    max-width: unset;
+  }
+}
+
+.page-container .main {
   max-width: 1106px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.page-container aside {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-left: 1.5rem;
+  max-width: 266px;
+}
+
+@media screen and (max-width: 1435px) {
+  .page-container aside {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: 266px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .page-container aside {
+    display: none;
+  }
 }
 
 #navbar {
@@ -94,8 +208,79 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 4rem 6rem;
+  padding: var(--section-padding);
   z-index: 5;
+}
+
+@media screen and (max-width: 575px) {
+  #navbar {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+#financial-planning aside .tags .tags-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.875rem;
+}
+
+#financial-planning aside .tags .tags-group > * {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+#financial-planning aside .tags .tags-group > *:first-child {
+  margin-right: 0.25rem;
+}
+
+#financial-planning aside .tags .tags-group > *:last-child {
+  margin-left: 0.25rem;
+}
+
+#financial-planning aside .posts .post {
+  border: 0px solid #bcbcbc;
+  border-top-width: 1px;
+  padding: 0.75rem 0;
+}
+
+#financial-planning aside .posts .post:last-child {
+  border-bottom-width: 1px;
+}
+
+#financial-planning aside .posts .post .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#financial-planning aside .posts .post .info .date {
+  font-size: 12px;
+}
+
+#financial-planning aside .posts .post .info .time {
+  font-size: 14px;
+  color: #bcbcbc;
+}
+
+@media screen and (max-width: 575px) {
+  #stockbroker-shutdown .row > * {
+    padding: 0;
+  }
 }
 
 #stockbroker-shutdown .card {
@@ -114,9 +299,76 @@ p {
           align-items: center;
 }
 
+@media screen and (max-width: 1280px) {
+  #stockbroker-shutdown .card {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #stockbroker-shutdown .card {
+    height: 120px;
+  }
+}
+
 #stockbroker-shutdown .card h2 {
   font-weight: bold;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 1182px) {
+  #stockbroker-shutdown .card h2 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1096px) {
+  #stockbroker-shutdown .card h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1011px) {
+  #stockbroker-shutdown .card h2 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #stockbroker-shutdown .card h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  #stockbroker-shutdown .card h2 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 702px) {
+  #stockbroker-shutdown .card h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  #stockbroker-shutdown .card h2 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 616px) {
+  #stockbroker-shutdown .card h2 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #stockbroker-shutdown .card h2 {
+    font-size: 24px;
+  }
 }
 
 #stockbroker-shutdown .card img {
@@ -134,13 +386,19 @@ p {
 
 #stockbroker-shutdown ul {
   list-style-image: url("../vector/tick.svg");
-  padding: 0 2.5rem;
+  padding: 0 1.5rem;
 }
 
 #stockbroker-shutdown ul li {
   padding: 0.75rem 0;
   padding-left: 1rem;
   font-size: 24px;
+}
+
+@media screen and (max-width: 991px) {
+  #stockbroker-shutdown ul li {
+    font-size: 20px;
+  }
 }
 
 #reviews .review-btns {
@@ -206,8 +464,27 @@ p {
 }
 
 #navigate {
-  border-top: 1px solid #bcbcbc;
   margin-top: 8rem;
+}
+
+@media screen and (max-width: 991px) {
+  #navigate {
+    margin-top: 0;
+  }
+}
+
+#navigate .main {
+  border-top: 1px solid #bcbcbc;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-top: 1rem;
+}
+
+@media screen and (max-width: 991px) {
+  #navigate .main {
+    padding-top: 2rem;
+  }
 }
 
 #navigate .nav-btns {
@@ -220,11 +497,5 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-#navigate .nav-btns > * {
-  border-radius: 7px;
-  border: 1px solid #31353f;
-  padding: 0.5rem 1rem;
 }
 /*# sourceMappingURL=styles.css.map */

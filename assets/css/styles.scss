@@ -1,6 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 @import "./_constants.scss";
 
+:root {
+  --section-padding: 4rem;
+}
+
+@media screen and (max-width: 1495px) {
+  :root {
+    --section-padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  :root {
+    --section-padding: 1rem;
+  }
+}
+
 * {
   font-family: "Source Sans Pro", sans-serif;
   margin: 0;
@@ -14,7 +30,7 @@
 }
 
 body {
-  padding-top: 160px;
+  padding-top: 110px;
 }
 
 button,
@@ -30,7 +46,10 @@ table {
   border-collapse: collapse;
   font-size: 20px;
   border-radius: 7px;
-  overflow: hidden;
+
+  @media screen and(max-width: 991px) {
+    font-size: 18px;
+  }
 
   tr {
     &:nth-child(odd) {
@@ -56,28 +75,91 @@ table {
     td {
       padding: 0.75rem 2rem;
       border: 1px solid #b2b2b269;
+
+      @media screen and (max-width: 1120px) {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+
+      @media screen and (max-width: 991px) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+
+      @media screen and (max-width: 767px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
     }
   }
 }
 
 h1 {
   font-size: 44px;
+
+  @media screen and (max-width: 991px) {
+    font-size: 30px;
+  }
 }
 
 h2 {
   font-size: 32px;
+
+  @media screen and (max-width: 991px) {
+    font-size: 24px;
+  }
+}
+
+h3 {
+  font-size: 24px;
 }
 
 p {
   font-size: 20px;
   line-height: 40px;
   word-spacing: -1.06px;
+
+  @media screen and(max-width: 991px) {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 767px) {
+    line-height: 32px;
+  }
 }
 
 .page-container {
-  max-width: 1106px;
+  display: flex;
+  justify-content: center;
   margin-left: auto;
-  margin-right: auto;
+  max-width: 1500px;
+  padding-left: var(--section-padding) !important;
+  padding-right: var(--section-padding) !important;
+
+  @media screen and (max-width: 1435px) {
+    max-width: unset;
+  }
+
+  .main {
+    max-width: 1106px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  aside {
+    flex-grow: 1;
+    padding-left: 1.5rem;
+    max-width: 266px;
+
+    @media screen and (max-width: 1435px) {
+      flex-shrink: 0;
+      width: 266px;
+    }
+
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
+  }
 }
 
 #navbar {
@@ -89,27 +171,135 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem 6rem;
+  padding: var(--section-padding);
   z-index: 5;
+  @media screen and (max-width: 575px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 
-// #financial-planning {
-// }
+#financial-planning {
+  aside {
+    .tags {
+      .tags-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0.875rem;
+
+        & > * {
+          flex-grow: 1;
+
+          &:first-child {
+            margin-right: 0.25rem;
+          }
+
+          &:last-child {
+            margin-left: 0.25rem;
+          }
+        }
+      }
+    }
+
+    .posts {
+      .post {
+        border: 0px solid $color5;
+        border-top-width: 1px;
+        padding: 0.75rem 0;
+
+        &:last-child {
+          border-bottom-width: 1px;
+        }
+
+        // .text {
+        // }
+
+        .info {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .date {
+            font-size: 12px;
+          }
+
+          .time {
+            font-size: 14px;
+            color: $color5;
+          }
+        }
+      }
+    }
+  }
+}
 
 #stockbroker-shutdown {
+  .row {
+    @media screen and (max-width: 575px) {
+      & > * {
+        padding: 0;
+      }
+    }
+  }
+
   .card {
     border-radius: 10px;
     padding: 2rem;
     background-color: $color1;
     height: 200px;
-
     display: flex;
     justify-content: center;
     align-items: center;
 
+    @media screen and (max-width: 1280px) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    @media screen and (max-width: 991px) {
+      height: 120px;
+    }
+
     h2 {
       font-weight: bold;
       text-transform: uppercase;
+
+      @media screen and (max-width: 1182px) {
+        font-size: 28px;
+      }
+
+      @media screen and (max-width: 1096px) {
+        font-size: 24px;
+      }
+
+      @media screen and (max-width: 1011px) {
+        font-size: 22px;
+      }
+
+      @media screen and (max-width: 991px) {
+        font-size: 24px;
+      }
+
+      @media screen and (max-width: 745px) {
+        font-size: 22px;
+      }
+
+      @media screen and (max-width: 702px) {
+        font-size: 20px;
+      }
+
+      @media screen and (max-width: 660px) {
+        font-size: 18px;
+      }
+
+      @media screen and (max-width: 616px) {
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: 575px) {
+        font-size: 24px;
+      }
     }
 
     img {
@@ -128,12 +318,16 @@ p {
 
   ul {
     list-style-image: url("../vector/tick.svg");
-    padding: 0 2.5rem;
+    padding: 0 1.5rem;
 
     li {
       padding: 0.75rem 0;
       padding-left: 1rem;
       font-size: 24px;
+
+      @media screen and (max-width: 991px) {
+        font-size: 20px;
+      }
     }
   }
 }
@@ -185,18 +379,25 @@ p {
 }
 
 #navigate {
-  border-top: 1px solid $color5;
   margin-top: 8rem;
+
+  @media screen and (max-width: 991px) {
+    margin-top: 0;
+  }
+
+  .main {
+    border-top: 1px solid $color5;
+    flex-grow: 1;
+    padding-top: 1rem;
+
+    @media screen and (max-width: 991px) {
+      padding-top: 2rem;
+    }
+  }
 
   .nav-btns {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    & > * {
-      border-radius: 7px;
-      border: 1px solid $color2;
-      padding: 0.5rem 1rem;
-    }
   }
 }

@@ -1,3 +1,13 @@
+.btn-outlined {
+  border-radius: 7px;
+  border: 1px solid #31353f;
+  padding: 0.5rem 1rem;
+}
+
+.text-light {
+  color: #bcbcbc;
+}
+
 .account-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10,6 +20,18 @@
           align-items: center;
 }
 
+@media screen and (max-width: 575px) {
+  .account-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .account-info .general {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20,6 +42,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 575px) {
+  .account-info .general {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 .account-info .general img.avatar {
@@ -41,14 +72,39 @@
   margin-left: 2rem;
 }
 
+@media screen and (max-width: 991px) {
+  .account-info .general img.bookmark {
+    margin-left: 8.5vw;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .account-info .general img.bookmark {
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .account-info .social {
+    margin-top: 1.5rem;
+  }
+}
+
 .account-info .social a {
   margin-right: 0.75rem;
 }
 
 .timeline-wrapper {
   position: relative;
-  height: 385px;
+  height: 435px;
   margin: 6rem 0;
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .timeline-wrapper {
+    margin: 3rem 0;
+  }
 }
 
 .timeline-wrapper .timeline-main,
@@ -62,7 +118,7 @@
 .timeline-wrapper .middle-line {
   left: 0;
   width: 100%;
-  height: 1px;
+  height: 2px;
   background-color: #b2b2b2;
 }
 
