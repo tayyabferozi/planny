@@ -8,6 +8,14 @@
           box-sizing: border-box;
 }
 
+::-moz-selection {
+  background-color: #ffc32c;
+}
+
+::selection {
+  background-color: #ffc32c;
+}
+
 body {
   padding-top: 160px;
 }
@@ -87,6 +95,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   padding: 4rem 6rem;
+  z-index: 5;
 }
 
 #stockbroker-shutdown .card {

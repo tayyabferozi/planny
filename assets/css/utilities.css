@@ -44,4 +44,101 @@
 .account-info .social a {
   margin-right: 0.75rem;
 }
+
+.timeline-wrapper {
+  position: relative;
+  height: 385px;
+  margin: 6rem 0;
+}
+
+.timeline-wrapper .timeline-main,
+.timeline-wrapper .middle-line {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.timeline-wrapper .middle-line {
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #b2b2b2;
+}
+
+.timeline-wrapper .timeline-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1106px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.timeline-wrapper .timeline-main .item {
+  position: relative;
+}
+
+.timeline-wrapper .timeline-main .item .circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #b2b2b2;
+}
+
+.timeline-wrapper .timeline-main .item .arrow {
+  position: absolute;
+  bottom: 32px;
+  z-index: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.timeline-wrapper .timeline-main .item .content {
+  position: absolute;
+  left: 50%;
+  bottom: 60px;
+  width: 374px;
+  height: 161px;
+  padding: 1rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.timeline-wrapper .timeline-main .item .content .text p {
+  line-height: 30px;
+}
+
+.timeline-wrapper .timeline-main .item:nth-child(even) .content {
+  bottom: unset;
+  top: 60px;
+}
+
+.timeline-wrapper .timeline-main .item:nth-child(even) .arrow {
+  top: 32px;
+  bottom: unset;
+  -webkit-transform: translateX(-50%) rotate(180deg);
+          transform: translateX(-50%) rotate(180deg);
+}
 /*# sourceMappingURL=utilities.css.map */
