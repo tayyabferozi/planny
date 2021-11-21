@@ -50,14 +50,26 @@ a {
   border: 0;
 }
 
-.table-container {
-  overflow: scroll;
+@media screen and (max-width: 991px) {
+  .table-container {
+    overflow: auto;
+    width: 90vw;
+  }
 }
 
 table {
   border-collapse: collapse;
   font-size: 20px;
   border-radius: 7px;
+  width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  table {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
 }
 
 @media screen and (max-width: 991px) {

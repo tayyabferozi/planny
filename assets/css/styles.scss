@@ -46,8 +46,10 @@ a {
 }
 
 .table-container {
-  overflow: scroll;
-  //   width: 100vw;
+  @media screen and (max-width: 991px) {
+    overflow: auto;
+    width: 90vw;
+  }
 }
 
 table {
@@ -55,6 +57,11 @@ table {
   font-size: 20px;
   border-radius: 7px;
   // min-width: 720px;
+  width: 100%;
+
+  @media screen and (max-width: 991px) {
+    width: max-content;
+  }
 
   @media screen and(max-width: 991px) {
     font-size: 18px;
