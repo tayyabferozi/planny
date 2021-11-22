@@ -14,6 +14,8 @@ new Chart(document.getElementById("line-chart"), {
     ],
   },
   options: {
+    // responsive: true,
+    // maintainAspectRatio: false,
     title: {
       display: true,
       text: "WEEKLY PROJECT VIEWS",
