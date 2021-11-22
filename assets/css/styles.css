@@ -264,6 +264,15 @@ p {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  border: 1px solid #bcbcbc;
+  border-radius: 7px;
+  padding: 2.5rem 1.75rem;
+}
+
+@media screen and (max-width: 575px) {
+  #chart-container .main {
+    padding: 0.75rem;
+  }
 }
 
 #chart-container .main .legend .title {
