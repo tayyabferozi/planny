@@ -266,6 +266,15 @@ hr {
   background-color: #b2b2b2;
 }
 
+@media screen and (max-width: 1366px) {
+  .timeline-wrapper .middle-line {
+    left: 0;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    width: 1363px;
+  }
+}
+
 .timeline-wrapper .timeline-main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -282,6 +291,15 @@ hr {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1366px) {
+  .timeline-wrapper .timeline-main {
+    left: 0;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    margin-left: 11.5rem;
+  }
 }
 
 .timeline-wrapper .timeline-main .item {

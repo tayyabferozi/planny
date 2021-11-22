@@ -221,17 +221,11 @@ hr {
     height: 2px;
     background-color: $color3;
 
-    // @media screen and (max-width: 1375px) {
-    //   width: 110vw;
-    // }
-
-    // @media screen and (max-width: 1150px) {
-    //   width: 120vw;
-    // }
-
-    // @media screen and (max-width: 980px) {
-    //   width: 130vw;
-    // }
+    @media screen and (max-width: 1366px) {
+      left: 0;
+      transform: translate(0, -50%);
+      width: 1363px;
+    }
   }
 
   .timeline-main {
@@ -244,13 +238,11 @@ hr {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    // @media screen and (max-width: 1485px) {
-    //   width: 72vw;
-    // }
-
-    // @media screen and (max-width: 1200px) {
-    //   width: 1106px;
-    // }
+    @media screen and (max-width: 1366px) {
+      left: 0;
+      transform: translate(0, -50%);
+      margin-left: 11.5rem;
+    }
 
     .item {
       position: relative;
