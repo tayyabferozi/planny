@@ -225,13 +225,8 @@ hr {
   height: 445px;
   margin: 6rem 0;
   overflow-x: auto;
-  direction: rtl;
   /* Handle */
   /* Handle on hover */
-}
-
-.timeline-wrapper * {
-  direction: ltr;
 }
 
 .timeline-wrapper::-webkit-scrollbar {

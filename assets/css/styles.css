@@ -359,9 +359,32 @@ p {
   width: 100%;
 }
 
+#stockbroker-shutdown .card.light h2 {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+#stockbroker-shutdown .card.light svg path {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
 @media screen and (min-width: 576px) {
   #stockbroker-shutdown .card.light {
     background-color: #f2f2f2;
+    border: 1px solid transparent;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+  }
+  #stockbroker-shutdown .card.light:hover {
+    background-color: #ffc32c;
+    border-color: #b2b2b2;
+  }
+  #stockbroker-shutdown .card.light:hover h2 {
+    color: #31353f;
+  }
+  #stockbroker-shutdown .card.light:hover svg path {
+    fill: #31353f !important;
   }
   #stockbroker-shutdown .card.light h2 {
     font-weight: 500;

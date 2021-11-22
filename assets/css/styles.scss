@@ -300,8 +300,31 @@ p {
     }
 
     &.light {
+      h2 {
+        transition: 0.4s ease;
+      }
+
+      svg path {
+        transition: 0.4s ease;
+      }
+
       @media screen and (min-width: 576px) {
         background-color: $color17;
+        border: 1px solid transparent;
+        transition: 0.4s ease;
+
+        &:hover {
+          background-color: $color1;
+          border-color: $color3;
+
+          h2 {
+            color: $color2;
+          }
+
+          svg path {
+            fill: $color2 !important;
+          }
+        }
 
         h2 {
           font-weight: 500;
