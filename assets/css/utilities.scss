@@ -77,14 +77,11 @@ hr {
     .post {
       border: 0px solid $color5;
       border-top-width: 1px;
-      padding: 0.575rem 0;
+      padding: 1rem 0 1.325rem;
 
       &:last-child {
         border-bottom-width: 1px;
       }
-
-      // .text {
-      // }
 
       .info {
         display: flex;
@@ -221,10 +218,10 @@ hr {
     height: 2px;
     background-color: $color3;
 
-    @media screen and (max-width: 1366px) {
+    @media screen and (max-width: 1365px) {
       left: 0;
       transform: translate(0, -50%);
-      width: 1363px;
+      width: 1255px;
     }
   }
 
@@ -232,13 +229,22 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 998px;
+    width: 1365px;
     margin-left: auto;
     margin-right: auto;
     left: 50%;
     transform: translate(-50%, -50%);
 
+    @media screen and (max-width: 1745px) {
+      width: 65vw;
+    }
+
     @media screen and (max-width: 1366px) {
+      width: 73vw;
+    }
+
+    @media screen and (max-width: 1365px) {
+      width: 890px;
       left: 0;
       transform: translate(0, -50%);
       margin-left: 11.5rem;
@@ -278,6 +284,7 @@ hr {
         .text {
           p {
             line-height: 30px;
+            font-weight: bold;
           }
         }
       }

@@ -90,7 +90,7 @@ hr {
 .explore .posts .post {
   border: 0px solid #bcbcbc;
   border-top-width: 1px;
-  padding: 0.575rem 0;
+  padding: 1rem 0 1.325rem;
 }
 
 .explore .posts .post:last-child {
@@ -266,12 +266,12 @@ hr {
   background-color: #b2b2b2;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1365px) {
   .timeline-wrapper .middle-line {
     left: 0;
     -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%);
-    width: 1363px;
+    width: 1255px;
   }
 }
 
@@ -285,7 +285,7 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 998px;
+  width: 1365px;
   margin-left: auto;
   margin-right: auto;
   left: 50%;
@@ -293,8 +293,21 @@ hr {
           transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 1745px) {
+  .timeline-wrapper .timeline-main {
+    width: 65vw;
+  }
+}
+
 @media screen and (max-width: 1366px) {
   .timeline-wrapper .timeline-main {
+    width: 73vw;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  .timeline-wrapper .timeline-main {
+    width: 890px;
     left: 0;
     -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%);
@@ -346,6 +359,7 @@ hr {
 
 .timeline-wrapper .timeline-main .item .content .text p {
   line-height: 30px;
+  font-weight: bold;
 }
 
 .timeline-wrapper .timeline-main .item:nth-child(even) .content {

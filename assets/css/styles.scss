@@ -68,7 +68,7 @@ table {
   }
 
   tr {
-    &:nth-child(odd) {
+    &:nth-child(even) {
       background-color: $color9;
     }
 
@@ -208,6 +208,10 @@ p {
 
   .account-info {
     margin: 2.5rem 0 1.5rem;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 1rem;
+    }
   }
 }
 
@@ -300,19 +304,29 @@ p {
     }
 
     &.light {
-      h2 {
-        transition: 0.4s ease;
-      }
-
-      svg path {
+      &,
+      & h2,
+      & svg path {
         transition: 0.4s ease;
       }
 
       @media screen and (min-width: 576px) {
         background-color: $color17;
-        border: 1px solid transparent;
-        transition: 0.4s ease;
 
+        h2 {
+          color: $color3;
+        }
+      }
+
+      @media screen and (min-width: 1366px) {
+        border: 1px solid transparent;
+
+        &:hover {
+          border-color: $color3;
+        }
+      }
+
+      @media screen and (min-width: 576px) and (max-width: 1365px) {
         &:hover {
           background-color: $color1;
           border-color: $color3;

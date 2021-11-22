@@ -78,7 +78,7 @@ table {
   }
 }
 
-table tr:nth-child(odd) {
+table tr:nth-child(even) {
   background-color: #f7f7f7;
 }
 
@@ -254,6 +254,12 @@ p {
   margin: 2.5rem 0 1.5rem;
 }
 
+@media screen and (max-width: 767px) {
+  #financial-planning .account-info {
+    margin-top: 1rem;
+  }
+}
+
 #chart-container .main {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -359,11 +365,8 @@ p {
   width: 100%;
 }
 
-#stockbroker-shutdown .card.light h2 {
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
-}
-
+#stockbroker-shutdown .card.light,
+#stockbroker-shutdown .card.light h2,
 #stockbroker-shutdown .card.light svg path {
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
@@ -372,10 +375,22 @@ p {
 @media screen and (min-width: 576px) {
   #stockbroker-shutdown .card.light {
     background-color: #f2f2f2;
-    border: 1px solid transparent;
-    -webkit-transition: 0.4s ease;
-    transition: 0.4s ease;
   }
+  #stockbroker-shutdown .card.light h2 {
+    color: #b2b2b2;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  #stockbroker-shutdown .card.light {
+    border: 1px solid transparent;
+  }
+  #stockbroker-shutdown .card.light:hover {
+    border-color: #b2b2b2;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1365px) {
   #stockbroker-shutdown .card.light:hover {
     background-color: #ffc32c;
     border-color: #b2b2b2;
