@@ -218,10 +218,14 @@ hr {
     height: 2px;
     background-color: $color3;
 
-    @media screen and (max-width: 1365px) {
+    @media screen and (max-width: 1850px) {
       left: 0;
       transform: translate(0, -50%);
-      width: 1255px;
+      width: 1838px;
+    }
+
+    @media screen and (max-width: 1100px) {
+      width: 1482px;
     }
   }
 
@@ -235,19 +239,15 @@ hr {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    @media screen and (max-width: 1745px) {
-      width: 65vw;
-    }
-
-    @media screen and (max-width: 1366px) {
-      width: 73vw;
-    }
-
-    @media screen and (max-width: 1365px) {
+    @media screen and (max-width: 1850px) {
       width: 890px;
       left: 0;
       transform: translate(0, -50%);
-      margin-left: 11.5rem;
+      margin-left: 29rem;
+    }
+
+    @media screen and (max-width: 1100px) {
+      margin-left: 18rem;
     }
 
     .item {
