@@ -1,7 +1,7 @@
 new Chart(document.getElementById("line-chart"), {
   type: "line",
   data: {
-    labels: [1, 2, 3, 4, 5, 6],
+    labels: [1, 2, 3, 4, 5, 6, 7, 8],
     datasets: [
       {
         data: [100, 120, 280, 150, 130, 295, 220, 480],
@@ -15,8 +15,11 @@ new Chart(document.getElementById("line-chart"), {
     ],
   },
   options: {
+    legend: {
+      display: false,
+    },
     title: {
-      display: true,
+      display: false,
       text: "WEEKLY PROJECT VIEWS",
     },
     elements: {
@@ -27,6 +30,9 @@ new Chart(document.getElementById("line-chart"), {
     scales: {
       xAxes: [
         {
+          ticks: {
+            padding: 40,
+          },
           gridLines: {
             display: false,
           },
@@ -37,6 +43,11 @@ new Chart(document.getElementById("line-chart"), {
           ticks: {
             beginAtZero: true,
             stepSize: 100,
+            padding: 20,
+          },
+          gridLines: {
+            drawBorder: false,
+            zeroLineColor: "transparent",
           },
         },
       ],

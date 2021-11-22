@@ -266,6 +266,31 @@ p {
           flex-grow: 1;
 }
 
+#chart-container .main .legend .title {
+  color: #8f9198;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 575px) {
+  #chart-container .main .legend .title {
+    font-size: 12px;
+  }
+}
+
+#chart-container .main .legend h1 {
+  font-size: 42px;
+  font-weight: 900;
+  margin-bottom: 2.5rem;
+}
+
+@media screen and (max-width: 575px) {
+  #chart-container .main .legend h1 {
+    font-size: 24px;
+  }
+}
+
 @media screen and (max-width: 575px) {
   #stockbroker-shutdown .row > * {
     padding: 0;
