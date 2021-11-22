@@ -9,16 +9,37 @@ new Chart(document.getElementById("line-chart"), {
         borderColor: "transparent",
         fill: true,
         backgroundColor: "#FFF8E4",
+        pointBackgroundColor: "#ffc32c",
         tension: 0,
       },
     ],
   },
   options: {
-    // responsive: true,
-    // maintainAspectRatio: false,
     title: {
       display: true,
       text: "WEEKLY PROJECT VIEWS",
+    },
+    elements: {
+      point: {
+        radius: 6,
+      },
+    },
+    scales: {
+      xAxes: [
+        {
+          gridLines: {
+            display: false,
+          },
+        },
+      ],
+      yAxes: [
+        {
+          ticks: {
+            beginAtZero: true,
+            stepSize: 100,
+          },
+        },
+      ],
     },
   },
 });
