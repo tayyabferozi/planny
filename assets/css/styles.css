@@ -245,17 +245,17 @@ p {
 }
 
 @media screen and (min-width: 992px) {
-  #financial-planning .main {
+  #financial-planning-abbr .main {
     padding-right: 1.5rem;
   }
 }
 
-#financial-planning .account-info {
+#financial-planning-abbr .account-info {
   margin: 2.5rem 0 1.5rem;
 }
 
 @media screen and (max-width: 767px) {
-  #financial-planning .account-info {
+  #financial-planning-abbr .account-info {
     margin-top: 1rem;
   }
 }
