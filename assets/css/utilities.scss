@@ -324,9 +324,6 @@ hr {
         .arrow {
           top: unset;
           bottom: 100%;
-          // bottom: 97%;
-          // bottom: unset;
-          // transform: translateX(-50%) ;
           transform: translateX(-50%) rotate(180deg);
 
           &::after {
