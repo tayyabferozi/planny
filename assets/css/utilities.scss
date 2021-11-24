@@ -271,14 +271,6 @@ hr {
         background-color: $color4;
       }
 
-      .arrow {
-        position: absolute;
-        bottom: 32px;
-        z-index: 0;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-
       .content {
         position: absolute;
         left: 50%;
@@ -287,10 +279,33 @@ hr {
         height: 161px;
         padding: 1rem;
         transform: translateX(-50%);
+        background-color: #fff;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        .arrow {
+          width: 50px;
+          height: 25px;
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          overflow: hidden;
+
+          &::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: white;
+            transform: translateX(-50%) translateY(-50%) rotate(45deg);
+            top: 0;
+            left: 50%;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          }
+        }
 
         .text {
           p {
@@ -307,9 +322,18 @@ hr {
         }
 
         .arrow {
-          top: 32px;
-          bottom: unset;
+          top: unset;
+          bottom: 100%;
+          // bottom: 97%;
+          // bottom: unset;
+          // transform: translateX(-50%) ;
           transform: translateX(-50%) rotate(180deg);
+
+          &::after {
+            top: unset;
+            bottom: 4px;
+            transform: translateX(-50%) translateY(-50%) rotate(225deg);
+          }
         }
       }
     }

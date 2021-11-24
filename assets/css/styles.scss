@@ -207,13 +207,13 @@ p {
 // /////////////////////////////////////////////////////// FINANCIAL PLANNING START ///////////////////////////////////////////////////////////////
 
 #financial-planning-abbr {
-  p {
+  abbr {
     position: relative;
 
     .play {
       position: absolute;
       left: -60px;
-      top: 6px;
+      top: 25px;
 
       @media screen and (max-width: 1515px) {
         display: none;

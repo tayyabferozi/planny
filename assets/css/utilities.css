@@ -327,15 +327,6 @@ hr {
   background-color: #e6e6e6;
 }
 
-.timeline-wrapper .timeline-main .item .arrow {
-  position: absolute;
-  bottom: 32px;
-  z-index: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
 .timeline-wrapper .timeline-main .item .content {
   position: absolute;
   left: 50%;
@@ -345,6 +336,7 @@ hr {
   padding: 1rem;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  background-color: #fff;
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   display: -webkit-box;
@@ -358,6 +350,31 @@ hr {
           align-items: center;
 }
 
+.timeline-wrapper .timeline-main .item .content .arrow {
+  width: 50px;
+  height: 25px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.timeline-wrapper .timeline-main .item .content .arrow::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: white;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+          transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  top: 0;
+  left: 50%;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
 .timeline-wrapper .timeline-main .item .content .text p {
   line-height: 30px;
   font-weight: 600;
@@ -369,10 +386,17 @@ hr {
 }
 
 .timeline-wrapper .timeline-main .item:nth-child(even) .arrow {
-  top: 32px;
-  bottom: unset;
+  top: unset;
+  bottom: 100%;
   -webkit-transform: translateX(-50%) rotate(180deg);
           transform: translateX(-50%) rotate(180deg);
+}
+
+.timeline-wrapper .timeline-main .item:nth-child(even) .arrow::after {
+  top: unset;
+  bottom: 4px;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(225deg);
+          transform: translateX(-50%) translateY(-50%) rotate(225deg);
 }
 
 @media screen and (min-width: 576px) {

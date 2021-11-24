@@ -235,18 +235,18 @@ p {
   }
 }
 
-#financial-planning-abbr p {
+#financial-planning-abbr abbr {
   position: relative;
 }
 
-#financial-planning-abbr p .play {
+#financial-planning-abbr abbr .play {
   position: absolute;
   left: -60px;
-  top: 6px;
+  top: 25px;
 }
 
 @media screen and (max-width: 1515px) {
-  #financial-planning-abbr p .play {
+  #financial-planning-abbr abbr .play {
     display: none;
   }
 }
