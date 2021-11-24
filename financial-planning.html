@@ -18,6 +18,16 @@
     <title>What is Financial Planning?</title>
   </head>
   <body>
+    <!-- SCROLL PROGRESS BAR START -->
+
+    <div class="progress-header">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    </div>
+
+    <!-- SCROLL PROGRESS BAR END -->
+
     <!-- --------------------------------------------- NAVBAR START --------------------------------------------- -->
 
     <nav id="navbar">
@@ -90,6 +100,9 @@
           </div>
 
           <p>
+            <button>
+              <img src="./assets/vector/play.svg" class="play" alt="play" />
+            </button>
             One of the key objectives of a financial plan is to educate
             individuals towards their financial capacity and risk appetite.
             Assessment of household income, expenses and age is the first step
@@ -225,7 +238,9 @@
       <!-- --------------------------------------------- TIMELINE START --------------------------------------------- -->
 
       <div class="timeline-wrapper">
-        <div class="middle-line"></div>
+        <div class="middle-line">
+          <div class="slide">Slide left or right</div>
+        </div>
 
         <div class="timeline-main">
           <div class="item">
@@ -852,7 +867,7 @@
       <!-- --------------------------------------------- REVIEWS / COMMENTS START --------------------------------------------- -->
 
       <section id="reviews" class="page-container">
-        <div class="main">
+        <div class="main mt-5">
           <h2>Did you like this article?</h2>
 
           <div class="review-btns mt-3">
@@ -997,7 +1012,7 @@
               </div>
             </div>
             <div class="col-12 col-sm-6">
-              <h3 class="mb-4">Browse by tags</h3>
+              <h3 class="mb-4 mt-5 mt-sm-0">Browse by tags</h3>
 
               <div class="tags mt-3">
                 <div class="tags-group">
@@ -1040,8 +1055,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 
-    <!-- --------------------------------------------- Custom script --------------------------------------------- -->
+    <!-- --------------------------------------------- Custom scripts --------------------------------------------- -->
 
+    <script src="./assets/js/index.js"></script>
     <script src="./assets/js/financial-planning.js"></script>
   </body>
 </html>

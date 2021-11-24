@@ -15,7 +15,7 @@
 
 @media screen and (max-width: 575px) {
   :root {
-    --section-padding: 0.5rem;
+    --section-padding: 1.5rem;
   }
 }
 
@@ -32,11 +32,11 @@
 }
 
 body {
-  padding-top: 160px;
+  // padding-top: 160px;
 
-  @media screen and (max-width: 1495px) {
-    padding-top: 110px;
-  }
+  // @media screen and (max-width: 1495px) {
+  //   padding-top: 110px;
+  // }
 }
 
 button,
@@ -186,7 +186,7 @@ p {
 // /////////////////////////////////////////////////////// NAVBAR START ///////////////////////////////////////////////////////////////
 
 #navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -207,6 +207,20 @@ p {
 // /////////////////////////////////////////////////////// FINANCIAL PLANNING START ///////////////////////////////////////////////////////////////
 
 #financial-planning-abbr {
+  p {
+    position: relative;
+
+    .play {
+      position: absolute;
+      left: -60px;
+      top: 6px;
+
+      @media screen and (max-width: 1515px) {
+        display: none;
+      }
+    }
+  }
+
   .main {
     @media screen and (min-width: 992px) {
       padding-right: 1.5rem;
@@ -332,6 +346,46 @@ p {
       @media screen and (max-width: 575px) {
         font-size: 24px;
       }
+
+      small {
+        font-size: 30px;
+
+        @media screen and (max-width: 1182px) {
+          font-size: 26px;
+        }
+
+        @media screen and (max-width: 1096px) {
+          font-size: 23px;
+        }
+
+        @media screen and (max-width: 1011px) {
+          font-size: 21px;
+        }
+
+        @media screen and (max-width: 991px) {
+          font-size: 23px;
+        }
+
+        @media screen and (max-width: 745px) {
+          font-size: 21px;
+        }
+
+        @media screen and (max-width: 702px) {
+          font-size: 19px;
+        }
+
+        @media screen and (max-width: 660px) {
+          font-size: 17px;
+        }
+
+        @media screen and (max-width: 616px) {
+          font-size: 15px;
+        }
+
+        @media screen and (max-width: 575px) {
+          font-size: 23px;
+        }
+      }
     }
 
     img,
@@ -398,15 +452,36 @@ p {
       padding: 0.75rem 0;
       padding-left: 1rem;
       font-size: 24px;
+      letter-spacing: 0.5px;
+      line-height: 45px;
 
       @media screen and (max-width: 991px) {
         font-size: 20px;
+      }
+
+      @media screen and (max-width: 991px) {
+        line-height: 35px;
       }
     }
   }
 }
 
 // /////////////////////////////////////////////////////// STOCKBROKER END ///////////////////////////////////////////////////////////////
+
+// /////////////////////////////////////////////////////// FINANCIAL PLANNING WITH EXAMPLE START ///////////////////////////////////////////////////////////////
+
+#financial-planning-example {
+  h2 {
+    line-height: 40px;
+    letter-spacing: 1px;
+  }
+
+  p {
+    letter-spacing: -0.5px;
+  }
+}
+
+// /////////////////////////////////////////////////////// FINANCIAL PLANNING WITH EXAMPLE END ///////////////////////////////////////////////////////////////
 
 // /////////////////////////////////////////////////////// REVIEWS / COMMENTS START ///////////////////////////////////////////////////////////////
 

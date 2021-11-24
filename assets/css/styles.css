@@ -11,7 +11,7 @@
 
 @media screen and (max-width: 575px) {
   :root {
-    --section-padding: 0.5rem;
+    --section-padding: 1.5rem;
   }
 }
 
@@ -30,16 +30,6 @@
 
 ::selection {
   background-color: #ffc32c;
-}
-
-body {
-  padding-top: 160px;
-}
-
-@media screen and (max-width: 1495px) {
-  body {
-    padding-top: 110px;
-  }
 }
 
 button,
@@ -219,7 +209,8 @@ p {
 }
 
 #navbar {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -241,6 +232,22 @@ p {
   #navbar {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+}
+
+#financial-planning-abbr p {
+  position: relative;
+}
+
+#financial-planning-abbr p .play {
+  position: absolute;
+  left: -60px;
+  top: 6px;
+}
+
+@media screen and (max-width: 1515px) {
+  #financial-planning-abbr p .play {
+    display: none;
   }
 }
 
@@ -394,6 +401,64 @@ p {
   }
 }
 
+#stockbroker-shutdown .card h2 small {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1182px) {
+  #stockbroker-shutdown .card h2 small {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 1096px) {
+  #stockbroker-shutdown .card h2 small {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 1011px) {
+  #stockbroker-shutdown .card h2 small {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #stockbroker-shutdown .card h2 small {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  #stockbroker-shutdown .card h2 small {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 702px) {
+  #stockbroker-shutdown .card h2 small {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  #stockbroker-shutdown .card h2 small {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 616px) {
+  #stockbroker-shutdown .card h2 small {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #stockbroker-shutdown .card h2 small {
+    font-size: 23px;
+  }
+}
+
 #stockbroker-shutdown .card img,
 #stockbroker-shutdown .card svg {
   width: 100%;
@@ -456,12 +521,29 @@ p {
   padding: 0.75rem 0;
   padding-left: 1rem;
   font-size: 24px;
+  letter-spacing: 0.5px;
+  line-height: 45px;
 }
 
 @media screen and (max-width: 991px) {
   #stockbroker-shutdown ul li {
     font-size: 20px;
   }
+}
+
+@media screen and (max-width: 991px) {
+  #stockbroker-shutdown ul li {
+    line-height: 35px;
+  }
+}
+
+#financial-planning-example h2 {
+  line-height: 40px;
+  letter-spacing: 1px;
+}
+
+#financial-planning-example p {
+  letter-spacing: -0.5px;
 }
 
 #reviews .review-btns {
