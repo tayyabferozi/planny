@@ -202,9 +202,17 @@ p {
   }
 }
 
-// /////////////////////////////////////////////////////// NAVBAR END ///////////////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////////// NAVBAR END ////////////////////////////////////////////////////////////
 
-// /////////////////////////////////////////////////////// FINANCIAL PLANNING START ///////////////////////////////////////////////////////////////
+// ***********************************************************************************************************************************
+// ***********************************************************************************************************************************
+
+// /******************************************************* FINANCIAL PLANNING PAGE **************************************************
+
+// ***********************************************************************************************************************************
+// ***********************************************************************************************************************************
+
+// /////////////////////////////////////////////////////// FINANCIAL PLANNING START ///////////////////////////////////////////////////
 
 #financial-planning-abbr {
   abbr {
@@ -570,3 +578,140 @@ p {
 }
 
 // /////////////////////////////////////////////////////// NAVIGATE END ///////////////////////////////////////////////////////////////
+
+// ***********************************************************************************************************************************
+// ***********************************************************************************************************************************
+
+//  ************************************************* ALLOCATION CONFIRMATION PAGE ***************************************************
+
+// ***********************************************************************************************************************************
+// ***********************************************************************************************************************************
+
+#allocation-confirm {
+  .modal {
+    @media screen and (min-width: 575px) {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding-top: 8rem;
+    }
+
+    @media screen and (max-width: 575px) {
+      padding-top: 5rem;
+    }
+
+    .close {
+      @media screen and (min-width: 769px) {
+        display: none;
+      }
+    }
+
+    .modal-head {
+      @media screen and (max-width: 768px) {
+        justify-content: flex-start;
+        width: unset;
+      }
+    }
+
+    .modal-body {
+      @media screen and (max-width: 768px) {
+        .btns {
+          .btn-outlined-dark {
+            display: none;
+          }
+
+          .btn-bg-primary {
+            width: 328px;
+          }
+        }
+      }
+    }
+  }
+
+  .text-fields {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 575px) {
+      flex-direction: column;
+    }
+
+    .control {
+      width: 50%;
+
+      @media screen and (max-width: 575px) {
+        width: 100%;
+        margin: 1rem 0;
+      }
+
+      @media screen and (min-width: 576px) {
+        &:first-child {
+          padding-right: 1rem;
+        }
+
+        &:last-child {
+          padding-left: 1rem;
+        }
+      }
+
+      h4 {
+        font-size: 16px;
+        margin-bottom: 0.75rem;
+      }
+
+      input {
+        border-radius: 5px;
+        padding: 0.5rem;
+        width: 100%;
+        font-size: 32px;
+        text-align: center;
+        font-weight: 600;
+        border: 1px solid $color3;
+
+        &:focus {
+          outline: none;
+        }
+
+        &.active {
+          border-color: $color1;
+          box-shadow: 0 0 7px $color20;
+        }
+      }
+    }
+  }
+
+  .slidecontainer {
+    margin-top: 3rem;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 5rem;
+    }
+
+    @media screen and (max-width: 575px) {
+      margin-top: 2rem;
+    }
+  }
+
+  .btns {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 7rem;
+    }
+
+    @media screen and (max-width: 575px) {
+      margin-top: 5rem;
+    }
+
+    .btn {
+      margin: 0 1rem;
+    }
+  }
+}

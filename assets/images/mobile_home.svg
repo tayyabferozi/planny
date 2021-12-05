@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="Group_3574" data-name="Group 3574" transform="translate(-16 -46)">
+    <rect id="Rectangle_301" data-name="Rectangle 301" width="16" height="16" transform="translate(16 46)" fill="#fff" opacity="0"/>
+    <g id="Home_Button" data-name="Home Button" transform="translate(5.792 0.252)">
+      <g id="Group_1066" data-name="Group 1066" transform="translate(12.708 48.748)">
+        <g id="Group_1065" data-name="Group 1065" transform="translate(0 0)">
+          <path id="Path_327" data-name="Path 327" d="M-1275.648-549.193l6.071-5.552,5.929,5.552" transform="translate(1275.648 554.745)" fill="none" stroke="#31353f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path id="Path_328" data-name="Path 328" d="M-1216.19-385.048v6.966h8v-6.966" transform="translate(1218.19 389.082)" fill="none" stroke="#31353f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

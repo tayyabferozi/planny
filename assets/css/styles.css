@@ -657,4 +657,159 @@ p {
     margin-bottom: 1.5rem;
   }
 }
+
+@media screen and (min-width: 575px) {
+  #allocation-confirm .modal {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #allocation-confirm .modal {
+    padding-top: 8rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #allocation-confirm .modal {
+    padding-top: 5rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #allocation-confirm .modal .close {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #allocation-confirm .modal .modal-head {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: unset;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #allocation-confirm .modal .modal-body .btns .btn-outlined-dark {
+    display: none;
+  }
+  #allocation-confirm .modal .modal-body .btns .btn-bg-primary {
+    width: 328px;
+  }
+}
+
+#allocation-confirm .text-fields {
+  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 575px) {
+  #allocation-confirm .text-fields {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#allocation-confirm .text-fields .control {
+  width: 50%;
+}
+
+@media screen and (max-width: 575px) {
+  #allocation-confirm .text-fields .control {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  #allocation-confirm .text-fields .control:first-child {
+    padding-right: 1rem;
+  }
+  #allocation-confirm .text-fields .control:last-child {
+    padding-left: 1rem;
+  }
+}
+
+#allocation-confirm .text-fields .control h4 {
+  font-size: 16px;
+  margin-bottom: 0.75rem;
+}
+
+#allocation-confirm .text-fields .control input {
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 100%;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 600;
+  border: 1px solid #b2b2b2;
+}
+
+#allocation-confirm .text-fields .control input:focus {
+  outline: none;
+}
+
+#allocation-confirm .text-fields .control input.active {
+  border-color: #ffc32c;
+  -webkit-box-shadow: 0 0 7px rgba(255, 195, 44, 0.4);
+          box-shadow: 0 0 7px rgba(255, 195, 44, 0.4);
+}
+
+#allocation-confirm .slidecontainer {
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  #allocation-confirm .slidecontainer {
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #allocation-confirm .slidecontainer {
+    margin-top: 2rem;
+  }
+}
+
+#allocation-confirm .btns {
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  #allocation-confirm .btns {
+    margin-top: 7rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #allocation-confirm .btns {
+    margin-top: 5rem;
+  }
+}
+
+#allocation-confirm .btns .btn {
+  margin: 0 1rem;
+}
 /*# sourceMappingURL=styles.css.map */

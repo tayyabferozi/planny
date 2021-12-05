@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="delete" transform="translate(-2286 -428)">
+    <circle id="Ellipse_136" data-name="Ellipse 136" cx="12" cy="12" r="12" transform="translate(2286 428)" fill="red"/>
+    <path id="Path_420" data-name="Path 420" d="M539.173,365.679h-6.165a1.046,1.046,0,0,1-1.046-1.046l-.542-9.655h9.343l-.542,9.655A1.046,1.046,0,0,1,539.173,365.679Z" transform="translate(1761.691 80.767)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="Line_160" data-name="Line 160" y2="5.554" transform="translate(2295.811 438.059)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="Line_161" data-name="Line 161" y2="5.554" transform="translate(2297.796 438.059)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="Line_162" data-name="Line 162" y2="5.554" transform="translate(2299.78 438.059)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="Line_163" data-name="Line 163" x2="3.959" y2="0.018" transform="translate(2298.626 433.848)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="Line_164" data-name="Line 164" x2="3.958" transform="translate(2293 433.866)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Path_421" data-name="Path 421" d="M545.653,348.142a.825.825,0,0,1,1.65,0" transform="translate(1751.314 85.683)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>

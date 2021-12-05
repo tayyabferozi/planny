@@ -1,0 +1,3567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Planyy</title>
+    <meta charset="utf-8" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/animate.compat.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.js"
+    ></script>
+    <script defer type="text/javascript" src="./assets/js/common.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <script src="./js/Javascript.js" defer></script>
+  </head>
+
+  <body class="planyybody">
+    <div class="checking"><img src="./assets/images/check1.png" /></div>
+    <div class="planyy_contain">
+      <div class="col-12 p-0 mt-0">
+        <div class="card px-0 pt-0 pb-0">
+          <div class="row">
+            <div class="planyy_hed">
+              <div class="planyy_hed_p1">
+                <a href="index.html"
+                  ><h2>PLA<span>NYY</span></h2></a
+                >
+              </div>
+              <div class="planyy_hed_p2">
+                <div class="planyy_hed_p2_s1">
+                  <h5>Age</h5>
+                  <input type="text" name="" value="31" />
+                  <h5>Monthly Household Income</h5>
+                  <input type="text" name="" value="₹1,00,000" />
+                  <h5>Monthly Expenses</h5>
+                  <input type="text" name="" value="₹70,000" />
+                </div>
+              </div>
+              <div class="planyy_hed_p2 re">
+                <div class="planyy_hed_p2_s1">
+                  <h5>Monthly Investment</h5>
+                  <input type="text" name="" value="₹70,000" />
+                  <a href="#">+ADD EXITING FUNDS</a>
+                </div>
+              </div>
+              <div class="planyy_hed_p3 c3">
+                <div class="planyy_hed_p3_s1">
+                  <div class="processBarOuter">
+                    <div class="processBarInner"></div>
+                    <div class="processBar processBarHalfMove"></div>
+                    <div class="processBar processBarHalfLeft"></div>
+                    <div
+                      class="processBar processBarHalfRight not-display"
+                    ></div>
+                  </div>
+                  <img src="./assets/images/count_load.svg" /><span id="box"
+                    ><i class="total"></i
+                  ></span>
+                </div>
+                <div class="planyy_hed_p3_s2">
+                  <h5>Risk Tolerance Score</h5>
+                  <h3>Moderate</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row planyy_steps">
+      <div class="col-md-12 mx-0 p-0">
+        <form id="msform" class="xtmclass">
+          <!-- progressbar -->
+          <ul id="progressbar" class="xtmclass_ul">
+            <li class="active ac1" id="account">
+              <strong
+                ><span><i>1</i>Your Only Details Needed</span></strong
+              >
+            </li>
+            <li class="ac2" id="personal">
+              <strong
+                ><span><i>2</i>Your Risk Appetite</span></strong
+              >
+            </li>
+            <li class="ac3" id="payment">
+              <strong
+                ><span><i>3</i>Your Generated Financial Plan</span></strong
+              >
+            </li>
+            <li class="ac4" id="payment2">
+              <strong
+                ><span><i>4</i>Your Investment Plan</span></strong
+              >
+            </li>
+            <li class="ac5" id="confirm">
+              <strong
+                ><span><i>5</i>Your Performance Tracker</span></strong
+              >
+            </li>
+          </ul>
+          <!-- fieldsets -->
+          <div class="planyy_steps_data">
+            <fieldset
+              class="animate__animated animate__fadeInRight animate__faster"
+            >
+              <!-- <div style="width: 200px; height: 200px;"><canvas id="usersChart" width="1" height="1"></canvas></div> -->
+              <div class="steps_mobilemenu">
+                <div class="steps_mobilemenu_box">
+                  <div class="steps_mobilemenu_p1">
+                    <a href="#" data-toggle="modal" data-target="#exampleModal2"
+                      ><img src="./assets/images/mobile_menu.svg"
+                    /></a>
+                  </div>
+                  <div class="steps_mobilemenu_p2">
+                    <p><span>1</span>Your Only Details Needed</p>
+                  </div>
+                  <div class="steps_mobilemenu_p3">
+                    <a href="index.html"
+                      ><img src="./assets/images/mobile_home.svg"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="fieldset_data stps1">
+                <div class="sidebarx_p2 dif">
+                  <div class="sidebarx_p2_difbox">
+                    <label class="demo-label" for="textdemo">Age</label>
+                    <input
+                      type="text"
+                      name=""
+                      placeholder="30"
+                      id="textdemo"
+                      class="textdemo"
+                    />
+                  </div>
+                  <div class="sidebarx_p2_difbox">
+                    <label
+                      class="
+                        demo-label
+                        custom-tooltip-container
+                        service-section
+                      "
+                      for="textdemo1"
+                      >Monthly Household Income
+
+                      <div class="custom-tooltip" style="">
+                        Please provide a valid income details more than 2000
+
+                        <div class="arrow"></div>
+
+                        <div class="close">&times;</div>
+                      </div></label
+                    >
+                    <input
+                      type="text"
+                      name=""
+                      placeholder="₹3,00,000"
+                      id="textdemo1"
+                      class="textdemo"
+                    />
+                  </div>
+                  <div class="sidebarx_p2_difbox">
+                    <label class="demo-label" for="textdemo2"
+                      >Monthly Expenses</label
+                    >
+                    <input
+                      type="text"
+                      name=""
+                      placeholder="₹2,00,000"
+                      id="textdemo3"
+                      class="textdemo"
+                    />
+                  </div>
+                </div>
+              </div>
+              <span class="btnspnmakpay1"
+                ><input
+                  type="button"
+                  name="next"
+                  class="next action-button btns1 demo-label ac2 xop"
+                  value="Generate My Financial Plan"
+              /></span>
+            </fieldset>
+            <fieldset
+              class="animate__animated animate__fadeInRight animate__faster"
+            >
+              <div class="steps_mobilemenu">
+                <div class="steps_mobilemenu_box">
+                  <div class="steps_mobilemenu_p1">
+                    <a href="#" data-toggle="modal" data-target="#exampleModal2"
+                      ><img src="./assets/images/mobilemenusidearrow.svg"
+                    /></a>
+                  </div>
+                  <div class="steps_mobilemenu_p2">
+                    <p><span>2</span>Your Risk Appetite</p>
+                  </div>
+                  <div class="steps_mobilemenu_p3">
+                    <a href="index.html" classa="ac1"
+                      ><img src="./assets/images/mobile_home.svg"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="fieldset_data">
+                <div class="msomoderate">
+                  <div class="planyy_hed_p3 c3">
+                    <div class="planyy_hed_p3_s1">
+                      <div class="processBarOuter">
+                        <div class="processBarInner"></div>
+                        <div class="processBar processBarHalfMove"></div>
+                        <div class="processBar processBarHalfLeft"></div>
+                        <div
+                          class="processBar processBarHalfRight not-display"
+                        ></div>
+                      </div>
+                      <img src="./assets/images/count_load.svg" /><span id="box"
+                        ><i class="total"></i
+                      ></span>
+                    </div>
+                    <div class="planyy_hed_p3_s2">
+                      <h5>Risk Tolerance Score</h5>
+                      <h3>Moderate</h3>
+                    </div>
+                  </div>
+                  <div class="msomoderate_box">
+                    <img src="./assets/images/growth4.svg" />
+                    <label
+                      >Conservative<span></span>
+                      <p>minimize losses</p></label
+                    >
+                  </div>
+                  <div class="msomoderate_box active">
+                    <img src="./assets/images/growth5.svg" />
+                    <label
+                      >Moderate<span></span>
+                      <p>Balance of both</p></label
+                    >
+                  </div>
+                  <div class="msomoderate_box">
+                    <img src="./assets/images/growth6.svg" />
+                    <label
+                      >Aggressive<span></span>
+                      <p>Maximise Return</p></label
+                    >
+                  </div>
+                </div>
+              </div>
+              <span class="btnspnmakpay1"
+                ><input
+                  type="button"
+                  name="next"
+                  class="next action-button btns1 active ac3"
+                  value="Show My Financial Plan"
+              /></span>
+              <!-- <input type="button" name="previous" class="previous action-button-previous backarr ac1" value="❮" />   -->
+            </fieldset>
+            <fieldset
+              class="animate__animated animate__fadeInRight animate__faster"
+            >
+              <div class="steps_mobilemenu">
+                <div class="steps_mobilemenu_box">
+                  <div class="steps_mobilemenu_p1">
+                    <a href="#" data-toggle="modal" data-target="#exampleModal2"
+                      ><img src="./assets/images/mobilemenusidearrow.svg"
+                    /></a>
+                  </div>
+                  <div class="steps_mobilemenu_p2">
+                    <p><span>3</span>Your Generated Financial Plan</p>
+                  </div>
+                  <div class="steps_mobilemenu_p3">
+                    <a href="index.html" classa="ac2"
+                      ><img src="./assets/images/mobile_home.svg"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="msomobilestatics">
+                <div class="msomobilestatics_p1">
+                  <h4>Age</h4>
+                  <input type="text" name="" value="31" />
+                </div>
+                <div class="msomobilestatics_p2">
+                  <h4>Monthly <span>Household Income</span></h4>
+                  <input type="text" name="" value="₹1,00,000" />
+                </div>
+                <div class="msomobilestatics_p3">
+                  <h4>Monthly <span>Expenses</span></h4>
+                  <input type="text" name="" value="₹70,000" />
+                </div>
+              </div>
+              <a
+                data-toggle="modal"
+                data-target="#exampleModal1"
+                class="tas xhid1"
+              >
+                <img src="./assets/images/addgoalmobile.svg" />
+              </a>
+              <div class="fieldset_data">
+                <div class="msoskeletenload">
+                  <div class="msoskeletenload_fix">
+                    <div class="card-skeleton">
+                      <div class="animated-background">
+                        <div class="msoskeletenload_data">
+                          <div class="msoskeletenload_data_p1">
+                            <span></span>
+                          </div>
+                          <div class="msoskeletenload_data_p2">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="msoskeletenload_data_p3">
+                            <p></p>
+                            <h3><span></span> <i></i></h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-skeleton">
+                      <div class="animated-background">
+                        <div class="msoskeletenload_data">
+                          <div class="msoskeletenload_data_p1">
+                            <span></span>
+                          </div>
+                          <div class="msoskeletenload_data_p2">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="msoskeletenload_data_p3">
+                            <p></p>
+                            <h3><span></span> <i></i></h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-skeleton">
+                      <div class="animated-background">
+                        <div class="msoskeletenload_data">
+                          <div class="msoskeletenload_data_p1">
+                            <span></span>
+                          </div>
+                          <div class="msoskeletenload_data_p2">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="msoskeletenload_data_p3">
+                            <p></p>
+                            <h3><span></span> <i></i></h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-skeleton">
+                      <div class="animated-background">
+                        <div class="msoskeletenload_data">
+                          <div class="msoskeletenload_data_p1">
+                            <span></span>
+                          </div>
+                          <div class="msoskeletenload_data_p2">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="msoskeletenload_data_p3">
+                            <p></p>
+                            <h3><span></span> <i></i></h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-skeleton">
+                      <div class="animated-background">
+                        <div class="msoskeletenload_data">
+                          <div class="msoskeletenload_data_p1">
+                            <span></span>
+                          </div>
+                          <div class="msoskeletenload_data_p2">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="msoskeletenload_data_p3">
+                            <p></p>
+                            <h3><span></span> <i></i></h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-skeleton">
+                      <div class="animated-background">
+                        <div class="msoskeletenload_data">
+                          <div class="msoskeletenload_data_p1">
+                            <span></span>
+                          </div>
+                          <div class="msoskeletenload_data_p2">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <div class="msoskeletenload_data_p3">
+                            <p></p>
+                            <h3><span></span> <i></i></h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="Generated_Financial_plans">
+                  <div class="Generated_Financial_plans_left_title">
+                    <div
+                      class="Generated_Financial_plans_left_title_box xhid1data"
+                    >
+                      <h3>Essential Goals</h3>
+                    </div>
+                  </div>
+                  <div class="Generated_Financial_plans_data msoofpd">
+                    <div class="Generated_Financial_plans_data_box">
+                      <div class="Generated_Financial_plans_data_box_p1">
+                        <img src="./assets/images/emergency.svg" />
+                      </div>
+                      <div class="Generated_Financial_plans_data_box_p2">
+                        <h3>EMERGENCY FUND</h3>
+                        <h2>₹3.2<span>lacs</span></h2>
+                        <p>amount needed</p>
+                      </div>
+                      <div class="Generated_Financial_plans_data_box_p3">
+                        <!-- <a href="#"
+                          ><img src="./assets/images/delete-1.svg" /><img
+                            src="./assets/images/delete.svg"
+                        /></a>
+                        <a href="#"
+                          ><img src="./assets/images/edit-1.svg" /><img
+                            src="./assets/images/edit.svg"
+                        /></a> -->
+                        <a data-toggle="modal" data-target="#exampleModalx"
+                          ><img
+                            style="opacity: 1"
+                            src="./assets/images/menu.svg"
+                        /></a>
+                      </div>
+                      <div class="Generated_Financial_plans_data_box_p4">
+                        <div class="progress">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width: 0%"
+                            aria-valuenow="0"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                            0%
+                          </div>
+                        </div>
+                      </div>
+                      <div class="Generated_Financial_plans_data_box_p5">
+                        <span>2021</span>
+                        <span>In 3 years</span>
+                      </div>
+                      <!-- <div class="Generated_Financial_plans_data_box_p6">
+                                        <p>Monthly Retirement withdrawal <span>₹1,45,000</span></p>
+                                      </div> -->
+                    </div>
+                    <div
+                      class="Generated_Financial_plans_data_box removeplnbox1"
+                    >
+                      <div class="Generated_Financial_plans_data_box_p1">
+                        <img src="./assets/images/retirment.svg" />
+                      </div>
+                      <div class="Generated_Financial_plans_data_box_p2">
+                        <h3>RETIREMENT</h3>
+                        <h2>₹3.5<span>cr</span></h2>
+                        <p>
+                          amount needed <i>Age At<b>60</b></i>
+                        </p>
+                      </div>
+                      <div class="Generated_Financial_plans_data_box_p3">
+                        <!-- <a href="#" class="removeplnbox"
+                          ><img src="./assets/images/delete-1.svg" /><img
+                            src="./assets/images/delete.svg"
+                        /></a>
+                        <a data-toggle="modal" data-target="#exampleModal"
+                          ><img src="./assets/images/edit-1.svg" /><img
+                            src="./assets/images/edit.svg"
+                        /></a> -->
+                        <a data-toggle="modal" data-target="#exampleModalx"
+                          ><img
+                            style="opacity: 1"
+                            src="./assets/images/menu.svg"
+                        /></a>
+                      </div>
+                      <div class="Generated_Financial_plans_data_box_p4">
+                        <div class="progress">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width: 0%"
+                            aria-valuenow="0"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                            0%
+                          </div>
+                        </div>
+                      </div>
+                      <div class="Generated_Financial_plans_data_box_p5">
+                        <span>2021</span>
+                        <span>In 32 years</span>
+                      </div>
+                      <div class="Generated_Financial_plans_data_box_p6">
+                        <p>
+                          Monthly Retirement Withdrawal <span>₹1,45,000</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="Generated_Financial_plans msobdt">
+                  <div class="msobdt1"></div>
+                  <div class="Generated_Financial_plans_left_title">
+                    <div
+                      class="Generated_Financial_plans_left_title_box xhid1data"
+                    >
+                      <h3>Lifestyle Goals</h3>
+                    </div>
+                  </div>
+                  <div class="Generated_Financial_plans_data">
+                    <div class="Generated_Financial_plans_data_box">
+                      <div class="Generated_Financial_plans_data_box_p1">
+                        <img src="./assets/images/car.svg" />
+                      </div>
+                      <div class="Generated_Financial_plans_data_box_p2">
+                        <h3>Car</h3>
+                        <h2>₹2.6<span>lacs</span></h2>
+                        <p>dp amount needed</p>
+                      </div>
+                      <div class="Generated_Financial_plans_data_box_p3">
+                        <!-- <a href="#"
+                          ><img src="./assets/images/delete-1.svg" /><img
+                            src="./assets/images/delete.svg"
+                        /></a>
+                        <a href="#"
+                          ><img src="./assets/images/edit-1.svg" /><img
+                            src="./assets/images/edit.svg"
+                        /></a> -->
+                        <a data-toggle="modal" data-target="#exampleModalx"
+                          ><img
+                            style="opacity: 1"
+                            src="./assets/images/menu.svg"
+                        /></a>
+                      </div>
+                      <div class="Generated_Financial_plans_data_box_p4">
+                        <div class="progress">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width: 0%"
+                            aria-valuenow="0"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                            0%
+                          </div>
+                        </div>
+                      </div>
+                      <div class="Generated_Financial_plans_data_box_p5">
+                        <span>2021</span>
+                        <span>In 2 years</span>
+                      </div>
+                      <div class="Generated_Financial_plans_data_box_p6">
+                        <p>Total Car Value <span>₹12 Lacs</span></p>
+                      </div>
+                    </div>
+                    <div class="Generated_Financial_plans_data_box">
+                      <div class="Generated_Financial_plans_data_box_p1">
+                        <img src="./assets/images/forhome.svg" />
+                      </div>
+                      <div class="Generated_Financial_plans_data_box_p2">
+                        <h3>home</h3>
+                        <h2>₹11<span>lacs</span></h2>
+                        <p>dp amount needed</p>
+                      </div>
+                      <div class="Generated_Financial_plans_data_box_p3">
+                        <!-- <a href="#"
+                          ><img src="./assets/images/delete-1.svg" /><img
+                            src="./assets/images/delete.svg"
+                        /></a>
+                        <a href="#"
+                          ><img src="./assets/images/edit-1.svg" /><img
+                            src="./assets/images/edit.svg"
+                        /></a> -->
+                        <a data-toggle="modal" data-target="#exampleModalx"
+                          ><img
+                            style="opacity: 1"
+                            src="./assets/images/menu.svg"
+                        /></a>
+                      </div>
+                      <div class="Generated_Financial_plans_data_box_p4">
+                        <div class="progress">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width: 0%"
+                            aria-valuenow="0"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
+                            0%
+                          </div>
+                        </div>
+                      </div>
+                      <div class="Generated_Financial_plans_data_box_p5">
+                        <span>2021</span>
+                        <span>In 4 years</span>
+                      </div>
+                      <div class="Generated_Financial_plans_data_box_p6">
+                        <p>Total Home Value <span>₹55 lacs</span></p>
+                      </div>
+                    </div>
+                    <div class="Generated_Financial_plans_data_addbox">
+                      <a
+                        data-toggle="modal"
+                        data-target="#exampleModal1"
+                        class="xhid1"
+                      >
+                        <img src="./assets/images/addgoals.svg" />
+                        <!-- <p>Add Goals</p> -->
+                      </a>
+                    </div>
+                    <div class="Generated_Financial_plans_data_addbox_btn">
+                      <a
+                        data-toggle="modal"
+                        data-target="#exampleModal1"
+                        class="xhid1"
+                      >
+                        <img src="./assets/images/addgoalmobile2.svg" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="btnspnmakpay1"
+                ><input
+                  type="button"
+                  name="next"
+                  class="next action-button btns1 active st1 ac4"
+                  value="Help Me Achieve My Financial Plan"
+              /></span>
+              <!-- <input type="button" name="previous" class="previous action-button-previous backarr ac2" value="❮" />   -->
+            </fieldset>
+            <fieldset
+              class="animate__animated animate__fadeInRight animate__faster"
+            >
+              <div class="steps_mobilemenu">
+                <div class="steps_mobilemenu_box">
+                  <div class="steps_mobilemenu_p1">
+                    <a href="#" data-toggle="modal" data-target="#exampleModal2"
+                      ><img src="./assets/images/mobilemenusidearrow.svg"
+                    /></a>
+                  </div>
+                  <div class="steps_mobilemenu_p2">
+                    <p><span>4</span>Your Investment Plan</p>
+                  </div>
+                  <div class="steps_mobilemenu_p3">
+                    <a href="index.html" classa="ac3"
+                      ><img src="./assets/images/mobile_home.svg"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fieldset_data st1">
+                <div class="msochartdata">
+                  <div class="addextisit">
+                    <h4>Monthly Investment</h4>
+                    <h3>₹30,000</h3>
+                    <a href="#">+ ADD EXITING FUNDS</a>
+                  </div>
+
+                  <div class="msochartdata_p1">
+                    <div class="msopiechartlabel_data_label">
+                      <h4>Investment distribution model</h4>
+                    </div>
+                    <div class="msopiechartlabel_data">
+                      <div class="msopiechartlabel1">
+                        <h3>7%</h3>
+                        <p>SAVINGS ACCOUNT</p>
+                      </div>
+                      <div class="msopiechartlabel1">
+                        <h3>13%</h3>
+                        <p>FIXED DEPOSITS</p>
+                      </div>
+                      <div class="msopiechartlabel1">
+                        <h3>80%</h3>
+                        <p>MUTUAL FUNDS</p>
+                      </div>
+                    </div>
+                    <div class="movecanvaspie">
+                      <canvas id="pieChart1"></canvas>
+                    </div>
+                  </div>
+                  <div class="msochartdata_p2">
+                    <div id="app">
+                      <slider-pips
+                        class="cute"
+                        :min="20"
+                        :max="60"
+                        :step="1"
+                        labels
+                        floats
+                        range
+                        :values="[31]"
+                      ></slider-pips>
+                    </div>
+                    <div class="msoinvestproduct">
+                      <h3 class="msoinproh">
+                        Recommended <span>investment products</span>
+                        <a data-toggle="modal" data-target="#exampleModalxpand"
+                          >EXPAND VIEW</a
+                        >
+                      </h3>
+                      <section id="tabs" class="project-tab">
+                        <div class="containertx">
+                          <div class="rowtx">
+                            <div class="col-md-12">
+                              <nav>
+                                <div
+                                  class="nav nav-tabs nav-fill"
+                                  id="nav-tab"
+                                  role="tablist"
+                                >
+                                  <a
+                                    class="nav-item nav-link active"
+                                    id="nav-home-tabx"
+                                    data-toggle="tab"
+                                    href="#nav-homex"
+                                    role="tab"
+                                    aria-controls="nav-homex"
+                                    aria-selected="true"
+                                    >All</a
+                                  >
+                                  <a
+                                    class="nav-item nav-link"
+                                    id="nav-profile-tabx"
+                                    data-toggle="tab"
+                                    href="#nav-profilex"
+                                    role="tab"
+                                    aria-controls="nav-profilex"
+                                    aria-selected="false"
+                                    >Mutual Funds</a
+                                  >
+                                  <a
+                                    class="nav-item nav-link"
+                                    id="nav-contact-tabx"
+                                    data-toggle="tab"
+                                    href="#nav-contactx"
+                                    role="tab"
+                                    aria-controls="nav-contactx"
+                                    aria-selected="false"
+                                    >Fixed Deposits</a
+                                  >
+                                  <a
+                                    class="nav-item nav-link"
+                                    id="nav-contact-tab1x"
+                                    data-toggle="tab"
+                                    href="#nav-contact1x"
+                                    role="tab"
+                                    aria-controls="nav-contact2x"
+                                    aria-selected="false"
+                                    >Saving A/C</a
+                                  >
+                                </div>
+                              </nav>
+                              <div class="tab-content" id="nav-tabContent">
+                                <div
+                                  class="tab-pane fade show active"
+                                  id="nav-homex"
+                                  role="tabpanel"
+                                  aria-labelledby="nav-home-tabx"
+                                >
+                                  <div class="msoinvestproduct_box">
+                                    <div class="msoinvestproduct_box_left">
+                                      <img
+                                        src="./assets/images/bank_logo.svg"
+                                      />
+                                    </div>
+                                    <div class="msoinvestproduct_box_right">
+                                      <div
+                                        class="msoinvestproduct_box_right_p1"
+                                      >
+                                        <div
+                                          class="
+                                            msoinvestproduct_box_right_p1_sem1
+                                          "
+                                        >
+                                          <h5>
+                                            Axis banking and financial Services
+                                            growth direct plan 2021
+                                          </h5>
+                                          <span class="ratings"
+                                            ><img
+                                              src="./assets/images/star.svg"
+                                            />5</span
+                                          >
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="msoinvestproduct_box_right_p2"
+                                      >
+                                        <span>
+                                          <h5>Allocation</h5>
+                                          <h3>30%</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Amount</h5>
+                                          <h3>₹9,000</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Gain</h5>
+                                          <h3>-</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Frequency</h5>
+                                          <h3><a href="#">MONTHLY</a></h3>
+                                        </span>
+                                        <span>
+                                          <h5>RETURNS(1Y)</h5>
+                                          <h3>
+                                            9.1%
+                                            <img
+                                              src="././assets/images/green-triangle.svg"
+                                              alt="triangle"
+                                            />
+                                          </h3>
+                                        </span>
+                                      </div>
+                                      <div
+                                        class="msoinvestproduct_box_right_p3"
+                                      >
+                                        <div
+                                          class="
+                                            msoinvestproduct_box_right_p3_s1
+                                          "
+                                        >
+                                          <a href="#"></a>
+                                          <a href="#"></a>
+                                          <a href="#"></a>
+                                          <a href="#"></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="msoinvestproduct_box">
+                                    <div class="msoinvestproduct_box_left">
+                                      <img
+                                        src="./assets/images/bank_logo.svg"
+                                      />
+                                    </div>
+                                    <div class="msoinvestproduct_box_right">
+                                      <div
+                                        class="msoinvestproduct_box_right_p1"
+                                      >
+                                        <div
+                                          class="
+                                            msoinvestproduct_box_right_p1_sem1
+                                          "
+                                        >
+                                          <h5>
+                                            Axis banking and financial Services
+                                            growth direct plan 2021
+                                          </h5>
+                                          <span class="ratings"
+                                            ><img
+                                              src="./assets/images/star.svg"
+                                            />5</span
+                                          >
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="msoinvestproduct_box_right_p2"
+                                      >
+                                        <span>
+                                          <h5>Allocation</h5>
+                                          <h3>30%</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Amount</h5>
+                                          <h3>₹9,000</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Gain</h5>
+                                          <h3>-</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Frequency</h5>
+                                          <h3><a href="#">MONTHLY</a></h3>
+                                        </span>
+                                        <span>
+                                          <h5>RETURNS(1Y)</h5>
+                                          <h3>
+                                            9.1%
+                                            <img
+                                              src="././assets/images/green-triangle.svg"
+                                              alt="triangle"
+                                            />
+                                          </h3>
+                                        </span>
+                                      </div>
+                                      <div
+                                        class="msoinvestproduct_box_right_p3"
+                                      >
+                                        <div
+                                          class="
+                                            msoinvestproduct_box_right_p3_s1
+                                          "
+                                        >
+                                          <a href="#"></a>
+                                          <a href="#"></a>
+                                          <a href="#"></a>
+                                          <a href="#"></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="msoinvestproduct_box">
+                                    <div class="msoinvestproduct_box_left">
+                                      <img
+                                        src="./assets/images/bank_logo.svg"
+                                      />
+                                    </div>
+                                    <div class="msoinvestproduct_box_right">
+                                      <div
+                                        class="msoinvestproduct_box_right_p1"
+                                      >
+                                        <div
+                                          class="
+                                            msoinvestproduct_box_right_p1_sem1
+                                          "
+                                        >
+                                          <h5>
+                                            Axis banking and financial Services
+                                            growth direct plan 2021
+                                          </h5>
+                                          <span class="ratings"
+                                            ><img
+                                              src="./assets/images/star.svg"
+                                            />5</span
+                                          >
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="msoinvestproduct_box_right_p2"
+                                      >
+                                        <span>
+                                          <h5>Allocation</h5>
+                                          <h3>30%</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Amount</h5>
+                                          <h3>₹9,000</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Gain</h5>
+                                          <h3>-</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Frequency</h5>
+                                          <h3><a href="#">MONTHLY</a></h3>
+                                        </span>
+                                        <span>
+                                          <h5>RETURNS(1Y)</h5>
+                                          <h3>
+                                            9.1%
+                                            <img
+                                              src="././assets/images/green-triangle.svg"
+                                              alt="triangle"
+                                            />
+                                          </h3>
+                                        </span>
+                                      </div>
+                                      <div
+                                        class="msoinvestproduct_box_right_p3"
+                                      >
+                                        <div
+                                          class="
+                                            msoinvestproduct_box_right_p3_s1
+                                          "
+                                        >
+                                          <a href="#"></a>
+                                          <a href="#"></a>
+                                          <a href="#"></a>
+                                          <a href="#"></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="msoinvestproduct_box">
+                                    <div class="msoinvestproduct_box_left">
+                                      <img
+                                        src="./assets/images/bank_logo.svg"
+                                      />
+                                    </div>
+                                    <div class="msoinvestproduct_box_right">
+                                      <div
+                                        class="msoinvestproduct_box_right_p1"
+                                      >
+                                        <div
+                                          class="
+                                            msoinvestproduct_box_right_p1_sem1
+                                          "
+                                        >
+                                          <h5>
+                                            Axis banking and financial Services
+                                            growth direct plan 2021
+                                          </h5>
+                                          <span class="ratings"
+                                            ><img
+                                              src="./assets/images/star.svg"
+                                            />5</span
+                                          >
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="msoinvestproduct_box_right_p2"
+                                      >
+                                        <span>
+                                          <h5>Allocation</h5>
+                                          <h3>30%</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Amount</h5>
+                                          <h3>₹9,000</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Gain</h5>
+                                          <h3>-</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Frequency</h5>
+                                          <h3><a href="#">MONTHLY</a></h3>
+                                        </span>
+                                        <span>
+                                          <h5>RETURNS(1Y)</h5>
+                                          <h3>
+                                            9.1%
+                                            <img
+                                              src="././assets/images/green-triangle.svg"
+                                              alt="triangle"
+                                            />
+                                          </h3>
+                                        </span>
+                                      </div>
+                                      <div
+                                        class="msoinvestproduct_box_right_p3"
+                                      >
+                                        <div
+                                          class="
+                                            msoinvestproduct_box_right_p3_s1
+                                          "
+                                        >
+                                          <a href="#"></a>
+                                          <a href="#"></a>
+                                          <a href="#"></a>
+                                          <a href="#"></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="tab-pane fade"
+                                  id="nav-profilex"
+                                  role="tabpanel"
+                                  aria-labelledby="nav-profile-tabx"
+                                ></div>
+                                <div
+                                  class="tab-pane fade"
+                                  id="nav-contactx"
+                                  role="tabpanel"
+                                  aria-labelledby="nav-contact-tabx"
+                                ></div>
+                                <div
+                                  class="tab-pane fade"
+                                  id="nav-contact1x"
+                                  role="tabpanel"
+                                  aria-labelledby="nav-contact-tab1x"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="btnspnmakpay"
+                ><input
+                  type="button"
+                  name="next"
+                  class="next action-button btns1 active st1 ex"
+                  data-toggle="modal"
+                  data-target="#exampleModal3"
+                  value="Ready To Invest"
+              /></span>
+              <!-- <input type="button" name="previous" class="previous action-button-previous backarr" value="❮" /> -->
+            </fieldset>
+
+            <fieldset
+              class="animate__animated animate__fadeInRight animate__faster"
+            >
+              <div class="steps_mobilemenu">
+                <div class="steps_mobilemenu_box">
+                  <div class="steps_mobilemenu_p1">
+                    <a href="#" data-toggle="modal" data-target="#exampleModal2"
+                      ><img src="./assets/images/mobilemenusidearrow.svg"
+                    /></a>
+                  </div>
+                  <div class="steps_mobilemenu_p2">
+                    <p><span>5</span>Your Performance Tracker</p>
+                  </div>
+                  <div class="steps_mobilemenu_p3">
+                    <a href="index.html" classa="ac4"
+                      ><img src="./assets/images/mobile_home.svg"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="fieldset_data st1 st2">
+                <div class="msochartdata">
+                  <div class="msochartdata_p1">
+                    <div class="withdrawalmony">
+                      <div class="withdrawalmonyrisk dn">
+                        <div class="planyy_hed_p3 c3">
+                          <div class="planyy_hed_p3_s1">
+                            <div class="processBarOuter">
+                              <div class="processBarInner"></div>
+                              <div class="processBar processBarHalfMove"></div>
+                              <div class="processBar processBarHalfLeft"></div>
+                              <div
+                                class="
+                                  processBar
+                                  processBarHalfRight
+                                  not-display
+                                "
+                              ></div>
+                            </div>
+                            <img src="./assets/images/count_load.svg" /><span
+                              id="box"
+                              ><i class="total"></i
+                            ></span>
+                          </div>
+                          <div class="planyy_hed_p3_s2">
+                            <h5>Risk Tolerance Score</h5>
+                            <h3>Moderate</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="withdrawalmony_p1">
+                        <div class="withdrawalmony_box1">
+                          <div class="withdrawalmony_p1_s1">
+                            <p>Withdrawal Money</p>
+                            <h3>
+                              ₹0.0<span
+                                >CR<img src="./assets/images/prof.svg"
+                              /></span>
+                            </h3>
+                          </div>
+                          <div class="withdrawalmony_p1_s2">
+                            <img src="./assets/images/Withdrawal_Money.svg" />
+                          </div>
+                        </div>
+                        <div class="withdrawalmony_box2">
+                          <div class="withdrawalmony_p1_s1">
+                            <p>Your Current Status</p>
+                            <h3>On Track</h3>
+                          </div>
+                          <div class="withdrawalmony_p1_s2">
+                            <img src="./assets/images/current_s.svg" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="withdrawalmony_p2">
+                        <ul
+                          id="myTabs"
+                          class="nav nav-pills nav-justified"
+                          role="tablist"
+                          data-tabs="tabs"
+                        >
+                          <li>
+                            <a
+                              class="active show"
+                              href="#Commentary"
+                              data-toggle="tab"
+                              >Actual Investment</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#Videos" data-toggle="tab"
+                              >Projected Investment</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#Events" data-toggle="tab"
+                              >Target Investment</a
+                            >
+                          </li>
+                        </ul>
+                        <div class="tab-content">
+                          <div
+                            role="tabpanel"
+                            class="tab-pane fade in active show"
+                            id="Commentary"
+                          >
+                            <div class="msklasd">
+                              <div class="mskalasd1">
+                                <h5>Principal Invested</h5>
+                                <h3>₹ 0.0<span>CR</span></h3>
+                              </div>
+                              <div class="mskalasd1">
+                                <h5>Current Value</h5>
+                                <h3>₹ 0.0<span>CR</span></h3>
+                              </div>
+                              <div class="mskalasd1">
+                                <h5>Current ROI</h5>
+                                <h3>0%</h3>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            role="tabpanel"
+                            class="tab-pane fade"
+                            id="Videos"
+                          >
+                            Data
+                          </div>
+                          <div
+                            role="tabpanel"
+                            class="tab-pane fade"
+                            id="Events"
+                          >
+                            Data
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="msopiechartlabel_data_label_chartreleted">
+                      <div class="msopiechartlabel_data_label">
+                        <h4>Investment Distribution Model</h4>
+                      </div>
+                      <div class="msopiechartlabel_data">
+                        <div class="msopiechartlabel1">
+                          <h3>7%</h3>
+                          <p>SAVINGS ACCOUNT</p>
+                        </div>
+                        <div class="msopiechartlabel1">
+                          <h3>13%</h3>
+                          <p>FIXED DEPOSITS</p>
+                        </div>
+                        <div class="msopiechartlabel1">
+                          <h3>80%</h3>
+                          <p>MUTUAL FUNDS</p>
+                        </div>
+                      </div>
+                      <div class="movecanvaspie">
+                        <canvas id="pieChart2"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="msochartdata_p2">
+                    <div class="msochartdata_p2_rslider">
+                      <img src="./assets/images/rangeslider.svg" />
+                    </div>
+                    <!-- <div id="app">
+                                      <slider-pips class="cute" :min="20" :max="60" :step=1 labels floats range :values="[31]"></slider-pips>
+                                    </div> -->
+                    <div class="msoinvestproduct">
+                      <h3 class="msoinproh">
+                        My <span>investments</span
+                        ><a data-toggle="modal" data-target="#exampleModalxpand"
+                          >EXPAND VIEW</a
+                        >
+                      </h3>
+                      <section id="tabs" class="project-tab">
+                        <div class="containertx">
+                          <div class="rowtx">
+                            <div class="col-md-12">
+                              <nav>
+                                <div
+                                  class="nav nav-tabs nav-fill"
+                                  id="nav-tab"
+                                  role="tablist"
+                                >
+                                  <a
+                                    class="nav-item nav-link active"
+                                    id="nav-home-taby"
+                                    data-toggle="tab"
+                                    href="#nav-homey"
+                                    role="tab"
+                                    aria-controls="nav-homey"
+                                    aria-selected="true"
+                                    >All</a
+                                  >
+                                  <a
+                                    class="nav-item nav-link"
+                                    id="nav-profile-taby"
+                                    data-toggle="tab"
+                                    href="#nav-profiley"
+                                    role="tab"
+                                    aria-controls="nav-profiley"
+                                    aria-selected="false"
+                                    >Mutual Funds</a
+                                  >
+                                  <a
+                                    class="nav-item nav-link"
+                                    id="nav-contact-taby"
+                                    data-toggle="tab"
+                                    href="#nav-contacty"
+                                    role="tab"
+                                    aria-controls="nav-contacty"
+                                    aria-selected="false"
+                                    >Fixed Deposits</a
+                                  >
+                                  <a
+                                    class="nav-item nav-link"
+                                    id="nav-contact-tab1y"
+                                    data-toggle="tab"
+                                    href="#nav-contact1y"
+                                    role="tab"
+                                    aria-controls="nav-contact2y"
+                                    aria-selected="false"
+                                    >Saving A/C</a
+                                  >
+                                </div>
+                              </nav>
+                              <div class="tab-content" id="nav-tabContent">
+                                <div
+                                  class="tab-pane fade show active"
+                                  id="nav-homey"
+                                  role="tabpanel"
+                                  aria-labelledby="nav-home-taby"
+                                >
+                                  <div class="msoinvestproduct_box">
+                                    <div class="msoinvestproduct_box_left">
+                                      <img
+                                        src="./assets/images/bank_logo.svg"
+                                      />
+                                    </div>
+                                    <div class="msoinvestproduct_box_right">
+                                      <div
+                                        class="msoinvestproduct_box_right_p1"
+                                      >
+                                        <div
+                                          class="
+                                            msoinvestproduct_box_right_p1_sem1
+                                          "
+                                        >
+                                          <h5>
+                                            Axis banking and financial Services
+                                            growth direct plan
+                                          </h5>
+                                        </div>
+                                        <div
+                                          class="
+                                            msoinvestproduct_box_right_p1_sem2
+                                          "
+                                        >
+                                          <h5>
+                                            RETURNS:<span
+                                              ><img
+                                                src="./assets/images/star.svg"
+                                              />5</span
+                                            >
+                                          </h5>
+                                          <h6>
+                                            <span>1Yr:</span><i>14.5%</i
+                                            ><span>3Yr:</span><i>10.4%</i
+                                            ><span>5Yr:</span><i>17.7%</i>
+                                          </h6>
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="msoinvestproduct_box_right_p2"
+                                      >
+                                        <span>
+                                          <h5>Allocation</h5>
+                                          <h3>30%</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Amount</h5>
+                                          <h3>₹9,000</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Gains</h5>
+                                          <h3>-</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Actual ROI</h5>
+                                          <h3>-</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Frequency</h5>
+                                          <h3><a href="#">MONTHLY</a></h3>
+                                        </span>
+                                      </div>
+                                      <div
+                                        class="msoinvestproduct_box_right_p3"
+                                      >
+                                        <div
+                                          class="
+                                            msoinvestproduct_box_right_p3_s1
+                                          "
+                                        >
+                                          <a href="#"></a>
+                                          <a href="#"></a>
+                                          <a href="#"></a>
+                                          <a href="#"></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="msoinvestproduct_box">
+                                    <div class="msoinvestproduct_box_left">
+                                      <img
+                                        src="./assets/images/bank_logo.svg"
+                                      />
+                                    </div>
+                                    <div class="msoinvestproduct_box_right">
+                                      <div
+                                        class="msoinvestproduct_box_right_p1"
+                                      >
+                                        <div
+                                          class="
+                                            msoinvestproduct_box_right_p1_sem1
+                                          "
+                                        >
+                                          <h5>
+                                            Axis banking and financial Services
+                                            growth direct plan
+                                          </h5>
+                                        </div>
+                                        <div
+                                          class="
+                                            msoinvestproduct_box_right_p1_sem2
+                                          "
+                                        >
+                                          <h5>
+                                            RETURNS:<span
+                                              ><img
+                                                src="./assets/images/star.svg"
+                                              />5</span
+                                            >
+                                          </h5>
+                                          <h6>
+                                            <span>1Yr:</span><i>14.5%</i
+                                            ><span>3Yr:</span><i>10.4%</i
+                                            ><span>5Yr:</span><i>17.7%</i>
+                                          </h6>
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="msoinvestproduct_box_right_p2"
+                                      >
+                                        <span>
+                                          <h5>Allocation</h5>
+                                          <h3>30%</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Amount</h5>
+                                          <h3>₹9,000</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Gains</h5>
+                                          <h3>-</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Actual ROI</h5>
+                                          <h3>-</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Frequency</h5>
+                                          <h3><a href="#">MONTHLY</a></h3>
+                                        </span>
+                                      </div>
+                                      <div
+                                        class="msoinvestproduct_box_right_p3"
+                                      >
+                                        <div
+                                          class="
+                                            msoinvestproduct_box_right_p3_s1
+                                          "
+                                        >
+                                          <a href="#"></a>
+                                          <a href="#"></a>
+                                          <a href="#"></a>
+                                          <a href="#"></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="msoinvestproduct_box">
+                                    <div class="msoinvestproduct_box_left">
+                                      <img
+                                        src="./assets/images/bank_logo.svg"
+                                      />
+                                    </div>
+                                    <div class="msoinvestproduct_box_right">
+                                      <div
+                                        class="msoinvestproduct_box_right_p1"
+                                      >
+                                        <div
+                                          class="
+                                            msoinvestproduct_box_right_p1_sem1
+                                          "
+                                        >
+                                          <h5>
+                                            Axis banking and financial Services
+                                            growth direct plan
+                                          </h5>
+                                        </div>
+                                        <div
+                                          class="
+                                            msoinvestproduct_box_right_p1_sem2
+                                          "
+                                        >
+                                          <h5>
+                                            RETURNS:<span
+                                              ><img
+                                                src="./assets/images/star.svg"
+                                              />5</span
+                                            >
+                                          </h5>
+                                          <h6>
+                                            <span>1Yr:</span><i>14.5%</i
+                                            ><span>3Yr:</span><i>10.4%</i
+                                            ><span>5Yr:</span><i>17.7%</i>
+                                          </h6>
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="msoinvestproduct_box_right_p2"
+                                      >
+                                        <span>
+                                          <h5>Allocation</h5>
+                                          <h3>30%</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Amount</h5>
+                                          <h3>₹9,000</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Gains</h5>
+                                          <h3>-</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Actual ROI</h5>
+                                          <h3>-</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Frequency</h5>
+                                          <h3><a href="#">MONTHLY</a></h3>
+                                        </span>
+                                      </div>
+                                      <div
+                                        class="msoinvestproduct_box_right_p3"
+                                      >
+                                        <div
+                                          class="
+                                            msoinvestproduct_box_right_p3_s1
+                                          "
+                                        >
+                                          <a href="#"></a>
+                                          <a href="#"></a>
+                                          <a href="#"></a>
+                                          <a href="#"></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="msoinvestproduct_box">
+                                    <div class="msoinvestproduct_box_left">
+                                      <img
+                                        src="./assets/images/bank_logo.svg"
+                                      />
+                                    </div>
+                                    <div class="msoinvestproduct_box_right">
+                                      <div
+                                        class="msoinvestproduct_box_right_p1"
+                                      >
+                                        <div
+                                          class="
+                                            msoinvestproduct_box_right_p1_sem1
+                                          "
+                                        >
+                                          <h5>
+                                            Axis banking and financial Services
+                                            growth direct plan
+                                          </h5>
+                                        </div>
+                                        <div
+                                          class="
+                                            msoinvestproduct_box_right_p1_sem2
+                                          "
+                                        >
+                                          <h5>
+                                            RETURNS:<span
+                                              ><img
+                                                src="./assets/images/star.svg"
+                                              />5</span
+                                            >
+                                          </h5>
+                                          <h6>
+                                            <span>1Yr:</span><i>14.5%</i
+                                            ><span>3Yr:</span><i>10.4%</i
+                                            ><span>5Yr:</span><i>17.7%</i>
+                                          </h6>
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="msoinvestproduct_box_right_p2"
+                                      >
+                                        <span>
+                                          <h5>Allocation</h5>
+                                          <h3>30%</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Amount</h5>
+                                          <h3>₹9,000</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Gains</h5>
+                                          <h3>-</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Actual ROI</h5>
+                                          <h3>-</h3>
+                                        </span>
+                                        <span>
+                                          <h5>Frequency</h5>
+                                          <h3><a href="#">MONTHLY</a></h3>
+                                        </span>
+                                      </div>
+                                      <div
+                                        class="msoinvestproduct_box_right_p3"
+                                      >
+                                        <div
+                                          class="
+                                            msoinvestproduct_box_right_p3_s1
+                                          "
+                                        >
+                                          <a href="#"></a>
+                                          <a href="#"></a>
+                                          <a href="#"></a>
+                                          <a href="#"></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="tab-pane fade"
+                                  id="nav-profiley"
+                                  role="tabpanel"
+                                  aria-labelledby="nav-profile-taby"
+                                ></div>
+                                <div
+                                  class="tab-pane fade"
+                                  id="nav-contacty"
+                                  role="tabpanel"
+                                  aria-labelledby="nav-contact-taby"
+                                ></div>
+                                <div
+                                  class="tab-pane fade"
+                                  id="nav-contact1y"
+                                  role="tabpanel"
+                                  aria-labelledby="nav-contact-tab1y"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+                <div class="msochartdatabtns">
+                  <div class="msochartdatabtns_p1">
+                    <a href="#"
+                      ><img src="./assets/images/msochartdatabtns_ic2.svg"
+                    /></a>
+                  </div>
+                  <div class="msochartdatabtns_p1">
+                    <a href="#"
+                      ><img src="./assets/images/msochartdatabtns_ic1.svg"
+                    /></a>
+                  </div>
+                  <div class="msochartdatabtns_p1">
+                    <a href="#"
+                      ><img src="./assets/images/msochartdatabtns_ic3.svg"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div
+      class="modal fade modelstyl1"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <img src="./assets/images/close.svg" />
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="msoretirepop">
+              <div class="msoretirepop_p1">
+                <img src="./assets/images/retirment.svg" />
+              </div>
+              <div class="msoretirepop_p2">
+                <div class="msoretirepop_p2_s1">
+                  <p>
+                    <img src="./assets/images/heart.svg" />1.2 K people have
+                    added this goal
+                  </p>
+                </div>
+                <div class="msoretirepop_p2_s2">
+                  <div class="msoretirepop_p2_s2_text">
+                    <h2>RETIREMENT</h2>
+                    <h4>A fully guided way to reach your retirement target.</h4>
+                  </div>
+                  <div class="msoretirepop_p2_s2_button">
+                    <a href="#" data-dismiss="modal" aria-label="Close">Done</a>
+                  </div>
+                </div>
+                <div class="msoretirepop_p2mobile_box">
+                  <div class="msoretirepop_p2mobile_box_p1">
+                    <div class="msoretirepop_p2_s1">
+                      <p>
+                        <img src="./assets/images/heart.svg" />1.2 K people have
+                        added this goal
+                      </p>
+                    </div>
+                  </div>
+                  <div class="msoretirepop_p2mobile_box_p2">
+                    <div class="msoretirepop_p1">
+                      <img src="./assets/images/popimgretirement.svg" />
+                    </div>
+                  </div>
+                  <div class="msoretirepop_p2mobile_box_p3">
+                    <h3>RETIREMENT</h3>
+                    <h2>₹3.5<span>CR</span></h2>
+                    <p>AMOUNT NEEDED</p>
+                  </div>
+                </div>
+                <div class="msoretirepop_p2_s3">
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 0%"
+                      aria-valuenow="0"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      0%
+                    </div>
+                  </div>
+                </div>
+                <div class="msoretirepop_p2_s4">
+                  <span>2021</span>
+                  <span>In 15 years</span>
+                </div>
+                <div class="msoretirepop_p2_s5">
+                  <div class="msoretirepop_p2_s5_box">
+                    <label>Retirement Age</label>
+                    <div class="dropdown">
+                      <button
+                        id="dLabel"
+                        class="dropdown-selectx"
+                        type="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        60
+                      </button>
+                      <span class="caret cro"></span>
+                      <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        <li>Option 1</li>
+                        <li>Option 2</li>
+                        <li>Option 3</li>
+                        <li>Option 4</li>
+                        <li>Option 5</li>
+                        <li>Option 6</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="msoretirepop_p2_s5_box">
+                    <label>Life Expectancy</label>
+                    <input type="" name="" value="80" />
+                  </div>
+                  <div class="msoretirepop_p2_s5_box">
+                    <label>Target Amount</label>
+                    <input type="" name="" value="₹3.5" />
+                    <!-- <i>CR</i> -->
+                  </div>
+                  <div class="msoretirepop_p2_s5_box">
+                    <label>Illness Staus</label>
+                    <div class="dropdown">
+                      <button
+                        id="dLabel"
+                        class="dropdown-selectx"
+                        type="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        Select
+                      </button>
+                      <span class="caret cro"></span>
+                      <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        <li>Option 1</li>
+                        <li>Option 2</li>
+                        <li>Option 3</li>
+                        <li>Option 4</li>
+                        <li>Option 5</li>
+                        <li>Option 6</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="msoretirepop_p2_s5_box">
+                    <label>Monthly Retirement Income</label>
+                    <input type="" name="" value="₹1,45,000" />
+                  </div>
+                  <div class="msoretirepop_p2_s5_box">
+                    <label>Report based on</label>
+                    <input type="" name="" value="Nielsen research" />
+                  </div>
+                </div>
+                <div class="msoretirepop_p2_s6">
+                  <ul>
+                    <li>
+                      • 23% average annual inflation adjusted cost of
+                      maintaining your current expenses till your life
+                      expectancy.
+                    </li>
+                    <li>
+                      • 45% average annual salary growth till age of retirement.
+                    </li>
+                  </ul>
+                </div>
+                <div class="msoretirepop_p2mobile_box_p3_btn">
+                  <div class="msoretirepop_p2_s2_button">
+                    <a href="#" data-dismiss="modal" aria-label="Close">Done</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2-->
+    <div
+      class="modal fade modelstyl2"
+      id="exampleModal1"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <img src="./assets/images/addplan_close.svg" />
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="msoaddfinaplan">
+              <div class="Generated_Financial_plans">
+                <div class="Generated_Financial_plans_left_title">
+                  <div class="Generated_Financial_plans_left_title_box">
+                    <h3>Essential Goals</h3>
+                  </div>
+                </div>
+                <div class="Generated_Financial_plans_data">
+                  <div
+                    class="
+                      Generated_Financial_plans_data_box
+                      animate__animated animate__bounceInLeft animate__faster
+                    "
+                  >
+                    <img src="./assets/images/addplanchild.svg" /><img
+                      src="./assets/images/addplanchild.svg"
+                    />
+                    <h3>child education</h3>
+                    <a href="#">+ Add</a>
+                  </div>
+                  <div
+                    class="
+                      Generated_Financial_plans_data_box
+                      animate__animated animate__bounceInLeft animate__fast
+                    "
+                  >
+                    <img src="./assets/images/addplan_bike.svg" /><img
+                      src="./assets/images/addplan_bike.svg"
+                    />
+                    <h3>motor bike</h3>
+                    <a href="#">+ Add</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="Generated_Financial_plans">
+                <div class="Generated_Financial_plans_left_title">
+                  <div class="Generated_Financial_plans_left_title_box">
+                    <h3>Lifestyle Goals</h3>
+                  </div>
+                </div>
+                <div class="Generated_Financial_plans_data">
+                  <div
+                    class="
+                      Generated_Financial_plans_data_box
+                      animate__animated animate__bounceInLeft animate__slower
+                    "
+                  >
+                    <img src="./assets/images/addplan_bike.svg" /><img
+                      src="./assets/images/addplan_bike.svg"
+                    />
+                    <h3>motor bike</h3>
+                    <a href="#">+ Add</a>
+                  </div>
+                  <div
+                    class="
+                      Generated_Financial_plans_data_box
+                      animate__animated animate__bounceInLeft animate__slower
+                    "
+                  >
+                    <img src="./assets/images/addplantravel.svg" /><img
+                      src="./assets/images/addplantravel.svg"
+                    />
+                    <h3>travel</h3>
+                    <a href="#">+ Add</a>
+                  </div>
+                  <div
+                    class="
+                      Generated_Financial_plans_data_box
+                      animate__animated animate__bounceInLeft
+                      dull
+                      animate__slow
+                    "
+                  >
+                    <img src="./assets/images/car.svg" /><img
+                      src="./assets/images/car_dull.svg"
+                    />
+                    <h3>car</h3>
+                    <a href="#">restore</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 mobilemenu-->
+    <div
+      class="modal fade modelstyl3"
+      id="exampleModal2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel2"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="stepsidemenu">
+              <div class="stepsidemenu_box">
+                <div class="stepsidemenu_box_risk">
+                  <div class="planyy_hed_p3 c3">
+                    <div class="planyy_hed_p3_s1">
+                      <div class="processBarOuter">
+                        <div class="processBarInner"></div>
+                        <div class="processBar processBarHalfMove"></div>
+                        <div class="processBar processBarHalfLeft"></div>
+                        <div
+                          class="processBar processBarHalfRight not-display"
+                        ></div>
+                      </div>
+                      <img src="./assets/images/count_load.svg" /><span id="box"
+                        ><i class="total"></i
+                      ></span>
+                    </div>
+                    <div class="planyy_hed_p3_s2">
+                      <h5>Risk Tolerance Score</h5>
+                      <h3>Moderate</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="stepsidemenu_p1">
+                  <ul id="progressbar" class="xtmclass_ul">
+                    <li
+                      class="active ac1"
+                      id="account"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <strong
+                        ><span
+                          ><i>STEP 1</i
+                          ><img src="./assets/images/stepstickjk1.svg" /><img
+                            src="./assets/images/stepstickjk2.svg"
+                          /><img src="./assets/images/stepstickjk3.svg" />Your
+                          Only Details Needed</span
+                        ></strong
+                      >
+                    </li>
+                    <li
+                      class="ac2"
+                      id="personal"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <strong
+                        ><span
+                          ><i>STEP 2</i
+                          ><img src="./assets/images/stepstickjk1.svg" /><img
+                            src="./assets/images/stepstickjk2.svg"
+                          /><img src="./assets/images/stepstickjk3.svg" />Your
+                          Risk Appetite</span
+                        ></strong
+                      >
+                    </li>
+                    <li
+                      class="ac3"
+                      id="payment"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <strong
+                        ><span
+                          ><i>STEP 3</i
+                          ><img src="./assets/images/stepstickjk1.svg" /><img
+                            src="./assets/images/stepstickjk2.svg"
+                          /><img src="./assets/images/stepstickjk3.svg" />Your
+                          Generated Financial Plan</span
+                        ></strong
+                      >
+                    </li>
+                    <li
+                      class="ac4"
+                      id="payment2"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <strong
+                        ><span
+                          ><i>STEP 4</i
+                          ><img src="./assets/images/stepstickjk1.svg" /><img
+                            src="./assets/images/stepstickjk2.svg"
+                          /><img src="./assets/images/stepstickjk3.svg" />Your
+                          Investment Plan</span
+                        ></strong
+                      >
+                    </li>
+                    <li
+                      class="ac5"
+                      id="confirm"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <strong
+                        ><span
+                          ><i>STEP 5</i
+                          ><img src="./assets/images/stepstickjk1.svg" /><img
+                            src="./assets/images/stepstickjk2.svg"
+                          /><img src="./assets/images/stepstickjk3.svg" />Your
+                          Performance Tracker</span
+                        ></strong
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div
+      class="modal fade modelstyl4 modelstyl1"
+      id="exampleModal3"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel3"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <img src="./assets/images/close.svg" />
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="makepaymentmodel">
+              <div class="makepaymentmodel_box">
+                <div class="makepaymentmodel_p1_up dn">
+                  <h3>Confirm Order</h3>
+                </div>
+                <div class="makepaymentmodel_p1">
+                  <div class="makepaymentmodel_p1_s1">
+                    <div class="makepaymentmodel_p1_s1_p1">
+                      <h3>Total</h3>
+                      <h3>Mutual Funds</h3>
+                    </div>
+                    <div class="makepaymentmodel_p1_s1_p2">
+                      <h4>03</h4>
+                    </div>
+                    <div class="makepaymentmodel_p1_s1_p3">
+                      <span></span>
+                    </div>
+                    <div class="makepaymentmodel_p1_s1_p4">
+                      <h2>₹24,000</h2>
+                    </div>
+                  </div>
+                  <div class="makepaymentmodel_p1_s2">
+                    <img src="./assets/images/plus.svg" />
+                  </div>
+                  <div class="makepaymentmodel_p1_s3">
+                    <div class="makepaymentmodel_p1_s1_p1">
+                      <h3>Total</h3>
+                      <h3>Fixed Deposits</h3>
+                    </div>
+                    <div class="makepaymentmodel_p1_s1_p2">
+                      <h4>01</h4>
+                    </div>
+                    <div class="makepaymentmodel_p1_s1_p3">
+                      <span></span>
+                    </div>
+                    <div class="makepaymentmodel_p1_s1_p4">
+                      <h2>₹3,900</h2>
+                    </div>
+                  </div>
+                  <div class="makepaymentmodel_p1_s4">
+                    <img src="./assets/images/plus.svg" />
+                  </div>
+                  <div class="makepaymentmodel_p1_s5">
+                    <div class="makepaymentmodel_p1_s1_p1">
+                      <h3>Total</h3>
+                      <h3>Savings A/C</h3>
+                    </div>
+                    <div class="makepaymentmodel_p1_s1_p2">
+                      <h4>01</h4>
+                    </div>
+                    <div class="makepaymentmodel_p1_s1_p3">
+                      <span></span>
+                    </div>
+                    <div class="makepaymentmodel_p1_s1_p4">
+                      <h2>₹2,100</h2>
+                    </div>
+                  </div>
+                  <div class="makepaymentmodel_p1_s6">
+                    <img src="./assets/images/barabr.svg" />
+                  </div>
+                  <div class="makepaymentmodel_p1_s7">
+                    <div class="makepaymentmodel_p1_s7_p1">
+                      <a
+                        href=""
+                        data-toggle="modal"
+                        data-target="#exampleModal4"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                        class="ac5"
+                        >Make Payment</a
+                      >
+                      <div class="sequrepay dn">
+                        <img src="./assets/images/sequrepay.svg" />
+                      </div>
+                    </div>
+                    <div class="makepaymentmodel_p1_s7_p2">
+                      <div class="makepaymentmodel_p1_s7_p2_left">
+                        <h6>Monthly Instalment</h6>
+                        <h3>₹30,000</h3>
+                      </div>
+                      <div class="makepaymentmodel_p1_s7_p2_right">
+                        <h6>Date of Instalment, Every</h6>
+                        <div class="md-form">
+                          <h3>Dec, 21</h3>
+                          <input type="date" id="dec" name="dec" />
+                          <span><img src="./assets/images/downdec.svg" /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="makepaymentmodel_p2">
+                  <h2>Order <span>Summary</span></h2>
+                  <ul>
+                    <li>
+                      <div class="makepaymentmodel_p2_li_left">
+                        <img src="./assets/images/bank_logo.svg" />
+                        <p>
+                          Axis banking and financial Services growth direct plan
+                        </p>
+                      </div>
+                      <div class="makepaymentmodel_p2_li_right">
+                        <h3>30%</h3>
+                        <h4>₹9,000</h4>
+                        <span class="c1">Mutual funds</span>
+                        <a href="#">Monthly</a>
+                        <img src="./assets/images/delete-1.svg" /><img
+                          src="./assets/images/delete.svg"
+                          class="remove2"
+                        />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="makepaymentmodel_p2_li_left">
+                        <img src="./assets/images/bank_logo.svg" />
+                        <p>
+                          Axis banking and financial Services growth direct plan
+                        </p>
+                      </div>
+                      <div class="makepaymentmodel_p2_li_right">
+                        <h3>30%</h3>
+                        <h4>₹9,000</h4>
+                        <span class="c2">Fixed Deposits</span>
+                        <a href="#">Monthly</a>
+                        <img src="./assets/images/delete-1.svg" /><img
+                          src="./assets/images/delete.svg"
+                          class="remove2"
+                        />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="makepaymentmodel_p2_li_left">
+                        <img src="./assets/images/bank_logo.svg" />
+                        <p>
+                          Axis banking and financial Services growth direct plan
+                        </p>
+                      </div>
+                      <div class="makepaymentmodel_p2_li_right">
+                        <h3>30%</h3>
+                        <h4>₹9,000</h4>
+                        <span class="c3">Savings A/C</span>
+                        <a href="#">Monthly</a>
+                        <img src="./assets/images/delete-1.svg" /><img
+                          src="./assets/images/delete.svg"
+                          class="remove2"
+                        />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="makepaymentmodel_p2_li_left">
+                        <img src="./assets/images/bank_logo.svg" />
+                        <p>
+                          Axis banking and financial Services growth direct plan
+                        </p>
+                      </div>
+                      <div class="makepaymentmodel_p2_li_right">
+                        <h3>30%</h3>
+                        <h4>₹9,000</h4>
+                        <span class="c1">Mutual funds</span>
+                        <a href="#">Monthly</a>
+                        <img src="./assets/images/delete-1.svg" /><img
+                          src="./assets/images/delete.svg"
+                          class="remove2"
+                        />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="makepaymentmodel_p2_li_left">
+                        <img src="./assets/images/bank_logo.svg" />
+                        <p>
+                          Axis banking and financial Services growth direct plan
+                        </p>
+                      </div>
+                      <div class="makepaymentmodel_p2_li_right">
+                        <h3>30%</h3>
+                        <h4>₹9,000</h4>
+                        <span class="c1">Mutual funds</span>
+                        <a href="#">Monthly</a>
+                        <img src="./assets/images/delete-1.svg" /><img
+                          src="./assets/images/delete.svg"
+                          class="remove2"
+                        />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="makepaymentmodel_p2_li_left">
+                        <img src="./assets/images/bank_logo.svg" />
+                        <p>
+                          Axis banking and financial Services growth direct plan
+                        </p>
+                      </div>
+                      <div class="makepaymentmodel_p2_li_right">
+                        <h3>30%</h3>
+                        <h4>₹9,000</h4>
+                        <span class="c1">Mutual funds</span>
+                        <a href="#">Monthly</a>
+                        <img src="./assets/images/delete-1.svg" /><img
+                          src="./assets/images/delete.svg"
+                          class="remove2"
+                        />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="makepaymentmodel_p2_li_left">
+                        <img src="./assets/images/bank_logo.svg" />
+                        <p>
+                          Axis banking and financial Services growth direct plan
+                        </p>
+                      </div>
+                      <div class="makepaymentmodel_p2_li_right">
+                        <h3>30%</h3>
+                        <h4>₹9,000</h4>
+                        <span class="c1">Mutual funds</span>
+                        <a href="#">Monthly</a>
+                        <img src="./assets/images/delete-1.svg" /><img
+                          src="./assets/images/delete.svg"
+                          class="remove2"
+                        />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="makepaymentmodel_p2_li_left">
+                        <img src="./assets/images/bank_logo.svg" />
+                        <p>
+                          Axis banking and financial Services growth direct plan
+                        </p>
+                      </div>
+                      <div class="makepaymentmodel_p2_li_right">
+                        <h3>30%</h3>
+                        <h4>₹9,000</h4>
+                        <span class="c1">Mutual funds</span>
+                        <a href="#">Monthly</a>
+                        <img src="./assets/images/delete-1.svg" /><img
+                          src="./assets/images/delete.svg"
+                          class="remove2"
+                        />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="makepaymentmodel_p2_li_left">
+                        <img src="./assets/images/bank_logo.svg" />
+                        <p>
+                          Axis banking and financial Services growth direct plan
+                        </p>
+                      </div>
+                      <div class="makepaymentmodel_p2_li_right">
+                        <h3>30%</h3>
+                        <h4>₹9,000</h4>
+                        <span class="c1">Mutual funds</span>
+                        <a href="#">Monthly</a>
+                        <img src="./assets/images/delete-1.svg" /><img
+                          src="./assets/images/delete.svg"
+                          class="remove2"
+                        />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="makepaymentmodel_p2_li_left">
+                        <img src="./assets/images/bank_logo.svg" />
+                        <p>
+                          Axis banking and financial Services growth direct plan
+                        </p>
+                      </div>
+                      <div class="makepaymentmodel_p2_li_right">
+                        <h3>30%</h3>
+                        <h4>₹9,000</h4>
+                        <span class="c1">Mutual funds</span>
+                        <a href="#">Monthly</a>
+                        <img src="./assets/images/delete-1.svg" /><img
+                          src="./assets/images/delete.svg"
+                          class="remove2"
+                        />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div
+      class="modal fade modelstyl5 modelstyl1"
+      id="exampleModal4"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel4"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header"></div>
+          <div class="modal-body">
+            <div class="paymentsus">
+              <div class="paymentsus_box">
+                <img src="./assets/images/payment_s.svg" />
+                <h3>Payment Successful !</h3>
+                <p>transaction number: <span>PN38462h3hhs6</span></p>
+                <a data-dismiss="modal" aria-label="Close">Done</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div
+      class="modal fade modelstylx modelstyl1 modelstyl6 editmodal"
+      id="exampleModalx"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabelx"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <img src="./assets/images/close.svg" />
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="paymentsusedit">
+              <ul>
+                <li><img src="./assets/images/editasdx.svg" /> Edit Goal</li>
+                <li>
+                  <img src="./assets/images/deleteasdx.svg" /> Delete Goal
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div
+      class="modal fade modelstylxpand modelstyl1 modelstyl2 modelstyl8"
+      id="exampleModalxpand"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabelx"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <img src="./assets/images/addplan_close.svg" />
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="msoinvestproduct">
+              <h3 class="msoinproh">
+                Recommended <span>investment products</span>
+                <a data-toggle="modal" data-target="#exampleModalxpand"
+                  >EXPAND VIEW</a
+                >
+              </h3>
+              <section id="tabs" class="project-tab">
+                <div class="containertx">
+                  <div class="rowtx">
+                    <div class="col-md-12">
+                      <nav>
+                        <div
+                          class="nav nav-tabs nav-fill"
+                          id="nav-tab"
+                          role="tablist"
+                        >
+                          <a
+                            class="nav-item nav-link active"
+                            id="nav-home-tabz"
+                            data-toggle="tab"
+                            href="#nav-homez"
+                            role="tab"
+                            aria-controls="nav-homez"
+                            aria-selected="true"
+                            >All</a
+                          >
+                          <a
+                            class="nav-item nav-link"
+                            id="nav-profile-tabz"
+                            data-toggle="tab"
+                            href="#nav-profilez"
+                            role="tab"
+                            aria-controls="nav-profilez"
+                            aria-selected="false"
+                            >Mutual Funds</a
+                          >
+                          <a
+                            class="nav-item nav-link"
+                            id="nav-contact-tabz"
+                            data-toggle="tab"
+                            href="#nav-contactz"
+                            role="tab"
+                            aria-controls="nav-contactz"
+                            aria-selected="false"
+                            >Fixed Deposits</a
+                          >
+                          <a
+                            class="nav-item nav-link"
+                            id="nav-contact-tab1z"
+                            data-toggle="tab"
+                            href="#nav-contact1z"
+                            role="tab"
+                            aria-controls="nav-contact2z"
+                            aria-selected="false"
+                            >Saving A/C</a
+                          >
+                        </div>
+                      </nav>
+                      <div class="tab-content" id="nav-tabContent">
+                        <div
+                          class="tab-pane fade show active"
+                          id="nav-homez"
+                          role="tabpanel"
+                          aria-labelledby="nav-home-tabz"
+                        >
+                          <div class="msoinvestproduct_box">
+                            <div class="msoinvestproduct_box_left">
+                              <img src="./assets/images/bank_logo.svg" />
+                            </div>
+                            <div class="msoinvestproduct_box_right">
+                              <div class="msoinvestproduct_box_right_p1">
+                                <div class="msoinvestproduct_box_right_p1_sem1">
+                                  <h5>
+                                    Axis banking and financial Services growth
+                                    direct plan
+                                  </h5>
+                                </div>
+                                <div class="msoinvestproduct_box_right_p1_sem2">
+                                  <h5>
+                                    RETURNS:<span
+                                      ><img
+                                        src="./assets/images/star.svg"
+                                      />5</span
+                                    >
+                                  </h5>
+                                  <h6>
+                                    <span>1Yr:</span><i>14.5%</i
+                                    ><span>3Yr:</span><i>10.4%</i
+                                    ><span>5Yr:</span><i>17.7%</i>
+                                  </h6>
+                                </div>
+                              </div>
+                              <div class="msoinvestproduct_box_right_p2">
+                                <span>
+                                  <h5>Allocation</h5>
+                                  <h3>30%</h3>
+                                </span>
+                                <span>
+                                  <h5>Amount</h5>
+                                  <h3>₹9,000</h3>
+                                </span>
+                                <span>
+                                  <h5>Gains</h5>
+                                  <h3>-</h3>
+                                </span>
+                                <span>
+                                  <h5>Actual ROI</h5>
+                                  <h3>-</h3>
+                                </span>
+                                <span>
+                                  <h5>Frequency</h5>
+                                  <h3><a href="#">MONTHLY</a></h3>
+                                </span>
+                              </div>
+                              <div class="msoinvestproduct_box_right_p3">
+                                <div class="msoinvestproduct_box_right_p3_s1">
+                                  <a href="#"></a>
+                                  <a href="#"></a>
+                                  <a href="#"></a>
+                                  <a href="#"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="msoinvestproduct_box">
+                            <div class="msoinvestproduct_box_left">
+                              <img src="./assets/images/bank_logo.svg" />
+                            </div>
+                            <div class="msoinvestproduct_box_right">
+                              <div class="msoinvestproduct_box_right_p1">
+                                <div class="msoinvestproduct_box_right_p1_sem1">
+                                  <h5>
+                                    Axis banking and financial Services growth
+                                    direct plan
+                                  </h5>
+                                </div>
+                                <div class="msoinvestproduct_box_right_p1_sem2">
+                                  <h5>
+                                    RETURNS:<span
+                                      ><img
+                                        src="./assets/images/star.svg"
+                                      />5</span
+                                    >
+                                  </h5>
+                                  <h6>
+                                    <span>1Yr:</span><i>14.5%</i
+                                    ><span>3Yr:</span><i>10.4%</i
+                                    ><span>5Yr:</span><i>17.7%</i>
+                                  </h6>
+                                </div>
+                              </div>
+                              <div class="msoinvestproduct_box_right_p2">
+                                <span>
+                                  <h5>Allocation</h5>
+                                  <h3>30%</h3>
+                                </span>
+                                <span>
+                                  <h5>Amount</h5>
+                                  <h3>₹9,000</h3>
+                                </span>
+                                <span>
+                                  <h5>Gains</h5>
+                                  <h3>-</h3>
+                                </span>
+                                <span>
+                                  <h5>Actual ROI</h5>
+                                  <h3>-</h3>
+                                </span>
+                                <span>
+                                  <h5>Frequency</h5>
+                                  <h3><a href="#">MONTHLY</a></h3>
+                                </span>
+                              </div>
+                              <div class="msoinvestproduct_box_right_p3">
+                                <div class="msoinvestproduct_box_right_p3_s1">
+                                  <a href="#"></a>
+                                  <a href="#"></a>
+                                  <a href="#"></a>
+                                  <a href="#"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="msoinvestproduct_box">
+                            <div class="msoinvestproduct_box_left">
+                              <img src="./assets/images/bank_logo.svg" />
+                            </div>
+                            <div class="msoinvestproduct_box_right">
+                              <div class="msoinvestproduct_box_right_p1">
+                                <div class="msoinvestproduct_box_right_p1_sem1">
+                                  <h5>
+                                    Axis banking and financial Services growth
+                                    direct plan
+                                  </h5>
+                                </div>
+                                <div class="msoinvestproduct_box_right_p1_sem2">
+                                  <h5>
+                                    RETURNS:<span
+                                      ><img
+                                        src="./assets/images/star.svg"
+                                      />5</span
+                                    >
+                                  </h5>
+                                  <h6>
+                                    <span>1Yr:</span><i>14.5%</i
+                                    ><span>3Yr:</span><i>10.4%</i
+                                    ><span>5Yr:</span><i>17.7%</i>
+                                  </h6>
+                                </div>
+                              </div>
+                              <div class="msoinvestproduct_box_right_p2">
+                                <span>
+                                  <h5>Allocation</h5>
+                                  <h3>30%</h3>
+                                </span>
+                                <span>
+                                  <h5>Amount</h5>
+                                  <h3>₹9,000</h3>
+                                </span>
+                                <span>
+                                  <h5>Gains</h5>
+                                  <h3>-</h3>
+                                </span>
+                                <span>
+                                  <h5>Actual ROI</h5>
+                                  <h3>-</h3>
+                                </span>
+                                <span>
+                                  <h5>Frequency</h5>
+                                  <h3><a href="#">MONTHLY</a></h3>
+                                </span>
+                              </div>
+                              <div class="msoinvestproduct_box_right_p3">
+                                <div class="msoinvestproduct_box_right_p3_s1">
+                                  <a href="#"></a>
+                                  <a href="#"></a>
+                                  <a href="#"></a>
+                                  <a href="#"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="msoinvestproduct_box">
+                            <div class="msoinvestproduct_box_left">
+                              <img src="./assets/images/bank_logo.svg" />
+                            </div>
+                            <div class="msoinvestproduct_box_right">
+                              <div class="msoinvestproduct_box_right_p1">
+                                <div class="msoinvestproduct_box_right_p1_sem1">
+                                  <h5>
+                                    Axis banking and financial Services growth
+                                    direct plan
+                                  </h5>
+                                </div>
+                                <div class="msoinvestproduct_box_right_p1_sem2">
+                                  <h5>
+                                    RETURNS:<span
+                                      ><img
+                                        src="./assets/images/star.svg"
+                                      />5</span
+                                    >
+                                  </h5>
+                                  <h6>
+                                    <span>1Yr:</span><i>14.5%</i
+                                    ><span>3Yr:</span><i>10.4%</i
+                                    ><span>5Yr:</span><i>17.7%</i>
+                                  </h6>
+                                </div>
+                              </div>
+                              <div class="msoinvestproduct_box_right_p2">
+                                <span>
+                                  <h5>Allocation</h5>
+                                  <h3>30%</h3>
+                                </span>
+                                <span>
+                                  <h5>Amount</h5>
+                                  <h3>₹9,000</h3>
+                                </span>
+                                <span>
+                                  <h5>Gains</h5>
+                                  <h3>-</h3>
+                                </span>
+                                <span>
+                                  <h5>Actual ROI</h5>
+                                  <h3>-</h3>
+                                </span>
+                                <span>
+                                  <h5>Frequency</h5>
+                                  <h3><a href="#">MONTHLY</a></h3>
+                                </span>
+                              </div>
+                              <div class="msoinvestproduct_box_right_p3">
+                                <div class="msoinvestproduct_box_right_p3_s1">
+                                  <a href="#"></a>
+                                  <a href="#"></a>
+                                  <a href="#"></a>
+                                  <a href="#"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="tab-pane fade"
+                          id="nav-profilez"
+                          role="tabpanel"
+                          aria-labelledby="nav-profile-tabz"
+                        ></div>
+                        <div
+                          class="tab-pane fade"
+                          id="nav-contactz"
+                          role="tabpanel"
+                          aria-labelledby="nav-contact-tabz"
+                        ></div>
+                        <div
+                          class="tab-pane fade"
+                          id="nav-contact1z"
+                          role="tabpanel"
+                          aria-labelledby="nav-contact-tab1z"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js"></script>
+    <script id="rendered-js">
+      Vue.component("SliderPips", {
+        template: `
+    <div class="slider-pips">
+      
+      <input v-for="(value, index) in vals"
+        :key="'range' + index" 
+        class="slider-pips__range" 
+        :class="[ 'slider-pips__range--' + (index + 1) ]"
+        type="range" :min="min" :max="max" :step="step" v-model="value"
+        @change="updateValue( $event, index )"
+        @input="updateValue( $event, index )" />
+      
+      <ul v-if="floats"
+        class="slider-pips__floats">
+        <li v-for="(value, index) in vals"
+          class="slider-pips__float"
+          :class="[ 'slider-pips__float--' + (index + 1) ]"
+          :style="{ 'left': floatPos(value) }">
+          <span class="msorimghov">{{value}}</span>
+          <i>Age</i>
+          <img src="./assets/images/rangeholder.svg">
+        </li>
+        <li v-for="(value, index) in vals"
+          class="slider-pips__float"
+          :class="[ 'slider-pips__float--' + (index + 1) ]"
+          :style="{ 'left': floatPos(value) }">
+          <div class="msopaors"><span>Present Age</span><i></i></div>
+        </li>
+      </ul>
+
+      <div v-if="isRange" 
+        class="slider-pips__range-holder">
+        <div class="slider-pips__range-selection"
+          :style="{ width: rangeWidth, left: rangeLeft }"></div>
+          <div class="msopaors1"><span>Retirement Age<i></i></span></div>
+      </div>
+
+      <ul class="slider-pips__pips">
+
+        <li class="slider-pips__pip" 
+            :class="[{
+              'slider-pips__pip--selected': isPipSelected( index ),
+              'slider-pips__pip--in-range': isPipInRange( index ) 
+              }, selectedPipClassName( index )
+            ]"
+            v-for="( pip, index ) in pipCount" 
+            @click="selectPip( index )"
+            :style="{ left: pipPos( index ) }">
+
+          <span class="slider-pips__label"
+            :class="{ 'slider-pips__label--hidden': !labels }">
+            {{ pipLabel( index ) }}
+          </span>
+
+        </li>
+
+      </ul>
+
+    </div>
+  `,
+        data() {
+          return {
+            vals: this.values,
+          };
+        },
+        props: {
+          values: { type: Array, default: [0] },
+          min: { type: Number, default: 0 },
+          max: { type: Number, default: 100 },
+          step: { type: Number, default: 1 },
+          labels: Boolean,
+          range: Boolean,
+          floats: Boolean,
+        },
+
+        watch: {},
+
+        computed: {
+          isRange() {
+            return this.range;
+          },
+          pipCount() {
+            return Math.round(
+              (this.fixedMax - this.fixedMin) / this.fixedStep + 1
+            );
+          },
+          fixedStep() {
+            return this.fixValue(this.step);
+          },
+          fixedMin() {
+            return this.fixValue(this.min);
+          },
+          fixedMax() {
+            return this.fixValue(this.max);
+          },
+          rangeFraction() {
+            return 100 / (this.fixedMax - this.fixedMin);
+          },
+          rangeWidth() {
+            if (this.vals.length === 1) {
+              return (this.vals[0] - this.fixedMin) * this.rangeFraction + "%";
+            } else {
+              return (this.vals[1] - this.vals[0]) * this.rangeFraction + "%";
+            }
+          },
+          rangeLeft() {
+            if (this.vals.length === 1) {
+              return "0%";
+            } else {
+              return -(this.fixedMin - this.vals[0]) * this.rangeFraction + "%";
+            }
+          },
+        },
+
+        methods: {
+          fixValue(value) {
+            return parseFloat(parseFloat(value).toFixed(2));
+          },
+          pipPos(index) {
+            return index * this.rangeFraction * this.fixedStep + "%";
+          },
+          floatPos(value) {
+            value = this.fixValue(value);
+            return -(this.fixedMin - value) * this.rangeFraction + "%";
+          },
+          pipLabel(index) {
+            return this.fixValue(this.fixedMin + index * this.fixedStep);
+          },
+          selectPip(index) {
+            let pipValue = this.fixValue(
+              this.fixedMin + index * this.fixedStep
+            );
+            let handle = this.getClosestHandle(pipValue);
+            this.$set(this.vals, handle, pipValue);
+          },
+          isPipSelected(index) {
+            let pipValue = this.fixValue(
+              this.fixedMin + index * this.fixedStep
+            );
+            return this.vals.includes(pipValue);
+          },
+          isPipInRange(index) {
+            let pipValue = this.fixValue(
+              this.fixedMin + index * this.fixedStep
+            );
+            return pipValue >= this.fixedMin && pipValue <= this.vals[0];
+          },
+          updateValue(ev, handle) {
+            let pipValue = this.fixValue(ev.target.value);
+            if (this.isRange && this.vals.length > 1) {
+              if (handle === 0 && pipValue > this.vals[1]) {
+                this.$set(this.vals, 0, this.vals[1]);
+              } else if (handle === 1 && pipValue < this.vals[0]) {
+                this.$set(this.vals, 1, this.vals[0]);
+              } else {
+                this.$set(this.vals, handle, pipValue);
+              }
+            } else {
+              this.$set(this.vals, handle, pipValue);
+            }
+          },
+          getClosestHandle(value) {
+            let closest = this.vals.reduce(function (p, c) {
+              return Math.abs(c - value) < Math.abs(p - value) ? c : p;
+            });
+            return this.vals.indexOf(closest);
+          },
+          selectedPipClassName(pipIndex) {
+            let className = "";
+            let pipValue = this.fixValue(
+              this.fixedMin + pipIndex * this.fixedStep
+            );
+            this.vals.forEach(function (v, i) {
+              if (v === pipValue) {
+                className += " slider-pips__pip--selected--" + (i + 1);
+              }
+            });
+            return className;
+          },
+        },
+
+        mounted() {},
+      });
+
+      let app = new Vue({
+        el: "#app",
+        data: {},
+      });
+      //# sourceURL=pen.js
+    </script>
+
+    <script type="text/javascript">
+      // MAKE ROUNDED EDGES FOR PIE CHARTS
+      Chart.defaults.RoundedDoughnut = Chart.helpers.clone(
+        Chart.defaults.doughnut
+      );
+      Chart.controllers.RoundedDoughnut = Chart.controllers.doughnut.extend({
+        draw: function (ease) {
+          var ctx = this.chart.ctx;
+          var easingDecimal = ease || 1;
+          var arcs = this.getMeta().data;
+          Chart.helpers.each(arcs, function (arc, i) {
+            arc.transition(easingDecimal).draw();
+
+            var pArc = arcs[i === 0 ? arcs.length - 1 : i - 1];
+            var pColor = pArc._view.backgroundColor;
+
+            var vm = arc._view;
+            var radius = (vm.outerRadius + vm.innerRadius) / 2;
+            var thickness = (vm.outerRadius - vm.innerRadius) / 2;
+            var startAngle = Math.PI - vm.startAngle - Math.PI / 2;
+            var angle = Math.PI - vm.endAngle - Math.PI / 2;
+
+            ctx.save();
+            ctx.translate(vm.x, vm.y);
+
+            ctx.fillStyle = i === 0 ? vm.backgroundColor : pColor;
+            ctx.beginPath();
+            ctx.arc(
+              radius * Math.sin(startAngle),
+              radius * Math.cos(startAngle),
+              thickness,
+              0,
+              2 * Math.PI
+            );
+            ctx.fill();
+
+            ctx.fillStyle = vm.backgroundColor;
+            ctx.beginPath();
+            ctx.arc(
+              radius * Math.sin(angle),
+              radius * Math.cos(angle),
+              thickness,
+              0,
+              2 * Math.PI
+            );
+            ctx.fill();
+
+            ctx.restore();
+          });
+        },
+      });
+
+      // EXAMPLE 1
+
+      var ctx1 = document.getElementById("pieChart1");
+      var pieChart1 = new Chart(ctx1, {
+        type: "RoundedDoughnut",
+        options: {
+          cutoutPercentage: 75,
+          legend: {
+            position: "bottom",
+            labels: {
+              boxWidth: 0,
+              fontStyle: "italic",
+              fontColor: "#fff",
+              usePointStyle: false,
+            },
+          },
+        },
+
+        data: {
+          labels: ["First", "Second", "Third"],
+          datasets: [
+            {
+              data: [67, 19, 14],
+              borderWidth: 0,
+              backgroundColor: ["#31353f", "#ffc32c", "#b2b2b2"],
+              hoverBackgroundColor: ["#31353f", "#ffc32c", "#b2b2b2"],
+            },
+          ],
+        },
+      });
+
+      // EXAMPLE 1
+      var ctx1 = document.getElementById("pieChart2");
+      var pieChart1 = new Chart(ctx1, {
+        type: "RoundedDoughnut",
+        options: {
+          cutoutPercentage: 75,
+          legend: {
+            position: "bottom",
+            labels: {
+              boxWidth: 0,
+              fontStyle: "italic",
+              fontColor: "#fff",
+              usePointStyle: false,
+            },
+          },
+        },
+
+        data: {
+          labels: ["First", "Second", "Third"],
+          datasets: [
+            {
+              data: [67, 19, 14],
+              borderWidth: 0,
+              backgroundColor: ["#31353f", "#ffc32c", "#b2b2b2"],
+              hoverBackgroundColor: ["#31353f", "#ffc32c", "#b2b2b2"],
+            },
+          ],
+        },
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(".dropdown-menu li").on("click", function () {
+        var getValue = $(this).text();
+        $(".dropdown-selectx").text(getValue);
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var current_fs, next_fs, previous_fs; //fieldsets
+        var opacity;
+
+        $(".next").click(function () {
+          current_fs = $(this).parent();
+          next_fs = $(this).parent().next();
+
+          //Add Class Active
+          $("#progressbar li")
+            .eq($("fieldset").index(next_fs))
+            .addClass("active");
+          $("#progressbar li")
+            .eq($("fieldset").index(current_fs))
+            .addClass("done");
+
+          //show the next fieldset
+          next_fs.show();
+          //hide the current fieldset with style
+          current_fs.animate(
+            { opacity: 0 },
+            {
+              step: function (now) {
+                // for making fielset appear animation
+                opacity = 1 - now;
+
+                current_fs.css({
+                  display: "none",
+                  position: "relative",
+                });
+                next_fs.css({ opacity: opacity });
+              },
+              duration: 600,
+            }
+          );
+        });
+
+        $(".previous").click(function () {
+          current_fs = $(this).parent();
+          previous_fs = $(this).parent().prev();
+
+          //Remove class active
+          $("#progressbar li")
+            .eq($("fieldset").index(current_fs))
+            .removeClass("active");
+          $("#progressbar li")
+            .eq($("fieldset").index(previous_fs))
+            .removeClass("done");
+
+          //show the previous fieldset
+          previous_fs.show();
+
+          //hide the current fieldset with style
+          current_fs.animate(
+            { opacity: 0 },
+            {
+              step: function (now) {
+                // for making fielset appear animation
+                opacity = 1 - now;
+
+                current_fs.css({
+                  display: "none",
+                  position: "relative",
+                });
+                previous_fs.css({ opacity: opacity });
+              },
+              duration: 600,
+            }
+          );
+        });
+
+        $(".radio-group .radio").click(function () {
+          $(this).parent().find(".radio").removeClass("selected");
+          $(this).addClass("selected");
+        });
+
+        $(".submit").click(function () {
+          return false;
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      function checkForInput(element) {
+        // element is passed to the function ^
+
+        const $label = $(element).siblings(".demo-label");
+
+        if ($(element).val().length > 0) {
+          $label.addClass("input-has-value");
+        } else {
+          $label.removeClass("input-has-value");
+        }
+      }
+
+      // The lines below are executed on page load
+      $("input.textdemo").each(function () {
+        checkForInput(this);
+      });
+
+      // The lines below (inside) are executed on change & keyup
+      $("input.textdemo").on("change keyup", function () {
+        checkForInput(this);
+      });
+    </script>
+
+    <script type="text/javascript">
+      function processBarRotate(percent) {
+        var processBarHalfMove = ".processBarHalfMove";
+        var processBarHalfLeft = ".processBarHalfLeft";
+        var processBarHalfRight = ".processBarHalfRight";
+        //
+        //---按角度转动
+        function barRotate(angle) {
+          $(processBarHalfMove).css("transform", "rotate(" + angle + "deg)");
+        }
+        var angle = 3.6 * percent + 90;
+        //小于50度，直接转到目标角度
+        if (percent <= 50) {
+          barRotate(angle);
+        }
+        //大于50度，则先转到一半，等事件结束
+        else {
+          var stopAtHalfAngle = 270;
+          barRotate(stopAtHalfAngle);
+          $(processBarHalfMove).one("webkitTransitionEnd", function () {
+            //监听动画结束时事件
+            barRotate(angle); //完成剩余的角度
+            $(processBarHalfLeft).addClass("not-display");
+            $(processBarHalfRight).removeClass("not-display");
+          });
+        }
+      }
+
+      function percentNumAdd(num) {
+        var span = ".processBarInner i span";
+        //
+        var cnt = 0;
+        var timer = setInterval(function () {
+          if (cnt <= num) {
+            $(span).text(cnt++);
+          } else {
+            clearInterval(timer);
+          }
+        }, 8);
+      }
+      /*----------------------------------------------------------------------------*/
+      //jq 事件
+      $(function () {
+        processBarRotate(80);
+        percentNumAdd(80);
+      });
+    </script>
+
+    <script type="text/javascript">
+      //Animate my counter from 0 to set number (6)
+      $({ counter: 0 }).animate(
+        { counter: 8 },
+        {
+          //Animate over a period of 2seconds
+          duration: 2000,
+          //Progress animation at constant pace using linear
+          easing: "linear",
+          step: function () {
+            //Every step of the animation, update the number value
+            //Use ceil to round up to the nearest whole int
+            $(".total").text(Math.ceil(this.counter));
+          },
+          complete: function () {
+            //Could add in some extra animations, like a bounc of colour change once the count up is complete.
+          },
+        }
+      );
+    </script>
+
+    <script type="text/javascript">
+      $(".dif").on("click", function (e) {
+        $(".demo-label").addClass("active"); //you can list several class names
+        e.preventDefault();
+      });
+      $(".msomoderate_box").on("click", function (e) {
+        $(".msomoderate_box").removeClass("active"); //you can list several class names
+        e.preventDefault();
+      });
+      $(".msomoderate_box").on("click", function (e) {
+        $(this).addClass("active"); //you can list several class names
+        e.preventDefault();
+      });
+      $(".xhid1").on("click", function (e) {
+        $(".xhid1data").addClass("op0"); //addgoalpopup
+        e.preventDefault();
+      });
+      $(".modelstyl2").on("click", function (e) {
+        $(".xhid1data").removeClass("op0"); //addgoalpopup
+        e.preventDefault();
+      });
+      $(".removeplnbox").on("click", function (e) {
+        $(".removeplnbox1").addClass("remove"); //you can list several class names
+        e.preventDefault();
+      });
+      // for_step_onclick_funcion
+
+      $(".ac1").on("click", function (e) {
+        $(".xtmclass").addClass("xac1");
+        $(".xtmclass").removeClass("xac2");
+        $(".xtmclass").removeClass("xac3");
+        $(".xtmclass").removeClass("xac4");
+        $(".xtmclass").removeClass("xac5");
+        $(".ac1").addClass("active");
+        $(".ac1").removeClass("done");
+        $(".ac2").removeClass("active done");
+        $(".ac3").removeClass("active done");
+        $(".ac4").removeClass("active done");
+        $(".ac5").removeClass("active done");
+        e.preventDefault();
+      });
+      $(".ac2").on("click", function (e) {
+        $(".xtmclass").addClass("xac2");
+        $(".xtmclass").removeClass("xac1");
+        $(".xtmclass").removeClass("xac3");
+        $(".xtmclass").removeClass("xac4");
+        $(".xtmclass").removeClass("xac5");
+        $(".ac1").addClass("active done");
+        $(".ac2").addClass("active");
+        $(".ac2").removeClass("done");
+        $(".ac3").removeClass("active done");
+        $(".ac4").removeClass("active done");
+        $(".ac5").removeClass("active done");
+        e.preventDefault();
+      });
+      $(".ac3").on("click", function (e) {
+        $(".xtmclass").addClass("xac3");
+        $(".xtmclass").removeClass("xac1");
+        $(".xtmclass").removeClass("xac2");
+        $(".xtmclass").removeClass("xac4");
+        $(".xtmclass").removeClass("xac5");
+        $(".ac1").addClass("active done");
+        $(".ac2").addClass("active done");
+        $(".ac3").addClass("active");
+        $(".ac3").removeClass("done");
+        $(".ac4").removeClass("active done");
+        $(".ac5").removeClass("active done");
+        e.preventDefault();
+      });
+      $(".ac4").on("click", function (e) {
+        $(".xtmclass").addClass("xac4");
+        $(".xtmclass").removeClass("xac1");
+        $(".xtmclass").removeClass("xac2");
+        $(".xtmclass").removeClass("xac3");
+        $(".xtmclass").removeClass("xac5");
+        $(".ac1").addClass("active done");
+        $(".ac2").addClass("active done");
+        $(".ac3").addClass("active done");
+        $(".ac4").addClass("active");
+        $(".ac4").removeClass("done");
+        $(".ac5").removeClass("active done");
+        e.preventDefault();
+      });
+      $(".ac5").on("click", function (e) {
+        $(".xtmclass").addClass("xac5");
+        $(".xtmclass").removeClass("xac1");
+        $(".xtmclass").removeClass("xac2");
+        $(".xtmclass").removeClass("xac3");
+        $(".xtmclass").removeClass("xac4");
+        $(".ac1").addClass("active done");
+        $(".ac2").addClass("active done");
+        $(".ac3").addClass("active done");
+        $(".ac4").addClass("active done");
+        $(".ac5").addClass("active");
+        $(".ac5").removeClass("done");
+        e.preventDefault();
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".msoskeletenload").removeClass("dn");
+
+        setTimeout(function () {
+          $(".msoskeletenload").addClass("dn");
+        }, 6000);
+      });
+    </script>
+
+    <script src="https://github.com/chartjs/Chart.js/releases/download/v2.9.3/Chart.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://github.com/chartjs/Chart.js/releases/download/v2.9.3/Chart.min.css"
+    />
+
+    <script type="text/javascript">
+      Chart.defaults.RoundedDoughnut = Chart.helpers.clone(
+        Chart.defaults.doughnut
+      );
+      Chart.controllers.RoundedDoughnut = Chart.controllers.doughnut.extend({
+        draw: function (ease) {
+          var ctx = this.chart.ctx;
+          var easingDecimal = ease || 1;
+          var arcs = this.getMeta().data;
+          Chart.helpers.each(arcs, function (arc, i) {
+            arc.transition(easingDecimal).draw();
+
+            var pArc = arcs[i === 0 ? arcs.length - 1 : i - 1];
+            var pColor = pArc._view.backgroundColor;
+
+            var vm = arc._view;
+            var radius = (vm.outerRadius + vm.innerRadius) / 2;
+            var thickness = (vm.outerRadius - vm.innerRadius) / 2;
+            var startAngle = Math.PI - vm.startAngle - Math.PI / 2;
+            var angle = Math.PI - vm.endAngle - Math.PI / 2;
+
+            ctx.save();
+            ctx.translate(vm.x, vm.y);
+
+            ctx.fillStyle = i === 0 ? vm.backgroundColor : pColor;
+            ctx.beginPath();
+            ctx.arc(
+              radius * Math.sin(startAngle),
+              radius * Math.cos(startAngle),
+              thickness,
+              0,
+              2 * Math.PI
+            );
+            ctx.fill();
+
+            ctx.fillStyle = vm.backgroundColor;
+            ctx.beginPath();
+            ctx.arc(
+              radius * Math.sin(angle),
+              radius * Math.cos(angle),
+              thickness,
+              0,
+              2 * Math.PI
+            );
+            ctx.fill();
+
+            ctx.restore();
+          });
+        },
+      });
+
+      window.onload = function () {
+        new Chart(document.getElementById("usersChart"), {
+          type: "RoundedDoughnut",
+          options: {
+            cutoutPercentage: 75,
+            animation: {
+              duration: 3000,
+            },
+            legend: {
+              position: "bottom",
+              labels: {
+                boxWidth: 0,
+                fontStyle: "italic",
+                fontColor: "#fff",
+                usePointStyle: false,
+              },
+            },
+          },
+
+          data: {
+            labels: ["First", "Second", "Third"],
+            datasets: [
+              {
+                data: [67, 19, 14],
+                borderWidth: 0,
+                backgroundColor: ["#31353f", "#ffc32c", "#b2b2b2"],
+                hoverBackgroundColor: ["#1d1f25", "#e4a913", "#8c8b8b"],
+              },
+            ],
+          },
+        });
+      };
+    </script>
+  </body>
+</html>

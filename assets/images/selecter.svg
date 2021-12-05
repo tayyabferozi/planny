@@ -1,0 +1,20 @@
+<svg id="Component_31_44" data-name="Component 31 – 44" xmlns="http://www.w3.org/2000/svg" width="72" height="32" viewBox="0 0 72 32">
+  <text id="_32" data-name="32" transform="translate(26 22)" fill="#31353f" font-size="20" font-family="SourceSansPro-Regular, Source Sans Pro"><tspan x="0" y="0">32</tspan></text>
+  <g id="Group_3283" data-name="Group 3283" transform="translate(-898 -253)">
+    <circle id="Ellipse_151" data-name="Ellipse 151" cx="16" cy="16" r="16" transform="translate(918 253)" fill="#ffc32c"/>
+    <g id="Group_3210" data-name="Group 3210" transform="translate(124 28)">
+      <g id="Rectangle_332" data-name="Rectangle 332" transform="translate(830 233)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+        <rect width="16" height="16" stroke="none"/>
+        <rect x="0.5" y="0.5" width="15" height="15" fill="none"/>
+      </g>
+      <path id="path" d="M8.6,7.4,10,6l6,6-6,6L8.6,16.6,13.2,12Z" transform="translate(825.4 229)" fill="#31353f" fill-rule="evenodd"/>
+    </g>
+    <g id="Group_3211" data-name="Group 3211" transform="translate(898 261)">
+      <g id="Rectangle_332-2" data-name="Rectangle 332" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+        <rect width="16" height="16" stroke="none"/>
+        <rect x="0.5" y="0.5" width="15" height="15" fill="none"/>
+      </g>
+      <path id="path-2" data-name="path" d="M16,7.4,14.6,6l-6,6,6,6L16,16.6,11.4,12Z" transform="translate(-4 -4)" fill="#31353f" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

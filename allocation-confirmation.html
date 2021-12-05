@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- BOOTSTRAP -->
+
+    <link rel="stylesheet" href="./assets/css/bootstrap-utilities.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap-gird.min.css" />
+
+    <!-- CUSTOM STYLESHEETS -->
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/utilities.css" />
+
+    <title>Confirm</title>
+  </head>
+  <body>
+    <div id="dark-overlay"></div>
+
+    <section id="allocation-confirm">
+      <div class="modal small-width">
+        <div class="close">
+          <img src="./assets/images/close.svg" alt="close" />
+        </div>
+        <div class="modal-head">
+          <div class="img">
+            <img src="./assets/images/bank_logo.svg" alt="logo" />
+          </div>
+          <div class="text">
+            <h4 class="title">
+              HDFC Banking And Financial Services Growth Direct Plan
+            </h4>
+            <h4 class="text-light-2">Mutual Fund</h4>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="text-fields">
+            <div class="control">
+              <h4 class="text-light-2">Allocation</h4>
+              <input class="active" type="text" value="30%" />
+            </div>
+            <div class="control">
+              <h4 class="text-light-2">Amount</h4>
+              <input type="text" value="₹9,000" />
+            </div>
+          </div>
+
+          <div class="slidecontainer">
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="50"
+              class="slider"
+              id="myRange"
+            />
+          </div>
+
+          <div class="btns">
+            <button class="btn btn-outlined-dark">Cancel</button>
+            <button class="btn btn-bg-primary">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/common.js"></script>
+  </body>
+</html>
