@@ -1,5 +1,40 @@
 @import "./_constants.scss";
 
+h1 {
+  font-size: 44px;
+
+  @media screen and (max-width: 991px) {
+    font-size: 30px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+
+  @media screen and (max-width: 991px) {
+    font-size: 24px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 40px;
+  word-spacing: 3.5px;
+
+  @media screen and(max-width: 991px) {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
 #dark-overlay {
   position: fixed;
   top: 0;
@@ -18,6 +53,10 @@ hr {
   border-radius: 7px;
   border: 1px solid $color2;
   padding: 0.5rem 1rem;
+}
+
+.text-yellow {
+  color: $color1;
 }
 
 .text-light {
@@ -374,15 +413,47 @@ hr {
   }
 }
 
-.modal {
+.custom-modal {
   position: fixed;
   z-index: 7;
   background-color: #fff;
   border-radius: 10px;
-  padding: 2rem 1.5rem;
+  padding: 5rem 1.5rem 2rem;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+
+  &:not(.small-width) {
+    .close {
+      top: 2.75rem;
+
+      &.top-right {
+        top: 1rem;
+        right: 1rem;
+      }
+
+      @media screen and (max-width: 768px) {
+        top: 2rem;
+      }
+    }
+
+    @media screen and (max-width: 1366px) {
+      top: unset;
+      bottom: 0;
+      transform: translateX(-50%);
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    @media screen and (max-width: 1366px) {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      height: 100%;
+      left: 50%;
+    }
+  }
 
   @media screen and (max-width: 768px) {
     top: unset;
@@ -402,17 +473,16 @@ hr {
     position: absolute;
     top: 1rem;
     right: 1.5rem;
+    cursor: pointer;
   }
 
   .modal-head {
     display: flex;
     justify-content: space-between;
-    width: 560px;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
     padding-bottom: 0.75rem;
-    border-bottom: 1px solid $color19;
 
     @media screen and (max-width: 575px) {
       align-items: flex-start;
@@ -447,6 +517,7 @@ hr {
 
   &.small-width {
     width: 660px;
+    height: unset;
   }
 }
 
@@ -500,16 +571,46 @@ hr {
 }
 
 .btn {
-  padding: 0.65rem 3rem;
+  padding: 0.65rem 2rem;
   font-size: 14px;
 }
 
 .btn-outlined-dark {
   border: 2px solid $color2;
   border-radius: 50px;
+  transition: 0.4s ease;
+
+  &:hover {
+    color: #fff;
+    background-color: $color2;
+  }
 }
 
 .btn-bg-primary {
   background-color: $color1;
   border-radius: 50px;
+  border: 2px solid transparent;
+  transition: 0.4s ease;
+
+  &:hover {
+    background-color: transparent;
+    border-color: $color1;
+  }
+}
+
+input.custom-input {
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.5rem;
+  border: 1px solid $color3;
+  font-weight: 600;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.active {
+    border-color: $color1;
+    box-shadow: 0 0 7px $color20;
+  }
 }

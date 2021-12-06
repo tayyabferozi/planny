@@ -111,41 +111,6 @@ table {
   }
 }
 
-h1 {
-  font-size: 44px;
-
-  @media screen and (max-width: 991px) {
-    font-size: 30px;
-  }
-}
-
-h2 {
-  font-size: 32px;
-
-  @media screen and (max-width: 991px) {
-    font-size: 24px;
-  }
-}
-
-h3 {
-  font-size: 24px;
-}
-
-h4 {
-  font-size: 16px;
-}
-
-p {
-  font-size: 20px;
-  line-height: 40px;
-  word-spacing: 3.5px;
-
-  @media screen and(max-width: 991px) {
-    font-size: 18px;
-    line-height: 32px;
-  }
-}
-
 .page-container {
   display: flex;
   justify-content: center;
@@ -588,7 +553,9 @@ p {
 // ***********************************************************************************************************************************
 
 #allocation-confirm {
-  .modal {
+  .custom-modal {
+    padding-top: 2rem;
+
     @media screen and (min-width: 575px) {
       padding-left: 3rem;
       padding-right: 3rem;
@@ -609,6 +576,9 @@ p {
     }
 
     .modal-head {
+      width: 560px;
+      border-bottom: 1px solid $color19;
+
       @media screen and (max-width: 768px) {
         justify-content: flex-start;
         width: unset;
@@ -664,22 +634,8 @@ p {
       }
 
       input {
-        border-radius: 5px;
-        padding: 0.5rem;
-        width: 100%;
         font-size: 32px;
         text-align: center;
-        font-weight: 600;
-        border: 1px solid $color3;
-
-        &:focus {
-          outline: none;
-        }
-
-        &.active {
-          border-color: $color1;
-          box-shadow: 0 0 7px $color20;
-        }
       }
     }
   }
@@ -712,6 +668,258 @@ p {
 
     .btn {
       margin: 0 1rem;
+      padding: 0.65rem 3rem;
+
+      @media screen and (max-width: 575px) {
+        margin: 0;
+      }
+    }
+  }
+}
+
+// ***********************************************************************************************************************************
+// ***********************************************************************************************************************************
+
+//  ***************************************************** INVESTMENT READY PAGE ******************************************************
+
+// ***********************************************************************************************************************************
+// ***********************************************************************************************************************************
+
+#investment-ready {
+  .custom-modal {
+    padding-top: 9rem;
+    overflow-y: auto;
+
+    @media screen and (min-width: 1367px) {
+      border-radius: 25px;
+    }
+
+    @media screen and (max-width: 575px) {
+      padding-top: 7rem;
+    }
+
+    .modal-body {
+      max-width: 1070px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .mySwiper {
+        padding-bottom: 3rem;
+        max-width: 200px;
+
+        .swiper-pagination {
+          .swiper-pagination-bullet {
+            background-color: transparent;
+            border: 1px solid $color1;
+            opacity: 1;
+            transition: 0.4s ease;
+
+            &.swiper-pagination-bullet-active {
+              background-color: $color1;
+            }
+          }
+        }
+      }
+
+      .cards {
+        margin-bottom: 20vh;
+
+        .card {
+          position: relative;
+          text-align: center;
+
+          &:not(.no-line):after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 1px;
+            height: 40px;
+            background-color: $color3;
+            transform: translateY(-50%);
+          }
+
+          img {
+            margin-bottom: 0.5rem;
+          }
+
+          h4 {
+            font-weight: 600;
+          }
+        }
+      }
+
+      .form {
+        max-width: 890px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+
+        @media screen and (max-width: 1366px) {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .text {
+          width: 50%;
+
+          @media screen and (max-width: 1366px) {
+            width: 100%;
+          }
+
+          h1 {
+            line-height: 1;
+            text-align: right;
+
+            @media screen and (max-width: 1366px) {
+              font-size: 32px;
+              text-align: center;
+            }
+          }
+        }
+
+        .confirmation {
+          width: 50%;
+
+          @media screen and (max-width: 1366px) {
+            width: 100%;
+            max-width: 500px;
+          }
+
+          @media screen and (max-width: 768px) {
+            margin-top: 4rem;
+          }
+
+          @media screen and (max-width: 575px) {
+            margin-top: 2rem;
+          }
+
+          .control {
+            h4 {
+              font-size: 14px;
+            }
+
+            input {
+              padding: 0.75rem 1rem;
+              font-size: 16px;
+
+              @media screen and (max-width: 1366px) and (min-width: 769px) {
+                width: 294px;
+              }
+            }
+          }
+
+          .btns {
+            @media screen and (max-width: 768px) {
+              text-align: center;
+              margin-top: 2rem !important;
+            }
+
+            @media screen and (max-width: 575px) {
+              margin-top: 1rem !important;
+            }
+
+            .btn {
+              padding-left: 2rem;
+              padding-right: 2rem;
+              font-size: 16px;
+
+              @media screen and (max-width: 768px) {
+                width: 47%;
+              }
+
+              @media screen and (max-width: 575px) {
+                width: 100%;
+                margin: 0.5rem 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ***********************************************************************************************************************************
+// ***********************************************************************************************************************************
+
+//  ********************************************************* DETAILS PAGE ***********************************************************
+
+// ***********************************************************************************************************************************
+// ***********************************************************************************************************************************
+
+#details {
+  .custom-modal {
+    .modal-head,
+    .modal-body {
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .modal-head {
+      padding: 0 2.5rem;
+    }
+
+    .modal-body {
+      .details-container {
+        display: flex;
+        justify-content: space-between;
+
+        .details-item {
+          width: 33.33%;
+          padding: 0 2.5rem;
+
+          .details-box {
+            .box-title {
+              font-size: 14px;
+              color: $color3;
+            }
+
+            .box-content {
+              position: relative;
+              border: 1px solid $color3;
+              border-radius: 3px;
+              margin-top: 1.5rem;
+
+              .box-subtitle {
+                position: absolute;
+                top: -15px;
+                left: -1px;
+                display: inline-block;
+                font-weight: 700;
+                padding: 0.425rem 0.75rem;
+                padding-right: 1rem;
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+                background-color: $color17;
+                color: $color3;
+              }
+
+              .box-text {
+                padding: 2rem 1.5rem 1rem;
+              }
+            }
+
+            &.primary {
+              .box-title {
+                color: $color1;
+              }
+
+              .box-content {
+                background-color: $color21;
+                border-color: $color1;
+
+                .box-subtitle {
+                  background-color: $color1;
+                  color: $color2;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

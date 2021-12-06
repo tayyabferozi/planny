@@ -7,13 +7,10 @@ window.onscroll = function () {
   document.getElementById("myBar").style.width = scrolled + "%";
 };
 
-document
-  .querySelector(".custom-tooltip .close")
-  .addEventListener("click", function () {
-    this.parentElement.remove();
-  });
+$(".custom-tooltip .close").click(function () {
+  $(this).parent().addClass("d-none");
+});
 
 $(".close").click(function () {
-  $(this).parents(".modal").addClass("d-none");
-  console.log("CLICKED");
+  $(this).parents(".custom-modal").addClass("d-none");
 });

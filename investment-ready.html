@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- BOOTSTRAP -->
+
+    <link rel="stylesheet" href="./assets/css/bootstrap-utilities.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap-gird.min.css" />
+
+    <!-- SWIPER -->
+
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+
+    <!-- CUSTOM STYLESHEETS -->
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/utilities.css" />
+
+    <title>Confirm</title>
+  </head>
+  <body>
+    <div id="dark-overlay"></div>
+
+    <section id="investment-ready">
+      <div class="custom-modal">
+        <div class="close">
+          <img src="./assets/images/close.svg" alt="close" />
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="swiper mySwiper d-block d-md-none mb-4">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card text-center">
+                    <img src="./assets/vector/paperless.svg" alt="paperless" />
+                    <h4>100% Paperless Process</h4>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card text-center">
+                    <img src="./assets/vector/secure.svg" alt="secure" />
+                    <h4>Secure Data & Money</h4>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card text-center no-line">
+                    <img src="./assets/vector/quick.svg" alt="quick" />
+                    <h4>Quick Verification</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="row cards d-none d-md-flex">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="./assets/vector/paperless.svg" alt="paperless" />
+                  <h4>100% Paperless Process</h4>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="./assets/vector/secure.svg" alt="secure" />
+                  <h4>Secure Data & Money</h4>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card no-line">
+                  <img src="./assets/vector/quick.svg" alt="quick" />
+                  <h4>Quick Verification</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="form">
+              <div class="text">
+                <h1 class="fw-normal mt-2 me-5">
+                  Check if you're <br />
+                  <div class="text-yellow">investment ready</div>
+                </h1>
+              </div>
+              <div class="confirmation">
+                <div class="control">
+                  <h4 class="text-light-2 mb-2">PAN</h4>
+                  <input
+                    type="text"
+                    class="custom-input mb-4"
+                    value="PA*L* K*PO*R"
+                  />
+                </div>
+                <div class="btns mt-2">
+                  <button class="btn btn-outlined-dark me-3">Not me</button>
+                  <button class="btn btn-bg-primary">Yes, this is me</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JQUERY -->
+
+    <script src="./assets/js/jquery.min.js"></script>
+
+    <!-- SWIPER -->
+
+    <script src="./assets/js/swiper.min.js"></script>
+
+    <!-- CUSTOM -->
+
+    <script defer src="./assets/js/common.js"></script>
+    <script defer src="./assets/js/investment-ready.js"></script>
+  </body>
+</html>
