@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- DATE PICKER -->
+
+    <link rel="stylesheet" href="./assets/css/mc-calendar.min.css" />
+
     <!-- BOOTSTRAP -->
 
     <link rel="stylesheet" href="./assets/css/bootstrap-utilities.min.css" />
@@ -21,7 +25,7 @@
     <div id="dark-overlay"></div>
 
     <section id="details">
-      <div class="custom-modal">
+      <div class="custom-modal bottem-aligned">
         <div class="close top-right">
           <img src="./assets/images/close.svg" alt="close" />
         </div>
@@ -53,29 +57,131 @@
                     </div>
                   </div>
                 </div>
+
+                <div class="custom-form-control">
+                  <h4 class="text-light-2">PAN</h4>
+                  <input
+                    class="custom-input"
+                    type="text"
+                    disabled
+                    value="BPGP1543k"
+                  />
+                </div>
+
+                <div class="custom-form-control">
+                  <h4 class="text-light-2">EMAIL</h4>
+                  <input
+                    class="custom-input"
+                    type="text"
+                    placeholder="example@mail.com"
+                  />
+                </div>
+
+                <div class="custom-form-control">
+                  <h4 class="text-light-2">DATE</h4>
+                  <input class="custom-input" id="example" type="date " />
+                </div>
               </div>
+
               <div class="details-item">
                 <div class="details-box">
-                  <h4 class="box-title">STEP 1</h4>
+                  <h4 class="box-title">STEP 2</h4>
 
                   <div class="box-content">
-                    <div class="box-subtitle">Basic Details</div>
+                    <div class="box-subtitle">Bank Details</div>
                     <div class="box-text">
                       As per SEBI, it is mandatory for you to add your bank
                       account details.
                     </div>
                   </div>
                 </div>
+
+                <div class="custom-form-control">
+                  <h4 class="text-light-2">NAME</h4>
+                  <input
+                    class="custom-input"
+                    type="text"
+                    placeholder="e. g: John Smith"
+                  />
+                </div>
+
+                <div class="custom-form-control">
+                  <h4 class="text-light-2">NAME</h4>
+                  <div class="radio-container">
+                    <label class="custom-radio"
+                      >Male
+                      <input type="radio" checked="checked" name="gender" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="custom-radio"
+                      >Female
+                      <input type="radio" name="gender" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="custom-radio"
+                      >Other
+                      <input type="radio" name="gender" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="custom-form-control">
+                  <h4 class="text-light-2">MARRIAGE STATUS</h4>
+                  <div class="radio-container">
+                    <label class="custom-radio"
+                      >Single
+                      <input type="radio" checked="checked" name="status" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="custom-radio"
+                      >Married
+                      <input type="radio" name="status" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
               </div>
               <div class="details-item">
                 <div class="details-box">
-                  <h4 class="box-title">STEP 1</h4>
+                  <h4 class="box-title">STEP 3</h4>
 
                   <div class="box-content">
-                    <div class="box-subtitle">Basic Details</div>
+                    <div class="box-subtitle">Signature</div>
                     <div class="box-text">
                       Your signature should match with your PAN Card’s
                       signature.
+                    </div>
+                  </div>
+
+                  <div class="custom-form-control switch-container">
+                    <label for="#nominee">
+                      <h4>NOMINEE</h4>
+                    </label>
+                    <label id="nominee" class="switch">
+                      <input type="checkbox" checked />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+
+                  <div class="custom-form-control">
+                    <h4 class="text-light-2">NOMINEE NAME</h4>
+                    <input
+                      class="custom-input"
+                      type="text"
+                      disabled
+                      value="Sachin Kumar"
+                    />
+                  </div>
+
+                  <div class="custom-form-control">
+                    <h4 class="text-light-2">RELATIONSHIP</h4>
+                    <div class="custom-select">
+                      <select>
+                        <option value="1">Brother</option>
+                        <option value="2">Sister</option>
+                        <option value="3">Father</option>
+                        <option value="4">Mother</option>
+                      </select>
                     </div>
                   </div>
                 </div>
@@ -86,6 +192,10 @@
       </div>
     </section>
 
+    <!-- DATE PICKER -->
+
+    <script src="./assets/js/mc-calendar.min.js"></script>
+
     <!-- JQUERY -->
 
     <script src="./assets/js/jquery.min.js"></script>
@@ -93,5 +203,7 @@
     <!-- CUSTOM -->
 
     <script defer src="./assets/js/common.js"></script>
+    <script defer src="./assets/js/select.js"></script>
+    <script defer src="./assets/js/details.js"></script>
   </body>
 </html>

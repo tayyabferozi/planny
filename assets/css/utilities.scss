@@ -24,6 +24,10 @@ h4 {
   font-size: 16px;
 }
 
+h5 {
+  font-size: 14px;
+}
+
 p {
   font-size: 20px;
   line-height: 40px;
@@ -33,6 +37,38 @@ p {
     font-size: 18px;
     line-height: 32px;
   }
+}
+
+.ws-1 {
+  word-spacing: 1px;
+}
+
+.fs-52 {
+  font-size: 52px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.lh-34 {
+  line-height: 34px;
+}
+
+.lh-30 {
+  line-height: 30px;
+}
+
+.lh-28 {
+  line-height: 28px;
 }
 
 #dark-overlay {
@@ -47,12 +83,6 @@ p {
 
 hr {
   border-top: 1px solid $color5;
-}
-
-.btn-outlined {
-  border-radius: 7px;
-  border: 1px solid $color2;
-  padding: 0.5rem 1rem;
 }
 
 .text-yellow {
@@ -413,6 +443,8 @@ hr {
   }
 }
 
+// ////////////////////////////////////////////////////// CUSTOM MODAL ////////////////////////////////////////////////////////
+
 .custom-modal {
   position: fixed;
   z-index: 7;
@@ -424,6 +456,34 @@ hr {
   transform: translate(-50%, -50%);
   width: 90%;
   height: 90%;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  &.bottem-aligned {
+    top: unset;
+    bottom: 0;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 
   &:not(.small-width) {
     .close {
@@ -521,6 +581,8 @@ hr {
   }
 }
 
+////////////////////////////////////////////////////// CUSTOM RANGE SLIDER  ////////////////////////////////////////////////////////
+
 .slidecontainer {
   width: 100%;
   position: relative;
@@ -570,9 +632,12 @@ hr {
   }
 }
 
+////////////////////////////////////////////////////// CUSTOM BTNS  ////////////////////////////////////////////////////////
+
 .btn {
   padding: 0.65rem 2rem;
   font-size: 14px;
+  flex-grow: 0;
 }
 
 .btn-outlined-dark {
@@ -580,10 +645,21 @@ hr {
   border-radius: 50px;
   transition: 0.4s ease;
 
+  &.primary {
+    color: $color1;
+    border-color: $color1;
+  }
+
   &:hover {
     color: #fff;
     background-color: $color2;
   }
+}
+
+.btn-outlined {
+  border-radius: 7px;
+  border: 1px solid $color2;
+  padding: 0.5rem 1rem;
 }
 
 .btn-bg-primary {
@@ -598,19 +674,473 @@ hr {
   }
 }
 
+////////////////////////////////////////////////////// CUSTOM FORM CONTROLS   ////////////////////////////////////////////////////////
+
+.custom-form-control {
+  h4 {
+    font-size: 14px;
+    margin-bottom: 0.75rem;
+  }
+}
+
 input.custom-input {
   width: 100%;
   border-radius: 5px;
   padding: 0.5rem;
   border: 1px solid $color3;
-  font-weight: 600;
+  transition: 0.4s ease;
 
+  &.active,
   &:focus {
     outline: none;
-  }
-
-  &.active {
     border-color: $color1;
     box-shadow: 0 0 7px $color20;
+  }
+}
+
+// ////////////////////////////////////////////////////// CUSTOM RADIO ////////////////////////////////////////////////////////
+
+.custom-radio {
+  position: relative;
+  display: inline-block;
+  padding-left: 1.5rem;
+  padding-right: 1.75rem;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &,
+  & * {
+    transition: 0.4s ease;
+  }
+
+  &:hover {
+    input ~ .checkmark {
+      background-color: $color9;
+    }
+  }
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+    & ~ .checkmark {
+      transition: 0.4s ease;
+
+      &::after {
+        display: block;
+        left: 50%;
+        top: 50%;
+        opacity: 0;
+        transition: 0.4s ease;
+      }
+    }
+
+    &:checked ~ .checkmark {
+      border-color: $color1;
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border: 1px solid $color3;
+    border-radius: 50%;
+    transform: translateY(-50%);
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: none;
+      top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: $color1;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+// ////////////////////////////////////////////////////// CUSTOM SWITCH ////////////////////////////////////////////////////////
+
+/* The container */
+.checkbox-container {
+  display: block;
+  position: relative;
+  margin: 12px 0;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+    &:checked ~ .checkmark {
+      background-color: $color1;
+      border-color: transparent;
+
+      &::after {
+        display: block;
+      }
+    }
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 16px;
+    width: 16px;
+    border: 1px solid $color2;
+    border-radius: 3px;
+    transform: translateY(-50%);
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 4px;
+      top: 0px;
+      width: 4px;
+      height: 8px;
+      border: solid white;
+      border-width: 0 2.5px 2.5px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+}
+
+// ////////////////////////////////////////////////////// CUSTOM SWITCH ////////////////////////////////////////////////////////
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    &:checked {
+      & + .slider:before {
+        transform: translate(13px, 1px);
+      }
+
+      & + .slider {
+        background-color: $color1;
+      }
+    }
+
+    &:focus + .slider {
+      box-shadow: 0 0 1px $color1;
+    }
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 35px;
+    height: 20px;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    margin-left: 0.25rem;
+
+    &.round {
+      border-radius: 34px;
+
+      &::before {
+        border-radius: 50%;
+      }
+    }
+
+    &:before {
+      position: absolute;
+      content: "";
+      height: 14px;
+      width: 14px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+    }
+  }
+}
+
+.radio-container,
+.switch-container {
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.switch-container {
+  margin-top: 4rem;
+}
+
+// ////////////////////////////////////////////////////// CUSTOM SELECT ////////////////////////////////////////////////////////
+// select-arrow-active
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  width: 100%;
+
+  svg {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  /*style the arrow inside the select element:*/
+  border: 1px solid $color3 !important;
+  border-radius: 5px;
+  padding: 0.5rem !important;
+
+  &.select-arrow-active {
+    border-color: $color1 !important;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 20px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    transition: 0.4s ease;
+  }
+
+  /*point the arrow upwards when the select box is open (active):*/
+  &.select-arrow-active:after {
+    border-color: $color1;
+    top: 17px;
+    transform: rotate(-135deg);
+  }
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  // border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 15px 20px #55555542;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div {
+  transition: 0.4s ease;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: $color21;
+  color: $color1;
+}
+
+// //////////////////////////////////////////////////////////// STYLED BOXES ///////////////////////////////////////////////////////////
+
+.details-container {
+  display: flex;
+  justify-content: space-between;
+
+  .details-item {
+    width: 33.33%;
+    padding: 0 2.5rem;
+
+    .custom-form-control {
+      margin-bottom: 1.5rem;
+    }
+
+    .details-box {
+      .box-title {
+        font-size: 14px;
+        color: $color3;
+      }
+
+      .box-content {
+        position: relative;
+        border: 1px solid $color3;
+        border-radius: 3px;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+
+        .box-subtitle {
+          position: absolute;
+          top: -15px;
+          left: -2px;
+          display: inline-block;
+          font-weight: 700;
+          padding: 0.425rem 0.75rem;
+          padding-right: 1rem;
+          border-top-right-radius: 25px;
+          border-bottom-right-radius: 25px;
+          background-color: $color17;
+          color: $color3;
+        }
+
+        .box-text {
+          padding: 2rem 1.5rem 1rem;
+        }
+
+        .edit {
+          position: absolute;
+          right: 0.75rem;
+          bottom: 0.5rem;
+        }
+      }
+
+      &.primary {
+        .box-title {
+          color: $color1;
+        }
+
+        .box-content {
+          background-color: $color21;
+          border-color: $color1;
+
+          .box-subtitle {
+            background-color: $color1;
+            color: $color2;
+          }
+        }
+      }
+
+      &.green {
+        .box-title {
+          color: $color23;
+        }
+
+        .box-content {
+          border-color: $color23;
+          background-color: $color24;
+
+          .box-subtitle {
+            background-color: $color23;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+// //////////////////////////////////////////////////////////// SIDENAV ///////////////////////////////////////////////////////////
+
+#sidenav-container {
+  display: flex;
+
+  & > * {
+    padding-top: 4rem;
+  }
+
+  #sidenav {
+    height: 100vh;
+    width: 20%;
+    background-color: $color26;
+
+    .logo {
+      display: block;
+      padding-top: 0.75rem;
+      text-align: center;
+    }
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+      padding: 1rem 0;
+      padding-left: 5rem;
+
+      &.help {
+        margin-top: 5rem;
+      }
+
+      &.active,
+      &:hover {
+        background-color: $color21;
+
+        * {
+          color: $color1;
+        }
+
+        svg {
+          path,
+          line {
+            stroke: $color1;
+          }
+        }
+      }
+
+      &.back {
+        margin: 5rem 0;
+      }
+
+      svg {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  #sidenav-right-content {
+    width: 80%;
+
+    section {
+      max-width: 1252px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }

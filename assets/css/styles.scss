@@ -610,7 +610,7 @@ table {
       flex-direction: column;
     }
 
-    .control {
+    .custom-form-control {
       width: 50%;
 
       @media screen and (max-width: 575px) {
@@ -630,12 +630,12 @@ table {
 
       h4 {
         font-size: 16px;
-        margin-bottom: 0.75rem;
       }
 
       input {
         font-size: 32px;
         text-align: center;
+        font-weight: 600;
       }
     }
   }
@@ -795,18 +795,9 @@ table {
             margin-top: 2rem;
           }
 
-          .control {
-            h4 {
-              font-size: 14px;
-            }
-
-            input {
-              padding: 0.75rem 1rem;
-              font-size: 16px;
-
-              @media screen and (max-width: 1366px) and (min-width: 769px) {
-                width: 294px;
-              }
+          input.custom-input {
+            @media screen and (max-width: 1366px) and (min-width: 769px) {
+              width: 294px;
             }
           }
 
@@ -849,7 +840,9 @@ table {
 // ***********************************************************************************************************************************
 // ***********************************************************************************************************************************
 
-#details {
+#details,
+#uploading,
+#uploader {
   .custom-modal {
     .modal-head,
     .modal-body {
@@ -861,63 +854,197 @@ table {
     .modal-head {
       padding: 0 2.5rem;
     }
+  }
+}
 
-    .modal-body {
-      .details-container {
+// ***********************************************************************************************************************************
+// ***********************************************************************************************************************************
+
+//  ********************************************************* UPLOADING PAGE ***********************************************************
+
+// ***********************************************************************************************************************************
+// ***********************************************************************************************************************************
+
+#uploading {
+  .uploading {
+    padding: 0 2.5rem;
+
+    .upload-head {
+      .file-info {
+        .file-img {
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    .upload-body {
+      margin-top: 1rem;
+      position: relative;
+      height: 16px;
+      width: 100%;
+      border-radius: 25px;
+      overflow-y: hidden;
+
+      .bg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: $color4;
+      }
+
+      .progress {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: $color23;
+      }
+    }
+  }
+}
+
+#blogs {
+  .main {
+    padding-right: 1.5rem;
+  }
+
+  .hero {
+    background-color: $color25;
+    padding: 5rem 2rem;
+    border-radius: 10px;
+
+    p {
+      max-width: 572px;
+    }
+
+    .btn {
+      display: inline-block;
+    }
+
+    @media screen and (min-width: 992px) {
+    }
+  }
+
+  .blog-posts {
+    .blog-post {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2rem 0;
+      border-bottom: 1px solid $color5;
+
+      .blog-img,
+      .blog-text {
+        height: 223px;
+      }
+
+      .blog-img {
+        flex-shrink: 0;
+        width: 36.5%;
+
+        @media screen and (max-width: 1366px) {
+          width: 38%;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .blog-text {
+        padding-left: 2rem;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
 
-        .details-item {
-          width: 33.33%;
-          padding: 0 2.5rem;
+        h3 {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
 
-          .details-box {
-            .box-title {
-              font-size: 14px;
-              color: $color3;
-            }
+// ***********************************************************************************************************************************
+// ***********************************************************************************************************************************
 
-            .box-content {
-              position: relative;
-              border: 1px solid $color3;
-              border-radius: 3px;
-              margin-top: 1.5rem;
+//  ************************************************** REFER AND INVEST PAGE *********************************************************
 
-              .box-subtitle {
-                position: absolute;
-                top: -15px;
-                left: -1px;
-                display: inline-block;
-                font-weight: 700;
-                padding: 0.425rem 0.75rem;
-                padding-right: 1rem;
-                border-top-right-radius: 25px;
-                border-bottom-right-radius: 25px;
-                background-color: $color17;
-                color: $color3;
-              }
+// ***********************************************************************************************************************************
+// ***********************************************************************************************************************************
 
-              .box-text {
-                padding: 2rem 1.5rem 1rem;
-              }
-            }
+#refer-and-invest {
+  .cards {
+    margin-top: 4rem;
 
-            &.primary {
-              .box-title {
-                color: $color1;
-              }
+    .card {
+      margin: 1rem 0;
+      background-color: $color21;
+      padding: 2rem 5rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border-radius: 20px;
 
-              .box-content {
-                background-color: $color21;
-                border-color: $color1;
+      .img {
+        width: 25%;
 
-                .box-subtitle {
-                  background-color: $color1;
-                  color: $color2;
-                }
-              }
+        img {
+          width: 127.21px;
+        }
+      }
+
+      .text {
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .sub-section {
+          flex-grow: 1;
+
+          &:nth-child(1) {
+            width: 10%;
+          }
+        }
+
+        &.refer {
+          .referral {
+            width: 375px;
+            margin-right: 3rem;
+            flex-grow: 0;
+          }
+
+          .copy {
+            position: relative;
+            background-color: #fff;
+            border: 2px dotted $color1;
+            width: 225px;
+            padding: 0.5rem 1rem;
+            color: $color1;
+
+            img.copyer {
+              position: absolute;
+              right: 0.5rem;
             }
           }
+
+          .social {
+            a {
+              margin-right: 1.25rem;
+            }
+          }
+        }
+
+        .form {
+          max-width: 315px;
+        }
+
+        .reminder {
+          padding-right: 5.5rem;
         }
       }
     }
