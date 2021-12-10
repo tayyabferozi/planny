@@ -1138,6 +1138,7 @@ table tr td {
   width: 225px;
   padding: 0.5rem 1rem;
   color: #ffc32c;
+  cursor: pointer;
 }
 
 #refer-and-invest .cards .card .text.refer .copy img.copyer {

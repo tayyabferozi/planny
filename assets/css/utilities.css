@@ -735,14 +735,19 @@ hr {
   transition: 0.4s ease;
 }
 
+.btn-outlined-dark:hover {
+  color: #fff;
+  background-color: #31353f;
+}
+
 .btn-outlined-dark.primary {
   color: #ffc32c;
   border-color: #ffc32c;
 }
 
-.btn-outlined-dark:hover {
+.btn-outlined-dark.primary:hover {
   color: #fff;
-  background-color: #31353f;
+  background-color: #ffc32c;
 }
 
 .btn-outlined {
@@ -1203,6 +1208,13 @@ input.custom-input.active, input.custom-input:focus {
           align-items: center;
   padding: 1rem 0;
   padding-left: 5rem;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+#sidenav-container #sidenav .nav-item * {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 #sidenav-container #sidenav .nav-item.help {
@@ -1218,8 +1230,10 @@ input.custom-input.active, input.custom-input:focus {
 }
 
 #sidenav-container #sidenav .nav-item.active svg path,
-#sidenav-container #sidenav .nav-item.active svg line, #sidenav-container #sidenav .nav-item:hover svg path,
-#sidenav-container #sidenav .nav-item:hover svg line {
+#sidenav-container #sidenav .nav-item.active svg line,
+#sidenav-container #sidenav .nav-item.active svg circle, #sidenav-container #sidenav .nav-item:hover svg path,
+#sidenav-container #sidenav .nav-item:hover svg line,
+#sidenav-container #sidenav .nav-item:hover svg circle {
   stroke: #ffc32c;
 }
 
