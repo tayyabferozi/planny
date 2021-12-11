@@ -972,6 +972,11 @@ table tr td {
 }
 
 #uploader .file-uploader input {
+  display: none;
+}
+
+#uploader .file-uploader label {
+  display: block;
   width: 100%;
   height: 132px;
   border: 1px dotted #ffc32c;
