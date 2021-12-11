@@ -119,6 +119,11 @@ table {
   padding-left: var(--section-padding) !important;
   padding-right: var(--section-padding) !important;
 
+  &.lg {
+    max-width: 1803px;
+    display: block;
+  }
+
   @media screen and (max-width: 1435px) {
     max-width: unset;
   }
@@ -161,9 +166,58 @@ table {
   align-items: center;
   padding: var(--section-padding);
   z-index: 5;
+
   @media screen and (max-width: 575px) {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  &.sm {
+    padding-bottom: 2rem;
+
+    @media screen and (min-width: 1200px) {
+      padding-left: 8rem;
+      padding-right: 8rem;
+    }
+  }
+
+  .custom-dropdown {
+    margin-right: 4rem;
+  }
+}
+
+#navbar-sm {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: var(--section-padding);
+  z-index: 5;
+
+  & > div {
+    max-width: 1675px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width) {
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  &.sm {
+    padding-bottom: 2rem;
+  }
+
+  .custom-dropdown {
+    margin-right: 4rem;
   }
 }
 
@@ -1217,6 +1271,128 @@ table {
 
       .folio {
         width: 21%;
+      }
+    }
+  }
+}
+
+// ***********************************************************************************************************************************
+// ***********************************************************************************************************************************
+
+//  ***************************************************** TRANSACTTION PAGE **********************************************************
+
+// ***********************************************************************************************************************************
+// ***********************************************************************************************************************************
+
+#profile {
+  .custom-form-control {
+    margin-top: 1.5rem;
+    max-width: 374px;
+
+    input {
+    }
+  }
+
+  .user-pic-container {
+    position: relative;
+    margin-top: 9rem;
+
+    img {
+      max-width: 110px;
+      height: 110px;
+      width: 100%;
+      border-radius: 50%;
+    }
+
+    .edit {
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .deactivate {
+    border: 1px solid $color1;
+    background-color: $color21;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .left {
+      width: 75%;
+    }
+
+    .right {
+      flex-grow: 1;
+      text-align: center;
+    }
+  }
+}
+
+// ***********************************************************************************************************************************
+// ***********************************************************************************************************************************
+
+//  ***************************************************** NOTIFICATIONS PAGE **********************************************************
+
+// ***********************************************************************************************************************************
+// ***********************************************************************************************************************************
+
+#notifications {
+  .head {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    button {
+      margin-left: 10rem;
+    }
+  }
+
+  .body {
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      padding: 1rem 0;
+      border-bottom: 1px solid $color19;
+
+      svg {
+        position: absolute;
+        left: -2rem;
+        top: 1.45rem;
+      }
+
+      &.green {
+        svg {
+          circle {
+            fill: $color23;
+          }
+        }
+      }
+
+      &.red {
+        svg {
+          circle {
+            fill: $color28;
+          }
+        }
+      }
+
+      &.disabled {
+        h4 {
+          color: $color3;
+        }
+
+        svg {
+          circle {
+            fill: $color3;
+          }
+        }
       }
     }
   }

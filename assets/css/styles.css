@@ -128,6 +128,11 @@ table tr td {
   padding-right: var(--section-padding) !important;
 }
 
+.page-container.lg {
+  max-width: 1803px;
+  display: block;
+}
+
 @media screen and (max-width: 1435px) {
   .page-container {
     max-width: unset;
@@ -192,6 +197,62 @@ table tr td {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+}
+
+#navbar.sm {
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 1200px) {
+  #navbar.sm {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+
+#navbar .custom-dropdown {
+  margin-right: 4rem;
+}
+
+#navbar-sm {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: var(--section-padding);
+  z-index: 5;
+}
+
+#navbar-sm > div {
+  max-width: 1675px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 575px) {
+  #navbar-sm {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+#navbar-sm.sm {
+  padding-bottom: 2rem;
+}
+
+#navbar-sm .custom-dropdown {
+  margin-right: 4rem;
 }
 
 #financial-planning-abbr abbr {
@@ -1330,5 +1391,111 @@ table tr td {
 
 #transaction .transaction .transaction-body .folio {
   width: 21%;
+}
+
+#profile .custom-form-control {
+  margin-top: 1.5rem;
+  max-width: 374px;
+}
+
+#profile .user-pic-container {
+  position: relative;
+  margin-top: 9rem;
+}
+
+#profile .user-pic-container img {
+  max-width: 110px;
+  height: 110px;
+  width: 100%;
+  border-radius: 50%;
+}
+
+#profile .user-pic-container .edit {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 24px;
+  height: 24px;
+}
+
+#profile .deactivate {
+  border: 1px solid #ffc32c;
+  background-color: #fffbef;
+  padding: 1rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#profile .deactivate .left {
+  width: 75%;
+}
+
+#profile .deactivate .right {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+}
+
+#notifications .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#notifications .head button {
+  margin-left: 10rem;
+}
+
+#notifications .body .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+#notifications .body .item svg {
+  position: absolute;
+  left: -2rem;
+  top: 1.45rem;
+}
+
+#notifications .body .item.green svg circle {
+  fill: #01c58d;
+}
+
+#notifications .body .item.red svg circle {
+  fill: #ff3100;
+}
+
+#notifications .body .item.disabled h4 {
+  color: #b2b2b2;
+}
+
+#notifications .body .item.disabled svg circle {
+  fill: #b2b2b2;
 }
 /*# sourceMappingURL=styles.css.map */

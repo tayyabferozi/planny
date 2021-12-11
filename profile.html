@@ -459,37 +459,231 @@
             <h2>My Profile</h2>
           </a>
 
-          <div class="profile-main mt-4 pt-3">
+          <div class="profile-main pt-3">
             <div class="container">
-              <div class="col-3">
-                <div class="custom-form-control">
-                  <h4 class="text-light-2">PAN</h4>
-                  <input
-                    class="custom-input"
-                    type="text"
-                    disabled
-                    value="BPGP1543k"
-                  />
-                </div>
+              <div class="row">
+                <div class="col-4">
+                  <div class="custom-form-control">
+                    <h4 class="text-light-2">PAN</h4>
+                    <input
+                      class="custom-input"
+                      type="text"
+                      disabled
+                      value="BPGP1543k"
+                    />
+                  </div>
 
-                <div class="custom-form-control mt-4">
-                  <h4 class="text-light-2">DATE OF BIRTH</h4>
-                  <input
-                    class="custom-input"
-                    id="example"
-                    type="date"
-                    placeholder="DD/MM/YYYY"
-                  />
-                </div>
+                  <div class="custom-form-control">
+                    <h4 class="text-light-2">DATE OF BIRTH</h4>
+                    <input
+                      class="custom-input"
+                      id="example"
+                      type="date"
+                      placeholder="DD/MM/YYYY"
+                    />
+                  </div>
 
-                <div class="custom-form-control mt-4">
-                  <h4 class="text-light-2">MOBILE</h4>
-                  <input
-                    class="custom-input"
-                    type="number"
-                    disabled
-                    value="8130482336"
-                  />
+                  <div class="custom-form-control">
+                    <h4 class="text-light-2">MOBILE</h4>
+                    <input
+                      class="custom-input"
+                      type="number"
+                      value="8130482336"
+                    />
+                  </div>
+
+                  <div class="custom-form-control">
+                    <h4 class="text-light-2">MARRIAGE STATUS</h4>
+                    <div class="radio-container">
+                      <label class="custom-radio"
+                        >Single
+                        <input type="radio" checked="checked" name="status" />
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="custom-radio"
+                        >Married
+                        <input type="radio" name="status" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="custom-form-control switch-container">
+                    <label for="#nominee">
+                      <h4>NOMINEE</h4>
+                    </label>
+                    <label id="nominee" class="switch">
+                      <input type="checkbox" checked />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+
+                  <div class="custom-form-control">
+                    <h4 class="text-light-2">NOMINEE NAME</h4>
+                    <input
+                      class="custom-input"
+                      type="text"
+                      value="Sachin Kumar"
+                    />
+                  </div>
+
+                  <div class="custom-form-control">
+                    <h4 class="text-light-2">PASSWORD</h4>
+                    <input
+                      class="custom-input"
+                      type="password"
+                      value="SachinKumarSachinKumarSach"
+                    />
+                    <a class="fs-12 text-end mt-1 d-block" href="">Change</a>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="custom-form-control">
+                    <h4 class="text-light-2">NAME</h4>
+                    <input
+                      class="custom-input"
+                      type="text"
+                      value="PALAK KAPOOR"
+                    />
+                  </div>
+
+                  <div class="custom-form-control">
+                    <h4 class="text-light-2">EMAIL</h4>
+                    <input
+                      class="custom-input"
+                      type="text"
+                      value="palak.kapoor@gmail.com"
+                    />
+                  </div>
+
+                  <div class="custom-form-control">
+                    <h4 class="text-light-2">RESIDENTIAL STATUS</h4>
+                    <div class="radio-container">
+                      <label class="custom-radio"
+                        >Indian
+                        <input
+                          type="radio"
+                          checked="checked"
+                          name="res-status"
+                        />
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="custom-radio"
+                        >Non Indian
+                        <input type="radio" name="res-status" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="custom-form-control">
+                    <h4 class="text-light-2">GENDER</h4>
+                    <div class="radio-container">
+                      <label class="custom-radio"
+                        >Male
+                        <input type="radio" checked="checked" name="gender" />
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="custom-radio"
+                        >Female
+                        <input type="radio" name="gender" />
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="custom-radio"
+                        >Other
+                        <input type="radio" name="gender" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="custom-form-control empty"></div>
+
+                  <div class="custom-form-control">
+                    <h4 class="text-light-2">EMAIL</h4>
+                    <input
+                      class="custom-input"
+                      type="text"
+                      value="palak.kapoor@gmail.com"
+                    />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="user-pic-container text-center">
+                    <img src="./assets/img/user-lg.png" alt="user" />
+                    <img
+                      class="edit"
+                      src="./assets/vector/edit.svg"
+                      alt="edit"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <h2 class="mt-5">Bank Account</h2>
+
+              <div class="row">
+                <div class="col-4">
+                  <div class="custom-form-control">
+                    <h4 class="text-light-2">ACCOUNT HOLDER NAME</h4>
+                    <input
+                      class="custom-input"
+                      type="text"
+                      value="Ravi Kumar"
+                    />
+                  </div>
+
+                  <div class="custom-form-control">
+                    <h4 class="text-light-2">IFSC CODE</h4>
+                    <input
+                      class="custom-input"
+                      type="text"
+                      value="HDFC400543"
+                    />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="custom-form-control">
+                    <h4 class="text-light-2">ACCOUNT NUMBER</h4>
+                    <input
+                      class="custom-input"
+                      type="text"
+                      value="334882489763345"
+                    />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="custom-form-control">
+                    <h4 class="text-light-2">ACCOUNT TYPE</h4>
+                    <div class="custom-select">
+                      <select>
+                        <option value="1">Saving</option>
+                        <option value="2">Current</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-5 btn btn-bg-primary d-inline-block">
+                <h4 class="fw-normal">+ Add Bank</h4>
+              </div>
+
+              <div class="deactivate mt-5 mb-4">
+                <div class="left">
+                  <h3 class="fw-normal text-underline text-yellow">
+                    Deactivate my account
+                  </h3>
+                  <p class="lh-28 mt-3 fs-18">
+                    You will receive an email to confirm your decision. Please
+                    note, that all the teams, notes and impediments you have
+                    created will be permanently erased.
+                  </p>
+                </div>
+                <div class="right">
+                  <button class="btn btn-bg-primary">
+                    <h4 class="fw-normal">Delete</h4>
+                  </button>
                 </div>
               </div>
             </div>

@@ -51,8 +51,20 @@ p {
   font-size: 20px;
 }
 
+.fs-17 {
+  font-size: 17px;
+}
+
+.fs-16 {
+  font-size: 18px;
+}
+
 .fs-18 {
   font-size: 18px;
+}
+
+.fs-12 {
+  font-size: 12px;
 }
 
 .fw-500 {
@@ -87,6 +99,17 @@ p {
 
 hr {
   border-top: 1px solid $color5;
+}
+
+div.shadowy {
+  border: none;
+  width: 100%;
+  height: 1px;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.text-underline {
+  text-decoration: underline;
 }
 
 .text-yellow {
@@ -642,6 +665,15 @@ hr {
   padding: 0.65rem 2rem;
   font-size: 14px;
   flex-grow: 0;
+
+  &.w-100px {
+    width: 100px;
+  }
+
+  &.btn-bg-light {
+    background-image: linear-gradient(to bottom, $color17, #fff);
+    color: $color3;
+  }
 }
 
 .btn-outlined-dark {
@@ -707,6 +739,15 @@ hr {
   h4 {
     font-size: 14px;
     margin-bottom: 0.75rem;
+  }
+
+  &.empty {
+    height: 35px;
+  }
+
+  a {
+    color: $color1;
+    text-decoration: underline;
   }
 
   &.search-sm {
@@ -1193,9 +1234,88 @@ input.custom-input {
     width: 80%;
 
     section {
-      max-width: 1252px;
+      max-width: 1276px;
       margin-left: auto;
       margin-right: auto;
+    }
+  }
+}
+
+/* Dropdown Button */
+.dropbtn {
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+
+  &.show {
+    display: block;
+
+    .dropdown-content {
+      display: block;
+    }
+  }
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: -3rem;
+  top: 3rem;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 0px 25px $color3;
+  border-radius: 10px;
+  z-index: 1;
+  width: 384px;
+
+  .head {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $color21;
+    border: 1px solid $color1;
+    padding: 1rem 2rem;
+
+    .text {
+      margin-left: 2rem;
+    }
+  }
+
+  .body {
+    margin: 2rem 0;
+
+    .nav-item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 1rem 3.5rem;
+
+      svg {
+        margin-right: 1.25rem;
+      }
+
+      &.active,
+      &:hover {
+        background-color: $color21;
+
+        * {
+          color: $color1;
+        }
+
+        svg {
+          path,
+          line,
+          circle {
+            stroke: $color1;
+          }
+        }
+      }
     }
   }
 }
