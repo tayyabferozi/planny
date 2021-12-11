@@ -966,6 +966,26 @@ table tr td {
   padding: 0 2.5rem;
 }
 
+#uploader .file-uploader {
+  padding: 0 2.5rem;
+  position: relative;
+}
+
+#uploader .file-uploader input {
+  width: 100%;
+  height: 132px;
+  border: 1px dotted #ffc32c;
+  background-color: transparent;
+}
+
+#uploader .file-uploader h4 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 #uploading .uploading {
   padding: 0 2.5rem;
 }
@@ -1156,5 +1176,154 @@ table tr td {
 
 #refer-and-invest .cards .card .text .reminder {
   padding-right: 5.5rem;
+}
+
+#transactions .filter {
+  width: 94px;
+  height: 40px;
+  margin-left: 3rem;
+}
+
+#transactions .select-selected {
+  padding: 0.585rem 1rem !important;
+}
+
+#transactions .transactions-body .transaction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+#transactions .transactions-body .transaction > *:nth-child(1) {
+  width: 30%;
+}
+
+#transactions .transactions-body .transaction > *:nth-child(2), #transactions .transactions-body .transaction > *:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#transactions .transactions-body .transaction > *:nth-child(2) {
+  width: 20%;
+}
+
+#transactions .transactions-body .transaction > *:nth-child(3) {
+  width: 25%;
+}
+
+#transactions .transactions-body .transaction .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#transactions .transactions-body .transaction .details img {
+  width: 48px;
+}
+
+#transactions .transactions-body .transaction .status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#transactions .transactions-body .transaction .status .btn {
+  width: 100px;
+}
+
+#transaction h2 {
+  position: relative;
+}
+
+#transaction h2 .back {
+  position: absolute;
+  top: 60%;
+  left: -2rem;
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
+}
+
+#transaction .transaction .transaction-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eeeeee;
+}
+
+#transaction .transaction .transaction-head .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+}
+
+#transaction .transaction .transaction-head .details .logo {
+  width: 64px;
+}
+
+#transaction .transaction .transaction-head .details .logo img {
+  width: 100%;
+}
+
+#transaction .transaction .transaction-head .status .btn {
+  width: 100px;
+}
+
+#transaction .transaction .transaction-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1.5rem;
+}
+
+#transaction .transaction .transaction-body .nav-date {
+  width: 9%;
+}
+
+#transaction .transaction .transaction-body .folio {
+  width: 21%;
 }
 /*# sourceMappingURL=styles.css.map */

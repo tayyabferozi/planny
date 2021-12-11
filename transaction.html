@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/utilities.css" />
 
-    <title>Transactions</title>
+    <title>Transaction</title>
   </head>
   <body>
     <div id="sidenav-container">
@@ -450,317 +450,62 @@
       <!-- --------------------------------------------- MAIN START --------------------------------------------- -->
 
       <main id="sidenav-right-content">
-        <section id="transactions">
-          <h2>All Transactions</h2>
+        <section id="transaction">
+          <a href="./transactions.html">
+            <h2>
+              <img
+                class="back"
+                src="./assets/vector/arrow-left.svg"
+                alt="arrow"
+              />
+              Back To Transactions
+            </h2>
+          </a>
 
-          <div
-            class="
-              transactions-head
-              d-flex
-              justify-content-between
-              align-items-center
-              mt-4
-            "
-          >
-            <h5 class="text-light-2">02 MAR 2021</h5>
-            <div class="d-flex">
-              <div class="custom-form-control search-sm">
-                <input
-                  class="custom-input"
-                  type="search"
-                  placeholder="Search Your Fund"
-                />
-                <img src="./assets/vector/search.svg" alt="search" />
-              </div>
-              <div class="custom-form-control filter">
-                <div class="custom-select">
-                  <select>
-                    <option value="1">All</option>
-                    <option value="2">Success</option>
-                    <option value="3">Unsuccess</option>
-                    <option value="4">Pending</option>
-                  </select>
+          <div class="transaction mt-5 pt-4">
+            <div class="transaction-head">
+              <div class="details">
+                <div class="logo me-3">
+                  <img src="./assets/images/bank_logo.svg" alt="bank-logo" />
                 </div>
+                <div class="text">
+                  <h3 class="fw-normal">ICICI Prudential Savings Fund (G)</h3>
+                  <h4 class="fs-18 text-light-2">24 oct 2021, 05:30 pm</h4>
+                </div>
+              </div>
+              <div class="invest">
+                <h4 class="text-light-2">INVEST</h4>
+              </div>
+              <div class="status">
+                <button class="btn btn-outlined green">Success</button>
+              </div>
+              <div class="amount">
+                <h1 class="fw-normal">₹4,780</h1>
+              </div>
+            </div>
+            <div class="transaction-body">
+              <div class="type">
+                <h4 class="text-light-2 mb-3">TYPE</h4>
+                <h3 class="fs-20 fw-normal">MUTUAL FUND</h3>
+              </div>
+              <div class="units">
+                <h4 class="text-light-2 mb-3">UNITS</h4>
+                <h3 class="fs-20 fw-normal">394</h3>
+              </div>
+              <div class="nav-date">
+                <h4 class="text-light-2 mb-3">NAV DATE</h4>
+                <h3 class="fs-20 fw-normal">09 MAY 2021</h3>
+              </div>
+              <div class="folio">
+                <h4 class="text-light-2 mb-3">FOLIO</h4>
+                <h3 class="fs-20 fw-normal">577321640866</h3>
+              </div>
+              <div class="tid">
+                <h4 class="text-light-2 mb-3">TRANSACTION ID</h4>
+                <h3 class="fs-20 fw-normal">PN38462H3HHS6</h3>
               </div>
             </div>
           </div>
-
-          <div class="transactions-body mt-2">
-            <a class="transaction">
-              <div class="details">
-                <div class="img">
-                  <img src="./assets/images/bank_logo.svg" alt="logo" />
-                </div>
-                <div class="text ms-3">
-                  <h4 class="fs-18 fw-normal">
-                    ICICI Prudential Savings Fund (G)
-                  </h4>
-                  <h5 class="text-light-2 mt-1">24 oct 2021, 05:30 pm</h5>
-                </div>
-              </div>
-              <div>
-                <div class="invest">
-                  <h4 class="text-light-2 fw-normal">INVEST</h4>
-                </div>
-                <div class="funds">
-                  <h4 class="text-light-2 fw-normal">MUTUAL FUNDS</h4>
-                </div>
-              </div>
-              <div>
-                <div class="amount">
-                  <h3 class="fw-normal">₹4,780</h3>
-                </div>
-                <div class="status">
-                  <button class="btn btn-outlined green">Success</button>
-                  <img
-                    class="ms-4"
-                    src="./assets/vector/arrow-right.svg"
-                    alt="arrow"
-                  />
-                </div>
-              </div>
-            </a>
-            <a class="transaction">
-              <div class="details">
-                <div class="img">
-                  <img src="./assets/images/bank_logo-2.svg" alt="logo" />
-                </div>
-                <div class="text ms-3">
-                  <h4 class="fs-18 fw-normal">
-                    L&T Emerging Businesses Growth…
-                  </h4>
-                  <h5 class="text-light-2 mt-1">24 oct 2021, 05:30 pm</h5>
-                </div>
-              </div>
-              <div>
-                <div class="invest">
-                  <h4 class="text-light-2 fw-normal">INVEST</h4>
-                </div>
-                <div class="funds">
-                  <h4 class="text-light-2 fw-normal">MUTUAL FUNDS</h4>
-                </div>
-              </div>
-              <div>
-                <div class="amount">
-                  <h3 class="fw-normal">₹21,632</h3>
-                </div>
-                <div class="status">
-                  <button class="btn btn-outlined red">Unsuccess</button>
-                  <img
-                    class="ms-4"
-                    src="./assets/vector/arrow-right.svg"
-                    alt="arrow"
-                  />
-                </div>
-              </div>
-            </a>
-            <a class="transaction">
-              <div class="details">
-                <div class="img">
-                  <img src="./assets/images/bank_logo.svg" alt="logo" />
-                </div>
-                <div class="text ms-3">
-                  <h4 class="fs-18 fw-normal">
-                    ICICI Prudential Savings Fund (G)
-                  </h4>
-                  <h5 class="text-light-2 mt-1">24 oct 2021, 05:30 pm</h5>
-                </div>
-              </div>
-              <div>
-                <div class="invest">
-                  <h4 class="text-light-2 fw-normal">WITHDRAW</h4>
-                </div>
-                <div class="funds">
-                  <h4 class="text-light-2 fw-normal">MUTUAL FUNDS</h4>
-                </div>
-              </div>
-              <div>
-                <div class="amount">
-                  <h3 class="fw-normal">-₹7,560</h3>
-                </div>
-                <div class="status">
-                  <button class="btn btn-outlined red">Unsuccess</button>
-                  <img
-                    class="ms-4"
-                    src="./assets/vector/arrow-right.svg"
-                    alt="arrow"
-                  />
-                </div>
-              </div>
-            </a>
-            <a class="transaction">
-              <div class="details">
-                <div class="img">
-                  <img src="./assets/images/bank_logo.svg" alt="logo" />
-                </div>
-                <div class="text ms-3">
-                  <h4 class="fs-18 fw-normal">
-                    ICICI Prudential Savings Fund (G)
-                  </h4>
-                  <h5 class="text-light-2 mt-1">24 oct 2021, 05:30 pm</h5>
-                </div>
-              </div>
-              <div>
-                <div class="invest">
-                  <h4 class="text-light-2 fw-normal">INVEST</h4>
-                </div>
-                <div class="funds">
-                  <h4 class="text-light-2 fw-normal">MUTUAL FUNDS</h4>
-                </div>
-              </div>
-              <div>
-                <div class="amount">
-                  <h3 class="fw-normal">₹5,000</h3>
-                </div>
-                <div class="status">
-                  <button class="btn btn-outlined green">Success</button>
-                  <img
-                    class="ms-4"
-                    src="./assets/vector/arrow-right.svg"
-                    alt="arrow"
-                  />
-                </div>
-              </div>
-            </a>
-            <a class="transaction">
-              <div class="details">
-                <div class="img">
-                  <img src="./assets/images/bank_logo.svg" alt="logo" />
-                </div>
-                <div class="text ms-3">
-                  <h4 class="fs-18 fw-normal">
-                    ICICI Prudential Savings Fund (G)
-                  </h4>
-                  <h5 class="text-light-2 mt-1">24 oct 2021, 05:30 pm</h5>
-                </div>
-              </div>
-              <div>
-                <div class="invest">
-                  <h4 class="text-light-2 fw-normal">INVEST</h4>
-                </div>
-                <div class="funds">
-                  <h4 class="text-light-2 fw-normal">MUTUAL FUNDS</h4>
-                </div>
-              </div>
-              <div>
-                <div class="amount">
-                  <h3 class="fw-normal">₹5,000</h3>
-                </div>
-                <div class="status">
-                  <button class="btn btn-outlined green">Success</button>
-                  <img
-                    class="ms-4"
-                    src="./assets/vector/arrow-right.svg"
-                    alt="arrow"
-                  />
-                </div>
-              </div>
-            </a>
-            <a class="transaction">
-              <div class="details">
-                <div class="img">
-                  <img src="./assets/images/bank_logo.svg" alt="logo" />
-                </div>
-                <div class="text ms-3">
-                  <h4 class="fs-18 fw-normal">
-                    ICICI Prudential Savings Fund (G)
-                  </h4>
-                  <h5 class="text-light-2 mt-1">24 oct 2021, 05:30 pm</h5>
-                </div>
-              </div>
-              <div>
-                <div class="invest">
-                  <h4 class="text-light-2 fw-normal">INVEST</h4>
-                </div>
-                <div class="funds">
-                  <h4 class="text-light-2 fw-normal">MUTUAL FUNDS</h4>
-                </div>
-              </div>
-              <div>
-                <div class="amount">
-                  <h3 class="fw-normal">-₹20,000</h3>
-                </div>
-                <div class="status">
-                  <button class="btn btn-outlined yellow">Pending</button>
-                  <img
-                    class="ms-4"
-                    src="./assets/vector/arrow-right.svg"
-                    alt="arrow"
-                  />
-                </div>
-              </div>
-            </a>
-            <a class="transaction">
-              <div class="details">
-                <div class="img">
-                  <img src="./assets/images/bank_logo-3.svg" alt="logo" />
-                </div>
-                <div class="text ms-3">
-                  <h4 class="fs-18 fw-normal">
-                    HDFC Banking And Financial Services…
-                  </h4>
-                  <h5 class="text-light-2 mt-1">24 oct 2021, 05:30 pm</h5>
-                </div>
-              </div>
-              <div>
-                <div class="invest">
-                  <h4 class="text-light-2 fw-normal">WITHDRAW</h4>
-                </div>
-                <div class="funds">
-                  <h4 class="text-light-2 fw-normal">FIXED DEPOSITS</h4>
-                </div>
-              </div>
-              <div>
-                <div class="amount">
-                  <h3 class="fw-normal">₹5,000</h3>
-                </div>
-                <div class="status">
-                  <button class="btn btn-outlined green">Success</button>
-                  <img
-                    class="ms-4"
-                    src="./assets/vector/arrow-right.svg"
-                    alt="arrow"
-                  />
-                </div>
-              </div>
-            </a>
-            <a class="transaction">
-              <div class="details">
-                <div class="img">
-                  <img src="./assets/images/bank_logo.svg" alt="logo" />
-                </div>
-                <div class="text ms-3">
-                  <h4 class="fs-18 fw-normal">
-                    ICICI Prudential Savings Fund (G)
-                  </h4>
-                  <h5 class="text-light-2 mt-1">24 oct 2021, 05:30 pm</h5>
-                </div>
-              </div>
-              <div>
-                <div class="invest">
-                  <h4 class="text-light-2 fw-normal">INVEST</h4>
-                </div>
-                <div class="funds">
-                  <h4 class="text-light-2 fw-normal">MUTUAL FUNDS</h4>
-                </div>
-              </div>
-              <div>
-                <div class="amount">
-                  <h3 class="fw-normal">₹34,892</h3>
-                </div>
-                <div class="status">
-                  <button class="btn btn-outlined green">Success</button>
-                  <img
-                    class="ms-4"
-                    src="./assets/vector/arrow-right.svg"
-                    alt="arrow"
-                  />
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="transactions"></div>
         </section>
       </main>
 

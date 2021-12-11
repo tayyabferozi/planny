@@ -55,6 +55,10 @@ p {
   font-size: 18px;
 }
 
+.fw-500 {
+  font-weight: 600;
+}
+
 .fw-600 {
   font-weight: 600;
 }
@@ -665,6 +669,24 @@ hr {
   border-radius: 7px;
   border: 1px solid $color2;
   padding: 0.5rem 1rem;
+
+  &.green {
+    background-color: $color27;
+    color: $color23;
+    border-color: $color23;
+  }
+
+  &.red {
+    background-color: $color29;
+    color: $color28;
+    border-color: $color28;
+  }
+
+  &.yellow {
+    background-color: $color21;
+    color: $color1;
+    border-color: $color1;
+  }
 }
 
 .btn-bg-primary {
@@ -685,6 +707,28 @@ hr {
   h4 {
     font-size: 14px;
     margin-bottom: 0.75rem;
+  }
+
+  &.search-sm {
+    width: 202px;
+    position: relative;
+
+    input {
+      font-size: 16px;
+      padding: 0.75rem;
+      padding: 0.565rem 1rem;
+
+      &::placeholder {
+        color: $color3;
+      }
+    }
+
+    img {
+      position: absolute;
+      right: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 }
 
@@ -943,7 +987,7 @@ input.custom-input {
     content: "";
     top: 14px;
     right: 20px;
-    border: solid black;
+    border: solid $color2;
     border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 3px;
