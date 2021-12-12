@@ -80,6 +80,12 @@ p {
 }
 
 @media screen and (max-width: 1366px) {
+  .fs-1366-40 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
   .fs-1366-24 {
     font-size: 24px;
   }
@@ -112,6 +118,24 @@ p {
 @media screen and (max-width: 1366px) {
   .fs-991-20 {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fs-768-16 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fs-768-14 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fs-768-12 {
+    font-size: 12px;
   }
 }
 
@@ -155,6 +179,36 @@ p {
 @media screen and (max-width: 1366px) {
   .w-1366-88 {
     width: 88px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .w-1366-80 {
+    width: 80px !important;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .w-1366-48 {
+    width: 48px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .w-768-72 {
+    width: 72px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .w-768-32 {
+    width: 32px !important;
+  }
+}
+
+@media screen and (min-width: 1367px) {
+  .d-1366-block {
+    display: block !important;
   }
 }
 
@@ -882,6 +936,10 @@ div.shadowy {
   border-color: #01c58d;
 }
 
+.btn-outlined.green * {
+  color: #01c58d;
+}
+
 .btn-outlined.red {
   background-color: #fff0ed;
   color: #ff3100;
@@ -1385,20 +1443,6 @@ input.custom-input.active, input.custom-input:focus {
   height: 100vh;
   width: 20%;
   background-color: #fafbfc;
-  padding-left: 4vw;
-  padding-right: 1rem;
-}
-
-@media screen and (max-width: 1366px) {
-  #sidenav-container #sidenav {
-    padding-left: 2.5vw;
-  }
-}
-
-@media screen and (max-width: 1160px) {
-  #sidenav-container #sidenav {
-    padding-left: 2vw;
-  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1407,10 +1451,33 @@ input.custom-input.active, input.custom-input:focus {
   }
 }
 
+#sidenav-container #sidenav > *,
+#sidenav-container #sidenav .nav .nav-item {
+  padding-left: 4vw;
+  padding-right: 1rem;
+}
+
+@media screen and (max-width: 1366px) {
+  #sidenav-container #sidenav > *,
+  #sidenav-container #sidenav .nav .nav-item {
+    padding-left: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  #sidenav-container #sidenav > *,
+  #sidenav-container #sidenav .nav .nav-item {
+    padding-left: 2vw;
+  }
+}
+
 #sidenav-container #sidenav .logo {
   display: block;
   padding-top: 0.75rem;
-  padding-left: 40px;
+}
+
+#sidenav-container #sidenav .logo img {
+  margin-left: 40px;
 }
 
 @media screen and (max-width: 1366px) {
@@ -1426,7 +1493,8 @@ input.custom-input.active, input.custom-input:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
 }
@@ -1464,6 +1532,11 @@ input.custom-input.active, input.custom-input:focus {
   margin-right: 1rem;
 }
 
+#sidenav-container #sidenav .nav {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 #sidenav-container #sidenav-right-content {
   width: 80%;
   padding-left: 5rem;
@@ -1483,6 +1556,14 @@ input.custom-input.active, input.custom-input:focus {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #sidenav-container #sidenav-right-content.transactions-right {
+    width: 100%;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
   }
 }
 

@@ -75,6 +75,12 @@ p {
   font-size: 12px;
 }
 
+.fs-1366-40 {
+  @media screen and (max-width: 1366px) {
+    font-size: 40px;
+  }
+}
+
 .fs-1366-24 {
   @media screen and (max-width: 1366px) {
     font-size: 24px;
@@ -108,6 +114,24 @@ p {
 .fs-991-20 {
   @media screen and (max-width: 1366px) {
     font-size: 20px;
+  }
+}
+
+.fs-768-16 {
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.fs-768-14 {
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.fs-768-12 {
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
   }
 }
 
@@ -151,6 +175,36 @@ p {
 .w-1366-88 {
   @media screen and (max-width: 1366px) {
     width: 88px;
+  }
+}
+
+.w-1366-80 {
+  @media screen and (max-width: 1366px) {
+    width: 80px !important;
+  }
+}
+
+.w-1366-48 {
+  @media screen and (max-width: 1366px) {
+    width: 48px !important;
+  }
+}
+
+.w-768-72 {
+  @media screen and (max-width: 768px) {
+    width: 72px !important;
+  }
+}
+
+.w-768-32 {
+  @media screen and (max-width: 768px) {
+    width: 32px !important;
+  }
+}
+
+.d-1366-block {
+  @media screen and (min-width: 1367px) {
+    display: block !important;
   }
 }
 
@@ -785,6 +839,10 @@ div.shadowy {
     background-color: $color27;
     color: $color23;
     border-color: $color23;
+
+    * {
+      color: $color23;
+    }
   }
 
   &.red {
@@ -1267,25 +1325,32 @@ input.custom-input {
     height: 100vh;
     width: 20%;
     background-color: $color26;
-    padding-left: 4vw;
-    padding-right: 1rem;
-
-    @media screen and (max-width: 1366px) {
-      padding-left: 2.5vw;
-    }
-
-    @media screen and (max-width: 1160px) {
-      padding-left: 2vw;
-    }
 
     @media screen and (max-width: 991px) {
       display: none;
     }
 
+    & > *,
+    & .nav .nav-item {
+      padding-left: 4vw;
+      padding-right: 1rem;
+
+      @media screen and (max-width: 1366px) {
+        padding-left: 2.5vw;
+      }
+
+      @media screen and (max-width: 1160px) {
+        padding-left: 2vw;
+      }
+    }
+
     .logo {
       display: block;
       padding-top: 0.75rem;
-      padding-left: 40px;
+
+      img {
+        margin-left: 40px;
+      }
 
       @media screen and (max-width: 1366px) {
         img {
@@ -1297,7 +1362,8 @@ input.custom-input {
     .nav-item {
       display: flex;
       align-items: center;
-      padding: 1rem 0;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
       transition: 0.4s ease;
 
       * {
@@ -1333,6 +1399,14 @@ input.custom-input {
         margin-right: 1rem;
       }
     }
+
+    .nav {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+
+      .nav-item {
+      }
+    }
   }
 
   #sidenav-right-content {
@@ -1350,6 +1424,14 @@ input.custom-input {
       width: 100%;
       padding-left: 0;
       padding-right: 0;
+    }
+
+    &.transactions-right {
+      @media screen and (max-width: 575px) {
+        width: 100%;
+        padding-left: 1.75rem;
+        padding-right: 1.75rem;
+      }
     }
 
     section {

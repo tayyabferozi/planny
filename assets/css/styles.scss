@@ -1180,25 +1180,83 @@ table {
       align-items: center;
       border-radius: 20px;
 
+      @media screen and (max-width: 1200px) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+
       .img {
-        width: 25%;
+        width: 18%;
+
+        @media screen and (max-width: 1200px) {
+          width: 16%;
+        }
 
         img {
-          width: 127.21px;
+          width: 83px;
+
+          @media screen and (max-width: 991px) {
+            width: 127.21px;
+          }
         }
       }
 
       .text {
-        width: 75%;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
+        @media screen and (max-width: 991px) {
+          flex-wrap: wrap;
+        }
+
         .sub-section {
           flex-grow: 1;
+          margin-right: 2rem;
 
           &:nth-child(1) {
             width: 10%;
+            margin-left: 2rem;
+
+            @media screen and (min-width: 1366px) {
+              min-width: 165px;
+            }
+
+            @media screen and (max-width: 1365px) {
+              min-width: 85px;
+            }
+          }
+
+          &:nth-child(2) {
+            @media screen and (min-width: 1366px) {
+              min-width: 140px;
+            }
+          }
+
+          &:nth-child(3) {
+            @media screen and (min-width: 1366px) {
+              min-width: 165px;
+            }
+          }
+
+          &:nth-child(4) {
+            @media screen and (min-width: 1366px) {
+              min-width: 220px;
+            }
+
+            @media screen and (max-width: 1365px) {
+              flex-grow: 0;
+            }
+
+            @media screen and (max-width: 991px) {
+              width: 100%;
+              margin-left: 2rem;
+              margin-top: 1.5rem;
+
+              .btn {
+                width: 75%;
+              }
+            }
           }
         }
 
@@ -1261,14 +1319,26 @@ table {
 #transactions {
   .title {
     position: relative;
-
     padding-left: 0.5rem;
+
+    @media screen and (max-width: 991px) {
+      padding-bottom: 1rem;
+
+      &::after {
+        content: "";
+        bottom: -0.25rem;
+        left: -2rem;
+        position: absolute;
+        width: 100vw;
+        height: 1px;
+        background-color: $color30;
+      }
+    }
 
     img {
       position: absolute;
-      top: 50%;
+      top: 0.325rem;
       left: -1.5rem;
-      transform: translateY(-50%);
 
       @media screen and (min-width: 992px) {
         display: none;
@@ -1295,6 +1365,7 @@ table {
 
   .transactions-body {
     .transaction {
+      position: relative;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -1303,6 +1374,18 @@ table {
 
       @media screen and (min-width: 1367px) {
         padding-right: 0.5rem;
+      }
+
+      @media screen and (max-width: 575px) {
+        width: 100%;
+        flex-wrap: wrap;
+
+        &::after {
+          content: url("../vector/arrow-right.svg");
+          position: absolute;
+          top: 2.25rem;
+          right: 0;
+        }
       }
 
       & > * {
@@ -1319,6 +1402,14 @@ table {
           @media screen and (max-width: 1270px) {
             width: 33.33%;
           }
+
+          @media screen and (max-width: 991px) {
+            width: 40%;
+          }
+
+          @media screen and (max-width: 575px) {
+            width: 100%;
+          }
         }
 
         &:nth-child(2) {
@@ -1333,7 +1424,18 @@ table {
           }
 
           @media screen and (max-width: 991px) {
-            width: 24%;
+            width: 30%;
+            justify-content: center;
+          }
+
+          @media screen and (max-width: 991px) {
+            width: 22.5%;
+          }
+
+          @media screen and (max-width: 575px) {
+            width: 30%;
+            justify-content: flex-start;
+            padding-left: 4rem;
           }
         }
 
@@ -1347,6 +1449,30 @@ table {
           @media screen and (max-width: 1270px) {
             width: 31.33%;
           }
+
+          @media screen and (max-width: 991px) {
+            width: 30%;
+          }
+
+          @media screen and (max-width: 991px) {
+            width: 31%;
+          }
+
+          @media screen and (max-width: 800px) {
+            width: 35%;
+          }
+
+          @media screen and (max-width: 675px) {
+            width: 37%;
+          }
+
+          @media screen and (max-width: 575px) {
+            width: 55%;
+
+            img {
+              display: none;
+            }
+          }
         }
       }
 
@@ -1359,6 +1485,10 @@ table {
             @media screen and (max-width: 1590px) {
               font-size: 14px;
             }
+
+            @media screen and (max-width: 575px) {
+              padding-right: 1rem;
+            }
           }
         }
 
@@ -1368,7 +1498,9 @@ table {
       }
 
       .funds {
-        display: none;
+        @media screen and (max-width: 991px) {
+          display: none;
+        }
       }
 
       .status {
@@ -1406,8 +1538,18 @@ table {
     .back {
       position: absolute;
       top: 60%;
-      left: -2rem;
+      left: -1.75rem;
       transform: translateY(-60%);
+    }
+
+    &::after {
+      content: "";
+      bottom: -2rem;
+      left: -2rem;
+      position: absolute;
+      width: 100vw;
+      height: 1px;
+      background-color: $color30;
     }
   }
 
@@ -1419,17 +1561,36 @@ table {
       padding-bottom: 1.5rem;
       border-bottom: 1px solid $color19;
 
+      @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+      }
+
       .details {
         display: flex;
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-start;
         width: 40%;
+
+        @media screen and (max-width: 1480px) {
+          width: 50%;
+        }
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          margin-bottom: 1rem;
+        }
 
         .logo {
           width: 64px;
 
           img {
             width: 100%;
+          }
+        }
+
+        .text {
+          @media screen and (max-width: 1366px) and (min-width: 769px) {
+            margin-left: 1rem;
           }
         }
       }
@@ -1446,13 +1607,45 @@ table {
       justify-content: space-between;
       align-items: center;
       padding-top: 1.5rem;
+      padding-bottom: 7rem;
 
-      .nav-date {
-        width: 9%;
+      @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
       }
 
-      .folio {
-        width: 21%;
+      h4 {
+        margin-bottom: 0.5rem;
+
+        @media screen and (min-width: 1367px) {
+          margin-bottom: 1rem;
+        }
+      }
+
+      // .nav-date {
+      //   width: 9%;
+      // }
+
+      // .folio {
+      //   width: 21%;
+      // }
+
+      .tid {
+        @media screen and (max-width: 768px) {
+          margin-top: 3rem;
+          width: 100%;
+        }
+      }
+
+      & > div {
+        @media screen and (max-width: 575px) {
+          margin-top: 1.5rem !important;
+          width: 50%;
+        }
+      }
+
+      .type,
+      .units {
+        margin-top: 0 !important;
       }
     }
   }
