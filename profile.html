@@ -67,7 +67,7 @@
             </g>
           </svg>
 
-          <h4 class="fs-20">
+          <h4 class="fs-20 fs-1366-16">
             Back to <br />
             Performance Tracker
           </h4>
@@ -140,7 +140,7 @@
               </g>
             </svg>
 
-            <h4 class="fs-18 fw-normal">Profile</h4>
+            <h4 class="fs-18 fs-1366-14 fw-normal">Profile</h4>
           </a>
           <a href="#" class="nav-item">
             <svg
@@ -216,7 +216,7 @@
               </g>
             </svg>
 
-            <h4 class="fs-18 fw-normal">Transactions</h4>
+            <h4 class="fs-18 fs-1366-14 fw-normal">Transactions</h4>
           </a>
           <a href="#" class="nav-item">
             <svg
@@ -304,7 +304,7 @@
               </g>
             </svg>
 
-            <h4 class="fs-18 fw-normal">Refer And Invest</h4>
+            <h4 class="fs-18 fs-1366-14 fw-normal">Refer And Invest</h4>
           </a>
           <a href="#" class="nav-item">
             <svg
@@ -374,7 +374,7 @@
               </g>
             </svg>
 
-            <h4 class="fs-18 fw-normal">Sign Out</h4>
+            <h4 class="fs-18 fs-1366-14 fw-normal">Sign Out</h4>
           </a>
           <a href="#" class="nav-item help">
             <svg
@@ -444,7 +444,7 @@
               </g>
             </svg>
 
-            <h4 class="fs-18 fw-normal">Help &amp; Product Tour</h4>
+            <h4 class="fs-18 fs-1366-14 fw-normal">Help &amp; Product Tour</h4>
           </a>
         </div>
       </nav>
@@ -455,14 +455,24 @@
 
       <main id="sidenav-right-content">
         <section id="profile">
-          <a href="./transactions.html">
-            <h2>My Profile</h2>
-          </a>
+          <div class="container-fluid pt-2 p-0">
+            <a
+              class="d-flex justify-content-start align-items-center my-profile"
+              href="./transactions.html"
+            >
+              <img
+                class="back me-2"
+                src="./assets/vector/back-arrow.svg"
+                alt="back-arrow"
+              />
+              <h2 class="fs-1366-24 fs-991-20">My Profile</h2>
+            </a>
+          </div>
 
           <div class="profile-main pt-3">
-            <div class="container">
+            <div class="container-fluid">
               <div class="row">
-                <div class="col-4">
+                <div class="col-lg-4 col-md-6 col-12 order-lg-1 order-2">
                   <div class="custom-form-control">
                     <h4 class="text-light-2">PAN</h4>
                     <input
@@ -534,10 +544,12 @@
                       type="password"
                       value="SachinKumarSachinKumarSach"
                     />
-                    <a class="fs-12 text-end mt-1 d-block" href="">Change</a>
+                    <a class="fs-12 fs-1366-14 text-end mt-1 d-block" href=""
+                      >Change</a
+                    >
                   </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-md-6 col-12 order-lg-2 order-3">
                   <div class="custom-form-control">
                     <h4 class="text-light-2">NAME</h4>
                     <input
@@ -568,7 +580,7 @@
                         />
                         <span class="checkmark"></span>
                       </label>
-                      <label class="custom-radio"
+                      <label class="custom-radio pe-0"
                         >Non Indian
                         <input type="radio" name="res-status" />
                         <span class="checkmark"></span>
@@ -597,18 +609,16 @@
                     </div>
                   </div>
 
-                  <div class="custom-form-control empty"></div>
+                  <div
+                    class="custom-form-control empty d-none d-sm-block"
+                  ></div>
 
                   <div class="custom-form-control">
-                    <h4 class="text-light-2">EMAIL</h4>
-                    <input
-                      class="custom-input"
-                      type="text"
-                      value="palak.kapoor@gmail.com"
-                    />
+                    <h4 class="text-light-2">RELATIONSHIP</h4>
+                    <input class="custom-input" type="text" value="Brother" />
                   </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-12 order-lg-3 order-1">
                   <div class="user-pic-container text-center">
                     <img src="./assets/img/user-lg.png" alt="user" />
                     <img
@@ -620,46 +630,50 @@
                 </div>
               </div>
 
-              <h2 class="mt-5">Bank Account</h2>
+              <div class="d-none d-md-block">
+                <h2 class="mt-5 fs-1366-24 fs-991-20">Bank Account</h2>
 
-              <div class="row">
-                <div class="col-4">
-                  <div class="custom-form-control">
-                    <h4 class="text-light-2">ACCOUNT HOLDER NAME</h4>
-                    <input
-                      class="custom-input"
-                      type="text"
-                      value="Ravi Kumar"
-                    />
+                <div class="row">
+                  <div class="col-6 col-lg-4">
+                    <div class="custom-form-control">
+                      <h4 class="text-light-2">ACCOUNT HOLDER NAME</h4>
+                      <input
+                        class="custom-input"
+                        type="text"
+                        value="Ravi Kumar"
+                      />
+                    </div>
                   </div>
 
-                  <div class="custom-form-control">
-                    <h4 class="text-light-2">IFSC CODE</h4>
-                    <input
-                      class="custom-input"
-                      type="text"
-                      value="HDFC400543"
-                    />
+                  <div class="col-6 col-lg-4">
+                    <div class="custom-form-control">
+                      <h4 class="text-light-2">IFSC CODE</h4>
+                      <input
+                        class="custom-input"
+                        type="text"
+                        value="HDFC400543"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div class="col-4">
-                  <div class="custom-form-control">
-                    <h4 class="text-light-2">ACCOUNT NUMBER</h4>
-                    <input
-                      class="custom-input"
-                      type="text"
-                      value="334882489763345"
-                    />
+                  <div class="col-6 col-lg-4">
+                    <div class="custom-form-control">
+                      <h4 class="text-light-2">ACCOUNT NUMBER</h4>
+                      <input
+                        class="custom-input"
+                        type="text"
+                        value="334882489763345"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div class="col-4">
-                  <div class="custom-form-control">
-                    <h4 class="text-light-2">ACCOUNT TYPE</h4>
-                    <div class="custom-select">
-                      <select>
-                        <option value="1">Saving</option>
-                        <option value="2">Current</option>
-                      </select>
+                  <div class="col-6 col-lg-4">
+                    <div class="custom-form-control">
+                      <h4 class="text-light-2">ACCOUNT TYPE</h4>
+                      <div class="custom-select">
+                        <select>
+                          <option value="1">Saving</option>
+                          <option value="2">Current</option>
+                        </select>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -671,16 +685,26 @@
 
               <div class="deactivate mt-5 mb-4">
                 <div class="left">
-                  <h3 class="fw-normal text-underline text-yellow">
+                  <h3 class="fw-normal fs-1366-18 text-underline text-yellow">
                     Deactivate my account
                   </h3>
-                  <p class="lh-28 mt-3 fs-18">
+                  <p
+                    class="
+                      lh-28
+                      ls-minus-p5
+                      mt-3
+                      fs-18 fs-1366-14
+                      lh-1366-22
+                      pb-3
+                      pe-3
+                    "
+                  >
                     You will receive an email to confirm your decision. Please
                     note, that all the teams, notes and impediments you have
                     created will be permanently erased.
                   </p>
                 </div>
-                <div class="right">
+                <div class="right text-start text-md-center">
                   <button class="btn btn-bg-primary">
                     <h4 class="fw-normal">Delete</h4>
                   </button>

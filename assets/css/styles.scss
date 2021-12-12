@@ -116,8 +116,11 @@ table {
   justify-content: center;
   margin-left: auto;
   max-width: 1500px;
-  padding-left: var(--section-padding) !important;
-  padding-right: var(--section-padding) !important;
+
+  &:not(.no-padding) {
+    padding-left: var(--section-padding) !important;
+    padding-right: var(--section-padding) !important;
+  }
 
   &.lg {
     max-width: 1803px;
@@ -151,6 +154,13 @@ table {
       display: none;
     }
   }
+
+  &.blogs {
+    @media screen and (max-width: 575px) {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
 }
 
 // /////////////////////////////////////////////////////// NAVBAR START ///////////////////////////////////////////////////////////////
@@ -181,6 +191,21 @@ table {
     }
   }
 
+  &.notification-navbar {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  &.blogs-navbar {
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+    @media screen and (max-width: 991px) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
   .custom-dropdown {
     margin-right: 4rem;
   }
@@ -194,6 +219,18 @@ table {
   background-color: #fff;
   padding: var(--section-padding);
   z-index: 5;
+
+  &.notification-navbar {
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-top: 4rem;
+
+    @media screen and (max-width: 1366px) {
+      padding-top: 3rem;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  }
 
   & > div {
     max-width: 1675px;
@@ -217,7 +254,13 @@ table {
   }
 
   .custom-dropdown {
-    margin-right: 4rem;
+    @media screen and (min-width: 1367px) {
+      margin-right: 4rem;
+
+      .dropdown-content {
+        right: -3rem;
+      }
+    }
   }
 }
 
@@ -995,8 +1038,45 @@ table {
 }
 
 #blogs {
+  @media screen and (max-width: 1366px) {
+    margin-top: 3rem;
+  }
+
+  @media screen and (max-width: 575px) {
+    margin-top: 0;
+  }
+
+  &.page-container {
+    @media screen and (max-width: 1500px) {
+      padding-left: 5rem !important;
+      padding-right: 5rem !important;
+    }
+
+    @media screen and (max-width: 991px) {
+      padding-left: 2rem !important;
+      padding-right: 2rem !important;
+    }
+
+    @media screen and (max-width: 575px) {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+  }
+
+  aside {
+    @media screen and (max-width: 1100px) {
+      display: none;
+    }
+  }
+
   .main {
-    padding-right: 1.5rem;
+    @media screen and (min-width: 1101px) {
+      padding-right: 1.5rem;
+    }
+
+    @media screen and (max-width: 1366px) {
+      max-width: 1000px;
+    }
   }
 
   .hero {
@@ -1011,9 +1091,6 @@ table {
     .btn {
       display: inline-block;
     }
-
-    @media screen and (min-width: 992px) {
-    }
   }
 
   .blog-posts {
@@ -1024,9 +1101,13 @@ table {
       padding: 2rem 0;
       border-bottom: 1px solid $color5;
 
-      .blog-img,
+      @media screen and (max-width: 575px) {
+        flex-wrap: wrap;
+      }
+
+      .blog-img img,
       .blog-text {
-        height: 223px;
+        min-height: 223px;
       }
 
       .blog-img {
@@ -1034,7 +1115,15 @@ table {
         width: 36.5%;
 
         @media screen and (max-width: 1366px) {
-          width: 38%;
+          width: 44%;
+        }
+
+        @media screen and (max-width: 768px) {
+          width: 35.5%;
+        }
+
+        @media screen and (max-width: 575px) {
+          width: 100%;
         }
 
         img {
@@ -1048,8 +1137,22 @@ table {
         flex-direction: column;
         justify-content: space-between;
 
+        @media screen and (max-width: 768px) {
+          padding-left: 1rem;
+
+          p {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+
+        @media screen and (max-width: 575px) {
+          padding-left: 0;
+          margin-top: 1rem;
+        }
+
         h3 {
-          font-weight: 600;
+          font-weight: 500;
         }
       }
     }
@@ -1148,7 +1251,37 @@ table {
 // ***********************************************************************************************************************************
 // ***********************************************************************************************************************************
 
+.transactions-sidenav-right {
+  @media screen and (max-width: 1200px) {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+
 #transactions {
+  .title {
+    position: relative;
+
+    padding-left: 0.5rem;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: -1.5rem;
+      transform: translateY(-50%);
+
+      @media screen and (min-width: 992px) {
+        display: none;
+      }
+    }
+  }
+
+  .search-sm {
+    input {
+      border-color: $color31;
+    }
+  }
+
   .filter {
     width: 94px;
     height: 40px;
@@ -1157,6 +1290,7 @@ table {
 
   .select-selected {
     padding: 0.585rem 1rem !important;
+    border-color: $color31 !important;
   }
 
   .transactions-body {
@@ -1167,11 +1301,11 @@ table {
       padding: 1rem 0;
       border-bottom: 1px solid $color19;
 
-      & > * {
-        &:nth-child(1) {
-          width: 30%;
-        }
+      @media screen and (min-width: 1367px) {
+        padding-right: 0.5rem;
+      }
 
+      & > * {
         &:nth-child(2),
         &:nth-child(3) {
           display: flex;
@@ -1179,11 +1313,40 @@ table {
           align-items: center;
         }
 
+        &:nth-child(1) {
+          width: 30%;
+
+          @media screen and (max-width: 1270px) {
+            width: 33.33%;
+          }
+        }
+
         &:nth-child(2) {
           width: 20%;
+
+          @media screen and (max-width: 1590px) {
+            width: 25%;
+          }
+
+          @media screen and (max-width: 1100px) {
+            width: 27%;
+          }
+
+          @media screen and (max-width: 991px) {
+            width: 24%;
+          }
         }
+
         &:nth-child(3) {
           width: 25%;
+
+          @media screen and (max-width: 1590px) {
+            width: 30%;
+          }
+
+          @media screen and (max-width: 1270px) {
+            width: 31.33%;
+          }
         }
       }
 
@@ -1191,9 +1354,21 @@ table {
         display: flex;
         align-items: center;
 
+        .text {
+          h4 {
+            @media screen and (max-width: 1590px) {
+              font-size: 14px;
+            }
+          }
+        }
+
         img {
           width: 48px;
         }
+      }
+
+      .funds {
+        display: none;
       }
 
       .status {
@@ -1203,6 +1378,13 @@ table {
 
         .btn {
           width: 100px;
+
+          @media screen and (max-width: 1366px) {
+            font-size: 12px;
+            width: 72px;
+            padding-left: 0;
+            padding-right: 0;
+          }
         }
       }
     }
@@ -1285,17 +1467,35 @@ table {
 // ***********************************************************************************************************************************
 
 #profile {
+  .my-profile {
+    @media screen and (max-width: 991px) and (min-width: 576px) {
+      transform: translateX(-1rem);
+    }
+  }
   .custom-form-control {
     margin-top: 1.5rem;
     max-width: 374px;
 
-    input {
+    @media screen and (max-width: 1366px) {
+      max-width: 272px;
+    }
+
+    @media screen and (max-width: 991px) {
+      max-width: 96%;
+    }
+
+    @media screen and (max-width: 767px) {
+      max-width: 100%;
     }
   }
 
   .user-pic-container {
     position: relative;
     margin-top: 9rem;
+
+    @media screen and (max-width: 991px) {
+      margin-top: 2rem;
+    }
 
     img {
       max-width: 110px;
@@ -1317,18 +1517,40 @@ table {
   .deactivate {
     border: 1px solid $color1;
     background-color: $color21;
-    padding: 1rem 2rem;
+    padding: 2rem 2.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
+
+    @media screen and (max-width: 1366px) {
+      padding: 1.25rem 1.5rem;
+    }
+
+    @media screen and (max-width: 991px) {
+      padding: 1.5rem 1.25rem;
+    }
+
+    @media screen and (max-width: 575px) {
+      flex-wrap: wrap;
+    }
 
     .left {
       width: 75%;
+
+      @media screen and (max-width: 575px) {
+        width: 100%;
+      }
     }
 
     .right {
       flex-grow: 1;
       text-align: center;
+      transform: translateY(0.5rem);
+
+      @media screen and (max-width: 575px) {
+        width: 100%;
+      }
     }
   }
 }
@@ -1342,13 +1564,69 @@ table {
 // ***********************************************************************************************************************************
 
 #notifications {
+  padding-left: 7rem;
+  padding-right: 7rem;
+
+  @media screen and (max-width: 1366px) {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  @media screen and (max-width: 575px) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .head {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
 
+    @media screen and (max-width: 767px) {
+      justify-content: space-between;
+    }
+
+    .text {
+      h2 {
+        position: relative;
+
+        img {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: -2rem;
+
+          @media screen and (min-width: 767px) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 360px) {
+      h2 {
+        font-size: 18px;
+      }
+      h4 {
+        font-size: 12px;
+      }
+    }
+
     button {
       margin-left: 10rem;
+
+      @media screen and (max-width: 1366px) {
+        margin-left: 4.5rem;
+      }
+
+      @media screen and (max-width: 575px) {
+        margin-left: 0.5rem;
+      }
     }
   }
 
@@ -1361,10 +1639,30 @@ table {
       padding: 1rem 0;
       border-bottom: 1px solid $color19;
 
+      .action {
+        @media screen and (max-width: 440px) {
+          display: none;
+        }
+      }
+
+      h5 {
+        margin-top: 0.5rem;
+
+        @media screen and (max-width: 1366px) {
+          margin-top: 0.25rem;
+        }
+      }
+
       svg {
         position: absolute;
         left: -2rem;
         top: 1.45rem;
+
+        @media screen and (max-width: 767px) {
+          width: 8px;
+          height: 8px;
+          left: -1.25rem;
+        }
       }
 
       &.green {

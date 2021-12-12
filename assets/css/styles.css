@@ -124,6 +124,9 @@ table tr td {
           justify-content: center;
   margin-left: auto;
   max-width: 1500px;
+}
+
+.page-container:not(.no-padding) {
   padding-left: var(--section-padding) !important;
   padding-right: var(--section-padding) !important;
 }
@@ -172,6 +175,13 @@ table tr td {
   }
 }
 
+@media screen and (max-width: 575px) {
+  .page-container.blogs {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
 #navbar {
   position: -webkit-sticky;
   position: sticky;
@@ -210,6 +220,23 @@ table tr td {
   }
 }
 
+#navbar.notification-navbar {
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+#navbar.blogs-navbar {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+@media screen and (max-width: 991px) {
+  #navbar.blogs-navbar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 #navbar .custom-dropdown {
   margin-right: 4rem;
 }
@@ -223,6 +250,20 @@ table tr td {
   background-color: #fff;
   padding: var(--section-padding);
   z-index: 5;
+}
+
+#navbar-sm.notification-navbar {
+  padding-left: 7rem;
+  padding-right: 7rem;
+  padding-top: 4rem;
+}
+
+@media screen and (max-width: 1366px) {
+  #navbar-sm.notification-navbar {
+    padding-top: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
 
 #navbar-sm > div {
@@ -251,8 +292,13 @@ table tr td {
   padding-bottom: 2rem;
 }
 
-#navbar-sm .custom-dropdown {
-  margin-right: 4rem;
+@media screen and (min-width: 1367px) {
+  #navbar-sm .custom-dropdown {
+    margin-right: 4rem;
+  }
+  #navbar-sm .custom-dropdown .dropdown-content {
+    right: -3rem;
+  }
 }
 
 #financial-planning-abbr abbr {
@@ -1087,8 +1133,55 @@ table tr td {
   background-color: #01c58d;
 }
 
-#blogs .main {
-  padding-right: 1.5rem;
+@media screen and (max-width: 1366px) {
+  #blogs {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #blogs {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  #blogs.page-container {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #blogs.page-container {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #blogs.page-container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #blogs aside {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1101px) {
+  #blogs .main {
+    padding-right: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  #blogs .main {
+    max-width: 1000px;
+  }
 }
 
 #blogs .hero {
@@ -1119,9 +1212,16 @@ table tr td {
   border-bottom: 1px solid #bcbcbc;
 }
 
-#blogs .blog-posts .blog-post .blog-img,
+@media screen and (max-width: 575px) {
+  #blogs .blog-posts .blog-post {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+#blogs .blog-posts .blog-post .blog-img img,
 #blogs .blog-posts .blog-post .blog-text {
-  height: 223px;
+  min-height: 223px;
 }
 
 #blogs .blog-posts .blog-post .blog-img {
@@ -1132,7 +1232,19 @@ table tr td {
 
 @media screen and (max-width: 1366px) {
   #blogs .blog-posts .blog-post .blog-img {
-    width: 38%;
+    width: 44%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #blogs .blog-posts .blog-post .blog-img {
+    width: 35.5%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #blogs .blog-posts .blog-post .blog-img {
+    width: 100%;
   }
 }
 
@@ -1154,8 +1266,25 @@ table tr td {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+  #blogs .blog-posts .blog-post .blog-text {
+    padding-left: 1rem;
+  }
+  #blogs .blog-posts .blog-post .blog-text p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #blogs .blog-posts .blog-post .blog-text {
+    padding-left: 0;
+    margin-top: 1rem;
+  }
+}
+
 #blogs .blog-posts .blog-post .blog-text h3 {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 #refer-and-invest .cards {
@@ -1244,6 +1373,36 @@ table tr td {
   padding-right: 5.5rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .transactions-sidenav-right {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+
+#transactions .title {
+  position: relative;
+  padding-left: 0.5rem;
+}
+
+#transactions .title img {
+  position: absolute;
+  top: 50%;
+  left: -1.5rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media screen and (min-width: 992px) {
+  #transactions .title img {
+    display: none;
+  }
+}
+
+#transactions .search-sm input {
+  border-color: #e8e8e8;
+}
+
 #transactions .filter {
   width: 94px;
   height: 40px;
@@ -1252,6 +1411,7 @@ table tr td {
 
 #transactions .select-selected {
   padding: 0.585rem 1rem !important;
+  border-color: #e8e8e8 !important;
 }
 
 #transactions .transactions-body .transaction {
@@ -1268,8 +1428,10 @@ table tr td {
   border-bottom: 1px solid #eeeeee;
 }
 
-#transactions .transactions-body .transaction > *:nth-child(1) {
-  width: 30%;
+@media screen and (min-width: 1367px) {
+  #transactions .transactions-body .transaction {
+    padding-right: 0.5rem;
+  }
 }
 
 #transactions .transactions-body .transaction > *:nth-child(2), #transactions .transactions-body .transaction > *:nth-child(3) {
@@ -1284,12 +1446,52 @@ table tr td {
           align-items: center;
 }
 
+#transactions .transactions-body .transaction > *:nth-child(1) {
+  width: 30%;
+}
+
+@media screen and (max-width: 1270px) {
+  #transactions .transactions-body .transaction > *:nth-child(1) {
+    width: 33.33%;
+  }
+}
+
 #transactions .transactions-body .transaction > *:nth-child(2) {
   width: 20%;
 }
 
+@media screen and (max-width: 1590px) {
+  #transactions .transactions-body .transaction > *:nth-child(2) {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #transactions .transactions-body .transaction > *:nth-child(2) {
+    width: 27%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #transactions .transactions-body .transaction > *:nth-child(2) {
+    width: 24%;
+  }
+}
+
 #transactions .transactions-body .transaction > *:nth-child(3) {
   width: 25%;
+}
+
+@media screen and (max-width: 1590px) {
+  #transactions .transactions-body .transaction > *:nth-child(3) {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  #transactions .transactions-body .transaction > *:nth-child(3) {
+    width: 31.33%;
+  }
 }
 
 #transactions .transactions-body .transaction .details {
@@ -1301,8 +1503,18 @@ table tr td {
           align-items: center;
 }
 
+@media screen and (max-width: 1590px) {
+  #transactions .transactions-body .transaction .details .text h4 {
+    font-size: 14px;
+  }
+}
+
 #transactions .transactions-body .transaction .details img {
   width: 48px;
+}
+
+#transactions .transactions-body .transaction .funds {
+  display: none;
 }
 
 #transactions .transactions-body .transaction .status {
@@ -1319,6 +1531,15 @@ table tr td {
 
 #transactions .transactions-body .transaction .status .btn {
   width: 100px;
+}
+
+@media screen and (max-width: 1366px) {
+  #transactions .transactions-body .transaction .status .btn {
+    font-size: 12px;
+    width: 72px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 #transaction h2 {
@@ -1393,14 +1614,45 @@ table tr td {
   width: 21%;
 }
 
+@media screen and (max-width: 991px) and (min-width: 576px) {
+  #profile .my-profile {
+    -webkit-transform: translateX(-1rem);
+            transform: translateX(-1rem);
+  }
+}
+
 #profile .custom-form-control {
   margin-top: 1.5rem;
   max-width: 374px;
 }
 
+@media screen and (max-width: 1366px) {
+  #profile .custom-form-control {
+    max-width: 272px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #profile .custom-form-control {
+    max-width: 96%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #profile .custom-form-control {
+    max-width: 100%;
+  }
+}
+
 #profile .user-pic-container {
   position: relative;
   margin-top: 9rem;
+}
+
+@media screen and (max-width: 991px) {
+  #profile .user-pic-container {
+    margin-top: 2rem;
+  }
 }
 
 #profile .user-pic-container img {
@@ -1423,7 +1675,7 @@ table tr td {
 #profile .deactivate {
   border: 1px solid #ffc32c;
   background-color: #fffbef;
-  padding: 1rem 2rem;
+  padding: 2rem 2.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1433,10 +1685,36 @@ table tr td {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1366px) {
+  #profile .deactivate {
+    padding: 1.25rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #profile .deactivate {
+    padding: 1.5rem 1.25rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #profile .deactivate {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 #profile .deactivate .left {
   width: 75%;
+}
+
+@media screen and (max-width: 575px) {
+  #profile .deactivate .left {
+    width: 100%;
+  }
 }
 
 #profile .deactivate .right {
@@ -1444,6 +1722,40 @@ table tr td {
       -ms-flex-positive: 1;
           flex-grow: 1;
   text-align: center;
+  -webkit-transform: translateY(0.5rem);
+          transform: translateY(0.5rem);
+}
+
+@media screen and (max-width: 575px) {
+  #profile .deactivate .right {
+    width: 100%;
+  }
+}
+
+#notifications {
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+@media screen and (max-width: 1366px) {
+  #notifications {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #notifications {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #notifications {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 #notifications .head {
@@ -1458,8 +1770,55 @@ table tr td {
           align-items: flex-end;
 }
 
+@media screen and (max-width: 767px) {
+  #notifications .head {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+#notifications .head .text h2 {
+  position: relative;
+}
+
+#notifications .head .text h2 img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -2rem;
+}
+
+@media screen and (min-width: 767px) {
+  #notifications .head .text h2 img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #notifications .head h2 {
+    font-size: 18px;
+  }
+  #notifications .head h4 {
+    font-size: 12px;
+  }
+}
+
 #notifications .head button {
   margin-left: 10rem;
+}
+
+@media screen and (max-width: 1366px) {
+  #notifications .head button {
+    margin-left: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #notifications .head button {
+    margin-left: 0.5rem;
+  }
 }
 
 #notifications .body .item {
@@ -1477,10 +1836,34 @@ table tr td {
   border-bottom: 1px solid #eeeeee;
 }
 
+@media screen and (max-width: 440px) {
+  #notifications .body .item .action {
+    display: none;
+  }
+}
+
+#notifications .body .item h5 {
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 1366px) {
+  #notifications .body .item h5 {
+    margin-top: 0.25rem;
+  }
+}
+
 #notifications .body .item svg {
   position: absolute;
   left: -2rem;
   top: 1.45rem;
+}
+
+@media screen and (max-width: 767px) {
+  #notifications .body .item svg {
+    width: 8px;
+    height: 8px;
+    left: -1.25rem;
+  }
 }
 
 #notifications .body .item.green svg circle {
