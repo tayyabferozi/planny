@@ -47,11 +47,11 @@
             <div class="details-container">
               <div class="details-item">
                 <div class="details-box green">
-                  <h4 class="box-title">STEP 1</h4>
+                  <h4 class="box-title fs-14 fs-1366-12">STEP 1</h4>
 
                   <div class="box-content">
-                    <div class="box-subtitle">Basic Details</div>
-                    <div class="box-text">
+                    <div class="box-subtitle fs-1366-14">Basic Details</div>
+                    <div class="box-text fs-1366-14">
                       Tell us about yourself to understand your interest and
                       choices.
                     </div>
@@ -64,13 +64,13 @@
                 </div>
               </div>
 
-              <div class="details-item">
+              <div class="details-item d-none d-lg-block">
                 <div class="details-box green">
-                  <h4 class="box-title">STEP 2</h4>
+                  <h4 class="box-title fs-14 fs-1366-12">STEP 2</h4>
 
                   <div class="box-content">
-                    <div class="box-subtitle">Bank Details</div>
-                    <div class="box-text">
+                    <div class="box-subtitle fs-1366-14">Bank Details</div>
+                    <div class="box-text fs-1366-14">
                       As per SEBI, it is mandatory for you to add your bank
                       account details.
                     </div>
@@ -82,13 +82,13 @@
                   </div>
                 </div>
               </div>
-              <div class="details-item">
+              <div class="details-item d-none d-lg-block">
                 <div class="details-box primary">
-                  <h4 class="box-title">STEP 3</h4>
+                  <h4 class="box-title fs-14 fs-1366-12">STEP 3</h4>
 
                   <div class="box-content">
-                    <div class="box-subtitle">Signature</div>
-                    <div class="box-text">
+                    <div class="box-subtitle fs-1366-14">Signature</div>
+                    <div class="box-text fs-1366-14">
                       Your signature should match with your PAN Card’s
                       signature.
                     </div>
@@ -100,16 +100,51 @@
             <div class="file-uploader">
               <label for="file-upload"></label>
               <input type="file" name="" id="file-upload" />
+
               <h4 class="fw-normal">
-                Darg and drop files here or
-                <span class="text-yellow">browse</span>
+                <span class="d-none d-lg-inline"
+                  >Darg and drop files here or</span
+                >
+                <span class="text-yellow fw-bold">browse</span>
               </h4>
             </div>
             <h4 class="text-end text-light-2 mt-2 pe-3">
               Only Jpg and png with maximum file size 2Mb
             </h4>
+
+            <div class="uploading mt-4 d-block d-lg-none">
+              <div class="upload-head d-flex justify-content-between">
+                <div
+                  class="
+                    file-info
+                    d-flex
+                    justify-content-start
+                    align-items-center
+                  "
+                >
+                  <div class="file-img d-flex">
+                    <img src="./assets/vector/file.svg" alt="file" />
+                  </div>
+                  <div class="file-name">
+                    <h4 class="fw-normal">Pan card.jpg</h4>
+                  </div>
+                </div>
+                <div class="cancel">
+                  <img src="./assets/vector/cancel-upload.svg" alt="cancel" />
+                </div>
+              </div>
+              <div class="upload-body">
+                <div class="bg"></div>
+                <div class="progress yellow" style="width: 20%"></div>
+              </div>
+              <div class="upload-footer mt-1 d-flex justify-content-between">
+                <h5 class="fs-12 fw-normal">sign.jpg</h5>
+                <h4 class="fw-normal text-end text-light-2">128kb</h4>
+              </div>
+            </div>
           </div>
         </div>
+        <button class="bottom-btn btn btn-bg-primary">Continue</button>
       </div>
     </section>
 

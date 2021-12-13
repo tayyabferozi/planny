@@ -1126,6 +1126,12 @@ input.custom-input.active, input.custom-input:focus {
           user-select: none;
 }
 
+@media screen and (max-width: 1366px) {
+  .checkbox-container.fs-1366-16 {
+    font-size: 16px;
+  }
+}
+
 .checkbox-container input {
   position: absolute;
   opacity: 0;
@@ -1349,9 +1355,35 @@ input.custom-input.active, input.custom-input:focus {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 991px) {
+  .details-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 576px) {
+  .details-container {
+    padding: 0 2.5rem;
+  }
+}
+
 .details-container .details-item {
   width: 33.33%;
   padding: 0 2.5rem;
+}
+
+@media screen and (max-width: 1366px) {
+  .details-container .details-item {
+    padding: 0;
+    width: 31.5%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .details-container .details-item {
+    width: 100%;
+  }
 }
 
 .details-container .details-item .custom-form-control {
@@ -1359,7 +1391,6 @@ input.custom-input.active, input.custom-input:focus {
 }
 
 .details-container .details-item .details-box .box-title {
-  font-size: 14px;
   color: #b2b2b2;
 }
 
@@ -1369,6 +1400,7 @@ input.custom-input.active, input.custom-input:focus {
   border-radius: 3px;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
+  height: 100%;
 }
 
 .details-container .details-item .details-box .box-content .box-subtitle {
@@ -1387,12 +1419,22 @@ input.custom-input.active, input.custom-input:focus {
 
 .details-container .details-item .details-box .box-content .box-text {
   padding: 2rem 1.5rem 1rem;
+  height: 100%;
 }
 
 .details-container .details-item .details-box .box-content .edit {
   position: absolute;
   right: 0.75rem;
   bottom: 0.5rem;
+}
+
+@media screen and (max-width: 991px) {
+  .details-container .details-item .details-box .box-content .edit {
+    top: 50%;
+    bottom: unset;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
 }
 
 .details-container .details-item .details-box.primary .box-title {
@@ -1661,5 +1703,47 @@ input.custom-input.active, input.custom-input:focus {
 .dropdown-content .body .nav-item:hover svg line,
 .dropdown-content .body .nav-item:hover svg circle {
   stroke: #ffc32c;
+}
+
+@media screen and (min-width: 576px) {
+  .uploading {
+    padding: 0 2.5rem;
+  }
+}
+
+.uploading .upload-head .file-info .file-img {
+  margin-right: 1rem;
+}
+
+.uploading .upload-body {
+  margin-top: 1rem;
+  position: relative;
+  height: 16px;
+  width: 100%;
+  border-radius: 25px;
+  overflow-y: hidden;
+}
+
+.uploading .upload-body .bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #e6e6e6;
+}
+
+.uploading .upload-body .progress {
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #01c58d;
+}
+
+.uploading .upload-body .progress.yellow {
+  background: #ffc32c;
 }
 /*# sourceMappingURL=utilities.css.map */

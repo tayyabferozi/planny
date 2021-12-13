@@ -941,15 +941,63 @@ table {
 #uploading,
 #uploader {
   .custom-modal {
+    max-width: 1676px;
+    padding-bottom: 5rem;
+
+    @media screen and (max-width: 1366px) {
+      padding-top: 2rem;
+      height: 90vh;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    @media screen and (max-width: 991px) {
+      width: 100%;
+      height: 100vh;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    .bottom-btn {
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      width: 90%;
+      max-width: 328px;
+      transform: translateX(-50%);
+    }
+
+    .close {
+      @media screen and (max-width: 1366px) {
+        top: 2rem;
+      }
+    }
+
     .modal-head,
     .modal-body {
-      width: 95%;
+      max-width: 1395px;
       margin-left: auto;
       margin-right: auto;
+
+      .container-fluid {
+        @media screen and (max-width: 575px) {
+          padding: 0;
+        }
+      }
     }
 
     .modal-head {
       padding: 0 2.5rem;
+
+      @media screen and (max-width: 575px) {
+        padding: 0;
+      }
+
+      .btn {
+        @media screen and (max-width: 991px) {
+          display: none;
+        }
+      }
     }
   }
 }
@@ -967,6 +1015,10 @@ table {
     padding: 0 2.5rem;
     position: relative;
 
+    @media screen and (max-width: 575px) {
+      padding: 0;
+    }
+
     input {
       display: none;
     }
@@ -977,13 +1029,21 @@ table {
       height: 132px;
       border: 1px dotted $color1;
       background-color: transparent;
+
+      @media screen and (max-width: 768px) {
+        height: 80px;
+      }
+
+      @media screen and (max-width: 575px) {
+        height: 48px;
+      }
     }
 
     h4 {
       position: absolute;
       left: 50%;
       top: 50%;
-      transform: translateY(-50%);
+      transform: translate(-50%, -50%);
     }
   }
 }
@@ -997,44 +1057,6 @@ table {
 // ***********************************************************************************************************************************
 
 #uploading {
-  .uploading {
-    padding: 0 2.5rem;
-
-    .upload-head {
-      .file-info {
-        .file-img {
-          margin-right: 1rem;
-        }
-      }
-    }
-
-    .upload-body {
-      margin-top: 1rem;
-      position: relative;
-      height: 16px;
-      width: 100%;
-      border-radius: 25px;
-      overflow-y: hidden;
-
-      .bg {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        background-color: $color4;
-      }
-
-      .progress {
-        position: absolute;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: $color23;
-      }
-    }
-  }
 }
 
 #blogs {
@@ -1094,6 +1116,10 @@ table {
   }
 
   .blog-posts {
+    @media screen and (min-width: 992px) {
+      padding-bottom: 5rem;
+    }
+
     .blog-post {
       display: flex;
       justify-content: center;
@@ -1180,6 +1206,10 @@ table {
       align-items: center;
       border-radius: 20px;
 
+      @media screen and (max-width: 650px) {
+        flex-wrap: wrap;
+      }
+
       @media screen and (max-width: 1200px) {
         padding-left: 2rem;
         padding-right: 2rem;
@@ -1190,6 +1220,16 @@ table {
 
         @media screen and (max-width: 1200px) {
           width: 16%;
+        }
+
+        @media screen and (max-width: 991px) {
+          width: 25%;
+        }
+
+        @media screen and (max-width: 650px) {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 4rem;
         }
 
         img {
@@ -1213,6 +1253,10 @@ table {
         .sub-section {
           flex-grow: 1;
           margin-right: 2rem;
+
+          @media screen and (max-width: 991px) {
+            flex-grow: 0;
+          }
 
           &:nth-child(1) {
             width: 10%;
@@ -1254,17 +1298,34 @@ table {
               margin-top: 1.5rem;
 
               .btn {
-                width: 75%;
+                width: 95%;
+
+                @media screen and (max-width: 650px) {
+                  width: 100%;
+                }
               }
             }
           }
         }
 
         &.refer {
+          @media screen and (max-width: 650px) {
+            justify-content: center;
+          }
           .referral {
             width: 375px;
             margin-right: 3rem;
             flex-grow: 0;
+
+            @media screen and (max-width: 1366px) {
+              width: 285px;
+              margin-right: 1rem;
+            }
+
+            @media screen and (max-width: 1200px) {
+              width: 210px;
+              margin-right: 1rem;
+            }
           }
 
           .copy {
@@ -1282,9 +1343,43 @@ table {
             }
           }
 
+          .sub-section {
+            @media screen and (max-width: 991px) {
+              margin-top: 1rem;
+              margin-left: 2rem;
+              width: 100%;
+              max-width: 296px;
+
+              .copy {
+                width: 100%;
+              }
+            }
+          }
+
           .social {
+            @media screen and (max-width: 991px) {
+              justify-content: space-between !important;
+
+              a {
+                margin-right: 0 !important;
+              }
+            }
+
             a {
               margin-right: 1.25rem;
+
+              @media screen and (max-width: 1366px) {
+                width: 24px;
+                margin-right: 0.975rem;
+
+                &:last-child {
+                  width: 42px;
+                }
+
+                img {
+                  width: 100%;
+                }
+              }
             }
           }
         }
