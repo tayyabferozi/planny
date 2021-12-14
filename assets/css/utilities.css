@@ -17,7 +17,7 @@ h2 {
 }
 
 @media screen and (max-width: 991px) {
-  h2 {
+  h2:not(.resist-size) {
     font-size: 24px;
   }
 }
@@ -116,6 +116,12 @@ p {
 }
 
 @media screen and (max-width: 1366px) {
+  .fs-1366-10 {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
   .fs-991-20 {
     font-size: 20px;
   }
@@ -139,8 +145,30 @@ p {
   }
 }
 
+@media screen and (max-width: 650px) {
+  .fs-650-14 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .fs-650-32 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .fs-490-14 {
+    font-size: 14px;
+  }
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
 .fw-500 {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .fw-600 {
@@ -157,6 +185,10 @@ p {
 
 .lh-28 {
   line-height: 28px;
+}
+
+.lh-26 {
+  line-height: 26px;
 }
 
 @media screen and (max-width: 1366px) {
@@ -710,23 +742,23 @@ div.shadowy {
   border-bottom-right-radius: 0;
 }
 
-.custom-modal:not(.small-width) .close {
+.custom-modal:not(.small-width):not(.xs):not(.md) .close {
   top: 2.75rem;
 }
 
-.custom-modal:not(.small-width) .close.top-right {
+.custom-modal:not(.small-width):not(.xs):not(.md) .close.top-right {
   top: 1rem;
   right: 1rem;
 }
 
 @media screen and (max-width: 768px) {
-  .custom-modal:not(.small-width) .close {
+  .custom-modal:not(.small-width):not(.xs):not(.md) .close {
     top: 2rem;
   }
 }
 
 @media screen and (max-width: 1366px) {
-  .custom-modal:not(.small-width) {
+  .custom-modal:not(.small-width):not(.xs):not(.md) {
     top: unset;
     bottom: 0;
     -webkit-transform: translateX(-50%);
@@ -737,7 +769,7 @@ div.shadowy {
 }
 
 @media screen and (max-width: 1366px) {
-  .custom-modal:not(.small-width) {
+  .custom-modal:not(.small-width):not(.xs):not(.md) {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     height: 100%;
@@ -746,7 +778,7 @@ div.shadowy {
 }
 
 @media screen and (max-width: 768px) {
-  .custom-modal {
+  .custom-modal:not(.md):not(.xs) {
     top: unset;
     -webkit-transform: unset;
             transform: unset;
@@ -829,6 +861,96 @@ div.shadowy {
   height: unset;
 }
 
+.custom-modal.xs, .custom-modal.md {
+  padding: 3rem 3.5rem;
+  height: unset;
+  border-bottom: 5px solid #ffc32c;
+}
+
+.custom-modal.xs input,
+.custom-modal.xs textarea, .custom-modal.md input,
+.custom-modal.md textarea {
+  padding: 0.75rem 1rem;
+}
+
+.custom-modal.xs input::-webkit-input-placeholder,
+.custom-modal.xs textarea::-webkit-input-placeholder, .custom-modal.md input::-webkit-input-placeholder,
+.custom-modal.md textarea::-webkit-input-placeholder {
+  color: #b2b2b2;
+}
+
+.custom-modal.xs input:-ms-input-placeholder,
+.custom-modal.xs textarea:-ms-input-placeholder, .custom-modal.md input:-ms-input-placeholder,
+.custom-modal.md textarea:-ms-input-placeholder {
+  color: #b2b2b2;
+}
+
+.custom-modal.xs input::-ms-input-placeholder,
+.custom-modal.xs textarea::-ms-input-placeholder, .custom-modal.md input::-ms-input-placeholder,
+.custom-modal.md textarea::-ms-input-placeholder {
+  color: #b2b2b2;
+}
+
+.custom-modal.xs input::placeholder,
+.custom-modal.xs textarea::placeholder, .custom-modal.md input::placeholder,
+.custom-modal.md textarea::placeholder {
+  color: #b2b2b2;
+}
+
+.custom-modal.xs .close, .custom-modal.md .close {
+  top: 1.25rem;
+  right: 1.5rem;
+}
+
+.custom-modal.xs .btn, .custom-modal.md .btn {
+  color: #31353f;
+  min-width: 120px;
+}
+
+@media screen and (min-width: 576px) {
+  .custom-modal.xs {
+    width: 444px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .custom-modal.xs {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100vw;
+    height: 100vh;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #f8f9fa;
+  }
+}
+
+.custom-modal.md {
+  max-width: 878px;
+}
+
+@media screen and (max-width: 767px) {
+  .custom-modal.md {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100vw;
+    top: unset;
+    -webkit-transform: unset;
+            transform: unset;
+    left: 0;
+    bottom: 0;
+    background-color: #f8f9fa;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .custom-modal.md {
+    height: 100vh;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
 .slidecontainer {
   width: 100%;
   position: relative;
@@ -907,11 +1029,16 @@ div.shadowy {
   border-radius: 50px;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
+  background: transparent;
 }
 
 .btn-outlined-dark:hover {
   color: #fff;
   background-color: #31353f;
+}
+
+.btn-outlined-dark:hover * {
+  color: #fff;
 }
 
 .btn-outlined-dark.primary {
@@ -963,6 +1090,12 @@ div.shadowy {
 .btn-bg-primary:hover {
   background-color: transparent;
   border-color: #ffc32c;
+}
+
+.btn-rounded {
+  border-radius: 50px;
+  background: #fff;
+  border: 1px solid #dedede;
 }
 
 .custom-form-control input,
@@ -1020,7 +1153,8 @@ div.shadowy {
           transform: translateY(-50%);
 }
 
-input.custom-input {
+input.custom-input,
+textarea.custom-input {
   width: 100%;
   border-radius: 5px;
   padding: 0.5rem;
@@ -1029,7 +1163,9 @@ input.custom-input {
   transition: 0.4s ease;
 }
 
-input.custom-input.active, input.custom-input:focus {
+input.custom-input.active, input.custom-input:focus,
+textarea.custom-input.active,
+textarea.custom-input:focus {
   outline: none;
   border-color: #ffc32c;
   -webkit-box-shadow: 0 0 7px rgba(255, 195, 44, 0.4);
@@ -1465,6 +1601,262 @@ input.custom-input.active, input.custom-input:focus {
   color: #fff;
 }
 
+#right-menu-login,
+#right-menu {
+  position: fixed;
+  background: #fff;
+  right: 0;
+  top: 0;
+  z-index: 11;
+  height: 100vh;
+  width: 462px;
+}
+
+#right-menu-login > *,
+#right-menu > * {
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+#right-menu-login .close,
+#right-menu .close {
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+}
+
+#right-menu-login .nav,
+#right-menu .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 4rem;
+}
+
+#right-menu-login .nav a,
+#right-menu .nav a {
+  color: #31353f;
+  display: block;
+  text-decoration: none;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  font-size: 24px;
+  padding: 0.5rem 0;
+}
+
+#right-menu-login .nav a:hover, #right-menu-login .nav a.active,
+#right-menu .nav a:hover,
+#right-menu .nav a.active {
+  color: #ffc32c;
+}
+
+@media screen and (max-width: 1366px) {
+  #right-menu-login,
+  #right-menu {
+    width: 322px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #right-menu-login,
+  #right-menu {
+    width: 462px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  #right-menu-login,
+  #right-menu {
+    width: 87%;
+  }
+}
+
+#right-menu-login .nav {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e6e7e8;
+}
+
+@media screen and (max-width: 1366px) {
+  #right-menu-login .nav {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+}
+
+#right-menu-login .nav.nav-fp a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#right-menu-login .nav.nav-fp a > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#right-menu-login .nav.nav-fp a svg {
+  margin-right: 1rem;
+}
+
+#right-menu-login .nav.nav-fp a .count {
+  width: 24px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+#right-menu-login .nav.nav-fp a .count * {
+  font-size: 14px;
+}
+
+#right-menu-login .nav.nav-fp a .count.red {
+  background: #ff3100;
+}
+
+#right-menu-login .nav.nav-fp a .count.red * {
+  color: #fff;
+}
+
+#right-menu-login .nav.nav-fp a .count.yellow {
+  background: #ffc32c;
+}
+
+#right-menu-login .profile-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.75rem;
+}
+
+#right-menu-login .profile-info img {
+  width: 48px;
+  margin-right: 1rem;
+}
+
+#right-menu-login .setting {
+  padding-top: 2rem;
+}
+
+@media screen and (max-width: 1366px) {
+  #right-menu-login .setting {
+    padding-top: 1rem;
+  }
+}
+
+#right-menu-login .setting .setting-main {
+  margin: 1rem 0;
+}
+
+#right-menu-login .setting .setting-main .item {
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1366px) {
+  #right-menu-login .setting .setting-main .item {
+    padding: 0.75rem 0;
+  }
+}
+
+#right-menu-login .setting .setting-main .item > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#right-menu-login .setting .setting-main .item svg:nth-child(1) {
+  margin-right: 1rem;
+}
+
+#right-menu-login .setting .setting-main .item svg:nth-child(2) {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+#right-menu .nav a {
+  font-size: 32px;
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 1366px) {
+  #right-menu .nav a {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #right-menu .nav a {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #right-menu .nav a {
+    font-size: 24px;
+  }
+}
+
+#right-menu .btn {
+  position: absolute;
+  bottom: 15rem;
+  width: 90%;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 1366px) {
+  #right-menu .btn {
+    bottom: 10rem;
+    font-size: 14px;
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #right-menu .btn {
+    bottom: 2rem;
+  }
+}
+
 #sidenav-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1598,6 +1990,14 @@ input.custom-input.active, input.custom-input:focus {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #sidenav-container #sidenav-right-content.n-rm-padding {
+    width: 100%;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
   }
 }
 

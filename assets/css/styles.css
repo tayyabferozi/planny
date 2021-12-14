@@ -1352,8 +1352,112 @@ table tr td {
   font-weight: 500;
 }
 
+#refer-and-invest .title img {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  #refer-and-invest .title {
+    position: relative;
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+    font-size: 20px;
+  }
+  #refer-and-invest .title::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100vw;
+    background: #e6e7e8;
+    left: -1.75rem;
+    bottom: -1rem;
+  }
+  #refer-and-invest .title img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: -1.5rem;
+  }
+}
+
+#refer-and-invest .tabs {
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #e6e7e8;
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 650px) {
+  #refer-and-invest .tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+#refer-and-invest .tabs .tab {
+  position: relative;
+  cursor: pointer;
+}
+
+#refer-and-invest .tabs .tab::after {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -17px;
+  height: 2px;
+  width: 100%;
+  background: #ffc32c;
+}
+
+#refer-and-invest .tabs .tab.active {
+  color: #ffc32c;
+  font-weight: bold;
+}
+
+#refer-and-invest .tabs .tab.active::after {
+  opacity: 1;
+}
+
 #refer-and-invest .cards {
   margin-top: 4rem;
+}
+
+@media screen and (max-width: 1366px) {
+  #refer-and-invest .cards {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #refer-and-invest .cards {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #refer-and-invest .cards .align-items-sm-start {
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  #refer-and-invest .cards .align-items-sm-start .mb-sm {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 650px) and (max-width: 373px) {
+  #refer-and-invest .cards .align-items-sm-start .mt-sm {
+    margin-top: 1.5rem;
+  }
 }
 
 #refer-and-invest .cards .card {
@@ -1383,6 +1487,17 @@ table tr td {
   #refer-and-invest .cards .card {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #refer-and-invest .cards .card {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: none;
+  }
+  #refer-and-invest .cards .card.active {
+    display: block;
   }
 }
 
@@ -1430,6 +1545,27 @@ table tr td {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 82%;
+}
+
+@media screen and (max-width: 1200px) {
+  #refer-and-invest .cards .card .text {
+    width: 84%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #refer-and-invest .cards .card .text {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #refer-and-invest .cards .card .text {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1444,6 +1580,12 @@ table tr td {
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin-right: 2rem;
+}
+
+@media screen and (max-width: 650px) {
+  #refer-and-invest .cards .card .text .sub-section {
+    margin-right: 1rem;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1468,6 +1610,12 @@ table tr td {
 @media screen and (max-width: 1365px) {
   #refer-and-invest .cards .card .text .sub-section:nth-child(1) {
     min-width: 85px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #refer-and-invest .cards .card .text .sub-section:nth-child(1) {
+    margin-left: 0;
   }
 }
 
@@ -1503,15 +1651,26 @@ table tr td {
     margin-left: 2rem;
     margin-top: 1.5rem;
   }
-  #refer-and-invest .cards .card .text .sub-section:nth-child(4) .btn {
-    width: 95%;
-  }
 }
 
 @media screen and (max-width: 991px) and (max-width: 650px) {
+  #refer-and-invest .cards .card .text .sub-section:nth-child(4) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
   #refer-and-invest .cards .card .text .sub-section:nth-child(4) .btn {
     width: 100%;
+    max-width: 296px;
   }
+}
+
+#refer-and-invest .cards .card .text.refer {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 @media screen and (max-width: 650px) {
@@ -1520,6 +1679,38 @@ table tr td {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+#refer-and-invest .cards .card .text.refer.last {
+  max-width: 800px;
+}
+
+@media screen and (max-width: 1366px) {
+  #refer-and-invest .cards .card .text.refer.last {
+    max-width: 570px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #refer-and-invest .cards .card .text.refer.last {
+    text-align: left;
+  }
+}
+
+#refer-and-invest .cards .card .text.refer .form {
+  width: 323px;
+}
+
+@media screen and (max-width: 1366px) {
+  #refer-and-invest .cards .card .text.refer .form {
+    width: 66px;
+  }
+}
+
+#refer-and-invest .cards .card .text.refer .reminder {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 #refer-and-invest .cards .card .text.refer .referral {
@@ -1603,8 +1794,29 @@ table tr td {
   max-width: 315px;
 }
 
-#refer-and-invest .cards .card .text .reminder {
-  padding-right: 5.5rem;
+@media screen and (max-width: 991px) {
+  #refer-and-invest .cards .card .text .reminder {
+    max-width: unset !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+  #refer-and-invest .cards .card .text .reminder .btn {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 336px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #refer-and-invest .cards .card .text .reminder {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  #refer-and-invest .cards .card .text .reminder .btn {
+    max-width: 300px;
+  }
 }
 
 @media screen and (max-width: 1200px) {

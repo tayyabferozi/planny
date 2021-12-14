@@ -449,27 +449,42 @@
 
       <!-- --------------------------------------------- MAIN START --------------------------------------------- -->
 
-      <main id="sidenav-right-content">
+      <main id="sidenav-right-content" class="n-rm-padding">
         <section id="refer-and-invest">
-          <h2>Refer and Invest</h2>
+          <h2 class="title">
+            <img src="./assets/vector/back-arrow.svg" alt="back" /> Refer and
+            Invest
+          </h2>
+
+          <div class="tabs">
+            <div data-toggle="#rewards" class="tab active fs-16">
+              Total Rewards
+            </div>
+            <div data-toggle="#referral" class="tab fs-16">My Referral</div>
+            <div data-toggle="#last-referral" class="tab fs-16">
+              Last Referral
+            </div>
+          </div>
 
           <div class="cards">
-            <div class="card">
+            <div class="card active" id="rewards">
               <div class="img">
                 <img src="./assets/vector/refer-and-invest-1.svg" alt="1" />
               </div>
-              <div class="text">
+              <div class="text align-items-sm-start">
                 <div class="sub-section">
-                  <h4 class="text-light-2">SIGNED-UP REFERRAL</h4>
-                  <h1 class="fs-52 fs-1366-40 mt-2 fw-600">09</h1>
+                  <h4 class="text-light-2 fs-650-14">SIGNED-UP REFERRAL</h4>
+                  <h1 class="fs-52 fs-1366-40 mt-2 fw-600 fs-650-32">09</h1>
                 </div>
                 <div class="sub-section">
-                  <h4 class="text-light-2">PENDING</h4>
-                  <h1 class="fs-52 fs-1366-40 mt-2 fw-600">01</h1>
+                  <h4 class="text-light-2 fs-650-14 mb-sm">PENDING</h4>
+                  <h1 class="fs-52 fs-1366-40 mt-2 fw-600 fs-650-32">01</h1>
                 </div>
                 <div class="sub-section">
-                  <h4 class="text-light-2">TOTAL REWARDS</h4>
-                  <h1 class="fs-52 fs-1366-40 mt-2 fw-600">₹4,500</h1>
+                  <h4 class="text-light-2 fs-650-14 mb-sm mt-sm">
+                    TOTAL REWARDS
+                  </h4>
+                  <h1 class="fs-52 fs-1366-40 mt-2 fw-600 fs-650-32">₹4,500</h1>
                 </div>
                 <div class="sub-section">
                   <button
@@ -480,7 +495,7 @@
                 </div>
               </div>
             </div>
-            <div class="card">
+            <div class="card" id="referral">
               <div class="img">
                 <img src="./assets/vector/refer-and-invest-1.svg" alt="1" />
               </div>
@@ -546,11 +561,11 @@
                 </div>
               </div>
             </div>
-            <div class="card">
+            <div class="card" id="last-referral">
               <div class="img">
                 <img src="./assets/vector/refer-and-invest-1.svg" alt="1" />
               </div>
-              <div class="text refer">
+              <div class="text refer last">
                 <div class="sub-section form">
                   <h4 class="text-light-2 fs-1366-14">LAST REFERRAL</h4>
                   <h3 class="fs-20 mt-3 fs-1366-16">ANUJ KATIYAR</h3>
@@ -565,7 +580,9 @@
                     <span class="checkmark"></span>
                   </label>
                 </div>
-                <div class="sub-section d-flex justify-content-end reminder">
+                <div
+                  class="sub-section d-flex justify-content-end reminder m-0"
+                >
                   <button
                     class="btn btn-bg-primary primary d-inline flex-grow-0"
                   >
@@ -580,6 +597,13 @@
 
       <!-- --------------------------------------------- MAIN END --------------------------------------------- -->
     </div>
+
+    <!-- JQUERY -->
+
+    <script src="./assets/js/jquery.min.js"></script>
+
     <!-- --------------------------------------------- Custom scripts --------------------------------------------- -->
+
+    <script src="./assets/js/refer-and-invest.js"></script>
   </body>
 </html>

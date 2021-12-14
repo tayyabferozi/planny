@@ -3096,7 +3096,7 @@ select.list-dt:focus {
   position: relative;
   font-family: "SourceSansPro-SemiBold";
   color: #31353f;
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 0px;
   text-transform: capitalize;
   line-height: 17px;
@@ -7294,6 +7294,12 @@ select.list-dt:focus {
   border-radius: 5px;
 }
 
+@media screen and (max-width: 1366px) {
+  .custom-tooltip {
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .custom-tooltip-container.service-section .custom-tooltip {
     width: 72%;
@@ -7454,4 +7460,162 @@ select.list-dt:focus {
   #main-page-dialogue-content {
     transform: unset !important;
   }
+}
+
+.planyybody #dark-overlay {
+  z-index: 11;
+  opacity: 0.8;
+  background-color: #31353f;
+}
+
+.planyybody .custom-modal {
+  z-index: 11;
+}
+
+.sebi {
+  max-width: 228px;
+}
+
+.sebi .sm {
+  display: none;
+}
+
+@media screen and (max-width: 575px) {
+  .sebi .sm {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 575px) {
+  .sebi {
+    margin-top: 4rem;
+    max-width: unset;
+  }
+}
+
+#signup-modal {
+  padding-top: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  #signup-modal {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #signup-modal {
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+  }
+}
+
+#signup-modal .btn {
+  min-width: 160px;
+}
+
+@media screen and (max-width: 920px) {
+  #signup-modal .btn {
+    min-width: unset;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #signup-modal .btn {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #signup-modal .btn {
+    width: 100%;
+  }
+}
+
+#otp-modal {
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+}
+
+@media screen and (max-width: 767px) {
+  #otp-modal {
+    padding-top: 9rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #otp-modal {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+}
+
+#otp-modal .otp-boxes,
+#otp-modal .btns {
+  max-width: 300px;
+}
+
+@media screen and (max-width: 767px) {
+  #otp-modal .otp-boxes,
+  #otp-modal .btns {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #otp-modal .btns {
+    margin-top: 5rem !important;
+    max-width: 480px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #otp-modal .btns {
+    margin-top: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #otp-modal .sub {
+    max-width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    right: 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #otp-modal .form {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+#otp-modal .otp-boxes .col-3 {
+  padding: 0.5rem;
+}
+
+#otp-modal .otp-boxes input {
+  font-size: 32px;
+  padding: 1.125rem 0.75rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+#otp-modal .btns .col-6 {
+  padding: 0.5rem;
+}
+
+#otp-modal .btn {
+  width: 100%;
+}
+
+.Generated_Financial_plans .edit {
+  /* display: none; */
+  display: block;
+  opacity: 1;
 }

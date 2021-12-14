@@ -16,7 +16,9 @@ h2 {
   font-size: 32px;
 
   @media screen and (max-width: 991px) {
-    font-size: 24px;
+    &:not(.resist-size) {
+      font-size: 24px;
+    }
   }
 }
 
@@ -111,6 +113,12 @@ p {
   }
 }
 
+.fs-1366-10 {
+  @media screen and (max-width: 1366px) {
+    font-size: 10px;
+  }
+}
+
 .fs-991-20 {
   @media screen and (max-width: 1366px) {
     font-size: 20px;
@@ -135,8 +143,30 @@ p {
   }
 }
 
+.fs-650-14 {
+  @media screen and (max-width: 650px) {
+    font-size: 14px;
+  }
+}
+
+.fs-650-32 {
+  @media screen and (max-width: 650px) {
+    font-size: 32px;
+  }
+}
+
+.fs-490-14 {
+  @media screen and (max-width: 490px) {
+    font-size: 14px;
+  }
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
 .fw-500 {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .fw-600 {
@@ -153,6 +183,10 @@ p {
 
 .lh-28 {
   line-height: 28px;
+}
+
+.lh-26 {
+  line-height: 26px;
 }
 
 .lh-1366-22 {
@@ -639,7 +673,7 @@ div.shadowy {
     border-bottom-right-radius: 0;
   }
 
-  &:not(.small-width) {
+  &:not(.small-width):not(.xs):not(.md) {
     .close {
       top: 2.75rem;
 
@@ -670,13 +704,15 @@ div.shadowy {
   }
 
   @media screen and (max-width: 768px) {
-    top: unset;
-    transform: unset;
-    bottom: 0;
-    left: 0;
-    width: 100vw !important;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    &:not(.md):not(.xs) {
+      top: unset;
+      transform: unset;
+      bottom: 0;
+      left: 0;
+      width: 100vw !important;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
   }
 
   @media screen and (max-width: 575px) {
@@ -732,6 +768,69 @@ div.shadowy {
   &.small-width {
     width: 660px;
     height: unset;
+  }
+
+  &.xs,
+  &.md {
+    padding: 3rem 3.5rem;
+    height: unset;
+    border-bottom: 5px solid $color1;
+    input,
+    textarea {
+      padding: 0.75rem 1rem;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: $color3;
+    }
+
+    .close {
+      top: 1.25rem;
+      right: 1.5rem;
+    }
+
+    .btn {
+      color: $color2;
+      min-width: 120px;
+    }
+  }
+
+  &.xs {
+    @media screen and (min-width: 576px) {
+      width: 444px;
+    }
+
+    @media screen and (max-width: 575px) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      width: 100vw;
+      height: 100vh;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      background-color: $color32;
+    }
+  }
+
+  &.md {
+    max-width: 878px;
+
+    @media screen and (max-width: 767px) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      width: 100vw;
+      top: unset;
+      transform: unset;
+      left: 0;
+      bottom: 0;
+      background-color: $color32;
+    }
+
+    @media screen and (max-width: 575px) {
+      height: 100vh;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
   }
 }
 
@@ -813,10 +912,15 @@ div.shadowy {
   border: 2px solid $color2;
   border-radius: 50px;
   transition: 0.4s ease;
+  background: transparent;
 
   &:hover {
     color: #fff;
     background-color: $color2;
+
+    * {
+      color: #fff;
+    }
   }
 
   &.primary {
@@ -870,6 +974,12 @@ div.shadowy {
   }
 }
 
+.btn-rounded {
+  border-radius: 50px;
+  background: #fff;
+  border: 1px solid #dedede;
+}
+
 ////////////////////////////////////////////////////// CUSTOM FORM CONTROLS   ////////////////////////////////////////////////////////
 
 .custom-form-control {
@@ -916,7 +1026,8 @@ div.shadowy {
   }
 }
 
-input.custom-input {
+input.custom-input,
+textarea.custom-input {
   width: 100%;
   border-radius: 5px;
   padding: 0.5rem;
@@ -1338,6 +1449,205 @@ input.custom-input {
   }
 }
 
+// //////////////////////////////////////////////////////////// SIDEBAR ///////////////////////////////////////////////////////////
+
+#right-menu-login,
+#right-menu {
+  position: fixed;
+  background: #fff;
+  right: 0;
+  top: 0;
+  z-index: 11;
+  height: 100vh;
+  width: 462px;
+
+  & > * {
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+
+  .close {
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+
+    a {
+      color: $color2;
+      display: block;
+      text-decoration: none;
+      transition: 0.4s ease;
+      font-size: 24px;
+      padding: 0.5rem 0;
+
+      &:hover,
+      &.active {
+        color: $color1;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1366px) {
+    width: 322px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 462px;
+  }
+
+  @media screen and (max-width: 490px) {
+    width: 87%;
+  }
+}
+
+#right-menu-login {
+  .nav {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $color30;
+
+    @media screen and (max-width: 1366px) {
+      padding-top: 2rem;
+      padding-bottom: 1rem;
+    }
+
+    &.nav-fp {
+      a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & > div {
+          display: flex;
+          align-items: center;
+        }
+
+        svg {
+          margin-right: 1rem;
+        }
+
+        .count {
+          width: 24px;
+          height: 24px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+
+          * {
+            font-size: 14px;
+          }
+
+          &.red {
+            background: $color28;
+
+            * {
+              color: #fff;
+            }
+          }
+
+          &.yellow {
+            background: $color1;
+          }
+        }
+      }
+    }
+  }
+
+  .profile-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1.75rem;
+
+    img {
+      width: 48px;
+      margin-right: 1rem;
+    }
+  }
+
+  .setting {
+    padding-top: 2rem;
+
+    @media screen and (max-width: 1366px) {
+      padding-top: 1rem;
+    }
+
+    .setting-main {
+      margin: 1rem 0;
+
+      .item {
+        padding: 1rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: 1366px) {
+          padding: 0.75rem 0;
+        }
+
+        & > div {
+          display: flex;
+          align-items: center;
+        }
+
+        svg {
+          &:nth-child(1) {
+            margin-right: 1rem;
+          }
+
+          &:nth-child(2) {
+            transform: rotate(-90deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+#right-menu {
+  .nav {
+    a {
+      font-size: 32px;
+      padding: 1rem 0;
+
+      @media screen and (max-width: 1366px) {
+        font-size: 24px;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 32px;
+      }
+
+      @media screen and (max-width: 575px) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .btn {
+    position: absolute;
+    bottom: 15rem;
+    width: 90%;
+    font-size: 24px;
+
+    @media screen and (max-width: 1366px) {
+      bottom: 10rem;
+      font-size: 14px;
+      width: 85%;
+    }
+
+    @media screen and (max-width: 768px) {
+      bottom: 2rem;
+    }
+  }
+}
+
 // //////////////////////////////////////////////////////////// SIDENAV ///////////////////////////////////////////////////////////
 
 #sidenav-container {
@@ -1454,6 +1764,14 @@ input.custom-input {
       width: 100%;
       padding-left: 0;
       padding-right: 0;
+    }
+
+    &.n-rm-padding {
+      @media screen and (max-width: 575px) {
+        width: 100%;
+        padding-left: 1.75rem;
+        padding-right: 1.75rem;
+      }
     }
 
     &.transactions-right {

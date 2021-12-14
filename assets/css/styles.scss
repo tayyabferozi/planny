@@ -1194,8 +1194,100 @@ table {
 // ***********************************************************************************************************************************
 
 #refer-and-invest {
+  .title {
+    img {
+      display: none;
+    }
+
+    @media screen and (max-width: 991px) {
+      position: relative;
+      margin-bottom: 1rem;
+      padding-left: 0.5rem;
+      font-size: 20px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 100vw;
+        background: $color30;
+        left: -1.75rem;
+        bottom: -1rem;
+      }
+
+      img {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -1.5rem;
+      }
+    }
+  }
+
+  .tabs {
+    display: none;
+    justify-content: space-between;
+    border-bottom: 1px solid $color30;
+    padding: 1rem 0;
+
+    @media screen and (max-width: 650px) {
+      display: flex;
+    }
+
+    .tab {
+      position: relative;
+      cursor: pointer;
+
+      &::after {
+        opacity: 0;
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -17px;
+        height: 2px;
+        width: 100%;
+        background: $color1;
+      }
+
+      &.active {
+        color: $color1;
+        font-weight: bold;
+
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
   .cards {
     margin-top: 4rem;
+
+    @media screen and (max-width: 1366px) {
+      margin-top: 1rem;
+    }
+
+    @media screen and (max-width: 991px) {
+      margin-top: 2rem;
+    }
+
+    .align-items-sm-start {
+      @media screen and (max-width: 650px) {
+        align-items: flex-start !important;
+        justify-content: center !important;
+
+        .mb-sm {
+          margin-bottom: 1.5rem;
+        }
+
+        .mt-sm {
+          @media screen and (max-width: 373px) {
+            margin-top: 1.5rem;
+          }
+        }
+      }
+    }
 
     .card {
       margin: 1rem 0;
@@ -1213,6 +1305,16 @@ table {
       @media screen and (max-width: 1200px) {
         padding-left: 2rem;
         padding-right: 2rem;
+      }
+
+      @media screen and (max-width: 650px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        display: none;
+
+        &.active {
+          display: block;
+        }
       }
 
       .img {
@@ -1245,6 +1347,21 @@ table {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 82%;
+
+        @media screen and (max-width: 1200px) {
+          width: 84%;
+        }
+
+        @media screen and (max-width: 991px) {
+          width: 75%;
+        }
+
+        @media screen and (max-width: 650px) {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 4rem;
+        }
 
         @media screen and (max-width: 991px) {
           flex-wrap: wrap;
@@ -1253,6 +1370,10 @@ table {
         .sub-section {
           flex-grow: 1;
           margin-right: 2rem;
+
+          @media screen and (max-width: 650px) {
+            margin-right: 1rem;
+          }
 
           @media screen and (max-width: 991px) {
             flex-grow: 0;
@@ -1268,6 +1389,10 @@ table {
 
             @media screen and (max-width: 1365px) {
               min-width: 85px;
+            }
+
+            @media screen and (max-width: 650px) {
+              margin-left: 0;
             }
           }
 
@@ -1297,21 +1422,50 @@ table {
               margin-left: 2rem;
               margin-top: 1.5rem;
 
-              .btn {
-                width: 95%;
+              @media screen and (max-width: 650px) {
+                margin-left: 0;
+                margin-right: 0;
+              }
 
-                @media screen and (max-width: 650px) {
-                  width: 100%;
-                }
+              .btn {
+                width: 100%;
+                max-width: 296px;
               }
             }
           }
         }
 
         &.refer {
+          flex-grow: 1;
+
           @media screen and (max-width: 650px) {
             justify-content: center;
           }
+
+          &.last {
+            max-width: 800px;
+
+            @media screen and (max-width: 1366px) {
+              max-width: 570px;
+            }
+
+            @media screen and (max-width: 650px) {
+              text-align: left;
+            }
+          }
+
+          .form {
+            width: 323px;
+
+            @media screen and (max-width: 1366px) {
+              width: 66px;
+            }
+          }
+
+          .reminder {
+            flex-grow: 1;
+          }
+
           .referral {
             width: 375px;
             margin-right: 3rem;
@@ -1389,7 +1543,24 @@ table {
         }
 
         .reminder {
-          padding-right: 5.5rem;
+          @media screen and (max-width: 991px) {
+            max-width: unset !important;
+            justify-content: flex-start !important;
+
+            .btn {
+              margin-top: 2rem;
+              width: 100%;
+              max-width: 336px;
+            }
+          }
+
+          @media screen and (max-width: 650px) {
+            justify-content: center !important;
+
+            .btn {
+              max-width: 300px;
+            }
+          }
         }
       }
     }
