@@ -4,7 +4,12 @@ window.onscroll = function () {
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
+
+  let bar = document.getElementById("myBar");
+
+  if (bar) {
+    bar.style.width = scrolled + "%";
+  }
 };
 
 $(".custom-tooltip .close").click(function () {

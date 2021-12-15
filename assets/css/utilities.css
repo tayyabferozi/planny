@@ -973,7 +973,6 @@ div.shadowy {
   background: #b2b2b2;
   outline: none;
   opacity: 1;
-  -webkit-transition: 0.2s;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
@@ -1347,7 +1346,7 @@ textarea.custom-input:focus {
   bottom: 0;
   width: 35px;
   height: 20px;
-  background-color: #ccc;
+  background-color: #b2b2b2;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   margin-left: 0.25rem;
@@ -1371,6 +1370,8 @@ textarea.custom-input:focus {
   background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
 }
 
 .radio-container,
@@ -2145,5 +2146,90 @@ textarea.custom-input:focus {
 
 .uploading .upload-body .progress.yellow {
   background: #ffc32c;
+}
+
+[src="./assets/vector/back-arrow.svg"] {
+  cursor: pointer;
+}
+
+.mc-calendar .mc-table__weekday {
+  font-size: 12px;
+  color: #b2b2b2;
+  font-weight: 500;
+}
+
+.mc-calendar .mc-picker__body {
+  border: 1px solid #d8d8d8;
+  border-left: 0;
+  border-right: 0;
+}
+
+.mc-calendar .mc-date {
+  width: 32px;
+  height: 32px;
+}
+
+.mc-calendar .mc-date.mc-date--active {
+  background: transparent;
+}
+
+.mc-calendar .mc-date.mc-date--picked {
+  border-radius: 50%;
+  background: #ffc32c;
+  font-weight: 600;
+  color: #31353f;
+}
+
+.mc-calendar .mc-month-year__cell--picked {
+  border-radius: 50px;
+  background: #ffc32c;
+}
+
+.mc-calendar .mc-month-year__cell {
+  width: 21%;
+  height: 16%;
+}
+
+.mc-calendar .mc-picker__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mc-calendar .mc-picker__footer #mc-btn__cancel {
+  display: none;
+}
+
+.mc-calendar .mc-picker__footer button {
+  width: 112px;
+  height: 40px;
+  color: #31353f;
+  border-radius: 50px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  border: 2px solid transparent;
+}
+
+.mc-calendar .mc-picker__footer button#mc-btn__clear {
+  background: transparent;
+  border-color: #31353f;
+}
+
+.mc-calendar .mc-picker__footer button#mc-btn__clear:hover {
+  background: #31353f;
+  color: #fff;
+}
+
+.mc-calendar .mc-picker__footer button#mc-btn__ok {
+  background: #ffc32c;
+}
+
+.mc-calendar .mc-picker__footer button#mc-btn__ok:hover {
+  background: transparent;
+  border-color: #ffc32c;
+  color: #ffc32c;
 }
 /*# sourceMappingURL=utilities.css.map */

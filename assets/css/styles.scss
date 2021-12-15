@@ -54,7 +54,7 @@ a {
   }
 }
 
-table {
+table.custom-table {
   border-collapse: collapse;
   font-size: 20px;
   border-radius: 7px;
@@ -203,6 +203,11 @@ table {
     @media screen and (max-width: 991px) {
       padding-left: 2rem;
       padding-right: 2rem;
+    }
+
+    @media screen and (max-width: 575px) {
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
   }
 
@@ -1127,6 +1132,12 @@ table {
       padding: 2rem 0;
       border-bottom: 1px solid $color5;
 
+      &:first-child {
+        @media screen and (max-width: 575px) {
+          padding-top: 0;
+        }
+      }
+
       @media screen and (max-width: 575px) {
         flex-wrap: wrap;
       }
@@ -1134,6 +1145,10 @@ table {
       .blog-img img,
       .blog-text {
         min-height: 223px;
+
+        @media screen and (max-width: 768px) {
+          min-height: 188px;
+        }
       }
 
       .blog-img {

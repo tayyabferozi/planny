@@ -47,7 +47,7 @@ a {
   }
 }
 
-table {
+table.custom-table {
   border-collapse: collapse;
   font-size: 20px;
   border-radius: 7px;
@@ -55,7 +55,7 @@ table {
 }
 
 @media screen and (max-width: 991px) {
-  table {
+  table.custom-table {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
@@ -63,53 +63,53 @@ table {
 }
 
 @media screen and (max-width: 991px) {
-  table {
+  table.custom-table {
     font-size: 18px;
   }
 }
 
-table tr:nth-child(even) {
+table.custom-table tr:nth-child(even) {
   background-color: #f7f7f7;
 }
 
-table tr:last-child td {
+table.custom-table tr:last-child td {
   border-bottom: 1px solid #b2b2b269 !important;
 }
 
-table tr:first-child {
+table.custom-table tr:first-child {
   background-color: transparent;
 }
 
-table tr td {
+table.custom-table tr td {
   border-top: none !important;
   border-bottom: none !important;
 }
 
-table tr th,
-table tr td {
+table.custom-table tr th,
+table.custom-table tr td {
   padding: 0.75rem 2rem;
   border: 1px solid #b2b2b269;
 }
 
 @media screen and (max-width: 1140px) {
-  table tr th,
-  table tr td {
+  table.custom-table tr th,
+  table.custom-table tr td {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
 }
 
 @media screen and (max-width: 991px) {
-  table tr th,
-  table tr td {
+  table.custom-table tr th,
+  table.custom-table tr td {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
 
 @media screen and (max-width: 767px) {
-  table tr th,
-  table tr td {
+  table.custom-table tr th,
+  table.custom-table tr td {
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -234,6 +234,13 @@ table tr td {
   #navbar.blogs-navbar {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #navbar.blogs-navbar {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -1278,6 +1285,12 @@ table tr td {
 }
 
 @media screen and (max-width: 575px) {
+  #blogs .blog-posts .blog-post:first-child {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
   #blogs .blog-posts .blog-post {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1287,6 +1300,13 @@ table tr td {
 #blogs .blog-posts .blog-post .blog-img img,
 #blogs .blog-posts .blog-post .blog-text {
   min-height: 223px;
+}
+
+@media screen and (max-width: 768px) {
+  #blogs .blog-posts .blog-post .blog-img img,
+  #blogs .blog-posts .blog-post .blog-text {
+    min-height: 188px;
+  }
 }
 
 #blogs .blog-posts .blog-post .blog-img {

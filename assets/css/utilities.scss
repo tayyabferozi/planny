@@ -858,7 +858,6 @@ div.shadowy {
     background: $color3;
     outline: none;
     opacity: 1;
-    -webkit-transition: 0.2s;
     transition: opacity 0.2s;
   }
 
@@ -1213,8 +1212,7 @@ textarea.custom-input {
     bottom: 0;
     width: 35px;
     height: 20px;
-    background-color: #ccc;
-    -webkit-transition: 0.4s;
+    background-color: $color3;
     transition: 0.4s;
     margin-left: 0.25rem;
 
@@ -1234,8 +1232,8 @@ textarea.custom-input {
       left: 4px;
       bottom: 4px;
       background-color: white;
-      -webkit-transition: 0.4s;
       transition: 0.4s;
+      transform: translateY(1px);
     }
   }
 }
@@ -1909,6 +1907,88 @@ textarea.custom-input {
 
       &.yellow {
         background: $color1;
+      }
+    }
+  }
+}
+
+[src="./assets/vector/back-arrow.svg"] {
+  cursor: pointer;
+}
+
+.mc-calendar {
+  .mc-table__weekday {
+    font-size: 12px;
+    color: $color3;
+    font-weight: 500;
+  }
+
+  .mc-picker__body {
+    border: 1px solid #d8d8d8;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .mc-date {
+    width: 32px;
+    height: 32px;
+
+    &.mc-date--active {
+      background: transparent;
+    }
+
+    &.mc-date--picked {
+      border-radius: 50%;
+      background: $color1;
+      font-weight: 600;
+      color: $color2;
+    }
+  }
+
+  .mc-month-year__cell--picked {
+    border-radius: 50px;
+    background: $color1;
+  }
+
+  .mc-month-year__cell {
+    width: 21%;
+    height: 16%;
+  }
+
+  .mc-picker__footer {
+    display: flex;
+    justify-content: center;
+
+    #mc-btn__cancel {
+      display: none;
+    }
+
+    button {
+      width: 112px;
+      height: 40px;
+      color: $color2;
+      border-radius: 50px;
+      transition: 0.4s ease;
+      border: 2px solid transparent;
+
+      &#mc-btn__clear {
+        background: transparent;
+        border-color: $color2;
+
+        &:hover {
+          background: $color2;
+          color: #fff;
+        }
+      }
+
+      &#mc-btn__ok {
+        background: $color1;
+
+        &:hover {
+          background: transparent;
+          border-color: $color1;
+          color: $color1;
+        }
       }
     }
   }
