@@ -1080,6 +1080,7 @@ div.shadowy {
     position: relative;
 
     .icon {
+      pointer-events: none;
       position: absolute;
       right: 1rem;
       top: 50%;

@@ -1212,6 +1212,7 @@ div.shadowy {
 }
 
 .custom-form-control .with-icon .icon {
+  pointer-events: none;
   position: absolute;
   right: 1rem;
   top: 50%;
