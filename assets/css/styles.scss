@@ -826,7 +826,11 @@ table.custom-table {
       .cards {
         margin-bottom: 20vh;
 
+        @media screen and (max-width: 1366px) {
+          margin-bottom: 10vh;
+        }
         .card {
+          width: 100%;
           position: relative;
           text-align: center;
 
@@ -858,7 +862,7 @@ table.custom-table {
         display: flex;
         justify-content: center;
 
-        @media screen and (max-width: 1366px) {
+        @media screen and (max-width: 768px) {
           flex-direction: column;
           align-items: center;
         }
@@ -877,6 +881,11 @@ table.custom-table {
             @media screen and (max-width: 1366px) {
               font-size: 32px;
               text-align: center;
+              margin-right: 0 !important;
+            }
+
+            @media screen and (max-width: 575px) {
+              font-size: 28px;
             }
           }
         }
@@ -976,6 +985,14 @@ table.custom-table {
       @media screen and (max-width: 1366px) {
         top: 2rem;
       }
+
+      @media screen and (max-width: 991px) {
+        right: 2.75rem;
+      }
+
+      @media screen and (max-width: 575px) {
+        right: 2rem;
+      }
     }
 
     .modal-head,
@@ -994,13 +1011,71 @@ table.custom-table {
     .modal-head {
       padding: 0 2.5rem;
 
-      @media screen and (max-width: 575px) {
-        padding: 0;
+      @media screen and (max-width: 991px) {
+        padding: 0 0.25rem;
       }
 
       .btn {
         @media screen and (max-width: 991px) {
           display: none;
+        }
+      }
+    }
+
+    .modal-body {
+      .continue {
+        position: absolute;
+        left: 50%;
+        bottom: 3rem;
+        width: 100%;
+        display: block;
+        max-width: 328px;
+        transform: translateX(-50%);
+
+        @media screen and (min-width: 769px) {
+          display: none;
+        }
+
+        @media screen and (max-width: 575px) {
+          bottom: -4.5rem;
+        }
+      }
+    }
+  }
+}
+
+#details {
+  .details-container {
+    .details-item {
+      @media screen and (max-width: 991px) {
+        order: 10;
+
+        &.step1 {
+          order: 0;
+        }
+
+        &.pan {
+          order: 1;
+        }
+
+        &.email {
+          order: 2;
+        }
+
+        &.name {
+          order: 3;
+        }
+
+        &.dob {
+          order: 4;
+        }
+
+        &.gender {
+          order: 5;
+        }
+
+        &.marriage-status {
+          order: 6;
         }
       }
     }

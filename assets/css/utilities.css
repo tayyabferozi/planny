@@ -157,6 +157,12 @@ p {
   }
 }
 
+@media screen and (max-width: 575px) {
+  .fs-575-28 {
+    font-size: 28px;
+  }
+}
+
 @media screen and (max-width: 490px) {
   .fs-490-14 {
     font-size: 14px;
@@ -740,6 +746,18 @@ div.shadowy {
           transform: translateX(-50%);
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+@media screen and (max-width: 1366px) and (min-width: 769px) {
+  .custom-modal.bottem-aligned-laptop {
+    height: 85% !important;
+    top: unset;
+    bottom: 0;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+  }
 }
 
 .custom-modal:not(.small-width):not(.xs):not(.md) .close {
@@ -1386,7 +1404,7 @@ textarea.custom-input:focus {
 }
 
 .switch-container {
-  margin-top: 4rem;
+  margin-top: 2.25rem;
 }
 
 .custom-select {
@@ -1490,18 +1508,22 @@ textarea.custom-input:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1366px) and (min-width: 992px) {
+  .details-container {
+    padding: 0 2.5rem;
+  }
 }
 
 @media screen and (max-width: 991px) {
   .details-container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-}
-
-@media screen and (max-width: 1366px) and (min-width: 576px) {
-  .details-container {
-    padding: 0 2.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 
@@ -1520,6 +1542,14 @@ textarea.custom-input:focus {
 @media screen and (max-width: 991px) {
   .details-container .details-item {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 600px) {
+  .details-container .details-item.half,
+  .details-container .details-item.half-inner input,
+  .details-container .details-item.half-inner .custom-select {
+    width: 47%;
   }
 }
 
@@ -2028,8 +2058,32 @@ textarea.custom-input:focus {
   display: inline-block;
 }
 
+.custom-dropdown .dropbtn img {
+  pointer-events: none;
+}
+
+.custom-dropdown .dropbtn svg {
+  -webkit-transform: translate(3px, -8px) rotateX(180deg);
+          transform: translate(3px, -8px) rotateX(180deg);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.custom-dropdown .dropbtn svg #Path_6068 {
+  fill: #31353f !important;
+}
+
 .custom-dropdown.show {
   display: block;
+}
+
+.custom-dropdown.show .dropbtn svg {
+  -webkit-transform: translate(3px, -8px);
+          transform: translate(3px, -8px);
+}
+
+.custom-dropdown.show .dropbtn svg #Path_6068 {
+  fill: #ffc32c !important;
 }
 
 .custom-dropdown.show .dropdown-content {
@@ -2084,6 +2138,13 @@ textarea.custom-input:focus {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem 3.5rem;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.dropdown-content .body .nav-item * {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 .dropdown-content .body .nav-item svg {

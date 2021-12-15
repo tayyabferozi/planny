@@ -54,6 +54,7 @@
   </head>
 
   <body class="planyybody">
+    <div id="dark-overlay-beneath" class=""></div>
     <div id="dark-overlay" class=""></div>
     <div id="right-menu-login" class="">
       <div class="close">
@@ -1681,7 +1682,7 @@
         <button class="btn btn-bg-primary mt-4">Call</button>
       </div>
     </div>
-    <div class="custom-modal md d-none" id="signup-modal">
+    <div class="custom-modal md" id="signup-modal">
       <div class="close">
         <img src="./assets/images/close.svg" alt="close" />
       </div>
@@ -1736,7 +1737,25 @@
                   value="+91 8130482336"
                 />
               </div>
-              <div class="custom-form-control mt-4">
+              <div class="custom-form-control mt-4 pwd-container">
+                <div class="custom-tooltip password">
+                  <div class="left-arrow"></div>
+                  <!-- <div class="arrow"></div> -->
+                  <ul>
+                    <li>
+                      <img src="./assets/vector/pwd-not-fulfilled.svg" alt="" />
+                      <div>8 or more characters</div>
+                    </li>
+                    <li>
+                      <img src="./assets/vector/pwd-fulfilled.svg" alt="" />
+                      <div>Upper & lowercase letter</div>
+                    </li>
+                    <li>
+                      <img src="./assets/vector/pwd-fulfilled.svg" alt="" />
+                      <div>At least one number</div>
+                    </li>
+                  </ul>
+                </div>
                 <input
                   class="custom-input"
                   type="password"

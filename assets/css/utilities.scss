@@ -155,6 +155,12 @@ p {
   }
 }
 
+.fs-575-28 {
+  @media screen and (max-width: 575px) {
+    font-size: 28px;
+  }
+}
+
 .fs-490-14 {
   @media screen and (max-width: 490px) {
     font-size: 14px;
@@ -671,6 +677,17 @@ div.shadowy {
     transform: translateX(-50%);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+  }
+
+  @media screen and (max-width: 1366px) and(min-width: 769px) {
+    &.bottem-aligned-laptop {
+      height: 85% !important;
+      top: unset;
+      bottom: 0;
+      transform: translateX(-50%);
+      border-top-left-radius: 15px !important;
+      border-top-right-radius: 15px !important;
+    }
   }
 
   &:not(.small-width):not(.xs):not(.md) {
@@ -1246,7 +1263,7 @@ textarea.custom-input {
 }
 
 .switch-container {
-  margin-top: 4rem;
+  margin-top: 2.25rem;
 }
 
 // ////////////////////////////////////////////////////// CUSTOM SELECT ////////////////////////////////////////////////////////
@@ -1341,13 +1358,16 @@ textarea.custom-input {
 .details-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 1366px) and (min-width: 992px) {
+    padding: 0 2.5rem;
+  }
 
   @media screen and (max-width: 991px) {
     flex-wrap: wrap;
-  }
-
-  @media screen and (max-width: 1366px) and (min-width: 576px) {
-    padding: 0 2.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .details-item {
@@ -1361,6 +1381,14 @@ textarea.custom-input {
 
     @media screen and (max-width: 991px) {
       width: 100%;
+    }
+
+    @media screen and (max-width: 991px) and (min-width: 600px) {
+      &.half,
+      &.half-inner input,
+      &.half-inner .custom-select {
+        width: 47%;
+      }
     }
 
     .custom-form-control {
@@ -1799,8 +1827,33 @@ textarea.custom-input {
   position: relative;
   display: inline-block;
 
+  .dropbtn {
+    img {
+      pointer-events: none;
+    }
+
+    svg {
+      transform: translate(3px, -8px) rotateX(180deg);
+      transition: 0.4s ease;
+
+      #Path_6068 {
+        fill: $color2 !important;
+      }
+    }
+  }
+
   &.show {
     display: block;
+
+    .dropbtn {
+      svg {
+        transform: translate(3px, -8px);
+
+        #Path_6068 {
+          fill: $color1 !important;
+        }
+      }
+    }
 
     .dropdown-content {
       display: block;
@@ -1841,6 +1894,11 @@ textarea.custom-input {
       justify-content: flex-start;
       align-items: center;
       padding: 1rem 3.5rem;
+      transition: 0.4s ease;
+
+      * {
+        transition: 0.4s ease;
+      }
 
       svg {
         margin-right: 1.25rem;

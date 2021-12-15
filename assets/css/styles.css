@@ -931,7 +931,14 @@ table.custom-table tr td {
   margin-bottom: 20vh;
 }
 
+@media screen and (max-width: 1366px) {
+  #investment-ready .custom-modal .modal-body .cards {
+    margin-bottom: 10vh;
+  }
+}
+
 #investment-ready .custom-modal .modal-body .cards .card {
+  width: 100%;
   position: relative;
   text-align: center;
 }
@@ -968,7 +975,7 @@ table.custom-table tr td {
           justify-content: center;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 768px) {
   #investment-ready .custom-modal .modal-body .form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -999,6 +1006,13 @@ table.custom-table tr td {
   #investment-ready .custom-modal .modal-body .form .text h1 {
     font-size: 32px;
     text-align: center;
+    margin-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #investment-ready .custom-modal .modal-body .form .text h1 {
+    font-size: 28px;
   }
 }
 
@@ -1112,6 +1126,22 @@ table.custom-table tr td {
   }
 }
 
+@media screen and (max-width: 991px) {
+  #details .custom-modal .close,
+  #uploading .custom-modal .close,
+  #uploader .custom-modal .close {
+    right: 2.75rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #details .custom-modal .close,
+  #uploading .custom-modal .close,
+  #uploader .custom-modal .close {
+    right: 2rem;
+  }
+}
+
 #details .custom-modal .modal-head,
 #details .custom-modal .modal-body,
 #uploading .custom-modal .modal-head,
@@ -1140,11 +1170,11 @@ table.custom-table tr td {
   padding: 0 2.5rem;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 991px) {
   #details .custom-modal .modal-head,
   #uploading .custom-modal .modal-head,
   #uploader .custom-modal .modal-head {
-    padding: 0;
+    padding: 0 0.25rem;
   }
 }
 
@@ -1153,6 +1183,78 @@ table.custom-table tr td {
   #uploading .custom-modal .modal-head .btn,
   #uploader .custom-modal .modal-head .btn {
     display: none;
+  }
+}
+
+#details .custom-modal .modal-body .continue,
+#uploading .custom-modal .modal-body .continue,
+#uploader .custom-modal .modal-body .continue {
+  position: absolute;
+  left: 50%;
+  bottom: 3rem;
+  width: 100%;
+  display: block;
+  max-width: 328px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media screen and (min-width: 769px) {
+  #details .custom-modal .modal-body .continue,
+  #uploading .custom-modal .modal-body .continue,
+  #uploader .custom-modal .modal-body .continue {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #details .custom-modal .modal-body .continue,
+  #uploading .custom-modal .modal-body .continue,
+  #uploader .custom-modal .modal-body .continue {
+    bottom: -4.5rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #details .details-container .details-item {
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
+  }
+  #details .details-container .details-item.step1 {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  #details .details-container .details-item.pan {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #details .details-container .details-item.email {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #details .details-container .details-item.name {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  #details .details-container .details-item.dob {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  #details .details-container .details-item.gender {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  #details .details-container .details-item.marriage-status {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
   }
 }
 

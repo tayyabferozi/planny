@@ -45,9 +45,12 @@
         <div class="modal-body mt-3">
           <div class="container-fluid">
             <div class="details-container">
-              <div class="details-item">
+              <div class="details-item step1">
                 <div class="details-box primary">
-                  <h4 class="box-title fs-14 fs-1366-12">STEP 1</h4>
+                  <h4 class="box-title fs-14 fs-1366-12">
+                    STEP 1
+                    <span class="d-inline d-lg-none text-yellow">/3</span>
+                  </h4>
 
                   <div class="box-content">
                     <div class="box-subtitle fs-1366-14">Basic Details</div>
@@ -56,35 +59,6 @@
                       choices.
                     </div>
                   </div>
-                </div>
-
-                <div class="custom-form-control half first">
-                  <h4 class="text-light-2">PAN</h4>
-                  <input
-                    class="custom-input"
-                    type="text"
-                    disabled
-                    value="BPGP1543k"
-                  />
-                </div>
-
-                <div class="custom-form-control half second">
-                  <h4 class="text-light-2">EMAIL</h4>
-                  <input
-                    class="custom-input"
-                    type="text"
-                    placeholder="example@mail.com"
-                  />
-                </div>
-
-                <div class="custom-form-control half first">
-                  <h4 class="text-light-2">DATE OF BIRTH</h4>
-                  <input
-                    class="custom-input"
-                    id="example"
-                    type="date"
-                    placeholder="DD/MM/YYYY"
-                  />
                 </div>
               </div>
 
@@ -100,8 +74,35 @@
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="custom-form-control half second">
+              <div class="details-item">
+                <div class="details-box d-none d-lg-block">
+                  <h4 class="box-title fs-14 fs-1366-12">STEP 3</h4>
+                  <div class="box-content">
+                    <div class="box-subtitle fs-1366-14">Signature</div>
+                    <div class="box-text fs-1366-14">
+                      Your signature should match with your PAN Card’s
+                      signature.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="details-item half pan">
+                <div class="custom-form-control">
+                  <h4 class="text-light-2">PAN</h4>
+                  <input
+                    class="custom-input"
+                    type="text"
+                    disabled
+                    value="BPGP1543k"
+                  />
+                </div>
+              </div>
+
+              <div class="details-item half name">
+                <div class="custom-form-control">
                   <h4 class="text-light-2">NAME</h4>
                   <input
                     class="custom-input"
@@ -109,7 +110,32 @@
                     placeholder="e. g: John Smith"
                   />
                 </div>
+              </div>
 
+              <div class="details-item">
+                <div class="custom-form-control switch-container">
+                  <label for="#nominee">
+                    <h4>NOMINEE</h4>
+                  </label>
+                  <label id="nominee" class="switch">
+                    <input type="checkbox" checked />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="details-item half email">
+                <div class="custom-form-control">
+                  <h4 class="text-light-2">EMAIL</h4>
+                  <input
+                    class="custom-input"
+                    type="text"
+                    placeholder="example@mail.com"
+                  />
+                </div>
+              </div>
+
+              <div class="details-item half gender">
                 <div class="custom-form-control">
                   <h4 class="text-light-2">GENDER</h4>
                   <div class="radio-container">
@@ -130,6 +156,32 @@
                     </label>
                   </div>
                 </div>
+              </div>
+
+              <div class="details-item nominee-name half-inner">
+                <div class="custom-form-control">
+                  <h4 class="text-light-2">NOMINEE NAME</h4>
+                  <input
+                    class="custom-input"
+                    type="text"
+                    value="Sachin Kumar"
+                  />
+                </div>
+              </div>
+
+              <div class="details-item half dob">
+                <div class="custom-form-control">
+                  <h4 class="text-light-2">DATE OF BIRTH</h4>
+                  <input
+                    class="custom-input"
+                    id="example"
+                    type="date"
+                    placeholder="DD/MM/YYYY"
+                  />
+                </div>
+              </div>
+
+              <div class="details-item half marriage-status">
                 <div class="custom-form-control">
                   <h4 class="text-light-2">MARRIAGE STATUS</h4>
                   <div class="radio-container">
@@ -146,51 +198,22 @@
                   </div>
                 </div>
               </div>
-              <div class="details-item">
-                <div class="details-box d-none d-lg-block">
-                  <h4 class="box-title fs-14 fs-1366-12">STEP 3</h4>
 
-                  <div class="box-content">
-                    <div class="box-subtitle fs-1366-14">Signature</div>
-                    <div class="box-text fs-1366-14">
-                      Your signature should match with your PAN Card’s
-                      signature.
-                    </div>
-                  </div>
-
-                  <div class="custom-form-control switch-container">
-                    <label for="#nominee">
-                      <h4>NOMINEE</h4>
-                    </label>
-                    <label id="nominee" class="switch">
-                      <input type="checkbox" checked />
-                      <span class="slider round"></span>
-                    </label>
-                  </div>
-
-                  <div class="custom-form-control">
-                    <h4 class="text-light-2">NOMINEE NAME</h4>
-                    <input
-                      class="custom-input"
-                      type="text"
-                      value="Sachin Kumar"
-                    />
-                  </div>
-
-                  <div class="custom-form-control">
-                    <h4 class="text-light-2">RELATIONSHIP</h4>
-                    <div class="custom-select">
-                      <select>
-                        <option value="1">Brother</option>
-                        <option value="2">Sister</option>
-                        <option value="3">Father</option>
-                        <option value="4">Mother</option>
-                      </select>
-                    </div>
+              <div class="details-item half-inner">
+                <div class="custom-form-control">
+                  <h4 class="text-light-2">RELATIONSHIP</h4>
+                  <div class="custom-select">
+                    <select>
+                      <option value="1">Brother</option>
+                      <option value="2">Sister</option>
+                      <option value="3">Father</option>
+                      <option value="4">Mother</option>
+                    </select>
                   </div>
                 </div>
               </div>
             </div>
+            <button class="btn btn-bg-primary continue">Continue</button>
           </div>
         </div>
       </div>

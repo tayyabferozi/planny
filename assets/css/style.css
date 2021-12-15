@@ -7356,7 +7356,7 @@ select.list-dt:focus {
   font-size: 16px;
   font-family: SourceSansPro-Regular;
   border-radius: 5px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
 }
 
 @media screen and (max-width: 1366px) {
@@ -7589,13 +7589,17 @@ select.list-dt:focus {
 }
 
 .planyybody #dark-overlay {
-  z-index: 11;
+  z-index: 12;
   opacity: 0.8;
   background-color: #31353f;
 }
 
 .planyybody .custom-modal {
-  z-index: 11;
+  z-index: 12;
+}
+
+.planyybody .custom-modal {
+  text-decoration: none;
 }
 
 .sebi {
@@ -7901,4 +7905,82 @@ select.list-dt:focus {
   .msoinvestproduct_box_right_p2 span:last-child {
     width: 70px !important;
   }
+}
+
+.custom-tooltip.password {
+  width: 190px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.custom-tooltip.password ul {
+  list-style-type: none;
+  font-size: 12px;
+  padding-left: 2rem;
+}
+
+.custom-tooltip.password ul li {
+  position: relative;
+  padding: 0.125rem 0;
+  color: #31353f;
+}
+
+.custom-tooltip.password ul li img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -1.75rem;
+}
+
+.pwd-container {
+  position: relative;
+}
+
+.pwd-container .custom-tooltip {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: unset;
+  left: 5.5rem;
+}
+
+.pwd-container .custom-tooltip .left-arrow {
+  width: 50px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  overflow: hidden;
+  left: -37px;
+  transform: rotate(90deg) translateX(-25%);
+}
+
+.pwd-container .custom-tooltip .left-arrow::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: white;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  top: 0;
+  left: 50%;
+  border: 1px solid #ffc32c;
+}
+
+.custom-input {
+  color: #31353f;
+}
+
+#signup-modal .modal-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media screen and (max-width: 575px) {
+  #signup-modal .modal-body .container {
+    padding: 0;
+  }
+}
+
+#dark-overlay.beneath {
+  z-index: 11;
 }
