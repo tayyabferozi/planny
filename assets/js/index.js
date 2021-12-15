@@ -38,3 +38,9 @@ $("[data-target='#exampleModal6']").click(function () {
 });
 
 $("input[type='time']").timepicki({ reset: true });
+
+$("#signup-btn").click(function () {
+  openOverlay();
+  $("#signup-modal").addClass("d-none");
+  $("#otp-modal").removeClass("d-none");
+});
