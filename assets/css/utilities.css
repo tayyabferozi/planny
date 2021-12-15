@@ -2236,10 +2236,14 @@ textarea.custom-input:focus {
 }
 
 .mc-calendar .mc-date.mc-date--picked {
+  display: inline-block;
   border-radius: 50%;
   background: #ffc32c;
   font-weight: 600;
   color: #31353f;
+  line-height: 1.8;
+  -webkit-transform: translate(11px, 2px);
+          transform: translate(11px, 2px);
 }
 
 .mc-calendar .mc-month-year__cell--picked {
