@@ -1911,9 +1911,13 @@ table.custom-table {
 
     .back {
       position: absolute;
-      top: 60%;
+      top: 50%;
       left: -1.75rem;
-      transform: translateY(-60%);
+      transform: translateY(-50%);
+
+      @media screen and (max-width: 1023px) {
+        left: -1.25rem;
+      }
     }
 
     &::after {
