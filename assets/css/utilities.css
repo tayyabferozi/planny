@@ -2354,7 +2354,7 @@ textarea.custom-input[type="date"].active,
   display: none;
 }
 
-.mc-calendar button,
+.mc-calendar .mc-picker__footer button,
 .timepicker_wrap a {
   width: 112px;
   height: 40px;
@@ -2366,27 +2366,27 @@ textarea.custom-input[type="date"].active,
   text-decoration: none;
 }
 
-.mc-calendar button#mc-btn__clear, .mc-calendar button.reset_time,
+.mc-calendar .mc-picker__footer button#mc-btn__clear, .mc-calendar .mc-picker__footer button.reset_time,
 .timepicker_wrap a#mc-btn__clear,
 .timepicker_wrap a.reset_time {
   background: transparent;
   border-color: #31353f;
 }
 
-.mc-calendar button#mc-btn__clear:hover, .mc-calendar button.reset_time:hover,
+.mc-calendar .mc-picker__footer button#mc-btn__clear:hover, .mc-calendar .mc-picker__footer button.reset_time:hover,
 .timepicker_wrap a#mc-btn__clear:hover,
 .timepicker_wrap a.reset_time:hover {
   background: #31353f;
   color: #fff;
 }
 
-.mc-calendar button#mc-btn__ok, .mc-calendar button.done,
+.mc-calendar .mc-picker__footer button#mc-btn__ok, .mc-calendar .mc-picker__footer button.done,
 .timepicker_wrap a#mc-btn__ok,
 .timepicker_wrap a.done {
   background: #ffc32c;
 }
 
-.mc-calendar button#mc-btn__ok:hover, .mc-calendar button.done:hover,
+.mc-calendar .mc-picker__footer button#mc-btn__ok:hover, .mc-calendar .mc-picker__footer button.done:hover,
 .timepicker_wrap a#mc-btn__ok:hover,
 .timepicker_wrap a.done:hover {
   background: transparent;
@@ -2528,5 +2528,18 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   width: 18px;
   height: 10px;
   z-index: 3;
+}
+
+.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+input[type="date"]::-webkit-input-placeholder {
+  visibility: hidden !important;
 }
 /*# sourceMappingURL=utilities.css.map */

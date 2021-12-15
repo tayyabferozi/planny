@@ -8026,7 +8026,3 @@ select.list-dt:focus {
     right: 1rem;
   }
 }
-
-.btn:focus {
-  outline: none;
-}

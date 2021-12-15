@@ -2102,7 +2102,7 @@ textarea.custom-input,
   }
 }
 
-.mc-calendar button,
+.mc-calendar .mc-picker__footer button,
 .timepicker_wrap a {
   width: 112px;
   height: 40px;
@@ -2264,4 +2264,15 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   width: 18px;
   height: 10px;
   z-index: 3;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+input::-webkit-calendar-picker-indicator{
+  display: none;
+}
+
+input[type="date"]::-webkit-input-placeholder{ 
+  visibility: hidden !important;
 }
