@@ -1548,6 +1548,8 @@ table.custom-table tr td {
 #refer-and-invest .tabs .tab {
   position: relative;
   cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 #refer-and-invest .tabs .tab::after {
@@ -1559,6 +1561,8 @@ table.custom-table tr td {
   height: 2px;
   width: 100%;
   background: #ffc32c;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 #refer-and-invest .tabs .tab.active {

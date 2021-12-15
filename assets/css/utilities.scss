@@ -1884,6 +1884,26 @@ textarea.custom-input,
       }
     }
 
+    &.refer-and-invest-right {
+      @media screen and (max-width: 991px) and (min-width: 768px) {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+      }
+
+      @media screen and (max-width: 767px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        .title {
+          padding-left: 2rem;
+
+          img {
+            left: 0;
+          }
+        }
+      }
+    }
+
     section {
       max-width: 1276px;
       margin-left: auto;
@@ -2269,10 +2289,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .btn:focus {
   box-shadow: none;
 }
-input::-webkit-calendar-picker-indicator{
+input::-webkit-calendar-picker-indicator {
   display: none;
 }
 
-input[type="date"]::-webkit-input-placeholder{ 
+input[type="date"]::-webkit-input-placeholder {
   visibility: hidden !important;
 }

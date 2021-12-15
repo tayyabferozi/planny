@@ -2126,6 +2126,26 @@ textarea.custom-input[type="date"].active,
   }
 }
 
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  #sidenav-container #sidenav-right-content.refer-and-invest-right {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #sidenav-container #sidenav-right-content.refer-and-invest-right {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  #sidenav-container #sidenav-right-content.refer-and-invest-right .title {
+    padding-left: 2rem;
+  }
+  #sidenav-container #sidenav-right-content.refer-and-invest-right .title img {
+    left: 0;
+  }
+}
+
 #sidenav-container #sidenav-right-content section {
   max-width: 1276px;
   margin-left: auto;
