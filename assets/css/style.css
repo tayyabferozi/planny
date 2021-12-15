@@ -7594,6 +7594,10 @@ select.list-dt:focus {
   background-color: #31353f;
 }
 
+.planyybody #dark-overlay-beneath {
+  z-index: 11;
+}
+
 .planyybody .custom-modal {
   z-index: 12;
 }
