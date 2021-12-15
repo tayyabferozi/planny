@@ -8014,3 +8014,19 @@ select.list-dt:focus {
   width: 72px;
   height: 72px;
 }
+
+@media screen and (max-width: 575px) {
+  #call-modal .modal-body,
+  #message-modal .modal-body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #call-modal .close,
+  #message-modal .close {
+    right: 1rem;
+  }
+}
+
+.btn:focus {
+  outline: none;
+}
