@@ -1555,6 +1555,7 @@ textarea.custom-input,
 #right-menu-login,
 #right-menu {
   position: fixed;
+  overflow-y: scroll;
   background: #fff;
   right: 0;
   top: 0;
