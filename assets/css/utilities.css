@@ -121,9 +121,21 @@ p {
   }
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 991px) {
   .fs-991-20 {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .fs-991-14 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .fs-991-12 {
+    font-size: 14px;
   }
 }
 
@@ -160,6 +172,24 @@ p {
 @media screen and (max-width: 575px) {
   .fs-575-28 {
     font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .fs-575-20 {
+    font-size: 20px !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .fs-575-16 {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .fs-575-14 {
+    font-size: 14px;
   }
 }
 
@@ -250,7 +280,8 @@ p {
   }
 }
 
-#dark-overlay {
+#dark-overlay,
+#dark-overlay-beneath {
   position: fixed;
   top: 0;
   left: 0;
@@ -879,6 +910,12 @@ div.shadowy {
   height: unset;
 }
 
+@media screen and (max-width: 575px) {
+  .custom-modal.small-width {
+    height: 100vh;
+  }
+}
+
 .custom-modal.xs, .custom-modal.md {
   padding: 3rem 3.5rem;
   height: unset;
@@ -1002,16 +1039,16 @@ div.shadowy {
 .slidecontainer .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 23px;
-  height: 24px;
+  width: 25px;
+  height: 25px;
   border: 0;
   background: url("../vector/slider-img.svg");
   cursor: pointer;
 }
 
 .slidecontainer .slider::-moz-range-thumb {
-  width: 23px;
-  height: 24px;
+  width: 25px;
+  height: 25px;
   border: 0;
   background: url("../vector/slider-img.svg");
   cursor: pointer;
@@ -1170,23 +1207,69 @@ div.shadowy {
           transform: translateY(-50%);
 }
 
+.custom-form-control .with-icon {
+  position: relative;
+}
+
+.custom-form-control .with-icon .icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.custom-form-control .with-icon .icon:not(.no-clr) *.white-clr {
+  fill: #fff !important;
+}
+
+.custom-form-control .with-icon .icon:not(.no-clr) *:not(.no-clr) {
+  fill: #31353f;
+}
+
+.custom-form-control.active .with-icon .icon *:not(.no-clr) {
+  fill: #ffc32c;
+}
+
 input.custom-input,
-textarea.custom-input {
+textarea.custom-input,
+.time-input {
   width: 100%;
   border-radius: 5px;
   padding: 0.5rem;
   border: 1px solid #b2b2b2;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
+  color: #31353f;
 }
 
 input.custom-input.active, input.custom-input:focus,
 textarea.custom-input.active,
-textarea.custom-input:focus {
+textarea.custom-input:focus,
+.time-input.active,
+.time-input:focus {
   outline: none;
   border-color: #ffc32c;
   -webkit-box-shadow: 0 0 7px rgba(255, 195, 44, 0.4);
           box-shadow: 0 0 7px rgba(255, 195, 44, 0.4);
+}
+
+input.custom-input.with-outline,
+textarea.custom-input.with-outline,
+.time-input.with-outline {
+  outline: 4px solid rgba(255, 195, 44, 0.19);
+}
+
+input.custom-input[type="time"]:focus, input.custom-input[type="time"].active, input.custom-input[type="date"]:focus, input.custom-input[type="date"].active,
+textarea.custom-input[type="time"]:focus,
+textarea.custom-input[type="time"].active,
+textarea.custom-input[type="date"]:focus,
+textarea.custom-input[type="date"].active,
+.time-input[type="time"]:focus,
+.time-input[type="time"].active,
+.time-input[type="date"]:focus,
+.time-input[type="date"].active {
+  outline: 4px solid rgba(255, 195, 44, 0.19);
 }
 
 .custom-radio {
@@ -1819,6 +1902,7 @@ textarea.custom-input:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1366px) {
@@ -2269,7 +2353,8 @@ textarea.custom-input:focus {
   display: none;
 }
 
-.mc-calendar .mc-picker__footer button {
+.mc-calendar button,
+.timepicker_wrap a {
   width: 112px;
   height: 40px;
   color: #31353f;
@@ -2277,25 +2362,170 @@ textarea.custom-input:focus {
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   border: 2px solid transparent;
+  text-decoration: none;
 }
 
-.mc-calendar .mc-picker__footer button#mc-btn__clear {
+.mc-calendar button#mc-btn__clear, .mc-calendar button.reset_time,
+.timepicker_wrap a#mc-btn__clear,
+.timepicker_wrap a.reset_time {
   background: transparent;
   border-color: #31353f;
 }
 
-.mc-calendar .mc-picker__footer button#mc-btn__clear:hover {
+.mc-calendar button#mc-btn__clear:hover, .mc-calendar button.reset_time:hover,
+.timepicker_wrap a#mc-btn__clear:hover,
+.timepicker_wrap a.reset_time:hover {
   background: #31353f;
   color: #fff;
 }
 
-.mc-calendar .mc-picker__footer button#mc-btn__ok {
+.mc-calendar button#mc-btn__ok, .mc-calendar button.done,
+.timepicker_wrap a#mc-btn__ok,
+.timepicker_wrap a.done {
   background: #ffc32c;
 }
 
-.mc-calendar .mc-picker__footer button#mc-btn__ok:hover {
+.mc-calendar button#mc-btn__ok:hover, .mc-calendar button.done:hover,
+.timepicker_wrap a#mc-btn__ok:hover,
+.timepicker_wrap a.done:hover {
   background: transparent;
   border-color: #ffc32c;
   color: #ffc32c;
+}
+
+.ti_tx,
+.mi_tx,
+.mer_tx {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.time,
+.mins,
+.meridian {
+  width: 60px;
+  float: left;
+  margin: 0px 10px;
+  font-size: 20px;
+  color: #2d2e2e;
+  font-family: "arial";
+  font-weight: 700;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  padding: 18px;
+  width: 28%;
+  border: 1px solid #ccc;
+  margin: auto;
+  background: url(../images/arrow.png) no-repeat;
+  border-radius: 5px;
+}
+
+.next {
+  background-position: 50% 150%;
+}
+
+.prev {
+  background-position: 50% -50%;
+}
+
+.time_pick {
+  position: relative;
+}
+
+/*input{ float:left;}*/
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: none;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  background: none;
+}
+
+.timepicker_wrap {
+  -webkit-transform: translateY(22px);
+          transform: translateY(22px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  padding-top: 1.75rem;
+  border-radius: 5px;
+  z-index: 2;
+  display: none;
+  width: 100%;
+  -webkit-box-shadow: 0 10px 25px rgba(178, 178, 178, 0.8);
+          box-shadow: 0 10px 25px rgba(178, 178, 178, 0.8);
+  background: #fff;
+  float: left;
+  position: absolute;
+  top: 27px;
+  left: 0px;
+  padding-bottom: 6rem;
+}
+
+.timepicker_wrap input {
+  width: 72px;
+  height: 72px;
+  border: 1px solid #e8e8e8;
+  text-align: center;
+  font-size: 32px;
+  color: #31353f;
+  font-weight: 500;
+  border-radius: 5px;
+  font-family: SourceSansPro-Regular;
+}
+
+.timepicker_wrap .mer_tx input {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.timepicker_wrap .prev,
+.timepicker_wrap .next {
+  padding: 0;
+  width: 72px;
+  border: none;
+  text-align: center;
+}
+
+.timepicker_wrap .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  border-top: 1px solid #f4f4f4;
+}
+
+.timepicker_wrap .buttons a {
+  text-align: center;
+  line-height: 2;
+  margin: 0 0.5rem;
+}
+
+.arrow_top {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  background: url(../images/top_arr.png) no-repeat;
+  width: 18px;
+  height: 10px;
+  z-index: 3;
 }
 /*# sourceMappingURL=utilities.css.map */

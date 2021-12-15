@@ -120,8 +120,20 @@ p {
 }
 
 .fs-991-20 {
-  @media screen and (max-width: 1366px) {
+  @media screen and (max-width: 991px) {
     font-size: 20px;
+  }
+}
+
+.fs-991-14 {
+  @media screen and (max-width: 991px) {
+    font-size: 14px;
+  }
+}
+
+.fs-991-12 {
+  @media screen and (max-width: 991px) {
+    font-size: 14px;
   }
 }
 
@@ -158,6 +170,24 @@ p {
 .fs-575-28 {
   @media screen and (max-width: 575px) {
     font-size: 28px;
+  }
+}
+
+.fs-575-20 {
+  @media screen and (max-width: 575px) {
+    font-size: 20px !important;
+  }
+}
+
+.fs-575-16 {
+  @media screen and (max-width: 575px) {
+    font-size: 16px !important;
+  }
+}
+
+.fs-575-14 {
+  @media screen and (max-width: 575px) {
+    font-size: 14px;
   }
 }
 
@@ -248,7 +278,8 @@ p {
   }
 }
 
-#dark-overlay {
+#dark-overlay,
+#dark-overlay-beneath {
   position: fixed;
   top: 0;
   left: 0;
@@ -785,6 +816,10 @@ div.shadowy {
   &.small-width {
     width: 660px;
     height: unset;
+
+    @media screen and (max-width: 575px) {
+      height: 100vh;
+    }
   }
 
   &.xs,
@@ -885,16 +920,16 @@ div.shadowy {
   .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 23px;
-    height: 24px;
+    width: 25px;
+    height: 25px;
     border: 0;
     background: url("../vector/slider-img.svg");
     cursor: pointer;
   }
 
   .slider::-moz-range-thumb {
-    width: 23px;
-    height: 24px;
+    width: 25px;
+    height: 25px;
     border: 0;
     background: url("../vector/slider-img.svg");
     cursor: pointer;
@@ -1040,21 +1075,59 @@ div.shadowy {
       transform: translateY(-50%);
     }
   }
+
+  .with-icon {
+    position: relative;
+
+    .icon {
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .icon:not(.no-clr) {
+      *.white-clr {
+        fill: #fff !important;
+      }
+
+      *:not(.no-clr) {
+        fill: $color2;
+      }
+    }
+  }
+
+  &.active .with-icon .icon *:not(.no-clr) {
+    fill: $color1;
+  }
 }
 
 input.custom-input,
-textarea.custom-input {
+textarea.custom-input,
+.time-input {
   width: 100%;
   border-radius: 5px;
   padding: 0.5rem;
   border: 1px solid $color3;
   transition: 0.4s ease;
+  color: $color2;
 
   &.active,
   &:focus {
     outline: none;
     border-color: $color1;
     box-shadow: 0 0 7px $color20;
+  }
+
+  &.with-outline {
+    outline: 4px solid rgba(#ffc32c, 0.19);
+  }
+
+  &[type="time"]:focus,
+  &[type="time"].active,
+  &[type="date"]:focus,
+  &[type="date"].active {
+    outline: 4px solid rgba(#ffc32c, 0.19);
   }
 }
 
@@ -1613,6 +1686,7 @@ textarea.custom-input {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        cursor: pointer;
 
         @media screen and (max-width: 1366px) {
           padding: 0.75rem 0;
@@ -2024,34 +2098,169 @@ textarea.custom-input {
     #mc-btn__cancel {
       display: none;
     }
+  }
+}
 
-    button {
-      width: 112px;
-      height: 40px;
-      color: $color2;
-      border-radius: 50px;
-      transition: 0.4s ease;
-      border: 2px solid transparent;
+.mc-calendar button,
+.timepicker_wrap a {
+  width: 112px;
+  height: 40px;
+  color: $color2;
+  border-radius: 50px;
+  transition: 0.4s ease;
+  border: 2px solid transparent;
+  text-decoration: none;
 
-      &#mc-btn__clear {
-        background: transparent;
-        border-color: $color2;
+  &#mc-btn__clear,
+  &.reset_time {
+    background: transparent;
+    border-color: $color2;
 
-        &:hover {
-          background: $color2;
-          color: #fff;
-        }
-      }
-
-      &#mc-btn__ok {
-        background: $color1;
-
-        &:hover {
-          background: transparent;
-          border-color: $color1;
-          color: $color1;
-        }
-      }
+    &:hover {
+      background: $color2;
+      color: #fff;
     }
   }
+
+  &#mc-btn__ok,
+  &.done {
+    background: $color1;
+
+    &:hover {
+      background: transparent;
+      border-color: $color1;
+      color: $color1;
+    }
+  }
+}
+
+.ti_tx,
+.mi_tx,
+.mer_tx {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.time,
+.mins,
+.meridian {
+  width: 60px;
+  float: left;
+  margin: 0px 10px;
+  font-size: 20px;
+  color: #2d2e2e;
+  font-family: "arial";
+  font-weight: 700;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  padding: 18px;
+  width: 28%;
+  border: 1px solid #ccc;
+  margin: auto;
+  background: url(../images/arrow.png) no-repeat;
+  border-radius: 5px;
+}
+
+.next {
+  background-position: 50% 150%;
+}
+
+.prev {
+  background-position: 50% -50%;
+}
+
+.time_pick {
+  position: relative;
+}
+
+/*input{ float:left;}*/
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  // background: url(../vector/calender.svg);
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // width: 15px;
+  background: none;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  background: none;
+}
+
+.timepicker_wrap {
+  transform: translateY(22px);
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  padding-top: 1.75rem;
+  border-radius: 5px;
+  z-index: 2;
+  display: none;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(178, 178, 178, 0.8);
+  background: #fff;
+  float: left;
+  position: absolute;
+  top: 27px;
+  left: 0px;
+  padding-bottom: 6rem;
+
+  input {
+    width: 72px;
+    height: 72px;
+    border: 1px solid #e8e8e8;
+    text-align: center;
+    font-size: 32px;
+    color: #31353f;
+    font-weight: 500;
+    border-radius: 5px;
+    font-family: SourceSansPro-Regular;
+  }
+
+  .mer_tx {
+    input {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .prev,
+  .next {
+    padding: 0;
+    width: 72px;
+    border: none;
+    text-align: center;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    border-top: 1px solid #f4f4f4;
+
+    a {
+      text-align: center;
+      line-height: 2;
+      margin: 0 0.5rem;
+    }
+  }
+}
+
+.arrow_top {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  background: url(../images/top_arr.png) no-repeat;
+  width: 18px;
+  height: 10px;
+  z-index: 3;
 }

@@ -685,6 +685,12 @@ table.custom-table {
         justify-content: flex-start;
         width: unset;
       }
+
+      @media screen and (max-width: 575px) {
+        .text-light-2 {
+          margin-top: 0.25rem;
+        }
+      }
     }
 
     .modal-body {
@@ -743,7 +749,7 @@ table.custom-table {
   }
 
   .slidecontainer {
-    margin-top: 3rem;
+    margin-top: 4.5rem;
 
     @media screen and (max-width: 768px) {
       margin-top: 5rem;
@@ -751,6 +757,13 @@ table.custom-table {
 
     @media screen and (max-width: 575px) {
       margin-top: 2rem;
+    }
+
+    .guide {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -1.5rem;
     }
   }
 
@@ -810,6 +823,8 @@ table.custom-table {
         max-width: 200px;
 
         .swiper-pagination {
+          bottom: 20px;
+
           .swiper-pagination-bullet {
             background-color: transparent;
             border: 1px solid $color1;
@@ -1022,25 +1037,29 @@ table.custom-table {
       }
     }
 
-    .modal-body {
-      .continue {
-        position: absolute;
-        left: 50%;
-        bottom: 3rem;
-        width: 100%;
-        display: block;
-        max-width: 328px;
-        transform: translateX(-50%);
+    .continue {
+      position: absolute;
+      left: 50%;
+      bottom: 3rem;
+      width: 100%;
+      display: block;
+      max-width: 328px;
+      transform: translateX(-50%);
 
-        @media screen and (min-width: 769px) {
-          display: none;
-        }
+      @media screen and (min-width: 992px) {
+        display: none;
+      }
 
-        @media screen and (max-width: 575px) {
-          bottom: -4.5rem;
-        }
+      @media screen and (max-width: 575px) {
+        bottom: -3rem;
       }
     }
+  }
+}
+
+#uploading .uploading {
+  @media screen and (max-width: 991px) {
+    padding: 0 1rem;
   }
 }
 
@@ -1131,13 +1150,10 @@ table.custom-table {
 // ***********************************************************************************************************************************
 // ***********************************************************************************************************************************
 
-//  ********************************************************* UPLOADING PAGE ***********************************************************
+//  ********************************************************* BLOGS PAGE ***********************************************************
 
 // ***********************************************************************************************************************************
 // ***********************************************************************************************************************************
-
-#uploading {
-}
 
 #blogs {
   @media screen and (max-width: 1366px) {

@@ -774,6 +774,12 @@ table.custom-table tr td {
   }
 }
 
+@media screen and (max-width: 575px) {
+  #allocation-confirm .custom-modal .modal-head .text-light-2 {
+    margin-top: 0.25rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #allocation-confirm .custom-modal .modal-body .btns .btn-outlined-dark {
     display: none;
@@ -836,7 +842,7 @@ table.custom-table tr td {
 }
 
 #allocation-confirm .slidecontainer {
-  margin-top: 3rem;
+  margin-top: 4.5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -849,6 +855,14 @@ table.custom-table tr td {
   #allocation-confirm .slidecontainer {
     margin-top: 2rem;
   }
+}
+
+#allocation-confirm .slidecontainer .guide {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -1.5rem;
 }
 
 #allocation-confirm .btns {
@@ -913,6 +927,10 @@ table.custom-table tr td {
 #investment-ready .custom-modal .modal-body .mySwiper {
   padding-bottom: 3rem;
   max-width: 200px;
+}
+
+#investment-ready .custom-modal .modal-body .mySwiper .swiper-pagination {
+  bottom: 20px;
 }
 
 #investment-ready .custom-modal .modal-body .mySwiper .swiper-pagination .swiper-pagination-bullet {
@@ -1186,9 +1204,9 @@ table.custom-table tr td {
   }
 }
 
-#details .custom-modal .modal-body .continue,
-#uploading .custom-modal .modal-body .continue,
-#uploader .custom-modal .modal-body .continue {
+#details .custom-modal .continue,
+#uploading .custom-modal .continue,
+#uploader .custom-modal .continue {
   position: absolute;
   left: 50%;
   bottom: 3rem;
@@ -1199,19 +1217,25 @@ table.custom-table tr td {
           transform: translateX(-50%);
 }
 
-@media screen and (min-width: 769px) {
-  #details .custom-modal .modal-body .continue,
-  #uploading .custom-modal .modal-body .continue,
-  #uploader .custom-modal .modal-body .continue {
+@media screen and (min-width: 992px) {
+  #details .custom-modal .continue,
+  #uploading .custom-modal .continue,
+  #uploader .custom-modal .continue {
     display: none;
   }
 }
 
 @media screen and (max-width: 575px) {
-  #details .custom-modal .modal-body .continue,
-  #uploading .custom-modal .modal-body .continue,
-  #uploader .custom-modal .modal-body .continue {
-    bottom: -4.5rem;
+  #details .custom-modal .continue,
+  #uploading .custom-modal .continue,
+  #uploader .custom-modal .continue {
+    bottom: -3rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #uploading .uploading {
+    padding: 0 1rem;
   }
 }
 

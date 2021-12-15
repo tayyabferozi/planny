@@ -7596,6 +7596,8 @@ select.list-dt:focus {
 
 .planyybody #dark-overlay-beneath {
   z-index: 11;
+  opacity: 0.8;
+  background-color: #31353f;
 }
 
 .planyybody .custom-modal {
@@ -7946,6 +7948,7 @@ select.list-dt:focus {
   transform: translateY(-50%);
   bottom: unset;
   left: 5.5rem;
+  z-index: 1;
 }
 
 .pwd-container .custom-tooltip .left-arrow {
@@ -7987,4 +7990,27 @@ select.list-dt:focus {
 
 #dark-overlay.beneath {
   z-index: 11;
+}
+
+.picktim-container {
+  z-index: 12;
+}
+
+.picktim-container {
+  background-color: #fff !important;
+  border: none !important;
+  box-shadow: 0 10px 25px rgb(178, 178, 178, 0.8) !important;
+}
+
+.picktim-container * {
+  color: #31353f !important;
+}
+
+.picktim-container input {
+  font-size: 32px;
+  border: 1px solid #e8e8e8;
+  padding: 1rem 1rem;
+  font-weight: 500;
+  width: 72px;
+  height: 72px;
 }

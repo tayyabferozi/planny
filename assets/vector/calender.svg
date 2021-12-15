@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16.055" viewBox="0 0 16 16.055">
+	<g id="Group_10641" data-name="Group 10641" transform="translate(-790 -600.973)">
+		<g id="Rectangle_1614" data-name="Rectangle 1614" transform="translate(790 601)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+			<rect width="16" height="16" stroke="none" />
+			<rect x="0.5" y="0.5" width="15" height="15" fill="none" />
+		</g>
+		<g id="calendar_1_" data-name="calendar (1)" transform="translate(791 601.473)">
+			<rect id="Rectangle" width="14" height="14" rx="2" transform="translate(0 1.055)" fill="none" stroke="#31353f" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1" />
+			<path id="Path" d="M.5,0V3.011" transform="translate(9.286)" fill="none" stroke="#31353f" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1" />
+			<path id="Path-2" data-name="Path" d="M.5,0V3.011" transform="translate(3.264)" fill="none" stroke="#31353f" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1" />
+			<path id="Path-3" data-name="Path" d="M0,.5H13.549" transform="translate(0 5.522)" fill="none" stroke="#31353f" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1" />
+		</g>
+	</g>
+</svg>
