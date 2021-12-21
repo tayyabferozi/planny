@@ -282,16 +282,6 @@ table.custom-table {
   &.sm {
     padding-bottom: 2rem;
   }
-
-  .custom-dropdown {
-    @media screen and (min-width: 1367px) {
-      margin-right: 4rem;
-
-      .dropdown-content {
-        right: -3rem;
-      }
-    }
-  }
 }
 
 // //////////////////////////////////////////////////////////// NAVBAR END ////////////////////////////////////////////////////////////
@@ -689,11 +679,12 @@ table.custom-table {
     }
 
     @media screen and (max-width: 768px) {
-      padding-top: 8rem;
+      padding-top: calc(74px + 8rem);
     }
 
     @media screen and (max-width: 575px) {
-      padding-top: 5rem;
+      padding-top: calc(74px + 5rem);
+      padding-bottom: 22rem;
     }
 
     .close {
@@ -770,6 +761,7 @@ table.custom-table {
         font-size: 32px;
         text-align: center;
         font-weight: 600;
+        height: 64px;
       }
     }
   }
@@ -799,12 +791,12 @@ table.custom-table {
     justify-content: center;
     align-items: center;
 
-    @media screen and (max-width: 768px) {
-      margin-top: 7rem;
-    }
+    // @media screen and (max-width: 768px) {
+    //   margin-top: 7rem;
+    // }
 
     @media screen and (max-width: 575px) {
-      margin-top: 5rem;
+      // margin-top: 5rem;
     }
 
     .btn {
@@ -836,7 +828,7 @@ table.custom-table {
     }
 
     @media screen and (max-width: 575px) {
-      padding-top: 7rem;
+      padding-top: calc(7rem + 74px);
     }
 
     .modal-body {
@@ -945,6 +937,7 @@ table.custom-table {
 
           @media screen and (max-width: 575px) {
             margin-top: 2rem;
+            padding-bottom: 2rem;
           }
 
           input.custom-input {
@@ -954,6 +947,8 @@ table.custom-table {
           }
 
           .btns {
+            display: flex;
+
             @media screen and (max-width: 768px) {
               text-align: center;
               margin-top: 2rem !important;
@@ -961,6 +956,7 @@ table.custom-table {
 
             @media screen and (max-width: 575px) {
               margin-top: 1rem !important;
+              flex-direction: column;
             }
 
             .btn {
@@ -1719,7 +1715,6 @@ table.custom-table {
 #transactions {
   .title {
     position: relative;
-    padding-left: 0.5rem;
 
     @media screen and (max-width: 991px) {
       padding-bottom: 1rem;
@@ -1735,7 +1730,7 @@ table.custom-table {
       }
     }
 
-    img {
+    img.back {
       position: absolute;
       top: 0.325rem;
       left: -1.5rem;

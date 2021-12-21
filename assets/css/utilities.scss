@@ -841,8 +841,8 @@ div.shadowy {
     }
   }
 
-  .modal-body {
-    @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
+    .modal-body.no-head {
       padding-top: 74px;
     }
   }
@@ -986,6 +986,10 @@ div.shadowy {
   padding: 0.65rem 2rem;
   font-size: 14px;
   flex-grow: 0;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &.w-100px {
     width: 100px;
@@ -1066,11 +1070,7 @@ div.shadowy {
   transition: 0.4s ease;
   font-weight: 600;
 
-  height: 40px;
-  display: flex;
-  justify-content: center;
   background-color: #ffc32c;
-  align-items: center;
   color: #31353f;
   border-radius: 18px;
   font-size: 16px;
@@ -1097,16 +1097,60 @@ div.shadowy {
   border: 1px solid #dedede;
 }
 
+@media screen and (max-width: 575px) {
+  .custom-modal .modal-body {
+    height: 100%;
+  }
+}
 .bottom-btn-sm {
   @media screen and (max-width: 575px) {
-    background: linear-gradient(to top, #fff, transparent);
+    // background: linear-gradient(to top, #fff, transparent);
+    // position: sticky;
+    // display: flex;
+    // justify-content: center;
+    // padding: 1rem 0;
+    // bottom: -46px;
+    // left: 0;
+    // right: 0;
+
     position: fixed;
+    background: linear-gradient(to top, #fff, transparent);
     display: flex;
     justify-content: center;
-    padding: 1rem 0;
+    padding: 2rem 1rem;
     bottom: 0;
     left: 0;
     right: 0;
+
+    .btn {
+      width: 100%;
+    }
+  }
+
+  &.tablet {
+    @media screen and (max-width: 768px) {
+      // background: linear-gradient(to top, #fff, transparent);
+      // position: sticky;
+      // display: flex;
+      // justify-content: center;
+      // padding: 1rem 0;
+      // bottom: -46px;
+      // left: 0;
+      // right: 0;
+
+      position: fixed;
+      background: linear-gradient(to top, #fff, transparent);
+      display: flex;
+      justify-content: center;
+      padding: 2rem 1rem;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      .btn {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -1211,7 +1255,7 @@ textarea.custom-input,
   }
 
   &.with-outline {
-    outline: 4px solid rgba(#ffc32c, 0.19);
+    outline: 5px solid rgba(#ffc32c, 0.19);
   }
 
   &[type="time"]:focus,
@@ -1969,65 +2013,64 @@ textarea.custom-input,
       }
     }
   }
+}
 
-  #sidenav-right-content {
-    width: 80%;
-    padding-left: 5rem;
-    padding-right: 5rem;
+#sidenav-right-content {
+  padding-left: 7rem;
+  padding-right: 7rem;
 
-    @media screen and (max-width: 991px) {
+  @media screen and (max-width: 991px) {
+    width: 100%;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  @media screen and (max-width: 575px) {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &.n-rm-padding {
+    @media screen and (max-width: 575px) {
       width: 100%;
       padding-left: 1.75rem;
       padding-right: 1.75rem;
     }
+  }
 
+  &.transactions-right {
     @media screen and (max-width: 575px) {
       width: 100%;
-      padding-left: 0;
-      padding-right: 0;
+      padding-left: 1.75rem;
+      padding-right: 1.75rem;
+    }
+  }
+
+  &.refer-and-invest-right {
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
     }
 
-    &.n-rm-padding {
-      @media screen and (max-width: 575px) {
-        width: 100%;
-        padding-left: 1.75rem;
-        padding-right: 1.75rem;
-      }
-    }
+    @media screen and (max-width: 767px) {
+      padding-left: 1rem;
+      padding-right: 1rem;
 
-    &.transactions-right {
-      @media screen and (max-width: 575px) {
-        width: 100%;
-        padding-left: 1.75rem;
-        padding-right: 1.75rem;
-      }
-    }
+      .title {
+        padding-left: 2rem;
 
-    &.refer-and-invest-right {
-      @media screen and (max-width: 991px) and (min-width: 768px) {
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
-      }
-
-      @media screen and (max-width: 767px) {
-        padding-left: 1rem;
-        padding-right: 1rem;
-
-        .title {
-          padding-left: 2rem;
-
-          img {
-            left: 0;
-          }
+        img {
+          left: 0;
         }
       }
     }
+  }
 
-    section {
-      max-width: 1276px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  section {
+    max-width: 1675px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

@@ -299,15 +299,6 @@ table.custom-table tr td {
   padding-bottom: 2rem;
 }
 
-@media screen and (min-width: 1367px) {
-  #navbar-sm .custom-dropdown {
-    margin-right: 4rem;
-  }
-  #navbar-sm .custom-dropdown .dropdown-content {
-    right: -3rem;
-  }
-}
-
 #financial-planning-abbr abbr {
   position: relative;
 }
@@ -744,13 +735,14 @@ table.custom-table tr td {
 
 @media screen and (max-width: 768px) {
   #allocation-confirm .custom-modal {
-    padding-top: 8rem;
+    padding-top: calc(74px + 8rem);
   }
 }
 
 @media screen and (max-width: 575px) {
   #allocation-confirm .custom-modal {
-    padding-top: 5rem;
+    padding-top: calc(74px + 5rem);
+    padding-bottom: 22rem;
   }
 }
 
@@ -843,6 +835,7 @@ table.custom-table tr td {
   font-size: 32px;
   text-align: center;
   font-weight: 600;
+  height: 64px;
 }
 
 #allocation-confirm .slidecontainer {
@@ -882,18 +875,6 @@ table.custom-table tr td {
           align-items: center;
 }
 
-@media screen and (max-width: 768px) {
-  #allocation-confirm .btns {
-    margin-top: 7rem;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  #allocation-confirm .btns {
-    margin-top: 5rem;
-  }
-}
-
 #allocation-confirm .btns .btn {
   margin: 0 1rem;
   padding: 0.65rem 3rem;
@@ -918,7 +899,7 @@ table.custom-table tr td {
 
 @media screen and (max-width: 575px) {
   #investment-ready .custom-modal {
-    padding-top: 7rem;
+    padding-top: calc(7rem + 74px);
   }
 }
 
@@ -1058,6 +1039,7 @@ table.custom-table tr td {
 @media screen and (max-width: 575px) {
   #investment-ready .custom-modal .modal-body .form .confirmation {
     margin-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -1065,6 +1047,12 @@ table.custom-table tr td {
   #investment-ready .custom-modal .modal-body .form .confirmation input.custom-input {
     width: 294px;
   }
+}
+
+#investment-ready .custom-modal .modal-body .form .confirmation .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (max-width: 768px) {
@@ -1077,6 +1065,10 @@ table.custom-table tr td {
 @media screen and (max-width: 575px) {
   #investment-ready .custom-modal .modal-body .form .confirmation .btns {
     margin-top: 1rem !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -1982,7 +1974,6 @@ table.custom-table tr td {
 
 #transactions .title {
   position: relative;
-  padding-left: 0.5rem;
 }
 
 @media screen and (max-width: 991px) {
@@ -2000,14 +1991,14 @@ table.custom-table tr td {
   }
 }
 
-#transactions .title img {
+#transactions .title img.back {
   position: absolute;
   top: 0.325rem;
   left: -1.5rem;
 }
 
 @media screen and (min-width: 992px) {
-  #transactions .title img {
+  #transactions .title img.back {
     display: none;
   }
 }

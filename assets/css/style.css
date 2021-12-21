@@ -1416,7 +1416,8 @@ select.list-dt:focus {
 }
 .msomoderate_box {
   width: calc(33% - 9px);
-  height: 51vh;
+  /* height: 51vh; */
+  height: 280px;
   border: 2px solid #e8e8e8;
   border-radius: 5px;
   float: left;
@@ -1427,7 +1428,7 @@ select.list-dt:focus {
   cursor: pointer;
   align-items: flex-start;
   max-height: 394px;
-  padding-top: 57px;
+  /* padding-top: 57px; */
 }
 .btnspnmakpay1 {
   float: left;
@@ -1474,7 +1475,8 @@ select.list-dt:focus {
   color: #ffc32c;
   line-height: 29px;
   letter-spacing: 0px;
-  bottom: 60px;
+  /* bottom: 60px; */
+  bottom: 65px;
   height: 25px;
   width: 125px;
   font-family: "SourceSansPro-SemiBold";
@@ -6837,7 +6839,7 @@ select.list-dt:focus {
   }
   .msomoderate_box {
     width: calc(33% - 20px);
-    height: 396px;
+    /* height: 396px; */
   }
   .st2 .msochartdata_p2 .msoinvestproduct .msoinproh {
     max-width: 440px;
@@ -7021,7 +7023,7 @@ select.list-dt:focus {
   }
   .msomoderate_box {
     width: calc(33% - 20px);
-    height: 396px;
+    /* height: 396px; */
   }
   .msomoderate {
     margin-left: 20px;
@@ -7780,10 +7782,6 @@ select.list-dt:focus {
   .Generated_Financial_plans .Generated_Financial_plans_data_box_p3 {
     display: none;
   }
-}
-
-.modelstyl2 .msoaddfinaplan .Generated_Financial_plans {
-  max-width: 578px;
 }
 
 .modal.modelstyl2.fade .modal-dialog .title {
