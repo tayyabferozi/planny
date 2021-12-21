@@ -1380,24 +1380,28 @@ input.custom-input::-webkit-input-placeholder,
 textarea.custom-input::-webkit-input-placeholder,
 .time-input::-webkit-input-placeholder {
   font-weight: 400;
+  color: #000;
 }
 
 input.custom-input:-ms-input-placeholder,
 textarea.custom-input:-ms-input-placeholder,
 .time-input:-ms-input-placeholder {
   font-weight: 400;
+  color: #000;
 }
 
 input.custom-input::-ms-input-placeholder,
 textarea.custom-input::-ms-input-placeholder,
 .time-input::-ms-input-placeholder {
   font-weight: 400;
+  color: #000;
 }
 
 input.custom-input::placeholder,
 textarea.custom-input::placeholder,
 .time-input::placeholder {
   font-weight: 400;
+  color: #000;
 }
 
 input.custom-input.active, input.custom-input:focus,
@@ -1961,6 +1965,15 @@ textarea.custom-input[type="date"].active,
   }
 }
 
+@media screen and (max-width: 575px) {
+  #right-menu-login .close {
+    top: 2rem;
+  }
+  #right-menu-login .close img {
+    width: 24px;
+  }
+}
+
 #right-menu-login .nav {
   padding-top: 4rem;
   padding-bottom: 2rem;
@@ -2104,7 +2117,7 @@ textarea.custom-input[type="date"].active,
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 575px) {
   #right-menu-login .setting .setting-main .item svg {
     width: 16px;
     height: 16px;
@@ -2281,6 +2294,13 @@ textarea.custom-input[type="date"].active,
 #sidenav-right-content {
   padding-left: 7rem;
   padding-right: 7rem;
+}
+
+@media screen and (max-width: 991px) {
+  #sidenav-right-content {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
 
 @media screen and (max-width: 991px) {

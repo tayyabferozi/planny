@@ -1245,6 +1245,8 @@ textarea.custom-input,
 
   &::placeholder {
     font-weight: 400;
+    // color: $color31;
+    color: #000;
   }
 
   &.active,
@@ -1747,12 +1749,18 @@ textarea.custom-input,
 
     @media screen and (max-width: 1366px) and (min-width: 769px) {
       top: 2rem;
+
       img {
         width: 24px;
       }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 575px) {
+      top: 2rem;
+
+      img {
+        width: 24px;
+      }
     }
   }
 
@@ -1857,7 +1865,7 @@ textarea.custom-input,
             height: 16px;
           }
 
-          @media screen and (max-width: 375px) {
+          @media screen and (max-width: 575px) {
             width: 16px;
             height: 16px;
           }
@@ -2019,6 +2027,10 @@ textarea.custom-input,
   padding-left: 7rem;
   padding-right: 7rem;
 
+  @media screen and (max-width: 991px) {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
   @media screen and (max-width: 991px) {
     width: 100%;
     padding-left: 1.75rem;
