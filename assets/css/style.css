@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+
 .planyybody * {
   margin: 0px;
   padding: 0px;
@@ -9,7 +11,7 @@
   padding: 0px;
   box-sizing: border-box;
   background-color: #ffffff;
-  font-family: SourceSansPro-Regular;
+  font-family: Source Sans Pro;
   overflow: hidden;
 }
 html,
@@ -7356,7 +7358,7 @@ select.list-dt:focus {
   font-size: 16px;
   font-family: SourceSansPro-Regular;
   border-radius: 5px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 6px #00000029;
 }
 
 @media screen and (max-width: 1366px) {
@@ -7619,6 +7621,18 @@ select.list-dt:focus {
 @media screen and (max-width: 575px) {
   .sebi .sm {
     display: block;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .sebi {
+    transform: translateX(-1.5rem);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sebi {
+    transform: translateX(-1rem);
   }
 }
 

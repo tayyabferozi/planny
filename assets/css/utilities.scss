@@ -1,5 +1,11 @@
 @import "./_constants.scss";
 
+@media (min-width: 769px) {
+  .d-769-none {
+    display: none !important;
+  }
+}
+
 main {
   overflow: hidden;
 }
@@ -209,6 +215,10 @@ p {
   font-weight: 600;
 }
 
+.fw-700 {
+  font-weight: 700;
+}
+
 .lh-34 {
   line-height: 34px;
 }
@@ -275,6 +285,14 @@ p {
 .d-1366-block {
   @media screen and (min-width: 1367px) {
     display: block !important;
+  }
+}
+
+.close {
+  opacity: 1;
+
+  &:hover {
+    opacity: 1;
   }
 }
 
@@ -682,6 +700,7 @@ div.shadowy {
   width: 90%;
   height: 90%;
   overflow-y: auto;
+  max-height: 100vh;
 
   &::-webkit-scrollbar {
     width: 3px;
@@ -725,13 +744,17 @@ div.shadowy {
     .close {
       top: 2.75rem;
 
+      @media screen and (max-width: 768px) {
+        top: calc(2rem + 74px);
+      }
+
       &.top-right {
         top: 1rem;
         right: 1rem;
-      }
 
-      @media screen and (max-width: 768px) {
-        top: 2rem;
+        @media screen and (max-width: 768px) {
+          top: calc(1rem + 74px);
+        }
       }
     }
 
@@ -768,10 +791,15 @@ div.shadowy {
   }
 
   .close {
+    z-index: 1;
     position: absolute;
     top: 1rem;
     right: 1.5rem;
     cursor: pointer;
+
+    @media screen and (max-width: 768px) {
+      top: calc(1rem + 74px);
+    }
   }
 
   .modal-head {
@@ -813,6 +841,12 @@ div.shadowy {
     }
   }
 
+  .modal-body {
+    @media screen and (max-width: 768px) {
+      padding-top: 74px;
+    }
+  }
+
   &.small-width {
     width: 660px;
     height: unset;
@@ -827,9 +861,15 @@ div.shadowy {
     padding: 3rem 3.5rem;
     height: unset;
     border-bottom: 5px solid $color1;
+
+    @media screen and (max-width: 575px) {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
     input,
     textarea {
-      padding: 0.75rem 1rem;
+      // padding: 0.75rem 1rem;
     }
 
     input::placeholder,
@@ -840,6 +880,10 @@ div.shadowy {
     .close {
       top: 1.25rem;
       right: 1.5rem;
+
+      @media screen and (max-width: 768px) {
+        top: calc(1.25rem + 74px);
+      }
     }
 
     .btn {
@@ -1013,15 +1057,37 @@ div.shadowy {
   }
 }
 
-.btn-bg-primary {
+.btn-bg-primary,
+#mc-btn__ok {
+  font-family: "Source Sans Pro", sans-serif;
   background-color: $color1;
   border-radius: 50px;
   border: 2px solid transparent;
   transition: 0.4s ease;
+  font-weight: 600;
+
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: #ffc32c;
+  align-items: center;
+  color: #31353f;
+  border-radius: 18px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  outline: none !important;
 
   &:hover {
     background-color: transparent;
-    border-color: $color1;
+
+    color: #31353f !important;
+    transform: scale(1.05, 1);
+    background-color: #ffc32c !important;
+    box-shadow: 0px 3px 20px -5px #ffc32c !important;
+    text-decoration: none !important;
+    border-color: transparent !important;
+    outline: none !important;
   }
 }
 
@@ -1029,6 +1095,19 @@ div.shadowy {
   border-radius: 50px;
   background: #fff;
   border: 1px solid #dedede;
+}
+
+.bottom-btn-sm {
+  @media screen and (max-width: 575px) {
+    background: linear-gradient(to top, #fff, transparent);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }
 
 ////////////////////////////////////////////////////// CUSTOM FORM CONTROLS   ////////////////////////////////////////////////////////
@@ -1106,12 +1185,23 @@ div.shadowy {
 input.custom-input,
 textarea.custom-input,
 .time-input {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
   width: 100%;
+  background-color: transparent;
   border-radius: 5px;
-  padding: 0.5rem;
-  border: 1px solid $color3;
+  padding: 0.6125rem 1rem;
+  border: 1px solid $color31;
   transition: 0.4s ease;
   color: $color2;
+
+  &:not(textarea) {
+    height: 40px;
+  }
+
+  &::placeholder {
+    font-weight: 400;
+  }
 
   &.active,
   &:focus {
@@ -1571,7 +1661,7 @@ textarea.custom-input,
   .close {
     position: absolute;
     right: 1rem;
-    top: 1.5rem;
+    top: 2.5rem;
   }
 
   .nav {
@@ -1608,6 +1698,20 @@ textarea.custom-input,
 }
 
 #right-menu-login {
+  .close {
+    right: 0;
+
+    @media screen and (max-width: 1366px) and (min-width: 769px) {
+      top: 2rem;
+      img {
+        width: 24px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+    }
+  }
+
   .nav {
     padding-top: 4rem;
     padding-bottom: 2rem;
@@ -1623,6 +1727,7 @@ textarea.custom-input,
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 1rem 0;
 
         & > div {
           display: flex;
@@ -1631,6 +1736,7 @@ textarea.custom-input,
 
         svg {
           margin-right: 1rem;
+          width: 24px;
         }
 
         .count {
@@ -1700,6 +1806,18 @@ textarea.custom-input,
         }
 
         svg {
+          width: 24px;
+
+          @media screen and (max-width: 1366px) and (min-width: 769px) {
+            width: 16px;
+            height: 16px;
+          }
+
+          @media screen and (max-width: 375px) {
+            width: 16px;
+            height: 16px;
+          }
+
           &:nth-child(1) {
             margin-right: 1rem;
           }
@@ -2072,6 +2190,20 @@ textarea.custom-input,
 }
 
 .mc-calendar {
+  min-height: 380px;
+  &.mc-calendar--modal {
+    box-shadow: 0 0 25px #b2b2b240 !important;
+
+    &.mc-calendar--opened {
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .mc-picker {
+    background-color: #fff;
+  }
+
   .mc-table__weekday {
     font-size: 12px;
     color: $color3;
@@ -2223,13 +2355,19 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   z-index: 2;
   display: none;
   width: 100%;
-  box-shadow: 0 10px 25px rgba(178, 178, 178, 0.8);
+  box-shadow: 0 0 25px #b2b2b240;
   background: #fff;
   float: left;
   position: absolute;
   top: 27px;
   left: 0px;
   padding-bottom: 6rem;
+
+  @media screen and (max-width: 768px) {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
   input {
     width: 72px;

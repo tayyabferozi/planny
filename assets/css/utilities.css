@@ -1,3 +1,9 @@
+@media (min-width: 769px) {
+  .d-769-none {
+    display: none !important;
+  }
+}
+
 main {
   overflow: hidden;
 }
@@ -211,6 +217,10 @@ p {
   font-weight: 600;
 }
 
+.fw-700 {
+  font-weight: 700;
+}
+
 .lh-34 {
   line-height: 34px;
 }
@@ -278,6 +288,14 @@ p {
   .d-1366-block {
     display: block !important;
   }
+}
+
+.close {
+  opacity: 1;
+}
+
+.close:hover {
+  opacity: 1;
 }
 
 #dark-overlay,
@@ -749,6 +767,7 @@ div.shadowy {
   width: 90%;
   height: 90%;
   overflow-y: auto;
+  max-height: 100vh;
   /* Track */
   /* Handle */
   /* Handle on hover */
@@ -795,14 +814,20 @@ div.shadowy {
   top: 2.75rem;
 }
 
+@media screen and (max-width: 768px) {
+  .custom-modal:not(.small-width):not(.xs):not(.md) .close {
+    top: calc(2rem + 74px);
+  }
+}
+
 .custom-modal:not(.small-width):not(.xs):not(.md) .close.top-right {
   top: 1rem;
   right: 1rem;
 }
 
 @media screen and (max-width: 768px) {
-  .custom-modal:not(.small-width):not(.xs):not(.md) .close {
-    top: 2rem;
+  .custom-modal:not(.small-width):not(.xs):not(.md) .close.top-right {
+    top: calc(1rem + 74px);
   }
 }
 
@@ -846,10 +871,17 @@ div.shadowy {
 }
 
 .custom-modal .close {
+  z-index: 1;
   position: absolute;
   top: 1rem;
   right: 1.5rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-modal .close {
+    top: calc(1rem + 74px);
+  }
 }
 
 .custom-modal .modal-head {
@@ -905,6 +937,12 @@ div.shadowy {
   font-size: 16px;
 }
 
+@media screen and (max-width: 768px) {
+  .custom-modal .modal-body {
+    padding-top: 74px;
+  }
+}
+
 .custom-modal.small-width {
   width: 660px;
   height: unset;
@@ -922,10 +960,11 @@ div.shadowy {
   border-bottom: 5px solid #ffc32c;
 }
 
-.custom-modal.xs input,
-.custom-modal.xs textarea, .custom-modal.md input,
-.custom-modal.md textarea {
-  padding: 0.75rem 1rem;
+@media screen and (max-width: 575px) {
+  .custom-modal.xs, .custom-modal.md {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 }
 
 .custom-modal.xs input::-webkit-input-placeholder,
@@ -955,6 +994,12 @@ div.shadowy {
 .custom-modal.xs .close, .custom-modal.md .close {
   top: 1.25rem;
   right: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-modal.xs .close, .custom-modal.md .close {
+    top: calc(1.25rem + 74px);
+  }
 }
 
 .custom-modal.xs .btn, .custom-modal.md .btn {
@@ -1133,23 +1178,71 @@ div.shadowy {
   border-color: #ffc32c;
 }
 
-.btn-bg-primary {
+.btn-bg-primary,
+#mc-btn__ok {
+  font-family: "Source Sans Pro", sans-serif;
   background-color: #ffc32c;
   border-radius: 50px;
   border: 2px solid transparent;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
+  font-weight: 600;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ffc32c;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #31353f;
+  border-radius: 18px;
+  font-size: 16px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none !important;
 }
 
-.btn-bg-primary:hover {
+.btn-bg-primary:hover,
+#mc-btn__ok:hover {
   background-color: transparent;
-  border-color: #ffc32c;
+  color: #31353f !important;
+  -webkit-transform: scale(1.05, 1);
+          transform: scale(1.05, 1);
+  background-color: #ffc32c !important;
+  -webkit-box-shadow: 0px 3px 20px -5px #ffc32c !important;
+          box-shadow: 0px 3px 20px -5px #ffc32c !important;
+  text-decoration: none !important;
+  border-color: transparent !important;
+  outline: none !important;
 }
 
 .btn-rounded {
   border-radius: 50px;
   background: #fff;
   border: 1px solid #dedede;
+}
+
+@media screen and (max-width: 575px) {
+  .bottom-btn-sm {
+    background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(transparent));
+    background: linear-gradient(to top, #fff, transparent);
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1rem 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }
 
 .custom-form-control input,
@@ -1235,13 +1328,46 @@ div.shadowy {
 input.custom-input,
 textarea.custom-input,
 .time-input {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
   width: 100%;
+  background-color: transparent;
   border-radius: 5px;
-  padding: 0.5rem;
-  border: 1px solid #b2b2b2;
+  padding: 0.6125rem 1rem;
+  border: 1px solid #e8e8e8;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   color: #31353f;
+}
+
+input.custom-input:not(textarea),
+textarea.custom-input:not(textarea),
+.time-input:not(textarea) {
+  height: 40px;
+}
+
+input.custom-input::-webkit-input-placeholder,
+textarea.custom-input::-webkit-input-placeholder,
+.time-input::-webkit-input-placeholder {
+  font-weight: 400;
+}
+
+input.custom-input:-ms-input-placeholder,
+textarea.custom-input:-ms-input-placeholder,
+.time-input:-ms-input-placeholder {
+  font-weight: 400;
+}
+
+input.custom-input::-ms-input-placeholder,
+textarea.custom-input::-ms-input-placeholder,
+.time-input::-ms-input-placeholder {
+  font-weight: 400;
+}
+
+input.custom-input::placeholder,
+textarea.custom-input::placeholder,
+.time-input::placeholder {
+  font-weight: 400;
 }
 
 input.custom-input.active, input.custom-input:focus,
@@ -1739,7 +1865,7 @@ textarea.custom-input[type="date"].active,
 #right-menu .close {
   position: absolute;
   right: 1rem;
-  top: 1.5rem;
+  top: 2.5rem;
 }
 
 #right-menu-login .nav,
@@ -1792,6 +1918,19 @@ textarea.custom-input[type="date"].active,
   }
 }
 
+#right-menu-login .close {
+  right: 0;
+}
+
+@media screen and (max-width: 1366px) and (min-width: 769px) {
+  #right-menu-login .close {
+    top: 2rem;
+  }
+  #right-menu-login .close img {
+    width: 24px;
+  }
+}
+
 #right-menu-login .nav {
   padding-top: 4rem;
   padding-bottom: 2rem;
@@ -1815,6 +1954,7 @@ textarea.custom-input[type="date"].active,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1rem 0;
 }
 
 #right-menu-login .nav.nav-fp a > div {
@@ -1828,6 +1968,7 @@ textarea.custom-input[type="date"].active,
 
 #right-menu-login .nav.nav-fp a svg {
   margin-right: 1rem;
+  width: 24px;
 }
 
 #right-menu-login .nav.nav-fp a .count {
@@ -1920,6 +2061,24 @@ textarea.custom-input[type="date"].active,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#right-menu-login .setting .setting-main .item svg {
+  width: 24px;
+}
+
+@media screen and (max-width: 1366px) and (min-width: 769px) {
+  #right-menu-login .setting .setting-main .item svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #right-menu-login .setting .setting-main .item svg {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 #right-menu-login .setting .setting-main .item svg:nth-child(1) {
@@ -2320,6 +2479,25 @@ textarea.custom-input[type="date"].active,
   cursor: pointer;
 }
 
+.mc-calendar {
+  min-height: 380px;
+}
+
+.mc-calendar.mc-calendar--modal {
+  -webkit-box-shadow: 0 0 25px #b2b2b240 !important;
+          box-shadow: 0 0 25px #b2b2b240 !important;
+}
+
+.mc-calendar.mc-calendar--modal.mc-calendar--opened {
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.mc-calendar .mc-picker {
+  background-color: #fff;
+}
+
 .mc-calendar .mc-table__weekday {
   font-size: 12px;
   color: #b2b2b2;
@@ -2482,14 +2660,23 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   z-index: 2;
   display: none;
   width: 100%;
-  -webkit-box-shadow: 0 10px 25px rgba(178, 178, 178, 0.8);
-          box-shadow: 0 10px 25px rgba(178, 178, 178, 0.8);
+  -webkit-box-shadow: 0 0 25px #b2b2b240;
+          box-shadow: 0 0 25px #b2b2b240;
   background: #fff;
   float: left;
   position: absolute;
   top: 27px;
   left: 0px;
   padding-bottom: 6rem;
+}
+
+@media screen and (max-width: 768px) {
+  .timepicker_wrap {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
 }
 
 .timepicker_wrap input {
