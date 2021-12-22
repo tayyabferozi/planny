@@ -816,7 +816,7 @@ div.shadowy {
 
 @media screen and (max-width: 768px) {
   .custom-modal:not(.small-width):not(.xs):not(.md) .close {
-    top: calc(2rem + 74px);
+    top: calc(1.25rem + 64px);
   }
 }
 
@@ -827,7 +827,7 @@ div.shadowy {
 
 @media screen and (max-width: 768px) {
   .custom-modal:not(.small-width):not(.xs):not(.md) .close.top-right {
-    top: calc(1rem + 74px);
+    top: calc(1.25rem + 64px);
   }
 }
 
@@ -880,7 +880,7 @@ div.shadowy {
 
 @media screen and (max-width: 768px) {
   .custom-modal .close {
-    top: calc(1rem + 74px);
+    top: calc(1rem + 64px);
   }
 }
 
@@ -939,7 +939,7 @@ div.shadowy {
 
 @media screen and (max-width: 768px) {
   .custom-modal .modal-body.no-head {
-    padding-top: 74px;
+    padding-top: 64px;
   }
 }
 
@@ -998,7 +998,7 @@ div.shadowy {
 
 @media screen and (max-width: 768px) {
   .custom-modal.xs .close, .custom-modal.md .close {
-    top: calc(1.25rem + 74px);
+    top: calc(1.25rem + 64px);
   }
 }
 
@@ -2296,7 +2296,7 @@ textarea.custom-input[type="date"].active,
   padding-right: 7rem;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1366px) {
   #sidenav-right-content {
     padding-left: 5rem;
     padding-right: 5rem;

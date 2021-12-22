@@ -899,7 +899,7 @@ table.custom-table tr td {
 
 @media screen and (max-width: 575px) {
   #investment-ready .custom-modal {
-    padding-top: calc(7rem + 74px);
+    padding-top: calc(2.5rem + 74px);
   }
 }
 
