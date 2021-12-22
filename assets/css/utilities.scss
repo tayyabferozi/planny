@@ -6,6 +6,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .d-768-none {
+    display: none !important;
+  }
+}
+
 main {
   overflow: hidden;
 }
@@ -422,6 +428,7 @@ div.shadowy {
         .time {
           font-size: 14px;
           color: $color5;
+          margin-top: 0.75rem;
         }
       }
     }
@@ -995,9 +1002,17 @@ div.shadowy {
     width: 100px;
   }
 
-  &.w-80px {
+  &.w-1366-80px {
     @media screen and (max-width: 1366px) {
       width: 80px;
+    }
+  }
+
+  &.h-32px {
+    height: 32px;
+
+    @media screen and (max-width: 1366px) {
+      height: 24px;
     }
   }
 
@@ -1230,14 +1245,19 @@ input.custom-input,
 textarea.custom-input,
 .time-input {
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   width: 100%;
   background-color: transparent;
   border-radius: 5px;
   padding: 0.6125rem 1rem;
-  border: 1px solid $color31;
+  border: 1px solid $color7;
   transition: 0.4s ease;
   color: $color2;
+
+  &:disabled {
+    color: $color3;
+    background-color: $color22;
+  }
 
   &:not(textarea) {
     height: 40px;
@@ -2103,7 +2123,7 @@ textarea.custom-input,
     }
 
     svg {
-      transform: translate(3px, -8px) rotateX(180deg);
+      transform: translate(3px, -8px) rotate(90deg);
       transition: 0.4s ease;
 
       #Path_6068 {
@@ -2117,7 +2137,7 @@ textarea.custom-input,
 
     .dropbtn {
       svg {
-        transform: translate(3px, -8px);
+        transform: translate(3px, -8px) rotate(180deg);
 
         #Path_6068 {
           fill: $color1 !important;
@@ -2351,16 +2371,18 @@ textarea.custom-input,
   margin: 10px 0;
 }
 
-.time,
-.mins,
-.meridian {
-  width: 60px;
-  float: left;
-  margin: 0px 10px;
-  font-size: 20px;
-  color: #2d2e2e;
-  font-family: "arial";
-  font-weight: 700;
+.timepicker_wrap {
+  .time,
+  .mins,
+  .meridian {
+    width: 60px;
+    float: left;
+    margin: 0px 10px;
+    font-size: 20px;
+    color: #2d2e2e;
+    font-family: "arial";
+    font-weight: 700;
+  }
 }
 
 .prev,
@@ -2386,13 +2408,7 @@ textarea.custom-input,
   position: relative;
 }
 
-/*input{ float:left;}*/
-
 input[type="date"]::-webkit-calendar-picker-indicator {
-  // background: url(../vector/calender.svg);
-  // background-size: contain;
-  // background-repeat: no-repeat;
-  // width: 15px;
   background: none;
 }
 

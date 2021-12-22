@@ -1383,7 +1383,7 @@ table.custom-table tr td {
 }
 
 #blogs .hero .btn {
-  display: inline-block;
+  width: 214px;
 }
 
 @media screen and (min-width: 992px) {
@@ -1491,7 +1491,7 @@ table.custom-table tr td {
 }
 
 #blogs .blog-posts .blog-post .blog-text h3 {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 #refer-and-invest .title img {
@@ -1965,15 +1965,29 @@ table.custom-table tr td {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 991px) {
   .transactions-sidenav-right {
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .transactions-sidenav-right {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
   }
 }
 
 #transactions .title {
   position: relative;
+  padding-bottom: 1.25rem;
+}
+
+@media screen and (min-width: 769px) {
+  #transactions .title {
+    border-bottom: 1px solid #e6e7e8;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1983,7 +1997,7 @@ table.custom-table tr td {
   #transactions .title::after {
     content: "";
     bottom: -0.25rem;
-    left: -2rem;
+    left: -3rem;
     position: absolute;
     width: 100vw;
     height: 1px;
@@ -1991,20 +2005,55 @@ table.custom-table tr td {
   }
 }
 
-#transactions .title img.back {
-  position: absolute;
-  top: 0.325rem;
-  left: -1.5rem;
+@media screen and (max-width: 991px) and (min-width: 769px) {
+  #transactions .title::after {
+    display: none;
+  }
 }
 
-@media screen and (min-width: 992px) {
+#transactions .title img.back {
+  position: absolute;
+  top: 0.25rem;
+  left: -2rem;
+}
+
+@media screen and (min-width: 769px) {
   #transactions .title img.back {
     display: none;
   }
 }
 
+@media screen and (max-width: 575px) {
+  #transactions .title img.back {
+    top: 0.125rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #transactions .search-sm-container {
+    position: relative;
+    bottom: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #transactions .search-sm {
+    width: 20px;
+  }
+  #transactions .search-sm img {
+    right: -8px;
+  }
+}
+
 #transactions .search-sm input {
   border-color: #e8e8e8;
+}
+
+@media screen and (max-width: 700px) {
+  #transactions .search-sm input {
+    width: 20px;
+    opacity: 0;
+  }
 }
 
 #transactions .filter {
@@ -2013,9 +2062,21 @@ table.custom-table tr td {
   margin-left: 3rem;
 }
 
+@media screen and (max-width: 700px) {
+  #transactions .filter {
+    margin-left: 1.5rem;
+  }
+}
+
 #transactions .select-selected {
   padding: 0.585rem 1rem !important;
   border-color: #e8e8e8 !important;
+}
+
+@media screen and (max-width: 575px) {
+  #transactions .transactions-body {
+    margin-left: -1.5rem;
+  }
 }
 
 #transactions .transactions-body .transaction {
@@ -2033,12 +2094,6 @@ table.custom-table tr td {
   border-bottom: 1px solid #eeeeee;
 }
 
-@media screen and (min-width: 1367px) {
-  #transactions .transactions-body .transaction {
-    padding-right: 0.5rem;
-  }
-}
-
 @media screen and (max-width: 575px) {
   #transactions .transactions-body .transaction {
     width: 100%;
@@ -2048,7 +2103,7 @@ table.custom-table tr td {
   #transactions .transactions-body .transaction::after {
     content: url("../vector/arrow-right.svg");
     position: absolute;
-    top: 2.25rem;
+    top: 1.5rem;
     right: 0;
   }
 }
@@ -2088,18 +2143,18 @@ table.custom-table tr td {
 }
 
 #transactions .transactions-body .transaction > *:nth-child(2) {
-  width: 20%;
+  width: 18%;
 }
 
 @media screen and (max-width: 1590px) {
   #transactions .transactions-body .transaction > *:nth-child(2) {
-    width: 25%;
+    width: 20%;
   }
 }
 
 @media screen and (max-width: 1100px) {
   #transactions .transactions-body .transaction > *:nth-child(2) {
-    width: 27%;
+    width: 20%;
   }
 }
 
@@ -2124,17 +2179,17 @@ table.custom-table tr td {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding-left: 4rem;
+    padding-left: 3rem;
   }
 }
 
 #transactions .transactions-body .transaction > *:nth-child(3) {
-  width: 25%;
+  width: 20%;
 }
 
 @media screen and (max-width: 1590px) {
   #transactions .transactions-body .transaction > *:nth-child(3) {
-    width: 30%;
+    width: 25%;
   }
 }
 
@@ -2186,6 +2241,12 @@ table.custom-table tr td {
           align-items: center;
 }
 
+@media screen and (max-width: 575px) {
+  #transactions .transactions-body .transaction .details {
+    margin-bottom: 1rem;
+  }
+}
+
 @media screen and (max-width: 1590px) {
   #transactions .transactions-body .transaction .details .text h4 {
     font-size: 14px;
@@ -2200,6 +2261,12 @@ table.custom-table tr td {
 
 #transactions .transactions-body .transaction .details img {
   width: 48px;
+}
+
+@media screen and (max-width: 1366px) {
+  #transactions .transactions-body .transaction .details img {
+    width: 32px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -2222,12 +2289,17 @@ table.custom-table tr td {
 
 #transactions .transactions-body .transaction .status .btn {
   width: 100px;
+  border-width: 0.5px;
+  height: 32px;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 1366px) {
   #transactions .transactions-body .transaction .status .btn {
-    font-size: 12px;
+    font-size: 11px;
     width: 72px;
+    height: 24px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -2330,6 +2402,10 @@ table.custom-table tr td {
 
 #transaction .transaction .transaction-head .status .btn {
   width: 100px;
+  border-width: 0.5px;
+  height: 32px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 #transaction .transaction .transaction-body {
@@ -2382,22 +2458,73 @@ table.custom-table tr td {
   margin-top: 0 !important;
 }
 
-@media screen and (max-width: 991px) and (min-width: 576px) {
+#profile {
+  padding: 0 1rem;
+}
+
+@media screen and (max-width: 991px) and (min-width: 769px) {
+  #profile {
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #profile {
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #profile .profile-main > .container-fluid > .row > *:not(:last-child) {
+    padding-right: 3rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #profile .profile-main > .container-fluid > .row > *:not(:last-child) {
+    padding-right: 1rem;
+  }
+}
+
+#profile .my-profile {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eeeeee;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
   #profile .my-profile {
-    -webkit-transform: translateX(-1rem);
-            transform: translateX(-1rem);
+    margin-left: -2.5rem;
+    margin-right: -2.5rem;
+    padding-left: 2.5rem;
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #profile .my-profile {
+    padding-left: 2rem;
+  }
+}
+
+#profile .my-profile .back {
+  position: absolute;
+  left: 0.25rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media screen and (max-width: 575px) {
+  #profile .my-profile .back {
+    position: static;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 #profile .custom-form-control {
   margin-top: 1.5rem;
-  max-width: 374px;
-}
-
-@media screen and (max-width: 1366px) {
-  #profile .custom-form-control {
-    max-width: 272px;
-  }
 }
 
 @media screen and (max-width: 991px) {
@@ -2503,6 +2630,7 @@ table.custom-table tr td {
 #notifications {
   padding-left: 7rem;
   padding-right: 7rem;
+  position: relative;
 }
 
 @media screen and (max-width: 1366px) {
@@ -2512,17 +2640,16 @@ table.custom-table tr td {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   #notifications {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 768px) {
   #notifications {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-top: 1.5rem;
   }
 }
 
@@ -2536,6 +2663,23 @@ table.custom-table tr td {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  position: relative;
+}
+
+#notifications .head .close {
+  position: absolute;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media screen and (max-width: 768px) {
+  #notifications .head .close {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -2558,7 +2702,7 @@ table.custom-table tr td {
   left: -2rem;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 769px) {
   #notifications .head .text h2 img {
     display: none;
   }
@@ -2604,7 +2748,7 @@ table.custom-table tr td {
   border-bottom: 1px solid #eeeeee;
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 525px) {
   #notifications .body .item .action {
     display: none;
   }
@@ -2626,11 +2770,19 @@ table.custom-table tr td {
   top: 1.45rem;
 }
 
+@media screen and (max-width: 1366px) {
+  #notifications .body .item svg {
+    left: -1.5rem;
+    top: 1.25rem;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #notifications .body .item svg {
     width: 8px;
     height: 8px;
     left: -1.25rem;
+    top: 1.4rem;
   }
 }
 
