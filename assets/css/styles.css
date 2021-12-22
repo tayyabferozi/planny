@@ -2462,6 +2462,12 @@ table.custom-table tr td {
   padding: 0 1rem;
 }
 
+@media screen and (min-width: 992px) {
+  #profile {
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 991px) and (min-width: 769px) {
   #profile {
     padding: 0 3rem;
