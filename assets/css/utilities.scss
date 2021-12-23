@@ -1922,6 +1922,10 @@ textarea.custom-input,
           padding: 0.75rem 0;
         }
 
+        &:last-child {
+          margin-bottom: 5rem;
+        }
+
         & > div {
           display: flex;
           align-items: center;
