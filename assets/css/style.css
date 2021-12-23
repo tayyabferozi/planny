@@ -789,6 +789,9 @@ select.list-dt:focus {
 }
 .slider_text_cont_p1 a {
   display: flex;
+}
+.slider_text_cont_p1 a.with-border {
+  width: 40px;
   border-bottom: 1px solid #fff;
 }
 .slider_text_cont_p1 img {
