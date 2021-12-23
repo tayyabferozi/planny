@@ -791,7 +791,7 @@ select.list-dt:focus {
   display: flex;
 }
 .slider_text_cont_p1 a.with-border {
-  width: 40px;
+  width: 32px;
   border-bottom: 1px solid #fff;
 }
 .slider_text_cont_p1 img {
