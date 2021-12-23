@@ -679,12 +679,11 @@ table.custom-table {
     }
 
     @media screen and (max-width: 768px) {
-      padding-top: calc(74px + 8rem);
+      padding-top: calc(74px + 7rem);
     }
 
     @media screen and (max-width: 575px) {
       padding-top: calc(74px + 5rem);
-      padding-bottom: 22rem;
     }
 
     .close {
@@ -720,6 +719,12 @@ table.custom-table {
           .btn-bg-primary {
             width: 328px;
           }
+        }
+      }
+
+      .slidecontainer {
+        @media screen and (max-width: 575px) {
+          padding-bottom: 7rem;
         }
       }
     }
@@ -862,6 +867,7 @@ table.custom-table {
         @media screen and (max-width: 1366px) {
           margin-bottom: 10vh;
         }
+
         .card {
           width: 100%;
           position: relative;
@@ -1229,7 +1235,7 @@ table.custom-table {
     }
 
     .btn {
-      width: 214px;
+      width: 195px;
     }
   }
 
@@ -1243,7 +1249,7 @@ table.custom-table {
       justify-content: center;
       align-items: flex-start;
       padding: 2rem 0;
-      border-bottom: 1px solid $color5;
+      border-bottom: 1px solid #bcbcbc69;
 
       &:first-child {
         @media screen and (max-width: 575px) {
@@ -1394,6 +1400,11 @@ table.custom-table {
   .cards {
     margin-top: 4rem;
 
+    @media screen and (min-width: 769px) {
+      display: flex;
+      justify-content: space-between;
+    }
+
     @media screen and (max-width: 1366px) {
       margin-top: 1rem;
     }
@@ -1422,11 +1433,25 @@ table.custom-table {
     .card {
       margin: 1rem 0;
       background-color: $color21;
-      padding: 2rem 5rem;
+      padding: 2rem 2rem;
       display: flex;
       justify-content: flex-start;
       align-items: center;
       border-radius: 20px;
+      padding-top: 6rem;
+
+      @media screen and (min-width: 769px) {
+        flex-direction: column;
+        width: 32.5%;
+      }
+
+      @media screen and (max-width: 1366px) {
+        padding-top: 4rem;
+      }
+
+      @media screen and (max-width: 1460px) and (min-width: 1367px) {
+        width: 33%;
+      }
 
       @media screen and (max-width: 650px) {
         flex-wrap: wrap;
@@ -1448,15 +1473,8 @@ table.custom-table {
       }
 
       .img {
-        width: 18%;
-
-        @media screen and (max-width: 1200px) {
-          width: 16%;
-        }
-
-        @media screen and (max-width: 991px) {
-          width: 25%;
-        }
+        width: 100%;
+        text-align: center;
 
         @media screen and (max-width: 650px) {
           width: 100%;
@@ -1466,6 +1484,14 @@ table.custom-table {
 
         img {
           width: 83px;
+
+          @media screen and (min-width: 769px) {
+            width: 120px;
+          }
+
+          @media screen and (min-width: 1367px) {
+            width: 180px;
+          }
 
           @media screen and (max-width: 991px) {
             width: 127.21px;
@@ -1479,12 +1505,14 @@ table.custom-table {
         align-items: center;
         width: 82%;
 
-        @media screen and (max-width: 1200px) {
-          width: 84%;
+        @media screen and (min-width: 769px) {
+          width: 100%;
+          flex-wrap: wrap;
+          margin-top: 6rem;
         }
 
-        @media screen and (max-width: 991px) {
-          width: 75%;
+        @media screen and (max-width: 1366px) {
+          margin-top: 4rem;
         }
 
         @media screen and (max-width: 650px) {
@@ -1498,8 +1526,16 @@ table.custom-table {
         }
 
         .sub-section {
-          flex-grow: 1;
           margin-right: 2rem;
+
+          @media screen and (min-width: 769px) {
+            min-width: unset;
+            margin-right: 0;
+          }
+
+          @media screen and (max-width: 768px) {
+            flex-grow: 1;
+          }
 
           @media screen and (max-width: 650px) {
             margin-right: 1rem;
@@ -1509,42 +1545,45 @@ table.custom-table {
             flex-grow: 0;
           }
 
+          .small-text {
+            @media screen and (max-width: 1669px) {
+              min-height: 40px;
+            }
+
+            @media screen and (max-width: 1366px) {
+              min-height: 36px;
+            }
+          }
+
+          .big-text {
+            @media screen and (min-width: 1366px) {
+              margin-top: 0 !important;
+            }
+          }
+
           &:nth-child(1) {
             width: 10%;
-            margin-left: 2rem;
 
-            @media screen and (min-width: 1366px) {
-              min-width: 165px;
+            @media screen and (min-width: 769px) {
+              min-width: 76px;
             }
 
-            @media screen and (max-width: 1365px) {
-              min-width: 85px;
-            }
-
-            @media screen and (max-width: 650px) {
-              margin-left: 0;
-            }
-          }
-
-          &:nth-child(2) {
-            @media screen and (min-width: 1366px) {
-              min-width: 140px;
-            }
-          }
-
-          &:nth-child(3) {
-            @media screen and (min-width: 1366px) {
-              min-width: 165px;
+            @media screen and (min-width: 1670px) {
+              min-width: 148px;
             }
           }
 
           &:nth-child(4) {
-            @media screen and (min-width: 1366px) {
-              min-width: 220px;
+            @media screen and (min-width: 769px) {
+              min-width: 100%;
+              display: flex;
+              justify-content: center;
+              margin-top: 6rem;
             }
 
-            @media screen and (max-width: 1365px) {
+            @media screen and (max-width: 1366px) {
               flex-grow: 0;
+              margin-top: 3rem;
             }
 
             @media screen and (max-width: 991px) {
@@ -1566,8 +1605,6 @@ table.custom-table {
         }
 
         &.refer {
-          flex-grow: 1;
-
           @media screen and (max-width: 650px) {
             justify-content: center;
           }
@@ -1585,30 +1622,14 @@ table.custom-table {
           }
 
           .form {
-            width: 323px;
-
-            @media screen and (max-width: 1366px) {
-              width: 66px;
-            }
-          }
-
-          .reminder {
-            flex-grow: 1;
+            width: 100%;
           }
 
           .referral {
-            width: 375px;
-            margin-right: 3rem;
             flex-grow: 0;
 
-            @media screen and (max-width: 1366px) {
-              width: 285px;
-              margin-right: 1rem;
-            }
-
-            @media screen and (max-width: 1200px) {
-              width: 210px;
-              margin-right: 1rem;
+            @media screen and (min-width: 769px) {
+              width: 100%;
             }
           }
 
@@ -1633,16 +1654,32 @@ table.custom-table {
               margin-left: 2rem;
               width: 100%;
               max-width: 296px;
+            }
 
-              .copy {
-                width: 100%;
+            &.social-sub-section {
+              width: 100%;
+
+              @media screen and (min-width: 1367px) {
+                margin-top: 5.5rem;
               }
+
+              @media screen and (max-width: 1366px) {
+                margin-top: 2.5rem;
+              }
+            }
+
+            .copy {
+              width: 100%;
             }
           }
 
           .social {
-            @media screen and (max-width: 991px) {
-              justify-content: space-between !important;
+            @media screen and (min-width: 769px) {
+              justify-content: center;
+            }
+
+            @media screen and (max-width: 1366px) {
+              justify-content: space-between;
 
               a {
                 margin-right: 0 !important;
@@ -1668,11 +1705,10 @@ table.custom-table {
           }
         }
 
-        .form {
-          max-width: 315px;
-        }
-
         .reminder {
+          flex-grow: 1;
+          margin-top: 2.25rem;
+
           @media screen and (max-width: 991px) {
             max-width: unset !important;
             justify-content: flex-start !important;
@@ -1689,6 +1725,14 @@ table.custom-table {
 
             .btn {
               max-width: 300px;
+            }
+          }
+
+          .btn {
+            width: 254px;
+
+            @media screen and (max-width: 1366px) {
+              width: 174px;
             }
           }
         }
@@ -2348,6 +2392,10 @@ table.custom-table {
   }
 
   .body {
+    @media screen and (max-width: 575px) {
+      margin-left: -0.25rem;
+    }
+
     .item {
       display: flex;
       justify-content: space-between;

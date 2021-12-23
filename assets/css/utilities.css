@@ -64,126 +64,126 @@ p {
 }
 
 .fs-52 {
-  font-size: 52px;
+  font-size: 52px !important;
 }
 
 .fs-20 {
-  font-size: 20px;
+  font-size: 20px !important;
 }
 
 .fs-18 {
-  font-size: 18px;
+  font-size: 18px !important;
 }
 
 .fs-17 {
-  font-size: 17px;
+  font-size: 17px !important;
 }
 
 .fs-16 {
-  font-size: 16px;
+  font-size: 16px !important;
 }
 
 .fs-14 {
-  font-size: 14px;
+  font-size: 14px !important;
 }
 
 .fs-12 {
-  font-size: 12px;
+  font-size: 12px !important;
 }
 
 @media screen and (max-width: 1366px) {
   .fs-1366-40 {
-    font-size: 40px;
+    font-size: 40px !important;
   }
 }
 
 @media screen and (max-width: 1366px) {
   .fs-1366-24 {
-    font-size: 24px;
+    font-size: 24px !important;
   }
 }
 
 @media screen and (max-width: 1366px) {
   .fs-1366-18 {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 }
 
 @media screen and (max-width: 1366px) {
   .fs-1366-16 {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 }
 
 @media screen and (max-width: 1366px) {
   .fs-1366-14 {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 }
 
 @media screen and (max-width: 1366px) {
   .fs-1366-12 {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 }
 
 @media screen and (max-width: 1366px) {
   .fs-1366-10 {
-    font-size: 10px;
+    font-size: 10px !important;
   }
 }
 
 @media screen and (max-width: 991px) {
   .fs-991-20 {
-    font-size: 20px;
+    font-size: 20px !important;
   }
 }
 
 @media screen and (max-width: 991px) {
   .fs-991-14 {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 }
 
 @media screen and (max-width: 991px) {
   .fs-991-12 {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 }
 
 @media screen and (max-width: 768px) {
   .fs-768-16 {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 }
 
 @media screen and (max-width: 768px) {
   .fs-768-14 {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 }
 
 @media screen and (max-width: 768px) {
   .fs-768-12 {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 }
 
 @media screen and (max-width: 650px) {
   .fs-650-14 {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 }
 
 @media screen and (max-width: 650px) {
   .fs-650-32 {
-    font-size: 32px;
+    font-size: 32px !important;
   }
 }
 
 @media screen and (max-width: 575px) {
   .fs-575-28 {
-    font-size: 28px;
+    font-size: 28px !important;
   }
 }
 
@@ -201,13 +201,13 @@ p {
 
 @media screen and (max-width: 575px) {
   .fs-575-14 {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 }
 
 @media screen and (max-width: 490px) {
   .fs-490-14 {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 }
 
@@ -225,6 +225,10 @@ p {
 
 .fw-700 {
   font-weight: 700;
+}
+
+.lh-1 {
+  line-height: 1;
 }
 
 .lh-34 {
@@ -359,6 +363,14 @@ div.shadowy {
   border-radius: 7px;
 }
 
+@media screen and (max-width: 1099px) {
+  .explore.d-block.d-lg-none {
+    display: block !important;
+    padding-left: 68px !important;
+    padding-right: 68px !important;
+  }
+}
+
 .explore .tags .tags-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -379,9 +391,18 @@ div.shadowy {
   transition: 0.4s ease;
 }
 
-.explore .tags .tags-group button:hover {
-  border-color: #31353f;
-  color: #31353f;
+@media screen and (min-width: 769px) {
+  .explore .tags .tags-group button:hover {
+    border-color: #31353f;
+    color: #31353f;
+  }
+}
+
+@media screen and (max-width: 1099px) {
+  .explore .tags .tags-group button {
+    border-color: #31353f;
+    color: #31353f;
+  }
 }
 
 @media screen and (max-width: 742px) {
@@ -429,7 +450,7 @@ div.shadowy {
 }
 
 .explore .posts .post {
-  border: 0px solid #bcbcbc;
+  border: 0px solid #bcbcbc69;
   border-top-width: 1px;
   padding: 1rem 0 1.325rem;
 }
@@ -452,12 +473,18 @@ div.shadowy {
 
 .explore .posts .post .info .date {
   font-size: 12px;
+  margin-top: 0.75rem;
 }
 
 .explore .posts .post .info .time {
   font-size: 14px;
   color: #bcbcbc;
-  margin-top: 0.75rem;
+}
+
+@media screen and (max-width: 1099px) {
+  .explore .posts .post .info .time {
+    font-size: 13px;
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -1036,7 +1063,7 @@ div.shadowy {
   max-width: 878px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .custom-modal.md {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -1047,6 +1074,8 @@ div.shadowy {
     left: 0;
     bottom: 0;
     background-color: #f8f9fa;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 
@@ -1158,13 +1187,14 @@ div.shadowy {
   background: transparent;
 }
 
-.btn-outlined-dark:hover {
-  color: #fff;
-  background-color: #31353f;
-}
-
-.btn-outlined-dark:hover * {
-  color: #fff;
+@media screen and (min-width: 769px) {
+  .btn-outlined-dark:hover {
+    color: #fff;
+    background-color: #31353f;
+  }
+  .btn-outlined-dark:hover * {
+    color: #fff;
+  }
 }
 
 .btn-outlined-dark.primary {
@@ -1172,9 +1202,11 @@ div.shadowy {
   border-color: #ffc32c;
 }
 
-.btn-outlined-dark.primary:hover {
-  color: #fff;
-  background-color: #ffc32c;
+@media screen and (min-width: 769px) {
+  .btn-outlined-dark.primary:hover {
+    color: #fff;
+    background-color: #ffc32c;
+  }
 }
 
 .btn-outlined {
@@ -1224,18 +1256,20 @@ div.shadowy {
   outline: none !important;
 }
 
-.btn-bg-primary:hover,
-#mc-btn__ok:hover {
-  background-color: transparent;
-  color: #31353f !important;
-  -webkit-transform: scale(1.05, 1);
-          transform: scale(1.05, 1);
-  background-color: #ffc32c !important;
-  -webkit-box-shadow: 0px 3px 20px -5px #ffc32c !important;
-          box-shadow: 0px 3px 20px -5px #ffc32c !important;
-  text-decoration: none !important;
-  border-color: transparent !important;
-  outline: none !important;
+@media screen and (min-width: 769px) {
+  .btn-bg-primary:hover,
+  #mc-btn__ok:hover {
+    background-color: transparent;
+    color: #31353f !important;
+    -webkit-transform: scale(1.05, 1);
+            transform: scale(1.05, 1);
+    background-color: #ffc32c !important;
+    -webkit-box-shadow: 0px 3px 20px -5px #ffc32c !important;
+            box-shadow: 0px 3px 20px -5px #ffc32c !important;
+    text-decoration: none !important;
+    border-color: transparent !important;
+    outline: none !important;
+  }
 }
 
 .btn-rounded {
@@ -1476,8 +1510,10 @@ textarea.custom-input[type="date"].active,
   transition: 0.4s ease;
 }
 
-.custom-radio:hover input ~ .checkmark {
-  background-color: #f7f7f7;
+@media screen and (min-width: 769px) {
+  .custom-radio:hover input ~ .checkmark {
+    background-color: #f7f7f7;
+  }
 }
 
 .custom-radio input {
@@ -2385,6 +2421,22 @@ textarea.custom-input[type="date"].active,
   margin-right: auto;
 }
 
+#sidenav-right-content .top-fixed-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1.25rem;
+}
+
+#sidenav-right-content .lower-content {
+  padding-top: 58px;
+}
+
 /* Dropdown Button */
 .dropbtn {
   border: none;
@@ -2645,11 +2697,13 @@ textarea.custom-input[type="date"].active,
   border-color: #31353f;
 }
 
-.mc-calendar .mc-picker__footer button#mc-btn__clear:hover, .mc-calendar .mc-picker__footer button.reset_time:hover,
-.timepicker_wrap a#mc-btn__clear:hover,
-.timepicker_wrap a.reset_time:hover {
-  background: #31353f;
-  color: #fff;
+@media screen and (min-width: 769px) {
+  .mc-calendar .mc-picker__footer button#mc-btn__clear:hover, .mc-calendar .mc-picker__footer button.reset_time:hover,
+  .timepicker_wrap a#mc-btn__clear:hover,
+  .timepicker_wrap a.reset_time:hover {
+    background: #31353f;
+    color: #fff;
+  }
 }
 
 .mc-calendar .mc-picker__footer button#mc-btn__ok, .mc-calendar .mc-picker__footer button.done,
@@ -2658,12 +2712,23 @@ textarea.custom-input[type="date"].active,
   background: #ffc32c;
 }
 
-.mc-calendar .mc-picker__footer button#mc-btn__ok:hover, .mc-calendar .mc-picker__footer button.done:hover,
-.timepicker_wrap a#mc-btn__ok:hover,
-.timepicker_wrap a.done:hover {
-  background: transparent;
-  border-color: #ffc32c;
-  color: #ffc32c;
+@media screen and (max-width: 769px) {
+  .mc-calendar .mc-picker__footer button#mc-btn__ok:hover, .mc-calendar .mc-picker__footer button.done:hover,
+  .timepicker_wrap a#mc-btn__ok:hover,
+  .timepicker_wrap a.done:hover {
+    background: transparent;
+    border-color: #ffc32c;
+    color: #ffc32c;
+    color: #31353f !important;
+    -webkit-transform: scale(1.05, 1);
+            transform: scale(1.05, 1);
+    background-color: #ffc32c !important;
+    -webkit-box-shadow: 0px 3px 20px -5px #ffc32c !important;
+            box-shadow: 0px 3px 20px -5px #ffc32c !important;
+    text-decoration: none !important;
+    border-color: transparent !important;
+    outline: none !important;
+  }
 }
 
 .ti_tx,
@@ -2715,6 +2780,25 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 input[type="time"]::-webkit-calendar-picker-indicator {
   background: none;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+input[type="time"],
+input[type="date"] {
+  -webkit-appearance: none;
+}
+
+input[type="time"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-inner-spin-button,
+input[type="time"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
 }
 
 .timepicker_wrap {
@@ -2798,6 +2882,20 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   text-align: center;
   line-height: 2;
   margin: 0 0.5rem;
+}
+
+@media screen and (min-width: 769px) {
+  .timepicker_wrap .buttons a:hover {
+    color: #31353f !important;
+    -webkit-transform: scale(1.05, 1);
+            transform: scale(1.05, 1);
+    background-color: #ffc32c !important;
+    -webkit-box-shadow: 0px 3px 20px -5px #ffc32c !important;
+            box-shadow: 0px 3px 20px -5px #ffc32c !important;
+    text-decoration: none !important;
+    border-color: transparent !important;
+    outline: none !important;
+  }
 }
 
 .arrow_top {

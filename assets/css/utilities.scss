@@ -62,126 +62,126 @@ p {
 }
 
 .fs-52 {
-  font-size: 52px;
+  font-size: 52px !important;
 }
 
 .fs-20 {
-  font-size: 20px;
+  font-size: 20px !important;
 }
 
 .fs-18 {
-  font-size: 18px;
+  font-size: 18px !important;
 }
 
 .fs-17 {
-  font-size: 17px;
+  font-size: 17px !important;
 }
 
 .fs-16 {
-  font-size: 16px;
+  font-size: 16px !important;
 }
 
 .fs-14 {
-  font-size: 14px;
+  font-size: 14px !important;
 }
 
 .fs-12 {
-  font-size: 12px;
+  font-size: 12px !important;
 }
 
 .fs-1366-40 {
   @media screen and (max-width: 1366px) {
-    font-size: 40px;
+    font-size: 40px !important;
   }
 }
 
 .fs-1366-24 {
   @media screen and (max-width: 1366px) {
-    font-size: 24px;
+    font-size: 24px !important;
   }
 }
 
 .fs-1366-18 {
   @media screen and (max-width: 1366px) {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 }
 
 .fs-1366-16 {
   @media screen and (max-width: 1366px) {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 }
 
 .fs-1366-14 {
   @media screen and (max-width: 1366px) {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 }
 
 .fs-1366-12 {
   @media screen and (max-width: 1366px) {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 }
 
 .fs-1366-10 {
   @media screen and (max-width: 1366px) {
-    font-size: 10px;
+    font-size: 10px !important;
   }
 }
 
 .fs-991-20 {
   @media screen and (max-width: 991px) {
-    font-size: 20px;
+    font-size: 20px !important;
   }
 }
 
 .fs-991-14 {
   @media screen and (max-width: 991px) {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 }
 
 .fs-991-12 {
   @media screen and (max-width: 991px) {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 }
 
 .fs-768-16 {
   @media screen and (max-width: 768px) {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 }
 
 .fs-768-14 {
   @media screen and (max-width: 768px) {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 }
 
 .fs-768-12 {
   @media screen and (max-width: 768px) {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 }
 
 .fs-650-14 {
   @media screen and (max-width: 650px) {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 }
 
 .fs-650-32 {
   @media screen and (max-width: 650px) {
-    font-size: 32px;
+    font-size: 32px !important;
   }
 }
 
 .fs-575-28 {
   @media screen and (max-width: 575px) {
-    font-size: 28px;
+    font-size: 28px !important;
   }
 }
 
@@ -199,13 +199,13 @@ p {
 
 .fs-575-14 {
   @media screen and (max-width: 575px) {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 }
 
 .fs-490-14 {
   @media screen and (max-width: 490px) {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 }
 
@@ -223,6 +223,10 @@ p {
 
 .fw-700 {
   font-weight: 700;
+}
+
+.lh-1 {
+  line-height: 1;
 }
 
 .lh-34 {
@@ -354,6 +358,14 @@ div.shadowy {
 }
 
 .explore {
+  @media screen and (max-width: 1099px) {
+    &.d-block.d-lg-none {
+      display: block !important;
+      padding-left: 68px !important;
+      padding-right: 68px !important;
+    }
+  }
+
   .tags {
     .tags-group {
       display: flex;
@@ -367,6 +379,13 @@ div.shadowy {
         transition: 0.4s ease;
 
         &:hover {
+          @media screen and (min-width: 769px) {
+            border-color: $color2;
+            color: $color2;
+          }
+        }
+
+        @media screen and (max-width: 1099px) {
           border-color: $color2;
           color: $color2;
         }
@@ -408,7 +427,7 @@ div.shadowy {
 
   .posts {
     .post {
-      border: 0px solid $color5;
+      border: 0px solid #bcbcbc69;
       border-top-width: 1px;
       padding: 1rem 0 1.325rem;
 
@@ -423,12 +442,16 @@ div.shadowy {
 
         .date {
           font-size: 12px;
+          margin-top: 0.75rem;
         }
 
         .time {
           font-size: 14px;
           color: $color5;
-          margin-top: 0.75rem;
+
+          @media screen and (max-width: 1099px) {
+            font-size: 13px;
+          }
         }
       }
     }
@@ -918,7 +941,7 @@ div.shadowy {
   &.md {
     max-width: 878px;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
       padding-left: 1rem;
       padding-right: 1rem;
       width: 100vw;
@@ -927,6 +950,8 @@ div.shadowy {
       left: 0;
       bottom: 0;
       background-color: $color32;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
     }
 
     @media screen and (max-width: 575px) {
@@ -1029,11 +1054,13 @@ div.shadowy {
   background: transparent;
 
   &:hover {
-    color: #fff;
-    background-color: $color2;
-
-    * {
+    @media screen and (min-width: 769px) {
       color: #fff;
+      background-color: $color2;
+
+      * {
+        color: #fff;
+      }
     }
   }
 
@@ -1042,8 +1069,10 @@ div.shadowy {
     border-color: $color1;
 
     &:hover {
-      color: #fff;
-      background-color: $color1;
+      @media screen and (min-width: 769px) {
+        color: #fff;
+        background-color: $color1;
+      }
     }
   }
 }
@@ -1094,15 +1123,17 @@ div.shadowy {
   outline: none !important;
 
   &:hover {
-    background-color: transparent;
+    @media screen and (min-width: 769px) {
+      background-color: transparent;
 
-    color: #31353f !important;
-    transform: scale(1.05, 1);
-    background-color: #ffc32c !important;
-    box-shadow: 0px 3px 20px -5px #ffc32c !important;
-    text-decoration: none !important;
-    border-color: transparent !important;
-    outline: none !important;
+      color: #31353f !important;
+      transform: scale(1.05, 1);
+      background-color: #ffc32c !important;
+      box-shadow: 0px 3px 20px -5px #ffc32c !important;
+      text-decoration: none !important;
+      border-color: transparent !important;
+      outline: none !important;
+    }
   }
 }
 
@@ -1305,8 +1336,10 @@ textarea.custom-input,
   }
 
   &:hover {
-    input ~ .checkmark {
-      background-color: $color9;
+    @media screen and (min-width: 769px) {
+      input ~ .checkmark {
+        background-color: $color9;
+      }
     }
   }
 
@@ -2104,6 +2137,22 @@ textarea.custom-input,
     margin-left: auto;
     margin-right: auto;
   }
+
+  .top-fixed-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1.25rem;
+  }
+
+  .lower-content {
+    padding-top: 58px;
+  }
 }
 
 /* Dropdown Button */
@@ -2346,8 +2395,10 @@ textarea.custom-input,
     border-color: $color2;
 
     &:hover {
-      background: $color2;
-      color: #fff;
+      @media screen and (min-width: 769px) {
+        background: $color2;
+        color: #fff;
+      }
     }
   }
 
@@ -2356,9 +2407,19 @@ textarea.custom-input,
     background: $color1;
 
     &:hover {
-      background: transparent;
-      border-color: $color1;
-      color: $color1;
+      @media screen and (max-width: 769px) {
+        background: transparent;
+        border-color: $color1;
+        color: $color1;
+
+        color: #31353f !important;
+        transform: scale(1.05, 1);
+        background-color: #ffc32c !important;
+        box-shadow: 0px 3px 20px -5px #ffc32c !important;
+        text-decoration: none !important;
+        border-color: transparent !important;
+        outline: none !important;
+      }
     }
   }
 }
@@ -2414,6 +2475,24 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 input[type="time"]::-webkit-calendar-picker-indicator {
   background: none;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+input[type="time"],
+input[type="date"] {
+  -webkit-appearance: none;
+}
+input[type="time"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-inner-spin-button,
+input[type="time"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
 }
 
 .timepicker_wrap {
@@ -2482,6 +2561,18 @@ input[type="time"]::-webkit-calendar-picker-indicator {
       text-align: center;
       line-height: 2;
       margin: 0 0.5rem;
+
+      &:hover {
+        @media screen and (min-width: 769px) {
+          color: #31353f !important;
+          transform: scale(1.05, 1);
+          background-color: #ffc32c !important;
+          box-shadow: 0px 3px 20px -5px #ffc32c !important;
+          text-decoration: none !important;
+          border-color: transparent !important;
+          outline: none !important;
+        }
+      }
     }
   }
 }

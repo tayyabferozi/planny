@@ -5,7 +5,7 @@
   padding: 0px;
   box-sizing: border-box;
   outline: none;
-  color :#31353F;
+  color: #31353f;
 }
 .planyybody {
   margin: 0px;
@@ -7362,11 +7362,28 @@ select.list-dt:focus {
   font-family: SourceSansPro-Regular;
   border-radius: 5px;
   box-shadow: 0 0 6px #00000029;
+  line-height: 22px;
 }
 
-@media screen and (max-width: 1366px) {
+.custom-tooltip .close {
+  position: absolute;
+  right: 0.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 500;
+  color: #b2b2b2;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1919px) {
   .custom-tooltip {
     font-size: 14px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .custom-tooltip .close {
+    padding: 0.5rem;
   }
 }
 
@@ -7376,14 +7393,6 @@ select.list-dt:focus {
     left: 50%;
     transform: translateX(-50%);
   }
-}
-
-.custom-tooltip .close {
-  position: absolute;
-  right: 0.5rem;
-  top: 50%;
-  transform: translateY(-50%);
-  font-weight: 500;
 }
 
 .custom-tooltip .arrow {
@@ -7633,7 +7642,7 @@ select.list-dt:focus {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .sebi {
     transform: translateX(-1rem);
   }
@@ -7650,10 +7659,34 @@ select.list-dt:focus {
   padding-top: 1.5rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   #signup-modal {
     padding-top: 7rem;
     padding-bottom: 7rem;
+  }
+
+  #signup-modal .container {
+    max-width: 720px;
+  }
+
+  #signup-modal .col-md-5 {
+    flex: 0 1 auto;
+    max-width: 100%;
+    order: 2;
+  }
+
+  #signup-modal .col-md-7 {
+    flex: 0 1 auto;
+    max-width: 100%;
+    order: 1;
+  }
+
+  #signup-modal .btn {
+    width: 40%;
+  }
+
+  #signup-modal .text-center {
+    text-align: center !important;
   }
 }
 
@@ -7674,10 +7707,7 @@ select.list-dt:focus {
   }
 }
 
-@media screen and (max-width: 767px) {
-  #signup-modal .btn {
-    width: 40%;
-  }
+@media screen and (max-width: 768px) {
 }
 
 @media screen and (max-width: 575px) {
@@ -8037,5 +8067,37 @@ select.list-dt:focus {
   #call-modal .close,
   #message-modal .close {
     right: 1rem;
+  }
+}
+@media (min-width: 1367px) and (max-width: 2919px) {
+  .planyybody.sidebaractive .slider_text_p1 h2 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .planyybody.sidebaractive .slider_text_p1 h3 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider_hed_p1,
+  .slider_hed_p2 {
+    margin-top: 28px;
+  }
+
+  .slider_text_p1 {
+    margin-top: 95px;
+  }
+}
+
+@media (max-width: 375px) {
+  .slider_hed_p1,
+  .slider_hed_p2 {
+    margin-top: 14px;
+  }
+
+  .slider_text_p1 {
+    margin-top: 75px;
   }
 }
