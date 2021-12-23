@@ -728,7 +728,6 @@ div.shadowy {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
-  height: 90%;
   overflow-y: auto;
   max-height: 100vh;
 
@@ -775,6 +774,10 @@ div.shadowy {
       top: 2.75rem;
 
       @media screen and (max-width: 768px) {
+        top: 1.25rem;
+      }
+
+      @media screen and (max-width: 575px) {
         top: calc(1.25rem + 64px);
       }
 
@@ -783,6 +786,10 @@ div.shadowy {
         right: 1rem;
 
         @media screen and (max-width: 768px) {
+          top: 1.25rem;
+        }
+
+        @media screen and (max-width: 575px) {
           top: calc(1.25rem + 64px);
         }
       }
@@ -827,7 +834,7 @@ div.shadowy {
     right: 1.5rem;
     cursor: pointer;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 575px) {
       top: calc(1rem + 64px);
     }
   }
@@ -871,7 +878,7 @@ div.shadowy {
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 575px) {
     .modal-body.no-head {
       padding-top: 64px;
     }
@@ -889,7 +896,6 @@ div.shadowy {
   &.xs,
   &.md {
     padding: 3rem 3.5rem;
-    height: unset;
     border-bottom: 5px solid $color1;
 
     @media screen and (max-width: 575px) {
@@ -911,7 +917,7 @@ div.shadowy {
       top: 1.25rem;
       right: 1.5rem;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 575px) {
         top: calc(1.25rem + 64px);
       }
     }
@@ -952,6 +958,7 @@ div.shadowy {
       background-color: $color32;
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
+      height: 90%;
     }
 
     @media screen and (max-width: 575px) {
@@ -1053,6 +1060,11 @@ div.shadowy {
   transition: 0.4s ease;
   background: transparent;
 
+  &,
+  * {
+    font-weight: 600;
+  }
+
   &:hover {
     @media screen and (min-width: 769px) {
       color: #fff;
@@ -1116,7 +1128,6 @@ div.shadowy {
 
   background-color: #ffc32c;
   color: #31353f;
-  border-radius: 18px;
   font-size: 16px;
   text-decoration: none;
   transition: 0.3s;
@@ -1149,6 +1160,12 @@ div.shadowy {
   }
 }
 .bottom-btn-sm {
+  pointer-events: none;
+
+  * {
+    pointer-events: all;
+  }
+
   @media screen and (max-width: 575px) {
     // background: linear-gradient(to top, #fff, transparent);
     // position: sticky;
@@ -1311,12 +1328,12 @@ textarea.custom-input,
     outline: 5px solid rgba(#ffc32c, 0.19);
   }
 
-  &[type="time"]:focus,
-  &[type="time"].active,
-  &[type="date"]:focus,
-  &[type="date"].active {
-    outline: 4px solid rgba(#ffc32c, 0.19);
-  }
+  // &[type="time"]:focus,
+  // &[type="time"].active,
+  // &[type="date"]:focus,
+  // &[type="date"].active {
+  //   outline: 4px solid rgba(#ffc32c, 0.19);
+  // }
 }
 
 // ////////////////////////////////////////////////////// CUSTOM RADIO ////////////////////////////////////////////////////////
@@ -2513,11 +2530,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   left: 0px;
   padding-bottom: 6rem;
 
-  @media screen and (max-width: 768px) {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+  // @media screen and (max-width: 768px) {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  // }
 
   input {
     width: 72px;

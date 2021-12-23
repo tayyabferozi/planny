@@ -799,7 +799,6 @@ div.shadowy {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 90%;
-  height: 90%;
   overflow-y: auto;
   max-height: 100vh;
   /* Track */
@@ -850,6 +849,12 @@ div.shadowy {
 
 @media screen and (max-width: 768px) {
   .custom-modal:not(.small-width):not(.xs):not(.md) .close {
+    top: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .custom-modal:not(.small-width):not(.xs):not(.md) .close {
     top: calc(1.25rem + 64px);
   }
 }
@@ -860,6 +865,12 @@ div.shadowy {
 }
 
 @media screen and (max-width: 768px) {
+  .custom-modal:not(.small-width):not(.xs):not(.md) .close.top-right {
+    top: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
   .custom-modal:not(.small-width):not(.xs):not(.md) .close.top-right {
     top: calc(1.25rem + 64px);
   }
@@ -912,7 +923,7 @@ div.shadowy {
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 575px) {
   .custom-modal .close {
     top: calc(1rem + 64px);
   }
@@ -971,7 +982,7 @@ div.shadowy {
   font-size: 16px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 575px) {
   .custom-modal .modal-body.no-head {
     padding-top: 64px;
   }
@@ -990,7 +1001,6 @@ div.shadowy {
 
 .custom-modal.xs, .custom-modal.md {
   padding: 3rem 3.5rem;
-  height: unset;
   border-bottom: 5px solid #ffc32c;
 }
 
@@ -1030,7 +1040,7 @@ div.shadowy {
   right: 1.5rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 575px) {
   .custom-modal.xs .close, .custom-modal.md .close {
     top: calc(1.25rem + 64px);
   }
@@ -1076,6 +1086,7 @@ div.shadowy {
     background-color: #f8f9fa;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    height: 90%;
   }
 }
 
@@ -1187,6 +1198,11 @@ div.shadowy {
   background: transparent;
 }
 
+.btn-outlined-dark,
+.btn-outlined-dark * {
+  font-weight: 600;
+}
+
 @media screen and (min-width: 769px) {
   .btn-outlined-dark:hover {
     color: #fff;
@@ -1248,7 +1264,6 @@ div.shadowy {
   font-weight: 600;
   background-color: #ffc32c;
   color: #31353f;
-  border-radius: 18px;
   font-size: 16px;
   text-decoration: none;
   -webkit-transition: 0.3s;
@@ -1282,6 +1297,14 @@ div.shadowy {
   .custom-modal .modal-body {
     height: 100%;
   }
+}
+
+.bottom-btn-sm {
+  pointer-events: none;
+}
+
+.bottom-btn-sm * {
+  pointer-events: all;
 }
 
 @media screen and (max-width: 575px) {
@@ -1477,18 +1500,6 @@ input.custom-input.with-outline,
 textarea.custom-input.with-outline,
 .time-input.with-outline {
   outline: 5px solid rgba(255, 195, 44, 0.19);
-}
-
-input.custom-input[type="time"]:focus, input.custom-input[type="time"].active, input.custom-input[type="date"]:focus, input.custom-input[type="date"].active,
-textarea.custom-input[type="time"]:focus,
-textarea.custom-input[type="time"].active,
-textarea.custom-input[type="date"]:focus,
-textarea.custom-input[type="date"].active,
-.time-input[type="time"]:focus,
-.time-input[type="time"].active,
-.time-input[type="date"]:focus,
-.time-input[type="date"].active {
-  outline: 4px solid rgba(255, 195, 44, 0.19);
 }
 
 .custom-radio {
@@ -2824,15 +2835,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   top: 27px;
   left: 0px;
   padding-bottom: 6rem;
-}
-
-@media screen and (max-width: 768px) {
-  .timepicker_wrap {
-    position: fixed;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .timepicker_wrap input {
