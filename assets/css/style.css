@@ -8083,7 +8083,7 @@ select.list-dt:focus {
   position: absolute;
   top: 50%;
   overflow: hidden;
-  left: -37px;
+  left: -37.5px;
   transform: rotate(90deg) translateX(-25%);
 }
 
