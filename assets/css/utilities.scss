@@ -2428,7 +2428,7 @@ textarea.custom-input,
     background: $color1;
 
     &:hover {
-      @media screen and (max-width: 769px) {
+      @media screen and (min-width: 769px) {
         background: transparent;
         border-color: $color1;
         color: $color1;
@@ -2582,18 +2582,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       text-align: center;
       line-height: 2;
       margin: 0 0.5rem;
-
-      &:hover {
-        @media screen and (min-width: 769px) {
-          color: #31353f !important;
-          transform: scale(1.05, 1);
-          background-color: #ffc32c !important;
-          box-shadow: 0px 3px 20px -5px #ffc32c !important;
-          text-decoration: none !important;
-          border-color: transparent !important;
-          outline: none !important;
-        }
-      }
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
     }
   }
 }

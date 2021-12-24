@@ -2727,7 +2727,7 @@ textarea.custom-input.with-outline,
   background: #ffc32c;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (min-width: 769px) {
   .mc-calendar .mc-picker__footer button#mc-btn__ok:hover, .mc-calendar .mc-picker__footer button.done:hover,
   .timepicker_wrap a#mc-btn__ok:hover,
   .timepicker_wrap a.done:hover {
@@ -2892,20 +2892,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   text-align: center;
   line-height: 2;
   margin: 0 0.5rem;
-}
-
-@media screen and (min-width: 769px) {
-  .timepicker_wrap .buttons a:hover {
-    color: #31353f !important;
-    -webkit-transform: scale(1.05, 1);
-            transform: scale(1.05, 1);
-    background-color: #ffc32c !important;
-    -webkit-box-shadow: 0px 3px 20px -5px #ffc32c !important;
-            box-shadow: 0px 3px 20px -5px #ffc32c !important;
-    text-decoration: none !important;
-    border-color: transparent !important;
-    outline: none !important;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 600;
 }
 
 .arrow_top {
