@@ -1690,7 +1690,7 @@ textarea.custom-input,
 
     @media screen and (max-width: 991px) {
       width: 100%;
-      margin: 1rem 0 1.5rem;
+      // margin: 1rem 0 1.5rem;
     }
 
     @media screen and (max-width: 991px) and (min-width: 600px) {
@@ -1706,6 +1706,8 @@ textarea.custom-input,
     }
 
     .details-box {
+      margin-bottom: 2rem;
+
       .box-title {
         color: $color3;
       }

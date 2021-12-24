@@ -1904,7 +1904,6 @@ textarea.custom-input.with-outline,
 @media screen and (max-width: 991px) {
   .details-container .details-item {
     width: 100%;
-    margin: 1rem 0 1.5rem;
   }
 }
 
@@ -1918,6 +1917,10 @@ textarea.custom-input.with-outline,
 
 .details-container .details-item .custom-form-control {
   margin-bottom: 1.5rem;
+}
+
+.details-container .details-item .details-box {
+  margin-bottom: 2rem;
 }
 
 .details-container .details-item .details-box .box-title {
