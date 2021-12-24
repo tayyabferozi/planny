@@ -65,6 +65,10 @@ p {
   font-size: 52px !important;
 }
 
+.fs-24 {
+  font-size: 24px !important;
+}
+
 .fs-20 {
   font-size: 20px !important;
 }
@@ -756,6 +760,15 @@ div.shadowy {
     transform: translateX(-50%);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+
+    @media screen and (min-width: 769px) {
+      height: 90vh;
+    }
+
+    @media screen and (max-width: 575px) {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
   }
 
   @media screen and (max-width: 1366px) and(min-width: 769px) {
@@ -804,10 +817,13 @@ div.shadowy {
     }
 
     @media screen and (max-width: 1366px) {
+      left: 50%;
+    }
+
+    @media screen and (max-width: 768px) {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
       height: 100%;
-      left: 50%;
     }
   }
 
@@ -1192,15 +1208,6 @@ div.shadowy {
 
   &.tablet {
     @media screen and (max-width: 768px) {
-      // background: linear-gradient(to top, #fff, transparent);
-      // position: sticky;
-      // display: flex;
-      // justify-content: center;
-      // padding: 1rem 0;
-      // bottom: -46px;
-      // left: 0;
-      // right: 0;
-
       position: fixed;
       background: linear-gradient(to top, #fff, transparent);
       display: flex;
@@ -1212,6 +1219,26 @@ div.shadowy {
 
       .btn {
         width: 100%;
+      }
+    }
+  }
+
+  &.desktop {
+    @media screen and (max-width: 991px) {
+      position: fixed;
+      background: linear-gradient(to top, #fff, transparent);
+      display: flex;
+      justify-content: center;
+      padding: 2rem 1rem;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      .btn {
+        width: 100%;
+        @media screen and (min-width: 576px) {
+          max-width: 328px;
+        }
       }
     }
   }
@@ -1314,7 +1341,7 @@ textarea.custom-input,
   &::placeholder {
     font-weight: 400;
     // color: $color31;
-    color: #000;
+    // color: #000;
   }
 
   &.active,
@@ -1640,6 +1667,7 @@ textarea.custom-input,
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 2rem;
 
   @media screen and (max-width: 1366px) and (min-width: 992px) {
     padding: 0 2.5rem;
@@ -1662,6 +1690,7 @@ textarea.custom-input,
 
     @media screen and (max-width: 991px) {
       width: 100%;
+      margin: 1rem 0 1.5rem;
     }
 
     @media screen and (max-width: 991px) and (min-width: 600px) {
@@ -1686,7 +1715,6 @@ textarea.custom-input,
         border: 1px solid $color3;
         border-radius: 3px;
         margin-top: 1.5rem;
-        margin-bottom: 2rem;
         height: 100%;
 
         .box-subtitle {
@@ -1706,6 +1734,10 @@ textarea.custom-input,
         .box-text {
           padding: 2rem 1.5rem 1rem;
           height: 100%;
+
+          &:not(.n-padding) {
+            padding-right: 2.5rem;
+          }
         }
 
         .edit {
@@ -1713,11 +1745,11 @@ textarea.custom-input,
           right: 0.75rem;
           bottom: 0.5rem;
 
-          @media screen and (max-width: 991px) {
-            top: 50%;
-            bottom: unset;
-            transform: translateY(-50%);
-          }
+          // @media screen and (max-width: 991px) {
+          top: 50%;
+          bottom: unset;
+          transform: translateY(-50%);
+          // }
         }
       }
 
@@ -2292,7 +2324,7 @@ textarea.custom-input,
   .upload-head {
     .file-info {
       .file-img {
-        margin-right: 1rem;
+        margin-right: 0.5rem;
       }
     }
   }

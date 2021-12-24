@@ -828,10 +828,6 @@ table.custom-table {
     padding-top: 9rem;
     overflow-y: auto;
 
-    @media screen and (min-width: 1367px) {
-      border-radius: 25px;
-    }
-
     @media screen and (max-width: 575px) {
       padding-top: calc(2.5rem + 74px);
     }
@@ -900,6 +896,10 @@ table.custom-table {
         margin-right: auto;
         display: flex;
         justify-content: center;
+
+        @media screen and (min-width: 769px) {
+          margin-bottom: 15vh;
+        }
 
         @media screen and (max-width: 768px) {
           flex-direction: column;
@@ -1015,6 +1015,20 @@ table.custom-table {
       border-top-right-radius: 0;
     }
 
+    .last-child {
+      &:not(.desktop) {
+        @media screen and (max-width: 768px) {
+          margin-bottom: 5rem !important;
+        }
+      }
+
+      &.desktop {
+        @media screen and (max-width: 991px) {
+          padding-bottom: 7rem !important;
+        }
+      }
+    }
+
     .bottom-btn {
       position: absolute;
       bottom: 1rem;
@@ -1034,7 +1048,7 @@ table.custom-table {
       }
 
       @media screen and (max-width: 575px) {
-        right: 2rem;
+        right: 1.25rem;
       }
     }
 
@@ -1064,30 +1078,33 @@ table.custom-table {
         }
       }
     }
+  }
+  .continue {
+    // position: absolute;
+    // left: 50%;
+    // bottom: 3rem;
+    // width: 100%;
+    // display: block;
+    // max-width: 328px;
+    // transform: translateX(-50%);
 
-    .continue {
-      position: absolute;
-      left: 50%;
-      bottom: 3rem;
-      width: 100%;
-      display: block;
-      max-width: 328px;
-      transform: translateX(-50%);
+    // @media screen and (min-width: 992px) {
+    //   display: none;
+    // }
 
-      @media screen and (min-width: 992px) {
-        display: none;
-      }
-
-      @media screen and (max-width: 575px) {
-        bottom: -3rem;
-      }
-    }
+    // @media screen and (max-width: 575px) {
+    //   bottom: -3rem;
+    // }
+    z-index: 7;
   }
 }
 
-#uploading .uploading {
-  @media screen and (max-width: 991px) {
-    padding: 0 1rem;
+#uploading,
+#uploader {
+  .uploading {
+    @media screen and (max-width: 991px) {
+      padding: 0 0.5rem;
+    }
   }
 }
 
@@ -1139,11 +1156,11 @@ table.custom-table {
 
 #uploader {
   .file-uploader {
-    padding: 0 2.5rem;
+    padding: 0 0.5rem;
     position: relative;
 
-    @media screen and (max-width: 575px) {
-      padding: 0;
+    @media screen and (min-width: 992px) {
+      padding: 0 2.5rem;
     }
 
     input {
@@ -1152,10 +1169,12 @@ table.custom-table {
 
     label {
       display: block;
+      overflow: hidden;
       width: 100%;
       height: 132px;
       border: 1px dotted $color1;
       background-color: transparent;
+      border-radius: 4px;
 
       @media screen and (max-width: 768px) {
         height: 80px;
@@ -1164,6 +1183,16 @@ table.custom-table {
       @media screen and (max-width: 575px) {
         height: 48px;
       }
+
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   border: 5px dashed #ff0000;
+      //   top: -3px;
+      //   bottom: -3px;
+      //   left: -3px;
+      //   right: -3px;
+      // }
     }
 
     h4 {
@@ -1171,6 +1200,12 @@ table.custom-table {
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
+    }
+  }
+
+  .text-end.text-light-2 {
+    @media screen and (min-width: 992px) {
+      padding-right: 2.5rem !important;
     }
   }
 }
@@ -1759,6 +1794,10 @@ table.custom-table {
     padding-left: 3rem !important;
     padding-right: 3rem !important;
   }
+
+  @media screen and (max-width: 575px) {
+    padding-right: 1.5rem !important;
+  }
 }
 
 #transactions {
@@ -1845,7 +1884,7 @@ table.custom-table {
 
   .transactions-body {
     @media screen and (max-width: 575px) {
-      margin-left: -1.5rem;
+      margin-left: -1.75rem;
     }
 
     .transaction {
@@ -1979,7 +2018,7 @@ table.custom-table {
         img {
           width: 48px;
 
-          @media screen and (max-width: 1366px) {
+          @media screen and (max-width: 768px) {
             width: 32px;
           }
         }
@@ -2000,7 +2039,7 @@ table.custom-table {
           width: 100px;
           border-width: 0.5px;
           height: 32px;
-          font-size: 15px;
+          font-size: 16px;
           font-weight: 600;
 
           @media screen and (max-width: 1366px) {
@@ -2043,14 +2082,18 @@ table.custom-table {
       }
     }
 
-    &::after {
+    &.title::after {
       content: "";
-      bottom: -2rem;
-      left: -2rem;
+      left: 0;
       position: absolute;
-      width: 100vw;
+      width: 100%;
       height: 1px;
       background-color: $color30;
+      bottom: -2rem;
+
+      @media screen and (max-width: 1366px) {
+        bottom: -1.5rem;
+      }
     }
   }
 

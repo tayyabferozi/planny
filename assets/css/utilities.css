@@ -67,6 +67,10 @@ p {
   font-size: 52px !important;
 }
 
+.fs-24 {
+  font-size: 24px !important;
+}
+
 .fs-20 {
   font-size: 20px !important;
 }
@@ -831,6 +835,19 @@ div.shadowy {
   border-bottom-right-radius: 0;
 }
 
+@media screen and (min-width: 769px) {
+  .custom-modal.bottem-aligned {
+    height: 90vh;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .custom-modal.bottem-aligned {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
 @media screen and (max-width: 1366px) and (min-width: 769px) {
   .custom-modal.bottem-aligned-laptop {
     height: 85% !important;
@@ -889,10 +906,15 @@ div.shadowy {
 
 @media screen and (max-width: 1366px) {
   .custom-modal:not(.small-width):not(.xs):not(.md) {
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .custom-modal:not(.small-width):not(.xs):not(.md) {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     height: 100%;
-    left: 50%;
   }
 }
 
@@ -1349,6 +1371,33 @@ div.shadowy {
   }
 }
 
+@media screen and (max-width: 991px) {
+  .bottom-btn-sm.desktop {
+    position: fixed;
+    background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(transparent));
+    background: linear-gradient(to top, #fff, transparent);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2rem 1rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .bottom-btn-sm.desktop .btn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 576px) {
+  .bottom-btn-sm.desktop .btn {
+    max-width: 328px;
+  }
+}
+
 .custom-form-control input,
 .custom-form-control select,
 .custom-form-control label {
@@ -1461,28 +1510,24 @@ input.custom-input::-webkit-input-placeholder,
 textarea.custom-input::-webkit-input-placeholder,
 .time-input::-webkit-input-placeholder {
   font-weight: 400;
-  color: #000;
 }
 
 input.custom-input:-ms-input-placeholder,
 textarea.custom-input:-ms-input-placeholder,
 .time-input:-ms-input-placeholder {
   font-weight: 400;
-  color: #000;
 }
 
 input.custom-input::-ms-input-placeholder,
 textarea.custom-input::-ms-input-placeholder,
 .time-input::-ms-input-placeholder {
   font-weight: 400;
-  color: #000;
 }
 
 input.custom-input::placeholder,
 textarea.custom-input::placeholder,
 .time-input::placeholder {
   font-weight: 400;
-  color: #000;
 }
 
 input.custom-input.active, input.custom-input:focus,
@@ -1826,6 +1871,7 @@ textarea.custom-input.with-outline,
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 1366px) and (min-width: 992px) {
@@ -1858,6 +1904,7 @@ textarea.custom-input.with-outline,
 @media screen and (max-width: 991px) {
   .details-container .details-item {
     width: 100%;
+    margin: 1rem 0 1.5rem;
   }
 }
 
@@ -1882,7 +1929,6 @@ textarea.custom-input.with-outline,
   border: 1px solid #b2b2b2;
   border-radius: 3px;
   margin-top: 1.5rem;
-  margin-bottom: 2rem;
   height: 100%;
 }
 
@@ -1905,19 +1951,18 @@ textarea.custom-input.with-outline,
   height: 100%;
 }
 
+.details-container .details-item .details-box .box-content .box-text:not(.n-padding) {
+  padding-right: 2.5rem;
+}
+
 .details-container .details-item .details-box .box-content .edit {
   position: absolute;
   right: 0.75rem;
   bottom: 0.5rem;
-}
-
-@media screen and (max-width: 991px) {
-  .details-container .details-item .details-box .box-content .edit {
-    top: 50%;
-    bottom: unset;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
+  top: 50%;
+  bottom: unset;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .details-container .details-item .details-box.primary .box-title {
@@ -2580,7 +2625,7 @@ textarea.custom-input.with-outline,
 }
 
 .uploading .upload-head .file-info .file-img {
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 .uploading .upload-body {
