@@ -1822,7 +1822,13 @@
         </div>
         <div class="custom-form-control mt-4">
           <div class="with-icon">
-            <input class="custom-input" type="time" placeholder="Choose Time" />
+            <input
+              class="custom-input timepicker"
+              type="text"
+              placeholder="Choose Time"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+            />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="17"
@@ -2246,7 +2252,9 @@
 
     <div class="slider_text_cont">
       <div class="slider_text_cont_p1">
-        <a class="with-border" href="#"><img src="./assets/images/message.svg" /></a>
+        <a class="with-border" href="#"
+          ><img src="./assets/images/message.svg"
+        /></a>
         <a href="#"><img src="./assets/images/call.svg" /></a>
       </div>
     </div>

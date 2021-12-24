@@ -37,7 +37,7 @@ $("[data-target='#exampleModal6']").click(function () {
   $("#right-menu-login").removeClass("d-none");
 });
 
-$("input[type='time']").timepicki({ reset: true });
+$(".timepicker").timepicki({ reset: true });
 
 $("#signup-btn").click(function () {
   openOverlay();
