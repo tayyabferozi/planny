@@ -239,8 +239,8 @@ table.custom-table tr td {
 
 @media screen and (max-width: 575px) {
   #navbar.blogs-navbar {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
@@ -1356,8 +1356,8 @@ table.custom-table tr td {
 
 @media screen and (max-width: 575px) {
   #blogs.page-container {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
   }
 }
 
@@ -1393,7 +1393,7 @@ table.custom-table tr td {
   width: 195px;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1100px) {
   #blogs .blog-posts {
     padding-bottom: 5rem;
   }
@@ -1501,33 +1501,40 @@ table.custom-table tr td {
   font-weight: 600;
 }
 
+#refer-and-invest .btn {
+  height: 56px;
+  padding: 0 3.25rem;
+}
+
+@media screen and (max-width: 1366px) {
+  #refer-and-invest .btn {
+    height: 40px;
+    padding: 0 2rem;
+  }
+}
+
 #refer-and-invest .title img {
   display: none;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 769px) {
+  #refer-and-invest .title {
+    padding-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
   #refer-and-invest .title {
     position: relative;
-    margin-bottom: 1rem;
-    padding-left: 0.5rem;
     font-size: 20px;
-  }
-  #refer-and-invest .title::after {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 100vw;
-    background: #e6e7e8;
-    left: -1.75rem;
-    bottom: -1rem;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
   }
   #refer-and-invest .title img {
     display: block;
     position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    left: -1.5rem;
+    top: 0.125rem;
+    left: -0.5rem;
   }
 }
 
@@ -1540,7 +1547,7 @@ table.custom-table tr td {
   padding: 1rem 0;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 575px) {
   #refer-and-invest .tabs {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1578,10 +1585,10 @@ table.custom-table tr td {
 }
 
 #refer-and-invest .cards {
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 992px) {
   #refer-and-invest .cards {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1604,21 +1611,21 @@ table.custom-table tr td {
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 575px) {
   #refer-and-invest .cards .align-items-sm-start {
     -webkit-box-align: start !important;
         -ms-flex-align: start !important;
             align-items: flex-start !important;
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
   }
   #refer-and-invest .cards .align-items-sm-start .mb-sm {
     margin-bottom: 1.5rem;
   }
 }
 
-@media screen and (max-width: 650px) and (max-width: 373px) {
+@media screen and (max-width: 575px) and (max-width: 373px) {
   #refer-and-invest .cards .align-items-sm-start .mt-sm {
     margin-top: 1.5rem;
   }
@@ -1641,7 +1648,7 @@ table.custom-table tr td {
   padding-top: 6rem;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 992px) {
   #refer-and-invest .cards .card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1657,43 +1664,68 @@ table.custom-table tr td {
   }
 }
 
+@media screen and (max-width: 991px) {
+  #refer-and-invest .cards .card {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media screen and (max-width: 1460px) and (min-width: 1367px) {
   #refer-and-invest .cards .card {
     width: 33%;
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
+  #refer-and-invest .cards .card {
+    height: 260px;
+  }
+}
+
+@media screen and (max-width: 575px) {
   #refer-and-invest .cards .card {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  #refer-and-invest .cards .card {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  #refer-and-invest .cards .card {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
     display: none;
+    height: 500px;
   }
   #refer-and-invest .cards .card.active {
     display: block;
   }
 }
 
+@media screen and (max-width: 1250px) and (min-width: 992px) {
+  #refer-and-invest .cards .card {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 #refer-and-invest .cards .card .img {
-  width: 100%;
   text-align: center;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (min-width: 992px) {
+  #refer-and-invest .cards .card .img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #refer-and-invest .cards .card .img {
+    margin-right: 6.5%;
+  }
+}
+
+@media screen and (max-width: 575px) {
   #refer-and-invest .cards .card .img {
     width: 100%;
     text-align: center;
@@ -1705,21 +1737,15 @@ table.custom-table tr td {
   width: 83px;
 }
 
-@media screen and (min-width: 769px) {
-  #refer-and-invest .cards .card .img img {
-    width: 120px;
-  }
-}
-
 @media screen and (min-width: 1367px) {
   #refer-and-invest .cards .card .img img {
-    width: 180px;
+    width: 198px;
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1366px) {
   #refer-and-invest .cards .card .img img {
-    width: 127.21px;
+    width: 120px;
   }
 }
 
@@ -1736,7 +1762,25 @@ table.custom-table tr td {
   width: 82%;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (max-width: 991px) {
+  #refer-and-invest .cards .card .text {
+    max-width: 550px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #refer-and-invest .cards .card .text {
+    max-width: 59.5%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #refer-and-invest .cards .card .text {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
   #refer-and-invest .cards .card .text {
     width: 100%;
     -ms-flex-wrap: wrap;
@@ -1745,17 +1789,15 @@ table.custom-table tr td {
   }
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1366px) and (min-width: 992px) {
   #refer-and-invest .cards .card .text {
     margin-top: 4rem;
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 575px) {
   #refer-and-invest .cards .card .text {
     width: 100%;
-    text-align: center;
-    margin-bottom: 4rem;
   }
 }
 
@@ -1766,14 +1808,9 @@ table.custom-table tr td {
   }
 }
 
-#refer-and-invest .cards .card .text .sub-section {
-  margin-right: 2rem;
-}
-
 @media screen and (min-width: 769px) {
   #refer-and-invest .cards .card .text .sub-section {
     min-width: unset;
-    margin-right: 0;
   }
 }
 
@@ -1785,12 +1822,6 @@ table.custom-table tr td {
   }
 }
 
-@media screen and (max-width: 650px) {
-  #refer-and-invest .cards .card .text .sub-section {
-    margin-right: 1rem;
-  }
-}
-
 @media screen and (max-width: 991px) {
   #refer-and-invest .cards .card .text .sub-section {
     -webkit-box-flex: 0;
@@ -1799,9 +1830,27 @@ table.custom-table tr td {
   }
 }
 
-@media screen and (max-width: 1669px) {
+@media screen and (max-width: 1809px) {
   #refer-and-invest .cards .card .text .sub-section .small-text {
-    min-height: 40px;
+    min-height: 46px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #refer-and-invest .cards .card .text .sub-section .small-text.other-card {
+    min-height: unset;
+  }
+}
+
+@media screen and (max-width: 1809px) and (min-width: 1367px) {
+  #refer-and-invest .cards .card .text .sub-section .small-text {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 1150px) and (min-width: 992px) {
+  #refer-and-invest .cards .card .text .sub-section .small-text {
+    font-size: 12px !important;
   }
 }
 
@@ -1811,7 +1860,26 @@ table.custom-table tr td {
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (max-width: 575px) {
+  #refer-and-invest .cards .card .text .sub-section .small-text {
+    margin-bottom: 0 !important;
+    min-height: 40px;
+  }
+}
+
+@media screen and (max-width: 1809px) and (min-width: 1367px) {
+  #refer-and-invest .cards .card .text .sub-section .big-text {
+    font-size: 44px !important;
+  }
+}
+
+@media screen and (max-width: 1150px) and (min-width: 992px) {
+  #refer-and-invest .cards .card .text .sub-section .big-text {
+    font-size: 36px !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
   #refer-and-invest .cards .card .text .sub-section .big-text {
     margin-top: 0 !important;
   }
@@ -1823,17 +1891,23 @@ table.custom-table tr td {
 
 @media screen and (min-width: 769px) {
   #refer-and-invest .cards .card .text .sub-section:nth-child(1) {
-    min-width: 76px;
+    min-width: 86px;
   }
 }
 
-@media screen and (min-width: 1670px) {
+@media screen and (min-width: 1810px) {
   #refer-and-invest .cards .card .text .sub-section:nth-child(1) {
-    min-width: 148px;
+    min-width: 166px;
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (max-width: 1366px) {
+  #refer-and-invest .cards .card .text .sub-section:nth-child(1) {
+    min-width: 67px;
+  }
+}
+
+@media screen and (min-width: 992px) {
   #refer-and-invest .cards .card .text .sub-section:nth-child(4) {
     min-width: 100%;
     display: -webkit-box;
@@ -1842,7 +1916,7 @@ table.custom-table tr td {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 6rem;
+    margin-top: 6.25rem;
   }
 }
 
@@ -1851,33 +1925,37 @@ table.custom-table tr td {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
             flex-grow: 0;
-    margin-top: 3rem;
+    margin-top: 3.5rem;
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 768px) {
   #refer-and-invest .cards .card .text .sub-section:nth-child(4) {
     width: 100%;
-    margin-left: 2rem;
     margin-top: 1.5rem;
   }
 }
 
-@media screen and (max-width: 991px) and (max-width: 650px) {
+@media screen and (max-width: 575px) {
   #refer-and-invest .cards .card .text .sub-section:nth-child(4) {
-    margin-left: 0;
-    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 6.5rem;
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 768px) {
   #refer-and-invest .cards .card .text .sub-section:nth-child(4) .btn {
     width: 100%;
-    max-width: 296px;
+    max-width: 328px;
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 575px) {
   #refer-and-invest .cards .card .text.refer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1885,17 +1963,7 @@ table.custom-table tr td {
   }
 }
 
-#refer-and-invest .cards .card .text.refer.last {
-  max-width: 800px;
-}
-
-@media screen and (max-width: 1366px) {
-  #refer-and-invest .cards .card .text.refer.last {
-    max-width: 570px;
-  }
-}
-
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 575px) {
   #refer-and-invest .cards .card .text.refer.last {
     text-align: left;
   }
@@ -1905,14 +1973,36 @@ table.custom-table tr td {
   width: 100%;
 }
 
-#refer-and-invest .cards .card .text.refer .referral {
+@media screen and (max-width: 991px) and (min-width: 769px) {
+  #refer-and-invest .cards .card .text.refer .form {
+    padding-right: 1.5rem;
+  }
+}
+
+#refer-and-invest .cards .card .text.refer .referral,
+#refer-and-invest .cards .card .text.refer .form {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
 }
 
-@media screen and (min-width: 769px) {
-  #refer-and-invest .cards .card .text.refer .referral {
+@media screen and (max-width: 991px) and (min-width: 769px) {
+  #refer-and-invest .cards .card .text.refer .referral,
+  #refer-and-invest .cards .card .text.refer .form {
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #refer-and-invest .cards .card .text.refer .referral,
+  #refer-and-invest .cards .card .text.refer .form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #refer-and-invest .cards .card .text.refer .referral,
+  #refer-and-invest .cards .card .text.refer .form {
     width: 100%;
   }
 }
@@ -1925,24 +2015,26 @@ table.custom-table tr td {
   padding: 0.5rem 1rem;
   color: #ffc32c;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 #refer-and-invest .cards .card .text.refer .copy img.copyer {
   position: absolute;
   right: 0.5rem;
-}
-
-@media screen and (max-width: 991px) {
-  #refer-and-invest .cards .card .text.refer .sub-section {
-    margin-top: 1rem;
-    margin-left: 2rem;
-    width: 100%;
-    max-width: 296px;
-  }
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 #refer-and-invest .cards .card .text.refer .sub-section.social-sub-section {
   width: 100%;
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+  #refer-and-invest .cards .card .text.refer .sub-section.social-sub-section {
+    width: 48%;
+    margin-left: 0.75rem;
+  }
 }
 
 @media screen and (min-width: 1367px) {
@@ -1984,16 +2076,29 @@ table.custom-table tr td {
   margin-right: 1.25rem;
 }
 
+#refer-and-invest .cards .card .text.refer .social a:last-child {
+  margin-right: 0;
+}
+
 @media screen and (max-width: 1366px) {
   #refer-and-invest .cards .card .text.refer .social a {
     width: 24px;
     margin-right: 0.975rem;
   }
-  #refer-and-invest .cards .card .text.refer .social a:last-child {
-    width: 42px;
-  }
   #refer-and-invest .cards .card .text.refer .social a img {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #refer-and-invest .cards .card .text.refer .social a {
+    width: 32px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #refer-and-invest .cards .card .text.refer .social a {
+    width: 24px;
   }
 }
 
@@ -2001,62 +2106,100 @@ table.custom-table tr td {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  margin-top: 2.25rem;
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 991px) {
   #refer-and-invest .cards .card .text .reminder {
     max-width: unset !important;
-    -webkit-box-pack: start !important;
-        -ms-flex-pack: start !important;
-            justify-content: flex-start !important;
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
   }
   #refer-and-invest .cards .card .text .reminder .btn {
     margin-top: 2rem;
     width: 100%;
-    max-width: 336px;
+    max-width: 174px;
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
+  #refer-and-invest .cards .card .text .reminder {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    margin-top: 1.5rem;
+  }
+  #refer-and-invest .cards .card .text .reminder .btn {
+    margin-top: 0;
+    max-width: 328px;
+  }
+}
+
+@media screen and (max-width: 575px) {
   #refer-and-invest .cards .card .text .reminder {
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
+    margin-top: 1.5rem;
   }
   #refer-and-invest .cards .card .text .reminder .btn {
     max-width: 300px;
   }
 }
 
-#refer-and-invest .cards .card .text .reminder .btn {
-  width: 254px;
-}
-
-@media screen and (max-width: 1366px) {
-  #refer-and-invest .cards .card .text .reminder .btn {
-    width: 174px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .transactions-sidenav-right {
-    padding-left: 5rem !important;
-    padding-right: 5rem !important;
-  }
-}
-
 @media screen and (max-width: 768px) {
-  .transactions-sidenav-right {
+  .transactions-sidenav-right .top-fixed-bar,
+  .transactions-right .top-fixed-bar {
     padding-left: 3rem !important;
     padding-right: 3rem !important;
   }
 }
 
 @media screen and (max-width: 575px) {
-  .transactions-sidenav-right {
+  .transactions-sidenav-right .top-fixed-bar,
+  .transactions-right .top-fixed-bar {
     padding-right: 1.5rem !important;
   }
+}
+
+.transactions-sidenav-right .lower-content,
+.transactions-right .lower-content {
+  padding-top: 0 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .transactions-sidenav-right .lower-content,
+  .transactions-right .lower-content {
+    padding-top: 106px !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .transactions-sidenav-right,
+  .transactions-right {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .transactions-sidenav-right,
+  .transactions-right {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .transactions-sidenav-right,
+  .transactions-right {
+    padding-right: 1.5rem !important;
+  }
+}
+
+.transactions-right .title .back {
+  top: 1rem !important;
 }
 
 #transactions .title {
@@ -2081,7 +2224,7 @@ table.custom-table tr td {
     position: absolute;
     width: 100vw;
     height: 1px;
-    background-color: #e6e7e8;
+    border: #e6e7e8;
   }
 }
 
@@ -2093,8 +2236,8 @@ table.custom-table tr td {
 
 #transactions .title img.back {
   position: absolute;
-  top: 0.25rem;
-  left: -2rem;
+  top: 1.75rem;
+  left: 1rem;
 }
 
 @media screen and (min-width: 769px) {
@@ -2105,7 +2248,7 @@ table.custom-table tr td {
 
 @media screen and (max-width: 575px) {
   #transactions .title img.back {
-    top: 0.125rem;
+    top: 1.5rem;
   }
 }
 
@@ -2391,21 +2534,17 @@ table.custom-table tr td {
 
 #transaction h2 .back {
   position: absolute;
+  left: -2rem;
   top: 50%;
-  left: -1.75rem;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  display: none;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 768px) {
   #transaction h2 .back {
-    left: -1.25rem;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  #transaction h2 .back {
-    left: -1.25rem;
+    top: 2.5rem;
+    display: block;
   }
 }
 
@@ -2415,13 +2554,31 @@ table.custom-table tr td {
   position: absolute;
   width: 100%;
   height: 1px;
-  background-color: #e6e7e8;
+  border-bottom: 1px solid #e6e7e8;
   bottom: -2rem;
 }
 
 @media screen and (max-width: 1366px) {
   #transaction h2.title::after {
     bottom: -1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #transaction h2.title::after {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #transaction .sub {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #transaction .transaction {
+    margin-left: -1.75rem;
   }
 }
 
@@ -2607,7 +2764,7 @@ table.custom-table tr td {
           transform: translateY(-50%);
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 768px) {
   #profile .my-profile .back {
     position: static;
     -webkit-transform: translateY(0);
@@ -2719,17 +2876,12 @@ table.custom-table tr td {
   }
 }
 
-#notifications {
-  padding-left: 7rem;
-  padding-right: 7rem;
-  position: relative;
+.notifications-sidenav-right .lower-content {
+  padding-top: 70px !important;
 }
 
-@media screen and (max-width: 1366px) {
-  #notifications {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
+#notifications {
+  position: relative;
 }
 
 @media screen and (max-width: 991px) {
@@ -2875,7 +3027,7 @@ table.custom-table tr td {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1366px) {
   #notifications .body .item svg {
     width: 8px;
     height: 8px;

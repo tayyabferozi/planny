@@ -65,6 +65,10 @@ p {
   font-size: 52px !important;
 }
 
+.fs-48 {
+  font-size: 48px !important;
+}
+
 .fs-24 {
   font-size: 24px !important;
 }
@@ -222,7 +226,7 @@ p {
 }
 
 .fw-600 {
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 
 .fw-700 {
@@ -296,6 +300,12 @@ p {
   }
 }
 
+.h-768-24 {
+  @media screen and (max-width: 768px) {
+    height: 24px !important;
+  }
+}
+
 .d-1366-block {
   @media screen and (min-width: 1367px) {
     display: block !important;
@@ -331,10 +341,19 @@ div.shadowy {
   height: 1px;
   box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
   margin-left: -10rem;
+  max-width: 2000px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
     box-shadow: none;
     border-bottom: 1px solid $color30;
+    display: none;
   }
 }
 
@@ -367,6 +386,13 @@ div.shadowy {
       display: block !important;
       padding-left: 68px !important;
       padding-right: 68px !important;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    &.page-container.explore.bottom.d-block.d-lg-none.pb-5.mt-5.mb-5.blogs {
+      padding-left: 14px !important;
+      padding-right: 14px !important;
     }
   }
 
@@ -443,10 +469,10 @@ div.shadowy {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-top: 0.75rem;
 
         .date {
           font-size: 12px;
-          margin-top: 0.75rem;
         }
 
         .time {
@@ -1106,7 +1132,7 @@ div.shadowy {
 }
 
 .btn-outlined {
-  border-radius: 7px;
+  border-radius: 4px;
   border: 1px solid $color2;
   padding: 0.5rem 1rem;
 
@@ -2168,22 +2194,19 @@ textarea.custom-input,
   }
 
   &.refer-and-invest-right {
-    @media screen and (max-width: 991px) and (min-width: 768px) {
-      padding-left: 2.5rem;
-      padding-right: 2.5rem;
+    @media screen and (max-width: 991px) {
+      padding-left: 4.75rem;
+      padding-right: 4.75rem;
     }
 
-    @media screen and (max-width: 767px) {
-      padding-left: 1rem;
-      padding-right: 1rem;
+    @media screen and (max-width: 768px) {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
 
-      .title {
-        padding-left: 2rem;
-
-        img {
-          left: 0;
-        }
-      }
+    @media screen and (max-width: 575px) {
+      padding-left: 1.125rem;
+      padding-right: 1.125rem;
     }
   }
 
@@ -2194,19 +2217,26 @@ textarea.custom-input,
   }
 
   .top-fixed-bar {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 1;
-    background-color: #fff;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 1.25rem;
+    @media screen and (max-width: 768px) {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: 1;
+      background-color: #fff;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 1.25rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #eeeeee;
+    }
   }
 
   .lower-content {
-    padding-top: 58px;
+    @media screen and (max-width: 768px) {
+      padding-top: 58px;
+    }
   }
 }
 

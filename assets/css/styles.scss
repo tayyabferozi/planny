@@ -231,8 +231,8 @@ table.custom-table {
     }
 
     @media screen and (max-width: 575px) {
-      padding-left: 1rem;
-      padding-right: 1rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
     }
   }
 
@@ -1239,8 +1239,8 @@ table.custom-table {
     }
 
     @media screen and (max-width: 575px) {
-      padding-left: 1rem !important;
-      padding-right: 1rem !important;
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
     }
   }
 
@@ -1275,7 +1275,7 @@ table.custom-table {
   }
 
   .blog-posts {
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 1100px) {
       padding-bottom: 5rem;
     }
 
@@ -1363,33 +1363,36 @@ table.custom-table {
 // ***********************************************************************************************************************************
 
 #refer-and-invest {
+  .btn {
+    height: 56px;
+    padding: 0 3.25rem;
+
+    @media screen and (max-width: 1366px) {
+      height: 40px;
+      padding: 0 2rem;
+    }
+  }
+
   .title {
     img {
       display: none;
     }
 
-    @media screen and (max-width: 991px) {
-      position: relative;
-      margin-bottom: 1rem;
-      padding-left: 0.5rem;
-      font-size: 20px;
+    @media screen and (min-width: 769px) {
+      padding-top: 1.5rem;
+    }
 
-      &::after {
-        content: "";
-        position: absolute;
-        height: 1px;
-        width: 100vw;
-        background: $color30;
-        left: -1.75rem;
-        bottom: -1rem;
-      }
+    @media screen and (max-width: 768px) {
+      position: relative;
+      font-size: 20px;
+      padding-left: 1.75rem;
+      padding-right: 1.75rem;
 
       img {
         display: block;
         position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: -1.5rem;
+        top: 0.125rem;
+        left: -0.5rem;
       }
     }
   }
@@ -1400,7 +1403,7 @@ table.custom-table {
     border-bottom: 1px solid $color30;
     padding: 1rem 0;
 
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 575px) {
       display: flex;
     }
 
@@ -1433,9 +1436,9 @@ table.custom-table {
   }
 
   .cards {
-    margin-top: 4rem;
+    margin-top: 3rem;
 
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 992px) {
       display: flex;
       justify-content: space-between;
     }
@@ -1449,9 +1452,9 @@ table.custom-table {
     }
 
     .align-items-sm-start {
-      @media screen and (max-width: 650px) {
+      @media screen and (max-width: 575px) {
         align-items: flex-start !important;
-        justify-content: center !important;
+        justify-content: space-between !important;
 
         .mb-sm {
           margin-bottom: 1.5rem;
@@ -1475,7 +1478,7 @@ table.custom-table {
       border-radius: 20px;
       padding-top: 6rem;
 
-      @media screen and (min-width: 769px) {
+      @media screen and (min-width: 992px) {
         flex-direction: column;
         width: 32.5%;
       }
@@ -1484,34 +1487,51 @@ table.custom-table {
         padding-top: 4rem;
       }
 
+      @media screen and (max-width: 991px) {
+        padding-top: 1.75rem;
+        padding-bottom: 1.75rem;
+        justify-content: center;
+      }
+
       @media screen and (max-width: 1460px) and (min-width: 1367px) {
         width: 33%;
       }
 
-      @media screen and (max-width: 650px) {
+      @media screen and (max-width: 768px) {
+        height: 260px;
+      }
+
+      @media screen and (max-width: 575px) {
         flex-wrap: wrap;
-      }
-
-      @media screen and (max-width: 1200px) {
-        padding-left: 2rem;
-        padding-right: 2rem;
-      }
-
-      @media screen and (max-width: 650px) {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
         padding-left: 1rem;
         padding-right: 1rem;
         display: none;
+        height: 500px;
 
         &.active {
           display: block;
         }
       }
 
+      @media screen and (max-width: 1250px) and (min-width: 992px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
       .img {
-        width: 100%;
         text-align: center;
 
-        @media screen and (max-width: 650px) {
+        @media screen and (min-width: 992px) {
+          width: 100%;
+        }
+
+        @media screen and (max-width: 991px) {
+          margin-right: 6.5%;
+        }
+
+        @media screen and (max-width: 575px) {
           width: 100%;
           text-align: center;
           margin-bottom: 4rem;
@@ -1520,16 +1540,12 @@ table.custom-table {
         img {
           width: 83px;
 
-          @media screen and (min-width: 769px) {
-            width: 120px;
-          }
-
           @media screen and (min-width: 1367px) {
-            width: 180px;
+            width: 198px;
           }
 
-          @media screen and (max-width: 991px) {
-            width: 127.21px;
+          @media screen and (max-width: 1366px) {
+            width: 120px;
           }
         }
       }
@@ -1540,20 +1556,30 @@ table.custom-table {
         align-items: center;
         width: 82%;
 
-        @media screen and (min-width: 769px) {
+        @media screen and (max-width: 991px) {
+          max-width: 550px;
+        }
+
+        @media screen and (max-width: 768px) {
+          max-width: 59.5%;
+        }
+
+        @media screen and (max-width: 575px) {
+          max-width: 100%;
+        }
+
+        @media screen and (min-width: 992px) {
           width: 100%;
           flex-wrap: wrap;
           margin-top: 6rem;
         }
 
-        @media screen and (max-width: 1366px) {
+        @media screen and (max-width: 1366px) and (min-width: 992px) {
           margin-top: 4rem;
         }
 
-        @media screen and (max-width: 650px) {
+        @media screen and (max-width: 575px) {
           width: 100%;
-          text-align: center;
-          margin-bottom: 4rem;
         }
 
         @media screen and (max-width: 991px) {
@@ -1561,19 +1587,12 @@ table.custom-table {
         }
 
         .sub-section {
-          margin-right: 2rem;
-
           @media screen and (min-width: 769px) {
             min-width: unset;
-            margin-right: 0;
           }
 
           @media screen and (max-width: 768px) {
             flex-grow: 1;
-          }
-
-          @media screen and (max-width: 650px) {
-            margin-right: 1rem;
           }
 
           @media screen and (max-width: 991px) {
@@ -1581,17 +1600,44 @@ table.custom-table {
           }
 
           .small-text {
-            @media screen and (max-width: 1669px) {
-              min-height: 40px;
+            @media screen and (max-width: 1809px) {
+              min-height: 46px;
+            }
+
+            &.other-card {
+              @media screen and (max-width: 991px) {
+                min-height: unset;
+              }
+            }
+
+            @media screen and (max-width: 1809px) and (min-width: 1367px) {
+              font-size: 16px !important;
+            }
+
+            @media screen and (max-width: 1150px) and (min-width: 992px) {
+              font-size: 12px !important;
             }
 
             @media screen and (max-width: 1366px) {
               min-height: 36px;
             }
+
+            @media screen and (max-width: 575px) {
+              margin-bottom: 0 !important;
+              min-height: 40px;
+            }
           }
 
           .big-text {
-            @media screen and (min-width: 1366px) {
+            @media screen and (max-width: 1809px) and (min-width: 1367px) {
+              font-size: 44px !important;
+            }
+
+            @media screen and (max-width: 1150px) and (min-width: 992px) {
+              font-size: 36px !important;
+            }
+
+            @media screen and (max-width: 575px) {
               margin-top: 0 !important;
             }
           }
@@ -1600,70 +1646,83 @@ table.custom-table {
             width: 10%;
 
             @media screen and (min-width: 769px) {
-              min-width: 76px;
+              min-width: 86px;
             }
 
-            @media screen and (min-width: 1670px) {
-              min-width: 148px;
+            @media screen and (min-width: 1810px) {
+              min-width: 166px;
+            }
+
+            @media screen and (max-width: 1366px) {
+              min-width: 67px;
             }
           }
 
           &:nth-child(4) {
-            @media screen and (min-width: 769px) {
+            @media screen and (min-width: 992px) {
               min-width: 100%;
               display: flex;
               justify-content: center;
-              margin-top: 6rem;
+              margin-top: 6.25rem;
             }
 
             @media screen and (max-width: 1366px) {
               flex-grow: 0;
-              margin-top: 3rem;
+              margin-top: 3.5rem;
             }
 
-            @media screen and (max-width: 991px) {
+            @media screen and (max-width: 768px) {
               width: 100%;
-              margin-left: 2rem;
               margin-top: 1.5rem;
+            }
 
-              @media screen and (max-width: 650px) {
-                margin-left: 0;
-                margin-right: 0;
-              }
+            @media screen and (max-width: 575px) {
+              display: flex;
+              justify-content: center;
+              margin-top: 6.5rem;
+            }
 
-              .btn {
+            .btn {
+              @media screen and (max-width: 768px) {
                 width: 100%;
-                max-width: 296px;
+                max-width: 328px;
               }
             }
           }
         }
 
         &.refer {
-          @media screen and (max-width: 650px) {
+          @media screen and (max-width: 575px) {
             justify-content: center;
           }
 
           &.last {
-            max-width: 800px;
-
-            @media screen and (max-width: 1366px) {
-              max-width: 570px;
-            }
-
-            @media screen and (max-width: 650px) {
+            @media screen and (max-width: 575px) {
               text-align: left;
             }
           }
 
           .form {
             width: 100%;
+
+            @media screen and (max-width: 991px) and (min-width: 769px) {
+              padding-right: 1.5rem;
+            }
           }
 
-          .referral {
+          .referral,
+          .form {
             flex-grow: 0;
 
-            @media screen and (min-width: 769px) {
+            @media screen and (max-width: 991px) and (min-width: 769px) {
+              width: 48%;
+            }
+
+            @media screen and (min-width: 992px) {
+              width: 100%;
+            }
+
+            @media screen and (max-width: 768px) {
               width: 100%;
             }
           }
@@ -1676,23 +1735,24 @@ table.custom-table {
             padding: 0.5rem 1rem;
             color: $color1;
             cursor: pointer;
+            border-radius: 4px;
 
             img.copyer {
               position: absolute;
               right: 0.5rem;
+              top: 50%;
+              transform: translateY(-50%);
             }
           }
 
           .sub-section {
-            @media screen and (max-width: 991px) {
-              margin-top: 1rem;
-              margin-left: 2rem;
-              width: 100%;
-              max-width: 296px;
-            }
-
             &.social-sub-section {
               width: 100%;
+
+              @media screen and (max-width: 992px) and (min-width: 769px) {
+                width: 48%;
+                margin-left: 0.75rem;
+              }
 
               @media screen and (min-width: 1367px) {
                 margin-top: 5.5rem;
@@ -1724,17 +1784,25 @@ table.custom-table {
             a {
               margin-right: 1.25rem;
 
+              &:last-child {
+                margin-right: 0;
+              }
+
               @media screen and (max-width: 1366px) {
                 width: 24px;
                 margin-right: 0.975rem;
 
-                &:last-child {
-                  width: 42px;
-                }
-
                 img {
                   width: 100%;
                 }
+              }
+
+              @media screen and (max-width: 768px) {
+                width: 32px;
+              }
+
+              @media screen and (max-width: 650px) {
+                width: 24px;
               }
             }
           }
@@ -1742,32 +1810,35 @@ table.custom-table {
 
         .reminder {
           flex-grow: 1;
-          margin-top: 2.25rem;
+          margin-top: 2rem;
 
           @media screen and (max-width: 991px) {
             max-width: unset !important;
-            justify-content: flex-start !important;
+            justify-content: flex-end !important;
 
             .btn {
               margin-top: 2rem;
               width: 100%;
-              max-width: 336px;
+              max-width: 174px;
             }
           }
 
-          @media screen and (max-width: 650px) {
+          @media screen and (max-width: 768px) {
+            justify-content: flex-start !important;
+            margin-top: 1.5rem;
+
+            .btn {
+              margin-top: 0;
+              max-width: 328px;
+            }
+          }
+
+          @media screen and (max-width: 575px) {
             justify-content: center !important;
+            margin-top: 1.5rem;
 
             .btn {
               max-width: 300px;
-            }
-          }
-
-          .btn {
-            width: 254px;
-
-            @media screen and (max-width: 1366px) {
-              width: 174px;
             }
           }
         }
@@ -1784,7 +1855,29 @@ table.custom-table {
 // ***********************************************************************************************************************************
 // ***********************************************************************************************************************************
 
-.transactions-sidenav-right {
+.transactions-sidenav-right,
+.transactions-right {
+  .top-fixed-bar {
+    @media screen and (max-width: 768px) {
+      padding-left: 3rem !important;
+      padding-right: 3rem !important;
+    }
+
+    @media screen and (max-width: 575px) {
+      padding-right: 1.5rem !important;
+    }
+  }
+  .lower-content {
+    padding-top: 0 !important;
+
+    @media screen and (max-width: 768px) {
+      padding-top: 106px !important;
+    }
+  }
+}
+
+.transactions-sidenav-right,
+.transactions-right {
   @media screen and (max-width: 991px) {
     padding-left: 5rem !important;
     padding-right: 5rem !important;
@@ -1797,6 +1890,14 @@ table.custom-table {
 
   @media screen and (max-width: 575px) {
     padding-right: 1.5rem !important;
+  }
+}
+
+.transactions-right {
+  .title {
+    .back {
+      top: 1rem !important;
+    }
   }
 }
 
@@ -1819,7 +1920,7 @@ table.custom-table {
         position: absolute;
         width: 100vw;
         height: 1px;
-        background-color: $color30;
+        border: $color30;
 
         @media screen and (min-width: 769px) {
           display: none;
@@ -1829,15 +1930,15 @@ table.custom-table {
 
     img.back {
       position: absolute;
-      top: 0.25rem;
-      left: -2rem;
+      top: 1.75rem;
+      left: 1rem;
 
       @media screen and (min-width: 769px) {
         display: none;
       }
 
       @media screen and (max-width: 575px) {
-        top: 0.125rem;
+        top: 1.5rem;
       }
     }
   }
@@ -2067,18 +2168,21 @@ table.custom-table {
   h2 {
     position: relative;
 
+    &.title {
+      @media screen and (max-width: 767px) {
+      }
+    }
+
     .back {
       position: absolute;
+      left: -2rem;
       top: 50%;
-      left: -1.75rem;
       transform: translateY(-50%);
+      display: none;
 
-      @media screen and (max-width: 1023px) {
-        left: -1.25rem;
-      }
-
-      @media screen and (max-width: 575px) {
-        left: -1.25rem;
+      @media screen and (max-width: 768px) {
+        top: 2.5rem;
+        display: block;
       }
     }
 
@@ -2088,16 +2192,33 @@ table.custom-table {
       position: absolute;
       width: 100%;
       height: 1px;
-      background-color: $color30;
+      border-bottom: 1px solid $color30;
       bottom: -2rem;
 
       @media screen and (max-width: 1366px) {
         bottom: -1.5rem;
       }
+
+      @media screen and (max-width: 768px) {
+        // left: -2.75rem;
+        // width: 100vw;
+        // bottom: -2.25rem;
+        display: none;
+      }
+    }
+  }
+
+  .sub {
+    @media screen and (min-width: 769px) {
+      display: none;
     }
   }
 
   .transaction {
+    @media screen and (max-width: 575px) {
+      margin-left: -1.75rem;
+    }
+
     .transaction-head {
       display: flex;
       justify-content: space-between;
@@ -2257,7 +2378,7 @@ table.custom-table {
       top: 50%;
       transform: translateY(-50%);
 
-      @media screen and (max-width: 575px) {
+      @media screen and (max-width: 768px) {
         position: static;
         transform: translateY(0);
       }
@@ -2353,15 +2474,17 @@ table.custom-table {
 // ***********************************************************************************************************************************
 // ***********************************************************************************************************************************
 
-#notifications {
-  padding-left: 7rem;
-  padding-right: 7rem;
-  position: relative;
-
-  @media screen and (max-width: 1366px) {
-    padding-left: 5rem;
-    padding-right: 5rem;
+.notifications-sidenav-right {
+  .top-fixed-bar {
   }
+
+  .lower-content {
+    padding-top: 70px !important;
+  }
+}
+
+#notifications {
+  position: relative;
 
   @media screen and (max-width: 991px) {
     padding-left: 0;
@@ -2471,7 +2594,7 @@ table.custom-table {
           top: 1.25rem;
         }
 
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 1366px) {
           width: 8px;
           height: 8px;
           left: -1.25rem;
