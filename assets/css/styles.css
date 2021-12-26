@@ -1140,6 +1140,14 @@ table.custom-table tr td {
   }
 }
 
+@media screen and (max-width: 575px) {
+  #details .custom-modal,
+  #uploading .custom-modal,
+  #uploader .custom-modal {
+    padding-top: calc(2rem + 64px);
+  }
+}
+
 @media screen and (max-width: 768px) {
   #details .custom-modal .last-child:not(.desktop),
   #uploading .custom-modal .last-child:not(.desktop),
@@ -1189,6 +1197,7 @@ table.custom-table tr td {
   #uploading .custom-modal .close,
   #uploader .custom-modal .close {
     right: 1.25rem;
+    top: calc(2rem + 64px);
   }
 }
 

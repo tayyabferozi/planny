@@ -1032,6 +1032,10 @@ table.custom-table {
       border-top-right-radius: 0;
     }
 
+    @media screen and (max-width: 575px) {
+      padding-top: calc(2rem + 64px);
+    }
+
     .last-child {
       &:not(.desktop) {
         @media screen and (max-width: 768px) {
@@ -1066,6 +1070,7 @@ table.custom-table {
 
       @media screen and (max-width: 575px) {
         right: 1.25rem;
+        top: calc(2rem + 64px);
       }
     }
 
