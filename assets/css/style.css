@@ -5,8 +5,8 @@
   padding: 0px;
   box-sizing: border-box;
   outline: none;
-  color: #31353f;
 }
+
 .planyybody {
   margin: 0px;
   padding: 0px;
@@ -471,10 +471,10 @@ select.list-dt:focus {
   background: #31353f !important;
 }
 #progressbar .active {
-  color: #000000;
+  color: #31353f;
 }
 #progressbar .active.done {
-  color: #000000;
+  color: #31353f;
 }
 #progressbar li {
   list-style-type: none;
@@ -1382,6 +1382,11 @@ select.list-dt:focus {
 }
 .planyy_steps_data fieldset input.btns1.st1 {
   width: 280px !important;
+}
+@media screen and (max-width: 375px) {
+  .planyy_steps_data fieldset input.btns1 {
+    width: 100% !important;
+  }
 }
 .planyy_steps_data fieldset input.btns1.active {
   opacity: 1 !important;
@@ -7367,6 +7372,9 @@ select.list-dt:focus {
   border-radius: 5px;
   box-shadow: 0 0 6px #00000029;
   line-height: 22px;
+  width: 240px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .custom-tooltip .close {
@@ -7389,14 +7397,6 @@ select.list-dt:focus {
   .custom-tooltip .close {
     padding: 0.5rem;
     right: 0.5rem;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .custom-tooltip-container.service-section .custom-tooltip {
-    width: 72%;
-    left: 50%;
-    transform: translateX(-50%);
   }
 }
 

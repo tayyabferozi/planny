@@ -1816,7 +1816,7 @@ textarea.custom-input.with-outline,
 
 .select-selected {
   /*style the arrow inside the select element:*/
-  border: 1px solid #b2b2b2 !important;
+  border: 1px solid #d8d8d8 !important;
   border-radius: 5px;
   padding: 0.5rem !important;
   /*point the arrow upwards when the select box is open (active):*/
@@ -1957,7 +1957,7 @@ textarea.custom-input.with-outline,
 
 .details-container .details-item .details-box .box-content {
   position: relative;
-  border: 1px solid #b2b2b2;
+  border: 1px solid #d8d8d8;
   border-radius: 3px;
   margin-top: 1.5rem;
   height: 100%;
