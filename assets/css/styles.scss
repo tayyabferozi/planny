@@ -250,6 +250,14 @@ table.custom-table {
   padding: var(--section-padding);
   z-index: 5;
 
+  .logo {
+    img {
+      @media screen and (max-width: 1366px) {
+        width: 88px;
+      }
+    }
+  }
+
   &.notification-navbar {
     padding-left: 7rem;
     padding-right: 7rem;
@@ -281,6 +289,15 @@ table.custom-table {
 
   &.sm {
     padding-bottom: 2rem;
+  }
+
+  &.blogs {
+    @media screen and (max-width: 768px) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
   }
 }
 
@@ -1201,6 +1218,12 @@ table.custom-table {
       top: 50%;
       transform: translate(-50%, -50%);
     }
+
+    .text-yellow.fw-bold {
+      @media screen and (max-width: 768px) {
+        text-transform: capitalize;
+      }
+    }
   }
 
   .text-end.text-light-2 {
@@ -1219,6 +1242,18 @@ table.custom-table {
 // ***********************************************************************************************************************************
 
 #blogs {
+  @media screen and (min-width: 1367px) {
+    margin-top: 2rem;
+    margin-right: auto;
+  }
+
+  @media screen and (max-width: 1585px) and (min-width: 1367px) {
+    padding-left: 7rem !important;
+    padding-right: 7rem !important;
+    margin-left: unset;
+    margin-right: unset;
+  }
+
   @media screen and (max-width: 1366px) {
     margin-top: 3rem;
   }
@@ -1229,11 +1264,16 @@ table.custom-table {
 
   &.page-container {
     @media screen and (max-width: 1500px) {
+      padding-left: 7rem !important;
+      padding-right: 7rem !important;
+    }
+
+    @media screen and (max-width: 1366px) {
       padding-left: 5rem !important;
       padding-right: 5rem !important;
     }
 
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 768px) {
       padding-left: 2rem !important;
       padding-right: 2rem !important;
     }
@@ -1245,6 +1285,8 @@ table.custom-table {
   }
 
   aside {
+    flex-shrink: 0;
+
     @media screen and (max-width: 1100px) {
       display: none;
     }
@@ -1362,6 +1404,14 @@ table.custom-table {
 // ***********************************************************************************************************************************
 // ***********************************************************************************************************************************
 
+.refer-and-invest-right {
+  .lower-content {
+    @media screen and (max-width: 768px) {
+      padding-top: 80px !important;
+    }
+  }
+}
+
 #refer-and-invest {
   .btn {
     height: 56px;
@@ -1378,8 +1428,13 @@ table.custom-table {
       display: none;
     }
 
+    @media screen and (min-width: 1367px) {
+      margin-top: 1rem;
+    }
+
     @media screen and (min-width: 769px) {
-      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid $color30;
     }
 
     @media screen and (max-width: 768px) {
@@ -1531,6 +1586,10 @@ table.custom-table {
           margin-right: 6.5%;
         }
 
+        @media screen and (max-width: 768px) {
+          margin-right: 10%;
+        }
+
         @media screen and (max-width: 575px) {
           width: 100%;
           text-align: center;
@@ -1546,6 +1605,10 @@ table.custom-table {
 
           @media screen and (max-width: 1366px) {
             width: 120px;
+          }
+
+          @media screen and (max-width: 575px) {
+            width: 111px;
           }
         }
       }
@@ -1604,12 +1667,6 @@ table.custom-table {
               min-height: 46px;
             }
 
-            &.other-card {
-              @media screen and (max-width: 991px) {
-                min-height: unset;
-              }
-            }
-
             @media screen and (max-width: 1809px) and (min-width: 1367px) {
               font-size: 16px !important;
             }
@@ -1625,6 +1682,12 @@ table.custom-table {
             @media screen and (max-width: 575px) {
               margin-bottom: 0 !important;
               min-height: 40px;
+            }
+
+            &.other-card {
+              // @media screen and (max-width: 991px) {
+              min-height: unset;
+              // }
             }
           }
 
@@ -1781,6 +1844,10 @@ table.custom-table {
               }
             }
 
+            @media screen and (max-width: 1366px) and (min-width: 769px) {
+              margin-top: 2rem !important;
+            }
+
             a {
               margin-right: 1.25rem;
 
@@ -1802,6 +1869,14 @@ table.custom-table {
               }
 
               @media screen and (max-width: 650px) {
+                width: 24px;
+              }
+
+              @media screen and (max-width: 575px) {
+                width: 32px;
+              }
+
+              @media screen and (max-width: 350px) {
                 width: 24px;
               }
             }
@@ -1871,7 +1946,7 @@ table.custom-table {
     padding-top: 0 !important;
 
     @media screen and (max-width: 768px) {
-      padding-top: 106px !important;
+      padding-top: 80px !important;
     }
   }
 }
@@ -1896,7 +1971,7 @@ table.custom-table {
 .transactions-right {
   .title {
     .back {
-      top: 1rem !important;
+      top: 0.75rem !important;
     }
   }
 }
@@ -1951,7 +2026,7 @@ table.custom-table {
   }
 
   .search-sm {
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 768px) {
       width: 20px;
 
       img {
@@ -1961,7 +2036,7 @@ table.custom-table {
 
     input {
       border-color: $color31;
-      @media screen and (max-width: 700px) {
+      @media screen and (max-width: 768px) {
         width: 20px;
         opacity: 0;
       }
@@ -2060,7 +2135,7 @@ table.custom-table {
         }
 
         &:nth-child(3) {
-          width: 20%;
+          width: 25%;
 
           @media screen and (max-width: 1590px) {
             width: 25%;
@@ -2119,7 +2194,7 @@ table.custom-table {
         img {
           width: 48px;
 
-          @media screen and (max-width: 768px) {
+          @media screen and (max-width: 1366px) {
             width: 32px;
           }
         }
@@ -2144,7 +2219,7 @@ table.custom-table {
           font-weight: 600;
 
           @media screen and (max-width: 1366px) {
-            font-size: 11px;
+            font-size: 12px;
             width: 72px;
             height: 24px;
             padding-left: 0;
@@ -2479,7 +2554,9 @@ table.custom-table {
   }
 
   .lower-content {
-    padding-top: 70px !important;
+    @media screen and (max-width: 768px) {
+      padding-top: 70px !important;
+    }
   }
 }
 
@@ -2514,7 +2591,7 @@ table.custom-table {
       }
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
       justify-content: space-between;
     }
 

@@ -1693,7 +1693,7 @@ textarea.custom-input,
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 
   @media screen and (max-width: 1366px) and (min-width: 992px) {
     padding: 0 2.5rem;
@@ -2364,10 +2364,13 @@ textarea.custom-input,
   .upload-body {
     margin-top: 1rem;
     position: relative;
-    height: 16px;
     width: 100%;
     border-radius: 25px;
     overflow-y: hidden;
+
+    @media screen and (min-width: 769px) {
+      height: 10px;
+    }
 
     .bg {
       position: absolute;

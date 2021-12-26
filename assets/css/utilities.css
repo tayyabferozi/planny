@@ -1899,7 +1899,7 @@ textarea.custom-input.with-outline,
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 1366px) and (min-width: 992px) {
@@ -2670,10 +2670,15 @@ textarea.custom-input.with-outline,
 .uploading .upload-body {
   margin-top: 1rem;
   position: relative;
-  height: 16px;
   width: 100%;
   border-radius: 25px;
   overflow-y: hidden;
+}
+
+@media screen and (min-width: 769px) {
+  .uploading .upload-body {
+    height: 10px;
+  }
 }
 
 .uploading .upload-body .bg {

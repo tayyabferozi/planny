@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+	<g id="Group_12572" data-name="Group 12572" transform="translate(-342 -46)">
+		<g id="Group_3571" data-name="Group 3571" transform="translate(342 46)">
+			<rect id="Rectangle_302" data-name="Rectangle 302" width="24" height="24" fill="#fff" opacity="0">
+			</rect>
+			<g id="HB_Menu" data-name="HB Menu" transform="translate(3 19.5) rotate(-90)">
+				<line id="Line_78" data-name="Line 78" y2="8.255" fill="none" stroke="#31353f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2">
+				</line>
+				<path id="Path_289" data-name="Path 289" d="M0,0V12.4" transform="translate(6.75 0)" fill="none" stroke="#31353f" stroke-linecap="round" stroke-width="2">
+				</path>
+				<line id="Line_80" data-name="Line 80" y2="18" transform="translate(13.5 0)" fill="none" stroke="#31353f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2">
+				</line>
+			</g>
+		</g>
+	</g>
+</svg>
