@@ -239,6 +239,18 @@ p {
   }
 }
 
+.fs-575-12 {
+  @media screen and (max-width: 575px) {
+    font-size: 12px !important;
+  }
+}
+
+.fs-575-10 {
+  @media screen and (max-width: 575px) {
+    font-size: 10px !important;
+  }
+}
+
 .fs-490-14 {
   @media screen and (max-width: 490px) {
     font-size: 14px !important;
@@ -288,6 +300,24 @@ p {
 .lh-1366-22 {
   @media screen and (max-width: 1366px) {
     line-height: 22px;
+  }
+}
+
+.lh-1366-20 {
+  @media screen and (max-width: 1366px) {
+    line-height: 20px;
+  }
+}
+
+.lh-1366-18 {
+  @media screen and (max-width: 1366px) {
+    line-height: 18px;
+  }
+}
+
+.lh-1366-16 {
+  @media screen and (max-width: 1366px) {
+    line-height: 16px;
   }
 }
 

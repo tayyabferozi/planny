@@ -3118,8 +3118,8 @@ select.list-dt:focus {
 .msoinvestproduct_box_left {
 }
 .msoinvestproduct_box_left img {
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
 }
 .msoinvestproduct_box_right {
   float: left;
@@ -3463,7 +3463,7 @@ select.list-dt:focus {
 .msoinvestproduct_box_right_p3_s1 a {
   height: 24px;
   width: 24px;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   background-color: transparent;
   display: flex;
   background-image: url(../images/delete-1.svg);
@@ -3471,6 +3471,7 @@ select.list-dt:focus {
 }
 .msoinvestproduct_box_right_p3_s1 a:nth-child(2) {
   background-image: url(../images/contabhb1.svg);
+  margin-bottom: 0;
 }
 .msoinvestproduct_box_right_p3_s1 a:hover:nth-child(2) {
   background-image: url(../images/contabhb1h.svg);
@@ -8100,8 +8101,8 @@ select.list-dt:focus {
   }
 
   .msoinvestproduct_box_left img {
-    width: 34.5px;
-    height: 34.5px;
+    width: 48px;
+    height: 48px;
     transform: translateY(-3px);
   }
 }
@@ -8117,8 +8118,8 @@ select.list-dt:focus {
   }
 
   .msoinvestproduct_box_left img {
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 48px;
     transform: translateY(-1px);
   }
 }
@@ -8152,15 +8153,26 @@ select.list-dt:focus {
   }
 }
 
+@media screen and (max-width: 1366px) {
+  .msoinvestproduct_box_right_p2 h3 {
+    width: 32px;
+    height: 32px;
+    transform: translateY(-1px);
+  }
+
+  .msoinvestproduct_box_left img {
+    width: 32px;
+    height: 32px;
+    transform: translateY(-5px);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .msoinvestproduct_box_right_p2 h3 {
     /* font-size: 26px; */
   }
 
   .msoinvestproduct_box_left img {
-    width: 32px;
-    height: 32px;
-    transform: translateY(-1px);
   }
 }
 
@@ -8416,8 +8428,20 @@ select.list-dt:focus {
 }
 
 .msoinvestproduct_box_right .head .title {
-  max-width: 420px;
+  max-width: 345px;
   text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .msoinvestproduct_box_right .head .title {
+    max-width: 264px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .msoinvestproduct_box_right .head .title {
+    max-width: 225px;
+  }
 }
 
 .msoinvestproduct_box_right .head .options {
@@ -8426,8 +8450,10 @@ select.list-dt:focus {
   align-items: center;
 }
 
-.msoinvestproduct_box_right .head .options .card-menu {
-  padding: 1rem;
+@media screen and (max-width: 768px) {
+  .msoinvestproduct_box_right .head .options {
+    transform: translateY(-20px);
+  }
 }
 
 .msoinvestproduct_box_right .head .star-reviews,
@@ -8435,6 +8461,21 @@ select.list-dt:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .msoinvestproduct_box_right .head .star-reviews,
+  .msoinvestproduct_box_right .head .card-menu {
+    padding: 1rem 0.5rem;
+  }
+
+  .msoinvestproduct_box_right .head .card-menu {
+    transform: translateY(-1px);
+  }
+
+  .msoinvestproduct_box_right .head .card-menu.five {
+    transform: translate(6px, -4px);
+  }
 }
 
 .msoinvestproduct_box_right .head .return {
@@ -8449,12 +8490,24 @@ select.list-dt:focus {
   width: 22px;
 }
 
+@media screen and (max-width: 1366px) {
+  .msoinvestproduct_box_right .head .star-reviews .star {
+    width: 14px;
+  }
+}
+
 .msoinvestproduct_box_right .body {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: left;
   margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .msoinvestproduct_box_right .body {
+    margin-top: -0.5rem;
+  }
 }
 
 .msoinvestproduct_box_right .body .item {
@@ -8464,13 +8517,53 @@ select.list-dt:focus {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1366px) {
+  .msoinvestproduct_box_right .body .item {
+    height: 55px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .msoinvestproduct_box_right .body .item {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .msoinvestproduct_box_right .body .item {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .msoinvestproduct_box_right .triangle {
+    width: 12px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .msoinvestproduct_box_right .triangle {
+    width: 8px;
+  }
+
+  .msoinvestproduct_box_right .return {
+    transform: translateY(4px);
+  }
+
+  .msoinvestproduct_box_right .return .triangle {
+    margin-bottom: -0.125rem !important;
+    margin-left: 0.25rem !important;
+    margin-right: 0.125rem;
+  }
+}
+
 .msoinvestproduct_box_right .body .item .big-text {
   line-height: 1;
 }
 
 .msoinvestproduct_box_right .body .item .tag {
   background: #f2f2f2;
-  text-align: right;
+  text-align: center;
   padding: 0.25rem;
   border-radius: 50px;
 }
