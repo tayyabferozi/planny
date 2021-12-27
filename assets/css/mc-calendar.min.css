@@ -825,7 +825,8 @@
   overflow: hidden;
   visibility: hidden;
   opacity: 0;
-  background-color: var(--mc-picker-background);
+  /* background-color: var(--mc-picker-background); */
+  background-color: #fff;
 }
 .mc-month-year__preview--opened {
   visibility: visible;
