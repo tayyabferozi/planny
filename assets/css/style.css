@@ -505,7 +505,6 @@ select.list-dt:focus {
 #progressbar li strong span {
   margin: 0px auto;
   display: table;
-  font-weight: 600;
 }
 #progressbar li strong i {
   height: 16px;
@@ -7504,18 +7503,18 @@ select.list-dt:focus {
   padding: 1rem;
 }
 
-@media screen and (max-width: 1919px) {
-  .custom-tooltip {
-    font-size: 14px;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .custom-tooltip .close {
-    padding: 0.5rem;
-    right: 0.5rem;
-  }
+/* @media screen and (max-width: 1919px) { */
+.custom-tooltip {
+  font-size: 14px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
+
+.custom-tooltip .close {
+  padding: 0.5rem;
+  right: 0.5rem;
+}
+/* } */
 
 .custom-tooltip .arrow {
   width: 50px;
