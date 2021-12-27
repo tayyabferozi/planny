@@ -1,5 +1,17 @@
 @import "./_constants.scss";
 
+@media (min-width: 1024px) {
+  .d-1024-none {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  .d-1023-none {
+    display: none !important;
+  }
+}
+
 @media (min-width: 769px) {
   .d-769-none {
     display: none !important;
@@ -8,6 +20,18 @@
 
 @media (max-width: 768px) {
   .d-768-none {
+    display: none !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .d-576-none {
+    display: none !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .d-575-none {
     display: none !important;
   }
 }
@@ -67,6 +91,10 @@ p {
 
 .fs-48 {
   font-size: 48px !important;
+}
+
+.fs-32 {
+  font-size: 32px !important;
 }
 
 .fs-24 {
@@ -251,6 +279,10 @@ p {
 
 .lh-26 {
   line-height: 26px;
+}
+
+.lh-24 {
+  line-height: 24px;
 }
 
 .lh-1366-22 {

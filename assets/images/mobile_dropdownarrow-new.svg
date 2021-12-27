@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+	<g id="Group_2509" data-name="Group 2509" transform="translate(0)">
+		<g id="Path_656" data-name="Path 656" transform="translate(0 0)" fill="#fff" opacity="0">
+			<path d="M 15.5 15.5 L 0.5 15.5 L 0.5 0.5 L 15.5 0.5 L 15.5 15.5 Z" stroke="none" />
+			<path d="M 1 1 L 1 15 L 15 15 L 15 1 L 1 1 M 0 0 L 16 0 L 16 16 L 0 16 L 0 0 Z" stroke="none" fill="#707070" />
+		</g>
+		<path id="Polygon_13" data-name="Polygon 13" d="M5.97,1.209a1,1,0,0,1,1.652,0l4.9,7.18A1,1,0,0,1,11.7,9.953H1.894a1,1,0,0,1-.826-1.564Z" transform="translate(14.723 12.953) rotate(180)" fill="#31353f" />
+	</g>
+</svg>

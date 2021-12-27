@@ -51,6 +51,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
     />
     <script src="./js/Javascript.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/utilities.css" />
   </head>
 
   <body class="planyybody service">
@@ -147,7 +148,7 @@
                 <div class="steps_mobilemenu_box">
                   <div class="steps_mobilemenu_p1">
                     <a href="#" data-toggle="modal" data-target="#exampleModal2"
-                      ><img src="./assets/images/mobile_menu.svg"
+                      ><img src="./assets/images/menu_back.svg"
                     /></a>
                   </div>
                   <div class="steps_mobilemenu_p2">
@@ -155,7 +156,7 @@
                   </div>
                   <div class="steps_mobilemenu_p3">
                     <a href="index.html"
-                      ><img src="./assets/images/mobile_home.svg"
+                      ><img src="./assets/images/mobile_menu.svg"
                     /></a>
                   </div>
                 </div>
@@ -167,7 +168,7 @@
                     <input
                       type="text"
                       name=""
-                      placeholder="30"
+                      value="30"
                       id="textdemo"
                       class="textdemo"
                     />
@@ -182,7 +183,7 @@
                       for="textdemo1"
                       >Monthly Household Income
 
-                      <div class="custom-tooltip fs-16 fs-1366-14">
+                      <div class="custom-tooltip fs-14">
                         Please provide a valid income details more than 2000
 
                         <div class="arrow"></div>
@@ -193,7 +194,7 @@
                     <input
                       type="text"
                       name=""
-                      placeholder="₹3,00,000"
+                      value="₹3,00,000"
                       id="textdemo1"
                       class="textdemo"
                     />
@@ -205,7 +206,7 @@
                     <input
                       type="text"
                       name=""
-                      placeholder="₹2,00,000"
+                      value="₹2,00,000"
                       id="textdemo3"
                       class="textdemo"
                     />
@@ -235,7 +236,7 @@
                   </div>
                   <div class="steps_mobilemenu_p3">
                     <a href="index.html" classa="ac1"
-                      ><img src="./assets/images/mobile_home.svg"
+                      ><img src="./assets/images/mobile_menu.svg"
                     /></a>
                   </div>
                 </div>
@@ -308,7 +309,7 @@
                   </div>
                   <div class="steps_mobilemenu_p3">
                     <a href="index.html" classa="ac2"
-                      ><img src="./assets/images/mobile_home.svg"
+                      ><img src="./assets/images/mobile_menu.svg"
                     /></a>
                   </div>
                 </div>
@@ -327,13 +328,13 @@
                   <input type="text" name="" value="₹70,000" />
                 </div>
               </div>
-              <a
+              <!-- <a
                 data-toggle="modal"
                 data-target="#exampleModal1"
                 class="tas xhid1"
               >
                 <img src="./assets/images/addgoalmobile.svg" />
-              </a>
+              </a> -->
               <div class="fieldset_data">
                 <div class="msoskeletenload">
                   <div class="msoskeletenload_fix">
@@ -521,10 +522,14 @@
                           ><img src="./assets/images/contabhb1.svg" /><img
                             src="./assets/images/contabhb1h.svg"
                         /></a>
-                        <a href="#"
+                        <a data-toggle="modal" data-target="#exampleModal"
                           ><img src="./assets/images/contabhb2.svg" /><img
                             src="./assets/images/contabhb2h.svg"
                         /></a>
+                        <!-- <a href="#"
+                          ><img src="./assets/images/contabhb2.svg" /><img
+                            src="./assets/images/contabhb2h.svg"
+                        /></a> -->
                       </div>
                       <a
                         class="edit"
@@ -662,6 +667,14 @@
                         <p>Total Home Value <span>₹55 lacs</span></p>
                       </div>
                     </div>
+                    <a
+                      data-toggle="modal"
+                      data-target="#exampleModal1"
+                      class="tas xhid1 mt-3"
+                      style="transform: translateY(1rem)"
+                    >
+                      <img src="./assets/images/addgoalmobile.svg" />
+                    </a>
                     <div class="Generated_Financial_plans_data_addbox">
                       <a
                         data-toggle="modal"
@@ -708,7 +721,7 @@
                   </div>
                   <div class="steps_mobilemenu_p3">
                     <a href="index.html" classa="ac3"
-                      ><img src="./assets/images/mobile_home.svg"
+                      ><img src="./assets/images/mobile_menu.svg"
                     /></a>
                   </div>
                 </div>
@@ -823,7 +836,7 @@
                                   role="tabpanel"
                                   aria-labelledby="nav-home-tabx"
                                 >
-                                  <div class="msoinvestproduct_box">
+                                  <!-- <div class="msoinvestproduct_box">
                                     <div class="msoinvestproduct_box_left">
                                       <img
                                         src="./assets/images/bank_logo.svg"
@@ -1125,6 +1138,121 @@
                                             />
                                           </h3>
                                         </span>
+                                      </div>
+                                      <div
+                                        class="
+                                          msoinvestproduct_box_right_p3
+                                          options
+                                        "
+                                      >
+                                        <div
+                                          class="
+                                            msoinvestproduct_box_right_p3_s1
+                                          "
+                                        >
+                                          <a href="#"></a>
+                                          <a href="#"></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div> -->
+                                  <div class="msoinvestproduct_box">
+                                    <div class="msoinvestproduct_box_left">
+                                      <img
+                                        src="./assets/images/bank_logo.svg"
+                                      />
+                                    </div>
+                                    <div class="msoinvestproduct_box_right">
+                                      <div class="head">
+                                        <div class="fw-600 fs-18 title lh-24">
+                                          Axis Banking And Financial Services
+                                          Growth Direct Plan 2021
+                                        </div>
+                                        <div class="options">
+                                          <div class="star-reviews">
+                                            <img
+                                              class="star mr-1"
+                                              src="./assets/images/star.svg"
+                                              alt="star"
+                                            />
+                                            <div class="fw-600 fs-18">5</div>
+                                          </div>
+                                          <div class="card-menu d-769-none">
+                                            <a
+                                              class="edit"
+                                              data-toggle="modal"
+                                              data-target="#exampleModalx"
+                                              ><img
+                                                src="./assets/images/menu-2.svg"
+                                            /></a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="body">
+                                        <div class="item">
+                                          <div
+                                            class="
+                                              small-text
+                                              text-light-2
+                                              fw-18
+                                            "
+                                          >
+                                            Allocation
+                                          </div>
+                                          <div class="big-text fs-32 fw-600">
+                                            30%
+                                          </div>
+                                        </div>
+                                        <div class="item">
+                                          <div
+                                            class="
+                                              small-text
+                                              text-light-2
+                                              fw-18
+                                            "
+                                          >
+                                            Amount
+                                          </div>
+                                          <div class="big-text fs-32 fw-600">
+                                            ₹9,000
+                                          </div>
+                                        </div>
+                                        <div class="item">
+                                          <div
+                                            class="
+                                              small-text
+                                              text-light-2
+                                              fw-18
+                                              frequency
+                                            "
+                                          >
+                                            Frequency
+                                          </div>
+                                          <div class="big-text fs-32 fw-600">
+                                            <div class="tag fs-14 text-light-2">
+                                              MONTHLY
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="item">
+                                          <div
+                                            class="
+                                              small-text
+                                              text-light-2
+                                              fw-18
+                                            "
+                                          >
+                                            RETURNS(1Y)
+                                          </div>
+                                          <div class="big-text fs-24 fw-600">
+                                            9.4%
+                                            <img
+                                              class="ml-2"
+                                              src="./assets/images/green-triangle.svg"
+                                              alt="triangle"
+                                            />
+                                          </div>
+                                        </div>
                                       </div>
                                       <div
                                         class="
@@ -1198,7 +1326,7 @@
                   </div>
                   <div class="steps_mobilemenu_p3">
                     <a href="index.html" classa="ac4"
-                      ><img src="./assets/images/mobile_home.svg"
+                      ><img src="./assets/images/mobile_menu.svg"
                     /></a>
                   </div>
                 </div>
@@ -1496,7 +1624,10 @@
                                       </div>
                                     </div>
                                   </div> -->
-                                  <div class="msoinvestproduct_box">
+
+                                  <!-- USELESS AGAIN -->
+
+                                  <!-- <div class="msoinvestproduct_box">
                                     <div class="msoinvestproduct_box_left">
                                       <img
                                         src="./assets/images/bank_logo.svg"
@@ -1573,7 +1704,8 @@
                                         </div>
                                       </div>
                                     </div>
-                                  </div>
+                                  </div> -->
+
                                   <div class="msoinvestproduct_box">
                                     <div class="msoinvestproduct_box_left">
                                       <img
@@ -1581,55 +1713,91 @@
                                       />
                                     </div>
                                     <div class="msoinvestproduct_box_right">
-                                      <div
-                                        class="msoinvestproduct_box_right_p1"
-                                      >
-                                        <div
-                                          class="
-                                            msoinvestproduct_box_right_p1_sem1
-                                          "
-                                        >
-                                          <h5 class="step-5">
-                                            Axis banking and financial Services
-                                            growth direct plan
-                                          </h5>
-                                          <a
-                                            class="edit"
-                                            data-toggle="modal"
-                                            data-target="#exampleModaly"
-                                            ><img
-                                              src="./assets/images/menu-2.svg"
-                                          /></a>
-                                          <span class="ratings tri"
-                                            >8.3%<img
-                                              class="ml-2 triangle"
+                                      <div class="head">
+                                        <div class="fw-600 fs-18 title lh-24">
+                                          Axis Banking And Financial Services
+                                          Growth Direct Plan 2021
+                                        </div>
+                                        <div class="options">
+                                          <div class="return">
+                                            <div class="fw-600 fs-24">8.3%</div>
+                                            <img
+                                              class="ml-2 pb-1"
                                               src="./assets/images/green-triangle.svg"
-                                          /></span>
+                                              alt="triangle"
+                                            />
+                                          </div>
+                                          <div class="card-menu d-769-none">
+                                            <a
+                                              class="edit"
+                                              data-toggle="modal"
+                                              data-target="#exampleModalx"
+                                              ><img
+                                                src="./assets/images/menu-2.svg"
+                                            /></a>
+                                          </div>
                                         </div>
                                       </div>
-                                      <div
-                                        class="msoinvestproduct_box_right_p2"
-                                      >
-                                        <span>
-                                          <h5>Allocation</h5>
-                                          <h3>30%</h3>
-                                        </span>
-                                        <span>
-                                          <h5>Amount</h5>
-                                          <h3>₹9,000</h3>
-                                        </span>
-                                        <span>
-                                          <h5>Gains</h5>
-                                          <h3>-</h3>
-                                        </span>
-                                        <span>
-                                          <h5>Gains</h5>
-                                          <h3>-</h3>
-                                        </span>
-                                        <span>
-                                          <h5>Frequency</h5>
-                                          <h3><a href="#">MONTHLY</a></h3>
-                                        </span>
+                                      <div class="body">
+                                        <div class="item">
+                                          <div
+                                            class="
+                                              small-text
+                                              text-light-2
+                                              fw-18
+                                            "
+                                          >
+                                            Allocation
+                                          </div>
+                                          <div class="big-text fs-32 fw-600">
+                                            30%
+                                          </div>
+                                        </div>
+                                        <div class="item">
+                                          <div
+                                            class="
+                                              small-text
+                                              text-light-2
+                                              fw-18
+                                            "
+                                          >
+                                            Amount
+                                          </div>
+                                          <div class="big-text fs-32 fw-600">
+                                            ₹9,000
+                                          </div>
+                                        </div>
+                                        <div class="item">
+                                          <div
+                                            class="
+                                              small-text
+                                              text-light-2
+                                              fw-18
+                                            "
+                                          >
+                                            Gain
+                                          </div>
+                                          <div class="big-text fs-24 fw-600">
+                                            -
+                                          </div>
+                                        </div>
+                                        <div class="item">
+                                          <div
+                                            class="
+                                              small-text
+                                              text-light-2
+                                              fw-18
+                                              frequency
+                                            "
+                                          >
+                                            Frequency
+                                          </div>
+                                          <div class="big-text fs-32 fw-600">
+                                            <div class="tag fs-14 text-light-2">
+                                              MONTHLY
+                                            </div>
+                                          </div>
+                                        </div>
                                       </div>
                                       <div
                                         class="
@@ -1640,174 +1808,15 @@
                                         <div
                                           class="
                                             msoinvestproduct_box_right_p3_s1
-                                            redeem
                                           "
                                         >
-                                          <a
-                                            class="redeem-anchor"
-                                            data-toggle="modal"
-                                            data-target="#exampleModaly"
-                                          ></a>
+                                          <a href="#"></a>
+                                          <a href="#"></a>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="msoinvestproduct_box">
-                                    <div class="msoinvestproduct_box_left">
-                                      <img
-                                        src="./assets/images/bank_logo.svg"
-                                      />
-                                    </div>
-                                    <div class="msoinvestproduct_box_right">
-                                      <div
-                                        class="msoinvestproduct_box_right_p1"
-                                      >
-                                        <div
-                                          class="
-                                            msoinvestproduct_box_right_p1_sem1
-                                          "
-                                        >
-                                          <h5 class="step-5">
-                                            Axis banking and financial Services
-                                            growth direct plan
-                                          </h5>
-                                          <a
-                                            class="edit"
-                                            data-toggle="modal"
-                                            data-target="#exampleModaly"
-                                            ><img
-                                              src="./assets/images/menu-2.svg"
-                                          /></a>
-                                          <span class="ratings tri"
-                                            >8.3%<img
-                                              class="ml-2 triangle"
-                                              src="./assets/images/green-triangle.svg"
-                                          /></span>
-                                        </div>
-                                      </div>
-                                      <div
-                                        class="msoinvestproduct_box_right_p2"
-                                      >
-                                        <span>
-                                          <h5>Allocation</h5>
-                                          <h3>30%</h3>
-                                        </span>
-                                        <span>
-                                          <h5>Amount</h5>
-                                          <h3>₹9,000</h3>
-                                        </span>
-                                        <span>
-                                          <h5>Gains</h5>
-                                          <h3>-</h3>
-                                        </span>
-                                        <span>
-                                          <h5>Gains</h5>
-                                          <h3>-</h3>
-                                        </span>
-                                        <span>
-                                          <h5>Frequency</h5>
-                                          <h3><a href="#">MONTHLY</a></h3>
-                                        </span>
-                                      </div>
-                                      <div
-                                        class="
-                                          msoinvestproduct_box_right_p3
-                                          options
-                                        "
-                                      >
-                                        <div
-                                          class="
-                                            msoinvestproduct_box_right_p3_s1
-                                            redeem
-                                          "
-                                        >
-                                          <a
-                                            class="redeem-anchor"
-                                            data-toggle="modal"
-                                            data-target="#exampleModaly"
-                                          ></a>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="msoinvestproduct_box">
-                                    <div class="msoinvestproduct_box_left">
-                                      <img
-                                        src="./assets/images/bank_logo.svg"
-                                      />
-                                    </div>
-                                    <div class="msoinvestproduct_box_right">
-                                      <div
-                                        class="msoinvestproduct_box_right_p1"
-                                      >
-                                        <div
-                                          class="
-                                            msoinvestproduct_box_right_p1_sem1
-                                          "
-                                        >
-                                          <h5 class="step-5">
-                                            Axis banking and financial Services
-                                            growth direct plan
-                                          </h5>
-                                          <a
-                                            class="edit"
-                                            data-toggle="modal"
-                                            data-target="#exampleModaly"
-                                            ><img
-                                              src="./assets/images/menu-2.svg"
-                                          /></a>
-                                          <span class="ratings tri"
-                                            >8.3%<img
-                                              class="ml-2 triangle"
-                                              src="./assets/images/green-triangle.svg"
-                                          /></span>
-                                        </div>
-                                      </div>
-                                      <div
-                                        class="msoinvestproduct_box_right_p2"
-                                      >
-                                        <span>
-                                          <h5>Allocation</h5>
-                                          <h3>30%</h3>
-                                        </span>
-                                        <span>
-                                          <h5>Amount</h5>
-                                          <h3>₹9,000</h3>
-                                        </span>
-                                        <span>
-                                          <h5>Gains</h5>
-                                          <h3>-</h3>
-                                        </span>
-                                        <span>
-                                          <h5>Gains</h5>
-                                          <h3>-</h3>
-                                        </span>
-                                        <span>
-                                          <h5>Frequency</h5>
-                                          <h3><a href="#">MONTHLY</a></h3>
-                                        </span>
-                                      </div>
-                                      <div
-                                        class="
-                                          msoinvestproduct_box_right_p3
-                                          options
-                                        "
-                                      >
-                                        <div
-                                          class="
-                                            msoinvestproduct_box_right_p3_s1
-                                            redeem
-                                          "
-                                        >
-                                          <a
-                                            class="redeem-anchor"
-                                            data-toggle="modal"
-                                            data-target="#exampleModaly"
-                                          ></a>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
+
                                   <!-- <div class="msoinvestproduct_box">
                                     <div class="msoinvestproduct_box_left">
                                       <img
@@ -2138,15 +2147,15 @@
                     <a href="#" data-dismiss="modal" aria-label="Close">Done</a>
                   </div>
                 </div>
-                <div class="msoretirepop_p2mobile_box">
-                  <div class="msoretirepop_p2mobile_box_p1">
+                <div class="msoretirepop_p2mobile_box d-576-none">
+                  <!-- <div class="msoretirepop_p2mobile_box_p1">
                     <div class="msoretirepop_p2_s1">
                       <p>
                         <img src="./assets/images/heart.svg" />1.2 K people have
                         added this goal
                       </p>
                     </div>
-                  </div>
+                  </div> -->
                   <div class="msoretirepop_p2mobile_box_p2">
                     <div class="msoretirepop_p1">
                       <img src="./assets/images/popimgretirement.svg" />
@@ -2158,25 +2167,38 @@
                     <p>AMOUNT NEEDED</p>
                   </div>
                 </div>
-                <div class="msoretirepop_p2_s3">
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 0%"
-                      aria-valuenow="0"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      0%
+                <div class="msoretirepop_top-section d-575-none">
+                  <div class="img">
+                    <img src="./assets/images/retirment.svg" alt="retirment" />
+                  </div>
+                  <div class="progress-section">
+                    <div class="head d-1024-none">
+                      <h2 class="fs-32 fw-700">RETIREMENT</h2>
+                      <div class="text-light-2 fs-16 mb-2">
+                        A fully guided way to reach your retirement target.
+                      </div>
+                    </div>
+                    <div class="msoretirepop_p2_s3">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 0%"
+                          aria-valuenow="0"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          0%
+                        </div>
+                      </div>
+                    </div>
+                    <div class="msoretirepop_p2_s4">
+                      <span>2021</span>
+                      <span>In 15 years</span>
                     </div>
                   </div>
                 </div>
-                <div class="msoretirepop_p2_s4">
-                  <span>2021</span>
-                  <span>In 15 years</span>
-                </div>
-                <div class="msoretirepop_p2_s5">
+                <div class="msoretirepop_p2_s5 mb-0 mb-sm-5">
                   <div class="msoretirepop_p2_s5_box">
                     <label>Retirement Age</label>
                     <div class="dropdown">
@@ -2243,7 +2265,7 @@
                     <input type="" name="" value="Nielsen research" />
                   </div>
                 </div>
-                <div class="msoretirepop_p2_s6">
+                <!-- <div class="msoretirepop_p2_s6">
                   <ul>
                     <li>
                       • 23% average annual inflation adjusted cost of
@@ -2254,7 +2276,7 @@
                       • 45% average annual salary growth till age of retirement.
                     </li>
                   </ul>
-                </div>
+                </div> -->
                 <div class="msoretirepop_p2mobile_box_p3_btn">
                   <div class="msoretirepop_p2_s2_button">
                     <a href="#" data-dismiss="modal" aria-label="Close">Done</a>
@@ -2279,23 +2301,20 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <div class="head">Add Goals</div>
+            <div class="head fw-700 d-769-none">Add Goals</div>
             <button
               type="button"
               class="close"
               data-dismiss="modal"
               aria-label="Close"
             >
-              <img
-                class="d-none d-md-block"
-                src="./assets/images/addplan_close.svg"
-              />
-              <img class="d-block d-md-none" src="./assets/images/close.svg" />
+              <img class="d-768-none" src="./assets/images/addplan_close.svg" />
+              <img class="d-769-none" src="./assets/images/close.svg" />
             </button>
           </div>
           <div class="modal-body">
             <div class="msoaddfinaplan">
-              <div class="fs-16 title">ESSENTIAL GOALS</div>
+              <div class="fs-16 title fw-600">ESSENTIAL GOALS</div>
 
               <div class="Generated_Financial_plans">
                 <div class="Generated_Financial_plans_left_title">
@@ -2331,7 +2350,7 @@
                 </div>
               </div>
 
-              <div class="fs-16 title mt-3">LIFESTYLE GOAL</div>
+              <div class="fs-16 title mt-3 fw-600">LIFESTYLE GOAL</div>
 
               <div class="Generated_Financial_plans">
                 <div class="Generated_Financial_plans_left_title">
@@ -2389,7 +2408,7 @@
 
     <!-- Modal 3 mobilemenu-->
     <div
-      class="modal fade modelstyl3"
+      class="modal fade not-full-width modelstyl3"
       id="exampleModal2"
       tabindex="-1"
       role="dialog"
@@ -2398,6 +2417,16 @@
     >
       <div class="modal-dialog" role="document">
         <div class="modal-content">
+          <!-- <div class="modal-header"> -->
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <img class="" src="./assets/images/close.svg" />
+          </button>
+          <!-- </div> -->
           <div class="modal-body">
             <div class="stepsidemenu">
               <div class="stepsidemenu_box">
@@ -2910,7 +2939,7 @@
 
     <!-- Modal 1 -->
     <div
-      class="modal fade modelstylxpand modelstyl1 modelstyl2 modelstyl8"
+      class="modal fade center modelstylxpand modelstyl1 modelstyl2 modelstyl8"
       id="exampleModalxpand"
       tabindex="-1"
       role="dialog"
