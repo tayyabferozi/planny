@@ -1195,7 +1195,6 @@ div.shadowy {
             transform: unset;
     left: 0;
     bottom: 0;
-    background-color: #f8f9fa;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     height: 90%;
@@ -1207,6 +1206,7 @@ div.shadowy {
     height: 100vh;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    background-color: #f8f9fa;
   }
 }
 

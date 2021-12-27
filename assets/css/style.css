@@ -8285,6 +8285,11 @@ select.list-dt:focus {
 }
 
 @media screen and (max-width: 575px) {
+  #call-modal,
+  #message-modal {
+    background-color: #f8f9f8;
+  }
+
   #call-modal .modal-body,
   #message-modal .modal-body {
     padding-left: 0;
