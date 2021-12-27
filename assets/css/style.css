@@ -506,6 +506,10 @@ select.list-dt:focus {
   margin: 0px auto;
   display: table;
 }
+#progressbar li.done strong span ,
+#progressbar li.active strong span {
+ font-weight: 600;
+}
 #progressbar li strong i {
   height: 16px;
   width: 16px;
