@@ -7877,6 +7877,12 @@ select.list-dt:focus {
   }
 }
 
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  #otp-modal .verify {
+    margin-top: 5rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #otp-modal {
     padding-top: 9rem;
