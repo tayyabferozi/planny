@@ -8588,7 +8588,7 @@ select.list-dt:focus {
   border-radius: 50px;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 1023px) {
   .msomoderate_box label {
     margin-top: -2rem !important;
   }
