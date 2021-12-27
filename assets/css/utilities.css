@@ -3077,4 +3077,24 @@ input::-webkit-calendar-picker-indicator {
 input[type="date"]::-webkit-input-placeholder {
   visibility: hidden !important;
 }
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #b2b2b2;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #b2b2b2;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  color: #b2b2b2;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #b2b2b2;
+}
 /*# sourceMappingURL=utilities.css.map */

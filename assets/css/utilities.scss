@@ -2739,3 +2739,9 @@ input::-webkit-calendar-picker-indicator {
 input[type="date"]::-webkit-input-placeholder {
   visibility: hidden !important;
 }
+
+input::placeholder,
+textarea::placeholder {
+  // color: $color3;
+  color: #b2b2b2;
+}
