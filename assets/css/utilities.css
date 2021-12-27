@@ -2735,12 +2735,7 @@ textarea.custom-input.with-outline,
   width: 100%;
   border-radius: 25px;
   overflow-y: hidden;
-}
-
-@media screen and (min-width: 769px) {
-  .uploading .upload-body {
-    height: 10px;
-  }
+  height: 10px;
 }
 
 .uploading .upload-body .bg {

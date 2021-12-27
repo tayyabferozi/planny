@@ -2429,10 +2429,10 @@ textarea.custom-input,
     width: 100%;
     border-radius: 25px;
     overflow-y: hidden;
+    height: 10px;
 
-    @media screen and (min-width: 769px) {
-      height: 10px;
-    }
+    // @media screen and (min-width: 769px) {
+    // }
 
     .bg {
       position: absolute;
