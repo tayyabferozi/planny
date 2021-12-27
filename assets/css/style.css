@@ -506,9 +506,9 @@ select.list-dt:focus {
   margin: 0px auto;
   display: table;
 }
-#progressbar li.done strong span ,
+#progressbar li.done strong span,
 #progressbar li.active strong span {
- font-weight: 600;
+  font-weight: 600;
 }
 #progressbar li strong i {
   height: 16px;
@@ -8589,8 +8589,7 @@ select.list-dt:focus {
 }
 
 @media screen and (max-width: 575px) {
-  
   .msomoderate_box label {
- margin-top: -1rem;   
+    margin-top: -2rem !important;
   }
 }
