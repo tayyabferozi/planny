@@ -1995,6 +1995,12 @@ aside.explore {
 }
 
 #transactions {
+  .lower-content {
+    @media screen and (max-width: 768px) {
+      padding-top: 110px !important;
+    }
+  }
+
   .title {
     position: relative;
     padding-bottom: 1.25rem;
@@ -2114,26 +2120,13 @@ aside.explore {
 
         &:nth-child(3) {
           justify-content: space-between;
-          // justify-content: flex-end;
-
-          .amount {
-            // margin-right: 25%;
-
-            // @media screen and (max-width: 991px) {
-            //   margin-right: 22.5%;
-            // }
-          }
         }
 
         &:nth-child(1) {
-          width: 30%;
+          width: 265px;
 
-          @media screen and (max-width: 1270px) {
-            width: 27%;
-          }
-
-          @media screen and (max-width: 991px) {
-            width: 40%;
+          @media screen and (max-width: 768px) {
+            width: 200px;
           }
 
           @media screen and (max-width: 575px) {
@@ -2142,58 +2135,23 @@ aside.explore {
         }
 
         &:nth-child(2) {
-          width: 18%;
+          width: 36%;
 
-          @media screen and (max-width: 1590px) {
-            width: 20%;
-          }
-
-          @media screen and (max-width: 1100px) {
+          @media screen and (max-width: 991px) {
             width: 25%;
           }
 
-          @media screen and (max-width: 991px) {
-            width: 30%;
-            justify-content: center;
-          }
-
-          @media screen and (max-width: 991px) {
-            width: 22.5%;
-          }
-
           @media screen and (max-width: 575px) {
-            width: 30%;
-            justify-content: flex-start;
+            width: 60%;
             padding-left: 3rem;
           }
         }
 
         &:nth-child(3) {
-          width: 30%;
-
-          @media screen and (max-width: 1590px) {
-            width: 30%;
-          }
-
-          @media screen and (max-width: 1270px) {
-            width: 31.33%;
-          }
-
-          @media screen and (max-width: 991px) {
-            width: 40%;
-          }
-
-          @media screen and (max-width: 800px) {
-            width: 35%;
-          }
-
-          @media screen and (max-width: 675px) {
-            width: 40%;
-          }
+          flex-grow: 0;
+          flex-shrink: 1;
 
           @media screen and (max-width: 575px) {
-            width: 55%;
-
             img {
               display: none;
             }
