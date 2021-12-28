@@ -125,6 +125,72 @@ p {
   font-size: 12px !important;
 }
 
+.fs-1367-24 {
+  @media screen and (min-width: 1367px) {
+    font-size: 24px !important;
+  }
+}
+
+.fs-1921-32 {
+  @media screen and (min-width: 1921px) {
+    font-size: 32px !important;
+  }
+}
+
+.fs-1919-40 {
+  @media screen and (max-width: 1919px) {
+    font-size: 40px !important;
+  }
+}
+
+.fs-1919-24 {
+  @media screen and (max-width: 1919px) {
+    font-size: 24px !important;
+  }
+}
+
+.fs-1919-22 {
+  @media screen and (max-width: 1919px) {
+    font-size: 22px !important;
+  }
+}
+
+.fs-1919-20 {
+  @media screen and (max-width: 1919px) {
+    font-size: 20px !important;
+  }
+}
+
+.fs-1919-18 {
+  @media screen and (max-width: 1919px) {
+    font-size: 18px !important;
+  }
+}
+
+.fs-1919-16 {
+  @media screen and (max-width: 1919px) {
+    font-size: 16px !important;
+  }
+}
+
+.fs-1919-14 {
+  @media screen and (max-width: 1919px) {
+    font-size: 14px !important;
+  }
+}
+
+.fs-1919-12 {
+  @media screen and (max-width: 1919px) {
+    font-size: 12px !important;
+  }
+}
+
+.fs-1919-10 {
+  @media screen and (max-width: 1919px) {
+    font-size: 10px !important;
+  }
+}
+
 .fs-1366-40 {
   @media screen and (max-width: 1366px) {
     font-size: 40px !important;
@@ -134,6 +200,18 @@ p {
 .fs-1366-24 {
   @media screen and (max-width: 1366px) {
     font-size: 24px !important;
+  }
+}
+
+.fs-1366-22 {
+  @media screen and (max-width: 1366px) {
+    font-size: 22px !important;
+  }
+}
+
+.fs-1366-20 {
+  @media screen and (max-width: 1366px) {
+    font-size: 20px !important;
   }
 }
 
@@ -397,27 +475,26 @@ hr {
   border-top: 1px solid $color5;
 }
 
-div.shadowy {
-  border: none;
-  width: 200%;
-  height: 1px;
-  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
-  margin-left: -10rem;
-  max-width: 2000px;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+// div.shadowy {
+//   border: none;
+//   width: 200%;
+//   height: 1px;
+//   margin-left: -10rem;
+//   max-width: 2000px;
+//   margin-top: 1.5rem;
+//   margin-bottom: 1.5rem;
 
-  @media screen and (max-width: 768px) {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
+//   @media screen and (max-width: 768px) {
+//     margin-top: 1rem;
+//     margin-bottom: 1rem;
+//   }
 
-  @media screen and (max-width: 768px) {
-    box-shadow: none;
-    border-bottom: 1px solid $color30;
-    display: none;
-  }
-}
+//   @media screen and (max-width: 768px) {
+//     box-shadow: none;
+//     border-bottom: 1px solid $color30;
+//     display: none;
+//   }
+// }
 
 .text-underline {
   text-decoration: underline;
@@ -459,49 +536,39 @@ div.shadowy {
   }
 
   .tags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -0.25rem;
+    margin-right: -0.25rem;
+
+    button {
+      border-color: $color5;
+      color: $color5;
+      transition: 0.4s ease;
+      margin-bottom: 0.5rem;
+      flex-grow: 1;
+      margin-left: 0.25rem;
+      margin-right: 0.25rem;
+      font-size: 14px;
+
+      @media screen and (max-width: 1099px) {
+        border-color: $color2;
+        color: $color2;
+      }
+
+      &:hover {
+        @media screen and (min-width: 769px) {
+          border-color: $color2;
+          color: $color2;
+        }
+      }
+    }
     .tags-group {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: 1rem;
-
-      button {
-        border-color: $color5;
-        color: $color5;
-        transition: 0.4s ease;
-
-        &:hover {
-          @media screen and (min-width: 769px) {
-            border-color: $color2;
-            color: $color2;
-          }
-        }
-
-        @media screen and (max-width: 1099px) {
-          border-color: $color2;
-          color: $color2;
-        }
-
-        @media screen and (max-width: 742px) {
-          font-size: 10px;
-        }
-
-        @media screen and (max-width: 639px) {
-          font-size: 8px;
-        }
-
-        @media screen and (max-width: 575px) {
-          font-size: 14px;
-        }
-
-        @media screen and (max-width: 381px) {
-          font-size: 12px;
-        }
-
-        @media screen and (max-width: 351px) {
-          font-size: 11px;
-        }
-      }
 
       & > * {
         flex-grow: 1;
@@ -1593,7 +1660,6 @@ textarea.custom-input,
   position: relative;
   display: inline-block;
   width: 60px;
-  height: 34px;
 
   input {
     opacity: 0;
@@ -1655,6 +1721,10 @@ textarea.custom-input,
   height: 35px;
   display: flex;
   align-items: center;
+
+  label * {
+    margin-bottom: 0;
+  }
 }
 
 .switch-container {
@@ -2318,6 +2388,10 @@ textarea.custom-input,
       pointer-events: none;
     }
 
+    .side {
+      transform: translate(3px, -8px);
+    }
+
     svg {
       transform: translate(3px, -8px) rotate(90deg);
       transition: 0.4s ease;
@@ -2431,8 +2505,9 @@ textarea.custom-input,
     overflow-y: hidden;
     height: 10px;
 
-    // @media screen and (min-width: 769px) {
-    // }
+    @media screen and (min-width: 769px) {
+      height: 16px;
+    }
 
     .bg {
       position: absolute;

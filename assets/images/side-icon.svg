@@ -1,0 +1,9 @@
+<svg id="Side_icon" data-name="Side icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="Rectangle_1596" data-name="Rectangle 1596" transform="translate(0 16) rotate(-90)" fill="#31353f" stroke="#31353f" stroke-width="1" opacity="0">
+    <rect width="16" height="16" stroke="none"/>
+    <rect x="0.5" y="0.5" width="15" height="15" fill="none"/>
+  </g>
+  <g id="Group_1656" data-name="Group 1656" transform="translate(0.939 13.061) rotate(-90)">
+    <path id="Path_6068" data-name="Path 6068" d="M6.561,7.3H.75A.75.75,0,0,1,0,6.555V.75a.75.75,0,0,1,1.5,0V5.8H6.561a.75.75,0,0,1,0,1.5Z" transform="translate(0 5.17) rotate(-45)" fill="#31353f"/>
+  </g>
+</svg>

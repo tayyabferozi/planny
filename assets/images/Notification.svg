@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Notification" transform="translate(3718 21977)">
+    <g id="Rectangle_1573" data-name="Rectangle 1573" transform="translate(-3718 -21977)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="24" height="24" stroke="none"/>
+      <rect x="0.5" y="0.5" width="23" height="23" fill="none"/>
+    </g>
+    <g id="bell" transform="translate(-3719.436 -21976.854)">
+      <path id="Path_899" data-name="Path 899" d="M20.393,8.957a6.957,6.957,0,1,0-13.915,0C6.479,17.074,3,19.393,3,19.393H23.872s-3.479-2.319-3.479-10.436" fill="none" stroke="#31353f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_900" data-name="Path 900" d="M14.282,21a2.319,2.319,0,0,1-4.012,0" transform="translate(1.16 -0.447)" fill="none" stroke="#31353f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

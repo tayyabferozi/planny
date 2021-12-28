@@ -412,7 +412,7 @@
               src="./assets/vector/back-arrow.svg"
               alt="back-arrow"
             />
-            <h2 class="fs-1366-24 fs-991-20">My Profile</h2>
+            <h2 class="fs-1921-32 fs-1367-24 fs-1366-20">My Profile</h2>
           </a>
         </div>
 
@@ -436,8 +436,10 @@
                     <input
                       class="custom-input"
                       id="example"
-                      type="date"
+                      type="text"
                       placeholder="DD/MM/YYYY"
+                      onfocus="(this.type='date')"
+                      onblur="(this.type='text')"
                     />
                     <svg
                       class="icon"
@@ -556,9 +558,7 @@
                     type="password"
                     value="SachinKumarSachinKumarSach"
                   />
-                  <a class="fs-12 fs-1366-14 text-end mt-1 d-block" href=""
-                    >Change</a
-                  >
+                  <a class="fs-14 text-end mt-1 d-block" href="">Change</a>
                 </div>
               </div>
               <div class="col-lg-4 col-sm-6 col-12 order-lg-2 order-3">
@@ -633,7 +633,9 @@
             </div>
 
             <div class="d-none d-md-block">
-              <h2 class="mt-5 fs-1366-24 fs-991-20">Bank Account</h2>
+              <h2 class="mt-5 fs-1921-32 fs-1367-24 fs-1366-20">
+                Bank Account
+              </h2>
 
               <div class="row">
                 <div class="col-6 col-lg-4">
@@ -690,17 +692,7 @@
                 <h3 class="fw-normal fs-1366-18 text-underline text-yellow">
                   Deactivate my account
                 </h3>
-                <p
-                  class="
-                    lh-28
-                    ls-minus-p5
-                    mt-3
-                    fs-18 fs-1366-14
-                    lh-1366-22
-                    pb-3
-                    pe-3
-                  "
-                >
+                <p class="lh-28 mt-3 fs-18 fs-1366-14 lh-1366-22 pb-3 pe-3">
                   You will receive an email to confirm your decision. Please
                   note, that all the teams, notes and impediments you have
                   created will be permanently erased.

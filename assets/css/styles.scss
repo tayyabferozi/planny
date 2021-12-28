@@ -343,6 +343,16 @@ table.custom-table {
   }
 }
 
+aside.explore {
+  flex-shrink: 0;
+
+  &:not(.bottom) {
+    @media screen and (max-width: 1099px) {
+      display: none;
+    }
+  }
+}
+
 // /////////////////////////////////////////////////////// FINANCIAL PLANNING END ///////////////////////////////////////////////////////////////
 
 // /////////////////////////////////////////////////////// CHART START ///////////////////////////////////////////////////////////////
@@ -1289,14 +1299,6 @@ table.custom-table {
     }
   }
 
-  aside {
-    flex-shrink: 0;
-
-    @media screen and (max-width: 1100px) {
-      display: none;
-    }
-  }
-
   .main {
     @media screen and (min-width: 1101px) {
       padding-right: 1.5rem;
@@ -1422,7 +1424,7 @@ table.custom-table {
     height: 56px;
     padding: 0 3.25rem;
 
-    @media screen and (max-width: 1366px) {
+    @media screen and (max-width: 1919px) {
       height: 40px;
       padding: 0 2rem;
     }
@@ -1553,10 +1555,6 @@ table.custom-table {
         justify-content: center;
       }
 
-      @media screen and (max-width: 1460px) and (min-width: 1367px) {
-        width: 33%;
-      }
-
       @media screen and (max-width: 768px) {
         height: 260px;
       }
@@ -1604,11 +1602,11 @@ table.custom-table {
         img {
           width: 83px;
 
-          @media screen and (min-width: 1367px) {
+          @media screen and (min-width: 1920px) {
             width: 198px;
           }
 
-          @media screen and (max-width: 1366px) {
+          @media screen and (max-width: 1919px) {
             width: 120px;
           }
 
@@ -1668,19 +1666,23 @@ table.custom-table {
           }
 
           .small-text {
-            @media screen and (max-width: 1809px) {
-              min-height: 46px;
-            }
+            // @media screen and (max-width: 1809px) {
+            //   min-height: 46px;
+            // }
 
-            @media screen and (max-width: 1809px) and (min-width: 1367px) {
-              font-size: 16px !important;
-            }
+            // @media screen and (max-width: 1809px) and (min-width: 1367px) {
+            //   font-size: 16px !important;
+            // }
 
             @media screen and (max-width: 1150px) and (min-width: 992px) {
               font-size: 12px !important;
             }
 
-            @media screen and (max-width: 1366px) {
+            @media screen and (max-width: 1023px) and (min-width: 992px) {
+              font-size: 11px !important;
+            }
+
+            @media screen and (max-width: 1919px) {
               min-height: 36px;
             }
 
@@ -1697,32 +1699,30 @@ table.custom-table {
           }
 
           .big-text {
-            @media screen and (max-width: 1809px) and (min-width: 1367px) {
-              font-size: 44px !important;
-            }
+            // @media screen and (max-width: 1809px) and (min-width: 1367px) {
+            //   font-size: 44px !important;
+            // }
 
             @media screen and (max-width: 1150px) and (min-width: 992px) {
               font-size: 36px !important;
             }
 
-            @media screen and (max-width: 575px) {
-              margin-top: 0 !important;
-            }
+            // @media screen and (max-width: 575px) {
+            //   margin-top: 0 !important;
+            // }
           }
 
           &:nth-child(1) {
-            width: 10%;
+            // @media screen and (min-width: 769px) {
+            //   min-width: 86px;
+            // }
 
-            @media screen and (min-width: 769px) {
-              min-width: 86px;
-            }
+            // @media screen and (min-width: 1810px) {
+            //   min-width: 166px;
+            // }
 
-            @media screen and (min-width: 1810px) {
-              min-width: 166px;
-            }
-
-            @media screen and (max-width: 1366px) {
-              min-width: 67px;
+            @media screen and (max-width: 1919px) {
+              width: 67px;
             }
           }
 
@@ -1734,20 +1734,24 @@ table.custom-table {
               margin-top: 6.25rem;
             }
 
-            @media screen and (max-width: 1366px) {
+            @media screen and (max-width: 1919px) {
               flex-grow: 0;
               margin-top: 3.5rem;
             }
 
+            @media screen and (max-width: 991px) {
+              margin-top: 1.5rem;
+            }
+
             @media screen and (max-width: 768px) {
               width: 100%;
-              margin-top: 1.5rem;
+              margin-top: 2.5rem;
             }
 
             @media screen and (max-width: 575px) {
               display: flex;
               justify-content: center;
-              margin-top: 6.5rem;
+              margin-top: 4rem;
             }
 
             .btn {
@@ -1795,6 +1799,14 @@ table.custom-table {
             }
           }
 
+          .referral {
+            h3 {
+              @media screen and (max-width: 1919px) and (min-width: 769px) {
+                max-width: 318px;
+              }
+            }
+          }
+
           .copy {
             position: relative;
             background-color: #fff;
@@ -1817,17 +1829,21 @@ table.custom-table {
             &.social-sub-section {
               width: 100%;
 
-              @media screen and (max-width: 992px) and (min-width: 769px) {
+              @media screen and (max-width: 991px) and (min-width: 769px) {
                 width: 48%;
                 margin-left: 0.75rem;
               }
 
-              @media screen and (min-width: 1367px) {
+              @media screen and (min-width: 1920px) {
                 margin-top: 5.5rem;
               }
 
-              @media screen and (max-width: 1366px) {
-                margin-top: 2.5rem;
+              @media screen and (max-width: 1919px) and (min-width: 992px) {
+                margin-top: 4.5rem;
+              }
+
+              @media screen and (max-width: 768px) {
+                margin-top: 2rem;
               }
             }
 
@@ -1841,7 +1857,7 @@ table.custom-table {
               justify-content: center;
             }
 
-            @media screen and (max-width: 1366px) {
+            @media screen and (max-width: 1919px) {
               justify-content: space-between;
 
               a {
@@ -1849,7 +1865,7 @@ table.custom-table {
               }
             }
 
-            @media screen and (max-width: 1366px) and (min-width: 769px) {
+            @media screen and (max-width: 1919px) and (min-width: 769px) {
               margin-top: 2rem !important;
             }
 
@@ -1860,7 +1876,7 @@ table.custom-table {
                 margin-right: 0;
               }
 
-              @media screen and (max-width: 1366px) {
+              @media screen and (max-width: 1919px) {
                 width: 24px;
                 margin-right: 0.975rem;
 
@@ -1890,16 +1906,21 @@ table.custom-table {
 
         .reminder {
           flex-grow: 1;
-          margin-top: 2rem;
+
+          @media screen and (min-width: 992px) {
+            margin-top: 4.5rem;
+          }
 
           @media screen and (max-width: 991px) {
             max-width: unset !important;
             justify-content: flex-end !important;
 
             .btn {
-              margin-top: 2rem;
               width: 100%;
               max-width: 174px;
+              @media screen and (min-width: 992px) {
+                margin-top: 2rem;
+              }
             }
           }
 
@@ -1970,14 +1991,6 @@ table.custom-table {
 
   @media screen and (max-width: 575px) {
     padding-right: 1.5rem !important;
-  }
-}
-
-.transactions-right {
-  .title {
-    .back {
-      top: 0.75rem !important;
-    }
   }
 }
 
@@ -2092,15 +2105,31 @@ table.custom-table {
         &:nth-child(2),
         &:nth-child(3) {
           display: flex;
-          justify-content: space-between;
           align-items: center;
+        }
+
+        &:nth-child(2) {
+          justify-content: space-between;
+        }
+
+        &:nth-child(3) {
+          justify-content: space-between;
+          // justify-content: flex-end;
+
+          .amount {
+            // margin-right: 25%;
+
+            // @media screen and (max-width: 991px) {
+            //   margin-right: 22.5%;
+            // }
+          }
         }
 
         &:nth-child(1) {
           width: 30%;
 
           @media screen and (max-width: 1270px) {
-            width: 33.33%;
+            width: 27%;
           }
 
           @media screen and (max-width: 991px) {
@@ -2120,7 +2149,7 @@ table.custom-table {
           }
 
           @media screen and (max-width: 1100px) {
-            width: 20%;
+            width: 25%;
           }
 
           @media screen and (max-width: 991px) {
@@ -2140,10 +2169,10 @@ table.custom-table {
         }
 
         &:nth-child(3) {
-          width: 25%;
+          width: 30%;
 
           @media screen and (max-width: 1590px) {
-            width: 25%;
+            width: 30%;
           }
 
           @media screen and (max-width: 1270px) {
@@ -2151,11 +2180,7 @@ table.custom-table {
           }
 
           @media screen and (max-width: 991px) {
-            width: 30%;
-          }
-
-          @media screen and (max-width: 991px) {
-            width: 31%;
+            width: 40%;
           }
 
           @media screen and (max-width: 800px) {
@@ -2163,7 +2188,7 @@ table.custom-table {
           }
 
           @media screen and (max-width: 675px) {
-            width: 37%;
+            width: 40%;
           }
 
           @media screen and (max-width: 575px) {
@@ -2258,11 +2283,11 @@ table.custom-table {
       left: -2rem;
       top: 50%;
       transform: translateY(-50%);
-      display: none;
 
-      @media screen and (max-width: 768px) {
-        top: 2.5rem;
-        display: block;
+      @media screen and (min-width: 769px) {
+        position: relative;
+        top: 1rem;
+        left: -0.125rem;
       }
     }
 
@@ -2538,8 +2563,11 @@ table.custom-table {
       flex-grow: 1;
       text-align: center;
       transform: translateY(0.5rem);
+      display: flex;
+      justify-content: center;
 
       @media screen and (max-width: 575px) {
+        justify-content: flex-start;
         width: 100%;
       }
     }
@@ -2559,6 +2587,14 @@ table.custom-table {
   }
 
   .lower-content {
+    @media screen and (min-width: 1367px) {
+      padding-top: 110px !important;
+    }
+
+    @media screen and (min-width: 769px) {
+      padding-top: 90px !important;
+    }
+
     @media screen and (max-width: 768px) {
       padding-top: 70px !important;
     }
@@ -2575,6 +2611,30 @@ table.custom-table {
 
   @media screen and (max-width: 768px) {
     padding-top: 1.5rem;
+  }
+
+  .top-fixed-bar {
+    @media screen and (min-width: 769px) {
+      padding: 0 7rem 2rem;
+      background: #fff;
+      position: fixed;
+      top: 132px;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
+
+      .head {
+        max-width: 1675px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    @media screen and (max-width: 1366px) and (min-width: 769px) {
+      top: 116px;
+      padding: 0 5rem 2rem;
+    }
   }
 
   .head {
