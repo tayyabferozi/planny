@@ -3108,13 +3108,6 @@ aside.explore {
   pointer-events: all;
 }
 
-@media screen and (max-width: 768px) {
-  #notifications .body .item .action {
-    opacity: 0;
-    pointer-events: none;
-  }
-}
-
 #notifications .body .item h5 {
   margin-top: 0.5rem;
 }
