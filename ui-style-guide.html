@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- BOOTSTRAP -->
+
+    <link rel="stylesheet" href="./assets/css/bootstrap-utilities.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap-gird.min.css" />
+
+    <!-- CUSTOM STYLESHEETS -->
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/utilities.css" />
+
+    <title>Style Guide</title>
+  </head>
+  <body>
+    <h2 class="text-center mt-4">UI style guide</h2>
+
+    <div class="text-fields p-3">
+      <div class="mb-4">
+        <div class="custom-form-control">
+          <h4 class="text-light-2">Default</h4>
+          <input class="custom-input" type="text" placeholder="Placeholder" />
+        </div>
+      </div>
+      <div class="mb-4">
+        <div class="custom-form-control">
+          <h4 class="text-light-2">Normal</h4>
+          <input class="custom-input" type="text" value="Default Value" />
+        </div>
+      </div>
+      <div class="mb-4">
+        <div class="custom-form-control">
+          <h4 class="text-light-2">Disable</h4>
+          <input
+            class="custom-input"
+            type="text"
+            disabled
+            value="Default Value"
+          />
+        </div>
+      </div>
+      <div class="mb-4">
+        <div class="custom-form-control with-helper error">
+          <h4 class="text-light-2">Error</h4>
+          <input class="custom-input" type="text" value="Default Value" />
+          <div class="helper">
+            <img src="./assets/images/input-error-helper.svg" alt="error" />
+            <div class="text">Please provide a valid email address</div>
+          </div>
+        </div>
+      </div>
+      <div class="mb-4">
+        <div class="custom-form-control with-helper success">
+          <h4 class="text-light-2">Success</h4>
+          <input class="custom-input" type="text" value="Default Value" />
+          <div class="helper">
+            <img src="./assets/images/input-success-helper.svg" alt="success" />
+            <div class="text">Successfully updated</div>
+          </div>
+        </div>
+      </div>
+      <div class="mb-4">
+        <div class="custom-form-control with-helper info">
+          <h4 class="text-light-2">Info</h4>
+          <input class="custom-input" type="text" value="Default Value" />
+          <div class="helper">
+            <img src="./assets/images/input-info-helper.svg" alt="info" />
+            <div class="text">Please provide a valid age between 18 to 60.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script defer src="./assets/js/common.js"></script>
+  </body>
+</html>

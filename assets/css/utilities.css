@@ -266,6 +266,12 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  .fs-768-32 {
+    font-size: 32px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .fs-768-16 {
     font-size: 16px !important;
   }
@@ -298,6 +304,24 @@ p {
 @media screen and (max-width: 575px) {
   .fs-575-28 {
     font-size: 28px !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .fs-575-26 {
+    font-size: 26px !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .fs-575-24 {
+    font-size: 24px !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .fs-575-22 {
+    font-size: 22px !important;
   }
 }
 
@@ -1302,7 +1326,7 @@ hr {
 
 .btn {
   padding: 0.65rem 2rem;
-  font-size: 14px;
+  font-size: 16px;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
@@ -1530,6 +1554,56 @@ hr {
   }
 }
 
+.custom-form-control.with-helper .helper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.5rem;
+}
+
+.custom-form-control.with-helper .helper .text {
+  font-size: 12px;
+}
+
+.custom-form-control.with-helper .helper img {
+  width: 16px;
+  height: 16px;
+  margin-right: 0.5rem;
+}
+
+.custom-form-control.with-helper.error .text-light-2,
+.custom-form-control.with-helper.error .helper .text {
+  color: #ff3100;
+}
+
+.custom-form-control.with-helper.error input {
+  border-color: #ff3100;
+}
+
+.custom-form-control.with-helper.success .text-light-2,
+.custom-form-control.with-helper.success .helper .text {
+  color: #01c58d;
+}
+
+.custom-form-control.with-helper.success input {
+  border-color: #01c58d;
+}
+
+.custom-form-control.with-helper.info .text-light-2,
+.custom-form-control.with-helper.info .helper .text {
+  color: #007dff;
+}
+
+.custom-form-control.with-helper.info input {
+  border-color: #007dff;
+}
+
 .custom-form-control input,
 .custom-form-control select,
 .custom-form-control label {
@@ -1623,6 +1697,7 @@ textarea.custom-input,
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   color: #31353f;
+  caret-color: #ffc32c;
 }
 
 input.custom-input:disabled,
@@ -2166,7 +2241,7 @@ textarea.custom-input.with-outline,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 4rem;
+  padding-top: 6rem;
 }
 
 #right-menu-login .nav a,
@@ -2189,7 +2264,7 @@ textarea.custom-input.with-outline,
 @media screen and (max-width: 1366px) {
   #right-menu-login,
   #right-menu {
-    width: 322px;
+    width: 395px;
   }
 }
 
@@ -2420,6 +2495,7 @@ textarea.custom-input.with-outline,
   bottom: 15rem;
   width: 90%;
   font-size: 24px;
+  height: 56px;
 }
 
 @media screen and (max-width: 1366px) {
@@ -2427,6 +2503,7 @@ textarea.custom-input.with-outline,
     bottom: 10rem;
     font-size: 14px;
     width: 85%;
+    height: 40px;
   }
 }
 

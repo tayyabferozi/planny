@@ -263,6 +263,12 @@ p {
   }
 }
 
+.fs-768-32 {
+  @media screen and (max-width: 768px) {
+    font-size: 32px !important;
+  }
+}
+
 .fs-768-16 {
   @media screen and (max-width: 768px) {
     font-size: 16px !important;
@@ -296,6 +302,24 @@ p {
 .fs-575-28 {
   @media screen and (max-width: 575px) {
     font-size: 28px !important;
+  }
+}
+
+.fs-575-26 {
+  @media screen and (max-width: 575px) {
+    font-size: 26px !important;
+  }
+}
+
+.fs-575-24 {
+  @media screen and (max-width: 575px) {
+    font-size: 24px !important;
+  }
+}
+
+.fs-575-22 {
+  @media screen and (max-width: 575px) {
+    font-size: 22px !important;
   }
 }
 
@@ -1194,7 +1218,7 @@ hr {
 
 .btn {
   padding: 0.65rem 2rem;
-  font-size: 14px;
+  font-size: 16px;
   flex-grow: 0;
   height: 40px;
   display: flex;
@@ -1401,6 +1425,58 @@ hr {
 
 ////////////////////////////////////////////////////// CUSTOM FORM CONTROLS   ////////////////////////////////////////////////////////
 
+.custom-form-control.with-helper {
+  .helper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0.5rem;
+
+    .text {
+      font-size: 12px;
+    }
+
+    img {
+      width: 16px;
+      height: 16px;
+      margin-right: 0.5rem;
+    }
+  }
+
+  &.error {
+    .text-light-2,
+    .helper .text {
+      color: $color28;
+    }
+
+    input {
+      border-color: $color28;
+    }
+  }
+
+  &.success {
+    .text-light-2,
+    .helper .text {
+      color: $color23;
+    }
+
+    input {
+      border-color: $color23;
+    }
+  }
+
+  &.info {
+    .text-light-2,
+    .helper .text {
+      color: $color33;
+    }
+
+    input {
+      border-color: $color33;
+    }
+  }
+}
+
 .custom-form-control {
   input,
   select,
@@ -1483,6 +1559,7 @@ textarea.custom-input,
   border: 1px solid $color7;
   transition: 0.4s ease;
   color: $color2;
+  caret-color: $color1;
 
   &:disabled {
     color: $color3;
@@ -1975,7 +2052,7 @@ textarea.custom-input,
   .nav {
     display: flex;
     flex-direction: column;
-    padding-top: 4rem;
+    padding-top: 6rem;
 
     a {
       color: $color2;
@@ -1993,7 +2070,7 @@ textarea.custom-input,
   }
 
   @media screen and (max-width: 1366px) {
-    width: 322px;
+    width: 395px;
   }
 
   @media screen and (max-width: 768px) {
@@ -2174,11 +2251,13 @@ textarea.custom-input,
     bottom: 15rem;
     width: 90%;
     font-size: 24px;
+    height: 56px;
 
     @media screen and (max-width: 1366px) {
       bottom: 10rem;
       font-size: 14px;
       width: 85%;
+      height: 40px;
     }
 
     @media screen and (max-width: 768px) {

@@ -34,7 +34,7 @@ $("[src='./assets/images/user.svg']").click(function () {
 
 $("[data-target='#exampleModal6']").click(function () {
   $("#dark-overlay-beneath").removeClass("d-none");
-  $("#right-menu-login").removeClass("d-none");
+  $("#right-menu").removeClass("d-none");
 });
 
 $(".timepicker").timepicki({ reset: true });
