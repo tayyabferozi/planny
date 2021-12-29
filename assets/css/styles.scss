@@ -1424,6 +1424,11 @@ aside.explore {
 }
 
 #refer-and-invest {
+  .shadowy img {
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.16);
+  }
+
   .btn {
     height: 56px;
     padding: 0 3.25rem;

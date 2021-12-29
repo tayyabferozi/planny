@@ -1569,6 +1569,12 @@ aside.explore {
   }
 }
 
+#refer-and-invest .shadowy img {
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.16);
+}
+
 #refer-and-invest .btn {
   height: 56px;
   padding: 0 3.25rem;
