@@ -2697,8 +2697,10 @@ aside.explore {
       }
 
       @media screen and (max-width: 768px) {
-        opacity: 1;
-        pointer-events: all;
+        .action {
+          opacity: 1;
+          pointer-events: all;
+        }
       }
 
       h5 {

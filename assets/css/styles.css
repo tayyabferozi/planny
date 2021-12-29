@@ -3109,7 +3109,7 @@ aside.explore {
 }
 
 @media screen and (max-width: 768px) {
-  #notifications .body .item {
+  #notifications .body .item .action {
     opacity: 1;
     pointer-events: all;
   }
