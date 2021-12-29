@@ -3090,10 +3090,22 @@ aside.explore {
   border-bottom: 1px solid #eeeeee;
 }
 
+#notifications .body .item .action {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
 @media screen and (max-width: 525px) {
   #notifications .body .item .action {
     display: none;
   }
+}
+
+#notifications .body .item:hover .action {
+  opacity: 1;
+  pointer-events: all;
 }
 
 #notifications .body .item h5 {
