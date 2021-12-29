@@ -250,6 +250,10 @@ table.custom-table {
   padding: var(--section-padding);
   z-index: 5;
 
+  .nav .me-4 {
+    margin-right: 32px !important;
+  }
+
   .logo {
     img {
       @media screen and (max-width: 1366px) {

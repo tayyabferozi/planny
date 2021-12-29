@@ -259,6 +259,10 @@ table.custom-table tr td {
   z-index: 5;
 }
 
+#navbar-sm .nav .me-4 {
+  margin-right: 32px !important;
+}
+
 @media screen and (max-width: 1366px) {
   #navbar-sm .logo img {
     width: 88px;
