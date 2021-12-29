@@ -2287,7 +2287,7 @@ aside.explore {
 
 @media screen and (max-width: 768px) {
   #transactions .lower-content {
-    padding-top: 110px !important;
+    padding-top: 100px !important;
   }
 }
 
