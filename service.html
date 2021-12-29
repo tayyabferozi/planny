@@ -325,7 +325,12 @@
                 </div>
                 <div class="msomobilestatics_p3">
                   <h4>Monthly <span>Expenses</span></h4>
-                  <input type="text" name="" value="₹70,000" />
+                  <input
+                    id="monthly-input-box"
+                    type="text"
+                    name=""
+                    value="₹70,000"
+                  />
                 </div>
               </div>
               <!-- <a
@@ -573,7 +578,18 @@
                     </div>
                   </div>
                   <div class="Generated_Financial_plans_data">
-                    <div class="Generated_Financial_plans_data_box">
+                    <div
+                      id="car-card"
+                      class="Generated_Financial_plans_data_box"
+                    >
+                      <a
+                        id="add"
+                        data-toggle="modal"
+                        data-target="#exampleModal1"
+                        class="xhid1"
+                      >
+                        <img src="./assets/images/close.svg" alt="close" />
+                      </a>
                       <div class="Generated_Financial_plans_data_box_p1">
                         <img src="./assets/images/car.svg" />
                       </div>
@@ -2263,7 +2279,7 @@
                   </div>
                   <div class="progress-section">
                     <div class="head d-1024-none">
-                      <h2 class="resist-size" class="fs-32 fw-700">
+                      <h2 class="resist-size fw-700" class="fs-32 fw-700">
                         RETIREMENT
                       </h2>
                       <div class="text-light-2 fs-16 mb-2">
@@ -2288,6 +2304,26 @@
                       <span>2021</span>
                       <span>In 15 years</span>
                     </div>
+                  </div>
+                </div>
+                <div class="progoressbar-xs">
+                  <div class="msoretirepop_p2_s3 xs">
+                    <div class="progress">
+                      <div
+                        class="progress-bar fs-10"
+                        role="progressbar"
+                        style="width: 0%"
+                        aria-valuenow="0"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        0%
+                      </div>
+                    </div>
+                  </div>
+                  <div class="msoretirepop_p2_s4">
+                    <span class="fs-12">2021</span>
+                    <span class="fs-12">In 15 years</span>
                   </div>
                 </div>
                 <div class="msoretirepop_p2_s5 mb-0 mb-sm-5">
@@ -2661,6 +2697,41 @@
                 <div class="makepaymentmodel_p1_up dn">
                   <h3>Confirm Order</h3>
                 </div>
+                <!-- <div class="makepaymentmodel_sm">
+                  <div class="top">
+                    <div class="calc">
+                      <div class="heading">
+                        <h3 class="text-light-2">
+                          Total <br />
+                          Mutual Funds
+                        </h3>
+                        <h3>03</h3>
+                      </div>
+                      <div class="body">₹24,000</div>
+                    </div>
+                    <div class="calc">
+                      <div class="heading">
+                        <h3 class="text-light-2">
+                          Total <br />
+                          Mutual Funds
+                        </h3>
+                        <h3>03</h3>
+                      </div>
+                      <div class="body">₹24,000</div>
+                    </div>
+                    <div class="calc">
+                      <div class="heading">
+                        <h3 class="text-light-2 fs-16">
+                          Total <br />
+                          Mutual Funds
+                        </h3>
+                        <h3 class="fs-24">03</h3>
+                      </div>
+                      <div class="body">₹24,000</div>
+                    </div>
+                  </div>
+                </div> -->
+                <div class="mt"></div>
                 <div class="makepaymentmodel_p1">
                   <div class="makepaymentmodel_p1_s1">
                     <div class="makepaymentmodel_p1_s1_p1">
@@ -2668,7 +2739,7 @@
                       <h3>Mutual Funds</h3>
                     </div>
                     <div class="makepaymentmodel_p1_s1_p2">
-                      <h4>03</h4>
+                      <h4 class="fs-24">01</h4>
                     </div>
                     <div class="makepaymentmodel_p1_s1_p3">
                       <span></span>
@@ -2686,7 +2757,7 @@
                       <h3>Fixed Deposits</h3>
                     </div>
                     <div class="makepaymentmodel_p1_s1_p2">
-                      <h4>01</h4>
+                      <h4 class="fs-24">01</h4>
                     </div>
                     <div class="makepaymentmodel_p1_s1_p3">
                       <span></span>
@@ -2727,9 +2798,9 @@
                         class="ac5"
                         >Make Payment</a
                       >
-                      <div class="sequrepay dn">
+                      <!-- <div class="sequrepay dn">
                         <img src="./assets/images/sequrepay.svg" />
-                      </div>
+                      </div> -->
                     </div>
                     <div class="makepaymentmodel_p1_s7_p2">
                       <div class="makepaymentmodel_p1_s7_p2_left">
@@ -2941,7 +3012,7 @@
 
     <!-- Modal 1 -->
     <div
-      class="modal fade modelstyl5 modelstyl1"
+      class="modal fade modelstyl5 modelstyl1 normalized-modal"
       id="exampleModal4"
       tabindex="-1"
       role="dialog"
