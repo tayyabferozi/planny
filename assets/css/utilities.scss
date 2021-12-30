@@ -143,6 +143,12 @@ p {
   }
 }
 
+.fs-1919-32 {
+  @media screen and (max-width: 1919px) {
+    font-size: 32px !important;
+  }
+}
+
 .fs-1919-24 {
   @media screen and (max-width: 1919px) {
     font-size: 24px !important;
@@ -1795,7 +1801,7 @@ textarea.custom-input,
 
 .radio-container,
 .switch-container {
-  height: 35px;
+  height: 40px;
   display: flex;
   align-items: center;
 
@@ -2372,7 +2378,7 @@ textarea.custom-input,
   padding-left: 7rem;
   padding-right: 7rem;
 
-  @media screen and (max-width: 1366px) {
+  @media screen and (max-width: 1919px) {
     padding-left: 5rem;
     padding-right: 5rem;
   }

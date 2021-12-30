@@ -263,7 +263,7 @@ table.custom-table tr td {
   margin-right: 32px !important;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1919px) {
   #navbar-sm .logo img {
     width: 88px;
   }
@@ -275,7 +275,7 @@ table.custom-table tr td {
   padding-top: 4rem;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1919px) {
   #navbar-sm.notification-navbar {
     padding-top: 3rem;
     padding-left: 5rem;
@@ -943,6 +943,10 @@ aside.explore {
   max-width: 200px;
 }
 
+#investment-ready .custom-modal .modal-body .mySwiper img {
+  width: 82px;
+}
+
 #investment-ready .custom-modal .modal-body .mySwiper .swiper-pagination {
   bottom: 20px;
 }
@@ -989,6 +993,12 @@ aside.explore {
 
 #investment-ready .custom-modal .modal-body .cards .card img {
   margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 1919px) {
+  #investment-ready .custom-modal .modal-body .cards .card img {
+    width: 65px;
+  }
 }
 
 #investment-ready .custom-modal .modal-body .cards .card h4 {
@@ -1361,7 +1371,7 @@ aside.explore {
           transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   #uploader .file-uploader .text-yellow.fw-bold {
     text-transform: capitalize;
   }
@@ -2896,6 +2906,18 @@ aside.explore {
 
 #profile .deactivate .left {
   width: 75%;
+}
+
+@media screen and (min-width: 1366px) {
+  #profile .deactivate .left {
+    max-width: 630px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  #profile .deactivate .left {
+    max-width: 897px;
+  }
 }
 
 @media screen and (max-width: 575px) {

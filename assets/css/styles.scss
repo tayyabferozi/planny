@@ -256,7 +256,7 @@ table.custom-table {
 
   .logo {
     img {
-      @media screen and (max-width: 1366px) {
+      @media screen and (max-width: 1919px) {
         width: 88px;
       }
     }
@@ -267,7 +267,7 @@ table.custom-table {
     padding-right: 7rem;
     padding-top: 4rem;
 
-    @media screen and (max-width: 1366px) {
+    @media screen and (max-width: 1919px) {
       padding-top: 3rem;
       padding-left: 5rem;
       padding-right: 5rem;
@@ -872,6 +872,10 @@ aside.explore {
         padding-bottom: 3rem;
         max-width: 200px;
 
+        img {
+          width: 82px;
+        }
+
         .swiper-pagination {
           bottom: 20px;
 
@@ -913,6 +917,10 @@ aside.explore {
 
           img {
             margin-bottom: 0.5rem;
+
+            @media screen and (max-width: 1919px) {
+              width: 65px;
+            }
           }
 
           h4 {
@@ -1239,7 +1247,7 @@ aside.explore {
     }
 
     .text-yellow.fw-bold {
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 991px) {
         text-transform: capitalize;
       }
     }
@@ -2520,6 +2528,14 @@ aside.explore {
 
     .left {
       width: 75%;
+
+      @media screen and (min-width: 1366px) {
+        max-width: 630px;
+      }
+
+      @media screen and (min-width: 1920px) {
+        max-width: 897px;
+      }
 
       @media screen and (max-width: 575px) {
         width: 100%;

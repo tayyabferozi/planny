@@ -146,6 +146,12 @@ p {
 }
 
 @media screen and (max-width: 1919px) {
+  .fs-1919-32 {
+    font-size: 32px !important;
+  }
+}
+
+@media screen and (max-width: 1919px) {
   .fs-1919-24 {
     font-size: 24px !important;
   }
@@ -1960,7 +1966,7 @@ textarea.custom-input.with-outline,
 
 .radio-container,
 .switch-container {
-  height: 35px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2632,7 +2638,7 @@ textarea.custom-input.with-outline,
   padding-right: 7rem;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1919px) {
   #sidenav-right-content {
     padding-left: 5rem;
     padding-right: 5rem;
