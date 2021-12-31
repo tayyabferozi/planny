@@ -49,6 +49,7 @@ for (i = 0; i < l; i++) {
     e.stopPropagation();
     closeAllSelect(this);
     this.nextSibling.classList.toggle("select-hide");
+    document.querySelector("#dark-overlay-dropdown").classList.toggle("show");
     this.classList.toggle("select-arrow-active");
   });
 }
@@ -75,6 +76,7 @@ function closeAllSelect(elmnt) {
   for (i = 0; i < xl; i++) {
     if (arrNo.indexOf(i)) {
       x[i].classList.add("select-hide");
+      document.querySelector("#dark-overlay-dropdown").classList.remove("show");
     }
   }
 }
