@@ -12,71 +12,323 @@
 
     <!-- CUSTOM STYLESHEETS -->
 
+    <link rel="stylesheet" href="./assets/css/mc-calendar.min.css" />
+
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/utilities.css" />
 
     <title>Style Guide</title>
   </head>
   <body>
+    <div id="dark-overlay-dropdown"></div>
     <h2 class="text-center mt-4">UI style guide</h2>
 
-    <div class="text-fields p-3">
-      <div class="mb-4">
-        <div class="custom-form-control">
-          <h4 class="text-light-2">Default</h4>
-          <input class="custom-input" type="text" placeholder="Placeholder" />
-        </div>
-      </div>
-      <div class="mb-4">
-        <div class="custom-form-control">
-          <h4 class="text-light-2">Normal</h4>
-          <input class="custom-input" type="text" value="Default Value" />
-        </div>
-      </div>
-      <div class="mb-4">
-        <div class="custom-form-control">
-          <h4 class="text-light-2">Disable</h4>
-          <input
-            class="custom-input"
-            type="text"
-            disabled
-            value="Default Value"
-          />
-        </div>
-      </div>
-      <div class="mb-4">
-        <div class="custom-form-control with-helper error">
-          <h4 class="text-light-2">Error</h4>
-          <input class="custom-input" type="text" value="Default Value" />
-          <div class="helper">
-            <img src="./assets/images/input-error-helper.svg" alt="error" />
-            <div class="text">Please provide a valid email address</div>
-          </div>
-        </div>
-      </div>
-      <div class="mb-4">
-        <div class="custom-form-control with-helper success">
-          <h4 class="text-light-2">Success</h4>
-          <input class="custom-input" type="text" value="Default Value" />
-          <div class="helper">
-            <img src="./assets/images/input-success-helper.svg" alt="success" />
-            <div class="text">Successfully updated</div>
-          </div>
-        </div>
-      </div>
-      <div class="mb-4">
-        <div class="custom-form-control with-helper info">
-          <h4 class="text-light-2">Info</h4>
-          <input class="custom-input" type="text" value="Default Value" />
-          <div class="helper">
-            <img src="./assets/images/input-info-helper.svg" alt="info" />
-            <div class="text">Please provide a valid age between 18 to 60.</div>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12" style="max-width: 400px">
+          <div class="text-fields p-3">
+            <div class="mb-4">
+              <div class="custom-form-control">
+                <h4 class="text-light-2">Default</h4>
+                <input
+                  class="custom-input"
+                  type="text"
+                  placeholder="Placeholder"
+                />
+              </div>
+            </div>
+            <div class="mb-4">
+              <div class="custom-form-control">
+                <h4 class="text-light-2">Normal</h4>
+                <input class="custom-input" type="text" value="Default Value" />
+              </div>
+            </div>
+            <div class="mb-4">
+              <div class="custom-form-control">
+                <h4 class="text-light-2">Disable</h4>
+                <input
+                  class="custom-input"
+                  type="text"
+                  disabled
+                  value="Default Value"
+                />
+              </div>
+            </div>
+            <div class="mb-4">
+              <div class="custom-form-control with-helper error">
+                <h4 class="text-light-2">Error</h4>
+                <input class="custom-input" type="text" value="Default Value" />
+                <div class="helper">
+                  <img
+                    src="./assets/images/input-error-helper.svg"
+                    alt="error"
+                  />
+                  <div class="text">Please provide a valid email address</div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <div class="custom-form-control with-helper success">
+                <h4 class="text-light-2">Success</h4>
+                <input class="custom-input" type="text" value="Default Value" />
+                <div class="helper">
+                  <img
+                    src="./assets/images/input-success-helper.svg"
+                    alt="success"
+                  />
+                  <div class="text">Successfully updated</div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <div class="custom-form-control with-helper info">
+                <h4 class="text-light-2">Info</h4>
+                <input class="custom-input" type="text" value="Default Value" />
+                <div class="helper">
+                  <img src="./assets/images/input-info-helper.svg" alt="info" />
+                  <div class="text">
+                    Please provide a valid age between 18 to 60.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <div class="custom-form-control">
+                <h4 class="text-light-2">DROPDOWN</h4>
+                <div class="custom-select">
+                  <select>
+                    <option value="1">Saving</option>
+                    <option value="2">Current</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <div class="custom-form-control mt-4">
+                <div class="with-icon">
+                  <input
+                    class="custom-input timepicker"
+                    type="text"
+                    placeholder="Choose Time"
+                    onfocus="(this.type='date')"
+                    onblur="(this.type='text')"
+                  />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    viewBox="0 0 17 17"
+                    class="icon no-clr"
+                  >
+                    <g
+                      class="white-clr"
+                      id="Group_10713"
+                      data-name="Group 10713"
+                      transform="translate(-11718.5 15196.5)"
+                    >
+                      <g
+                        class="no-clr"
+                        id="clock"
+                        transform="translate(11717 -15198)"
+                      >
+                        <circle
+                          id="Ellipse_179"
+                          data-name="Ellipse 179"
+                          cx="8"
+                          cy="8"
+                          r="8"
+                          transform="translate(2 2)"
+                          fill="none"
+                          stroke="#31353f"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1"
+                        />
+                        <path
+                          id="Path_10235"
+                          data-name="Path 10235"
+                          d="M12,6v4.8l3.2,1.6"
+                          transform="translate(-2 -0.8)"
+                          fill="none"
+                          stroke="#31353f"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1"
+                        />
+                      </g>
+                      <g
+                        id="Rectangle_1591"
+                        data-name="Rectangle 1591"
+                        transform="translate(11719 -15196)"
+                        fill="#fff"
+                        stroke="#31353f"
+                        stroke-width="1"
+                        opacity="0"
+                        class="no-clr"
+                      >
+                        <rect
+                          class="no-clr"
+                          width="16"
+                          height="16"
+                          stroke="none"
+                        />
+                        <rect
+                          class="no-clr"
+                          x="0.5"
+                          y="0.5"
+                          width="15"
+                          height="15"
+                          fill="none"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <div class="custom-form-control switch-container mt-0">
+                <label for="#nominee">
+                  <h4>Toggler</h4>
+                </label>
+                <label id="nominee" class="switch">
+                  <input type="checkbox" checked />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <div class="mb-4">
+              <div class="custom-form-control">
+                <h4 class="text-light-2">GENDER</h4>
+                <div class="radio-container">
+                  <label class="custom-radio"
+                    >Male
+                    <input type="radio" checked="checked" name="gender" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="custom-radio"
+                    >Female
+                    <input type="radio" name="gender" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="custom-radio"
+                    >Other
+                    <input type="radio" name="gender" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <div class="custom-form-control">
+                <label class="checkbox-container fs-1919-16"
+                  >Signed Up
+                  <input type="checkbox" checked="checked" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container mt-3 fs-1919-16"
+                  >Investment
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+            <div class="mb-4">
+              <div class="custom-form-control">
+                <div class="with-icon">
+                  <input
+                    class="custom-input"
+                    type="text"
+                    id="example"
+                    type="date"
+                    placeholder="Choose Date"
+                  /><svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16.055"
+                    viewBox="0 0 16 16.055"
+                  >
+                    <g
+                      id="Group_10631"
+                      data-name="Group 10631"
+                      transform="translate(-790 -600.973)"
+                    >
+                      <g id="Group_1614" data-name="Group 1614" opacity="0">
+                        <rect
+                          id="Rectangle_1614"
+                          data-name="Rectangle 1614"
+                          width="16"
+                          height="16"
+                          transform="translate(790 601)"
+                          fill=""
+                        />
+                        <path
+                          id="Rectangle_1614_-_Outline"
+                          data-name="Rectangle 1614 - Outline"
+                          d="M1,1V15H15V1H1M0,0H16V16H0Z"
+                          transform="translate(790 601)"
+                          fill=""
+                        />
+                      </g>
+                      <g
+                        id="calendar_1_"
+                        data-name="calendar (1)"
+                        transform="translate(791 601.473)"
+                      >
+                        <path
+                          id="Rectangle"
+                          d="M2-.5H12A2.5,2.5,0,0,1,14.5,2V12A2.5,2.5,0,0,1,12,14.5H2A2.5,2.5,0,0,1-.5,12V2A2.5,2.5,0,0,1,2-.5Zm10,14A1.5,1.5,0,0,0,13.5,12V2A1.5,1.5,0,0,0,12,.5H2A1.5,1.5,0,0,0,.5,2V12A1.5,1.5,0,0,0,2,13.5Z"
+                          transform="translate(0 1.055)"
+                          fill=""
+                        />
+                        <path
+                          id="Path"
+                          d="M.5,3.511a.5.5,0,0,1-.5-.5V0A.5.5,0,0,1,.5-.5.5.5,0,0,1,1,0V3.011A.5.5,0,0,1,.5,3.511Z"
+                          transform="translate(9.286)"
+                          fill=""
+                        />
+                        <path
+                          id="Path-2"
+                          data-name="Path"
+                          d="M.5,3.511a.5.5,0,0,1-.5-.5V0A.5.5,0,0,1,.5-.5.5.5,0,0,1,1,0V3.011A.5.5,0,0,1,.5,3.511Z"
+                          transform="translate(3.264)"
+                          fill=""
+                        />
+                        <path
+                          id="Path-3"
+                          data-name="Path"
+                          d="M13.549,1H0A.5.5,0,0,1,0,0H13.549a.5.5,0,0,1,0,1Z"
+                          transform="translate(0 5.522)"
+                          fill=""
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <script src="./assets/js/jquery.min.js"></script>
-    <script defer src="./assets/js/common.js"></script>
+
+    <script src="./assets/js/timepicki.js"></script>
+    <script src="./assets/js/mc-calendar.min.js"></script>
+    <script src="./assets/js/select.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
+
+    <script async>
+      $(document).ready(function () {
+        $(".timepicker").timepicki({ reset: true });
+      });
+    </script>
   </body>
 </html>

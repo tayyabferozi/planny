@@ -1955,7 +1955,7 @@ select.list-dt:focus {
 }
 
 @media screen and (max-width: 1024px) {
-  .modal.fade.show .modal-dialog {
+  .modal.fade .modal-dialog {
     position: absolute;
   }
 }
@@ -2773,6 +2773,8 @@ select.list-dt:focus {
 #app {
   padding: 20px 0;
   text-align: center;
+
+  padding-right: 16px;
 }
 
 .cute {
@@ -3142,8 +3144,8 @@ select.list-dt:focus {
 .msoinvestproduct_box_left {
 }
 .msoinvestproduct_box_left img {
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
 }
 .msoinvestproduct_box_right {
   float: left;
@@ -5829,7 +5831,7 @@ select.list-dt:focus {
   .msochartdata_p1 {
     width: 100%;
     float: left;
-    margin-top: 59px;
+    margin-top: 29px;
   }
   .msochartdata_p2 {
     width: 100%;
@@ -6131,7 +6133,7 @@ select.list-dt:focus {
     font-size: 14px;
   }
   .stepsidemenu_p1 #progressbar.xtmclass_ul {
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
   .Generated_Financial_plans_data_box_p2 h3 {
     font-size: 14px;
@@ -6315,7 +6317,7 @@ select.list-dt:focus {
     max-width: calc(100% - 1px);
   }
   .msopiechartlabel_data_label {
-    top: -60px;
+    top: -20px;
   }
   .msoinvestproduct .col-md-12 nav .nav-tabs {
     max-width: 450px;
@@ -8057,12 +8059,6 @@ select.list-dt:focus {
   .msoinvestproduct_box_right_p2 h3 {
     /* font-size: 26px; */
   }
-
-  .msoinvestproduct_box_left img {
-    width: 48px;
-    height: 48px;
-    transform: translateY(-1px);
-  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -8094,7 +8090,7 @@ select.list-dt:focus {
   }
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1919px) {
   .msoinvestproduct_box_right_p2 h3 {
     width: 32px;
     height: 32px;
@@ -8328,9 +8324,15 @@ select.list-dt:focus {
 .modelstyl3 .close {
   position: absolute;
   top: 2rem;
-  right: 1rem;
+  right: 2rem;
   opacity: 1;
   z-index: 1;
+}
+
+@media screen and (max-width: 575px) {
+  .modelstyl3 .close {
+    right: 1.5rem;
+  }
 }
 
 .modelstyl3 .close img {
@@ -8436,7 +8438,7 @@ select.list-dt:focus {
   width: 22px;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1919px) {
   .msoinvestproduct_box_right .head .star-reviews .star {
     width: 14px;
   }
@@ -8463,7 +8465,7 @@ select.list-dt:focus {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1919px) {
   .msoinvestproduct_box_right .body .item {
     height: 55px;
   }
@@ -8481,7 +8483,7 @@ select.list-dt:focus {
   }
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1919px) {
   .msoinvestproduct_box_right .triangle {
     width: 12px;
   }
@@ -8818,7 +8820,8 @@ select.list-dt:focus {
 }
 
 #exampleModal4 .modal-dialog {
-  left: unset !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
   top: unset !important;
 }
 
@@ -8856,10 +8859,14 @@ select.list-dt:focus {
 }
 
 @media screen and (max-width: 575px) {
-  #exampleModal4.modal .modal-dialog {
+  /* #exampleModal4.modal .modal-dialog {
     width: 100% !important;
     max-height: 288px;
     top: 0 !important;
+  } */
+
+  #exampleModal4 .paymentsus_box h3 {
+    font-size: 24px;
   }
 }
 
@@ -8950,13 +8957,6 @@ select.list-dt:focus {
 #exampleModal4 .modal-content,
 #exampleModal4 .modal-body {
   border-radius: 14px !important;
-}
-
-@media screen and (max-width: 575px) {
-  #exampleModal4 .modal-content,
-  #exampleModal4 .modal-body {
-    border-radius: 0 !important;
-  }
 }
 
 @media screen and (min-width: 1920px) and (max-width: 2919px) {
@@ -9178,4 +9178,41 @@ select.list-dt:focus {
 
 .withdrawalmony_box2 {
   border: 1px solid #01c58d;
+}
+
+.planyy_hed_p3_s1 {
+  margin-top: 14px;
+}
+
+@media screen and (max-width: 1023px) {
+  .stepsidemenu_box .planyy_hed_p3 {
+    margin-right: 20px;
+  }
+
+  .stepsidemenu_box .planyy_hed_p3_s2 h5 {
+    margin-top: 27px;
+  }
+}
+/* 
+@media screen and (max-width: 575px) {
+  
+}
+  .stepsidemenu_p1 #progressbar.xtmclass_ul {
+
+  } */
+@media screen and (min-width: 1024px) {
+  .planyy_hed_p3_s2 h5 {
+    margin-top: 29px;
+  }
+}
+@media screen and (max-width: 1919px) {
+  .planyy_hed_p3 {
+    margin-top: 12px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .planyy_hed_p3 {
+    margin-top: 22px;
+  }
 }

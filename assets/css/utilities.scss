@@ -1,5 +1,9 @@
 @import "./_constants.scss";
 
+.z-index-7 {
+  z-index: 7;
+}
+
 @media (min-width: 1024px) {
   .d-1024-none {
     display: none !important;
@@ -503,14 +507,27 @@ p {
 }
 
 #dark-overlay,
-#dark-overlay-beneath {
+#dark-overlay-beneath,
+#dark-overlay-dropdown {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100%;
   z-index: 6;
-  background-color: $color18;
+  background-color: $color2;
+  opacity: 0.8;
+}
+
+#dark-overlay-dropdown {
+  z-index: 7;
+  display: none;
+
+  &.show {
+    @media screen and (max-width: 575px) {
+      display: block;
+    }
+  }
 }
 
 hr {
@@ -1897,6 +1914,45 @@ textarea.custom-input,
   border-bottom-right-radius: 10px;
   box-shadow: 0 15px 20px #55555542;
   background: #fff;
+  overflow: hidden;
+
+  @media screen and (max-width: 575px) {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    box-shadow: none;
+    width: 90%;
+    padding: 45px 0;
+    z-index: 7;
+  }
+
+  div {
+    transition: 0.4s ease;
+
+    @media screen and (max-width: 575px) {
+      position: relative;
+      border-bottom: 1px solid $color30;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      font-size: 14px;
+
+      &::after {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        content: url("../vector/radio-empty.svg");
+        transform: translateY(-50%);
+      }
+
+      &.same-as-selected::after {
+        content: url("../vector/radio-fill.svg");
+      }
+    }
+  }
 }
 
 /*hide the items when the select box is closed:*/
@@ -1904,14 +1960,12 @@ textarea.custom-input,
   display: none;
 }
 
-.select-items div {
-  transition: 0.4s ease;
-}
-
 .select-items div:hover,
 .same-as-selected {
-  background-color: $color21;
-  color: $color1;
+  @media screen and (min-width: 576px) {
+    background-color: $color21;
+    color: $color1;
+  }
 }
 
 // //////////////////////////////////////////////////////////// STYLED BOXES ///////////////////////////////////////////////////////////
@@ -2063,8 +2117,10 @@ textarea.custom-input,
 
   .close {
     position: absolute;
-    right: 1rem;
+    // right: 1rem;
     top: 2.5rem;
+    right: 1rem;
+    padding: 1rem;
   }
 
   .nav {
@@ -2245,6 +2301,28 @@ textarea.custom-input,
 }
 
 #right-menu {
+  .close {
+    @media screen and (max-width: 1919px) {
+      right: 0;
+    }
+
+    @media screen and (max-width: 1366px) and (min-width: 576px) {
+      right: 1rem;
+    }
+
+    img {
+      @media screen and (max-width: 1919px) {
+        width: 24px;
+        height: 24px;
+      }
+
+      @media screen and (max-width: 1366px) and (min-width: 576px) {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
   .nav {
     a {
       font-size: 32px;

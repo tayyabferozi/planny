@@ -1,3 +1,7 @@
+.z-index-7 {
+  z-index: 7;
+}
+
 @media (min-width: 1024px) {
   .d-1024-none {
     display: none !important;
@@ -505,14 +509,27 @@ p {
 }
 
 #dark-overlay,
-#dark-overlay-beneath {
+#dark-overlay-beneath,
+#dark-overlay-dropdown {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100%;
   z-index: 6;
-  background-color: #5b5e66;
+  background-color: #31353f;
+  opacity: 0.8;
+}
+
+#dark-overlay-dropdown {
+  z-index: 7;
+  display: none;
+}
+
+@media screen and (max-width: 575px) {
+  #dark-overlay-dropdown.show {
+    display: block;
+  }
 }
 
 hr {
@@ -2073,11 +2090,23 @@ textarea.custom-input.with-outline,
   -webkit-box-shadow: 0 15px 20px #55555542;
           box-shadow: 0 15px 20px #55555542;
   background: #fff;
+  overflow: hidden;
 }
 
-/*hide the items when the select box is closed:*/
-.select-hide {
-  display: none;
+@media screen and (max-width: 575px) {
+  .select-items {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    border-radius: 12px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 90%;
+    padding: 45px 0;
+    z-index: 7;
+  }
 }
 
 .select-items div {
@@ -2085,10 +2114,40 @@ textarea.custom-input.with-outline,
   transition: 0.4s ease;
 }
 
-.select-items div:hover,
-.same-as-selected {
-  background-color: #fffbef;
-  color: #ffc32c;
+@media screen and (max-width: 575px) {
+  .select-items div {
+    position: relative;
+    border-bottom: 1px solid #e6e7e8;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 14px;
+  }
+  .select-items div::after {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    content: url("../vector/radio-empty.svg");
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .select-items div.same-as-selected::after {
+    content: url("../vector/radio-fill.svg");
+  }
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+@media screen and (min-width: 576px) {
+  .select-items div:hover,
+  .same-as-selected {
+    background-color: #fffbef;
+    color: #ffc32c;
+  }
 }
 
 .details-container {
@@ -2246,8 +2305,9 @@ textarea.custom-input.with-outline,
 #right-menu-login .close,
 #right-menu .close {
   position: absolute;
-  right: 1rem;
   top: 2.5rem;
+  right: 1rem;
+  padding: 1rem;
 }
 
 #right-menu-login .nav,
@@ -2483,6 +2543,32 @@ textarea.custom-input.with-outline,
 #right-menu-login .setting .setting-main .item svg:nth-child(2) {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+}
+
+@media screen and (max-width: 1919px) {
+  #right-menu .close {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 576px) {
+  #right-menu .close {
+    right: 1rem;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  #right-menu .close img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 576px) {
+  #right-menu .close img {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 #right-menu .nav a {
