@@ -200,6 +200,9 @@ table.custom-table tr td {
           align-items: center;
   padding: var(--section-padding);
   z-index: 5;
+  max-width: 1675px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 575px) {
@@ -246,6 +249,45 @@ table.custom-table tr td {
 
 #navbar .custom-dropdown {
   margin-right: 4rem;
+}
+
+@media screen and (min-width: 992px) {
+  #navbar.fp {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #navbar.fp {
+    padding: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  #navbar.fp {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #navbar.fp {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  #navbar.fp .logo {
+    width: 88px;
+  }
+}
+
+#navbar.fp .logo img {
+  width: 100%;
 }
 
 #navbar-sm {
@@ -318,6 +360,17 @@ table.custom-table tr td {
   }
 }
 
+#financial-planning-abbr {
+  margin-right: auto;
+}
+
+@media screen and (min-width: 992px) {
+  #financial-planning-abbr {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+  }
+}
+
 #financial-planning-abbr abbr {
   position: relative;
 }
@@ -332,6 +385,12 @@ table.custom-table tr td {
   #financial-planning-abbr abbr .play {
     display: none;
   }
+}
+
+#financial-planning-abbr .main {
+  max-width: unset;
+  margin-left: unset;
+  margin-right: unset;
 }
 
 @media screen and (min-width: 992px) {
@@ -1392,10 +1451,8 @@ aside.explore {
 
 @media screen and (max-width: 1585px) and (min-width: 1367px) {
   #blogs {
-    padding-left: 7rem !important;
-    padding-right: 7rem !important;
-    margin-left: unset;
-    margin-right: unset;
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
   }
 }
 
@@ -1413,8 +1470,8 @@ aside.explore {
 
 @media screen and (max-width: 1500px) {
   #blogs.page-container {
-    padding-left: 7rem !important;
-    padding-right: 7rem !important;
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
   }
 }
 
@@ -1886,7 +1943,7 @@ aside.explore {
   }
 }
 
-@media screen and (max-width: 1366px) and (min-width: 992px) {
+@media screen and (max-width: 1919px) and (min-width: 992px) {
   #refer-and-invest .cards .card .text {
     margin-top: 4rem;
   }
@@ -2389,7 +2446,7 @@ aside.explore {
 }
 
 #transactions .filter {
-  width: 94px;
+  width: 127px;
   height: 40px;
   margin-left: 3rem;
 }
@@ -2397,6 +2454,12 @@ aside.explore {
 @media screen and (max-width: 700px) {
   #transactions .filter {
     margin-left: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  #transactions .filter {
+    margin-left: 0.75rem;
   }
 }
 
@@ -2463,6 +2526,12 @@ aside.explore {
 
 #transactions .transactions-body .transaction > *:nth-child(1) {
   width: 265px;
+}
+
+@media screen and (min-width: 1200px) {
+  #transactions .transactions-body .transaction > *:nth-child(1) {
+    width: 365px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -2539,7 +2608,7 @@ aside.explore {
   width: 48px;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1919px) {
   #transactions .transactions-body .transaction .details img {
     width: 32px;
   }
@@ -2569,9 +2638,10 @@ aside.explore {
   height: 32px;
   font-size: 16px;
   font-weight: 600;
+  line-height: 1;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1919px) {
   #transactions .transactions-body .transaction .status .btn {
     font-size: 12px;
     width: 72px;
@@ -2690,6 +2760,12 @@ aside.explore {
   width: 100%;
 }
 
+@media screen and (max-width: 1919px) {
+  #transaction .transaction .transaction-head .details .logo {
+    width: 48px;
+  }
+}
+
 @media screen and (max-width: 1366px) and (min-width: 769px) {
   #transaction .transaction .transaction-head .details .text {
     margin-left: 1rem;
@@ -2729,7 +2805,7 @@ aside.explore {
   margin-bottom: 0.5rem;
 }
 
-@media screen and (min-width: 1367px) {
+@media screen and (min-width: 1920px) {
   #transaction .transaction .transaction-body h4 {
     margin-bottom: 1rem;
   }
@@ -2776,15 +2852,17 @@ aside.explore {
   }
 }
 
-@media screen and (min-width: 992px) {
-  #profile .profile-main > .container-fluid > .row > *:not(:last-child) {
-    padding-right: 3rem;
+@media screen and (min-width: 769px) {
+  #profile .profile-main .lower-content {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
-@media screen and (max-width: 991px) {
-  #profile .profile-main > .container-fluid > .row > *:not(:last-child) {
-    padding-right: 1rem;
+@media screen and (max-width: 575px) {
+  #profile .profile-main .lower-content {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -2825,19 +2903,232 @@ aside.explore {
   }
 }
 
+@media screen and (max-width: 991px) {
+  #profile .form > * {
+    -webkit-box-ordinal-group: 31;
+        -ms-flex-order: 30;
+            order: 30;
+  }
+  #profile .form .pan {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #profile .form .email {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #profile .form .name {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  #profile .form .dob {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  #profile .form .gender {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  #profile .form .mar-status {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  #profile .form .mobile {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+  }
+  #profile .form .res-status {
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
+  }
+  #profile .form .nominee {
+    -webkit-box-ordinal-group: 10;
+        -ms-flex-order: 9;
+            order: 9;
+  }
+  #profile .form .nom-name {
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
+  }
+  #profile .form .nom-rel {
+    -webkit-box-ordinal-group: 12;
+        -ms-flex-order: 11;
+            order: 11;
+  }
+  #profile .form .pass {
+    -webkit-box-ordinal-group: 13;
+        -ms-flex-order: 12;
+            order: 12;
+  }
+  #profile .form .bank-account-head {
+    -webkit-box-ordinal-group: 14;
+        -ms-flex-order: 13;
+            order: 13;
+  }
+  #profile .form .acc-holder-name {
+    -webkit-box-ordinal-group: 15;
+        -ms-flex-order: 14;
+            order: 14;
+  }
+  #profile .form .account-num {
+    -webkit-box-ordinal-group: 16;
+        -ms-flex-order: 15;
+            order: 15;
+  }
+  #profile .form .isfc {
+    -webkit-box-ordinal-group: 17;
+        -ms-flex-order: 16;
+            order: 16;
+  }
+  #profile .form .account-type {
+    -webkit-box-ordinal-group: 18;
+        -ms-flex-order: 17;
+            order: 17;
+  }
+  #profile .form .add-bank {
+    -webkit-box-ordinal-group: 19;
+        -ms-flex-order: 18;
+            order: 18;
+  }
+  #profile .form .deactive {
+    -webkit-box-ordinal-group: 20;
+        -ms-flex-order: 19;
+            order: 19;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #profile .form > * {
+    -webkit-box-ordinal-group: 31;
+        -ms-flex-order: 30;
+            order: 30;
+  }
+  #profile .form .pan {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #profile .form .name {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #profile .form .email {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  #profile .form .dob {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  #profile .form .gender {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  #profile .form .mar-status {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  #profile .form .mobile {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+  }
+  #profile .form .res-status {
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
+  }
+  #profile .form .nominee {
+    -webkit-box-ordinal-group: 10;
+        -ms-flex-order: 9;
+            order: 9;
+  }
+  #profile .form .nom-name {
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
+  }
+  #profile .form .nom-rel {
+    -webkit-box-ordinal-group: 12;
+        -ms-flex-order: 11;
+            order: 11;
+  }
+  #profile .form .pass {
+    -webkit-box-ordinal-group: 13;
+        -ms-flex-order: 12;
+            order: 12;
+  }
+  #profile .form .bank-account-head {
+    -webkit-box-ordinal-group: 14;
+        -ms-flex-order: 13;
+            order: 13;
+  }
+  #profile .form .acc-holder-name {
+    -webkit-box-ordinal-group: 15;
+        -ms-flex-order: 14;
+            order: 14;
+  }
+  #profile .form .account-num {
+    -webkit-box-ordinal-group: 16;
+        -ms-flex-order: 15;
+            order: 15;
+  }
+  #profile .form .isfc {
+    -webkit-box-ordinal-group: 17;
+        -ms-flex-order: 16;
+            order: 16;
+  }
+  #profile .form .account-type {
+    -webkit-box-ordinal-group: 18;
+        -ms-flex-order: 17;
+            order: 17;
+  }
+  #profile .form .add-bank {
+    -webkit-box-ordinal-group: 19;
+        -ms-flex-order: 18;
+            order: 18;
+  }
+  #profile .form .deactive {
+    -webkit-box-ordinal-group: 20;
+        -ms-flex-order: 19;
+            order: 19;
+  }
+}
+
 #profile .custom-form-control {
   margin-top: 1.5rem;
+  max-width: 596px;
+}
+
+@media screen and (min-width: 1367px) {
+  #profile .custom-form-control {
+    padding-right: 3rem;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  #profile .custom-form-control {
+    padding-right: 1rem;
+  }
 }
 
 @media screen and (max-width: 991px) {
   #profile .custom-form-control {
-    max-width: 96%;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #profile .custom-form-control {
-    max-width: 100%;
+    padding-right: 0;
   }
 }
 
@@ -2950,15 +3241,15 @@ aside.explore {
   }
 }
 
-@media screen and (min-width: 1367px) {
-  .notifications-sidenav-right .lower-content {
-    padding-top: 110px !important;
-  }
-}
-
 @media screen and (min-width: 769px) {
   .notifications-sidenav-right .lower-content {
     padding-top: 90px !important;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .notifications-sidenav-right .lower-content {
+    padding-top: 110px !important;
   }
 }
 
@@ -3004,7 +3295,7 @@ aside.explore {
   }
 }
 
-@media screen and (max-width: 1366px) and (min-width: 769px) {
+@media screen and (max-width: 1919px) and (min-width: 769px) {
   #notifications .top-fixed-bar {
     top: 116px;
     padding: 0 5rem 2rem;
@@ -3134,7 +3425,7 @@ aside.explore {
   margin-top: 0.5rem;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1919px) {
   #notifications .body .item h5 {
     margin-top: 0.25rem;
   }
@@ -3146,14 +3437,14 @@ aside.explore {
   top: 1.45rem;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1919px) {
   #notifications .body .item svg {
     left: -1.5rem;
     top: 1.25rem;
   }
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1919px) {
   #notifications .body .item svg {
     width: 8px;
     height: 8px;

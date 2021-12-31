@@ -442,6 +442,12 @@ p {
   letter-spacing: -0.5px;
 }
 
+@media screen and (max-width: 1919px) {
+  .w-1919-80 {
+    width: 80px !important;
+  }
+}
+
 @media screen and (max-width: 1366px) {
   .w-1366-88 {
     width: 88px;
@@ -463,6 +469,12 @@ p {
 @media screen and (max-width: 768px) {
   .w-768-72 {
     width: 72px !important;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  .h-1919-24 {
+    height: 24px !important;
   }
 }
 

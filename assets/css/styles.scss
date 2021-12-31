@@ -201,6 +201,9 @@ table.custom-table {
   align-items: center;
   padding: var(--section-padding);
   z-index: 5;
+  max-width: 1675px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (max-width: 575px) {
     padding-top: 2rem;
@@ -238,6 +241,39 @@ table.custom-table {
 
   .custom-dropdown {
     margin-right: 4rem;
+  }
+
+  &.fp {
+    @media screen and (min-width: 992px) {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+
+    @media screen and (min-width: 992px) {
+      padding: 4rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    @media screen and (min-width: 1920px) {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    @media screen and (max-width: 375px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .logo {
+      @media screen and (max-width: 1919px) {
+        width: 88px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -318,6 +354,13 @@ table.custom-table {
 // /////////////////////////////////////////////////////// FINANCIAL PLANNING START ///////////////////////////////////////////////////
 
 #financial-planning-abbr {
+  margin-right: auto;
+
+  @media screen and (min-width: 992px) {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+  }
+
   abbr {
     position: relative;
 
@@ -333,6 +376,10 @@ table.custom-table {
   }
 
   .main {
+    max-width: unset;
+    margin-left: unset;
+    margin-right: unset;
+
     @media screen and (min-width: 992px) {
       padding-right: 1.5rem;
     }
@@ -1275,10 +1322,10 @@ aside.explore {
   }
 
   @media screen and (max-width: 1585px) and (min-width: 1367px) {
-    padding-left: 7rem !important;
-    padding-right: 7rem !important;
-    margin-left: unset;
-    margin-right: unset;
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+    // margin-left: unset;
+    // margin-right: unset;
   }
 
   @media screen and (max-width: 1366px) {
@@ -1291,8 +1338,8 @@ aside.explore {
 
   &.page-container {
     @media screen and (max-width: 1500px) {
-      padding-left: 7rem !important;
-      padding-right: 7rem !important;
+      padding-left: 5rem !important;
+      padding-right: 5rem !important;
     }
 
     @media screen and (max-width: 1366px) {
@@ -1657,7 +1704,7 @@ aside.explore {
           margin-top: 6rem;
         }
 
-        @media screen and (max-width: 1366px) and (min-width: 992px) {
+        @media screen and (max-width: 1919px) and (min-width: 992px) {
           margin-top: 4rem;
         }
 
@@ -1709,35 +1756,17 @@ aside.explore {
             }
 
             &.other-card {
-              // @media screen and (max-width: 991px) {
               min-height: unset;
-              // }
             }
           }
 
           .big-text {
-            // @media screen and (max-width: 1809px) and (min-width: 1367px) {
-            //   font-size: 44px !important;
-            // }
-
             @media screen and (max-width: 1150px) and (min-width: 992px) {
               font-size: 36px !important;
             }
-
-            // @media screen and (max-width: 575px) {
-            //   margin-top: 0 !important;
-            // }
           }
 
           &:nth-child(1) {
-            // @media screen and (min-width: 769px) {
-            //   min-width: 86px;
-            // }
-
-            // @media screen and (min-width: 1810px) {
-            //   min-width: 166px;
-            // }
-
             @media screen and (max-width: 1919px) {
               width: 67px;
             }
@@ -2085,12 +2114,16 @@ aside.explore {
   }
 
   .filter {
-    width: 94px;
+    width: 127px;
     height: 40px;
     margin-left: 3rem;
 
     @media screen and (max-width: 700px) {
       margin-left: 1.5rem;
+    }
+
+    @media screen and (max-width: 370px) {
+      margin-left: 0.75rem;
     }
   }
 
@@ -2141,6 +2174,10 @@ aside.explore {
 
         &:nth-child(1) {
           width: 265px;
+
+          @media screen and (min-width: 1200px) {
+            width: 365px;
+          }
 
           @media screen and (max-width: 768px) {
             width: 200px;
@@ -2199,7 +2236,7 @@ aside.explore {
         img {
           width: 48px;
 
-          @media screen and (max-width: 1366px) {
+          @media screen and (max-width: 1919px) {
             width: 32px;
           }
         }
@@ -2222,8 +2259,9 @@ aside.explore {
           height: 32px;
           font-size: 16px;
           font-weight: 600;
+          line-height: 1;
 
-          @media screen and (max-width: 1366px) {
+          @media screen and (max-width: 1919px) {
             font-size: 12px;
             width: 72px;
             height: 24px;
@@ -2280,9 +2318,6 @@ aside.explore {
       }
 
       @media screen and (max-width: 768px) {
-        // left: -2.75rem;
-        // width: 100vw;
-        // bottom: -2.25rem;
         display: none;
       }
     }
@@ -2331,6 +2366,10 @@ aside.explore {
           img {
             width: 100%;
           }
+
+          @media screen and (max-width: 1919px) {
+            width: 48px;
+          }
         }
 
         .text {
@@ -2365,18 +2404,10 @@ aside.explore {
       h4 {
         margin-bottom: 0.5rem;
 
-        @media screen and (min-width: 1367px) {
+        @media screen and (min-width: 1920px) {
           margin-bottom: 1rem;
         }
       }
-
-      // .nav-date {
-      //   width: 9%;
-      // }
-
-      // .folio {
-      //   width: 21%;
-      // }
 
       .tid {
         @media screen and (max-width: 768px) {
@@ -2423,13 +2454,17 @@ aside.explore {
     padding: 0 1.5rem;
   }
 
-  .profile-main > .container-fluid > .row > *:not(:last-child) {
-    @media screen and (min-width: 992px) {
-      padding-right: 3rem;
-    }
+  .profile-main {
+    .lower-content {
+      @media screen and (min-width: 769px) {
+        padding-left: 0;
+        padding-right: 0;
+      }
 
-    @media screen and (max-width: 991px) {
-      padding-right: 1rem;
+      @media screen and (max-width: 575px) {
+        padding-left: 0;
+        padding-right: 0;
+      }
     }
   }
 
@@ -2438,9 +2473,6 @@ aside.explore {
     border-bottom: 1px solid $color19;
     position: relative;
 
-    // @media screen and (max-width: 991px) and (min-width: 576px) {
-    //   transform: translateX(-1rem);
-    // }
     @media screen and (max-width: 768px) {
       margin-left: -2.5rem;
       margin-right: -2.5rem;
@@ -2464,19 +2496,187 @@ aside.explore {
       }
     }
   }
+
+  .form {
+    @media screen and (max-width: 991px) {
+      & > * {
+        order: 30;
+      }
+
+      .pan {
+        order: 1;
+      }
+
+      .email {
+        order: 2;
+      }
+
+      .name {
+        order: 3;
+      }
+
+      .dob {
+        order: 4;
+      }
+
+      .gender {
+        order: 5;
+      }
+
+      .mar-status {
+        order: 6;
+      }
+
+      .mobile {
+        order: 7;
+      }
+
+      .res-status {
+        order: 8;
+      }
+
+      .nominee {
+        order: 9;
+      }
+
+      .nom-name {
+        order: 10;
+      }
+
+      .nom-rel {
+        order: 11;
+      }
+
+      .pass {
+        order: 12;
+      }
+
+      .bank-account-head {
+        order: 13;
+      }
+
+      .acc-holder-name {
+        order: 14;
+      }
+
+      .account-num {
+        order: 15;
+      }
+
+      .isfc {
+        order: 16;
+      }
+
+      .account-type {
+        order: 17;
+      }
+
+      .add-bank {
+        order: 18;
+      }
+
+      .deactive {
+        order: 19;
+      }
+    }
+
+    @media screen and (max-width: 575px) {
+      & > * {
+        order: 30;
+      }
+
+      .pan {
+        order: 1;
+      }
+
+      .name {
+        order: 2;
+      }
+
+      .email {
+        order: 3;
+      }
+
+      .dob {
+        order: 4;
+      }
+
+      .gender {
+        order: 5;
+      }
+
+      .mar-status {
+        order: 6;
+      }
+
+      .mobile {
+        order: 7;
+      }
+
+      .res-status {
+        order: 8;
+      }
+
+      .nominee {
+        order: 9;
+      }
+
+      .nom-name {
+        order: 10;
+      }
+
+      .nom-rel {
+        order: 11;
+      }
+
+      .pass {
+        order: 12;
+      }
+
+      .bank-account-head {
+        order: 13;
+      }
+
+      .acc-holder-name {
+        order: 14;
+      }
+
+      .account-num {
+        order: 15;
+      }
+
+      .isfc {
+        order: 16;
+      }
+
+      .account-type {
+        order: 17;
+      }
+
+      .add-bank {
+        order: 18;
+      }
+
+      .deactive {
+        order: 19;
+      }
+    }
+  }
+
   .custom-form-control {
     margin-top: 1.5rem;
+    max-width: 596px;
+
+    @media screen and (min-width: 1367px) {
+      padding-right: 3rem;
+    }
 
     @media screen and (max-width: 1366px) {
-      // max-width: 272px;
+      padding-right: 1rem;
     }
 
     @media screen and (max-width: 991px) {
-      max-width: 96%;
-    }
-
-    @media screen and (max-width: 767px) {
-      max-width: 100%;
+      padding-right: 0;
     }
   }
 
@@ -2570,12 +2770,12 @@ aside.explore {
   }
 
   .lower-content {
-    @media screen and (min-width: 1367px) {
-      padding-top: 110px !important;
-    }
-
     @media screen and (min-width: 769px) {
       padding-top: 90px !important;
+    }
+
+    @media screen and (min-width: 1920px) {
+      padding-top: 110px !important;
     }
 
     @media screen and (max-width: 768px) {
@@ -2614,7 +2814,7 @@ aside.explore {
       }
     }
 
-    @media screen and (max-width: 1366px) and (min-width: 769px) {
+    @media screen and (max-width: 1919px) and (min-width: 769px) {
       top: 116px;
       padding: 0 5rem 2rem;
     }
@@ -2715,7 +2915,7 @@ aside.explore {
       h5 {
         margin-top: 0.5rem;
 
-        @media screen and (max-width: 1366px) {
+        @media screen and (max-width: 1919px) {
           margin-top: 0.25rem;
         }
       }
@@ -2725,12 +2925,12 @@ aside.explore {
         left: -2rem;
         top: 1.45rem;
 
-        @media screen and (max-width: 1366px) {
+        @media screen and (max-width: 1919px) {
           left: -1.5rem;
           top: 1.25rem;
         }
 
-        @media screen and (max-width: 1366px) {
+        @media screen and (max-width: 1919px) {
           width: 8px;
           height: 8px;
           left: -1.25rem;
