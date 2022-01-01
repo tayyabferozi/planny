@@ -856,7 +856,7 @@ select.list-dt:focus {
 .sidebarx_p2 label {
   width: 100%;
   font-size: 18px;
-  color: #b2b2b2;
+  /* color: #b2b2b2; */
   font-family: "SourceSansPro-SemiBold";
   line-height: 17px;
 }
