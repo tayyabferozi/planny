@@ -2662,7 +2662,7 @@ textarea.custom-input.with-outline,
 
 @media screen and (max-width: 768px) {
   #right-menu .btn {
-    bottom: 2rem;
+    bottom: calc(2rem + 64px);
   }
 }
 
