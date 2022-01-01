@@ -7190,7 +7190,8 @@ select.list-dt:focus {
     max-width: 1680px;
   }
   .planyy_hed_p2_s1 {
-    margin-left: 189px;
+    margin-left: 129px;
+    /* margin-left: 130px; */
     margin-bottom: 25px;
   }
   .planyy_hed_p2_s1 h5 {
@@ -8729,6 +8730,21 @@ select.list-dt:focus {
   border-bottom-right-radius: 0 !important;
 }
 
+@media screen and (max-width: 768px) {
+  #exampleModal3 .modal-content,
+  #exampleModal3 .modal-body {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+  }
+
+  #exampleModal3 .modal-body .makepaymentmodel_p1_s5 {
+    max-width: 100px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+}
+
 @media screen and (max-width: 1919px) and (min-width: 576px) {
   #exampleModal3 .modal-body {
     height: calc(100vh - 120px);
@@ -8938,6 +8954,10 @@ select.list-dt:focus {
 
   .makepaymentmodel_p1_s6 {
     top: 321px;
+  }
+
+  #exampleModal3 .close {
+    top: 1.5rem;
   }
 }
 
