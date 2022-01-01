@@ -273,6 +273,12 @@ p {
   }
 }
 
+.fs-768-44 {
+  @media screen and (max-width: 768px) {
+    font-size: 44px !important;
+  }
+}
+
 .fs-768-32 {
   @media screen and (max-width: 768px) {
     font-size: 32px !important;
@@ -305,6 +311,12 @@ p {
 
 .fs-650-32 {
   @media screen and (max-width: 650px) {
+    font-size: 32px !important;
+  }
+}
+
+.fs-575-32 {
+  @media screen and (max-width: 575px) {
     font-size: 32px !important;
   }
 }
