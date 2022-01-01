@@ -9265,3 +9265,7 @@ select.list-dt:focus {
 .slider_text_cont_p1 {
   margin-top: 0;
 }
+
+.planyybody p {
+  word-spacing: initial;
+}
