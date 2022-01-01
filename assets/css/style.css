@@ -9248,3 +9248,11 @@ select.list-dt:focus {
     line-height: 74px;
   }
 }
+
+.planyybody .slider_text_p1 h2 {
+  line-height: 1.5 !important;
+}
+
+.slider_text_p1 h3 {
+  line-height: 1 !important;
+}
