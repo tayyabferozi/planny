@@ -4548,6 +4548,7 @@ select.list-dt:focus {
     z-index: 9;
     background-image: url(../images/threestepcaratbg.svg);
     background-repeat: no-repeat;
+    background-size: cover;
   }
   .animate__fadeInRight {
     animation-name: as !important;
