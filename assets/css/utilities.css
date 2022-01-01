@@ -1629,6 +1629,12 @@ hr {
   }
 }
 
+@media screen and (max-width: 575px) {
+  .custom-modal .bottom-btn-sm {
+    padding-bottom: calc(64px + 1rem);
+  }
+}
+
 .custom-form-control.with-helper .helper {
   display: -webkit-box;
   display: -ms-flexbox;

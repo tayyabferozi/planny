@@ -1492,6 +1492,12 @@ hr {
   }
 }
 
+.custom-modal .bottom-btn-sm {
+  @media screen and (max-width: 575px) {
+    padding-bottom: calc(64px + 1rem);
+  }
+}
+
 ////////////////////////////////////////////////////// CUSTOM FORM CONTROLS   ////////////////////////////////////////////////////////
 
 .custom-form-control.with-helper {
