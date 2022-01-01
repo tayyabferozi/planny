@@ -9236,3 +9236,15 @@ select.list-dt:focus {
     margin-top: 22px;
   }
 }
+
+@media screen and (max-width: 1919px) and (min-width: 1366px) {
+  .planyybody.sidebaractive .slider_text_p1 h3 {
+    line-height: 44px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .slider_text_p1 h2 {
+    line-height: 74px;
+  }
+}
