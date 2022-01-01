@@ -9256,3 +9256,11 @@ select.list-dt:focus {
 .slider_text_p1 h3 {
   line-height: 1 !important;
 }
+
+.slider_text_cont {
+  top: 45%;
+}
+
+.slider_text_cont_p1 {
+  margin-top: 0;
+}
