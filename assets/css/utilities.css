@@ -2628,9 +2628,12 @@ textarea.custom-input.with-outline,
   width: 90%;
   font-size: 24px;
   height: 56px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1919px) {
   #right-menu .btn {
     bottom: 10rem;
     font-size: 14px;
