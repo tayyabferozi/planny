@@ -2592,7 +2592,7 @@ textarea.custom-input.with-outline,
   }
 }
 
-@media screen and (max-width: 1366px) and (min-width: 576px) {
+@media screen and (max-width: 768px) and (min-width: 576px) {
   #right-menu .close img {
     width: 32px;
     height: 32px;
