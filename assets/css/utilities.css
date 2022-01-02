@@ -556,6 +556,8 @@ p {
 
 #dark-overlay,
 #dark-overlay-beneath,
+#dark-overlay-calendar,
+#dark-overlay-timer,
 #dark-overlay-dropdown {
   position: fixed;
   top: 0;
@@ -576,6 +578,22 @@ p {
   #dark-overlay-dropdown.show {
     display: block;
   }
+}
+
+#dark-overlay-timer,
+#dark-overlay-calendar {
+  display: none;
+  z-index: 13;
+}
+
+#dark-overlay-timer.active,
+#dark-overlay-calendar.active {
+  display: block;
+}
+
+.timepicker_wrap,
+.mc-calendar.mc-calendar--modal.mc-calendar--opened {
+  z-index: 14 !important;
 }
 
 hr {
@@ -3479,6 +3497,12 @@ textarea::placeholder {
           align-items: center;
   padding: 3.5rem 0 0;
   width: 100%;
+}
+
+@media screen and (max-width: 1022px) {
+  #footer .footer-navbar {
+    padding-top: 0;
+  }
 }
 
 @media screen and (max-width: 991px) {
