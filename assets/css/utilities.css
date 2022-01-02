@@ -569,6 +569,10 @@ p {
   opacity: 0.8;
 }
 
+#dark-overlay-timer {
+  width: 100%;
+}
+
 #dark-overlay-dropdown {
   z-index: 7;
   display: none;
@@ -3323,10 +3327,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   top: 27px;
   left: 0px;
   padding-bottom: 6rem;
+  max-width: 444px;
   position: fixed;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .timepicker_wrap input {
@@ -3338,7 +3344,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: #31353f;
   font-weight: 500;
   border-radius: 5px;
-  font-family: SourceSansPro-Regular;
+  outline: none;
 }
 
 .timepicker_wrap .mer_tx input {

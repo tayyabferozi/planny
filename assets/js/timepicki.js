@@ -364,6 +364,7 @@
       }
 
       function open_timepicki() {
+        $("#dark-overlay-timer").addClass("active");
         $("input[type='time']").addClass("active");
         set_date(settings.start_time);
         ele_next.css("display", "flex").hide().fadeIn();
@@ -389,6 +390,7 @@
       }
 
       function close_timepicki() {
+        $("#dark-overlay-timer").removeClass("active");
         $("input[type='time']").removeClass("active");
         ele_next.fadeOut();
       }

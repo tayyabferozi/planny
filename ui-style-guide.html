@@ -13,14 +13,18 @@
     <!-- CUSTOM STYLESHEETS -->
 
     <link rel="stylesheet" href="./assets/css/mc-calendar.min.css" />
+    <link rel="stylesheet" href="./assets/css/timepicki.css" />
 
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/utilities.css" />
 
     <title>Style Guide</title>
   </head>
+
   <body>
     <div id="dark-overlay-dropdown"></div>
+    <div id="dark-overlay-calendar"></div>
+    <div id="dark-overlay-timer"></div>
     <h2 class="text-center mt-4">UI style guide</h2>
 
     <div class="container-fluid">
@@ -313,20 +317,24 @@
       </div>
     </div>
 
-    <script src="./assets/js/jquery.min.js"></script>
-
-    <script src="./assets/js/timepicki.js"></script>
-    <script src="./assets/js/mc-calendar.min.js"></script>
-    <script src="./assets/js/select.js"></script>
-    <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/common.js"></script>
     <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
-    ></script>
+    <script src="./assets/js/jquery.min.js"></script>
+      </script>
+    <script src="./assets/js/select.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/mc-calendar.min.js"></script>
+    <script src="./assets/js/timepicki.js"></script>
 
-    <script async>
+    <script defer>
       $(document).ready(function () {
+        const myDatePicker = MCDatepicker.create({
+          el: "#example",
+          dateFormat: "DD/MM/YYYY",
+          showCalendarDisplay: false,
+          customOkBTN: "Done",
+          customClearBTN: "Reset",
+          customWeekDays: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+        });
         $(".timepicker").timepicki({ reset: true });
       });
     </script>
