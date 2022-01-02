@@ -14,7 +14,7 @@
   box-sizing: border-box;
   background-color: #ffffff;
   font-family: Source Sans Pro;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 html,
 body {
