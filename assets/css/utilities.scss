@@ -595,6 +595,10 @@ p {
 .timepicker_wrap,
 .mc-calendar.mc-calendar--modal.mc-calendar--opened {
   z-index: 14 !important;
+
+  @media screen and (max-width: 575px) {
+    width: 90% !important;
+  }
 }
 
 hr {

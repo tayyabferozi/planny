@@ -600,6 +600,13 @@ p {
   z-index: 14 !important;
 }
 
+@media screen and (max-width: 575px) {
+  .timepicker_wrap,
+  .mc-calendar.mc-calendar--modal.mc-calendar--opened {
+    width: 90% !important;
+  }
+}
+
 hr {
   border-top: 1px solid #bcbcbc;
 }
