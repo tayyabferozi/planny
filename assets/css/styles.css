@@ -1630,6 +1630,10 @@ aside.explore {
   font-weight: 600;
 }
 
+.refer-and-invest-right {
+  padding-bottom: 5rem;
+}
+
 @media screen and (max-width: 768px) {
   .refer-and-invest-right .lower-content {
     padding-top: 80px !important;
@@ -2309,6 +2313,22 @@ aside.explore {
   }
   #refer-and-invest .cards .card .text .reminder .btn {
     max-width: 300px;
+  }
+}
+
+.transactions-right {
+  min-height: calc(100vh - 132px);
+}
+
+@media screen and (max-width: 1919px) {
+  .transactions-right {
+    min-height: calc(100vh - 116px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .transactions-right {
+    min-height: calc(100vh);
   }
 }
 
@@ -3261,6 +3281,7 @@ aside.explore {
 
 #notifications {
   position: relative;
+  padding-bottom: 5rem;
 }
 
 @media screen and (max-width: 991px) {

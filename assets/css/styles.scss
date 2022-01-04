@@ -1471,6 +1471,8 @@ aside.explore {
 // ***********************************************************************************************************************************
 
 .refer-and-invest-right {
+  padding-bottom: 5rem;
+
   .lower-content {
     @media screen and (max-width: 768px) {
       padding-top: 80px !important;
@@ -2001,6 +2003,18 @@ aside.explore {
 
 // ***********************************************************************************************************************************
 // ***********************************************************************************************************************************
+
+.transactions-right {
+  min-height: calc(100vh - 132px);
+
+  @media screen and (max-width: 1919px) {
+    min-height: calc(100vh - 116px);
+  }
+
+  @media screen and (max-width: 768px) {
+    min-height: calc(100vh);
+  }
+}
 
 .transactions-sidenav-right,
 .transactions-right {
@@ -2787,6 +2801,7 @@ aside.explore {
 
 #notifications {
   position: relative;
+  padding-bottom: 5rem;
 
   @media screen and (max-width: 991px) {
     padding-left: 0;
