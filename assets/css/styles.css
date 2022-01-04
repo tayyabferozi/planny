@@ -2316,18 +2316,21 @@ aside.explore {
   }
 }
 
-.transactions-right {
+.transactions-right,
+.transactions-sidenav-right {
   min-height: calc(100vh - 132px);
 }
 
 @media screen and (max-width: 1919px) {
-  .transactions-right {
+  .transactions-right,
+  .transactions-sidenav-right {
     min-height: calc(100vh - 116px);
   }
 }
 
 @media screen and (max-width: 768px) {
-  .transactions-right {
+  .transactions-right,
+  .transactions-sidenav-right {
     min-height: calc(100vh);
   }
 }
