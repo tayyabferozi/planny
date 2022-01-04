@@ -1007,11 +1007,11 @@ hr {
 
 // ////////////////////////////////////////////////////// CUSTOM MODAL ////////////////////////////////////////////////////////
 
+.custom-modal-wrap,
 .custom-modal {
   position: fixed;
   z-index: 7;
   background-color: #fff;
-  border-radius: 10px;
   padding: 5rem 1.5rem 2rem;
   left: 50%;
   top: 50%;
@@ -1184,6 +1184,11 @@ hr {
       padding-top: 64px;
     }
   }
+}
+
+.custom-modal,
+.custom-modal-with-wrap {
+  border-radius: 10px;
 
   &.small-width {
     width: 660px;
@@ -1202,11 +1207,6 @@ hr {
     @media screen and (max-width: 575px) {
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
-    }
-
-    input,
-    textarea {
-      // padding: 0.75rem 1rem;
     }
 
     input::placeholder,
@@ -1268,6 +1268,33 @@ hr {
       background-color: $color32;
     }
   }
+}
+
+.custom-modal-wrap {
+  transform: unset !important;
+  left: 0 !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100vw !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+
+  &.d-none {
+    display: none !important;
+
+    .custom-modal-with-wrap {
+      display: none !important;
+    }
+  }
+}
+
+.custom-modal-with-wrap {
+  background-color: #fff;
+  position: relative;
 }
 
 ////////////////////////////////////////////////////// CUSTOM RANGE SLIDER  ////////////////////////////////////////////////////////
@@ -2815,6 +2842,8 @@ textarea.custom-input,
 
 .mc-calendar {
   min-height: 380px;
+  border-radius: 12px;
+
   &.mc-calendar--modal {
     box-shadow: 0 0 25px #b2b2b240 !important;
 
@@ -3001,7 +3030,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   align-items: center;
   padding: 10px;
   padding-top: 1.75rem;
-  border-radius: 5px;
+  border-radius: 12px;
   z-index: 2;
   display: none;
   width: 100%;
@@ -3012,7 +3041,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   top: 27px;
   left: 0px;
   padding-bottom: 6rem;
-  max-width: 444px;
+  max-width: 425px;
 
   // @media screen and (max-width: 768px) {
   position: fixed;
@@ -3100,6 +3129,7 @@ textarea::placeholder {
 }
 
 #footer {
+  padding-top: 2rem;
   background-color: $color2;
 
   * {

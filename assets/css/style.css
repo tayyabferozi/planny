@@ -310,6 +310,12 @@ button:focus {
   margin-top: 21px;
 }
 
+@media screen and (min-width: 1920px) {
+  #msform {
+    margin-top: 50px;
+  }
+}
+
 #msform fieldset .form-card {
   background: white;
   border: 0 none;
@@ -1087,7 +1093,7 @@ select.list-dt:focus {
   display: none;
 }
 .planyy_hed_p3 {
-  float: right;
+  /* float: right; */
   margin-right: 120px;
 }
 .planyy_hed_p3_s1 {
@@ -1345,6 +1351,9 @@ select.list-dt:focus {
   padding-bottom: 60px;
 }
 .fieldset_data.st1 {
+  /* max-height: calc(100vh - 90px); */
+}
+.fieldset_data.st2 {
   max-height: calc(100vh - 90px);
 }
 .Generated_Financial_plans_data_box_p2 p i {
@@ -4808,6 +4817,7 @@ select.list-dt:focus {
   .stepsidemenu_box .planyy_hed_p3_s2 h5 {
     font-size: 12px;
     margin-top: 37px;
+    margin-right: 33px;
   }
   .stepsidemenu_box .planyy_hed_p3_s2 h3 {
     font-size: 16px;
@@ -6030,7 +6040,8 @@ select.list-dt:focus {
   .msoinvestproduct .tab-pane {
     max-height: 11270px;
   }
-  .fieldset_data.st1 {
+  .fieldset_data.st1,
+  .fieldset_data.st2 {
     max-height: calc(100vh - 0px);
   }
   .rem .Generated_Financial_plans_data {
@@ -6465,7 +6476,8 @@ select.list-dt:focus {
     bottom: 67px;
   }
   .withdrawalmony {
-    padding: 0px 50px;
+    /* padding: 0px 50px; */
+    padding: 0px 0px;
   }
   .withdrawalmony_p1_s1 {
   }
@@ -7223,7 +7235,7 @@ select.list-dt:focus {
   }
   .planyy_hed_p2_s1 input {
     font-size: 48px;
-    margin-right: 50px;
+    margin-right: 40px;
     background-position: bottom 13px right 0px;
   }
   .planyy_hed_p2_s1 input:nth-child(4) {
@@ -7290,7 +7302,8 @@ select.list-dt:focus {
   .fieldset_data {
     max-height: calc(100vh - 553px);
   }
-  .fieldset_data.st1 {
+  .fieldset_data.st1,
+  .fieldset_data.st2 {
     max-height: calc(100vh - 488px);
   }
   .planyy_hed_p3 {
@@ -7702,11 +7715,13 @@ select.list-dt:focus {
   background-color: #31353f;
 }
 
-.planyybody .custom-modal {
+.planyybody .custom-modal,
+.planyybody .custom-modal-wrap {
   z-index: 12;
 }
 
-.planyybody .custom-modal {
+.planyybody .custom-modal,
+.planyybody .custom-modal-wrap {
   text-decoration: none;
 }
 
@@ -9290,4 +9305,200 @@ select.list-dt:focus {
 
 .planyybody p {
   word-spacing: initial;
+}
+
+.step3-cta {
+  /* bottom: 93px !important; */
+}
+
+@media screen and (max-width: 575px) {
+  .withdrawalmony_p1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .withdrawalmony_p1 .withdrawalmony_box1,
+  .withdrawalmony_p1 .withdrawalmony_box2 {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .withdrawalmony_p1_s1 h3,
+  .withdrawalmony_box2 .withdrawalmony_p1_s1 h3 {
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .st2 .msochartdata_p1 {
+    padding: 0 8px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .st2 .msochartdata_p1 {
+    padding: 0 8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .msochartdata_p1 {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .msochartdata_p1 {
+    overflow: hidden;
+  }
+
+  .movecanvaspie {
+    width: 200%;
+  }
+}
+.movecanvaspie {
+}
+
+@media screen and (min-width: 1024px) {
+  .cute.slider-pips .slider-pips__float > *:not(img):not(.msopaors) {
+    opacity: 0;
+    transition: 0.4s ease;
+  }
+
+  .cute.slider-pips:hover .slider-pips__float > *:not(img):not(.msopaors) {
+    opacity: 1;
+  }
+}
+
+.planyy_hed_p4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 40px;
+  padding-left: 32px;
+  border-left: 1px solid #b2b2b2;
+}
+
+.planyy_hed_p2_s1 input.monthly-expenses-input {
+  margin-right: 20px;
+}
+
+.planyy_hed_p4 .arrow {
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 1920px) {
+  .planyy_hed_p2_s1 {
+    margin-left: 58px;
+  }
+
+  .planyy_hed_p1 h2 {
+    padding-left: 0;
+  }
+
+  .planyy_contain {
+    max-width: 1200px;
+  }
+
+  .planyy_hed_p4 {
+    width: 180px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1023px) {
+  .planyy_hed_p3 {
+    margin-left: 450px;
+    transform: scale(0.85);
+    margin-top: 18px;
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  #footer.service-page {
+    margin-top: 39vh;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #footer.service-page {
+    margin-top: 3px;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .fieldset_data {
+    max-height: calc(100vh - 318px);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .fieldset_data {
+    max-height: calc(100vh - 53px);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .fieldset_data {
+    max-height: calc(100vh - 173px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fieldset_data {
+    max-height: calc(100vh - 173px);
+  }
+}
+
+#msform fieldset .bottom-btn-sm.all {
+  position: sticky !important;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+  .planyy_contain {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1359px) {
+  .planyy_hed_p4 .item img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .planyy_hed_p4 {
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1359px) {
+  .planyy_hed_p2_s1 input {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1144px) {
+  .planyy_hed_p2_s1 input.monthly-expenses-input {
+    margin-right: 0;
+  }
+
+  .planyy_hed_p3 {
+    margin-left: 350px;
+    transform: scale(0.6) translateY(18px);
+    margin-top: 18px;
+  }
+
+  .planyy_hed_p2_s1 {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .stepsidemenu_box .planyy_hed_p3 {
+    margin-left: 0;
+  }
 }

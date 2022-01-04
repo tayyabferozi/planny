@@ -6,8 +6,9 @@ function closeOverlay() {
   $("#dark-overlay").addClass("d-none");
 }
 
-$(".custom-modal .close").click(function () {
-  $("#dark-overlay").addClass("d-none");
+$(".custom-modal .close,.custom-modal-with-wrap .close").click(function () {
+  closeOverlay();
+  $(".custom-modal,.custom-modal-wrap").addClass("d-none");
 });
 
 $("#right-menu-login .close,#right-menu .close").click(function () {

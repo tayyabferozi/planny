@@ -1,960 +1,2168 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Planyy</title>
+    <meta charset="utf-8" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/animate.compat.css"
+    />
+    <!-- DATE PICKER -->
 
-<head>
-  <title>Planyy</title>
-  <meta charset="utf-8" />
-  <meta name="msapplication-tap-highlight" content="no" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/animate.compat.css" />
-  <!-- DATE PICKER -->
+    <link rel="stylesheet" href="./assets/css/mc-calendar.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.js"
+    ></script>
+    <script defer type="text/javascript" src="./assets/js/common.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/utilities.css" />
+  </head>
 
-  <link rel="stylesheet" href="./assets/css/mc-calendar.min.css" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.css" />
-  <script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.js"></script>
-  <script defer type="text/javascript" src="./assets/js/common.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-  <script type="text/javascript"
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.css" />
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
-  <link rel="stylesheet" href="./assets/css/utilities.css" />
-</head>
-
-<body class="planyybody">
-  <div id="dark-overlay-dropdown"></div>
-  <div id="dark-overlay-beneath" class="d-none"></div>
-  <div id="dark-overlay" class="d-none"></div>
-  <div id="right-menu-login" class="d-none">
-    <div class="close">
-      <img src="./assets/images/close.svg" alt="close" />
-    </div>
-    <div class="profile-info">
-      <img src="./assets/img/user-lg.png" alt="user" />
-      <div class="text">
-        <div class="fs-16 fs-1366-14">Palak Kapoor</div>
-        <div class="fs-12 fs-1366-10 text-light-2">9230482333</div>
+  <body class="planyybody">
+    <div id="dark-overlay-dropdown"></div>
+    <div id="dark-overlay-beneath" class="d-none"></div>
+    <div id="dark-overlay" class="d-none"></div>
+    <div id="right-menu-login" class="d-none">
+      <div class="close">
+        <img src="./assets/images/close.svg" alt="close" />
       </div>
-    </div>
-
-    <div class="nav nav-fp">
-      <a href="#" class="">
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24.053" height="24.75" viewBox="0 0 24.053 24.75">
-            <g id="Group_10865" data-name="Group 10865" transform="translate(0.053 0.75)">
-              <rect id="Rectangle_1641" data-name="Rectangle 1641" width="24" height="24" fill="#fff" opacity="0" />
-              <g id="Rectangle_1642" data-name="Rectangle 1642" transform="translate(0 18)" fill="none" stroke="#31353f"
-                stroke-linejoin="round" stroke-width="1.5">
-                <rect width="6" height="6" stroke="none" />
-                <rect x="0.75" y="0.75" width="4.5" height="4.5" fill="none" />
-              </g>
-              <g id="Rectangle_1643" data-name="Rectangle 1643" transform="translate(9 12)" fill="none" stroke="#31353f"
-                stroke-linejoin="round" stroke-width="1.5">
-                <rect width="6" height="12" stroke="none" />
-                <rect x="0.75" y="0.75" width="4.5" height="10.5" fill="none" />
-              </g>
-              <g id="Rectangle_1644" data-name="Rectangle 1644" transform="translate(18 7)" fill="none" stroke="#31353f"
-                stroke-linejoin="round" stroke-width="1.5">
-                <rect width="6" height="17" stroke="none" />
-                <rect x="0.75" y="0.75" width="4.5" height="15.5" fill="none" />
-              </g>
-              <path id="Path_10270" data-name="Path 10270" d="M17383.217-1132h5.016l-.98,4.538"
-                transform="translate(-17365.762 1132)" fill="none" stroke="#31353f" stroke-linejoin="round"
-                stroke-width="1.5" />
-              <path id="Path_10271" data-name="Path 10271" d="M17386.416-1130.909l-22.311,13.86"
-                transform="translate(-17363.762 1131)" fill="none" stroke="#31353f" stroke-width="1.5" />
-            </g>
-          </svg>
-
-          <span class="fs-16 fw-600">Your Performance Tracker</span>
+      <div class="profile-info">
+        <img src="./assets/img/user-lg.png" alt="user" />
+        <div class="text">
+          <div class="fs-16 fs-1366-14">Palak Kapoor</div>
+          <div class="fs-12 fs-1366-10 text-light-2">9230482333</div>
         </div>
-      </a>
-      <a href="#" class="d-flex d-769-none">
-        <div>
-          <svg id="Group_10863" data-name="Group 10863" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-            viewBox="0 0 24 24">
-            <g id="Group_10849" data-name="Group 10849">
-              <g id="Rectangle_1597" data-name="Rectangle 1597" fill="#fff" stroke="#707070" stroke-linejoin="round"
-                stroke-width="1" opacity="0">
+      </div>
+
+      <div class="nav nav-fp">
+        <a href="#" class="">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24.053"
+              height="24.75"
+              viewBox="0 0 24.053 24.75"
+            >
+              <g
+                id="Group_10865"
+                data-name="Group 10865"
+                transform="translate(0.053 0.75)"
+              >
+                <rect
+                  id="Rectangle_1641"
+                  data-name="Rectangle 1641"
+                  width="24"
+                  height="24"
+                  fill="#fff"
+                  opacity="0"
+                />
+                <g
+                  id="Rectangle_1642"
+                  data-name="Rectangle 1642"
+                  transform="translate(0 18)"
+                  fill="none"
+                  stroke="#31353f"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                >
+                  <rect width="6" height="6" stroke="none" />
+                  <rect
+                    x="0.75"
+                    y="0.75"
+                    width="4.5"
+                    height="4.5"
+                    fill="none"
+                  />
+                </g>
+                <g
+                  id="Rectangle_1643"
+                  data-name="Rectangle 1643"
+                  transform="translate(9 12)"
+                  fill="none"
+                  stroke="#31353f"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                >
+                  <rect width="6" height="12" stroke="none" />
+                  <rect
+                    x="0.75"
+                    y="0.75"
+                    width="4.5"
+                    height="10.5"
+                    fill="none"
+                  />
+                </g>
+                <g
+                  id="Rectangle_1644"
+                  data-name="Rectangle 1644"
+                  transform="translate(18 7)"
+                  fill="none"
+                  stroke="#31353f"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                >
+                  <rect width="6" height="17" stroke="none" />
+                  <rect
+                    x="0.75"
+                    y="0.75"
+                    width="4.5"
+                    height="15.5"
+                    fill="none"
+                  />
+                </g>
+                <path
+                  id="Path_10270"
+                  data-name="Path 10270"
+                  d="M17383.217-1132h5.016l-.98,4.538"
+                  transform="translate(-17365.762 1132)"
+                  fill="none"
+                  stroke="#31353f"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+                <path
+                  id="Path_10271"
+                  data-name="Path 10271"
+                  d="M17386.416-1130.909l-22.311,13.86"
+                  transform="translate(-17363.762 1131)"
+                  fill="none"
+                  stroke="#31353f"
+                  stroke-width="1.5"
+                />
+              </g>
+            </svg>
+
+            <span class="fs-16 fw-600">Your Performance Tracker</span>
+          </div>
+        </a>
+        <a href="#" class="d-flex d-769-none">
+          <div>
+            <svg
+              id="Group_10863"
+              data-name="Group 10863"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <g id="Group_10849" data-name="Group 10849">
+                <g
+                  id="Rectangle_1597"
+                  data-name="Rectangle 1597"
+                  fill="#fff"
+                  stroke="#707070"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  opacity="0"
+                >
+                  <rect width="24" height="24" stroke="none" />
+                  <rect x="0.5" y="0.5" width="23" height="23" fill="none" />
+                </g>
+                <g
+                  id="Group_10503"
+                  data-name="Group 10503"
+                  transform="translate(2.299 0.813)"
+                >
+                  <path
+                    id="Path_20"
+                    data-name="Path 20"
+                    d="M1872.064,543.81h-19.4l1.4-18.048h16.143Z"
+                    transform="translate(-1852.663 -521.436)"
+                    fill="none"
+                    stroke="#31353f"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    id="Path_21"
+                    data-name="Path 21"
+                    d="M1861.209,521.745a4.042,4.042,0,0,1,8.084,0"
+                    transform="translate(-1855.551 -517.703)"
+                    fill="none"
+                    stroke="#31353f"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    stroke-width="1.5"
+                  />
+                </g>
+              </g>
+            </svg>
+
+            <span class="fs-16 fw-600">Cart</span>
+          </div>
+          <div class="count red"><span>5</span></div>
+        </a>
+        <a href="#" class="d-flex d-769-none">
+          <div>
+            <svg
+              id="Group_10864"
+              data-name="Group 10864"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <g
+                id="Rectangle_1573"
+                data-name="Rectangle 1573"
+                fill="#fff"
+                stroke="#707070"
+                stroke-width="1"
+                opacity="0"
+              >
                 <rect width="24" height="24" stroke="none" />
                 <rect x="0.5" y="0.5" width="23" height="23" fill="none" />
               </g>
-              <g id="Group_10503" data-name="Group 10503" transform="translate(2.299 0.813)">
-                <path id="Path_20" data-name="Path 20" d="M1872.064,543.81h-19.4l1.4-18.048h16.143Z"
-                  transform="translate(-1852.663 -521.436)" fill="none" stroke="#31353f" stroke-linejoin="round"
-                  stroke-miterlimit="10" stroke-width="1.5" />
-                <path id="Path_21" data-name="Path 21" d="M1861.209,521.745a4.042,4.042,0,0,1,8.084,0"
-                  transform="translate(-1855.551 -517.703)" fill="none" stroke="#31353f" stroke-linejoin="round"
-                  stroke-miterlimit="10" stroke-width="1.5" />
-              </g>
-            </g>
-          </svg>
-
-          <span class="fs-16 fw-600">Cart</span>
-        </div>
-        <div class="count red"><span>5</span></div>
-      </a>
-      <a href="#" class="d-flex d-769-none">
-        <div>
-          <svg id="Group_10864" data-name="Group 10864" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-            viewBox="0 0 24 24">
-            <g id="Rectangle_1573" data-name="Rectangle 1573" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
-              <rect width="24" height="24" stroke="none" />
-              <rect x="0.5" y="0.5" width="23" height="23" fill="none" />
-            </g>
-            <g id="bell" transform="translate(1.519 2.105)">
-              <path id="Path_899" data-name="Path 899"
-                d="M20.466,8.986a6.986,6.986,0,1,0-13.973,0C6.493,17.137,3,19.466,3,19.466H23.959s-3.493-2.329-3.493-10.48"
-                transform="translate(-3 -2)" fill="none" stroke="#31353f" stroke-linecap="round" stroke-linejoin="round"
-                stroke-width="1.5" />
-              <path id="Path_900" data-name="Path 900" d="M14.3,21a2.329,2.329,0,0,1-4.029,0"
-                transform="translate(-1.805 -2.369)" fill="none" stroke="#31353f" stroke-linecap="round"
-                stroke-linejoin="round" stroke-width="1.5" />
-            </g>
-          </svg>
-
-          <span class="fs-16 fw-600">Notifications</span>
-        </div>
-        <div class="count yellow"><span>1</span></div>
-      </a>
-      <a href="#" class="">
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="23.5" height="23.5" viewBox="0 0 23.5 23.5">
-            <g id="Group_12428" data-name="Group 12428" transform="translate(4124.698 6638.75)">
-              <g id="Group_12429" data-name="Group 12429">
-                <g id="Group_12428-2" data-name="Group 12428" transform="translate(-4119.915 -6631.078)">
-                  <path id="Path_10570" data-name="Path 10570" d="M-4117.744-6632.559h13.932"
-                    transform="translate(4117.744 6632.559)" fill="none" stroke="#31353f" stroke-linecap="round"
-                    stroke-width="1.5" />
-                  <path id="Path_10571" data-name="Path 10571" d="M-4117.744-6632.559h13.932"
-                    transform="translate(4117.744 6637.174)" fill="none" stroke="#31353f" stroke-linecap="round"
-                    stroke-width="1.5" />
-                  <path id="Path_10572" data-name="Path 10572" d="M-4117.744-6632.559h13.932"
-                    transform="translate(4117.744 6641.789)" fill="none" stroke="#31353f" stroke-linecap="round"
-                    stroke-width="1.5" />
-                </g>
-                <path id="Path_10573" data-name="Path 10573" d="M-4123.948-6638v22h22v-17.741l-6.033-4.259h-15.967Z"
-                  transform="translate(0)" fill="none" stroke="#31353f" stroke-linecap="round" stroke-linejoin="round"
-                  stroke-width="1.5" />
-              </g>
-            </g>
-          </svg>
-
-          <span class="fs-16 fw-600">Reads</span>
-        </div>
-      </a>
-      <a href="#" class="">
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24.8" height="24.154" viewBox="0 0 24.8 24.154">
-            <g id="Group_12430" data-name="Group 12430" transform="translate(4099.75 6604)">
-              <rect id="Rectangle_1812" data-name="Rectangle 1812" width="24" height="24"
-                transform="translate(-4099 -6604)" fill="#fff" opacity="0" />
-              <g id="Group_12430-2" data-name="Group 12430" transform="translate(24.948 5.5)">
-                <path id="Path_10574" data-name="Path 10574" d="M-4123.948-6608.463v22.4h13.377v-20.69Z"
-                  transform="translate(0 -0.037)" fill="none" stroke="#31353f" stroke-linecap="round"
-                  stroke-linejoin="round" stroke-width="1.5" />
-                <path id="Path_10575" data-name="Path 10575" d="M-4110.571-6600.518l9.922,2.037v12.285h-10.517"
-                  transform="translate(0 0.018)" fill="none" stroke="#31353f" stroke-linecap="round"
-                  stroke-linejoin="round" stroke-width="1.5" />
-                <path id="Path_10577" data-name="Path 10577" d="M-4120.368-6602.906h6.16" transform="translate(0 0.906)"
-                  fill="none" stroke="#31353f" stroke-width="1.5" />
-                <path id="Path_10578" data-name="Path 10578" d="M-4120.368-6602.906h6.16" transform="translate(0 4.906)"
-                  fill="none" stroke="#31353f" stroke-width="1.5" />
-                <path id="Path_10580" data-name="Path 10580" d="M-4120.368-6602.906h4.273"
-                  transform="translate(12.943 7.406)" fill="none" stroke="#31353f" stroke-width="1.5" />
-                <path id="Path_10579" data-name="Path 10579" d="M-4120.368-6602.906h6.16" transform="translate(0 8.906)"
-                  fill="none" stroke="#31353f" stroke-width="1.5" />
-                <path id="Path_10583" data-name="Path 10583" d="M-4120.368-6602.906h6.16"
-                  transform="translate(0 12.906)" fill="none" stroke="#31353f" stroke-width="1.5" />
-                <path id="Path_10581" data-name="Path 10581" d="M-4120.368-6602.906h4.273"
-                  transform="translate(12.943 10.406)" fill="none" stroke="#31353f" stroke-width="1.5" />
-                <path id="Path_10582" data-name="Path 10582" d="M-4120.368-6602.906h4.273"
-                  transform="translate(12.943 13.406)" fill="none" stroke="#31353f" stroke-width="1.5" />
-              </g>
-            </g>
-          </svg>
-
-          <span class="fs-16 fw-600">About us</span>
-        </div>
-      </a>
-      <a href="#" class="">
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24.06" height="24" viewBox="0 0 24.06 24">
-            <g id="Group_3574" data-name="Group 3574" transform="translate(0.06)">
-              <rect id="Rectangle_301" data-name="Rectangle 301" width="24" height="24" fill="#fff" opacity="0" />
-              <g id="Home_Button" data-name="Home Button" transform="translate(0.999 2.39)">
-                <g id="Group_1066" data-name="Group 1066" transform="translate(0 0)">
-                  <g id="Group_1065" data-name="Group 1065">
-                    <path id="Path_327" data-name="Path 327" d="M-1275.648-544.655l11.033-10.09,10.774,10.09"
-                      transform="translate(1275.648 554.745)" fill="none" stroke="#31353f" stroke-linecap="round"
-                      stroke-linejoin="round" stroke-width="1.5" />
-                    <path id="Path_328" data-name="Path 328" d="M-1216.19-385.048v11.9h16.371v-11.9"
-                      transform="translate(1218.908 393.134)" fill="none" stroke="#31353f" stroke-linecap="round"
-                      stroke-linejoin="round" stroke-width="1.5" />
-                  </g>
-                </g>
-              </g>
-            </g>
-          </svg>
-
-          <span class="fs-16 fw-600">Home</span>
-        </div>
-      </a>
-    </div>
-
-    <div class="setting">
-      <div class="title fs-16 fs-1366-14 fs-768-16 fs-490-14 fw-700">
-        ACCOUNT & SETTING
-      </div>
-
-      <div class="setting-main">
-        <a class="item">
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <g id="Profile" transform="translate(-6196 9138)">
-                <rect id="Rectangle_289" data-name="Rectangle 289" width="24" height="24"
-                  transform="translate(6196 -9138)" fill="#fff" opacity="0" />
-                <g id="Group_2726" data-name="Group 2726" transform="translate(6200.501 -9134.001)">
-                  <g id="Group_349" data-name="Group 349" transform="translate(0)">
-                    <g id="Group_3468" data-name="Group 3468">
-                      <g id="Group_348" data-name="Group 348" transform="translate(3.936)">
-                        <g id="Group_347" data-name="Group 347">
-                          <path id="Path_275" data-name="Path 275"
-                            d="M1209.985,78.924a4.13,4.13,0,1,1-4.129-4.131A4.129,4.129,0,0,1,1209.985,78.924Z"
-                            transform="translate(-1201.725 -74.793)" fill="none" stroke="#31353f" stroke-miterlimit="10"
-                            stroke-width="1" />
-                        </g>
-                      </g>
-                      <path id="Path_276" data-name="Path 276"
-                        d="M1214.254,89.255h-14.09a1.022,1.022,0,0,1-1.021-1.022h0a5.467,5.467,0,0,1,5.468-5.468h5.2a5.467,5.467,0,0,1,5.468,5.468h0A1.022,1.022,0,0,1,1214.254,89.255Z"
-                        transform="translate(-1199.143 -71.707)" fill="none" stroke="#31353f" stroke-miterlimit="10"
-                        stroke-width="1" />
-                    </g>
-                  </g>
-                </g>
+              <g id="bell" transform="translate(1.519 2.105)">
+                <path
+                  id="Path_899"
+                  data-name="Path 899"
+                  d="M20.466,8.986a6.986,6.986,0,1,0-13.973,0C6.493,17.137,3,19.466,3,19.466H23.959s-3.493-2.329-3.493-10.48"
+                  transform="translate(-3 -2)"
+                  fill="none"
+                  stroke="#31353f"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
+                <path
+                  id="Path_900"
+                  data-name="Path 900"
+                  d="M14.3,21a2.329,2.329,0,0,1-4.029,0"
+                  transform="translate(-1.805 -2.369)"
+                  fill="none"
+                  stroke="#31353f"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                />
               </g>
             </svg>
 
-            <span class="fs-16 fs-1366-14 fs-768-16 fs-490-14">Profile</span>
+            <span class="fs-16 fw-600">Notifications</span>
           </div>
-
-          <svg id="Component_103_3" data-name="Component 103 – 3" xmlns="http://www.w3.org/2000/svg" width="16"
-            height="16" viewBox="0 0 16 16" class="arrow">
-            <g id="Rectangle_1596" data-name="Rectangle 1596" fill="#31353f" stroke="#31353f" stroke-width="1"
-              opacity="0">
-              <rect width="16" height="16" stroke="none" />
-              <rect x="0.5" y="0.5" width="15" height="15" fill="none" />
-            </g>
-            <g id="Group_1656" data-name="Group 1656" transform="translate(2.939 0.939)">
-              <path id="Path_6068" data-name="Path 6068"
-                d="M6.561,7.3H.75A.75.75,0,0,1,0,6.555V.75a.75.75,0,0,1,1.5,0V5.8H6.561a.75.75,0,0,1,0,1.5Z"
-                transform="translate(0 5.17) rotate(-45)" fill="#31353f" />
-            </g>
-          </svg>
+          <div class="count yellow"><span>1</span></div>
         </a>
-        <a class="item">
+        <a href="#" class="">
           <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <g id="Bank_Details" data-name="Bank Details" transform="translate(-360.02 -467.02)">
-                <g id="Rectangle_1603" data-name="Rectangle 1603" transform="translate(360.02 467.02)" fill="#fff"
-                  stroke="#31353f" stroke-width="1" opacity="0">
-                  <rect width="24" height="24" stroke="none" />
-                  <rect x="0.5" y="0.5" width="23" height="23" fill="none" />
-                </g>
-                <g id="Group_10550" data-name="Group 10550" transform="translate(362.36 470.631)">
-                  <path id="Path_10247" data-name="Path 10247" d="M6664.089-9064.223v11.633"
-                    transform="translate(-6662.293 9069.537)" fill="none" stroke="#31353f" stroke-width="1" />
-                  <path id="Path_10248" data-name="Path 10248" d="M6664.089-9064.223v11.633"
-                    transform="translate(-6646.392 9069.537)" fill="none" stroke="#31353f" stroke-width="1" />
-                  <path id="Path_10250" data-name="Path 10250" d="M0,0V19.577"
-                    transform="translate(0.001 17.424) rotate(-90)" fill="none" stroke="#31353f" stroke-linecap="round"
-                    stroke-width="1" />
-                  <g id="Path_10252" data-name="Path 10252" transform="translate(-6658.642 9071.662)" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M6668.2-9071.662l-9.562,5.314h19.58Z" stroke="none" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="23.5"
+              height="23.5"
+              viewBox="0 0 23.5 23.5"
+            >
+              <g
+                id="Group_12428"
+                data-name="Group 12428"
+                transform="translate(4124.698 6638.75)"
+              >
+                <g id="Group_12429" data-name="Group 12429">
+                  <g
+                    id="Group_12428-2"
+                    data-name="Group 12428"
+                    transform="translate(-4119.915 -6631.078)"
+                  >
                     <path
-                      d="M 6668.20458984375 -9071.662109375 L 6658.64208984375 -9066.34765625 L 6678.22216796875 -9066.34765625 L 6668.20458984375 -9071.662109375 M 6668.20458984375 -9072.662109375 C 6668.36572265625 -9072.662109375 6668.5263671875 -9072.623046875 6668.67333984375 -9072.5458984375 L 6678.69091796875 -9067.2314453125 C 6679.0966796875 -9067.015625 6679.3037109375 -9066.5517578125 6679.1923828125 -9066.1064453125 C 6679.08154296875 -9065.66015625 6678.681640625 -9065.34765625 6678.22216796875 -9065.34765625 L 6658.64208984375 -9065.34765625 C 6658.1865234375 -9065.34765625 6657.78857421875 -9065.6552734375 6657.67431640625 -9066.0966796875 C 6657.5595703125 -9066.5380859375 6657.7578125 -9067 6658.15625 -9067.2216796875 L 6667.71875 -9072.5361328125 C 6667.86962890625 -9072.6201171875 6668.037109375 -9072.662109375 6668.20458984375 -9072.662109375 Z"
-                      stroke="none" fill="#31353f" />
-                  </g>
-                </g>
-              </g>
-            </svg>
-
-            <span class="fs-16 fs-1366-14 fs-768-16 fs-490-14">Bank Account</span>
-          </div>
-
-          <svg id="Component_103_3" data-name="Component 103 – 3" xmlns="http://www.w3.org/2000/svg" width="16"
-            height="16" viewBox="0 0 16 16" class="arrow">
-            <g id="Rectangle_1596" data-name="Rectangle 1596" fill="#31353f" stroke="#31353f" stroke-width="1"
-              opacity="0">
-              <rect width="16" height="16" stroke="none" />
-              <rect x="0.5" y="0.5" width="15" height="15" fill="none" />
-            </g>
-            <g id="Group_1656" data-name="Group 1656" transform="translate(2.939 0.939)">
-              <path id="Path_6068" data-name="Path 6068"
-                d="M6.561,7.3H.75A.75.75,0,0,1,0,6.555V.75a.75.75,0,0,1,1.5,0V5.8H6.561a.75.75,0,0,1,0,1.5Z"
-                transform="translate(0 5.17) rotate(-45)" fill="#31353f" />
-            </g>
-          </svg>
-        </a>
-        <a class="item">
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <g id="Group_12469" data-name="Group 12469" transform="translate(-6196 9138)">
-                <rect id="Rectangle_289" data-name="Rectangle 289" width="24" height="24"
-                  transform="translate(6196 -9138)" fill="#fff" opacity="0" />
-                <g id="Group_2726" data-name="Group 2726" transform="translate(6197.969 -9134.001)">
-                  <g id="Group_349" data-name="Group 349" transform="translate(0)">
-                    <g id="Group_3468" data-name="Group 3468">
-                      <g id="Group_348" data-name="Group 348" transform="translate(3.936)">
-                        <g id="Group_347" data-name="Group 347">
-                          <path id="Path_275" data-name="Path 275"
-                            d="M1209.985,78.924a4.13,4.13,0,1,1-4.129-4.131A4.129,4.129,0,0,1,1209.985,78.924Z"
-                            transform="translate(-1201.725 -74.793)" fill="none" stroke="#31353f" stroke-miterlimit="10"
-                            stroke-width="1" />
-                        </g>
-                      </g>
-                      <path id="Path_276" data-name="Path 276"
-                        d="M1214.254,89.255h-14.09a1.022,1.022,0,0,1-1.021-1.022h0a5.467,5.467,0,0,1,5.468-5.468h5.2a5.467,5.467,0,0,1,5.468,5.468h0A1.022,1.022,0,0,1,1214.254,89.255Z"
-                        transform="translate(-1199.143 -71.707)" fill="none" stroke="#31353f" stroke-miterlimit="10"
-                        stroke-width="1" />
-                    </g>
-                  </g>
-                </g>
-                <path id="Path_10253" data-name="Path 10253" d="M6393.451-9145.268c.04.135,0,6.68,0,6.68"
-                  transform="translate(-177.999 8.661)" fill="none" stroke="#31353f" stroke-linecap="round"
-                  stroke-width="1" />
-                <path id="Path_10254" data-name="Path 10254" d="M0,0C.04.134,0,6.68,0,6.68"
-                  transform="translate(6212.122 -9133.258) rotate(-90)" fill="none" stroke="#31353f"
-                  stroke-linecap="round" stroke-width="1" />
-              </g>
-            </svg>
-
-            <span class="fs-16 fs-1366-14 fs-768-16 fs-490-14">Refer and Earn</span>
-          </div>
-
-          <svg id="Component_103_3" data-name="Component 103 – 3" xmlns="http://www.w3.org/2000/svg" width="16"
-            height="16" viewBox="0 0 16 16" class="arrow">
-            <g id="Rectangle_1596" data-name="Rectangle 1596" fill="#31353f" stroke="#31353f" stroke-width="1"
-              opacity="0">
-              <rect width="16" height="16" stroke="none" />
-              <rect x="0.5" y="0.5" width="15" height="15" fill="none" />
-            </g>
-            <g id="Group_1656" data-name="Group 1656" transform="translate(2.939 0.939)">
-              <path id="Path_6068" data-name="Path 6068"
-                d="M6.561,7.3H.75A.75.75,0,0,1,0,6.555V.75a.75.75,0,0,1,1.5,0V5.8H6.561a.75.75,0,0,1,0,1.5Z"
-                transform="translate(0 5.17) rotate(-45)" fill="#31353f" />
-            </g>
-          </svg>
-        </a>
-        <a class="item">
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <g id="sign_out" data-name="sign out" transform="translate(-76 -435)">
-                <g id="Rectangle_1601" data-name="Rectangle 1601" transform="translate(76 435)" fill="#fff"
-                  stroke="#31353f" stroke-width="1" opacity="0">
-                  <rect width="24" height="24" stroke="none" />
-                  <rect x="0.5" y="0.5" width="23" height="23" fill="none" />
-                </g>
-                <g id="logout" transform="translate(81.607 439.775)">
-                  <path id="Path_15" data-name="Path 15" d="M8.5,3l3.941,3.941L8.5,10.882"
-                    transform="translate(2.009 0.284)" fill="none" stroke="#31353f" stroke-linecap="round"
-                    stroke-linejoin="round" stroke-width="1" />
-                  <line id="Line_7" data-name="Line 7" x1="10.509" transform="translate(3.941 7.225)" fill="none"
-                    stroke="#31353f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
-                  <path id="Path_16" data-name="Path 16"
-                    d="M7.068,14.95H1.814A1.314,1.314,0,0,1,.5,13.636V1.814A1.314,1.314,0,0,1,1.814.5H7.068"
-                    transform="translate(-0.5 -0.5)" fill="none" stroke="#31353f" stroke-linecap="round"
-                    stroke-linejoin="round" stroke-width="1" />
-                </g>
-              </g>
-            </svg>
-
-            <span class="fs-16 fs-1366-14 fs-768-16 fs-490-14">Sign Out</span>
-          </div>
-
-          <svg id="Component_103_3" data-name="Component 103 – 3" xmlns="http://www.w3.org/2000/svg" width="16"
-            height="16" viewBox="0 0 16 16" class="arrow">
-            <g id="Rectangle_1596" data-name="Rectangle 1596" fill="#31353f" stroke="#31353f" stroke-width="1"
-              opacity="0">
-              <rect width="16" height="16" stroke="none" />
-              <rect x="0.5" y="0.5" width="15" height="15" fill="none" />
-            </g>
-            <g id="Group_1656" data-name="Group 1656" transform="translate(2.939 0.939)">
-              <path id="Path_6068" data-name="Path 6068"
-                d="M6.561,7.3H.75A.75.75,0,0,1,0,6.555V.75a.75.75,0,0,1,1.5,0V5.8H6.561a.75.75,0,0,1,0,1.5Z"
-                transform="translate(0 5.17) rotate(-45)" fill="#31353f" />
-            </g>
-          </svg>
-        </a>
-        <a class="item">
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <g id="Group_10909" data-name="Group 10909" transform="translate(-76 -692.487)">
-                <g id="Rectangle_1601" data-name="Rectangle 1601" transform="translate(76 692.487)" fill="#fff"
-                  stroke="#707070" stroke-width="1" opacity="0">
-                  <rect width="24" height="24" stroke="none" />
-                  <rect x="0.5" y="0.5" width="23" height="23" fill="none" />
-                </g>
-                <g id="help-circle" transform="translate(77.5 693.987)">
-                  <circle id="Ellipse_503" data-name="Ellipse 503" cx="10.5" cy="10.5" r="10.5" fill="none"
-                    stroke="#31353f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
-                  <path id="Path_10246" data-name="Path 10246"
-                    d="M9.09,9.061a3.091,3.091,0,0,1,6.008,1.03c0,2.061-3.091,3.091-3.091,3.091"
-                    transform="translate(-1.223 -2.018)" fill="none" stroke="#31353f" stroke-linecap="round"
-                    stroke-linejoin="round" stroke-width="1" />
-                  <line id="Line_239" data-name="Line 239" transform="translate(10.5 15)" fill="none" stroke="#31353f"
-                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
-                </g>
-              </g>
-            </svg>
-
-            <span class="fs-16 fs-1366-14 fs-768-16 fs-490-14">Help & Product Tour</span>
-          </div>
-
-          <svg id="Component_103_3" data-name="Component 103 – 3" xmlns="http://www.w3.org/2000/svg" width="16"
-            height="16" viewBox="0 0 16 16" class="arrow">
-            <g id="Rectangle_1596" data-name="Rectangle 1596" fill="#31353f" stroke="#31353f" stroke-width="1"
-              opacity="0">
-              <rect width="16" height="16" stroke="none" />
-              <rect x="0.5" y="0.5" width="15" height="15" fill="none" />
-            </g>
-            <g id="Group_1656" data-name="Group 1656" transform="translate(2.939 0.939)">
-              <path id="Path_6068" data-name="Path 6068"
-                d="M6.561,7.3H.75A.75.75,0,0,1,0,6.555V.75a.75.75,0,0,1,1.5,0V5.8H6.561a.75.75,0,0,1,0,1.5Z"
-                transform="translate(0 5.17) rotate(-45)" fill="#31353f" />
-            </g>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div id="right-menu-login" class="d-none">
-    <div class="close">
-      <img src="./assets/images/close.svg" alt="close" />
-    </div>
-    <div class="profile-info">
-      <img src="./assets/img/user-lg.png" alt="user" />
-      <div class="text">
-        <div class="fs-16 fs-1366-14">Palak Kapoor</div>
-        <div class="fs-12 fs-1366-10 text-light-2">9230482333</div>
-      </div>
-    </div>
-
-    <div class="nav">
-      <a href="#" class="active">Home</a>
-      <a href="#">Reads</a>
-      <a href="#">About Us</a>
-      <a href="#">T&C</a>
-    </div>
-
-    <div class="setting">
-      <div class="title fs-16 fs-1366-14 fs-768-16 fs-490-14 fw-600">
-        ACCOUNT & SETTING
-      </div>
-
-      <div class="setting-main">
-        <a href="#" class="item">
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <g id="Profile" transform="translate(-6196 9138)">
-                <rect id="Rectangle_289" data-name="Rectangle 289" width="24" height="24"
-                  transform="translate(6196 -9138)" fill="#fff" opacity="0" />
-                <g id="Group_2726" data-name="Group 2726" transform="translate(6200.501 -9134.001)">
-                  <g id="Group_349" data-name="Group 349" transform="translate(0)">
-                    <g id="Group_3468" data-name="Group 3468">
-                      <g id="Group_348" data-name="Group 348" transform="translate(3.936)">
-                        <g id="Group_347" data-name="Group 347">
-                          <path id="Path_275" data-name="Path 275"
-                            d="M1209.985,78.924a4.13,4.13,0,1,1-4.129-4.131A4.129,4.129,0,0,1,1209.985,78.924Z"
-                            transform="translate(-1201.725 -74.793)" fill="none" stroke="#31353f" stroke-miterlimit="10"
-                            stroke-width="1" />
-                        </g>
-                      </g>
-                      <path id="Path_276" data-name="Path 276"
-                        d="M1214.254,89.255h-14.09a1.022,1.022,0,0,1-1.021-1.022h0a5.467,5.467,0,0,1,5.468-5.468h5.2a5.467,5.467,0,0,1,5.468,5.468h0A1.022,1.022,0,0,1,1214.254,89.255Z"
-                        transform="translate(-1199.143 -71.707)" fill="none" stroke="#31353f" stroke-miterlimit="10"
-                        stroke-width="1" />
-                    </g>
-                  </g>
-                </g>
-              </g>
-            </svg>
-
-            <span class="fs-16 fs-1366-14 fs-768-16 fs-490-14">Profile</span>
-          </div>
-
-          <svg id="Component_103_3" data-name="Component 103 – 3" xmlns="http://www.w3.org/2000/svg" width="16"
-            height="16" viewBox="0 0 16 16" class="arrow">
-            <g id="Rectangle_1596" data-name="Rectangle 1596" fill="#31353f" stroke="#31353f" stroke-width="1"
-              opacity="0">
-              <rect width="16" height="16" stroke="none" />
-              <rect x="0.5" y="0.5" width="15" height="15" fill="none" />
-            </g>
-            <g id="Group_1656" data-name="Group 1656" transform="translate(2.939 0.939)">
-              <path id="Path_6068" data-name="Path 6068"
-                d="M6.561,7.3H.75A.75.75,0,0,1,0,6.555V.75a.75.75,0,0,1,1.5,0V5.8H6.561a.75.75,0,0,1,0,1.5Z"
-                transform="translate(0 5.17) rotate(-45)" fill="#31353f" />
-            </g>
-          </svg>
-        </a>
-        <a href="#" class="item">
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <g id="Bank_Details" data-name="Bank Details" transform="translate(-360.02 -467.02)">
-                <g id="Rectangle_1603" data-name="Rectangle 1603" transform="translate(360.02 467.02)" fill="#fff"
-                  stroke="#31353f" stroke-width="1" opacity="0">
-                  <rect width="24" height="24" stroke="none" />
-                  <rect x="0.5" y="0.5" width="23" height="23" fill="none" />
-                </g>
-                <g id="Group_10550" data-name="Group 10550" transform="translate(362.36 470.631)">
-                  <path id="Path_10247" data-name="Path 10247" d="M6664.089-9064.223v11.633"
-                    transform="translate(-6662.293 9069.537)" fill="none" stroke="#31353f" stroke-width="1" />
-                  <path id="Path_10248" data-name="Path 10248" d="M6664.089-9064.223v11.633"
-                    transform="translate(-6646.392 9069.537)" fill="none" stroke="#31353f" stroke-width="1" />
-                  <path id="Path_10250" data-name="Path 10250" d="M0,0V19.577"
-                    transform="translate(0.001 17.424) rotate(-90)" fill="none" stroke="#31353f" stroke-linecap="round"
-                    stroke-width="1" />
-                  <g id="Path_10252" data-name="Path 10252" transform="translate(-6658.642 9071.662)" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M6668.2-9071.662l-9.562,5.314h19.58Z" stroke="none" />
+                      id="Path_10570"
+                      data-name="Path 10570"
+                      d="M-4117.744-6632.559h13.932"
+                      transform="translate(4117.744 6632.559)"
+                      fill="none"
+                      stroke="#31353f"
+                      stroke-linecap="round"
+                      stroke-width="1.5"
+                    />
                     <path
-                      d="M 6668.20458984375 -9071.662109375 L 6658.64208984375 -9066.34765625 L 6678.22216796875 -9066.34765625 L 6668.20458984375 -9071.662109375 M 6668.20458984375 -9072.662109375 C 6668.36572265625 -9072.662109375 6668.5263671875 -9072.623046875 6668.67333984375 -9072.5458984375 L 6678.69091796875 -9067.2314453125 C 6679.0966796875 -9067.015625 6679.3037109375 -9066.5517578125 6679.1923828125 -9066.1064453125 C 6679.08154296875 -9065.66015625 6678.681640625 -9065.34765625 6678.22216796875 -9065.34765625 L 6658.64208984375 -9065.34765625 C 6658.1865234375 -9065.34765625 6657.78857421875 -9065.6552734375 6657.67431640625 -9066.0966796875 C 6657.5595703125 -9066.5380859375 6657.7578125 -9067 6658.15625 -9067.2216796875 L 6667.71875 -9072.5361328125 C 6667.86962890625 -9072.6201171875 6668.037109375 -9072.662109375 6668.20458984375 -9072.662109375 Z"
-                      stroke="none" fill="#31353f" />
+                      id="Path_10571"
+                      data-name="Path 10571"
+                      d="M-4117.744-6632.559h13.932"
+                      transform="translate(4117.744 6637.174)"
+                      fill="none"
+                      stroke="#31353f"
+                      stroke-linecap="round"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      id="Path_10572"
+                      data-name="Path 10572"
+                      d="M-4117.744-6632.559h13.932"
+                      transform="translate(4117.744 6641.789)"
+                      fill="none"
+                      stroke="#31353f"
+                      stroke-linecap="round"
+                      stroke-width="1.5"
+                    />
                   </g>
+                  <path
+                    id="Path_10573"
+                    data-name="Path 10573"
+                    d="M-4123.948-6638v22h22v-17.741l-6.033-4.259h-15.967Z"
+                    transform="translate(0)"
+                    fill="none"
+                    stroke="#31353f"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
                 </g>
               </g>
             </svg>
 
-            <span class="fs-16 fs-1366-14 fs-768-16 fs-490-14">Bank Account</span>
+            <span class="fs-16 fw-600">Reads</span>
           </div>
-
-          <svg id="Component_103_3" data-name="Component 103 – 3" xmlns="http://www.w3.org/2000/svg" width="16"
-            height="16" viewBox="0 0 16 16" class="arrow">
-            <g id="Rectangle_1596" data-name="Rectangle 1596" fill="#31353f" stroke="#31353f" stroke-width="1"
-              opacity="0">
-              <rect width="16" height="16" stroke="none" />
-              <rect x="0.5" y="0.5" width="15" height="15" fill="none" />
-            </g>
-            <g id="Group_1656" data-name="Group 1656" transform="translate(2.939 0.939)">
-              <path id="Path_6068" data-name="Path 6068"
-                d="M6.561,7.3H.75A.75.75,0,0,1,0,6.555V.75a.75.75,0,0,1,1.5,0V5.8H6.561a.75.75,0,0,1,0,1.5Z"
-                transform="translate(0 5.17) rotate(-45)" fill="#31353f" />
-            </g>
-          </svg>
         </a>
-        <a href="#" class="item">
+        <a href="#" class="">
           <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <g id="Refer_earn" data-name="Refer &amp; earn" transform="translate(-6196 9138)">
-                <rect id="Rectangle_289" data-name="Rectangle 289" width="24" height="24"
-                  transform="translate(6196 -9138)" fill="#fff" opacity="0" />
-                <g id="Group_2726" data-name="Group 2726" transform="translate(6197.969 -9134.001)">
-                  <g id="Group_349" data-name="Group 349" transform="translate(0)">
-                    <g id="Group_3468" data-name="Group 3468">
-                      <g id="Group_348" data-name="Group 348" transform="translate(3.936)">
-                        <g id="Group_347" data-name="Group 347">
-                          <path id="Path_275" data-name="Path 275"
-                            d="M1209.985,78.924a4.13,4.13,0,1,1-4.129-4.131A4.129,4.129,0,0,1,1209.985,78.924Z"
-                            transform="translate(-1201.725 -74.793)" fill="none" stroke="#31353f" stroke-miterlimit="10"
-                            stroke-width="1" />
-                        </g>
-                      </g>
-                      <path id="Path_276" data-name="Path 276"
-                        d="M1214.254,89.255h-14.09a1.022,1.022,0,0,1-1.021-1.022h0a5.467,5.467,0,0,1,5.468-5.468h5.2a5.467,5.467,0,0,1,5.468,5.468h0A1.022,1.022,0,0,1,1214.254,89.255Z"
-                        transform="translate(-1199.143 -71.707)" fill="none" stroke="#31353f" stroke-miterlimit="10"
-                        stroke-width="1" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24.8"
+              height="24.154"
+              viewBox="0 0 24.8 24.154"
+            >
+              <g
+                id="Group_12430"
+                data-name="Group 12430"
+                transform="translate(4099.75 6604)"
+              >
+                <rect
+                  id="Rectangle_1812"
+                  data-name="Rectangle 1812"
+                  width="24"
+                  height="24"
+                  transform="translate(-4099 -6604)"
+                  fill="#fff"
+                  opacity="0"
+                />
+                <g
+                  id="Group_12430-2"
+                  data-name="Group 12430"
+                  transform="translate(24.948 5.5)"
+                >
+                  <path
+                    id="Path_10574"
+                    data-name="Path 10574"
+                    d="M-4123.948-6608.463v22.4h13.377v-20.69Z"
+                    transform="translate(0 -0.037)"
+                    fill="none"
+                    stroke="#31353f"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    id="Path_10575"
+                    data-name="Path 10575"
+                    d="M-4110.571-6600.518l9.922,2.037v12.285h-10.517"
+                    transform="translate(0 0.018)"
+                    fill="none"
+                    stroke="#31353f"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    id="Path_10577"
+                    data-name="Path 10577"
+                    d="M-4120.368-6602.906h6.16"
+                    transform="translate(0 0.906)"
+                    fill="none"
+                    stroke="#31353f"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    id="Path_10578"
+                    data-name="Path 10578"
+                    d="M-4120.368-6602.906h6.16"
+                    transform="translate(0 4.906)"
+                    fill="none"
+                    stroke="#31353f"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    id="Path_10580"
+                    data-name="Path 10580"
+                    d="M-4120.368-6602.906h4.273"
+                    transform="translate(12.943 7.406)"
+                    fill="none"
+                    stroke="#31353f"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    id="Path_10579"
+                    data-name="Path 10579"
+                    d="M-4120.368-6602.906h6.16"
+                    transform="translate(0 8.906)"
+                    fill="none"
+                    stroke="#31353f"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    id="Path_10583"
+                    data-name="Path 10583"
+                    d="M-4120.368-6602.906h6.16"
+                    transform="translate(0 12.906)"
+                    fill="none"
+                    stroke="#31353f"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    id="Path_10581"
+                    data-name="Path 10581"
+                    d="M-4120.368-6602.906h4.273"
+                    transform="translate(12.943 10.406)"
+                    fill="none"
+                    stroke="#31353f"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    id="Path_10582"
+                    data-name="Path 10582"
+                    d="M-4120.368-6602.906h4.273"
+                    transform="translate(12.943 13.406)"
+                    fill="none"
+                    stroke="#31353f"
+                    stroke-width="1.5"
+                  />
+                </g>
+              </g>
+            </svg>
+
+            <span class="fs-16 fw-600">About us</span>
+          </div>
+        </a>
+        <a href="#" class="">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24.06"
+              height="24"
+              viewBox="0 0 24.06 24"
+            >
+              <g
+                id="Group_3574"
+                data-name="Group 3574"
+                transform="translate(0.06)"
+              >
+                <rect
+                  id="Rectangle_301"
+                  data-name="Rectangle 301"
+                  width="24"
+                  height="24"
+                  fill="#fff"
+                  opacity="0"
+                />
+                <g
+                  id="Home_Button"
+                  data-name="Home Button"
+                  transform="translate(0.999 2.39)"
+                >
+                  <g
+                    id="Group_1066"
+                    data-name="Group 1066"
+                    transform="translate(0 0)"
+                  >
+                    <g id="Group_1065" data-name="Group 1065">
+                      <path
+                        id="Path_327"
+                        data-name="Path 327"
+                        d="M-1275.648-544.655l11.033-10.09,10.774,10.09"
+                        transform="translate(1275.648 554.745)"
+                        fill="none"
+                        stroke="#31353f"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        id="Path_328"
+                        data-name="Path 328"
+                        d="M-1216.19-385.048v11.9h16.371v-11.9"
+                        transform="translate(1218.908 393.134)"
+                        fill="none"
+                        stroke="#31353f"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                      />
                     </g>
                   </g>
                 </g>
-                <path id="Path_10253" data-name="Path 10253" d="M6393.451-9145.268c.04.135,0,6.68,0,6.68"
-                  transform="translate(-177.999 8.661)" fill="none" stroke="#31353f" stroke-linecap="round"
-                  stroke-width="1" />
-                <path id="Path_10254" data-name="Path 10254" d="M0,0C.04.134,0,6.68,0,6.68"
-                  transform="translate(6212.122 -9133.258) rotate(-90)" fill="none" stroke="#31353f"
-                  stroke-linecap="round" stroke-width="1" />
               </g>
             </svg>
 
-            <span class="fs-16 fs-1366-14 fs-768-16 fs-490-14">Refer and Earn</span>
+            <span class="fs-16 fw-600">Home</span>
           </div>
-
-          <svg id="Component_103_3" data-name="Component 103 – 3" xmlns="http://www.w3.org/2000/svg" width="16"
-            height="16" viewBox="0 0 16 16" class="arrow">
-            <g id="Rectangle_1596" data-name="Rectangle 1596" fill="#31353f" stroke="#31353f" stroke-width="1"
-              opacity="0">
-              <rect width="16" height="16" stroke="none" />
-              <rect x="0.5" y="0.5" width="15" height="15" fill="none" />
-            </g>
-            <g id="Group_1656" data-name="Group 1656" transform="translate(2.939 0.939)">
-              <path id="Path_6068" data-name="Path 6068"
-                d="M6.561,7.3H.75A.75.75,0,0,1,0,6.555V.75a.75.75,0,0,1,1.5,0V5.8H6.561a.75.75,0,0,1,0,1.5Z"
-                transform="translate(0 5.17) rotate(-45)" fill="#31353f" />
-            </g>
-          </svg>
         </a>
-        <a href="#" class="item">
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <g id="sign_out" data-name="sign out" transform="translate(-76 -435)">
-                <g id="Rectangle_1601" data-name="Rectangle 1601" transform="translate(76 435)" fill="#fff"
-                  stroke="#31353f" stroke-width="1" opacity="0">
-                  <rect width="24" height="24" stroke="none" />
-                  <rect x="0.5" y="0.5" width="23" height="23" fill="none" />
+      </div>
+
+      <div class="setting">
+        <div class="title fs-16 fs-1366-14 fs-768-16 fs-490-14 fw-700">
+          ACCOUNT & SETTING
+        </div>
+
+        <div class="setting-main">
+          <a class="item">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <g id="Profile" transform="translate(-6196 9138)">
+                  <rect
+                    id="Rectangle_289"
+                    data-name="Rectangle 289"
+                    width="24"
+                    height="24"
+                    transform="translate(6196 -9138)"
+                    fill="#fff"
+                    opacity="0"
+                  />
+                  <g
+                    id="Group_2726"
+                    data-name="Group 2726"
+                    transform="translate(6200.501 -9134.001)"
+                  >
+                    <g
+                      id="Group_349"
+                      data-name="Group 349"
+                      transform="translate(0)"
+                    >
+                      <g id="Group_3468" data-name="Group 3468">
+                        <g
+                          id="Group_348"
+                          data-name="Group 348"
+                          transform="translate(3.936)"
+                        >
+                          <g id="Group_347" data-name="Group 347">
+                            <path
+                              id="Path_275"
+                              data-name="Path 275"
+                              d="M1209.985,78.924a4.13,4.13,0,1,1-4.129-4.131A4.129,4.129,0,0,1,1209.985,78.924Z"
+                              transform="translate(-1201.725 -74.793)"
+                              fill="none"
+                              stroke="#31353f"
+                              stroke-miterlimit="10"
+                              stroke-width="1"
+                            />
+                          </g>
+                        </g>
+                        <path
+                          id="Path_276"
+                          data-name="Path 276"
+                          d="M1214.254,89.255h-14.09a1.022,1.022,0,0,1-1.021-1.022h0a5.467,5.467,0,0,1,5.468-5.468h5.2a5.467,5.467,0,0,1,5.468,5.468h0A1.022,1.022,0,0,1,1214.254,89.255Z"
+                          transform="translate(-1199.143 -71.707)"
+                          fill="none"
+                          stroke="#31353f"
+                          stroke-miterlimit="10"
+                          stroke-width="1"
+                        />
+                      </g>
+                    </g>
+                  </g>
                 </g>
-                <g id="logout" transform="translate(81.607 439.775)">
-                  <path id="Path_15" data-name="Path 15" d="M8.5,3l3.941,3.941L8.5,10.882"
-                    transform="translate(2.009 0.284)" fill="none" stroke="#31353f" stroke-linecap="round"
-                    stroke-linejoin="round" stroke-width="1" />
-                  <line id="Line_7" data-name="Line 7" x1="10.509" transform="translate(3.941 7.225)" fill="none"
-                    stroke="#31353f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
-                  <path id="Path_16" data-name="Path 16"
-                    d="M7.068,14.95H1.814A1.314,1.314,0,0,1,.5,13.636V1.814A1.314,1.314,0,0,1,1.814.5H7.068"
-                    transform="translate(-0.5 -0.5)" fill="none" stroke="#31353f" stroke-linecap="round"
-                    stroke-linejoin="round" stroke-width="1" />
-                </g>
+              </svg>
+
+              <span class="fs-16 fs-1366-14 fs-768-16 fs-490-14">Profile</span>
+            </div>
+
+            <svg
+              id="Component_103_3"
+              data-name="Component 103 – 3"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              class="arrow"
+            >
+              <g
+                id="Rectangle_1596"
+                data-name="Rectangle 1596"
+                fill="#31353f"
+                stroke="#31353f"
+                stroke-width="1"
+                opacity="0"
+              >
+                <rect width="16" height="16" stroke="none" />
+                <rect x="0.5" y="0.5" width="15" height="15" fill="none" />
+              </g>
+              <g
+                id="Group_1656"
+                data-name="Group 1656"
+                transform="translate(2.939 0.939)"
+              >
+                <path
+                  id="Path_6068"
+                  data-name="Path 6068"
+                  d="M6.561,7.3H.75A.75.75,0,0,1,0,6.555V.75a.75.75,0,0,1,1.5,0V5.8H6.561a.75.75,0,0,1,0,1.5Z"
+                  transform="translate(0 5.17) rotate(-45)"
+                  fill="#31353f"
+                />
               </g>
             </svg>
-
-            <span class="fs-16 fs-1366-14 fs-768-16 fs-490-14">Sign Out</span>
-          </div>
-
-          <svg id="Component_103_3" data-name="Component 103 – 3" xmlns="http://www.w3.org/2000/svg" width="16"
-            height="16" viewBox="0 0 16 16" class="arrow">
-            <g id="Rectangle_1596" data-name="Rectangle 1596" fill="#31353f" stroke="#31353f" stroke-width="1"
-              opacity="0">
-              <rect width="16" height="16" stroke="none" />
-              <rect x="0.5" y="0.5" width="15" height="15" fill="none" />
-            </g>
-            <g id="Group_1656" data-name="Group 1656" transform="translate(2.939 0.939)">
-              <path id="Path_6068" data-name="Path 6068"
-                d="M6.561,7.3H.75A.75.75,0,0,1,0,6.555V.75a.75.75,0,0,1,1.5,0V5.8H6.561a.75.75,0,0,1,0,1.5Z"
-                transform="translate(0 5.17) rotate(-45)" fill="#31353f" />
-            </g>
-          </svg>
-        </a>
-        <a href="#" class="item">
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <g id="Group_10909" data-name="Group 10909" transform="translate(-76 -692.487)">
-                <g id="Rectangle_1601" data-name="Rectangle 1601" transform="translate(76 692.487)" fill="#fff"
-                  stroke="#707070" stroke-width="1" opacity="0">
-                  <rect width="24" height="24" stroke="none" />
-                  <rect x="0.5" y="0.5" width="23" height="23" fill="none" />
+          </a>
+          <a class="item">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  id="Bank_Details"
+                  data-name="Bank Details"
+                  transform="translate(-360.02 -467.02)"
+                >
+                  <g
+                    id="Rectangle_1603"
+                    data-name="Rectangle 1603"
+                    transform="translate(360.02 467.02)"
+                    fill="#fff"
+                    stroke="#31353f"
+                    stroke-width="1"
+                    opacity="0"
+                  >
+                    <rect width="24" height="24" stroke="none" />
+                    <rect x="0.5" y="0.5" width="23" height="23" fill="none" />
+                  </g>
+                  <g
+                    id="Group_10550"
+                    data-name="Group 10550"
+                    transform="translate(362.36 470.631)"
+                  >
+                    <path
+                      id="Path_10247"
+                      data-name="Path 10247"
+                      d="M6664.089-9064.223v11.633"
+                      transform="translate(-6662.293 9069.537)"
+                      fill="none"
+                      stroke="#31353f"
+                      stroke-width="1"
+                    />
+                    <path
+                      id="Path_10248"
+                      data-name="Path 10248"
+                      d="M6664.089-9064.223v11.633"
+                      transform="translate(-6646.392 9069.537)"
+                      fill="none"
+                      stroke="#31353f"
+                      stroke-width="1"
+                    />
+                    <path
+                      id="Path_10250"
+                      data-name="Path 10250"
+                      d="M0,0V19.577"
+                      transform="translate(0.001 17.424) rotate(-90)"
+                      fill="none"
+                      stroke="#31353f"
+                      stroke-linecap="round"
+                      stroke-width="1"
+                    />
+                    <g
+                      id="Path_10252"
+                      data-name="Path 10252"
+                      transform="translate(-6658.642 9071.662)"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M6668.2-9071.662l-9.562,5.314h19.58Z"
+                        stroke="none"
+                      />
+                      <path
+                        d="M 6668.20458984375 -9071.662109375 L 6658.64208984375 -9066.34765625 L 6678.22216796875 -9066.34765625 L 6668.20458984375 -9071.662109375 M 6668.20458984375 -9072.662109375 C 6668.36572265625 -9072.662109375 6668.5263671875 -9072.623046875 6668.67333984375 -9072.5458984375 L 6678.69091796875 -9067.2314453125 C 6679.0966796875 -9067.015625 6679.3037109375 -9066.5517578125 6679.1923828125 -9066.1064453125 C 6679.08154296875 -9065.66015625 6678.681640625 -9065.34765625 6678.22216796875 -9065.34765625 L 6658.64208984375 -9065.34765625 C 6658.1865234375 -9065.34765625 6657.78857421875 -9065.6552734375 6657.67431640625 -9066.0966796875 C 6657.5595703125 -9066.5380859375 6657.7578125 -9067 6658.15625 -9067.2216796875 L 6667.71875 -9072.5361328125 C 6667.86962890625 -9072.6201171875 6668.037109375 -9072.662109375 6668.20458984375 -9072.662109375 Z"
+                        stroke="none"
+                        fill="#31353f"
+                      />
+                    </g>
+                  </g>
                 </g>
-                <g id="help-circle" transform="translate(77.5 693.987)">
-                  <circle id="Ellipse_503" data-name="Ellipse 503" cx="10.5" cy="10.5" r="10.5" fill="none"
-                    stroke="#31353f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
-                  <path id="Path_10246" data-name="Path 10246"
-                    d="M9.09,9.061a3.091,3.091,0,0,1,6.008,1.03c0,2.061-3.091,3.091-3.091,3.091"
-                    transform="translate(-1.223 -2.018)" fill="none" stroke="#31353f" stroke-linecap="round"
-                    stroke-linejoin="round" stroke-width="1" />
-                  <line id="Line_239" data-name="Line 239" transform="translate(10.5 15)" fill="none" stroke="#31353f"
-                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
-                </g>
+              </svg>
+
+              <span class="fs-16 fs-1366-14 fs-768-16 fs-490-14"
+                >Bank Account</span
+              >
+            </div>
+
+            <svg
+              id="Component_103_3"
+              data-name="Component 103 – 3"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              class="arrow"
+            >
+              <g
+                id="Rectangle_1596"
+                data-name="Rectangle 1596"
+                fill="#31353f"
+                stroke="#31353f"
+                stroke-width="1"
+                opacity="0"
+              >
+                <rect width="16" height="16" stroke="none" />
+                <rect x="0.5" y="0.5" width="15" height="15" fill="none" />
+              </g>
+              <g
+                id="Group_1656"
+                data-name="Group 1656"
+                transform="translate(2.939 0.939)"
+              >
+                <path
+                  id="Path_6068"
+                  data-name="Path 6068"
+                  d="M6.561,7.3H.75A.75.75,0,0,1,0,6.555V.75a.75.75,0,0,1,1.5,0V5.8H6.561a.75.75,0,0,1,0,1.5Z"
+                  transform="translate(0 5.17) rotate(-45)"
+                  fill="#31353f"
+                />
               </g>
             </svg>
+          </a>
+          <a class="item">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  id="Group_12469"
+                  data-name="Group 12469"
+                  transform="translate(-6196 9138)"
+                >
+                  <rect
+                    id="Rectangle_289"
+                    data-name="Rectangle 289"
+                    width="24"
+                    height="24"
+                    transform="translate(6196 -9138)"
+                    fill="#fff"
+                    opacity="0"
+                  />
+                  <g
+                    id="Group_2726"
+                    data-name="Group 2726"
+                    transform="translate(6197.969 -9134.001)"
+                  >
+                    <g
+                      id="Group_349"
+                      data-name="Group 349"
+                      transform="translate(0)"
+                    >
+                      <g id="Group_3468" data-name="Group 3468">
+                        <g
+                          id="Group_348"
+                          data-name="Group 348"
+                          transform="translate(3.936)"
+                        >
+                          <g id="Group_347" data-name="Group 347">
+                            <path
+                              id="Path_275"
+                              data-name="Path 275"
+                              d="M1209.985,78.924a4.13,4.13,0,1,1-4.129-4.131A4.129,4.129,0,0,1,1209.985,78.924Z"
+                              transform="translate(-1201.725 -74.793)"
+                              fill="none"
+                              stroke="#31353f"
+                              stroke-miterlimit="10"
+                              stroke-width="1"
+                            />
+                          </g>
+                        </g>
+                        <path
+                          id="Path_276"
+                          data-name="Path 276"
+                          d="M1214.254,89.255h-14.09a1.022,1.022,0,0,1-1.021-1.022h0a5.467,5.467,0,0,1,5.468-5.468h5.2a5.467,5.467,0,0,1,5.468,5.468h0A1.022,1.022,0,0,1,1214.254,89.255Z"
+                          transform="translate(-1199.143 -71.707)"
+                          fill="none"
+                          stroke="#31353f"
+                          stroke-miterlimit="10"
+                          stroke-width="1"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                  <path
+                    id="Path_10253"
+                    data-name="Path 10253"
+                    d="M6393.451-9145.268c.04.135,0,6.68,0,6.68"
+                    transform="translate(-177.999 8.661)"
+                    fill="none"
+                    stroke="#31353f"
+                    stroke-linecap="round"
+                    stroke-width="1"
+                  />
+                  <path
+                    id="Path_10254"
+                    data-name="Path 10254"
+                    d="M0,0C.04.134,0,6.68,0,6.68"
+                    transform="translate(6212.122 -9133.258) rotate(-90)"
+                    fill="none"
+                    stroke="#31353f"
+                    stroke-linecap="round"
+                    stroke-width="1"
+                  />
+                </g>
+              </svg>
 
-            <span class="fs-16 fs-1366-14 fs-768-16 fs-490-14">Help & Product Tour</span>
-          </div>
+              <span class="fs-16 fs-1366-14 fs-768-16 fs-490-14"
+                >Refer and Earn</span
+              >
+            </div>
 
-          <svg id="Component_103_3" data-name="Component 103 – 3" xmlns="http://www.w3.org/2000/svg" width="16"
-            height="16" viewBox="0 0 16 16" class="arrow">
-            <g id="Rectangle_1596" data-name="Rectangle 1596" fill="#31353f" stroke="#31353f" stroke-width="1"
-              opacity="0">
-              <rect width="16" height="16" stroke="none" />
-              <rect x="0.5" y="0.5" width="15" height="15" fill="none" />
-            </g>
-            <g id="Group_1656" data-name="Group 1656" transform="translate(2.939 0.939)">
-              <path id="Path_6068" data-name="Path 6068"
-                d="M6.561,7.3H.75A.75.75,0,0,1,0,6.555V.75a.75.75,0,0,1,1.5,0V5.8H6.561a.75.75,0,0,1,0,1.5Z"
-                transform="translate(0 5.17) rotate(-45)" fill="#31353f" />
-            </g>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div id="right-menu" class="d-none">
-    <div class="close">
-      <img src="./assets/images/close.svg" alt="close" />
-    </div>
-
-    <div class="nav">
-      <a href="#" class="active fs-1919-24 fs-768-32 fs-575-24 fw-600">Home</a>
-      <a href="#" class="fs-1919-24 fs-768-32 fs-575-24 fw-600">Reads</a>
-      <a href="#" class="fs-1919-24 fs-768-32 fs-575-24 fw-600">About Us</a>
-      <a href="#" class="fs-1919-24 fs-768-32 fs-575-24 fw-600">T&C</a>
-    </div>
-
-    <div class="bottom-btn">
-      <button class="btn btn-bg-primary signup fs-24 fs-1919-16">
-        Sign Up
-      </button>
-    </div>
-  </div>
-  <div class="custom-modal xs d-none" id="message-modal">
-    <div class="close">
-      <img src="./assets/images/close.svg" alt="close" />
-    </div>
-    <div class="modal-body no-head">
-      <h2 class="fw-600 mb-4 resist-size text-center text-sm-left">
-        Sent us a massage
-      </h2>
-      <div class="custom-form-control pt-3">
-        <input class="custom-input" type="text" placeholder="Enter your name" />
-      </div>
-      <div class="custom-form-control mt-4">
-        <input class="custom-input" type="text" placeholder="Enter your Mobile No." />
-      </div>
-      <div class="custom-form-control mt-4">
-        <textarea class="custom-input" placeholder="Write your massage" rows="5"></textarea>
-      </div>
-      <div class="my-5 w-100"></div>
-      <div class="bottom-btn-sm">
-        <button class="btn btn-bg-primary mt-4">Sent message</button>
-      </div>
-    </div>
-  </div>
-  <div class="custom-modal xs d-none" id="call-modal">
-    <div class="close">
-      <img src="./assets/images/close.svg" alt="close" />
-    </div>
-    <div class="modal-body no-head">
-      <h2 class="fw-600 mb-4 resist-size text-center text-sm-left">
-        Request Call Back
-      </h2>
-      <div class="custom-form-control pt-3">
-        <input class="custom-input" type="text" placeholder="Enter your name" />
-      </div>
-      <div class="custom-form-control mt-4">
-        <input class="custom-input" type="text" placeholder="Enter your Mobile No." />
-      </div>
-      <div id="dark-overlay-calendar"></div>
-      <div class="custom-form-control mt-4">
-        <div class="with-icon">
-          <input class="custom-input" type="text" id="example" type="date" placeholder="Choose Date" /><svg class="icon"
-            xmlns="http://www.w3.org/2000/svg" width="16" height="16.055" viewBox="0 0 16 16.055">
-            <g id="Group_10631" data-name="Group 10631" transform="translate(-790 -600.973)">
-              <g id="Group_1614" data-name="Group 1614" opacity="0">
-                <rect id="Rectangle_1614" data-name="Rectangle 1614" width="16" height="16"
-                  transform="translate(790 601)" fill="" />
-                <path id="Rectangle_1614_-_Outline" data-name="Rectangle 1614 - Outline" d="M1,1V15H15V1H1M0,0H16V16H0Z"
-                  transform="translate(790 601)" fill="" />
+            <svg
+              id="Component_103_3"
+              data-name="Component 103 – 3"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              class="arrow"
+            >
+              <g
+                id="Rectangle_1596"
+                data-name="Rectangle 1596"
+                fill="#31353f"
+                stroke="#31353f"
+                stroke-width="1"
+                opacity="0"
+              >
+                <rect width="16" height="16" stroke="none" />
+                <rect x="0.5" y="0.5" width="15" height="15" fill="none" />
               </g>
-              <g id="calendar_1_" data-name="calendar (1)" transform="translate(791 601.473)">
-                <path id="Rectangle"
-                  d="M2-.5H12A2.5,2.5,0,0,1,14.5,2V12A2.5,2.5,0,0,1,12,14.5H2A2.5,2.5,0,0,1-.5,12V2A2.5,2.5,0,0,1,2-.5Zm10,14A1.5,1.5,0,0,0,13.5,12V2A1.5,1.5,0,0,0,12,.5H2A1.5,1.5,0,0,0,.5,2V12A1.5,1.5,0,0,0,2,13.5Z"
-                  transform="translate(0 1.055)" fill="" />
-                <path id="Path"
-                  d="M.5,3.511a.5.5,0,0,1-.5-.5V0A.5.5,0,0,1,.5-.5.5.5,0,0,1,1,0V3.011A.5.5,0,0,1,.5,3.511Z"
-                  transform="translate(9.286)" fill="" />
-                <path id="Path-2" data-name="Path"
-                  d="M.5,3.511a.5.5,0,0,1-.5-.5V0A.5.5,0,0,1,.5-.5.5.5,0,0,1,1,0V3.011A.5.5,0,0,1,.5,3.511Z"
-                  transform="translate(3.264)" fill="" />
-                <path id="Path-3" data-name="Path" d="M13.549,1H0A.5.5,0,0,1,0,0H13.549a.5.5,0,0,1,0,1Z"
-                  transform="translate(0 5.522)" fill="" />
+              <g
+                id="Group_1656"
+                data-name="Group 1656"
+                transform="translate(2.939 0.939)"
+              >
+                <path
+                  id="Path_6068"
+                  data-name="Path 6068"
+                  d="M6.561,7.3H.75A.75.75,0,0,1,0,6.555V.75a.75.75,0,0,1,1.5,0V5.8H6.561a.75.75,0,0,1,0,1.5Z"
+                  transform="translate(0 5.17) rotate(-45)"
+                  fill="#31353f"
+                />
               </g>
-            </g>
-          </svg>
+            </svg>
+          </a>
+          <a class="item">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  id="sign_out"
+                  data-name="sign out"
+                  transform="translate(-76 -435)"
+                >
+                  <g
+                    id="Rectangle_1601"
+                    data-name="Rectangle 1601"
+                    transform="translate(76 435)"
+                    fill="#fff"
+                    stroke="#31353f"
+                    stroke-width="1"
+                    opacity="0"
+                  >
+                    <rect width="24" height="24" stroke="none" />
+                    <rect x="0.5" y="0.5" width="23" height="23" fill="none" />
+                  </g>
+                  <g id="logout" transform="translate(81.607 439.775)">
+                    <path
+                      id="Path_15"
+                      data-name="Path 15"
+                      d="M8.5,3l3.941,3.941L8.5,10.882"
+                      transform="translate(2.009 0.284)"
+                      fill="none"
+                      stroke="#31353f"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1"
+                    />
+                    <line
+                      id="Line_7"
+                      data-name="Line 7"
+                      x1="10.509"
+                      transform="translate(3.941 7.225)"
+                      fill="none"
+                      stroke="#31353f"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1"
+                    />
+                    <path
+                      id="Path_16"
+                      data-name="Path 16"
+                      d="M7.068,14.95H1.814A1.314,1.314,0,0,1,.5,13.636V1.814A1.314,1.314,0,0,1,1.814.5H7.068"
+                      transform="translate(-0.5 -0.5)"
+                      fill="none"
+                      stroke="#31353f"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1"
+                    />
+                  </g>
+                </g>
+              </svg>
+
+              <span class="fs-16 fs-1366-14 fs-768-16 fs-490-14">Sign Out</span>
+            </div>
+
+            <svg
+              id="Component_103_3"
+              data-name="Component 103 – 3"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              class="arrow"
+            >
+              <g
+                id="Rectangle_1596"
+                data-name="Rectangle 1596"
+                fill="#31353f"
+                stroke="#31353f"
+                stroke-width="1"
+                opacity="0"
+              >
+                <rect width="16" height="16" stroke="none" />
+                <rect x="0.5" y="0.5" width="15" height="15" fill="none" />
+              </g>
+              <g
+                id="Group_1656"
+                data-name="Group 1656"
+                transform="translate(2.939 0.939)"
+              >
+                <path
+                  id="Path_6068"
+                  data-name="Path 6068"
+                  d="M6.561,7.3H.75A.75.75,0,0,1,0,6.555V.75a.75.75,0,0,1,1.5,0V5.8H6.561a.75.75,0,0,1,0,1.5Z"
+                  transform="translate(0 5.17) rotate(-45)"
+                  fill="#31353f"
+                />
+              </g>
+            </svg>
+          </a>
+          <a class="item">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  id="Group_10909"
+                  data-name="Group 10909"
+                  transform="translate(-76 -692.487)"
+                >
+                  <g
+                    id="Rectangle_1601"
+                    data-name="Rectangle 1601"
+                    transform="translate(76 692.487)"
+                    fill="#fff"
+                    stroke="#707070"
+                    stroke-width="1"
+                    opacity="0"
+                  >
+                    <rect width="24" height="24" stroke="none" />
+                    <rect x="0.5" y="0.5" width="23" height="23" fill="none" />
+                  </g>
+                  <g id="help-circle" transform="translate(77.5 693.987)">
+                    <circle
+                      id="Ellipse_503"
+                      data-name="Ellipse 503"
+                      cx="10.5"
+                      cy="10.5"
+                      r="10.5"
+                      fill="none"
+                      stroke="#31353f"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1"
+                    />
+                    <path
+                      id="Path_10246"
+                      data-name="Path 10246"
+                      d="M9.09,9.061a3.091,3.091,0,0,1,6.008,1.03c0,2.061-3.091,3.091-3.091,3.091"
+                      transform="translate(-1.223 -2.018)"
+                      fill="none"
+                      stroke="#31353f"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1"
+                    />
+                    <line
+                      id="Line_239"
+                      data-name="Line 239"
+                      transform="translate(10.5 15)"
+                      fill="none"
+                      stroke="#31353f"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1"
+                    />
+                  </g>
+                </g>
+              </svg>
+
+              <span class="fs-16 fs-1366-14 fs-768-16 fs-490-14"
+                >Help & Product Tour</span
+              >
+            </div>
+
+            <svg
+              id="Component_103_3"
+              data-name="Component 103 – 3"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              class="arrow"
+            >
+              <g
+                id="Rectangle_1596"
+                data-name="Rectangle 1596"
+                fill="#31353f"
+                stroke="#31353f"
+                stroke-width="1"
+                opacity="0"
+              >
+                <rect width="16" height="16" stroke="none" />
+                <rect x="0.5" y="0.5" width="15" height="15" fill="none" />
+              </g>
+              <g
+                id="Group_1656"
+                data-name="Group 1656"
+                transform="translate(2.939 0.939)"
+              >
+                <path
+                  id="Path_6068"
+                  data-name="Path 6068"
+                  d="M6.561,7.3H.75A.75.75,0,0,1,0,6.555V.75a.75.75,0,0,1,1.5,0V5.8H6.561a.75.75,0,0,1,0,1.5Z"
+                  transform="translate(0 5.17) rotate(-45)"
+                  fill="#31353f"
+                />
+              </g>
+            </svg>
+          </a>
         </div>
       </div>
-      <div class="custom-form-control mt-4">
-        <div class="with-icon">
-          <input class="custom-input timepicker" type="text" placeholder="Choose Time" onfocus="(this.type='date')"
-            onblur="(this.type='text')" />
-          <div id="dark-overlay-timer"></div>
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" class="icon no-clr">
-            <g class="white-clr" id="Group_10713" data-name="Group 10713" transform="translate(-11718.5 15196.5)">
-              <g class="no-clr" id="clock" transform="translate(11717 -15198)">
-                <circle id="Ellipse_179" data-name="Ellipse 179" cx="8" cy="8" r="8" transform="translate(2 2)"
-                  fill="none" stroke="#31353f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
-                <path id="Path_10235" data-name="Path 10235" d="M12,6v4.8l3.2,1.6" transform="translate(-2 -0.8)"
-                  fill="none" stroke="#31353f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
-              </g>
-              <g id="Rectangle_1591" data-name="Rectangle 1591" transform="translate(11719 -15196)" fill="#fff"
-                stroke="#31353f" stroke-width="1" opacity="0" class="no-clr">
-                <rect class="no-clr" width="16" height="16" stroke="none" />
-                <rect class="no-clr" x="0.5" y="0.5" width="15" height="15" fill="none" />
-              </g>
-            </g>
-          </svg>
+    </div>
+    <div id="right-menu-login" class="d-none">
+      <div class="close">
+        <img src="./assets/images/close.svg" alt="close" />
+      </div>
+      <div class="profile-info">
+        <img src="./assets/img/user-lg.png" alt="user" />
+        <div class="text">
+          <div class="fs-16 fs-1366-14">Palak Kapoor</div>
+          <div class="fs-12 fs-1366-10 text-light-2">9230482333</div>
         </div>
       </div>
-      <div class="bottom-btn-sm">
-        <button class="btn btn-bg-primary mt-4">Call</button>
+
+      <div class="nav">
+        <a href="#" class="active">Home</a>
+        <a href="#">Reads</a>
+        <a href="#">About Us</a>
+        <a href="#">T&C</a>
+      </div>
+
+      <div class="setting">
+        <div class="title fs-16 fs-1366-14 fs-768-16 fs-490-14 fw-600">
+          ACCOUNT & SETTING
+        </div>
+
+        <div class="setting-main">
+          <a href="#" class="item">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <g id="Profile" transform="translate(-6196 9138)">
+                  <rect
+                    id="Rectangle_289"
+                    data-name="Rectangle 289"
+                    width="24"
+                    height="24"
+                    transform="translate(6196 -9138)"
+                    fill="#fff"
+                    opacity="0"
+                  />
+                  <g
+                    id="Group_2726"
+                    data-name="Group 2726"
+                    transform="translate(6200.501 -9134.001)"
+                  >
+                    <g
+                      id="Group_349"
+                      data-name="Group 349"
+                      transform="translate(0)"
+                    >
+                      <g id="Group_3468" data-name="Group 3468">
+                        <g
+                          id="Group_348"
+                          data-name="Group 348"
+                          transform="translate(3.936)"
+                        >
+                          <g id="Group_347" data-name="Group 347">
+                            <path
+                              id="Path_275"
+                              data-name="Path 275"
+                              d="M1209.985,78.924a4.13,4.13,0,1,1-4.129-4.131A4.129,4.129,0,0,1,1209.985,78.924Z"
+                              transform="translate(-1201.725 -74.793)"
+                              fill="none"
+                              stroke="#31353f"
+                              stroke-miterlimit="10"
+                              stroke-width="1"
+                            />
+                          </g>
+                        </g>
+                        <path
+                          id="Path_276"
+                          data-name="Path 276"
+                          d="M1214.254,89.255h-14.09a1.022,1.022,0,0,1-1.021-1.022h0a5.467,5.467,0,0,1,5.468-5.468h5.2a5.467,5.467,0,0,1,5.468,5.468h0A1.022,1.022,0,0,1,1214.254,89.255Z"
+                          transform="translate(-1199.143 -71.707)"
+                          fill="none"
+                          stroke="#31353f"
+                          stroke-miterlimit="10"
+                          stroke-width="1"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+
+              <span class="fs-16 fs-1366-14 fs-768-16 fs-490-14">Profile</span>
+            </div>
+
+            <svg
+              id="Component_103_3"
+              data-name="Component 103 – 3"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              class="arrow"
+            >
+              <g
+                id="Rectangle_1596"
+                data-name="Rectangle 1596"
+                fill="#31353f"
+                stroke="#31353f"
+                stroke-width="1"
+                opacity="0"
+              >
+                <rect width="16" height="16" stroke="none" />
+                <rect x="0.5" y="0.5" width="15" height="15" fill="none" />
+              </g>
+              <g
+                id="Group_1656"
+                data-name="Group 1656"
+                transform="translate(2.939 0.939)"
+              >
+                <path
+                  id="Path_6068"
+                  data-name="Path 6068"
+                  d="M6.561,7.3H.75A.75.75,0,0,1,0,6.555V.75a.75.75,0,0,1,1.5,0V5.8H6.561a.75.75,0,0,1,0,1.5Z"
+                  transform="translate(0 5.17) rotate(-45)"
+                  fill="#31353f"
+                />
+              </g>
+            </svg>
+          </a>
+          <a href="#" class="item">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  id="Bank_Details"
+                  data-name="Bank Details"
+                  transform="translate(-360.02 -467.02)"
+                >
+                  <g
+                    id="Rectangle_1603"
+                    data-name="Rectangle 1603"
+                    transform="translate(360.02 467.02)"
+                    fill="#fff"
+                    stroke="#31353f"
+                    stroke-width="1"
+                    opacity="0"
+                  >
+                    <rect width="24" height="24" stroke="none" />
+                    <rect x="0.5" y="0.5" width="23" height="23" fill="none" />
+                  </g>
+                  <g
+                    id="Group_10550"
+                    data-name="Group 10550"
+                    transform="translate(362.36 470.631)"
+                  >
+                    <path
+                      id="Path_10247"
+                      data-name="Path 10247"
+                      d="M6664.089-9064.223v11.633"
+                      transform="translate(-6662.293 9069.537)"
+                      fill="none"
+                      stroke="#31353f"
+                      stroke-width="1"
+                    />
+                    <path
+                      id="Path_10248"
+                      data-name="Path 10248"
+                      d="M6664.089-9064.223v11.633"
+                      transform="translate(-6646.392 9069.537)"
+                      fill="none"
+                      stroke="#31353f"
+                      stroke-width="1"
+                    />
+                    <path
+                      id="Path_10250"
+                      data-name="Path 10250"
+                      d="M0,0V19.577"
+                      transform="translate(0.001 17.424) rotate(-90)"
+                      fill="none"
+                      stroke="#31353f"
+                      stroke-linecap="round"
+                      stroke-width="1"
+                    />
+                    <g
+                      id="Path_10252"
+                      data-name="Path 10252"
+                      transform="translate(-6658.642 9071.662)"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M6668.2-9071.662l-9.562,5.314h19.58Z"
+                        stroke="none"
+                      />
+                      <path
+                        d="M 6668.20458984375 -9071.662109375 L 6658.64208984375 -9066.34765625 L 6678.22216796875 -9066.34765625 L 6668.20458984375 -9071.662109375 M 6668.20458984375 -9072.662109375 C 6668.36572265625 -9072.662109375 6668.5263671875 -9072.623046875 6668.67333984375 -9072.5458984375 L 6678.69091796875 -9067.2314453125 C 6679.0966796875 -9067.015625 6679.3037109375 -9066.5517578125 6679.1923828125 -9066.1064453125 C 6679.08154296875 -9065.66015625 6678.681640625 -9065.34765625 6678.22216796875 -9065.34765625 L 6658.64208984375 -9065.34765625 C 6658.1865234375 -9065.34765625 6657.78857421875 -9065.6552734375 6657.67431640625 -9066.0966796875 C 6657.5595703125 -9066.5380859375 6657.7578125 -9067 6658.15625 -9067.2216796875 L 6667.71875 -9072.5361328125 C 6667.86962890625 -9072.6201171875 6668.037109375 -9072.662109375 6668.20458984375 -9072.662109375 Z"
+                        stroke="none"
+                        fill="#31353f"
+                      />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+
+              <span class="fs-16 fs-1366-14 fs-768-16 fs-490-14"
+                >Bank Account</span
+              >
+            </div>
+
+            <svg
+              id="Component_103_3"
+              data-name="Component 103 – 3"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              class="arrow"
+            >
+              <g
+                id="Rectangle_1596"
+                data-name="Rectangle 1596"
+                fill="#31353f"
+                stroke="#31353f"
+                stroke-width="1"
+                opacity="0"
+              >
+                <rect width="16" height="16" stroke="none" />
+                <rect x="0.5" y="0.5" width="15" height="15" fill="none" />
+              </g>
+              <g
+                id="Group_1656"
+                data-name="Group 1656"
+                transform="translate(2.939 0.939)"
+              >
+                <path
+                  id="Path_6068"
+                  data-name="Path 6068"
+                  d="M6.561,7.3H.75A.75.75,0,0,1,0,6.555V.75a.75.75,0,0,1,1.5,0V5.8H6.561a.75.75,0,0,1,0,1.5Z"
+                  transform="translate(0 5.17) rotate(-45)"
+                  fill="#31353f"
+                />
+              </g>
+            </svg>
+          </a>
+          <a href="#" class="item">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  id="Refer_earn"
+                  data-name="Refer &amp; earn"
+                  transform="translate(-6196 9138)"
+                >
+                  <rect
+                    id="Rectangle_289"
+                    data-name="Rectangle 289"
+                    width="24"
+                    height="24"
+                    transform="translate(6196 -9138)"
+                    fill="#fff"
+                    opacity="0"
+                  />
+                  <g
+                    id="Group_2726"
+                    data-name="Group 2726"
+                    transform="translate(6197.969 -9134.001)"
+                  >
+                    <g
+                      id="Group_349"
+                      data-name="Group 349"
+                      transform="translate(0)"
+                    >
+                      <g id="Group_3468" data-name="Group 3468">
+                        <g
+                          id="Group_348"
+                          data-name="Group 348"
+                          transform="translate(3.936)"
+                        >
+                          <g id="Group_347" data-name="Group 347">
+                            <path
+                              id="Path_275"
+                              data-name="Path 275"
+                              d="M1209.985,78.924a4.13,4.13,0,1,1-4.129-4.131A4.129,4.129,0,0,1,1209.985,78.924Z"
+                              transform="translate(-1201.725 -74.793)"
+                              fill="none"
+                              stroke="#31353f"
+                              stroke-miterlimit="10"
+                              stroke-width="1"
+                            />
+                          </g>
+                        </g>
+                        <path
+                          id="Path_276"
+                          data-name="Path 276"
+                          d="M1214.254,89.255h-14.09a1.022,1.022,0,0,1-1.021-1.022h0a5.467,5.467,0,0,1,5.468-5.468h5.2a5.467,5.467,0,0,1,5.468,5.468h0A1.022,1.022,0,0,1,1214.254,89.255Z"
+                          transform="translate(-1199.143 -71.707)"
+                          fill="none"
+                          stroke="#31353f"
+                          stroke-miterlimit="10"
+                          stroke-width="1"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                  <path
+                    id="Path_10253"
+                    data-name="Path 10253"
+                    d="M6393.451-9145.268c.04.135,0,6.68,0,6.68"
+                    transform="translate(-177.999 8.661)"
+                    fill="none"
+                    stroke="#31353f"
+                    stroke-linecap="round"
+                    stroke-width="1"
+                  />
+                  <path
+                    id="Path_10254"
+                    data-name="Path 10254"
+                    d="M0,0C.04.134,0,6.68,0,6.68"
+                    transform="translate(6212.122 -9133.258) rotate(-90)"
+                    fill="none"
+                    stroke="#31353f"
+                    stroke-linecap="round"
+                    stroke-width="1"
+                  />
+                </g>
+              </svg>
+
+              <span class="fs-16 fs-1366-14 fs-768-16 fs-490-14"
+                >Refer and Earn</span
+              >
+            </div>
+
+            <svg
+              id="Component_103_3"
+              data-name="Component 103 – 3"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              class="arrow"
+            >
+              <g
+                id="Rectangle_1596"
+                data-name="Rectangle 1596"
+                fill="#31353f"
+                stroke="#31353f"
+                stroke-width="1"
+                opacity="0"
+              >
+                <rect width="16" height="16" stroke="none" />
+                <rect x="0.5" y="0.5" width="15" height="15" fill="none" />
+              </g>
+              <g
+                id="Group_1656"
+                data-name="Group 1656"
+                transform="translate(2.939 0.939)"
+              >
+                <path
+                  id="Path_6068"
+                  data-name="Path 6068"
+                  d="M6.561,7.3H.75A.75.75,0,0,1,0,6.555V.75a.75.75,0,0,1,1.5,0V5.8H6.561a.75.75,0,0,1,0,1.5Z"
+                  transform="translate(0 5.17) rotate(-45)"
+                  fill="#31353f"
+                />
+              </g>
+            </svg>
+          </a>
+          <a href="#" class="item">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  id="sign_out"
+                  data-name="sign out"
+                  transform="translate(-76 -435)"
+                >
+                  <g
+                    id="Rectangle_1601"
+                    data-name="Rectangle 1601"
+                    transform="translate(76 435)"
+                    fill="#fff"
+                    stroke="#31353f"
+                    stroke-width="1"
+                    opacity="0"
+                  >
+                    <rect width="24" height="24" stroke="none" />
+                    <rect x="0.5" y="0.5" width="23" height="23" fill="none" />
+                  </g>
+                  <g id="logout" transform="translate(81.607 439.775)">
+                    <path
+                      id="Path_15"
+                      data-name="Path 15"
+                      d="M8.5,3l3.941,3.941L8.5,10.882"
+                      transform="translate(2.009 0.284)"
+                      fill="none"
+                      stroke="#31353f"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1"
+                    />
+                    <line
+                      id="Line_7"
+                      data-name="Line 7"
+                      x1="10.509"
+                      transform="translate(3.941 7.225)"
+                      fill="none"
+                      stroke="#31353f"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1"
+                    />
+                    <path
+                      id="Path_16"
+                      data-name="Path 16"
+                      d="M7.068,14.95H1.814A1.314,1.314,0,0,1,.5,13.636V1.814A1.314,1.314,0,0,1,1.814.5H7.068"
+                      transform="translate(-0.5 -0.5)"
+                      fill="none"
+                      stroke="#31353f"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1"
+                    />
+                  </g>
+                </g>
+              </svg>
+
+              <span class="fs-16 fs-1366-14 fs-768-16 fs-490-14">Sign Out</span>
+            </div>
+
+            <svg
+              id="Component_103_3"
+              data-name="Component 103 – 3"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              class="arrow"
+            >
+              <g
+                id="Rectangle_1596"
+                data-name="Rectangle 1596"
+                fill="#31353f"
+                stroke="#31353f"
+                stroke-width="1"
+                opacity="0"
+              >
+                <rect width="16" height="16" stroke="none" />
+                <rect x="0.5" y="0.5" width="15" height="15" fill="none" />
+              </g>
+              <g
+                id="Group_1656"
+                data-name="Group 1656"
+                transform="translate(2.939 0.939)"
+              >
+                <path
+                  id="Path_6068"
+                  data-name="Path 6068"
+                  d="M6.561,7.3H.75A.75.75,0,0,1,0,6.555V.75a.75.75,0,0,1,1.5,0V5.8H6.561a.75.75,0,0,1,0,1.5Z"
+                  transform="translate(0 5.17) rotate(-45)"
+                  fill="#31353f"
+                />
+              </g>
+            </svg>
+          </a>
+          <a href="#" class="item">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  id="Group_10909"
+                  data-name="Group 10909"
+                  transform="translate(-76 -692.487)"
+                >
+                  <g
+                    id="Rectangle_1601"
+                    data-name="Rectangle 1601"
+                    transform="translate(76 692.487)"
+                    fill="#fff"
+                    stroke="#707070"
+                    stroke-width="1"
+                    opacity="0"
+                  >
+                    <rect width="24" height="24" stroke="none" />
+                    <rect x="0.5" y="0.5" width="23" height="23" fill="none" />
+                  </g>
+                  <g id="help-circle" transform="translate(77.5 693.987)">
+                    <circle
+                      id="Ellipse_503"
+                      data-name="Ellipse 503"
+                      cx="10.5"
+                      cy="10.5"
+                      r="10.5"
+                      fill="none"
+                      stroke="#31353f"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1"
+                    />
+                    <path
+                      id="Path_10246"
+                      data-name="Path 10246"
+                      d="M9.09,9.061a3.091,3.091,0,0,1,6.008,1.03c0,2.061-3.091,3.091-3.091,3.091"
+                      transform="translate(-1.223 -2.018)"
+                      fill="none"
+                      stroke="#31353f"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1"
+                    />
+                    <line
+                      id="Line_239"
+                      data-name="Line 239"
+                      transform="translate(10.5 15)"
+                      fill="none"
+                      stroke="#31353f"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1"
+                    />
+                  </g>
+                </g>
+              </svg>
+
+              <span class="fs-16 fs-1366-14 fs-768-16 fs-490-14"
+                >Help & Product Tour</span
+              >
+            </div>
+
+            <svg
+              id="Component_103_3"
+              data-name="Component 103 – 3"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              class="arrow"
+            >
+              <g
+                id="Rectangle_1596"
+                data-name="Rectangle 1596"
+                fill="#31353f"
+                stroke="#31353f"
+                stroke-width="1"
+                opacity="0"
+              >
+                <rect width="16" height="16" stroke="none" />
+                <rect x="0.5" y="0.5" width="15" height="15" fill="none" />
+              </g>
+              <g
+                id="Group_1656"
+                data-name="Group 1656"
+                transform="translate(2.939 0.939)"
+              >
+                <path
+                  id="Path_6068"
+                  data-name="Path 6068"
+                  d="M6.561,7.3H.75A.75.75,0,0,1,0,6.555V.75a.75.75,0,0,1,1.5,0V5.8H6.561a.75.75,0,0,1,0,1.5Z"
+                  transform="translate(0 5.17) rotate(-45)"
+                  fill="#31353f"
+                />
+              </g>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="custom-modal md d-none" id="signup-modal">
-    <div class="close">
-      <img src="./assets/images/close.svg" alt="close" />
+    <div id="right-menu" class="d-none">
+      <div class="close">
+        <img src="./assets/images/close.svg" alt="close" />
+      </div>
+
+      <div class="nav">
+        <a href="#" class="active fs-1919-24 fs-768-32 fs-575-24 fw-600"
+          >Home</a
+        >
+        <a href="#" class="fs-1919-24 fs-768-32 fs-575-24 fw-600">Reads</a>
+        <a href="#" class="fs-1919-24 fs-768-32 fs-575-24 fw-600">About Us</a>
+        <a href="#" class="fs-1919-24 fs-768-32 fs-575-24 fw-600">T&C</a>
+      </div>
+
+      <div class="bottom-btn">
+        <button class="btn btn-bg-primary signup fs-24 fs-1919-16">
+          Sign Up
+        </button>
+      </div>
     </div>
-    <div class="modal-body no-head">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5 d-flex justify-content-center order-2 order-md-1">
-            <div class="
+    <div class="custom-modal xs d-none" id="message-modal">
+      <div class="close">
+        <img src="./assets/images/close.svg" alt="close" />
+      </div>
+      <div class="modal-body no-head">
+        <h2 class="fw-600 mb-4 resist-size text-center text-sm-left">
+          Sent us a massage
+        </h2>
+        <div class="custom-form-control pt-3">
+          <input
+            class="custom-input"
+            type="text"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="custom-form-control mt-4">
+          <input
+            class="custom-input"
+            type="text"
+            placeholder="Enter your Mobile No."
+          />
+        </div>
+        <div class="custom-form-control mt-4">
+          <textarea
+            class="custom-input"
+            placeholder="Write your massage"
+            rows="5"
+          ></textarea>
+        </div>
+        <div class="my-5 w-100"></div>
+        <div class="bottom-btn-sm">
+          <button class="btn btn-bg-primary mt-4">Sent message</button>
+        </div>
+      </div>
+    </div>
+    <div class="custom-modal-wrap d-none" id="call-modal">
+      <div class="custom-modal-with-wrap xs">
+        <div class="close">
+          <img src="./assets/images/close.svg" alt="close" />
+        </div>
+        <div class="modal-body no-head">
+          <h2 class="fw-600 mb-4 resist-size text-center text-sm-left">
+            Request Call Back
+          </h2>
+          <div class="custom-form-control pt-3">
+            <input
+              class="custom-input"
+              type="text"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="custom-form-control mt-4">
+            <input
+              class="custom-input"
+              type="text"
+              placeholder="Enter your Mobile No."
+            />
+          </div>
+          <div id="dark-overlay-calendar"></div>
+          <div class="custom-form-control mt-4">
+            <div class="with-icon">
+              <input
+                class="custom-input"
+                type="text"
+                id="example"
+                type="date"
+                placeholder="Choose Date"
+              /><svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16.055"
+                viewBox="0 0 16 16.055"
+              >
+                <g
+                  id="Group_10631"
+                  data-name="Group 10631"
+                  transform="translate(-790 -600.973)"
+                >
+                  <g id="Group_1614" data-name="Group 1614" opacity="0">
+                    <rect
+                      id="Rectangle_1614"
+                      data-name="Rectangle 1614"
+                      width="16"
+                      height="16"
+                      transform="translate(790 601)"
+                      fill=""
+                    />
+                    <path
+                      id="Rectangle_1614_-_Outline"
+                      data-name="Rectangle 1614 - Outline"
+                      d="M1,1V15H15V1H1M0,0H16V16H0Z"
+                      transform="translate(790 601)"
+                      fill=""
+                    />
+                  </g>
+                  <g
+                    id="calendar_1_"
+                    data-name="calendar (1)"
+                    transform="translate(791 601.473)"
+                  >
+                    <path
+                      id="Rectangle"
+                      d="M2-.5H12A2.5,2.5,0,0,1,14.5,2V12A2.5,2.5,0,0,1,12,14.5H2A2.5,2.5,0,0,1-.5,12V2A2.5,2.5,0,0,1,2-.5Zm10,14A1.5,1.5,0,0,0,13.5,12V2A1.5,1.5,0,0,0,12,.5H2A1.5,1.5,0,0,0,.5,2V12A1.5,1.5,0,0,0,2,13.5Z"
+                      transform="translate(0 1.055)"
+                      fill=""
+                    />
+                    <path
+                      id="Path"
+                      d="M.5,3.511a.5.5,0,0,1-.5-.5V0A.5.5,0,0,1,.5-.5.5.5,0,0,1,1,0V3.011A.5.5,0,0,1,.5,3.511Z"
+                      transform="translate(9.286)"
+                      fill=""
+                    />
+                    <path
+                      id="Path-2"
+                      data-name="Path"
+                      d="M.5,3.511a.5.5,0,0,1-.5-.5V0A.5.5,0,0,1,.5-.5.5.5,0,0,1,1,0V3.011A.5.5,0,0,1,.5,3.511Z"
+                      transform="translate(3.264)"
+                      fill=""
+                    />
+                    <path
+                      id="Path-3"
+                      data-name="Path"
+                      d="M13.549,1H0A.5.5,0,0,1,0,0H13.549a.5.5,0,0,1,0,1Z"
+                      transform="translate(0 5.522)"
+                      fill=""
+                    />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="custom-form-control mt-4">
+            <div class="with-icon">
+              <input
+                class="custom-input timepicker"
+                type="text"
+                placeholder="Choose Time"
+                onfocus="(this.type='date')"
+                onblur="(this.type='text')"
+              />
+              <div id="dark-overlay-timer"></div>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+                class="icon no-clr"
+              >
+                <g
+                  class="white-clr"
+                  id="Group_10713"
+                  data-name="Group 10713"
+                  transform="translate(-11718.5 15196.5)"
+                >
+                  <g
+                    class="no-clr"
+                    id="clock"
+                    transform="translate(11717 -15198)"
+                  >
+                    <circle
+                      id="Ellipse_179"
+                      data-name="Ellipse 179"
+                      cx="8"
+                      cy="8"
+                      r="8"
+                      transform="translate(2 2)"
+                      fill="none"
+                      stroke="#31353f"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1"
+                    />
+                    <path
+                      id="Path_10235"
+                      data-name="Path 10235"
+                      d="M12,6v4.8l3.2,1.6"
+                      transform="translate(-2 -0.8)"
+                      fill="none"
+                      stroke="#31353f"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1"
+                    />
+                  </g>
+                  <g
+                    id="Rectangle_1591"
+                    data-name="Rectangle 1591"
+                    transform="translate(11719 -15196)"
+                    fill="#fff"
+                    stroke="#31353f"
+                    stroke-width="1"
+                    opacity="0"
+                    class="no-clr"
+                  >
+                    <rect class="no-clr" width="16" height="16" stroke="none" />
+                    <rect
+                      class="no-clr"
+                      x="0.5"
+                      y="0.5"
+                      width="15"
+                      height="15"
+                      fill="none"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="bottom-btn-sm">
+            <button class="btn btn-bg-primary mt-4">Call</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="custom-modal md d-none" id="signup-modal">
+      <div class="close">
+        <img src="./assets/images/close.svg" alt="close" />
+      </div>
+      <div class="modal-body no-head">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md-5 d-flex justify-content-center order-2 order-md-1"
+            >
+              <div
+                class="
                   text-center
                   d-flex
                   flex-column
                   justify-content-center
                   align-items-center
                   sebi
-                ">
-              <img class="d-none d-sm-block sebi-img" src="./assets/images/sebi.svg" alt="sebi" />
-              <!-- <img
+                "
+              >
+                <img
+                  class="d-none d-sm-block sebi-img"
+                  src="./assets/images/sebi.svg"
+                  alt="sebi"
+                />
+                <!-- <img
                   class="sm d-block d-sm-none my-4"
                   src="./assets/images/sebi-light.svg"
                   alt="sebi"
                 /> -->
-              <div class="fs-20 lh-26 mt-4 d-none d-sm-block">
-                Sebi Registered company. 100% secure
+                <div class="fs-20 lh-26 mt-4 d-none d-sm-block">
+                  Sebi Registered company. 100% secure
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-7 order-1 order-md-2">
-            <h2 class="fw-600 mb-4 resist-size text-center text-md-left">
-              Sign Up
-            </h2>
-            <div class="custom-form-control pt-3">
-              <input class="custom-input" type="text" placeholder="Email" value="ravi.rafa@gmai.com" />
-            </div>
-            <div class="custom-form-control mt-4">
-              <input class="custom-input" type="text" placeholder="Number" value="+91 8130482336" />
-            </div>
-            <div class="custom-form-control mt-4 pwd-container">
-              <div class="custom-tooltip password">
-                <div class="left-arrow"></div>
-                <!-- <div class="arrow"></div> -->
-                <ul>
-                  <li>
-                    <img src="./assets/vector/pwd-not-fulfilled.svg" alt="" />
-                    <div>8 or more characters</div>
-                  </li>
-                  <li>
-                    <img src="./assets/vector/pwd-fulfilled.svg" alt="" />
-                    <div>Upper & lowercase letter</div>
-                  </li>
-                  <li>
-                    <img src="./assets/vector/pwd-fulfilled.svg" alt="" />
-                    <div>At least one number</div>
-                  </li>
-                </ul>
+            <div class="col-md-7 order-1 order-md-2">
+              <h2 class="fw-600 mb-4 resist-size text-center text-md-left">
+                Sign Up
+              </h2>
+              <div class="custom-form-control pt-3">
+                <input
+                  class="custom-input"
+                  type="text"
+                  placeholder="Email"
+                  value="ravi.rafa@gmai.com"
+                />
               </div>
-              <div class="with-icon">
-                <input class="custom-input" type="password" placeholder="Password" value="als;fjdlak" />
-                <svg class="icon no-clr" id="Component_95_6" data-name="Component 95 – 6"
-                  xmlns="http://www.w3.org/2000/svg" width="16.707" height="16.707" viewBox="0 0 16.707 16.707">
-                  <g id="Rectangle_1590" data-name="Rectangle 1590" fill="#e8e8e8" stroke="#e8e8e8" stroke-width="1"
-                    opacity="0">
-                    <rect width="16" height="16" stroke="none" />
-                    <rect x="0.5" y="0.5" width="15" height="15" fill="none" />
-                  </g>
-                  <g id="eye-off" transform="translate(0.68 0.68)">
-                    <path id="Path_10232" data-name="Path 10232"
-                      d="M12.518,13.478a6.847,6.847,0,0,1-4.039,1.4C3.72,14.879,1,9.439,1,9.439A12.545,12.545,0,0,1,4.44,5.4M7.051,4.163A6.2,6.2,0,0,1,8.479,4c4.76,0,7.479,5.439,7.479,5.439a12.579,12.579,0,0,1-1.469,2.169m-4.569-.728A2.04,2.04,0,1,1,7.038,8"
-                      transform="translate(-1 -1.96)" fill="none" stroke="#e8e8e8" stroke-linecap="round"
-                      stroke-linejoin="round" stroke-width="1" />
-                    <line id="Line_235" data-name="Line 235" x2="15" y2="15" transform="translate(0.32 0.32)"
-                      fill="none" stroke="#e8e8e8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
-                  </g>
-                </svg>
+              <div class="custom-form-control mt-4">
+                <input
+                  class="custom-input"
+                  type="text"
+                  placeholder="Number"
+                  value="+91 8130482336"
+                />
               </div>
-            </div>
-            <div class="custom-form-control mt-4">
-              <input class="custom-input" type="password" placeholder="Confirm Your Password" />
-            </div>
-            <div class="
+              <div class="custom-form-control mt-4 pwd-container">
+                <div class="custom-tooltip password">
+                  <div class="left-arrow"></div>
+                  <!-- <div class="arrow"></div> -->
+                  <ul>
+                    <li>
+                      <img src="./assets/vector/pwd-not-fulfilled.svg" alt="" />
+                      <div>8 or more characters</div>
+                    </li>
+                    <li>
+                      <img src="./assets/vector/pwd-fulfilled.svg" alt="" />
+                      <div>Upper & lowercase letter</div>
+                    </li>
+                    <li>
+                      <img src="./assets/vector/pwd-fulfilled.svg" alt="" />
+                      <div>At least one number</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="with-icon">
+                  <input
+                    class="custom-input"
+                    type="password"
+                    placeholder="Password"
+                    value="als;fjdlak"
+                  />
+                  <svg
+                    class="icon no-clr"
+                    id="Component_95_6"
+                    data-name="Component 95 – 6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16.707"
+                    height="16.707"
+                    viewBox="0 0 16.707 16.707"
+                  >
+                    <g
+                      id="Rectangle_1590"
+                      data-name="Rectangle 1590"
+                      fill="#e8e8e8"
+                      stroke="#e8e8e8"
+                      stroke-width="1"
+                      opacity="0"
+                    >
+                      <rect width="16" height="16" stroke="none" />
+                      <rect
+                        x="0.5"
+                        y="0.5"
+                        width="15"
+                        height="15"
+                        fill="none"
+                      />
+                    </g>
+                    <g id="eye-off" transform="translate(0.68 0.68)">
+                      <path
+                        id="Path_10232"
+                        data-name="Path 10232"
+                        d="M12.518,13.478a6.847,6.847,0,0,1-4.039,1.4C3.72,14.879,1,9.439,1,9.439A12.545,12.545,0,0,1,4.44,5.4M7.051,4.163A6.2,6.2,0,0,1,8.479,4c4.76,0,7.479,5.439,7.479,5.439a12.579,12.579,0,0,1-1.469,2.169m-4.569-.728A2.04,2.04,0,1,1,7.038,8"
+                        transform="translate(-1 -1.96)"
+                        fill="none"
+                        stroke="#e8e8e8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1"
+                      />
+                      <line
+                        id="Line_235"
+                        data-name="Line 235"
+                        x2="15"
+                        y2="15"
+                        transform="translate(0.32 0.32)"
+                        fill="none"
+                        stroke="#e8e8e8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <div class="custom-form-control mt-4">
+                <input
+                  class="custom-input"
+                  type="password"
+                  placeholder="Confirm Your Password"
+                />
+              </div>
+              <div
+                class="
                   d-flex
                   flex-sm-row flex-column
                   align-items-center
                   justify-content-between
                   mt-sm-5 mt-4
-                ">
-              <button class="btn btn-bg-primary" id="signup-btn">
-                Sign up
-              </button>
-              <span class="my-2 fs-14 my-sm-0 d-sm-inline d-block"> or </span>
-              <button class="btn btn-rounded">
-                <img class="mr-2" src="./assets/images/google.svg" alt="google" />
-                Google
-              </button>
-            </div>
-            <div class="fs-16 mt-sm-5 mt-3 text-center text-md-left pb-5">
-              Already have an account?
-              <a href=""><span class="fw-600 text-yellow">Sign in</span></a>
+                "
+              >
+                <button class="btn btn-bg-primary" id="signup-btn">
+                  Sign up
+                </button>
+                <span class="my-2 fs-14 my-sm-0 d-sm-inline d-block"> or </span>
+                <button class="btn btn-rounded">
+                  <img
+                    class="mr-2"
+                    src="./assets/images/google.svg"
+                    alt="google"
+                  />
+                  Google
+                </button>
+              </div>
+              <div class="fs-16 mt-sm-5 mt-3 text-center text-md-left pb-5">
+                Already have an account?
+                <a href=""><span class="fw-600 text-yellow">Sign in</span></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="custom-modal md d-none" id="otp-modal">
-    <div class="close">
-      <img src="./assets/images/close.svg" alt="close" />
-    </div>
-    <div class="modal-body no-head">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5 d-flex justify-content-center mb-4 mb-md-0">
-            <div class="
+    <div class="custom-modal md d-none" id="otp-modal">
+      <div class="close">
+        <img src="./assets/images/close.svg" alt="close" />
+      </div>
+      <div class="modal-body no-head">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 d-flex justify-content-center mb-4 mb-md-0">
+              <div
+                class="
                   text-center
                   d-flex
                   flex-column
                   justify-content-center
                   align-items-center
-                ">
-              <div class="img">
-                <img src="./assets/images/otp.svg" alt="otp" />
+                "
+              >
+                <div class="img">
+                  <img src="./assets/images/otp.svg" alt="otp" />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-7">
-            <h2 class="fw-600 resist-size text-center text-md-left verify">
-              Verify Your Mobile OTP
-            </h2>
-            <div class="fs-14 sub">
-              Your one time password has sent to +91 8130482336
-            </div>
+            <div class="col-md-7">
+              <h2 class="fw-600 resist-size text-center text-md-left verify">
+                Verify Your Mobile OTP
+              </h2>
+              <div class="fs-14 sub">
+                Your one time password has sent to +91 8130482336
+              </div>
 
-            <div class="form">
-              <div class="otp-boxes mt-3">
-                <div class="container p-0">
-                  <div class="row">
-                    <div class="col-3">
-                      <input type="text" placeholder="0" value="3" class="custom-input active" />
-                    </div>
-                    <div class="col-3">
-                      <input type="text" placeholder="0" class="custom-input" />
-                    </div>
-                    <div class="col-3">
-                      <input type="text" placeholder="0" class="custom-input" />
-                    </div>
-                    <div class="col-3">
-                      <input type="text" placeholder="0" class="custom-input" />
+              <div class="form">
+                <div class="otp-boxes mt-3">
+                  <div class="container p-0">
+                    <div class="row">
+                      <div class="col-3">
+                        <input
+                          type="text"
+                          placeholder="0"
+                          value="3"
+                          class="custom-input active"
+                        />
+                      </div>
+                      <div class="col-3">
+                        <input
+                          type="text"
+                          placeholder="0"
+                          class="custom-input"
+                        />
+                      </div>
+                      <div class="col-3">
+                        <input
+                          type="text"
+                          placeholder="0"
+                          class="custom-input"
+                        />
+                      </div>
+                      <div class="col-3">
+                        <input
+                          type="text"
+                          placeholder="0"
+                          class="custom-input"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="container p-0 btns">
-                <div class="row">
-                  <div class="col-12 col-sm-6 py-3 py-sm-0">
-                    <button class="btn btn-outlined-dark">
-                      <span class="fs-16">Resend</span>
-                    </button>
-                  </div>
-                  <div class="col-12 col-sm-6 mb-5">
-                    <button class="btn btn-bg-primary">
-                      <span class="fs-16">Submit</span>
-                    </button>
+                <div class="container p-0 btns">
+                  <div class="row">
+                    <div class="col-12 col-sm-6 py-3 py-sm-0">
+                      <button class="btn btn-outlined-dark">
+                        <span class="fs-16">Resend</span>
+                      </button>
+                    </div>
+                    <div class="col-12 col-sm-6 mb-5">
+                      <button class="btn btn-bg-primary">
+                        <span class="fs-16">Submit</span>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -963,19 +2171,18 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="slider_hed">
-    <div class="slider_hed_p1">
-      <h2 class="resist-size">PLA<span>NYY</span></h2>
-    </div>
-    <div class="slider_hed_p2">
-      <a data-toggle="modal" data-target="#exampleModal6">
-        <!-- <button>
+    <div class="slider_hed">
+      <div class="slider_hed_p1">
+        <h2 class="resist-size">PLA<span>NYY</span></h2>
+      </div>
+      <div class="slider_hed_p2">
+        <a data-toggle="modal" data-target="#exampleModal6">
+          <!-- <button>
             <span></span>
             <span></span>
             <span></span>
           </button> -->
-        <!-- <svg
+          <!-- <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -1039,144 +2246,199 @@
               </g>
             </g>
           </svg> -->
-        <img height="24px" width="24px" src="./assets/vector/menu-new.svg" alt="menu" />
-      </a>
-      <a class="smo">
-        <img src="./assets/images/user.svg" />
-      </a>
-    </div>
-  </div>
-
-  <div class="slider_text">
-    <div class="slider_text_p1">
-      <h2 class="resist-size fs-56 fs-1919-40 fs-768-44 fs-575-32">
-        Respectful And
-      </h2>
-      <h3 class="fs-56 fs-1919-40 fs-768-44 fs-575-32">
-        Confident Retirement
-      </h3>
-    </div>
-  </div>
-
-  <div class="slider_text_cont">
-    <div class="slider_text_cont_p1">
-      <a class="with-border" href="#"><img src="./assets/images/message.svg" /></a>
-      <a href="#"><img src="./assets/images/call.svg" /></a>
-    </div>
-  </div>
-
-  <div class="swiper-container mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="./assets/images/Cover_auto_x2.jpg" /><img src="./assets/images/Cover_Push_auto_x2.jpg" /><img
-          src="./assets/images/mobile_slider.jpg" /><img src="./assets/images/ipad_slider.jpg" /><img
-          src="./assets/images/Cover_Push_auto_1920.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="./assets/images/Cover_auto_x2.jpg" /><img src="./assets/images/Cover_Push_auto_x2.jpg" /><img
-          src="./assets/images/mobile_slider.jpg" /><img src="./assets/images/ipad_slider.jpg" /><img
-          src="./assets/images/Cover_Push_auto_1920.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="./assets/images/Cover_auto_x2.jpg" /><img src="./assets/images/Cover_Push_auto_x2.jpg" /><img
-          src="./assets/images/mobile_slider.jpg" /><img src="./assets/images/ipad_slider.jpg" /><img
-          src="./assets/images/Cover_Push_auto_1920.jpg" />
+          <img
+            height="24px"
+            width="24px"
+            src="./assets/vector/menu-new.svg"
+            alt="menu"
+          />
+        </a>
+        <a class="smo">
+          <img src="./assets/images/user.svg" />
+        </a>
       </div>
     </div>
-    <div class="swiper-pagination"></div>
-  </div>
 
-  <div class="sidebarx_open">
-    <div class="sidebarx_open_button">
-      <a href="service.html">
-        <span><img src="./assets/images/threestepcarat.svg" /></span>
-        <p>Your Only THREE Details Needed</p>
-        <h3>Generate my financial Plan</h3>
-      </a>
-    </div>
-    <div class="sidebarx">
-      <div class="sidebarx_body">
-        <div class="sidebarx_p1">
-          <h3>Your Only</h3>
-          <h3>Details Needed</h3>
-        </div>
-        <div class="sidebarx_p2">
-          <label class="demo-label" for="textdemo">Age</label>
-          <input type="text" name="" placeholder="30" id="textdemo" class="textdemo" />
-          <label class="demo-label" for="textdemo1">Monthly Household Income</label>
-          <input type="text" name="" placeholder="₹2,00,000" id="textdemo1" class="textdemo" />
-
-          <label class="demo-label custom-tooltip-container" for="textdemo2">Monthly Expenses
-
-            <div class="custom-tooltip">
-              Please provide a valid income details more than 2000
-
-              <div class="arrow"></div>
-
-              <div class="close">&times;</div>
-            </div>
-          </label>
-          <input type="text" name="" placeholder="₹1,50,000" id="textdemo2" class="textdemo" />
-        </div>
-        <div class="sidebarx_p3">
-          <a href="service.html">Generate My Financial Plan</a>
-        </div>
+    <div class="slider_text">
+      <div class="slider_text_p1">
+        <h2 class="resist-size fs-56 fs-1919-40 fs-768-44 fs-575-32">
+          Respectful And
+        </h2>
+        <h3 class="fs-56 fs-1919-40 fs-768-44 fs-575-32">
+          Confident Retirement
+        </h3>
       </div>
     </div>
-  </div>
 
-  <!-- Modal 1 -->
-  <div class="modal fade modelstyl6 modelstyl1" id="exampleModal5" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalLabel5" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <img src="./assets/images/close.svg" />
-          </button>
+    <div class="slider_text_cont">
+      <div class="slider_text_cont_p1">
+        <a class="with-border" href="#"
+          ><img src="./assets/images/message.svg"
+        /></a>
+        <a href="#"><img src="./assets/images/call.svg" /></a>
+      </div>
+    </div>
+
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./assets/images/Cover_auto_x2.jpg" /><img
+            src="./assets/images/Cover_Push_auto_x2.jpg"
+          /><img src="./assets/images/mobile_slider.jpg" /><img
+            src="./assets/images/ipad_slider.jpg"
+          /><img src="./assets/images/Cover_Push_auto_1920.jpg" />
         </div>
-        <div class="modal-body no-head">
-          <div class="signinbox">
-            <div class="signinbox_p0">
-              <h2>Sign In</h2>
-              <span><a href="#">Password</a><a href="#">OTP</a></span>
-            </div>
-            <div class="signinbox_p1">
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="Your Email/Mobile No" />
-                <label for="floatingInput">Your Email/Mobile No</label>
+        <div class="swiper-slide">
+          <img src="./assets/images/Cover_auto_x2.jpg" /><img
+            src="./assets/images/Cover_Push_auto_x2.jpg"
+          /><img src="./assets/images/mobile_slider.jpg" /><img
+            src="./assets/images/ipad_slider.jpg"
+          /><img src="./assets/images/Cover_Push_auto_1920.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/Cover_auto_x2.jpg" /><img
+            src="./assets/images/Cover_Push_auto_x2.jpg"
+          /><img src="./assets/images/mobile_slider.jpg" /><img
+            src="./assets/images/ipad_slider.jpg"
+          /><img src="./assets/images/Cover_Push_auto_1920.jpg" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="sidebarx_open">
+      <div class="sidebarx_open_button">
+        <a href="service.html">
+          <span><img src="./assets/images/threestepcarat.svg" /></span>
+          <p>Your Only THREE Details Needed</p>
+          <h3>Generate my financial Plan</h3>
+        </a>
+      </div>
+      <div class="sidebarx">
+        <div class="sidebarx_body">
+          <div class="sidebarx_p1">
+            <h3>Your Only</h3>
+            <h3>Details Needed</h3>
+          </div>
+          <div class="sidebarx_p2">
+            <label class="demo-label" for="textdemo">Age</label>
+            <input
+              type="text"
+              name=""
+              placeholder="30"
+              id="textdemo"
+              class="textdemo"
+            />
+            <label class="demo-label" for="textdemo1"
+              >Monthly Household Income</label
+            >
+            <input
+              type="text"
+              name=""
+              placeholder="₹2,00,000"
+              id="textdemo1"
+              class="textdemo"
+            />
+
+            <label class="demo-label custom-tooltip-container" for="textdemo2"
+              >Monthly Expenses
+
+              <div class="custom-tooltip">
+                Please provide a valid income details more than 2000
+
+                <div class="arrow"></div>
+
+                <div class="close">&times;</div>
               </div>
-              <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
-                <label for="floatingPassword">Password</label>
+            </label>
+            <input
+              type="text"
+              name=""
+              placeholder="₹1,50,000"
+              id="textdemo2"
+              class="textdemo"
+            />
+          </div>
+          <div class="sidebarx_p3">
+            <a href="service.html">Generate My Financial Plan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div
+      class="modal fade modelstyl6 modelstyl1"
+      id="exampleModal5"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel5"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <img src="./assets/images/close.svg" />
+            </button>
+          </div>
+          <div class="modal-body no-head">
+            <div class="signinbox">
+              <div class="signinbox_p0">
+                <h2>Sign In</h2>
+                <span><a href="#">Password</a><a href="#">OTP</a></span>
               </div>
-            </div>
-            <div class="signinbox_p2">
-              <a href="#">Forgot password?</a>
-            </div>
-            <div class="signinbox_p3">
-              <a href="#">Sign in</a>
-            </div>
-            <div class="signinbox_p4">
-              <p>or</p>
-            </div>
-            <div class="signinbox_p5">
-              <a href="#"><img src="./assets/images/signin_ic1.svg" /></a>
-              <a href="#"><img src="./assets/images/signin_ic2.svg" /></a>
-              <a href="#"><img src="./assets/images/signin_ic3.svg" /></a>
-              <a href="#"><img src="./assets/images/signin_ic4.svg" /></a>
-            </div>
-            <div class="signinbox_p6">
-              <p>You don’t have an account? <span>Sign up</span></p>
+              <div class="signinbox_p1">
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="Your Email/Mobile No"
+                  />
+                  <label for="floatingInput">Your Email/Mobile No</label>
+                </div>
+                <div class="form-floating">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="floatingPassword"
+                    placeholder="Password"
+                  />
+                  <label for="floatingPassword">Password</label>
+                </div>
+              </div>
+              <div class="signinbox_p2">
+                <a href="#">Forgot password?</a>
+              </div>
+              <div class="signinbox_p3">
+                <a href="#">Sign in</a>
+              </div>
+              <div class="signinbox_p4">
+                <p>or</p>
+              </div>
+              <div class="signinbox_p5">
+                <a href="#"><img src="./assets/images/signin_ic1.svg" /></a>
+                <a href="#"><img src="./assets/images/signin_ic2.svg" /></a>
+                <a href="#"><img src="./assets/images/signin_ic3.svg" /></a>
+                <a href="#"><img src="./assets/images/signin_ic4.svg" /></a>
+              </div>
+              <div class="signinbox_p6">
+                <p>You don’t have an account? <span>Sign up</span></p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Modal 1 -->
-  <!-- <div
+    <!-- Modal 1 -->
+    <!-- <div
       class="modal fade modelstyl7 modelstyl1"
       id="exampleModal6"
       tabindex="-1"
@@ -1211,169 +2473,180 @@
       </div>
     </div> -->
 
-  <div id="footer">
-    <div class="footer-main">
-      <div class="footer-navbar">
-        <div class="logo-container d-flex align-items-center">
-          <img src="./assets/images/logo-white.svg" alt="logo" class="logo" />
+    <div id="footer" class="pt-0">
+      <div class="footer-main">
+        <div class="footer-navbar">
+          <div class="logo-container d-flex align-items-center">
+            <img src="./assets/images/logo-white.svg" alt="logo" class="logo" />
+          </div>
+          <div class="nav">
+            <a class="fs-18 fs-1919-14" href="#">Home</a>
+            <a class="fs-18 fs-1919-14" href="#">Reads</a>
+            <a class="fs-18 fs-1919-14" href="#">About Us</a>
+            <a class="fs-18 fs-1919-14" href="#">Terms</a>
+          </div>
+          <div class="social">
+            <a href="#"
+              ><img src="./assets/images/youtube-white.svg" alt="youtube"
+            /></a>
+            <a href="#"
+              ><img src="./assets/images/twitter-white.svg" alt="twitter"
+            /></a>
+            <a href="#"
+              ><img src="./assets/images/instagram-white.svg" alt="instagram"
+            /></a>
+            <a href="#"><img src="./assets/images/fb-white.svg" alt="fb" /></a>
+            <a href="#"
+              ><img src="./assets/images/linkedin-white.svg" alt="linkedin"
+            /></a>
+          </div>
         </div>
-        <div class="nav">
-          <a class="fs-18 fs-1919-14" href="#">Home</a>
-          <a class="fs-18 fs-1919-14" href="#">Reads</a>
-          <a class="fs-18 fs-1919-14" href="#">About Us</a>
-          <a class="fs-18 fs-1919-14" href="#">Terms</a>
-        </div>
-        <div class="social">
-          <a href="#"><img src="./assets/images/youtube-white.svg" alt="youtube" /></a>
-          <a href="#"><img src="./assets/images/twitter-white.svg" alt="twitter" /></a>
-          <a href="#"><img src="./assets/images/instagram-white.svg" alt="instagram" /></a>
-          <a href="#"><img src="./assets/images/fb-white.svg" alt="fb" /></a>
-          <a href="#"><img src="./assets/images/linkedin-white.svg" alt="linkedin" /></a>
-        </div>
-      </div>
-      <hr />
-      <div class="sec-1">
-        <h3 class="
+        <hr />
+        <div class="sec-1">
+          <h3
+            class="
               fs-18 fs-1919-14 fs-991-16
               lh-768-28
               fs-575-12
               mb-3 mb-sm-4
               fw-700
-            ">
-          For any grievances and/or suggestions please write to
-          feedback@planyy.com
-        </h3>
-        <div class="fs-18 fs-1919-14 fs-575-12 lh-32 lh-1919-28 lg-575-24">
-          <span class="fw-600 fs-18 fs-1919-14 fs-575-12">DISCLAIMER: </span><span class="fs-18 fs-1919-14 fs-575-12">
-            Investments in securities market are subject to market risks, read
-            all the related documents carefully before investing. All
-            investing involves risk, including the possible loss of money you
-            invest, and past performance does not guarantee future
-            performance. Historical returns, expected returns, and probability
-            projections are provided for informational and illustrative
-            purposes, and may not reflect actual future performance. Please
-            see our Full Disclosure for important details.</span>
+            "
+          >
+            For any grievances and/or suggestions please write to
+            feedback@planyy.com
+          </h3>
+          <div class="fs-18 fs-1919-14 fs-575-12 lh-32 lh-1919-28 lg-575-24">
+            <span class="fw-600 fs-18 fs-1919-14 fs-575-12">DISCLAIMER: </span
+            ><span class="fs-18 fs-1919-14 fs-575-12">
+              Investments in securities market are subject to market risks, read
+              all the related documents carefully before investing. All
+              investing involves risk, including the possible loss of money you
+              invest, and past performance does not guarantee future
+              performance. Historical returns, expected returns, and probability
+              projections are provided for informational and illustrative
+              purposes, and may not reflect actual future performance. Please
+              see our Full Disclosure for important details.</span
+            >
+          </div>
+        </div>
+        <hr />
+        <div class="sec-2">
+          <div>
+            <h3 class="fs-18 fs-1919-14 fs-575-12 mb-3 fw-700">
+              Registered Office Address
+            </h3>
+            <div class="fs-18 fs-1919-14 fs-575-12 lh-32 lh-1919-28">
+              Queens Paradise, No. 16/1, 1st Floor Curve Road, Shivaji Nagar,
+              Bengaluru, Karnataka 560071
+            </div>
+          </div>
+          <div>
+            <h3 class="fs-18 fs-1919-14 fs-575-12 mb-3 fw-700">
+              Communication Address
+            </h3>
+            <div class="fs-18 fs-1919-14 fs-575-12 lh-32 lh-1919-28">
+              122, The Summit Bay (By Omkar), near Western Express Highway Metro
+              Station, Chakala, Andheri (East), Mumbai-400069, +91 96425 96425
+            </div>
+          </div>
+        </div>
+        <div class="sec-3">
+          <div>
+            <div class="fs-18 fs-1919-14 fs-575-12 lh-575-24 mb-3">
+              CIN #:- U74900KA2015PTC080747
+            </div>
+            <div class="fs-18 fs-1919-14 fs-575-12 lh-575-24 mb-3">
+              SEBI Registered Investment Advisor INA200005323
+            </div>
+            <div class="fs-18 fs-1919-14 fs-575-12 lh-575-24 mb-3">
+              Mutual Fund distributor with AMFI Registration No. ARN: 103168
+            </div>
+          </div>
+          <div class="comps">
+            <img src="./assets/images/BSE.svg" alt="BSE" />
+            <img src="./assets/images/sebi-white.svg" alt="sebi" />
+            <img src="./assets/images/amei.svg" alt="amei" />
+          </div>
         </div>
       </div>
       <hr />
-      <div class="sec-2">
-        <div>
-          <h3 class="fs-18 fs-1919-14 fs-575-12 mb-3 fw-700">
-            Registered Office Address
-          </h3>
-          <div class="fs-18 fs-1919-14 fs-575-12 lh-32 lh-1919-28">
-            Queens Paradise, No. 16/1, 1st Floor Curve Road, Shivaji Nagar,
-            Bengaluru, Karnataka 560071
+      <div class="copyright">
+        <div class="copyright-main">
+          <div class="fs-16 fs-1919-14 fs-991-12">
+            © 2021 Planny Financial Advisors Private Limited
           </div>
-        </div>
-        <div>
-          <h3 class="fs-18 fs-1919-14 fs-575-12 mb-3 fw-700">
-            Communication Address
-          </h3>
-          <div class="fs-18 fs-1919-14 fs-575-12 lh-32 lh-1919-28">
-            122, The Summit Bay (By Omkar), near Western Express Highway Metro
-            Station, Chakala, Andheri (East), Mumbai-400069, +91 96425 96425
-          </div>
-        </div>
-      </div>
-      <div class="sec-3">
-        <div>
-          <div class="fs-18 fs-1919-14 fs-575-12 lh-575-24 mb-3">
-            CIN #:- U74900KA2015PTC080747
-          </div>
-          <div class="fs-18 fs-1919-14 fs-575-12 lh-575-24 mb-3">
-            SEBI Registered Investment Advisor INA200005323
-          </div>
-          <div class="fs-18 fs-1919-14 fs-575-12 lh-575-24 mb-3">
-            Mutual Fund distributor with AMFI Registration No. ARN: 103168
-          </div>
-        </div>
-        <div class="comps">
-          <img src="./assets/images/BSE.svg" alt="BSE" />
-          <img src="./assets/images/sebi-white.svg" alt="sebi" />
-          <img src="./assets/images/amei.svg" alt="amei" />
+          <div class="fs-16 fs-1919-14 fs-991-12">www.planyy.com</div>
         </div>
       </div>
     </div>
-    <hr />
-    <div class="copyright">
-      <div class="copyright-main">
-        <div class="fs-16 fs-1919-14 fs-991-12">
-          © 2021 Planny Financial Advisors Private Limited
-        </div>
-        <div class="fs-16 fs-1919-14 fs-991-12">www.planyy.com</div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    });
-  </script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
 
-  <script type="text/javascript">
-    function checkForInput(element) {
-      // element is passed to the function ^
+    <script type="text/javascript">
+      function checkForInput(element) {
+        // element is passed to the function ^
 
-      const $label = $(element).siblings(".demo-label");
+        const $label = $(element).siblings(".demo-label");
 
-      if ($(element).val().length > 0) {
-        $label.addClass("input-has-value");
-      } else {
-        $label.removeClass("input-has-value");
+        if ($(element).val().length > 0) {
+          $label.addClass("input-has-value");
+        } else {
+          $label.removeClass("input-has-value");
+        }
       }
-    }
 
-    // The lines below are executed on page load
-    $("input.textdemo").each(function () {
-      checkForInput(this);
-    });
-
-    // The lines below (inside) are executed on change & keyup
-    $("input.textdemo").on("change keyup", function () {
-      checkForInput(this);
-    });
-  </script>
-
-  <script type="text/javascript">
-    if (window.matchMedia("(max-width: 1023px)").matches) {
-      $(document).ready(function () {
-        $(".planyybody").removeClass("sidebaractive");
-
-        setTimeout(function () {
-          $(".planyybody").addClass("sidebaractive1");
-        }, 1);
+      // The lines below are executed on page load
+      $("input.textdemo").each(function () {
+        checkForInput(this);
       });
-    } else if (window.matchMedia("(max-width: 1023px)").matches) {
-      $(document).ready(function () {
-        $(".planyybody").removeClass("sidebaractive");
 
-        setTimeout(function () {
-          $(".planyybody").addClass("sidebaractive2");
-        }, 1);
+      // The lines below (inside) are executed on change & keyup
+      $("input.textdemo").on("change keyup", function () {
+        checkForInput(this);
       });
-    } else {
-      $(document).ready(function () {
-        $(".planyybody").removeClass("sidebaractive");
+    </script>
 
-        setTimeout(function () {
-          $(".planyybody").addClass("sidebaractive");
-        }, 2000);
-      });
-    }
-  </script>
+    <script type="text/javascript">
+      if (window.matchMedia("(max-width: 1023px)").matches) {
+        $(document).ready(function () {
+          $(".planyybody").removeClass("sidebaractive");
 
-  <!-- DATE PICKER -->
+          setTimeout(function () {
+            $(".planyybody").addClass("sidebaractive1");
+          }, 1);
+        });
+      } else if (window.matchMedia("(max-width: 1023px)").matches) {
+        $(document).ready(function () {
+          $(".planyybody").removeClass("sidebaractive");
 
-  <script src="./assets/js/mc-calendar.min.js"></script>
-  <script src="./assets/js/jquery.min.js"></script>
-  <script src="./assets/js/timepicki.js"></script>
-  <script defer src="./assets/js/details.js"></script>
-  <script src="./assets/js/index.js"></script>
-</body>
+          setTimeout(function () {
+            $(".planyybody").addClass("sidebaractive2");
+          }, 1);
+        });
+      } else {
+        $(document).ready(function () {
+          $(".planyybody").removeClass("sidebaractive");
 
+          setTimeout(function () {
+            $(".planyybody").addClass("sidebaractive");
+          }, 2000);
+        });
+      }
+    </script>
+
+    <!-- DATE PICKER -->
+
+    <script src="./assets/js/mc-calendar.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/timepicki.js"></script>
+    <script defer src="./assets/js/details.js"></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
 </html>
