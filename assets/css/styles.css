@@ -2144,7 +2144,7 @@ aside.explore {
 #refer-and-invest .cards .card .text.refer .copy {
   position: relative;
   background-color: #fff;
-  border: 2px dotted #ffc32c;
+  border: 2px dashed #ffc32c;
   width: 225px;
   padding: 0.5rem 1rem;
   color: #ffc32c;
@@ -2173,13 +2173,13 @@ aside.explore {
 
 @media screen and (min-width: 1920px) {
   #refer-and-invest .cards .card .text.refer .sub-section.social-sub-section {
-    margin-top: 5.5rem;
+    margin-top: 3rem;
   }
 }
 
 @media screen and (max-width: 1919px) and (min-width: 992px) {
   #refer-and-invest .cards .card .text.refer .sub-section.social-sub-section {
-    margin-top: 4.5rem;
+    margin-top: 2.5rem;
   }
 }
 
@@ -2929,6 +2929,12 @@ aside.explore {
 @media screen and (min-width: 1367px) {
   #profile .form .deactive {
     padding-right: 3rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1366px) {
+  #profile .form .deactive {
+    padding-right: 1rem;
   }
 }
 

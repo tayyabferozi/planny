@@ -1858,7 +1858,7 @@ aside.explore {
           .copy {
             position: relative;
             background-color: #fff;
-            border: 2px dotted $color1;
+            border: 2px dashed $color1;
             width: 225px;
             padding: 0.5rem 1rem;
             color: $color1;
@@ -1883,11 +1883,11 @@ aside.explore {
               }
 
               @media screen and (min-width: 1920px) {
-                margin-top: 5.5rem;
+                margin-top: 3rem;
               }
 
               @media screen and (max-width: 1919px) and (min-width: 992px) {
-                margin-top: 4.5rem;
+                margin-top: 2.5rem;
               }
 
               @media screen and (max-width: 768px) {
@@ -2517,6 +2517,10 @@ aside.explore {
     .deactive {
       @media screen and (min-width: 1367px) {
         padding-right: 3rem;
+      }
+
+      @media screen and (min-width: 992px) and (max-width: 1366px) {
+        padding-right: 1rem;
       }
     }
 
