@@ -1447,8 +1447,7 @@ select.list-dt:focus {
   cursor: pointer;
   align-items: flex-start;
   max-height: 394px;
-  /* min-height: 294px; */
-  min-height: 369px;
+  min-height: 294px;
   padding-top: 2rem;
   /* padding-top: 57px; */
 }
@@ -9569,6 +9568,25 @@ select.list-dt:focus {
   }
 }
 
-.msomoderate_box img {
-  margin: 25px auto 0px auto;
+/* @media screen and (max-width: 575px) {
+  
+  .msomoderate_box img {
+    margin: 25px auto 0px auto;
+  }
+} */
+
+@media (min-width: 576px) and (max-width: 1023px) {
+  .msomoderate_box img {
+    margin: 0px 50px 0px 37px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .msomoderate_box img {
+    margin-top: 1.5rem;
+  }
+
+  .msomoderate_box {
+    min-height: 354px;
+  }
 }
