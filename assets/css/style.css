@@ -9541,3 +9541,10 @@ select.list-dt:focus {
  width: 100%;
   }
 }
+
+@media screen and (max-width: 575px) {
+  
+  .planyy_hed_p3_s2 h5 {
+ margin-right: 0;   
+  }
+}
