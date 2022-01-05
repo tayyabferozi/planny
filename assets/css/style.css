@@ -8835,6 +8835,10 @@ select.list-dt:focus {
   .msomoderate_box img {
     margin: 0px 30px 0px 0px;
   }
+
+  .msomoderate_box:not(.step1) img {
+    transform: translateX(-10px);
+  }
 }
 
 @media screen and (max-width: 768px) and (min-width: 520px) {
