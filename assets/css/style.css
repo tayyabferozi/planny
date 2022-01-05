@@ -5202,6 +5202,8 @@ select.list-dt:focus {
     background-color: #efefef;
     display: table;
     border-radius: 9px;
+    width: calc(100% - 40px);
+    margin: 0px 25px;
   }
   .modelstyl1 {
   }
@@ -6725,6 +6727,8 @@ select.list-dt:focus {
     display: table;
     border-radius: 8px;
     margin-bottom: 8px;
+    width: calc(100% - 85px);
+    margin-left: 48px;
   }
 
   .Generated_Financial_plans_data_box {
