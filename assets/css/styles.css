@@ -1662,12 +1662,6 @@ aside.explore {
   display: none;
 }
 
-@media screen and (min-width: 1367px) {
-  #refer-and-invest .title {
-    margin-top: 1rem;
-  }
-}
-
 @media screen and (min-width: 769px) {
   #refer-and-invest .title {
     padding-bottom: 1.5rem;
