@@ -8827,6 +8827,10 @@ select.list-dt:focus {
     justify-content: center;
     padding: 2rem 0;
   }
+
+  .msomoderate_box.step1 {
+    transform: translateX(10px);
+  }
 }
 
 @media screen and (max-width: 768px) and (min-width: 520px) {
