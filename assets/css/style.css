@@ -9613,3 +9613,41 @@ select.list-dt:focus {
     width: 140px;
   }
 }
+
+@media screen and (max-width: 575px) {
+  .msomobilestatics h4 {
+    font-size: 14px;
+  }
+
+  .msomobilestatics input {
+    font-size: 24px !important;
+  }
+
+  .msomobilestatics_p2 {
+    width: 140px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .msomobilestatics input {
+    background-image: url(../images/editonhover.svg);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1023px) {
+  .msomobilestatics_p2 input {
+    width: 165px !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1023px) {
+  .msomobilestatics_p1 input {
+    width: 62px !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1023px) {
+  .msomobilestatics_p3 input {
+    width: 138px !important;
+  }
+}
