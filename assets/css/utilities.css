@@ -1768,8 +1768,6 @@ hr {
 
 .bottom-btn-sm.all {
   position: fixed;
-  background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(transparent));
-  background: linear-gradient(to top, #fff, transparent);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1780,10 +1778,22 @@ hr {
   bottom: 0;
   left: 0;
   right: 0;
+  position: relative;
+}
+
+.bottom-btn-sm.all::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(transparent));
+  background: linear-gradient(to top, #fff, transparent);
+  z-index: 0;
 }
 
 .bottom-btn-sm.all .btn {
   width: 100%;
+  z-index: 1;
 }
 
 @media screen and (min-width: 576px) {
