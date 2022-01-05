@@ -9594,3 +9594,22 @@ select.list-dt:focus {
     min-height: 354px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .msomobilestatics_p2 .inner {
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .msomobilestatics h4 {
+    font-size: 16px;
+  }
+
+  .msomobilestatics input {
+    font-size: 32px;
+  }
+
+  .msomobilestatics_p2 {
+    width: 140px;
+  }
+}
