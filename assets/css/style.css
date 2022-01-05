@@ -1447,7 +1447,8 @@ select.list-dt:focus {
   cursor: pointer;
   align-items: flex-start;
   max-height: 394px;
-  min-height: 294px;
+  /* min-height: 294px; */
+  min-height: 369px;
   padding-top: 2rem;
   /* padding-top: 57px; */
 }
@@ -9566,4 +9567,8 @@ select.list-dt:focus {
   .planyy_hed_p3_s2 h3 {
     margin-left: 21px;
   }
+}
+
+.msomoderate_box img {
+  margin: 25px auto 0px auto;
 }
