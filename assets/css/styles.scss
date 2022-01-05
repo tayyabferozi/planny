@@ -2751,6 +2751,10 @@ aside.explore {
     .left {
       width: 75%;
 
+      p {
+        word-spacing: initial;
+      }
+
       @media screen and (min-width: 1366px) {
         max-width: 630px;
       }
