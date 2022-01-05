@@ -9531,20 +9531,27 @@ select.list-dt:focus {
 }
 
 @media screen and (max-width: 575px) {
-  
-  #exampleModal2 .close  {
- width: 24px;
- height: 24px;   
+  #exampleModal2 .close {
+    width: 24px;
+    height: 24px;
   }
 
-  #exampleModal2 .close  img{
- width: 100%;
+  #exampleModal2 .close img {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 575px) {
-  
   .planyy_hed_p3_s2 h5 {
- margin-right: 0;   
+    margin-right: 0;
+  }
+
+  .planyy_hed_p3_s2 h5 {
+    width: 140px;
+    margin-left: 11px;
+  }
+
+  .planyy_hed_p3_s2 h3 {
+    margin-left: 21px;
   }
 }
