@@ -3518,7 +3518,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   position: absolute;
   top: -10px;
   left: 20px;
-  background: url(../images/top_arr.png) no-repeat;
   width: 18px;
   height: 10px;
   z-index: 3;

@@ -2926,6 +2926,12 @@ aside.explore {
   }
 }
 
+@media screen and (min-width: 1367px) {
+  #profile .form .deactive {
+    padding-right: 3rem;
+  }
+}
+
 @media screen and (max-width: 991px) {
   #profile .form > * {
     -webkit-box-ordinal-group: 31;

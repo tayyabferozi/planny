@@ -2514,6 +2514,12 @@ aside.explore {
   }
 
   .form {
+    .deactive {
+      @media screen and (min-width: 1367px) {
+        padding-right: 3rem;
+      }
+    }
+
     @media screen and (max-width: 991px) {
       & > * {
         order: 30;
