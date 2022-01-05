@@ -9529,3 +9529,15 @@ select.list-dt:focus {
     max-height: calc(100vh - 190px);
   }
 }
+
+@media screen and (max-width: 575px) {
+  
+  #exampleModal2 .close  {
+ width: 24px;
+ height: 24px;   
+  }
+
+  #exampleModal2 .close  img{
+ width: 100%;
+  }
+}
