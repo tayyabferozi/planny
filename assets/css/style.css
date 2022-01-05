@@ -9606,7 +9606,7 @@ select.list-dt:focus {
   }
 
   .msomobilestatics input {
-    font-size: 32px;
+    font-size: 32px !important;
   }
 
   .msomobilestatics_p2 {
