@@ -487,6 +487,12 @@ p {
   }
 }
 
+@media screen and (max-width: 575px) {
+  .lh-575-16 {
+    line-height: 16px;
+  }
+}
+
 @media screen and (min-width: 1367px) {
   .px-1367-6 {
     padding-left: 7rem !important;
