@@ -3330,7 +3330,7 @@ select.list-dt:focus {
 .mskalasd1 {
   float: left;
   width: 33%;
-  border-right: 1px solid #f2f2f2;
+  border-right: 1px solid #b2b2b2;
 }
 .mskalasd1:nth-child(1) {
   text-align: left;
@@ -4369,7 +4369,8 @@ select.list-dt:focus {
   font-family: "SourceSansPro-SemiBold";
 }
 .withdrawalmony_p1_s1 img {
-  margin-left: 7px;
+  margin-left: 3px;
+  margin-top: -7px;
 }
 .withdrawalmony_p1_s2 {
 }
@@ -4392,10 +4393,19 @@ select.list-dt:focus {
   color: #31353f;
   text-align: left;
   font-family: "SourceSansPro-SemiBold";
+  font-size: 16px;
 }
 .withdrawalmony_box2 .withdrawalmony_p1_s1 h3 {
   color: #01c58d;
+  margin-top: 17px;
 }
+
+@media screen and (min-width: 1920px) {
+  .withdrawalmony_box2 .withdrawalmony_p1_s1 h3 {
+    margin-top: -2px;
+  }
+}
+
 .withdrawalmony_p1_s1 h3 {
   height: 40px;
   font-size: 40px;
@@ -4407,7 +4417,7 @@ select.list-dt:focus {
 }
 .withdrawalmony_p1_s2 {
   float: right;
-  margin-top: 11px;
+  margin-top: 17px;
 }
 .withdrawalmony_p1_s2 img {
 }
@@ -5775,7 +5785,7 @@ select.list-dt:focus {
   }
   .movecanvaspie {
     height: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   .planyy_steps_data fieldset input.btns1.st1.ex {
     bottom: 17px;
@@ -6491,7 +6501,7 @@ select.list-dt:focus {
   .withdrawalmony_p2 .mskalasd1 h3 {
     font-size: 40px;
     height: 40px;
-    margin-top: 0px;
+    margin-top: 4px;
   }
   .withdrawalmony_p2 .mskalasd1 span {
     font-size: 16px;
@@ -6551,7 +6561,7 @@ select.list-dt:focus {
     margin-left: 5px;
   }
   .withdrawalmony_p1_s2 {
-    margin-top: 10px;
+    margin-top: 13px;
     position: relative;
     bottom: 0px;
     margin-right: 12px;
@@ -9454,15 +9464,6 @@ select.list-dt:focus {
   }
 }
 
-@media screen and (max-width: 370px) {
-  .msochartdata_p1 {
-    /* overflow: hidden; */
-  }
-
-  .movecanvaspie {
-    width: 200%;
-  }
-}
 .movecanvaspie {
 }
 
@@ -9976,19 +9977,33 @@ select.list-dt:focus {
     padding-right: 23px;
   }
 
+  .withdrawalmony_box2 {
+    padding-right: 23px;
+  }
+
   .withdrawalmony_p1_s2 {
     margin-top: 18px;
   }
   .withdrawalmony_p1_s1 p {
-    font-size: 24px;
+    font-size: 17.1px;
   }
 
   .withdrawalmony_p1_s1 p {
+    /* .withdrawalmony_p1_s1 h3 { */
     height: unset;
   }
 
   .withdrawalmony_p1_s1 h3 {
-    font-size: 56px;
+    /* font-size: 56px; */
+    font-size: 45.7px;
+  }
+
+  .withdrawalmony_box2 h3 {
+    font-size: 42.8px;
+  }
+
+  .withdrawalmony_p1_s1 h3 {
+    margin-top: 0;
   }
 }
 
@@ -10026,7 +10041,7 @@ select.list-dt:focus {
   #top_tol_text.planyy_hed_p3_s2 h5 {
     margin-left: 3px;
   }
-  
+
   #top_tol_text_step_2.planyy_hed_p3_s2 h3,
   #top_tol_text.planyy_hed_p3_s2 h3 {
     margin-left: 12px;
@@ -10045,4 +10060,60 @@ select.list-dt:focus {
   left: 0;
   bottom: -2rem;
   border-bottom: 0.5px solid #e6e7e8;
+}
+
+.planyy_hed_p4 .item {
+  position: relative;
+}
+
+.planyy_hed_p4 .item .count {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: -5px;
+  border-radius: 50%;
+  color: #fff;
+  width: 14px;
+  height: 14px;
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: center;
+  transform: translateY(-50%);
+  background-color: #ff3100;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .withdrawalmony_box2 .withdrawalmony_p1_s1 h3,
+  .withdrawalmony_p1_s1 h3 {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  #pieChart2 {
+    transform: scale(0.95);
+  }
+
+  .movecanvaspie #pieChart1 {
+    transform: scale(0.95) rotate(-40deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #pieChart2 {
+    transform: scale(1.1);
+  }
+
+  .movecanvaspie #pieChart1 {
+    transform: scale(1.1) rotate(-40deg);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #pieChart2 {
+    transform: scale(1.3);
+  }
+
+  .movecanvaspie #pieChart1 {
+    transform: scale(1.3) rotate(-40deg);
+  }
 }
