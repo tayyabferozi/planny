@@ -10022,10 +10022,12 @@ select.list-dt:focus {
 }
 
 @media screen and (max-width: 575px) {
+  #top_tol_text_step_2.planyy_hed_p3_s2 h5,
   #top_tol_text.planyy_hed_p3_s2 h5 {
     margin-left: 3px;
   }
-
+  
+  #top_tol_text_step_2.planyy_hed_p3_s2 h3,
   #top_tol_text.planyy_hed_p3_s2 h3 {
     margin-left: 12px;
   }
