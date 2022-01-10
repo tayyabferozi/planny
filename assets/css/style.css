@@ -6264,16 +6264,16 @@ select.list-dt:focus {
     font-size: 30px;
   }
   .withdrawalmony_p1_s1 h3 {
-    font-size: 21px !important;
+    /* font-size: 21px !important; */
   }
   .withdrawalmony_p1_s1 p {
     font-size: 10px;
   }
   .withdrawalmony_box1 {
-    padding-right: 5px;
+    padding-right: 24px;
   }
   .withdrawalmony_box2 {
-    padding-right: 5px;
+    padding-right: 24px;
   }
   .withdrawalmony_p2 .mskalasd1 h5 {
     font-size: 11px;
