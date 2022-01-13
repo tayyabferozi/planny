@@ -9576,8 +9576,10 @@ select.list-dt:focus {
   }
 }
 
-#msform fieldset .bottom-btn-sm.all {
-  position: sticky !important;
+@media screen and (max-width: 1919px) {
+  #msform fieldset .bottom-btn-sm.all {
+    position: sticky !important;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1280px) {
@@ -9752,17 +9754,17 @@ select.list-dt:focus {
   }
 
   .msomobilestatics_p1 input {
-    width: 52px !important;
+    width: 46px !important;
   }
 
   .msomobilestatics_p2 input {
-    width: 131px !important;
+    width: 123px !important;
     margin-right: 31px !important;
   }
 
   #monthly-input-box {
     margin-right: 45px !important;
-    width: 113px !important;
+    width: 106px !important;
   }
 
   .msomobilestatics_p2 {
@@ -10114,6 +10116,26 @@ select.list-dt:focus {
   }
 
   .movecanvaspie #pieChart1 {
-    transform: scale(1.3) rotate(-40deg);
+    transform: scale(1.2) translateX(12px) rotate(-40deg);
   }
+}
+
+@media screen and (max-width: 370px) {
+  #pieChart2 {
+    transform: scale(1.3);
+  }
+
+  .movecanvaspie #pieChart1 {
+    transform: scale(1.4) translateX(12px) rotate(-40deg);
+  }
+}
+
+.paymentsusedit li a.close {
+float: unset;
+font-size: 16px;
+font-weight: normal;
+line-height: normal;
+color: #212529;
+text-shadow: unset;
+opacity: 1;
 }
