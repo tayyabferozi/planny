@@ -5785,7 +5785,7 @@ select.list-dt:focus {
   }
   .movecanvaspie {
     height: auto;
-    /* overflow: hidden; */
+    overflow-x: hidden;
   }
   .planyy_steps_data fieldset input.btns1.st1.ex {
     bottom: 17px;
