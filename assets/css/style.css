@@ -9223,8 +9223,7 @@ select.list-dt:focus {
 }
 
 @media screen and (max-width: 361px) {
-  
-  .makepaymentmodel_p1_s1_p1 h3{
+  .makepaymentmodel_p1_s1_p1 h3 {
     font-size: 12px;
   }
 }
@@ -10199,5 +10198,12 @@ select.list-dt:focus {
 
   .makepaymentmodel_p1_s7_p2_right .md-form img {
     width: 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .makepaymentmodel_p1_s7_p2_right h6,
+  .makepaymentmodel_p1_s7_p2_left h6 {
+    font-size: 16px;
   }
 }
