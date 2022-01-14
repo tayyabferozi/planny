@@ -4444,7 +4444,7 @@ select.list-dt:focus {
   font-size: 20px;
   font-family: "SourceSansPro-Regular";
   border-bottom: 2px solid #f2f2f2;
-  height: 41px;
+  height: 47px;
 }
 .withdrawalmony_p2 #myTabs li a.active {
   border-bottom: 2px solid #ffc32c;
@@ -5560,7 +5560,7 @@ select.list-dt:focus {
   .withdrawalmonyrisk .planyy_hed_p3 {
     margin-right: 0px;
     float: none;
-    margin: 3px auto 34px auto;
+    margin: 8px auto 20px auto;
     display: table;
   }
   .planyy_hed_p3_s1 img {
@@ -5701,7 +5701,7 @@ select.list-dt:focus {
   }
   .msoinproh {
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
   }
   .btns1grp {
     position: fixed;
@@ -6081,7 +6081,7 @@ select.list-dt:focus {
     max-width: 100%;
   }
   .st2 .msopiechartlabel_data_label {
-    top: -80px;
+    top: -70px;
   }
   .withdrawalmony_p1 {
     margin-bottom: 30px;
@@ -10240,5 +10240,12 @@ select.list-dt:focus {
   
   .mskalasd1 h3 {
     letter-spacing: 0.2px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  
+  .msoinproh.step5 {
+    font-size: 24px;
   }
 }
