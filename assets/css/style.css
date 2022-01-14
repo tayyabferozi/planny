@@ -10249,3 +10249,14 @@ select.list-dt:focus {
     font-size: 24px;
   }
 }
+
+@media screen and (max-width: 575px) {
+  
+  .step5 .options {
+    transform: translateY(-16px) !important;
+  }
+  
+  .step5 .card-menu.five  {
+    padding: .5rem;
+  }
+}
