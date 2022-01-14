@@ -9467,7 +9467,7 @@ select.list-dt:focus {
 .movecanvaspie {
 }
 
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
   .cute.slider-pips .slider-pips__float > *:not(img):not(.msopaors) {
     opacity: 0;
     transition: 0.4s ease;
@@ -9476,7 +9476,7 @@ select.list-dt:focus {
   .cute.slider-pips:hover .slider-pips__float > *:not(img):not(.msopaors) {
     opacity: 1;
   }
-}
+} */
 
 @media screen and (max-width: 1023px) {
   .cute.slider-pips .slider-pips__float > *:not(img):not(.msopaors) {
@@ -10156,4 +10156,11 @@ select.list-dt:focus {
   #exampleModal1 .msoaddfinaplan {
     max-width: 287px;
   }
+}
+
+.slider-pips:hover
+  .slider-pips__floats
+  .slider-pips__float.slider-pips__float--1:nth-last-child(2)
+  span.msorimghov {
+  opacity: 1;
 }
