@@ -2929,6 +2929,7 @@ select.list-dt:focus {
   display: table !important;
   position: relative !important;
   opacity: 1 !important;
+  overflow: hidden;
 }
 .st2 .msochartdata_p1 {
   border-right: 1px dashed #b2b2b2;
@@ -3058,6 +3059,11 @@ select.list-dt:focus {
   letter-spacing: 0.8px;
   float: left;
   width: 100%;
+}
+@media screen and (max-width: 575px) {
+  .msopiechartlabel1 h3 {
+    letter-spacing: 0.4px;
+  }
 }
 .msopiechartlabel1 p {
   font-size: 16px;
