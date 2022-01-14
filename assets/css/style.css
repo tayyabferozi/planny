@@ -10237,6 +10237,12 @@ select.list-dt:focus {
 }
 
 @media screen and (max-width: 575px) {
+  .msoinvestproduct_box_right .body {
+    margin-top: 4px;
+  }
+}
+
+@media screen and (max-width: 575px) {
   .mskalasd1 h3 {
     letter-spacing: 0.2px;
   }
