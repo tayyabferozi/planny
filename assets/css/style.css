@@ -10268,3 +10268,10 @@ select.list-dt:focus {
     padding: 0.5rem;
   }
 }
+
+@media screen and (max-width: 575px) {
+  
+  .msoinvestproduct_box_right .head .title {
+    padding-right: 6px;
+  }
+}
