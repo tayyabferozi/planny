@@ -4024,7 +4024,7 @@ select.list-dt:focus {
   padding-right: 5px;
 }
 .makepaymentmodel_p2_li_right h3 {
-  font-size: 16px;
+  font-size: 20px;
   color: #31353f;
   font-family: "SourceSansPro-SemiBold";
   line-height: 21px;
@@ -4034,7 +4034,7 @@ select.list-dt:focus {
 }
 .makepaymentmodel_p2_li_right h4 {
   flex: 1;
-  font-size: 16px;
+  font-size: 20px;
   color: #31353f;
   font-family: "SourceSansPro-SemiBold";
   line-height: 21px;
