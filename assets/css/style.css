@@ -1066,7 +1066,7 @@ select.list-dt:focus {
   background-position: bottom 6px right 0px;
   padding-right: 20px;
 }
-.planyy_hed_p2_s1 input:hover {
+.planyy_hed_p2_s1 input {
   background-image: url(../images/editonhover.svg);
 }
 .planyy_hed_p2_s1 input:nth-child(2) {
