@@ -9133,7 +9133,7 @@ select.list-dt:focus {
     order: 2;
   }
   .makepaymentmodel_p1_s1_p1 h3 {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 13px;
   }
   .makepaymentmodel_p1_s1_p2 {
@@ -9925,8 +9925,8 @@ select.list-dt:focus {
 
 @media screen and (max-width: 767px) {
   .makepaymentmodel {
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 27px;
+    padding-right: 27px;
   }
 
   .makepaymentmodel_p1_s7_p2 {
@@ -9935,8 +9935,8 @@ select.list-dt:focus {
   }
 
   .makepaymentmodel {
-    padding-left: 31px;
-    padding-right: 31px;
+    padding-left: 26px;
+    padding-right: 26px;
   }
 }
 
