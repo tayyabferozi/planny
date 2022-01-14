@@ -3060,6 +3060,13 @@ select.list-dt:focus {
   float: left;
   width: 100%;
 }
+
+@media screen and (max-width: 1919px) {
+.msopiechartlabel1 h3 {
+font-size: 36px;
+}
+}
+
 @media screen and (max-width: 575px) {
   .msopiechartlabel1 h3 {
     letter-spacing: 0.4px;
@@ -3359,6 +3366,12 @@ select.list-dt:focus {
   line-height: 40px;
   letter-spacing: 0.84px;
   margin-top: 10px;
+}
+@media screen and (max-width: 1919px) {
+  .mskalasd1 h3 {
+    font-size: 36px;
+    letter-spacing: .4px;
+  }
 }
 .mskalasd1 span {
   font-size: 16px;
@@ -10260,7 +10273,7 @@ select.list-dt:focus {
   }
 
   .step4 .msoinvestproduct_box_right .head .options {
-        transform: translate(7px, -12px) !important;
+    transform: translate(7px, -12px) !important;
   }
 
   .msoinvestproduct_box_right .head .star-reviews,
@@ -10269,9 +10282,12 @@ select.list-dt:focus {
   }
 }
 
-@media screen and (max-width: 575px) {
-  
-  .msoinvestproduct_box_right .head .title {
-    padding-right: 6px;
+.msoinvestproduct_box_right .head .title {
+  padding-right: 6px;
+}
+
+@media screen and (min-width: 1920px) {
+  .msoinvestproduct_box_right .head .options {
+    padding-top: 0.25rem;
   }
 }
