@@ -9589,7 +9589,7 @@ select.list-dt:focus {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1359px) {
+@media screen and (min-width: 769px) and (max-width: 1260px) {
   .planyy_hed_p4 .item img {
     width: 15px;
     height: 15px;
@@ -10131,11 +10131,11 @@ select.list-dt:focus {
 }
 
 .paymentsusedit li a.close {
-float: unset;
-font-size: 16px;
-font-weight: normal;
-line-height: normal;
-color: #212529;
-text-shadow: unset;
-opacity: 1;
+  float: unset;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: normal;
+  color: #212529;
+  text-shadow: unset;
+  opacity: 1;
 }
