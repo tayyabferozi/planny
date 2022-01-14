@@ -10141,8 +10141,19 @@ select.list-dt:focus {
 }
 
 @media screen and (max-width: 370px) {
-  
-  .modelstyl2 .msoaddfinaplan .Generated_Financial_plans_data_box h3{
-    min-height:32px;
+  .modelstyl2 .msoaddfinaplan .Generated_Financial_plans_data_box h3 {
+    min-height: 32px;
+  }
+}
+
+@media screen and (max-width: 501px) {
+  .msoaddfinaplan .Generated_Financial_plans_data_box:nth-child(3) {
+    margin-left: 20px !important;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  #exampleModal1 .msoaddfinaplan {
+    max-width: 287px;
   }
 }
