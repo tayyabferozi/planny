@@ -3062,9 +3062,9 @@ select.list-dt:focus {
 }
 
 @media screen and (max-width: 1919px) {
-.msopiechartlabel1 h3 {
-font-size: 36px;
-}
+  .msopiechartlabel1 h3 {
+    font-size: 36px;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -3370,7 +3370,7 @@ font-size: 36px;
 @media screen and (max-width: 1919px) {
   .mskalasd1 h3 {
     font-size: 36px;
-    letter-spacing: .4px;
+    letter-spacing: 0.02px;
   }
 }
 .mskalasd1 span {
