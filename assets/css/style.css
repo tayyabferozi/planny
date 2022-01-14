@@ -10237,26 +10237,23 @@ select.list-dt:focus {
 }
 
 @media screen and (max-width: 575px) {
-  
   .mskalasd1 h3 {
     letter-spacing: 0.2px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  
   .msoinproh.step5 {
-    font-size: 24px;
+    /* font-size: 24px; */
   }
 }
 
 @media screen and (max-width: 575px) {
-  
   .step5 .options {
     transform: translateY(-16px) !important;
   }
-  
-  .step5 .card-menu.five  {
-    padding: .5rem;
+
+  .step5 .card-menu.five {
+    padding: 0.5rem;
   }
 }
