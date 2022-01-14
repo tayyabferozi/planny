@@ -10253,7 +10253,12 @@ select.list-dt:focus {
     transform: translateY(-16px) !important;
   }
 
-  .step5 .card-menu.five {
+  .step4 .msoinvestproduct_box_right .head .options {
+        transform: translate(7px, -12px) !important;
+  }
+
+  .msoinvestproduct_box_right .head .star-reviews,
+  .msoinvestproduct_box_right .head .card-menu {
     padding: 0.5rem;
   }
 }
