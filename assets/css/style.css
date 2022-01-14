@@ -5701,7 +5701,7 @@ select.list-dt:focus {
   }
   .msoinproh {
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
   }
   .btns1grp {
     position: fixed;
@@ -5971,9 +5971,8 @@ select.list-dt:focus {
 }
 
 @media screen and (max-width: 575px) {
-  
   .msopiechartlabel_data_label h4 {
- font-size: 16px;   
+    font-size: 16px;
   }
 }
 
@@ -10218,15 +10217,15 @@ select.list-dt:focus {
 }
 
 @media screen and (max-width: 1023px) {
-  
-  .withdrawalmony_box1,.withdrawalmony_box2 {
- border-radius: 8px;   
+  .withdrawalmony_box1,
+  .withdrawalmony_box2 {
+    border-radius: 8px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  
-  .withdrawalmony_box1,.withdrawalmony_box2 {
- border-radius: 4px;   
+  .withdrawalmony_box1,
+  .withdrawalmony_box2 {
+    border-radius: 4px;
   }
 }
