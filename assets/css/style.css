@@ -5867,7 +5867,7 @@ select.list-dt:focus {
 
   .msopiechartlabel_data_label h4 {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
   }
   .cute {
     width: calc(100% - 20px);
@@ -8534,7 +8534,7 @@ select.list-dt:focus {
   justify-content: space-between;
   align-items: center;
   text-align: left;
-  margin-top: 1rem;
+  margin-top: 12px;
 }
 
 @media screen and (max-width: 575px) {
@@ -8544,7 +8544,7 @@ select.list-dt:focus {
 }
 
 .msoinvestproduct_box_right .body .item {
-  height: 65px;
+  height: 63px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -8599,6 +8599,9 @@ select.list-dt:focus {
   text-align: center;
   padding: 0.25rem;
   border-radius: 50px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 1023px) {
