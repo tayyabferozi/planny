@@ -10216,3 +10216,17 @@ select.list-dt:focus {
     font-size: 16px;
   }
 }
+
+@media screen and (max-width: 1023px) {
+  
+  .withdrawalmony_box1,.withdrawalmony_box2 {
+ border-radius: 8px;   
+  }
+}
+
+@media screen and (max-width: 575px) {
+  
+  .withdrawalmony_box1,.withdrawalmony_box2 {
+ border-radius: 4px;   
+  }
+}
