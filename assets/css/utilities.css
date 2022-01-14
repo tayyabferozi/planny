@@ -137,6 +137,10 @@ p {
   font-size: 14px !important;
 }
 
+.fs-13 {
+  font-size: 13px !important;
+}
+
 .fs-12 {
   font-size: 12px !important;
 }
@@ -378,6 +382,12 @@ p {
 @media screen and (max-width: 575px) {
   .fs-575-14 {
     font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .fs-575-13 {
+    font-size: 13px !important;
   }
 }
 
