@@ -10229,3 +10229,10 @@ select.list-dt:focus {
     border-radius: 4px;
   }
 }
+
+@media screen and (max-width: 1023px) {
+  
+  .msoinvestproduct_box_right .body {
+ margin-top: 8px;   
+  }
+}
