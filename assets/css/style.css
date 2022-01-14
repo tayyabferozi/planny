@@ -9253,7 +9253,7 @@ select.list-dt:focus {
   }
 
   .makepaymentmodel_p1_s7_p2_right {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   /* .makepaymentmodel_p1_s7_p2_left h3 {
@@ -10174,12 +10174,23 @@ select.list-dt:focus {
   opacity: 1;
 }
 
-@media screen and (max-width: 1023px) and (min-width: 768px){
+@media screen and (max-width: 1023px) and (min-width: 768px) {
   .makepaymentmodel_p1 {
-margin-top: 6rem;
+    margin-top: 6rem;
   }
 
   .makepaymentmodel_p1_s7 {
     margin-top: 220px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .makepaymentmodel_p1_s7_p2_right .md-form span {
+    top: 8px;
+    right: -14px;
+  }
+
+  .makepaymentmodel_p1_s7_p2_right .md-form img {
+    width: 20px;
   }
 }
