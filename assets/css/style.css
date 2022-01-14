@@ -9133,7 +9133,7 @@ select.list-dt:focus {
     order: 2;
   }
   .makepaymentmodel_p1_s1_p1 h3 {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 13px;
   }
   .makepaymentmodel_p1_s1_p2 {
@@ -9219,6 +9219,13 @@ select.list-dt:focus {
   }
   .makepaymentmodel_p1_s7_p2_right .md-form img {
     width: 16px;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  
+  .makepaymentmodel_p1_s1_p1 h3{
+    font-size: 12px;
   }
 }
 
