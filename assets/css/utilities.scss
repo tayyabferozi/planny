@@ -606,6 +606,12 @@ p {
       display: block;
     }
   }
+
+  &.tablet.show {
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
+  }
 }
 
 #dark-overlay-timer,

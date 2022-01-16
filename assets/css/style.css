@@ -3557,12 +3557,20 @@ select.list-dt:focus {
 }
 
 .msoinvestproduct_box.step5 .msoinvestproduct_box_right_p3_s1 a:nth-child(1) {
-  background-image: url(../vector/redeem.svg);
+  /* background-image: url(../vector/redeem.svg); */
+  background: none;
   height: 100%;
   width: 96px;
   background-repeat: no-repeat;
   background-position-y: center;
   margin-bottom: 0;
+}
+
+.msoinvestproduct_box.step5
+  .msoinvestproduct_box_right_p3_s1
+  a:nth-child(1)
+  img {
+  width: 32px;
 }
 
 .msoinvestproduct_box_right_p3_s1 a:nth-child(3) {
@@ -3583,13 +3591,17 @@ select.list-dt:focus {
   width: 32px;
   margin-bottom: 0px;
   transform: translateX(-10px);
-  background-image: url(../vector/redeem.svg);
+  /* background-image: url(../vector/redeem.svg); */
+  display: none;
+}
+.msoinvestproduct_box_right_p3_s1 a.redeem-anchor img {
+  width: 32px;
 }
 .msoinvestproduct_box_right_p3_s1 a.redeem-anchor:hover {
   height: 96px;
   width: 32px;
   margin-bottom: 0px;
-  background-image: url(../vector/redeem-2.svg);
+  /* background-image: url(../vector/redeem-2.svg); */
 }
 
 .msoinvestproduct_box_right_p3.re .msoinvestproduct_box_right_p3_s1 a {
@@ -8786,7 +8798,7 @@ select.list-dt:focus {
   }
   #exampleModalxpand.modal.fade .modal-dialog,
   .modal.fade .modal-dialog .modal-content {
-    height: 100% !important;
+    height: 100vh !important;
   }
 }
 
@@ -10310,5 +10322,93 @@ select.list-dt:focus {
 @media screen and (min-width: 1920px) {
   .msoinvestproduct_box_right .head .options {
     padding-top: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #modelstyl1.modal.fade .modal-dialog,
+  #modelstyl1.modal.fade .modal-dialog .modal-content {
+    height: 93vh !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .dropdown-menu.show,
+  .msoretirepop_p2_s5_box .dropdown ul {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 90% !important;
+    border-radius: 12px !important;
+    z-index: 10 !important;
+    padding-top: 45px !important;
+    padding-bottom: 45px !important;
+    height: unset;
+    max-height: unset !important;
+    border: none;
+  }
+
+  .msoretirepop_p2_s5_box .dropdown li {
+    position: relative !important;
+    border-bottom: 1px solid #e6e7e8 !important;
+    padding-bottom: 1rem !important;
+    padding-top: 1rem !important;
+    height: unset !important;
+  }
+
+  .msoretirepop_p2_s5_box .dropdown li::after {
+    width: 16px !important;
+    height: 16px !important;
+    position: absolute !important;
+    right: 1rem !important;
+    top: 50% !important;
+    /* content: url(../vector/radio-empty.svg) !important; */
+    transform: translateY(-50%) !important;
+  }
+
+  .msoretirepop_p2_s5_box .dropdown li.active::after {
+    width: 16px !important;
+    height: 16px !important;
+    position: absolute !important;
+    right: 1rem !important;
+    top: 50% !important;
+    /* content: url(../vector/radio-empty.svg) !important; */
+    transform: translateY(-50%) !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .makepaymentmodel_p1_s7_p1 a {
+    bottom: 6rem !important;
+  }
+
+  #modelstyl4 {
+    overflow: hidden;
+  }
+}
+
+.withdrawalmony_p2 #myTabs li {
+  height: unset !important;
+}
+
+.withdrawalmony_p2 #myTabs li a.active {
+  position: relative;
+  border-bottom: none;
+}
+
+.withdrawalmony_p2 #myTabs li a.active::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-bottom: 2px solid #ffc32c;
+  bottom: -3px;
+  left: 0;
+}
+
+@media screen and (max-width: 575px) {
+  .withdrawalmony_p2 #myTabs li a.active {
+    min-height: 47px;
   }
 }

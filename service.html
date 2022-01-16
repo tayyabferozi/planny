@@ -55,7 +55,6 @@
   </head>
 
   <body class="planyybody service">
-    <div id="dark-overlay-dropdown"></div>
     <div class="checking"><img src="./assets/images/check1.png" /></div>
     <div class="planyy_contain">
       <div class="col-12 p-0 mt-0">
@@ -1881,7 +1880,7 @@
                                             class="edit"
                                             data-toggle="modal"
                                             data-target="#exampleModaly"
-                                          ></a>
+                                          ><img src="./assets/vector/redeem.svg" alt="redeem"></a>
                                           <!-- <a href="#"></a> -->
                                         </div>
                                       </div>
@@ -2185,8 +2184,9 @@
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div id="dark-overlay-dropdown" class="tablet"></div>
           <div class="modal-header">
             <button
               type="button"
@@ -4210,6 +4210,16 @@
           },
         });
       };
+    </script>
+
+    <script>
+      $("#exampleModal .dropdown").on("show.bs.dropdown", function () {
+        $("#dark-overlay-dropdown").addClass("show");
+      });
+
+      $("#exampleModal .dropdown").on("hidden.bs.dropdown", function () {
+        $("#dark-overlay-dropdown").removeClass("show");
+      });
     </script>
   </body>
 </html>

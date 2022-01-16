@@ -610,6 +610,12 @@ p {
   }
 }
 
+@media screen and (max-width: 767px) {
+  #dark-overlay-dropdown.tablet.show {
+    display: block;
+  }
+}
+
 #dark-overlay-timer,
 #dark-overlay-calendar {
   display: none;
