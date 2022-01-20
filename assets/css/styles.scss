@@ -616,6 +616,10 @@ aside.explore {
     list-style-image: url("../vector/tick.svg");
     padding: 0 1.5rem;
 
+    @media screen and (max-width: 768px) {
+      padding-right: 0;
+    }
+
     li {
       padding: 0.75rem 0;
       padding-left: 1rem;
@@ -629,6 +633,14 @@ aside.explore {
 
       @media screen and (max-width: 991px) {
         line-height: 35px;
+      }
+
+      @media screen and (max-width: 575px) {
+        line-height: 33px;
+      }
+
+      @media screen and (max-width: 575px) {
+        padding: 8px 0 8px 8px;
       }
     }
   }
@@ -645,7 +657,7 @@ aside.explore {
   }
 
   p {
-    letter-spacing: -0.5px;
+    // letter-spacing: -0.5px;
   }
 }
 

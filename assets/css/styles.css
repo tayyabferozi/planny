@@ -670,6 +670,12 @@ aside.explore {
   padding: 0 1.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  #stockbroker-shutdown ul {
+    padding-right: 0;
+  }
+}
+
 #stockbroker-shutdown ul li {
   padding: 0.75rem 0;
   padding-left: 1rem;
@@ -690,13 +696,21 @@ aside.explore {
   }
 }
 
+@media screen and (max-width: 575px) {
+  #stockbroker-shutdown ul li {
+    line-height: 33px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #stockbroker-shutdown ul li {
+    padding: 8px 0 8px 8px;
+  }
+}
+
 #financial-planning-example h2 {
   line-height: 40px;
   letter-spacing: 1px;
-}
-
-#financial-planning-example p {
-  letter-spacing: -0.5px;
 }
 
 #reviews .review-btns {
