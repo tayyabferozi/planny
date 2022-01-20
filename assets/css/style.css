@@ -6071,7 +6071,7 @@ select.list-dt:focus {
     margin-top: 25px;
   }
   .msopiechartlabel_data_label_chartreleted {
-    margin-top: 10px;
+    margin-top: -10px;
   }
   .modal.fade.modelstyl5.show .modal-dialog {
     /* transform: translate(0, 0px) !important; */
@@ -6442,7 +6442,7 @@ select.list-dt:focus {
   .msochartdata_p2_rslider {
     position: unset;
     margin-bottom: 0px;
-    margin-top: 30px;
+    margin-top: 40px;
   }
   .msochartdata_p2 {
   }
