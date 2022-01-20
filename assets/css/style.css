@@ -2206,7 +2206,7 @@ select.list-dt:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 18px !important;
+  border-radius: 30px !important;
   margin-top: 33px !important;
   font-size: 16px !important;
   font-family: "SourceSansPro-SemiBold" !important;
@@ -3901,7 +3901,7 @@ select.list-dt:focus {
   background-color: #ffc32c;
   align-items: center;
   color: #31353f !important;
-  border-radius: 18px;
+  border-radius: 30px;
   margin-top: 36px;
   font-size: 16px;
   font-family: "SourceSansPro-SemiBold";
