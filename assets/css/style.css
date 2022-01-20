@@ -10273,7 +10273,7 @@ select.list-dt:focus {
 @media screen and (max-width: 575px) {
   .withdrawalmony_box1,
   .withdrawalmony_box2 {
-    border-radius: 4px;
+    border-radius: 6px;
   }
 }
 
