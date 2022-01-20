@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="96" viewBox="0 0 32 96">
 	<g id="Group_12407" data-name="Group 12407" transform="translate(-1473 1424) rotate(-90)">
 		<rect id="Rectangle_299" data-name="Rectangle 299" width="96" height="32" rx="16" transform="translate(1328 1473)" fill="#31353f" />
-		<text id="Redeem" transform="translate(1344.036 1495.127) rotate(-0.116)" fill="#fff" font-size="18" font-family="SegoeUI, Segoe UI">
+		<text id="Redeem" transform="translate(1344.036 1495.127) rotate(-0.116)" fill="#fff" font-size="18" font-family="Source Sans Pro, sans-serif">
 			<tspan x="0" y="0">
 				Redeem
 			</tspan>
