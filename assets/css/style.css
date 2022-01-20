@@ -5458,7 +5458,7 @@ select.list-dt:focus {
   }
   .msoretirepop_p2mobile_box_p3 {
     float: left;
-    margin-top: 28px;
+    margin-top: 18px;
     margin-bottom: 16px;
   }
   .msoretirepop_p2mobile_box_p3 h3 {
@@ -9331,6 +9331,10 @@ select.list-dt:focus {
 #exampleModal .msoretirepop_p1,
 #exampleModal .msoretirepop_p2_s2 {
   margin-top: 1.5rem;
+}
+
+#exampleModal .msoretirepop_p1 {
+  margin-top: 14px;
 }
 
 #exampleModal .modal-body {
