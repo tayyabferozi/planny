@@ -6633,6 +6633,7 @@ select.list-dt:focus {
     margin-right: 0px;
     width: calc(50% - 0px);
     padding: 15px;
+    padding-left: 30px;
   }
 
   .planyybody.sidebaractive1 .swiper-slide img:nth-child(3) {
