@@ -4140,4 +4140,14 @@ textarea::placeholder {
             box-shadow: 0 5px 15px rgba(178, 178, 178, 0.25);
   }
 }
+
+.reactions-modal textarea {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 575px) {
+  .reactions-modal textarea {
+    font-size: 12px;
+  }
+}
 /*# sourceMappingURL=utilities.css.map */

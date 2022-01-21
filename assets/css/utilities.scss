@@ -3594,4 +3594,12 @@ textarea::placeholder {
       }
     }
   }
+
+  textarea {
+    font-size: 14px;
+
+    @media screen and (max-width: 575px) {
+      font-size: 12px;
+    }
+  }
 }
