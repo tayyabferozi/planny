@@ -1,0 +1,9 @@
+<svg id="thinking" xmlns="http://www.w3.org/2000/svg" width="60.5" height="60" viewBox="0 0 60.5 60">
+	<circle id="Oval" cx="30" cy="30" r="30" transform="translate(0.5)" fill="#ffc32c" />
+	<path id="Path" d="M2.419,6.774h0A2.419,2.419,0,0,1,0,4.355V2.419A2.419,2.419,0,0,1,2.419,0h0A2.419,2.419,0,0,1,4.839,2.419V4.355A2.419,2.419,0,0,1,2.419,6.774Z" transform="translate(17 23)" fill="#7d5046" />
+	<path id="Path-2" data-name="Path" d="M.484,0A2.43,2.43,0,0,0,0,.049V3.387a1.452,1.452,0,0,0,2.9,0V2.419A2.419,2.419,0,0,0,.484,0Z" transform="translate(18.935 23)" fill="#9c6846" />
+	<path id="Path-3" data-name="Path" d="M2.419,6.774h0A2.419,2.419,0,0,1,0,4.355V2.419A2.419,2.419,0,0,1,2.419,0h0A2.419,2.419,0,0,1,4.839,2.419V4.355A2.419,2.419,0,0,1,2.419,6.774Z" transform="translate(37.323 23)" fill="#7d5046" />
+	<path id="Path-4" data-name="Path" d="M.484,0A2.43,2.43,0,0,0,0,.049V3.387a1.452,1.452,0,0,0,2.9,0V2.419A2.419,2.419,0,0,0,.484,0Z" transform="translate(39.258 23)" fill="#9c6846" />
+	<path id="Path-5" data-name="Path" d="M34.355,48.921A30,30,0,0,1,11.079,0a30,30,0,1,0,42.2,42.2A29.871,29.871,0,0,1,34.355,48.921Z" transform="translate(0 6.724)" fill="#f5b002" />
+	<path id="Path-6" data-name="Path" d="M9.919,2.419H1.21A1.21,1.21,0,0,1,1.21,0h8.71a1.21,1.21,0,1,1,0,2.419Z" transform="translate(24 41)" fill="#aa7346" />
+</svg>

@@ -25,6 +25,7 @@
     <div id="dark-overlay-dropdown"></div>
     <div id="dark-overlay-calendar"></div>
     <div id="dark-overlay-timer"></div>
+    <div id="dark-overlay" class="hide"></div>
     <h2 class="text-center mt-4">UI style guide</h2>
 
     <div class="container-fluid">
@@ -312,14 +313,139 @@
                 </div>
               </div>
             </div>
+            <h2 class="text-center mb-3">Alert</h2>
+            <div class="mb-4">
+              <div class="alert alert-info">
+                <div class="alert-icon">
+                  <img src="./assets/vector/alert-icon-info.svg" alt="icon" />
+                </div>
+                <div class="alert-text">
+                  <div class="head fw-700 fs-16">Information</div>
+                  <div class="body fs-14 fs-575-12">
+                    Your profile has been updated.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <div class="alert alert-success">
+                <div class="alert-icon">
+                  <img
+                    src="./assets/vector/alert-icon-success.svg"
+                    alt="icon"
+                  />
+                </div>
+                <div class="alert-text">
+                  <div class="head fw-700 fs-16">Congratulations</div>
+                  <div class="body fs-14 fs-575-12">
+                    You have successfully submitted the application!
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <div class="alert alert-warning">
+                <div class="alert-icon">
+                  <img
+                    src="./assets/vector/alert-icon-warning.svg"
+                    alt="icon"
+                  />
+                </div>
+                <div class="alert-text">
+                  <div class="head fw-700 fs-16">Heads up</div>
+                  <div class="body fs-14 fs-575-12">
+                    You’ve reached your limit. Please Upgrade to premium.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <div class="alert alert-danger">
+                <div class="alert-icon">
+                  <img src="./assets/vector/alert-icon-danger.svg" alt="icon" />
+                </div>
+                <div class="alert-text">
+                  <div class="head fw-700 fs-16">Error</div>
+                  <div class="body fs-14 fs-575-12">
+                    There was a problem sending your mail. Please try again.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h2 class="text-center mb-3">Dialogue</h2>
+
+            <div class="d-flex justify-content-center">
+              <button id="dialogue-btn" class="btn btn-bg-primary">
+                Open Dialogue
+              </button>
+            </div>
+
+            <div class="mb-4">
+              <div class="reset-modal">
+                <div class="fs-24 fw-700 text-center mb-2">Reset Profile</div>
+                <div class="fs-14 mt-4 body">
+                  Are you sure, want to continues to reset your profile. It will
+                  erase all previous fund allocation and goal duration.
+                </div>
+
+                <div class="btns d-flex">
+                  <button class="btn btn-outlined-dark">Not now</button>
+                  <button class="btn btn-bg-primary">Yes, Reset</button>
+                </div>
+              </div>
+            </div>
+
+            <h2 class="text-center mb-3">Reaction</h2>
+
+            <div class="d-flex justify-content-center">
+              <button id="reactions-btn" class="btn btn-bg-primary">
+                Open Reaction Dialogue
+              </button>
+            </div>
+
+            <div class="reactions-modal">
+              <div class="close">
+                <img src="./assets/vector/cross.svg" alt="cross" />
+              </div>
+              <div class="fs-16 text-center head">
+                How likely are you to answer to this question?
+              </div>
+
+              <div class="reactions">
+                <button class="btn reaction">
+                  <img src="./assets/vector/react-sad.svg" alt="sad" />
+                </button>
+                <button class="btn reaction">
+                  <img src="./assets/vector/react-normal.svg" alt="normal" />
+                </button>
+                <button class="btn reaction">
+                  <img src="./assets/vector/react-happy.svg" alt="happy" />
+                </button>
+              </div>
+              <div class="custom-form-control mt-4">
+                <h4 class="fs-14 fs-575-12 fw-500">
+                  Tell us how we can improve
+                </h4>
+                <textarea
+                  class="custom-input"
+                  placeholder="Write your massage here"
+                  rows="3"
+                ></textarea>
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center btns mt-4"
+              >
+                <button class="btn px-0 fs-14 fs-575-12">Skip</button>
+                <button class="btn btn-bg-primary">Submit</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <script
     <script src="./assets/js/jquery.min.js"></script>
-      </script>
     <script src="./assets/js/select.js"></script>
     <script src="./assets/js/common.js"></script>
     <script src="./assets/js/mc-calendar.min.js"></script>
@@ -336,6 +462,27 @@
           customWeekDays: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
         });
         $(".timepicker").timepicki({ reset: true });
+      });
+
+      $("#dialogue-btn").click(function () {
+        $("#dark-overlay").removeClass("hide");
+        $(".reset-modal").addClass("show");
+      });
+
+      $(".reset-modal .btn").click(function () {
+        $("#dark-overlay").addClass("hide");
+        $(".reset-modal").removeClass("show");
+      });
+
+      $("#reactions-btn").click(function () {
+        $("#dark-overlay").removeClass("hide");
+        $(".reactions-modal").addClass("show");
+      });
+      $("#reactions-btn").click();
+
+      $(".reactions-modal .close").click(function () {
+        $("#dark-overlay").addClass("hide");
+        $(".reactions-modal").removeClass("show");
       });
     </script>
   </body>
