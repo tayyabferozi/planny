@@ -1,6 +1,5 @@
 @import "./_constants.scss";
 
-
 .z-index-7 {
   z-index: 7;
 }
@@ -1423,11 +1422,40 @@ hr {
   }
 
   &.btn-delete {
+    position: relative;
     background-color: $color17;
     border-radius: 50%;
     width: 36px;
     height: 36px;
     padding: 0;
+    transition: 0.4s ease;
+
+    .bin {
+      position: absolute;
+      opacity: 0;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      transition: 0.4s ease;
+
+      &:not(.hovered) {
+        opacity: 1;
+      }
+    }
+
+    &:hover {
+      background-color: $color28;
+
+      .bin {
+        &:not(.hovered) {
+          opacity: 0;
+        }
+
+        &.hovered {
+          opacity: 1;
+        }
+      }
+    }
   }
 }
 

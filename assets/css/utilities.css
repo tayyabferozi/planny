@@ -1625,11 +1625,41 @@ hr {
 }
 
 .btn.btn-delete {
+  position: relative;
   background-color: #f2f2f2;
   border-radius: 50%;
   width: 36px;
   height: 36px;
   padding: 0;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.btn.btn-delete .bin {
+  position: absolute;
+  opacity: 0;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.btn.btn-delete .bin:not(.hovered) {
+  opacity: 1;
+}
+
+.btn.btn-delete:hover {
+  background-color: #ff3100;
+}
+
+.btn.btn-delete:hover .bin:not(.hovered) {
+  opacity: 0;
+}
+
+.btn.btn-delete:hover .bin.hovered {
+  opacity: 1;
 }
 
 .btn-outlined-dark {
