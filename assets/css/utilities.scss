@@ -1,5 +1,6 @@
 @import "./_constants.scss";
 
+
 .z-index-7 {
   z-index: 7;
 }
@@ -89,6 +90,10 @@ p {
     font-size: 18px;
     line-height: 32px;
   }
+}
+
+.mt-40 {
+  margin-top: 40px;
 }
 
 .ws-1 {
@@ -1416,6 +1421,14 @@ hr {
     background-image: linear-gradient(to bottom, $color17, #fff);
     color: $color3;
   }
+
+  &.btn-delete {
+    background-color: $color17;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+  }
 }
 
 .btn-outlined-dark {
@@ -1449,6 +1462,10 @@ hr {
         color: #fff;
         background-color: $color1;
       }
+    }
+
+    &.primary-text {
+      color: $color1;
     }
   }
 }
@@ -2645,6 +2662,7 @@ textarea.custom-input,
     padding-left: 5rem;
     padding-right: 5rem;
   }
+
   @media screen and (max-width: 991px) {
     width: 100%;
     padding-left: 1.75rem;
@@ -2662,6 +2680,18 @@ textarea.custom-input,
       width: 100%;
       padding-left: 1.75rem;
       padding-right: 1.75rem;
+    }
+  }
+
+  &.wide-md {
+    @media screen and (max-width: 991px) {
+      padding-left: 48px;
+      padding-right: 48px;
+    }
+
+    @media screen and (max-width: 575px) {
+      padding-left: 16px;
+      padding-right: 16px;
     }
   }
 
@@ -2694,6 +2724,10 @@ textarea.custom-input,
     max-width: 1675px;
     margin-left: auto;
     margin-right: auto;
+
+    &.sm {
+      max-width: 1200px;
+    }
   }
 
   .top-fixed-bar {

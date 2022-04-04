@@ -1922,14 +1922,7 @@
               class="col-md-5 d-flex justify-content-center order-2 order-md-1"
             >
               <div
-                class="
-                  text-center
-                  d-flex
-                  flex-column
-                  justify-content-center
-                  align-items-center
-                  sebi
-                "
+                class="text-center d-flex flex-column justify-content-center align-items-center sebi"
               >
                 <img
                   class="d-none d-sm-block sebi-img"
@@ -2054,13 +2047,7 @@
                 />
               </div>
               <div
-                class="
-                  d-flex
-                  flex-sm-row flex-column
-                  align-items-center
-                  justify-content-between
-                  mt-sm-5 mt-4
-                "
+                class="d-flex flex-sm-row flex-column align-items-center justify-content-between mt-sm-5 mt-4"
               >
                 <button class="btn btn-bg-primary" id="signup-btn">
                   Sign up
@@ -2093,13 +2080,7 @@
           <div class="row">
             <div class="col-md-5 d-flex justify-content-center mb-4 mb-md-0">
               <div
-                class="
-                  text-center
-                  d-flex
-                  flex-column
-                  justify-content-center
-                  align-items-center
-                "
+                class="text-center d-flex flex-column justify-content-center align-items-center"
               >
                 <div class="img">
                   <img src="./assets/images/otp.svg" alt="otp" />
@@ -2261,10 +2242,16 @@
 
     <div class="slider_text">
       <div class="slider_text_p1">
-        <h2 class="resist-size fs-56 fs-1919-40 fs-768-44 fs-575-32">
+        <h2
+          id="slide-text__top"
+          class="resist-size fs-56 fs-1919-40 fs-768-44 fs-575-32"
+        >
           Respectful And
         </h2>
-        <h3 class="fs-56 fs-1919-40 fs-768-44 fs-575-32">
+        <h3
+          id="slide-text__bottom"
+          class="fs-56 fs-1919-40 fs-768-44 fs-575-32"
+        >
           Confident Retirement
         </h3>
       </div>
@@ -2296,11 +2283,27 @@
           /><img src="./assets/images/Cover_Push_auto_1920.jpg" />
         </div>
         <div class="swiper-slide">
-          <img src="./assets/images/Cover_auto_x2.jpg" /><img
+          <img src="./assets/vector/carousel-3-img.svg" alt="carousel-3" />
+          <img src="./assets/img/carousel-ipad.png" alt="carousel-3" />
+          <div class="slide-text">
+            <span class="text-yellow">How</span> <br />
+            Planny <br />
+            Works
+          </div>
+          <lottie-player
+            id="play-lotty"
+            autoplay
+            loop
+            mode="normal"
+            src="./assets/lotty/play.json"
+            style="width: 320px"
+          >
+          </lottie-player>
+          <!-- <img src="./assets/images/Cover_auto_x2.jpg" /><img
             src="./assets/images/Cover_Push_auto_x2.jpg"
           /><img src="./assets/images/mobile_slider.jpg" /><img
             src="./assets/images/ipad_slider.jpg"
-          /><img src="./assets/images/Cover_Push_auto_1920.jpg" />
+          /><img src="./assets/images/Cover_Push_auto_1920.jpg" /> -->
         </div>
       </div>
       <div class="swiper-pagination"></div>
@@ -2504,13 +2507,7 @@
         <hr />
         <div class="sec-1">
           <h3
-            class="
-              fs-18 fs-1919-14 fs-991-16
-              lh-768-28
-              fs-575-12
-              mb-3 mb-sm-4
-              fw-700
-            "
+            class="fs-18 fs-1919-14 fs-991-16 lh-768-28 fs-575-12 mb-3 mb-sm-4 fw-700"
           >
             For any grievances and/or suggestions please write to
             feedback@planyy.com
@@ -2586,6 +2583,29 @@
         pagination: {
           el: ".swiper-pagination",
         },
+        on: {
+          slideChange: () => {
+            let idx = swiper.realIndex;
+            // let topText = "Respectful And";
+            // let bottomText = "Confident Retirement";
+
+            // let topText2 = "How";
+            // let bottomText2 = "Planny<br />Works";
+
+            // let $top = $("#slide-text__top");
+            // let $bottom = $("#slide-text__bottom");
+
+            if (idx != 2) {
+              //   $top.html(topText);
+              //   $bottom.html(bottomText);
+              $(".slider_text_p1").show();
+            } else {
+              //   $top.html(topText2);
+              //   $bottom.html(bottomText2);
+              $(".slider_text_p1").hide();
+            }
+          },
+        },
       });
     </script>
 
@@ -2612,6 +2632,8 @@
         checkForInput(this);
       });
     </script>
+
+    <script src="./assets/js/lottie.js"></script>
 
     <script type="text/javascript">
       if (window.matchMedia("(max-width: 1023px)").matches) {

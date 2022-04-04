@@ -331,6 +331,18 @@ table.custom-table {
     padding-bottom: 2rem;
   }
 
+  &.wide-md {
+    @media screen and (max-width: 991px) {
+      padding-left: 48px;
+      padding-right: 48px;
+    }
+
+    @media screen and (max-width: 575px) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
   &.blogs {
     @media screen and (max-width: 768px) {
       padding-left: 2rem;
@@ -2478,6 +2490,60 @@ aside.explore {
     padding: 0 1.5rem;
   }
 
+  .show-edit {
+    position: relative;
+
+    @media screen and (min-width: 769px) {
+      max-width: 230px !important;
+      padding-right: 0 !important;
+    }
+
+    @media screen and (max-width: 768px) {
+      &:not(h2) {
+        width: 100% !important;
+      }
+    }
+
+    .edit-on-hover {
+      pointer-events: none;
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(calc(-50%));
+      transition: 0.4s ease;
+      cursor: pointer;
+
+      @media screen and (max-width: 768px) {
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+
+    &:hover {
+      .edit-on-hover {
+        pointer-events: all;
+        opacity: 1;
+      }
+    }
+  }
+
+  h2.show-edit {
+    @media screen and (min-width: 576px) {
+      display: inline-block;
+    }
+
+    .edit-on-hover {
+      top: unset;
+      bottom: -2px;
+      right: -24px;
+
+      @media screen and (max-width: 575px) {
+        right: 0;
+      }
+    }
+  }
+
   .profile-main {
     .lower-content {
       @media screen and (min-width: 769px) {
@@ -2522,6 +2588,75 @@ aside.explore {
   }
 
   .form {
+    .bank-account-head,
+    .nom-head {
+      margin-top: 40px;
+
+      & > h2 {
+        border-top: 1px solid $color19;
+        padding-top: 56px;
+      }
+    }
+
+    .bank-info {
+      .info-main {
+        padding: 40px;
+        border: 1px solid $color17;
+        border-radius: 8px;
+        margin-top: 24px;
+
+        @media screen and (max-width: 768px) {
+          padding: 0;
+        }
+
+        .info-head {
+          padding-bottom: 24px;
+          margin-bottom: 24px;
+          border-bottom: 1px solid $color30;
+          position: relative;
+
+          @media screen and (max-width: 768px) {
+            padding: 24px 24px 20px;
+          }
+
+          @media screen and (max-width: 768px) {
+            margin-bottom: 0;
+          }
+
+          .menu {
+            position: absolute;
+            right: 16px;
+            top: 16px;
+          }
+        }
+
+        .info-body {
+          @media screen and (max-width: 991px) {
+            flex-wrap: wrap;
+            gap: 24px 0;
+          }
+
+          @media screen and (max-width: 768px) {
+            padding: 24px 24px 40px;
+          }
+
+          .custom-form-control {
+            padding-right: 0;
+          }
+
+          & > * {
+            @media screen and (max-width: 991px) {
+              width: 50%;
+            }
+
+            @media screen and (max-width: 575px) {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
     .deactive {
       @media screen and (min-width: 1367px) {
         padding-right: 3rem;
@@ -2541,11 +2676,11 @@ aside.explore {
         order: 1;
       }
 
-      .email {
+      .name {
         order: 2;
       }
 
-      .name {
+      .email {
         order: 3;
       }
 
@@ -2553,15 +2688,15 @@ aside.explore {
         order: 4;
       }
 
-      .gender {
+      .mobile {
         order: 5;
       }
 
-      .mar-status {
+      .gender {
         order: 6;
       }
 
-      .mobile {
+      .mar-status {
         order: 7;
       }
 
@@ -2569,19 +2704,19 @@ aside.explore {
         order: 8;
       }
 
-      .nominee {
+      .pass {
         order: 9;
       }
 
-      .nom-name {
+      .nom-head {
         order: 10;
       }
 
-      .nom-rel {
+      .nom-name {
         order: 11;
       }
 
-      .pass {
+      .nom-rel {
         order: 12;
       }
 
@@ -2589,7 +2724,7 @@ aside.explore {
         order: 13;
       }
 
-      .acc-holder-name {
+      .bank-info {
         order: 14;
       }
 
@@ -2635,15 +2770,15 @@ aside.explore {
         order: 4;
       }
 
-      .gender {
+      .mobile {
         order: 5;
       }
 
-      .mar-status {
+      .gender {
         order: 6;
       }
 
-      .mobile {
+      .mar-status {
         order: 7;
       }
 
@@ -2651,19 +2786,19 @@ aside.explore {
         order: 8;
       }
 
-      .nominee {
+      .pass {
         order: 9;
       }
 
-      .nom-name {
+      .nom-head {
         order: 10;
       }
 
-      .nom-rel {
+      .nom-name {
         order: 11;
       }
 
-      .pass {
+      .nom-rel {
         order: 12;
       }
 
@@ -2671,7 +2806,7 @@ aside.explore {
         order: 13;
       }
 
-      .acc-holder-name {
+      .bank-info {
         order: 14;
       }
 
@@ -2694,6 +2829,95 @@ aside.explore {
       .deactive {
         order: 19;
       }
+
+      // & > * {
+      //   order: 30;
+      // }
+
+      // .pan {
+      //   order: 1;
+      // }
+
+      // .name {
+      //   order: 2;
+      // }
+
+      // .email {
+      //   order: 3;
+      // }
+
+      // .dob {
+      //   order: 4;
+      // }
+
+      // .gender {
+      //   order: 5;
+      // }
+
+      // .mar-status {
+      //   order: 6;
+      // }
+
+      // .mobile {
+      //   order: 7;
+      // }
+
+      // .res-status {
+      //   order: 8;
+      // }
+
+      // .nominee {
+      //   order: 9;
+      // }
+
+      // .nom-name {
+      //   order: 10;
+      // }
+
+      // .nom-rel {
+      //   order: 11;
+      // }
+
+      // .pass {
+      //   order: 12;
+      // }
+
+      // .bank-account-head {
+      //   order: 13;
+      // }
+
+      // .acc-holder-name {
+      //   order: 14;
+      // }
+
+      // .account-num {
+      //   order: 15;
+      // }
+
+      // .isfc {
+      //   order: 16;
+      // }
+
+      // .account-type {
+      //   order: 17;
+      // }
+
+      // .add-bank {
+      //   order: 18;
+      // }
+
+      // .deactive {
+      //   order: 19;
+      // }
+    }
+  }
+
+  .change-pwd {
+    color: $color1;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
     }
   }
 
@@ -2711,6 +2935,23 @@ aside.explore {
 
     @media screen and (max-width: 991px) {
       padding-right: 0;
+    }
+
+    h4 {
+      margin-bottom: 6px;
+    }
+
+    input {
+      padding: 0;
+      height: unset;
+      border: none;
+      font-size: 18px;
+
+      &:disabled {
+        background-color: transparent;
+        color: $color2;
+        font-weight: 600;
+      }
     }
   }
 
@@ -2747,6 +2988,7 @@ aside.explore {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    margin-top: 40px;
 
     @media screen and (max-width: 1366px) {
       padding: 1.25rem 1.5rem;
@@ -3006,4 +3248,15 @@ aside.explore {
       }
     }
   }
+}
+
+// ***********************************************************************************************************************************
+// ***********************************************************************************************************************************
+
+//  ***************************************************** TERMS OF SERVICE PAGE ******************************************************
+
+// ***********************************************************************************************************************************
+// ***********************************************************************************************************************************
+
+#tos {
 }

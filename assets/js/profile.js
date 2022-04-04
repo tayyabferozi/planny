@@ -6,3 +6,13 @@ const myDatePicker = MCDatepicker.create({
   customClearBTN: "Reset",
   customWeekDays: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
 });
+
+$(".show-edit").each(function (idx, el) {
+  let $el = $(el);
+  let $input = $el.find("input");
+
+  console.log($input.length);
+  if ($input.length) {
+    $el.css("width", $input.val().length + 6 + "ch");
+  }
+});

@@ -351,6 +351,20 @@ table.custom-table tr td {
   padding-bottom: 2rem;
 }
 
+@media screen and (max-width: 991px) {
+  #navbar-sm.wide-md {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #navbar-sm.wide-md {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #navbar-sm.blogs {
     padding-left: 2rem;
@@ -2883,6 +2897,66 @@ aside.explore {
   }
 }
 
+#profile .show-edit {
+  position: relative;
+}
+
+@media screen and (min-width: 769px) {
+  #profile .show-edit {
+    max-width: 230px !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #profile .show-edit:not(h2) {
+    width: 100% !important;
+  }
+}
+
+#profile .show-edit .edit-on-hover {
+  pointer-events: none;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(calc(-50%));
+          transform: translateY(calc(-50%));
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  #profile .show-edit .edit-on-hover {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+#profile .show-edit:hover .edit-on-hover {
+  pointer-events: all;
+  opacity: 1;
+}
+
+@media screen and (min-width: 576px) {
+  #profile h2.show-edit {
+    display: inline-block;
+  }
+}
+
+#profile h2.show-edit .edit-on-hover {
+  top: unset;
+  bottom: -2px;
+  right: -24px;
+}
+
+@media screen and (max-width: 575px) {
+  #profile h2.show-edit .edit-on-hover {
+    right: 0;
+  }
+}
+
 @media screen and (min-width: 769px) {
   #profile .profile-main .lower-content {
     padding-left: 0;
@@ -2934,6 +3008,85 @@ aside.explore {
   }
 }
 
+#profile .form .bank-account-head,
+#profile .form .nom-head {
+  margin-top: 40px;
+}
+
+#profile .form .bank-account-head > h2,
+#profile .form .nom-head > h2 {
+  border-top: 1px solid #eeeeee;
+  padding-top: 56px;
+}
+
+#profile .form .bank-info .info-main {
+  padding: 40px;
+  border: 1px solid #f2f2f2;
+  border-radius: 8px;
+  margin-top: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  #profile .form .bank-info .info-main {
+    padding: 0;
+  }
+}
+
+#profile .form .bank-info .info-main .info-head {
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e6e7e8;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  #profile .form .bank-info .info-main .info-head {
+    padding: 24px 24px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #profile .form .bank-info .info-main .info-head {
+    margin-bottom: 0;
+  }
+}
+
+#profile .form .bank-info .info-main .info-head .menu {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+@media screen and (max-width: 991px) {
+  #profile .form .bank-info .info-main .info-body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 24px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #profile .form .bank-info .info-main .info-body {
+    padding: 24px 24px 40px;
+  }
+}
+
+#profile .form .bank-info .info-main .info-body .custom-form-control {
+  padding-right: 0;
+}
+
+@media screen and (max-width: 991px) {
+  #profile .form .bank-info .info-main .info-body > * {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #profile .form .bank-info .info-main .info-body > * {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 1367px) {
   #profile .form .deactive {
     padding-right: 3rem;
@@ -2957,12 +3110,12 @@ aside.explore {
         -ms-flex-order: 1;
             order: 1;
   }
-  #profile .form .email {
+  #profile .form .name {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
-  #profile .form .name {
+  #profile .form .email {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
@@ -2972,17 +3125,17 @@ aside.explore {
         -ms-flex-order: 4;
             order: 4;
   }
-  #profile .form .gender {
+  #profile .form .mobile {
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
             order: 5;
   }
-  #profile .form .mar-status {
+  #profile .form .gender {
     -webkit-box-ordinal-group: 7;
         -ms-flex-order: 6;
             order: 6;
   }
-  #profile .form .mobile {
+  #profile .form .mar-status {
     -webkit-box-ordinal-group: 8;
         -ms-flex-order: 7;
             order: 7;
@@ -2992,22 +3145,22 @@ aside.explore {
         -ms-flex-order: 8;
             order: 8;
   }
-  #profile .form .nominee {
+  #profile .form .pass {
     -webkit-box-ordinal-group: 10;
         -ms-flex-order: 9;
             order: 9;
   }
-  #profile .form .nom-name {
+  #profile .form .nom-head {
     -webkit-box-ordinal-group: 11;
         -ms-flex-order: 10;
             order: 10;
   }
-  #profile .form .nom-rel {
+  #profile .form .nom-name {
     -webkit-box-ordinal-group: 12;
         -ms-flex-order: 11;
             order: 11;
   }
-  #profile .form .pass {
+  #profile .form .nom-rel {
     -webkit-box-ordinal-group: 13;
         -ms-flex-order: 12;
             order: 12;
@@ -3017,7 +3170,7 @@ aside.explore {
         -ms-flex-order: 13;
             order: 13;
   }
-  #profile .form .acc-holder-name {
+  #profile .form .bank-info {
     -webkit-box-ordinal-group: 15;
         -ms-flex-order: 14;
             order: 14;
@@ -3075,17 +3228,17 @@ aside.explore {
         -ms-flex-order: 4;
             order: 4;
   }
-  #profile .form .gender {
+  #profile .form .mobile {
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
             order: 5;
   }
-  #profile .form .mar-status {
+  #profile .form .gender {
     -webkit-box-ordinal-group: 7;
         -ms-flex-order: 6;
             order: 6;
   }
-  #profile .form .mobile {
+  #profile .form .mar-status {
     -webkit-box-ordinal-group: 8;
         -ms-flex-order: 7;
             order: 7;
@@ -3095,22 +3248,22 @@ aside.explore {
         -ms-flex-order: 8;
             order: 8;
   }
-  #profile .form .nominee {
+  #profile .form .pass {
     -webkit-box-ordinal-group: 10;
         -ms-flex-order: 9;
             order: 9;
   }
-  #profile .form .nom-name {
+  #profile .form .nom-head {
     -webkit-box-ordinal-group: 11;
         -ms-flex-order: 10;
             order: 10;
   }
-  #profile .form .nom-rel {
+  #profile .form .nom-name {
     -webkit-box-ordinal-group: 12;
         -ms-flex-order: 11;
             order: 11;
   }
-  #profile .form .pass {
+  #profile .form .nom-rel {
     -webkit-box-ordinal-group: 13;
         -ms-flex-order: 12;
             order: 12;
@@ -3120,7 +3273,7 @@ aside.explore {
         -ms-flex-order: 13;
             order: 13;
   }
-  #profile .form .acc-holder-name {
+  #profile .form .bank-info {
     -webkit-box-ordinal-group: 15;
         -ms-flex-order: 14;
             order: 14;
@@ -3152,6 +3305,15 @@ aside.explore {
   }
 }
 
+#profile .change-pwd {
+  color: #ffc32c;
+  text-decoration: underline;
+}
+
+#profile .change-pwd:hover {
+  text-decoration: none;
+}
+
 #profile .custom-form-control {
   margin-top: 1.5rem;
   max-width: 596px;
@@ -3173,6 +3335,23 @@ aside.explore {
   #profile .custom-form-control {
     padding-right: 0;
   }
+}
+
+#profile .custom-form-control h4 {
+  margin-bottom: 6px;
+}
+
+#profile .custom-form-control input {
+  padding: 0;
+  height: unset;
+  border: none;
+  font-size: 18px;
+}
+
+#profile .custom-form-control input:disabled {
+  background-color: transparent;
+  color: #31353f;
+  font-weight: 600;
 }
 
 #profile .user-pic-container {
@@ -3217,6 +3396,7 @@ aside.explore {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 5px;
+  margin-top: 40px;
 }
 
 @media screen and (max-width: 1366px) {

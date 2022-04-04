@@ -10417,3 +10417,109 @@ select.list-dt:focus {
     min-height: 47px;
   }
 }
+
+.planyybody .swiper-slide:nth-child(3) img:nth-child(1) {
+  margin-right: 320px;
+  max-height: calc(100vh - 122px - 66px);
+}
+@media screen and (min-width: 1920px) {
+  .planyybody .swiper-slide:nth-child(3) img:nth-child(1) {
+    margin-right: 442px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .planyybody .swiper-slide:nth-child(3) img:nth-child(1) {
+    display: block;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .planyybody .swiper-slide:nth-child(3) img:nth-child(2) {
+    display: block;
+    width: 80%;
+    margin-top: 0;
+    max-width: 600px;
+    position: absolute;
+    top: 284px;
+    height: unset;
+    object-fit: unset;
+  }
+}
+@media screen and (max-width: 575px) {
+  .planyybody .swiper-slide:nth-child(3) img:nth-child(2) {
+    width: 72%;
+    top: 192px;
+  }
+}
+
+.planyybody .slide-text {
+  position: absolute;
+  top: 50%;
+  left: 20vw;
+  transform: translateY(-50%);
+  text-align: left;
+  font-size: 96px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+@media screen and (max-width: 1919px) {
+  .planyybody .slide-text {
+    left: 160px;
+    font-size: 64px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .planyybody .slide-text {
+    left: 80px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .planyybody .slide-text br {
+    display: none;
+  }
+
+  .planyybody .slide-text {
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    top: 214px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .planyybody .slide-text {
+    font-size: 24px;
+    top: 151px;
+  }
+}
+
+#play-lotty {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 200px;
+}
+
+@media screen and (max-width: 1919px) {
+  #play-lotty {
+    width: 250px !important;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #play-lotty {
+    top: 60px;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #play-lotty {
+    top: 0px;
+    width: 180px !important;
+  }
+}
