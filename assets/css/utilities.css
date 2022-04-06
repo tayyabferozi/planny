@@ -522,6 +522,10 @@ p {
   letter-spacing: -0.5px;
 }
 
+.w-80 {
+  width: 80px !important;
+}
+
 @media screen and (max-width: 1919px) {
   .w-1919-80 {
     width: 80px !important;

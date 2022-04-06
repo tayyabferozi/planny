@@ -3024,6 +3024,7 @@ aside.explore {
   border: 1px solid #f2f2f2;
   border-radius: 8px;
   margin-top: 24px;
+  background: rgba(0, 0, 0, 0.02);
 }
 
 @media screen and (max-width: 768px) {
@@ -3084,12 +3085,6 @@ aside.explore {
 @media screen and (max-width: 575px) {
   #profile .form .bank-info .info-main .info-body > * {
     width: 100%;
-  }
-}
-
-@media screen and (min-width: 1367px) {
-  #profile .form .deactive {
-    padding-right: 3rem;
   }
 }
 

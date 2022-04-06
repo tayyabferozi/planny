@@ -2604,6 +2604,7 @@ aside.explore {
         border: 1px solid $color17;
         border-radius: 8px;
         margin-top: 24px;
+        background: rgba(0, 0, 0, 0.02);
 
         @media screen and (max-width: 768px) {
           padding: 0;
@@ -2658,9 +2659,6 @@ aside.explore {
     }
 
     .deactive {
-      @media screen and (min-width: 1367px) {
-        padding-right: 3rem;
-      }
 
       @media screen and (min-width: 992px) and (max-width: 1366px) {
         padding-right: 1rem;
