@@ -7533,6 +7533,7 @@ select.list-dt:focus {
 
   .msoretirepop_p2_s5 {
     margin-top: 2rem;
+    margin-bottom: -100px;
   }
 
   .msoretirepop_p2_s5_box {
@@ -9909,7 +9910,7 @@ select.list-dt:focus {
 
   #msoretirepop_cta_container {
     position: sticky;
-    bottom: 0;
+    bottom: -60px;
     background: linear-gradient(to top, #fff, transparent);
   }
 }
