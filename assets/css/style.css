@@ -5717,6 +5717,7 @@ select.list-dt:focus {
     margin-top: 16px;
     height: 388px;
     overflow: auto;
+    overflow-x: hidden;
   }
   .makepaymentmodel_p1_up.dn {
     display: block;
