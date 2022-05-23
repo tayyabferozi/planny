@@ -1068,6 +1068,7 @@ select.list-dt:focus {
   background-repeat: no-repeat;
   background-position: bottom 6px right 0px;
   padding-right: 20px;
+  text-align: right;
 }
 .planyy_hed_p2_s1 input {
   background-image: url(../images/editonhover.svg);
@@ -2278,6 +2279,7 @@ select.list-dt:focus {
 @media screen and (max-width: 1023px) {
   .msoretirepop_p2_s5 {
     padding-top: 1rem;
+    padding-bottom: 3rem;
   }
 }
 
@@ -3163,6 +3165,7 @@ select.list-dt:focus {
   width: 100%;
   margin-bottom: 16px;
   position: relative;
+  overflow-x: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -5104,10 +5107,10 @@ select.list-dt:focus {
     line-height: 25px !important;
     letter-spacing: 0.36px !important;
     height: 31px !important;
-    text-align: left !important;
+    text-align: right !important;
     margin: 0px !important;
     border: none !important;
-    padding: 0px 0px 0px 0px !important;
+    padding: 0px 16px 0px 0px !important;
     background-image: url(../images/editonhover1.svg);
     background-size: 16px;
     background-repeat: no-repeat;
@@ -7511,6 +7514,7 @@ select.list-dt:focus {
 @media screen and (max-width: 1023px) {
   .msoretirepop_p2mobile_box_p3_btn .msoretirepop_p2_s2_button {
     width: 100%;
+    /* width: calc(100% - 50px); */
   }
 
   .msoretirepop_p2_s2_button a {
@@ -9909,8 +9913,9 @@ select.list-dt:focus {
 
   #msoretirepop_cta_container {
     position: sticky;
-    bottom: 0;
+    bottom: 70px;
     background: linear-gradient(to top, #fff, transparent);
+    left: 0;
   }
 }
 
@@ -10608,4 +10613,51 @@ select.list-dt:focus {
     top: 0px;
     width: 180px !important;
   }
+}
+
+.mutual-fund-list-modal {
+  overflow-x: hidden;
+  padding-top: 24px !important;
+}
+
+@media screen and (max-width: 575px) {
+  .mutual-fund-list-modal {
+    padding-top: 44px !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .mutual-fund-list-modal .msoinvestproduct_box_right .head .options {
+    transform: translateY(-10px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mutual-fund-list-modal {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+.mutual-fund-list-modal .msoinvestproduct {
+  padding: 0 !important;
+}
+
+@media screen and (max-width: 575px) {
+  .mutual-fund-list-modal .close {
+    top: 20px !important;
+    right: 20px !important;
+  }
+}
+
+.mutual-fund-list-modal .main {
+  max-width: 1004px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mutual-fund-list-modal .nav {
+  max-width: 466px;
+  margin-left: auto;
+  margin-right: auto;
 }
